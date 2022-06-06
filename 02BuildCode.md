@@ -110,8 +110,10 @@ type="SingleLine.Text" default-value="#333333"/>
     bundled with the code component when it is deployed.
 16. Notice the following two resources. This declares the component’s dependency on these two
     libraries. This is a result of specifying –framework React on initialization.
+```
 <platform-library name="React" version="16.8.6" />
 <platform-library name="Fluent" version="8.29.0" />
+```
 17. Click **File** and select **Save All**.
 18. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
 
@@ -185,15 +187,18 @@ import { PriorityComponent, PriorityComponentProps } from
 15. Locate the **Export** class.
 16. Add the following code below inside the **export** class. This defines some working variables you
     will be using in the class logic.
-private context: ComponentFramework.Context<IInputs>;
-private items: ComponentFramework.PropertyTypes.DataSet;
-
+```
+ private context: ComponentFramework.Context<IInputs>;
+ private items: ComponentFramework.PropertyTypes.DataSet;
+```
 
 17. Locate the **init** function.
 18. Paste the code below inside the **init** function. This logic initializes our class variables from the
     runtime values and enables resize notification.
+```
 this.context = context;
 context.mode.trackContainerResize(true);
+```
 19. Locate the **updateView** function.
 20. Replace **updateView** function with the function below. This logic creates the React Element
     from the PriorityComponent and adds it to the virtual DOM.
