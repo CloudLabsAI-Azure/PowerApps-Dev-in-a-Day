@@ -7,25 +7,25 @@
 
 ## Table of Contents
 
-Lab Scenario .............................................................................................................................................. 1
+Lab Scenario 
 
-Exercise 1 – Build Code Component ......................................................................................................... 1
+Exercise 1 – Build Code Component 
 
-Task 1: Create the code component ..................................................................................................... 1
+Task 1: Create the code component 
 
-Task 2: Implement the component logic .............................................................................................. 6
+Task 2: Implement the component logic 
 
-Task 3: Confirm the control was added to environment .................................................................... 12
+Task 3: Confirm the control was added to environment 
 
-Exercise 2 – Use Code Component ......................................................................................................... 12
+Exercise 2 – Use Code Component 
 
-Task 1: Allow Power Apps component framework ............................................................................. 12
+Task 1: Allow Power Apps component framework 
 
-Task 2: Edit canvas app ....................................................................................................................... 13
+Task 2: Edit canvas app 
 
-Exercise 3 – Add Code Component to Solution ...................................................................................... 20
+Exercise 3 – Add Code Component to Solution 
 
-Task 1: Add component to solution .................................................................................................... 20
+Task 1: Add component to solution 
 
 ### Lab Scenario
 
