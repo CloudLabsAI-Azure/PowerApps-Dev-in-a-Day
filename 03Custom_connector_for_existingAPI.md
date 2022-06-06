@@ -7,25 +7,40 @@
 
 ## Table of Contents
 
-```
-Lab Scenario ........................................................................................................................................ 1
-Exercise 1 - Create Solution ................................................................................................................. 2
-Task 1: Create solution..................................................................................................................... 2
-Exercise 2 – Create Custom Connector................................................................................................. 3
-Task 1: Download open API definition and create connector ............................................................ 3
-Task 2: Modify the definition ........................................................................................................... 6
-Task 3: Test connector ..................................................................................................................... 9
-Exercise 3 – Add Custom Code ........................................................................................................... 12
-Task 1: Add code from resource folder ........................................................................................... 12
-Task 2: Test custom code ............................................................................................................... 16
-Exercise 4 – Test Custom Connector .................................................................................................. 17
-Task 1: Test connector from canvas app ......................................................................................... 17
-Task 2: Test connector from flow ................................................................................................... 21
-Exercise 5 – Promote Solution to Test Environment ........................................................................... 25
-Task 1: Export solution. .................................................................................................................. 25
-Task 1: Import solution .................................................................................................................. 25
-Task 2: Test connector ................................................................................................................... 26
-```
+Lab Scenario .............................................................................................................................................. 1
+
+Exercise 1 - Create Solution ...................................................................................................................... 2
+
+Task 1: Create solution .......................................................................................................................... 2
+
+Exercise 2 – Create Custom Connector ..................................................................................................... 3
+
+Task 1: Download open API definition and create connector .............................................................. 3
+
+Task 2: Modify the definition ................................................................................................................ 6
+
+Task 3: Test connector .......................................................................................................................... 9
+
+Exercise 3 – Add Custom Code ................................................................................................................ 12
+
+Task 1: Add code from resource folder ............................................................................................... 12
+
+Task 2: Test custom code .................................................................................................................... 16
+
+Exercise 4 – Test Custom Connector ....................................................................................................... 17
+
+Task 1: Test connector from canvas app............................................................................................. 17
+
+Task 2: Test connector from flow ....................................................................................................... 21
+
+Exercise 5 – Promote Solution to Test Environment .............................................................................. 25
+
+Task 1: Export solution. ....................................................................................................................... 25
+
+Task 1: Import solution ....................................................................................................................... 25
+
+Task 2: Test connector ........................................................................................................................ 26
+
 ### Lab Scenario
 
 Working as part of the PrioritZ fusion team you will be configuring a custom connector for an existing
@@ -61,7 +76,7 @@ In this exercise, you will create a custom connector from an existing API.
 
 3. Do a quick review of the Open API definition.
 4. Right click on the page and select **Save as**.
-5. Save the swagger.json file on your machine.
+5. Save the **swagger.json** file on your machine.
 6. Navigate to Power Apps maker portal and make sure you are in your dev environment.
 7. Select **Solutions** open the **Contoso Badges connector** solution you created.
 8. Click **+ New | Automation** and select **Custom connector**.
@@ -117,7 +132,7 @@ In this exercise, you will create a custom connector from an existing API.
 5. Paste the **API Key** you copied and click **Create connection**.
 6. Click on the **Refresh** connections button.
 7. The connection you created should get selected.
-8. Go to the AddCredit operation.
+8. Go to the **AddCredit** operation.
 9. Enter your email address for recipientid, enter your name for name, enter **1** for points, and click
     **Test operation**.
 
@@ -173,7 +188,7 @@ You will do this by using the custom code feature to reshape the response from t
 22. Scroll down to the **Response** section and click **+ Add default response.**
 23. Paste the JSON you copied in the **Body** and click **Import**.
 24. Click **Update connector** and wait for the connector to be updated.
-25. Do not navigate away from this page.
+25. **Do not** navigate away from this page.
 
 #### Task 2: Test custom code
 
@@ -191,7 +206,7 @@ In this task, you will test your custom code.
 
 In this exercise, you will test the custom connector you created using a flow and a canvas application.
 
-#### Task 1 : Test connector from canvas app
+#### Task 1: Test connector from canvas app
 
 In this task, you will use the custom connector you created to show the user’s current badge on the
 PrioritZ Ask canvas application.
@@ -239,7 +254,7 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
 29. Go back to the solution by clicking on the  **Back** button.
 30. Do not navigate away from this page.
 
-#### Task 2 : Test connector from flow
+#### Task 2: Test connector from flow
 
 1. Make sure you are still in the **PrioritZ** solution.
 2. Click **+ New** and select **Automation | Cloud flow | Instant**.
@@ -303,7 +318,7 @@ environment and import it to Test environment.
 6. Click **Next**.
 7. Click **Import** and wait for the import to complete.
 8. The solution should import successfully.
-9. Do not navigate away from this page.
+9. **Do not** navigate away from this page.
 
 #### Task 2: Test connector
 
@@ -325,6 +340,6 @@ environment and import it to Test environment.
 
 
 13. The test should succeed, and the response should look like the image below.
-14. You may test the rest of the operations.
+14. You may **test** the rest of the operations.
 
 
