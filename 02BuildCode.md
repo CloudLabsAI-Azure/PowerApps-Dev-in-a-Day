@@ -7,34 +7,42 @@
 
 ## Table of Contents
 
-```
-Lab Scenario ........................................................................................................................................ 1
-Exercise 1 – Build Code Component ..................................................................................................... 1
-Task 1: Create the code component ................................................................................................. 1
-Task 2: Implement the component logic .......................................................................................... 6
-Task 3: Confirm the control was added to environment ................................................................. 12
-Exercise 2 – Use Code Component ..................................................................................................... 12
-Task 1: Allow Power Apps component framework ......................................................................... 12
-Task 2: Edit canvas app .................................................................................................................. 13
-Exercise 3 – Add Code Component to Solution................................................................................... 20
-Task 1: Add component to solution ................................................................................................ 20
-```
+Lab Scenario .............................................................................................................................................. 1
+
+Exercise 1 – Build Code Component ......................................................................................................... 1
+
+Task 1: Create the code component ..................................................................................................... 1
+
+Task 2: Implement the component logic .............................................................................................. 6
+
+Task 3: Confirm the control was added to environment .................................................................... 12
+
+Exercise 2 – Use Code Component ......................................................................................................... 12
+
+Task 1: Allow Power Apps component framework ............................................................................. 12
+
+Task 2: Edit canvas app ....................................................................................................................... 13
+
+Exercise 3 – Add Code Component to Solution ...................................................................................... 20
+
+Task 1: Add component to solution .................................................................................................... 20
+
 ### Lab Scenario
 
 Working as part of the PrioritZ fusion team you have been asked to create to create a Power Apps code
-component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
-a code component using the React JavaScript framework.
+ component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
+a code component using the React JavaScript framework. A code component approach is used to
+address the requirement because there isn’t a similar control already built-in.
 
 You have collaborated with the app makers to identify the following properties to allow them to
 configure the code component in the app:
 
-```
-^ BackgroundColor^
- DragBackgroundColor
-^ ItemHeight^
-^ FontSize^
-^ FontColor^
-```
+- BackgroundColor
+- DragBackgroundColor
+- ItemHeight
+- FontSize
+- FontColor
+
 The PrioritZ Ask app will prepare a collection of the items to rank that will be bound as the dataset for
 the code component. When an item is dragged and dropped the code component will raise an OnSelect
 event that will be handled by the hosting app. The hosting app will update the collection items with
@@ -47,7 +55,8 @@ In this exercise, you will build the code component.
 #### Task 1: Create the code component
 
 1. Start Visual Studio Code.
-2. Select the Power Platform tab and make sure your Dev Auth profile is selected.
+2. Select the Power Platform tab and make sure your Dev Auth profile is selected. NOTE: the Power
+    Platform tab is only available if you installed the Power Platform extension as explained in lab 1.
 
 
 3. Click **Terminal** and select **New Terminal.**
@@ -90,8 +99,8 @@ color" usage="input" of-type="SingleLine.Text" default-value="lightgreen"/>
 ```
 
 ```
-<property name="ItemHeight" display-name-key="Item height" usage="input"
-of-type="Whole.None" default-value="32"/>
+<property name="ItemHeight" display-name -key="Item height" usage="input"
+of- type="Whole.None" default-value="32"/>
 <property name="FontSize" display-name-key="Font size" usage="input" of-
 type="Whole.None" default-value="12"/>
 <property name="FontColor" display-name-key="Font color" usage="input" of-
@@ -113,7 +122,7 @@ type="SingleLine.Text" default-value="#333333"/>
 22. Paste the following css into the **PrioritZDnDRanking.css** file.
 
 ```
-.prioritydnd-scroll-container {
+.prioritydnd-scroll-c ontainer {
 box-sizing: border-box;
 padding: 2px;
 overflow-y: auto;
@@ -128,17 +137,15 @@ display: flex;
 align-items: center;
 }
 ```
-```
-.prioritydnd-item-column {
+. prioritydnd-item-column {
 margin: 8px;
 }
-```
 23. The file should now look like the following.
 
 
 24. Click **File** and save your changes.
 
-#### Task 2 : Implement the component logic
+#### Task 2: Implement the component logic
 
 1. Remove the HelloWorld.tsx component file that is automatically created as we won’t be using it.
 2. Go to the lab resources folder.
@@ -190,6 +197,7 @@ context.mode.trackContainerResize(true);
 19. Locate the **updateView** function.
 20. Replace **updateView** function with the function below. This logic creates the React Element
     from the PriorityComponent and adds it to the virtual DOM.
+ ```   
 public updateView(context: ComponentFramework.Context<IInputs>):
 React.ReactElement {
 const dataset = context.parameters.items;
@@ -199,7 +207,8 @@ height: context.mode.allocatedHeight,
 itemHeight: context.parameters.ItemHeight.raw,
 fontSize: context.parameters.FontSize.raw,
 fontColor: context.parameters.FontColor.raw,
-
+```
+    
 
 ```
 dataset: dataset,
@@ -394,7 +403,7 @@ Rank:If(Rank<>sourceRank,Rank+1,destinationRank)
 );
 ```
 30. Select the **Home Screen** and click **Play**.
-31. Select one of the topics.
+31. Select one of the **topics**.
 32. Make your browser widow smaller until it is the size of a phone screen.
 
 
@@ -404,7 +413,7 @@ Rank:If(Rank<>sourceRank,Rank+1,destinationRank)
 36. Click **File** and select **Save**.
 37. Click **Publish**.
 38. Select Publish this version and wait for the publish to be completed.
-39. You may close the canvas app studio.
+39. You may **close** the canvas app studio.
 
 
 ### Exercise 3 – Add Code Component to Solution
