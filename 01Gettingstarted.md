@@ -7,35 +7,35 @@
 
 ## Table of Contents
 
-**Lab Scenario .................................................................................................................................. 1**
+**Lab Scenario**
 
-Exercise 1 - Create Dev environment .......................................................................................... 1
+Exercise 1 - Create Dev environment 
 
-Task 1: Create dev environment .................................................................................................. 1
+Task 1: Create dev environment 
 
-Exercise 2 - Import starting solution ................................................................................................ 3
+Exercise 2 - Import starting solution 
 
-Task 1: Import solution .......................................................................................................... 3
+   Task 1: Import solution 
 
-Exercise 3 - Review solution components ........................................................................................... 4
+Exercise 3 - Review solution components 
 
-Task 1: Review solution components and run flow ................................................................................ 4
+   Task 1: Review solution components and run flow 
 
-Task 2: Test the apps .................................................................................................. 8
+   Task 2: Test the apps 
 
-Exercise 4 – Add a column for My Notes ......................................................................................... 12
+Exercise 4 – Add a column for My Notes 
 
-Task 1: Add a new column ........................................................................................... 12
+  Task 1: Add a new column 
 
-Task 2: Update admin app ....................................................................................................................... 13
+  Task 2: Update admin app 
 
-Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension .............................. 18
+Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension 
 
-Task 1: Install Node Package Manager .................................................... 18
+  Task 1: Install Node Package Manager 
 
-Task 2: Install Visual Studio Code ............................................................. 18
+  Task 2: Install Visual Studio Code 
 
-Task 3: Test the Power Platform CLI .................................................................................... 18
+  Task 3: Test the Power Platform CLI 
 
 
 ### Lab Scenario
