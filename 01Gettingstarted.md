@@ -7,23 +7,39 @@
 
 ## Table of Contents
 
-```
-Lab Scenario .............................................................................................................................................. 1
-Exercise 1 - Create Dev environment ........................................................................................................ 1
-Task 1: Create dev environment ........................................................................................................... 1
-Exercise 2 - Import starting solution ......................................................................................................... 3
-Task 1: Import solution ......................................................................................................................... 3
-Exercise 3 - Review solution components ................................................................................................ 4
-Task 1: Review solution components and run flow .............................................................................. 4
-Task 2: Test the apps ............................................................................................................................. 8
-Exercise 4 – Add a column for My Notes ................................................................................................ 13
-Task 1: Add a new column .................................................................................................................. 13
-Task 2: Update admin app .................................................................................................................. 13
-Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension ............................................ 18
-Task 1: Install Visual Studio Code ........................................................................................................ 18
-Task 2: Test the Power Platform CLI ................................................................................................... 18
-```
+**Lab Scenario .................................................................................................................................. 1**
+
+Exercise 1 - Create Dev environment .......................................................................................... 1
+
+Task 1: Create dev environment .................................................................................................. 1
+
+Exercise 2 - Import starting solution ................................................................................................ 3
+
+Task 1: Import solution .......................................................................................................... 3
+
+Exercise 3 - Review solution components ........................................................................................... 4
+
+Task 1: Review solution components and run flow ................................................................................ 4
+
+Task 2: Test the apps .................................................................................................. 8
+
+Exercise 4 – Add a column for My Notes ......................................................................................... 12
+
+Task 1: Add a new column ........................................................................................... 12
+
+Task 2: Update admin app ....................................................................................................................... 13
+
+Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension .............................. 18
+
+Task 1: Install Node Package Manager .................................................... 18
+
+Task 2: Install Visual Studio Code ............................................................. 18
+
+Task 3: Test the Power Platform CLI .................................................................................... 18
+
+
 ### Lab Scenario
+
 
 Working as part of the PrioritZ fusion team you will be setting up your Power Platform development
 environment. You will import the current solution and explore the current state of the PrioritZ apps,
@@ -99,7 +115,7 @@ sample data to your environment, and test the applications in the solution.
 9. Expand the Parse JSON step and review the data this flow will create.
 10. Expand the **Apply to each topic** step.
 11. Expand the **Apply to each topic item** step.
-12. The apply to each steps should look like the image below. This is the logic for the automation.
+12. The apply to each step should look like the image below. This is the logic for the automation.
 
 
 13. Click on the **<- back** button.
@@ -131,22 +147,20 @@ sample data to your environment, and test the applications in the solution.
 
 11. Select any image from your computer.
 12. Type something on the Choice filed and click add a picture.
-
-
 13. Click **+** to add the choice.
 14. Add couple more choices.
 15. Click **Save**.
+
+
 16. The new topic should be saved, and you should be navigated back to main screen.
-
-
 17. You should see the topic you added in the list of topics.
 18. Close the PrioritZ Admin application.
 19. Launch the **PrioritZ Ask** application.
 20. You should see a list of topics. Open the topic you created.
 21. Click on the up/down icons and order the items in the order you prefer them and click **Vote**.
+
+
 22. You should be navigated back to the main screens, and you should see a notification message.
-
-
 23. Close the PrioritZ Ask app.
 
 ### Exercise 4 – Add a column for My Notes
@@ -160,6 +174,8 @@ application.
 2. Select **Solutions** and open the **PrioritZ** solution.
 3. Expand **Tables** and select the **PrioritZ Topic** table.
 4. Select the **Columns** tab and click **+ Add column**.
+
+
 5. Enter **My Notes** for Display name, select **Multiline Text** for Data type, and click **Done**.
 6. Click **Save Table**.
 7. Do not navigate away from this page.
@@ -168,16 +184,16 @@ application.
 
 1. Make sure you are still in the **PrioritZ** solution.
 2. Select **Apps** and click to open the **PrioritZ Admin** application.
-
-
 3. Select the **Add Topic Screen**.
 4. Select the **Insert** tab, click **Text** , and then select **Text input**.
+
+
 5. Rename the text input **Notes textbox**.
 6. Make the add picture control smaller if needed and move the respond by and label textbox
     down and place the Notes textbox between the Details control and the Respond by label.
 
 
-7. Select Notes textbox.
+7. Select Notes **textbox**.
 8. Change the **HintText** value of the Notes textbox to **My notes**.
 9. Change the **Mode** to **TextMode.MultiLine**.
 10. Select **Save topic icon**.
@@ -191,8 +207,8 @@ Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes':
 textbox'.Text,'Respond By':'respond by date
 picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('P
 rioritz Topic Items',Defaults('Prioritz Topic
-Items'),{Choice:ThisRecord.Choice,'PrioritZ
-Topic':newTopic,Photo:ThisRecord.Photo}));Back()
+Items'),{Choice:ThisRecord.choice,'PrioritZ
+Topic':newTopic,Photo:ThisRecord.photo}));Back()
 ```
 12. Select the **View Topic Screen**.
 13. Go to the **Insert** tab and click **Label**.
@@ -205,27 +221,28 @@ Topic':newTopic,Photo:ThisRecord.Photo}));Back()
 17. Select the **Home Screen** and click **Preview the app**.
 18. Click **+**.
 19. Fill out the form, add some choices, and then click **Save**.
-20. The new topic should be saved.
+20. The new topic should be **saved**.
 21. Click to open the topic you just created.
 22. The notes should now be shown.
 
 
-23. Close the app preview.
+23. Close the app **preview**.
 24. Click **File** and select **Save**.
 25. Click **Publish**.
 26. Select Publish this version and wait for the publishing to complete.
-27. You may close the app designer.
+27. You may close the **app designer**.
 
 ### Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension
 
-In this exercise, you will install Visual Studio Code and Power Platform CLI.
+In this exercise, you will install Visual Studio Code and Power Platform CLI. These tools are used in the
+labs in this course.
 
 #### Task 1: Install Node Package Manager
 
 1. Install Npm and Node.js We recommend that you use LTS (Long-Term Support) version 16.14.
     or higher.
 
-#### Task 2 : Install Visual Studio Code
+#### Task 2: Install Visual Studio Code
 
 2. Navigate to Visual Studio Code
 3. Download Visual Studio Code and install it if you don’t already have it installed.
@@ -234,7 +251,7 @@ In this exercise, you will install Visual Studio Code and Power Platform CLI.
 6. Click Continue.
 7. Wait for the Power Platform Tools to be installed.
 
-#### Task 3 : Test the Power Platform CLI
+#### Task 3: Test the Power Platform CLI
 
 1. Navigate to Power Platform admin center and select **Environments**.
 2. Click to open your dev environment you created.
