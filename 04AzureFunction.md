@@ -1,47 +1,46 @@
-##### Microsoft Power Platform
+#### Microsoft Power Platform
 
 # Dev in a day
 
-##### Lab 04 Azure Function/ May 2022
-
-### Julie Yack
-
-### [Date]
+#### Lab 04 Azure Function/ May 2022
 
 
 ## Table of Contents
 
-Lab Scenario ........................................................................................................................................ 1
 
-Exercise 1 – Create Azure Function ...................................................................................................... 1
+Lab Scenario .............................................................................................................................................. 1
 
-Task 1: Install Azure tools extension ................................................................................................. 1
+Exercise 1 – Create Azure Function........................................................................................................... 1
 
-Task 2: Create function .................................................................................................................... 2
+Task 1: Install Azure tools extension ..................................................................................................... 1
 
-Exercise 2 - Function implementation .................................................................................................. 4
+Task 2: Create function ......................................................................................................................... 2
 
-Task 1: Implement function ............................................................................................................. 4
+Exercise 2 - Function implementation ...................................................................................................... 4
 
-Exercise 3 – Publish to Azure ............................................................................................................... 9
+Task 1: Implement function .................................................................................................................. 4
 
-Task 1: Publish ................................................................................................................................. 9
+Exercise 3 – Publish to Azure .................................................................................................................... 9
 
-Task 2: Register Connector Client app ............................................................................................ 15
+Task 1: Publish ....................................................................................................................................... 9
 
-Exercise 3 – Create Connector ........................................................................................................... 17
+Task 2: Register Connector Client app ................................................................................................ 16
 
-Task 1: Create connector ............................................................................................................... 17
+Exercise 3 – Create Connector ................................................................................................................ 17
 
-Task 2: Test connector ................................................................................................................... 20
+Task 1: Create connector .................................................................................................................... 17
 
-Exercise 6 – Use Function from Canvas App ....................................................................................... 22
+Task 2: Test connector ........................................................................................................................ 21
 
-Task 1: Use function ....................................................................................................................... 22
+Exercise 4 – Use Function from Canvas App ........................................................................................... 22
 
-Task 2: Test application .................................................................................................................. 25
+Task 1: Use function ............................................................................................................................ 22
 
-#### Lab Scenario
+Task 2: Test application ....................................................................................................................... 25
+
+
+
+### Lab Scenario
 
 Working as part of the PrioritZ fusion team you will be configuring a custom connector for a new API you
 build using Azure Functions. The team has decided to move the logic when a user creates a new “ask” to
@@ -53,13 +52,13 @@ connector.
 Note: This lab requires an Azure subscription (or trial) in the same tenant as your Dataverse
 environment.
 
-#### Exercise 1 – Create Azure Function
+### Exercise 1 – Create Azure Function
 
 In this exercise, you install Azure tools extension for Visual Studio Code and create the function
 
-##### Task 1: Install Azure tools extension
+#### Task 1: Install Azure tools extension
 
-1. Start Visual Studio Code.
+1. Start **Visual Studio Code**.
 2. Select the **Extensions** tab.
 3. Search for Azure and click **Install Azure Tools**.
 
@@ -70,7 +69,7 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 7. Go to the terminal and run the command below to create new folder.
     md ContosoFunctions
 
-##### Task 2: Create function
+#### Task 2: Create function
 
 1. Select **Azure Tool** , go to the **Functions** section, and click **Create New Project**.
 
@@ -83,23 +82,24 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 7. Enter **Contoso.PrioritZ** for namespace and [ENTER]
 8. Select **Anonymous** for AccessRights. Later we will protect the function using Azure AD.
 9. Select **Open in current window.**
-10. Your function should open in Visual Studio Code.
+10. Your function should open in **Visual Studio Code** .
 11. Click **Terminal** and select **Run Build Task**.
 
 
 12. The build should succeed.
-13. Go to Terminal and press any key close it.
+13. Go to Terminal and **press any key close it** .
 
-#### Exercise 2 - Function implementation
+### Exercise 2 - Function implementation
 
 In this exercise, you will implement the function.
 
-##### Task 1: Implement function
+#### Task 1: Implement function
 
 1. Click **New file**.
 2. Name the new file **Model.cs**
 3. Open the new **Model.cs** file and paste the code below. This will define the data that will be sent
     from the Power App.
+```
 using System;
 using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.OpenApi.Models;
@@ -111,7 +111,7 @@ public string Choice { get; set; }
 public string Photo { get; set; }
 }
 public class TopicModel
-
+```
 
 ```
 {
@@ -128,6 +128,7 @@ public TopicItemModel[] Choices {get;set;}
 4. Open the **CreateTopic** file.
 5. Locate the Run method attributes and replace them with the attributes below. This provides
     user friendly names when we create a connector to use the API.
+```
 [FunctionName("CreateTopic")]
 [OpenApiOperation(operationId: "CreateTopic", tags: new[] { "name" }, Summary =
 "Create Topic", Description = "Create Topic", Visibility =
@@ -138,7 +139,9 @@ OpenApiSecurityLocationType.Query)]
 "application/json", bodyType: typeof(Guid), Description = "The Guid response")]
 [OpenApiRequestBody(contentType: "application/json", bodyType:
 typeof(TopicModel))]
+```
 6. Remove **get** from the Run method. You should only have post.
+
 7. Go to the **Terminal** and add **Power Platform Dataverse Client** package.
 
 ```
@@ -166,6 +169,7 @@ using Microsoft.Xrm.Sdk;
 12. Add the below method after the Run method. This method will use the token passed from the
     calling app to get a new token that will allow the function to use the Dataverse API on behalf of
     the calling user.
+```
 public static async Task<string> GetAccessTokenAsync(HttpRequest req,string
 resourceUri)
 {
@@ -182,27 +186,25 @@ token = authHeader[0].Substring(7, authHeader[0].Length -
 }
 }
 
-```
-string[] scopes = new[] {$"{resourceUri}/.default" };
-```
 
-```
+string[] scopes = new[] {$"{resourceUri}/.default" };
+
 string clientSecret =
 Environment.GetEnvironmentVariable("ClientSecret");
 string clientId = Environment.GetEnvironmentVariable("ClientID");
-```
-```
+string tenantId = Environment.GetEnvironmentVariable("TenantID");
+
 var app = ConfidentialClientApplicationBuilder.Create(clientId)
 .WithClientSecret(clientSecret)
+.WithAuthority($"https://login.microsoftonline.com/{tenantId}")
 .Build();
-```
-```
+
+
 //Get On Behalf Of Token for calling user
 UserAssertion userAssertion = new UserAssertion(token);
 var result = await app.AcquireTokenOnBehalfOf(scopes,
 userAssertion).ExecuteAsync();
-```
-```
+
 return result.AccessToken;
 }
 ```
@@ -227,58 +229,57 @@ throw new Exception("Authentication Failed!");
 ```
 14. Add the following code after the if statement of the **Run** method to reserialize the request. This
     will get us the data passed from the caller.
+```
 string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
 var data = JsonConvert.DeserializeObject<TopicModel>(requestBody);
-15. Add the code below that will create the row to the **Run** method. This code creates the rows in
-    Dataverse and is where we might add more logic in the future.
-
 
 ```
+
+15. Add the code below that will create the row to the **Run** method. This code creates the rows in
+    Dataverse and is where we might add more logic in the future.
+ ```
 var ask = new Entity("contoso_prioritztopic");
 ask["contoso_topic"] = data.Topic;
 ask["contoso_details"] = data.Details;
 ask["contoso_mynotes"] = data.MyNotes;
 ask["contoso_respondby"] = data.RespondBy.Date;
 if (data.Photo != null)
-{
+ {
 // Remove unnecessary double quotes,
 // Remove everything before the first comma (embedded stuff)
-ask["contoso_photo"] =
+ ask["contoso_photo"] =
 Convert.FromBase64String(data.Photo.Trim('\"').Split(',')[1]);
-}
+ }
 var topicId = await serviceClient.CreateAsync(ask);
-```
-```
 foreach (var choice in data.Choices)
 {
-var item = new Entity("contoso_prioritztopicitem");
-item["contoso_choice"] = choice.Choice;
-item["contoso_prioritztopic"] = new
+ var item = new Entity("contoso_prioritztopicitem");
+ item["contoso_choice"] = choice.Choice;
+ item["contoso_prioritztopic"] = new
 EntityReference("contoso_prioritztopic", topicId);
 if (choice.Photo != null)
-{
-item["contoso_photo"] =
+ {
+ item["contoso_photo"] =
 Convert.FromBase64String(choice.Photo.Trim('\"').Split(',')[1]);
+ }
+ var choiceId = await serviceClient.CreateAsync(item);
 }
-```
-```
-var choiceId = await serviceClient.CreateAsync(item);
-}
+
 ```
 16. Return the topic id as JSON (required by Power Apps). Add the code below to the **Run** method.
 
 ```
-return new OkObjectResult(topicId);
+r eturn new OkObjectResult(topicId);
 ```
 17. Click **Terminal** and select **Run Build Task**.
 18. The run should succeed. Press any key to stop.
 
 
-#### Exercise 3 – Publish to Azure
+### Exercise 3 – Publish to Azure
 
 In this exercise, you will deploy the function to Azure.
 
-##### Task 1: Publish
+#### Task 1: Publish
 
 1. Select **Azure Tools**.
 2. Click **Deploy to Function App**.
@@ -296,7 +297,7 @@ In this exercise, you will deploy the function to Azure.
 
 13. Select **Authentication** and click **Add identity provider.**
 14. Select **Microsoft** for Identity provider,
-15. Select **Multi-tenant** and click **Add**.
+15. Select **Current tenant - Single tenant** and click **Add**.
 16. Go to the **Portal menu** page of Azure portal.
 17. Select **Azure Active Directory**.
 
@@ -333,81 +334,91 @@ In this exercise, you will deploy the function to Azure.
 36. Click **+ New application setting** again.
 37. Enter **ClientSecret** for Name.
 38. Go to your notepad and copy the **PrioritZFL API Secret**.
-39. Click **+ New application setting** one more time.
-40. Enter **DataverseURL** for Name.
-41. Start a new browser window or tab and navigate to Power Platform admin center and select
+39. Go back to the portal, paste the secret you copied in the **Value** field, and click **OK**.
+40. Click **+ New application setting** again.
+41. Enter **TenantID** for Name.
+42. Go to your notepad and copy the **Tenant ID**.
+43. Go back to the portal, paste the Tenant ID you copied in the **Value** field, and click **OK**.
+
+
+44. Click **+ New application setting** one more time.
+45. Enter **DataverseURL** for Name.
+46. Start a new browser window or tab and navigate to Power Platform admin center and select
     **Environments**.
-42. Click to open the Dev environment you are using for this lab.
-
-
-43. Copy the **Environment URL**.
-44. Go back to the portal, paste the URL you copied in the **Value** field, and click **OK**.
-45. You should see the three application settings you added. Click **Save**.
-46. Click **Continue**.
-47. Navigate to https://login.microsoftonline.com/{tenant id}/adminconsent?client_id={api app id}
+47. Click to open the Dev environment you are using for this lab.
+48. Copy the **Environment URL**.
+49. Go back to the portal, paste the URL you copied in the **Value** field, and click **OK**.
+50. You should see the four application settings you added. Click **Save**.
+51. Click **Continue**.
+52. Navigate to https://login.microsoftonline.com/{tenant id}/adminconsent?client_id={api app id}
     Replace {tenant id} and {api app id} with tenant id and PrioritZFL API application ID from your
-    notepad. If you are not a tenant administrator, you will need to work with your administrator to
-    consent.
-48. Click **Accept**.
 
-##### Task 2: Register Connector Client app
 
-1. Click on the **Port menu** and select **Azure Active Directory**.
+```
+notepad. If you are not a tenant administrator, you will need to work with your
+trainer/administrator to consent.
+```
+53. Click **Accept**.
+
+#### Task 2: Register Connector Client app
+
+1. Click on the **Portal menu** and select **Azure Active Directory**.
 2. Select **App registrations** and click **+ New registration**. This application registration will be used
     for the connector to access the protected API.
-3. Enter **PrioritZConnector<Initials>** for Name, select **Multitenant** , select **Web** for Redirect URI,
-    enter https://global.consent.azure-apim.net/redirect and click **Register**.
-
-
+3. Enter **PrioritZConnector<Initials>** for Name, select **Accounts in this organizational directory**
+    **only** , select **Web** for Redirect URI, enter https://global.consent.azure-apim.net/redirect and
+    click **Register**.
 4. Copy the **Application (client) ID** and keep it in a notepad as **PrioritZFL Connector application ID**.
 5. Select **Certificates & secrets** and click **+ New client secret**.
 6. Provide a description, select **3 months** , and click **Add**.
 7. Copy the secret **Value** and keep it on a notepad as **PrioritZFL Connector Secret**.
 8. Select **API permissions** and click **+ Add a permission**.
+
+
 9. Select the **My APIs** tab and select **PrioritZFL**.
-
-
 10. Check the **user_impersonation** checkbox and click **Add permission**.
 
-#### Exercise 3 – Create Connector
+### Exercise 3 – Create Connector
 
 In this exercise, you will create a new custom connector.
 
-##### Task 1: Create connector
+#### Task 1: Create connector
 
 1. Navigate to https://portal.azure.com/
 2. Select **All resources** , search for the function app you deployed and click to open it.
 3. Copy the **URL**.
+
+
 4. Open a new browser tab or window and paste the URL you copied.
 5. Add **/api/swagger.json** to the end of the URL and [ENTER]
-
-
 6. Click **Accept** if prompted for permissions.
 7. Right click on the swagger and select **Save as**.
 8. Save the file on your local machine.
 9. Navigate to Power Apps maker portal and make sure you have the correct Dev environment
     selected.
 10. Expand **Data** and select **Custom Connectors**.
+
+
 11. Click on the chevron button next to the New custom connector and select **Import an OpenAPI**
     **file**.
-
-
 12. Enter **PrioritZ Connector** for name and click **Import**.
 13. Select the swagger file you saved and click **Open**.
 14. Click **Continue**.
 15. Provide Description and advance to **Security**.
+
+
 16. Select **OAuth 2.0** for Authentication type.
-
-
 17. Select **Azure Active Directory** Identity provider.
 18. Copy the **PrioritZFL Connector application ID** from your notepad and paste it in the **Client id**
     field.
 19. Copy the **PrioritZFL Connector Secret** your notepad and paste it in the **Client secret** field.
-20. Copy the **PrioritZFL API application ID** from your notepad and paste it in the **Resource URL** field.
-21. Enter **true** for Enable on-behalf-of login.
-22. Click **Create connector**.
+20. Copy the **Tenat ID** from your notepad and replace common with it in the **Tenant ID** field.
+21. Copy the **PrioritZ API application ID** from your notepad and paste it in the **Resource URL** field.
+22. Enter **true** for Enable on-behalf-of login.
+23. Click **Create connector**.
 
-##### Task 2: Test connector
+
+#### Task 2: Test connector
 
 1. Select the **Test** tab.
 2. Click **+ New connection**.
@@ -415,54 +426,51 @@ In this exercise, you will create a new custom connector.
 4. Provide your credentials.
 5. Click **Accept**.
 6. Select **Custom connectors** and click **Edit** on the **PrioritZ connector**.
-
-
 7. Select the **Test** tab.
 8. Make sure the connection you created is selected.
 9. Turn on **Raw Body.**
 10. Provide the JSON below and click **Test operation**.
+```
+    {
+    "topic": "Test Topic",
+    "details": "From Azure Function",
+    "respondBy": "2022-11-01",
+    "myNotes": "It worked",
+    "choices": [
+    {
+    "choice": "Choice 1"
+    }
+    ]
+    }
+```
 
-```
-{
-"topic": "Test Topic",
-"details": "From Azure Function",
-"respondBy": "2022- 11 - 01",
-"myNotes": "It worked",
-"choices": [
-{
-"choice": "Choice 1"
-}
-]
-}
-```
 11. The operation test should succeed, and the response should look like the image below.
 
+##### .
 
-###### .
-
-#### Exercise 6 – Use Function from Canvas App
+### Exercise 4 – Use Function from Canvas App
 
 In this exercise, you will use then Azure function you created via the custom connector from the PrioritZ
 Admin canvas application.
 
-##### Task 1: Use function
+#### Task 1: Use function
 
-1. Navigate to Power Apps maker portal and make sure you are in correct environment.
+1. Navigate to Power Apps maker portal a nd make sure you are in correct environment.
 2. Select Apps, select the **PrioritZ Admin** application and click **Edit**.
+
+
 3. Select **Data** , click **+ Add data** , search for prioritz connector, and select the **PrioritZ Connector**
     you created.
-
-
 4. Add the connector by clicking again.
 5. Click on the **... More actions** button of the connector you just added and select **Rename**.
 6. Rename the connector **PrioritZFunction**.
+
+
 7. Select the **Tree view** and expand the **Add Topic Screen**.
 8. Select the **Add choice icon**.
 9. Replace the **OnSelect** formula of the **Add choice icon** with the formula below. This adjusts the
     column names to match the API and encodes the photos.
-
-
-```
+```    
 Collect(
 colAddChoices,
 {
@@ -477,9 +485,11 @@ JSONFormat.IncludeBinaryData
 Reset('Choice name textbox');
 Reset(AddMediaButton2)
 ```
+
 10. Select **Save topic icon**.
 11. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. This changes to
     have the API create the “ask”.
+```    
 Set(returnGuid, PrioritZFunction.CreateTopic({
 topic: 'Topic name textbox'.Text,
 details: 'Topic details textbox'.Text,
@@ -490,26 +500,28 @@ choices: ShowColumns(colAddChoices, "choice", "photo")
 }));
 Notify("Topic created! " & returnGuid, NotificationType.Success, 5000);
 Back();
-
-
+```
+    
 12. Click **File** and select **Save**.
 13. Click on the  back button.
 14. Do not navigate away from this page.
 
-##### Task 2 : Test application
+#### Task 2: Test application
 
 1. Select the **Home Screen** and click **Preview the app**.
+
+
 2. Click on the **+** add button.
 3. Enter **Function Test** for Topic, **Testing the function** for Details. **Note for testing the function** for
     Note, select a date for Response by, and click **add a picture**.
 4. Select any small image from your local machine.
 5. Enter **Test choice one** for Choice and click **add a picture**.
 6. Select any small image from your machine and click **+**.
-
-
 7. Enter **Test choice two** for Choice and click **add a picture**.
 8. Select any image from your machine and click **+**.
 9. Click **Save**.
+
+
 10. The new topic should be saved, and you should be navigated back to the main screen.
 11. Locate the new topic you created and open it.
 12. You should see the two choices you added to topic.
