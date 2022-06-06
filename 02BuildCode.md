@@ -380,9 +380,7 @@ With({
 sourceRank:First(Self.SelectedItems).Rank,
 destinationRank:Last(Self.SelectedItems).Rank
 },
-```
 
-```
 If(sourceRank<destinationRank,
 // Moving Up
 UpdateIf(colVotes,Rank>=sourceRank && Rank<=destinationRank,
@@ -390,11 +388,9 @@ UpdateIf(colVotes,Rank>=sourceRank && Rank<=destinationRank,
 Rank:If(Rank<>sourceRank,Rank-1,destinationRank)
 }
 );
-```
-```
+
 );
-```
-```
+
 If(sourceRank>destinationRank,
 // Moving Down
 UpdateIf(colVotes,Rank>=destinationRank && Rank<=sourceRank,
@@ -402,8 +398,6 @@ UpdateIf(colVotes,Rank>=destinationRank && Rank<=sourceRank,
 Rank:If(Rank<>sourceRank,Rank+1,destinationRank)
 }
 );
-```
-```
 );
 );
 ```
