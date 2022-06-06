@@ -58,7 +58,7 @@ connectors must be in a separate solution from the apps and flows that use them.
 
 #### Task 1: Create solution
 
-1. Navigate to Power Apps maker portal and make sure you are in your dev environment.
+1. Navigate to [Power Apps](https://powerapps.microsoft.com/en-in/) maker portal and make sure you are in your dev environment.
 2. Select **Solutions** and click **+ New solution**.
 3. Enter **Contoso Badges connector** for Display name, select **Contoso Coffee** for Publisher, and
     click **Create**.
@@ -77,7 +77,7 @@ In this exercise, you will create a custom connector from an existing API.
 3. Do a quick review of the Open API definition.
 4. Right click on the page and select **Save as**.
 5. Save the **swagger.json** file on your machine.
-6. Navigate to Power Apps maker portal and make sure you are in your dev environment.
+6. Navigate to [Power Apps](https://powerapps.microsoft.com/en-in/) maker portal and make sure you are in your dev environment.
 7. Select **Solutions** open the **Contoso Badges connector** solution you created.
 8. Click **+ New | Automation** and select **Custom connector**.
 9. Enter **Badges connector** for Connector name, **Connector for badges** for Description,
@@ -153,7 +153,7 @@ You will do this by using the custom code feature to reshape the response from t
 
 #### Task 1: Add code from resource folder
 
-1. Navigate to Power Automate
+1. Navigate to [Power Automate](https://powerplatform.microsoft.com/en-us/power-automate/)
 2. Expand **Data** and select **Custom connectors**.
 3. Click the **Edit** button of the custom connector you created.
 4. Select the **Definition** tab and click **New action**.
@@ -211,7 +211,7 @@ In this exercise, you will test the custom connector you created using a flow an
 In this task, you will use the custom connector you created to show the user’s current badge on the
 PrioritZ Ask canvas application.
 
-6. Navigate to Power Apps maker portal and make sure you are in your dev environment.
+6. Navigate to [Power Apps](https://powerapps.microsoft.com/en-in/) maker portal and make sure you are in your dev environment.
 7. Expand **Solutions** and open the **PrioritZ** solution.
 8. Select **Apps** , select the **PrioritZ Ask** application, and click **Edit**.
 
@@ -298,7 +298,7 @@ environment and import it to Test environment.
 
 #### Task 1: Export solution.
 
-1. Navigate to Power Apps maker portal and make sure you are in your dev environment.
+1. Navigate to [Power Apps](https://powerapps.microsoft.com/en-in/) maker portal and make sure you are in your dev environment.
 2. Select **Solutions**.
 3. Select the **Contoso Badges connector** solution and click **Export**.
 4. Click **Publish** and wait for the publishing to complete.
@@ -308,7 +308,7 @@ environment and import it to Test environment.
 
 #### Task 1: Import solution
 
-1. Navigate to Power Apps maker portal and select your **Test** environment.
+1. Navigate to [Power Apps](https://powerapps.microsoft.com/en-in/) maker portal and select your **Test** environment.
 2. Select **Solutions**.
 3. Click **Import**.
 
