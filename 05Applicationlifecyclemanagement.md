@@ -8,25 +8,25 @@
 ## Table of Contents
 
 
-Lab Scenario .............................................................................................................................................. 1
+Lab Scenario 
 
-Exercise 1 – Configure a Service Principal ................................................................................................. 1
+Exercise 1 – Configure a Service Principal 
 
-Task 1: Create app registration ............................................................................................................. 1
+Task 1: Create app registration 
 
-Task 2: Create app user in Dataverse .................................................................................................... 3
+Task 2: Create app user in Dataverse 
 
-Exercise 2 – Create GitHub Repo .............................................................................................................. 5
+Exercise 2 – Create GitHub Repo 
 
-Task 1: Create repository ...................................................................................................................... 5
+Task 1: Create repository 
 
-Exercise 3 – Export and Branch ................................................................................................................. 7
+Exercise 3 – Export and Branch 
 
-Task 1: Export and branch ..................................................................................................................... 7
+Task 1: Export and branch 
 
-Exercise 4 – Release to Test .................................................................................................................... 13
+Exercise 4 – Release to Test 
 
-Task 1: Create workflow...................................................................................................................... 13
+Task 1: Create workflow
 
 ### Lab Scenario
 
@@ -63,7 +63,7 @@ In this task, you will be registering the app you created in Azure Active Direct
 Dataverse environments. You will also be assigning a security role that will allow the service principal to
 deploy solutions.
 
-1. Navigate to [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/)
+1. Navigate to Power Platform Admin Center https://admin.powerplatform.microsoft.com/
 2. Select **Environments**.
 3. Select your **Dev** environment and click **Settings**.
 4. Expand **Users + permissions** and select **Application users**.
