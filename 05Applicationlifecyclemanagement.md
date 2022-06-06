@@ -176,6 +176,7 @@ default: solutions/
 7. Setup the workflow. Add below YAML snippet after the last snippet. This sets up the jobs and
     identifies the first job as export-from-dev. This also defines the steps with the first one checking
     out the current main branch content.
+```
 jobs:
 export-from-dev:
 runs-on: windows-latest
@@ -183,6 +184,7 @@ steps:
 - uses: actions/checkout@v
 with:
 lfs: true
+```
 8. Next you will export both an unmanaged and managed solution file from your dev environment.
 9. Export the unmanaged solution. Add below snippet after the last snippet.
 ```
