@@ -10,35 +10,35 @@
 
 Lab Scenario 
 
-Exercise 1 – Configure a Service Principal 
+1. Exercise 1 – Configure a Service Principal 
 
-Task 1: Create app registration 
+ - Task 1: Create app registration 
 
-Task 2: Create app user in Dataverse 
+ - Task 2: Create app user in Dataverse 
 
-Exercise 2 – Create GitHub Repo 
+2. Exercise 2 – Create GitHub Repo 
 
-Task 1: Create repository 
+ - Task 1: Create repository 
 
-Exercise 3 – Export and Branch 
+3. Exercise 3 – Export and Branch 
 
-Task 1: Export and branch 
+ - Task 1: Export and branch 
 
-Exercise 4 – Release to Test 
+4. Exercise 4 – Release to Test 
 
-Task 1: Create workflow
+ - Task 1: Create workflow
 
 ### Lab Scenario
 
 Working as part of the PrioritZ fusion team you will be configuring GitHub Actions using the Power
 Platform Build Tools to automate the team’s deployments.
 
-### Exercise 1 – Configure a Service Principal
+## Exercise 1 – Configure a Service Principal
 
 In this exercise, you will create service principal. The service principal will be used by the workflow
 actions, so they don’t execute under your individual user identity.
 
-#### Task 1: Create app registration
+### Task 1: Create app registration
 
 1. Navigate to https://portal.azure.com/
 2. Select **Azure active directory**.
@@ -67,7 +67,7 @@ actions, so they don’t execute under your individual user identity.
 
    
    
-#### Task 2: Create app user in Dataverse
+### Task 2: Create app user in Dataverse
 
 In this task, you will be registering the app you created in Azure Active Directory into the dev and test
 Dataverse environments. You will also be assigning a security role that will allow the service principal to
@@ -118,11 +118,11 @@ deploy solutions.
 22. Select **Environments** and click to open the **Test** environment.
 23. Copy the **Environment URL** and keep it on a notepad, you will this URL in future steps.
 
-### Exercise 2 – Create GitHub Repo
+## Exercise 2 – Create GitHub Repo
 
 In this exercise, you will create a GitHub repository and add repository secrets.
 
-#### Task 1: Create repository
+### Task 1: Create repository
 
 1. Navigate to https://github.com/
 2. **Sign in** or signup for GitHub.
@@ -162,7 +162,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 In this exercise, you will setup a workflow action, and add steps that will export the solution from dev
 environment and create a new branch.
 
-#### Task 1: Export and branch
+### Task 1: Export and branch
 
 In this task you will create the workflow definition using the YAML provided. The action YAML uses two
 space indentation so follow that carefully as you build the workflow definition. If in doubt, review the
@@ -316,7 +316,7 @@ managed: true
 In this exercise, you will create a workflow action and add steps that will release the solution you
 exported to the test environment.
 
-#### Task 1: Create workflow
+### Task 1: Create workflow
 
 1. Select the **Actions** tab.
 2. Click **New workflow**.
