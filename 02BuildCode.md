@@ -341,7 +341,7 @@ npm start
 30. The test harness should start. Try dragging the items and see if the behavior functions as
     expected.
 
- <img src="images/L02/image29.png">
+ <img src="images/L02/imagee29.png">
  
  31. Close the test harness.
 32. Stop the run by holding the **[CONTROL]** key + **C**.
