@@ -343,6 +343,8 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
 
 1. Make sure you are still in the **PrioritZ** solution.
 2. Click **+ New** and select **Automation | Cloud flow | Instant**.
+<img src="images/L03/image48.png">
+
 3. Enter **Test add credit** for flow name, select **Manually trigger a flow** , and click **Create**.
 
 <img src="images/L03/edd%20(1).png">
@@ -354,11 +356,11 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
 <img src="images/L03/edd%20(3).png">
 
 7. Click on the **recipientId** field, go to the Dynamic content pane, and select **User email**.
-<img src="images/L03/image48.png">
+<img src="images/L03/image49.png">
 
 8. Click on the **name** field, go to the Dynamic content pane, and select **User name**.
 9. Enter **1** for points and click **Save**. Wait for the flow to be saved.
-<img src="images/L03/image49.png">
+<img src="images/L03/image50.png">
 
 10. Click **Test**.
 11. Select **Manually** and click **Test** again.
@@ -369,26 +371,26 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
 14. Click **Done**.
 15. The flow run should succeed.
 16. Click on the  back button.
-<img src="images/L03/image50.png">
+<img src="images/L03/image51.png">
 
 17. Select **Cloud flows** and open the flow you created.
-<img src="images/L03/image51.png">
+<img src="images/L03/image52.png">
 
 18. Start a new browser window and navigate to Power Apps maker portal.
 19. Make sure you are the correct environment.
 20. Select **Apps** and launch the **PrioritZ Ask** application.
 21. The application should now show **First Badge**.
-<img src="images/L03/image52.png">
+<img src="images/L03/image53.png">
 
 22. Go back to flow and run it couple more times.
 23. Go back to the **PrioritZ Ask** application and refresh the page.
 24. You should now see the **Team Player** badge.
-<img src="images/L03/image53.png">
+<img src="images/L03/image54.png">
 
 25. Go to the flow and run it two more times.
 26. Go back to the **PrioritZ Ask** application and refresh the page.
 27. You should now see the **Champ** badge
-<img src="images/L03/image54.png">
+<img src="images/L03/image55.png">
 
 ### Exercise 5 – Promote Solution to Test Environment
 
@@ -403,7 +405,7 @@ environment and import it to Test environment.
 
 2. Select **Solutions**.
 3. Select the **Contoso Badges connector** solution and click **Export**.
-<img src="images/L03/image55.png">
+<img src="images/L03/image56.png">
 
 4. Click **Publish** and wait for the publishing to complete.
 5. Click **Next**.
@@ -418,7 +420,7 @@ environment and import it to Test environment.
 
 2. Select **Solutions**.
 3. Click **Import**.
-<img src="images/L03/image56.png">
+<img src="images/L03/image57.png">
 
 4. Click **Browse**.
 5. Select the solution you exported from the Dev environment and click **Open**.
@@ -431,28 +433,29 @@ environment and import it to Test environment.
 
 1. Click to open the solution you just imported.
 2. Click to open the **Badges connector**.
-<img src="images/L03/image57.png">
+<img src="images/L03/image58.png">
+
 
 3. Click **Edit**.
 4. Select the **Test** tab.
-<img src="images/L03/image58.png">
+<img src="images/L03/image59.png">
 
 5. Click **+ New connection**.
 6. Start a new browser window or tab and navigate to Contoso Coffee Badges
     (contosobadgestest.azurewebsites.net)
 7. Click on the **Get an API Key** link.
-<img src="images/L03/image59.png">
+<img src="images/L03/image60.png">
 
 8. Copy the **API Key.**
 9. Go back to the connector editor, paste the API Key you copied and click **Create connection**.
-<img src="images/L03/image60.png">
+<img src="images/L03/image61.png">
 
 10. Click **Refresh** connections.
-<img src="images/L03/image61.png">
+<img src="images/L03/image62.png">
 
 11. Go to the **Operations** section and select the **addcredit** operation.
 12. Provide your email for **recipientid** , provide a **name** , enter **1** for **points** , and click **Test operation**.
-<img src="images/L03/image62.png">
+<img src="images/L03/image63.png">
 
 13. The test should succeed, and the response should look like the image below.
 <img src="images/L03/image63.png">
