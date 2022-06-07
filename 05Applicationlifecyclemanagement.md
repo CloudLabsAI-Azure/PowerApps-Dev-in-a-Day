@@ -44,19 +44,29 @@ actions, so they don’t execute under your individual user identity.
 2. Select **Azure active directory**.
 3. Select **App registrations**.
 4. Click **+ New registration**.
-5. Enter **GitHub Deploy <Your Name>** e.g., **GitHub Deploy Lab Admin 1** for Name, select **Accounts**
+<img src="images/L05/Images%20(1).png">
+5. Enter **GitHub Deploy** . <Your Name> e.g., **GitHub Deploy** **Lab Admin 1** for Name, select **Accounts**
     **in this organizational directory only** for Supported account types, and click **Register**.
-
+<img src="images/L05/Images%20(2).png">
 
 6. Copy the **Application (client) ID** and the Directory (tenant) ID. Keep the ids in a notepad, you will
     need them in future steps.
+<img src="images/L05/Images%20(3).png">
+
 7. Select **Certificates and secrets**.
 8. Click **+ New client secret**.
+
+   
 9. Enter **Lab admin GitHub client secret** for Description, select **3 months** for Expires, and click **Add**.
-10. Copy the **Value** and save it on a notepad, you will need this value in future step. The value will
+<img src="images/L05/Images%20(4).png">   
+   
+ 10. Copy the **Value** and save it on a notepad, you will need this value in future step. The value will
     not show again after you leave this page.
 
+<img src="images/L05/Images%20(5).png">
 
+   
+   
 #### Task 2: Create app user in Dataverse
 
 In this task, you will be registering the app you created in Azure Active Directory into the dev and test
@@ -67,27 +77,44 @@ deploy solutions.
 2. Select **Environments**.
 3. Select your **Dev** environment and click **Settings**.
 4. Expand **Users + permissions** and select **Application users**.
+<img src="images/L05/Images%20(6).png">
+
+   
 5. Click **+ New app user**.
 6. Click **+ Add an app**.
-7. Select application registration you created and click **Add**.
+<img src="images/L05/Images%20(7).png">
+   
+   
+ 7. Select application registration you created and click **Add**.
 8. Select your Business unit and click **Create**. There should only be one unless you created more.
 9. Select the application user you just created and click **Edit security roles**.
-
+<img src="images/L05/Images%20(8).png">
 
 10. Select **System administrator** and click **Save**.
 11. Select **Environments** again.
 12. Select your **Test** environment and click **Settings**.
 13. Expand **Users + permissions** and select **Application users**.
+   
+   <img src="images/L05/Images%20(9).png">
+   
 14. Click **+ New app user**.
 15. Click **+ Add an app**.
+   
+   <img src="images/L05/Images%20(10).png">
+   
 16. Select application registration you created and click **Add**.
 17. Select your Business unit and click **Create**.
 18. Select the application user you just created and click **Edit security roles**.
 
 
 19. Select **System administrator** and click **Save**.
+   <img src="images/L05/Images%20(11).png">
+   
+   
 20. Select **Environments** and click to open the **Dev** environment.
 21. Copy the **Environment URL** and keep it on a notepad, you will use this URL in future steps.
+   <img src="images/L05/Images%20(12).png">
+   
 22. Select **Environments** and click to open the **Test** environment.
 23. Copy the **Environment URL** and keep it on a notepad, you will this URL in future steps.
 
@@ -103,10 +130,13 @@ In this exercise, you will create a GitHub repository and add repository secrets
 4. Enter **PrioritZ** for Repository name, select **Public** , check the **Add a README file** , and click **Create**
     **repository**.
 5. Click **Settings**.
-
+<img src="images/L05/Images%20(13).png">
 
 6. Go to the **Security** section, expand **Secrets** and select **Actions**. The values you provide will not be
     visible after you create the item so take your time to get the values correct.
+   
+   <img src="images/L05/Images%20(14).png">
+   
 7. Click **New repository secret**.
 8. Enter **PowerPlatformAppID** for Name and paste the **Application (client) ID** from your notepad
     in the **Value** field and click **Add secret**.
@@ -123,7 +153,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 16. Enter **PowerPlatformTestUrl** for Name and paste the secret **Test environment URL** from your
     notepad in the **Value** field and click **Add secret**.
 17. You should now have **5** repository secrets.
-
+<img src="images/L05/Images%20(15).png">
 
 18. Do not navigate away from this page.
 
@@ -140,9 +170,13 @@ indentation shown in the images.
 
 1. Select the **Actions** tab.
 2. Click **set up a workflow yourself**.
+<img src="images/L05/Images%20(16).png">
+   
 3. Change the file name to it **export-and-branch.yml**.
+ <img src="images/L05/Images%20(17).png">
+   
 4. Remove everything below the name line.
-
+<img src="images/L05/Images%20(18).png">
 
 5. Change the name to **export-and-branch**
 6. Add the below YAML snippet after the name line. This defines the action trigger and some input
@@ -172,7 +206,8 @@ description: 'folder name to be created and checked in *do not change*'
 required: true
 default: solutions/
 ```
-
+<img src="images/L05/Images%20(20).png">
+   
 7. Setup the workflow. Add below YAML snippet after the last snippet. This sets up the jobs and
     identifies the first job as export-from-dev. This also defines the steps with the first one checking
     out the current main branch content.
@@ -243,24 +278,33 @@ managed: true
     allow-empty-commit: true
 ```
 14. Click **Start commit** and then click **Commit new file**.
-
+<img src="images/L05/Images%20(26).png">
 
 15. Select the **Actions** tab and select the workflow you created.
 16. Click **Run workflow.**
+ <img src="images/L05/Images%20(27).png">
+   
 17. Click **Run workflow** again and wait for the workflow run to complete.
+<img src="images/L05/Images%20(28).png">
+   
 18. Select the **Code** tab.
 19. Select **Branches**. You should see two branches.
 20. Click to open the branch that was created by the workflow action.
-
+   <img src="images/L05/Images%20(29).png">
 
 21. You should see solution folder.
+<img src="images/L05/Images%20(30).png">   
+   
+   
 22. Click **Contribute** and select **Open pull request**.
+<img src="images/L05/Images%20(31).png">
+   
 23. Add description if you like and then click **Create pull request**.
 24. You should now see the pull request summary. Confirm that the branch has no conflicts with the
     main branch and that the changes can be merged into the main branch automatically.
 25. Click on the chevron button next to the **Merge pull request** button and select **Squash and**
     **merge**.
-
+<img src="images/L05/Images%20(32).png">
 
 26. Click **Squash and merge**.
 27. Click **Confirm squash and merge**.
@@ -277,9 +321,14 @@ exported to the test environment.
 1. Select the **Actions** tab.
 2. Click **New workflow**.
 3. Click **set up a workflow yourself**.
+<img src="images/L05/Images%20(33).png">   
+   
 4. Change the file name to it **release-to-test.yml**.
 5. Remove everything below the name line.
-6. Change the name to **release-to-test**
+<img src="images/L05/Images%20(34).png">  
+   
+   
+ 6. Change the name to **release-to-test**
 7. Add the following trigger. This will trigger on creation of a new release.
 
 
@@ -288,6 +337,9 @@ on:
 release:
 types: [created]
 ```
+<img src="images/L05/trigger.png">  
+   
+   
 8. Define constants. Add the below YAML snippet.
 
 ```
@@ -334,6 +386,11 @@ solution-type: Managed
     }}_unmanaged.zip
     solution-type: Unmanaged
 ```
+
+<img src="images/L05/Images%20(41).png"> 
+   
+   
+   
 12. Upload solution artifacts. Add the below YAML snippet.
 ```
 - name: Upload the unmanaged solution to GH artifact store
@@ -387,14 +444,19 @@ solution-file: ${{ env.solution_release_folder}}/${{ env.solution_name
 run-asynchronously: true
 ```
 16. Click **Start commit** and then click **Commit new file**.
-
+<img src="images/L05/Images%20(46).png"> 
 
 17. Select the **Code** tab.
 18. Go to the **Releases** section and click **Create new release**.
+<img src="images/L05/Images%20(47).png">    
+   
+   
 19. Click on the **Choose a tag** button, enter **v1.0.0** , and select **+ Create new tag on publish**.
+<img src="images/L05/Images%20(48).png">    
+
 20. Click **Publish release**.
 21. Select the **Actions** tab and monitor the workflow.
-
+<img src="images/L05/Images%20(49).png"> 
 
 22. The release should complete successfully.
 23. Check your test environment and you should see the solution deployed.
