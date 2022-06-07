@@ -79,7 +79,7 @@ PrioritZ apps, flows and Dataverse tables.
 
 ### Task 1: Import solution
 
-1. Navigate to Power Apps maker portal and make sure the development environment is selected.
+1. Navigate to Power Apps maker portal by using below URL and make sure the development environment is selected.
           
           https://make.powerapps.com/?utm_source=PAMarketing&utm_medium=header&utm_campaign=signin
 
