@@ -9,37 +9,37 @@
 
 Lab Scenario 
 
-Exercise 1 - Create Solution 
+1. Exercise 1 - Create Solution 
 
-Task 1: Create solution 
+ - Task 1: Create solution 
 
-Exercise 2 – Create Custom Connector 
+2. Exercise 2 – Create Custom Connector 
 
-Task 1: Download open API definition and create connector 
+ - Task 1: Download open API definition and create connector 
 
-Task 2: Modify the definition 
+ - Task 2: Modify the definition 
 
-Task 3: Test connector 
+ - Task 3: Test connector 
 
-Exercise 3 – Add Custom Code 
+3. Exercise 3 – Add Custom Code 
 
-Task 1: Add code from resource folder 
+ - Task 1: Add code from resource folder 
 
-Task 2: Test custom code 
+ - Task 2: Test custom code 
 
-Exercise 4 – Test Custom Connector 
+4. Exercise 4 – Test Custom Connector 
 
-Task 1: Test connector from canvas app
+ - Task 1: Test connector from canvas app
 
-Task 2: Test connector from flow 
+ - Task 2: Test connector from flow 
 
-Exercise 5 – Promote Solution to Test Environment 
+5. Exercise 5 – Promote Solution to Test Environment 
 
-Task 1: Export solution. 
+ - Task 1: Export solution. 
 
-Task 1: Import solution 
+ - Task 1: Import solution 
 
-Task 2: Test connector 
+ - Task 2: Test connector 
 
 ### Lab Scenario
 
@@ -53,12 +53,12 @@ When you review the API, you see that it has four operations and uses API key au
 
 <img src="images/L03/image1.png">
 
-### Exercise 1 - Create Solution
+## Exercise 1 - Create Solution
 
 In this exercise, you will create a solution for Contoso Badges custom connector. Currently, custom
 connectors must be in a separate solution from the apps and flows that use them.
 
-#### Task 1: Create solution
+### Task 1: Create solution
 
 1. Navigate to Power Apps maker portal and make sure you are in your dev environment. 
 
@@ -70,11 +70,11 @@ connectors must be in a separate solution from the apps and flows that use them.
     click **Create**.
 <img src="images/L03/image2.png">
 
-### Exercise 2 – Create Custom Connector
+## Exercise 2 – Create Custom Connector
 
 In this exercise, you will create a custom connector from an existing API.
 
-#### Task 1: Download open API definition and create connector
+### Task 1: Download open API definition and create connector
 
 1. Navigate to Contoso Coffee Badges (contosobadgestest.azurewebsites.net)
 2. Click on open the **Open API definition file** link.
@@ -116,7 +116,7 @@ In this exercise, you will create a custom connector from an existing API.
 16. Review the security configuration and advance to **Definition**.
 17. Do not navigate away from this page.
 
-#### Task 2: Modify the definition
+### Task 2: Modify the definition
 
 1. Select the **AddCredit** action.
 2. Select **Important** for Visibility.
@@ -145,7 +145,7 @@ In this exercise, you will create a custom connector from an existing API.
 
 14. Do not navigate away from this page.
 
-#### Task 3: Test connector
+### Task 3: Test connector
 
 1. Open a new browser tab or window and navigate to Contoso Coffee Badges 
      
@@ -187,12 +187,12 @@ In this exercise, you will create a custom connector from an existing API.
 <img src="images/L03/image23.png">
 
 
-### Exercise 3 – Add Custom Code
+## Exercise 3 – Add Custom Code
 
 In this exercise, you will add a new operation to only return the current badge name and image URL.
 You will do this by using the custom code feature to reshape the response from the API.
 
-#### Task 1: Add code from resource folder
+### Task 1: Add code from resource folder
 
 1. Navigate to Power Automate
          https://powerplatform.microsoft.com/en-us/power-automate/)
@@ -255,7 +255,7 @@ You will do this by using the custom code feature to reshape the response from t
 24. Click **Update connector** and wait for the connector to be updated.
 25. **Do not** navigate away from this page.
 
-#### Task 2: Test custom code
+### Task 2: Test custom code
 
 In this task, you will test your custom code.
 
@@ -269,11 +269,12 @@ In this task, you will test your custom code.
 
 5. The operation should succeed, and the response **Body** should look like the image below.
 <img src="images/L03/image37.png">
-### Exercise 4 – Test Custom Connector
+
+## Exercise 4 – Test Custom Connector
 
 In this exercise, you will test the custom connector you created using a flow and a canvas application.
 
-#### Task 1: Test connector from canvas app
+### Task 1: Test connector from canvas app
 
 In this task, you will use the custom connector you created to show the user’s current badge on the
 PrioritZ Ask canvas application.
@@ -339,7 +340,7 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
 
 30. Do not navigate away from this page.
 
-#### Task 2: Test connector from flow
+### Task 2: Test connector from flow
 
 1. Make sure you are still in the **PrioritZ** solution.
 2. Click **+ New** and select **Automation | Cloud flow | Instant**.
@@ -392,12 +393,12 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
 27. You should now see the **Champ** badge
 <img src="images/L03/image55.png">
 
-### Exercise 5 – Promote Solution to Test Environment
+## Exercise 5 – Promote Solution to Test Environment
 
 In this exercise, you will export the export the Contoso Badges connector solution from the Dev
 environment and import it to Test environment.
 
-####  Task 1: (i) Export solution.
+###  Task 1: (i) Export solution.
 
 1. Navigate to Power Apps  maker portal and make sure you are in your dev environment.
 
@@ -412,7 +413,7 @@ environment and import it to Test environment.
 6. Select **Managed** and click **Export**.
 7. Wait for the solution to be exported.
 
-####  Task 1: (ii) Import solution
+###  Task 1: (ii) Import solution
 
 1. Navigate to Power Apps  maker portal and select your **Test** environment.
 
@@ -429,7 +430,7 @@ environment and import it to Test environment.
 8. The solution should import successfully.
 9. **Do not** navigate away from this page.
 
-#### Task 2: Test connector
+### Task 2: Test connector
 
 1. Click to open the solution you just imported.
 2. Click to open the **Badges connector**.
