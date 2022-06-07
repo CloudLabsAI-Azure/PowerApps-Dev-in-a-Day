@@ -9,33 +9,33 @@
 
 **Lab Scenario**
 
-Exercise 1 - Create Dev environment 
+1. Exercise 1 - Create Dev environment 
 
-Task 1: Create dev environment 
+ - Task 1: Create dev environment 
 
-Exercise 2 - Import starting solution 
+2. Exercise 2 - Import starting solution 
 
-   Task 1: Import solution 
+ - Task 1: Import solution 
 
-Exercise 3 - Review solution components 
+3. Exercise 3 - Review solution components 
 
-   Task 1: Review solution components and run flow 
+ - Task 1: Review solution components and run flow 
 
-   Task 2: Test the apps 
+  - Task 2: Test the apps 
 
-Exercise 4 – Add a column for My Notes 
+4. Exercise 4 – Add a column for My Notes 
 
-  Task 1: Add a new column 
+ - Task 1: Add a new column 
 
-  Task 2: Update admin app 
+ - Task 2: Update admin app 
 
-Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension 
+5. Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension 
 
-  Task 1: Install Node Package Manager 
+ - Task 1: Install Node Package Manager 
 
-  Task 2: Install Visual Studio Code 
+ - Task 2: Install Visual Studio Code 
 
-  Task 3: Test the Power Platform CLI 
+ - Task 3: Test the Power Platform CLI 
 
 
 ### Lab Scenario
@@ -45,7 +45,7 @@ Working as part of the PrioritZ fusion team you will be setting up your Power Pl
 environment. You will import the current solution and explore the current state of the PrioritZ apps,
 flows and tables. You will be also adding a column to a table and modifying the app to use it.
 
-### Exercise 1 - Create Dev environment
+## Exercise 1 - Create Dev environment
 
 In this exercise, you will create a Power Platform developer environment. You will do all the
 development work for this course in this environment. You will also be assigned a test environment for
@@ -53,7 +53,7 @@ use in the ALM labs.
 
 **Note:** Do not use an existing environment.
 
-#### Task 1: Create dev environment
+### Task 1: Create dev environment
 
 1. Navigate to Power Apps Developer Plan
 2. Select **Add a dev environment**.
@@ -71,12 +71,12 @@ use in the ALM labs.
 
 <img src="images/L01/image3.png">
 
-### Exercise 2 - Import starting solution
+## Exercise 2 - Import starting solution
 
 In this exercise, you will import a solution into your dev environment. This solution contains the current
 PrioritZ apps, flows and Dataverse tables.
 
-#### Task 1: Import solution
+### Task 1: Import solution
 
 1. Navigate to Power Apps maker portal and make sure the development environment is selected.
 2. Select **Solutions** and click **Import**.
@@ -102,12 +102,12 @@ PrioritZ apps, flows and Dataverse tables.
 13. You should now see the solution you imported in the list of solutions.
 14. Do not navigate away from this page.
 
-### Exercise 3 - Review solution components
+## Exercise 3 - Review solution components
 
 In this exercise, you will review the components of the solution you imported, run a flow that will add
 sample data to your environment, and test the applications in the solution.
 
-#### Task 1: Review solution components and run flow
+### Task 1: Review solution components and run flow
 
 1. Review data model diagram
 
@@ -154,7 +154,7 @@ sample data to your environment, and test the applications in the solution.
 
 <img src="images/L01/image14.png">
 
-#### Task 2: Test the apps
+### Task 2: Test the apps
 
 1. Navigate to Power Apps maker portal and make sure the development environment is selected.
 2. Select **Apps**. You should see two applications. **PrioritZ Ask** and **PrioritZ Admin**. PrioritZ Admin
@@ -207,12 +207,12 @@ sample data to your environment, and test the applications in the solution.
 
 23. Close the PrioritZ Ask app.
 
-### Exercise 4 – Add a column for My Notes
+## Exercise 4 – Add a column for My Notes
 
 In this exercise, you will add a new column **My Notes** to the topic table and update the PriortZ Admin
 application.
 
-#### Task 1: Add a new column
+### Task 1: Add a new column
 
 1. Navigate to Power Apps maker portal and make sure the development environment is selected.
 2. Select **Solutions** and open the **PrioritZ** solution.
@@ -227,7 +227,7 @@ application.
 6. Click **Save Table**.
 7. Do not navigate away from this page.
 
-#### Task 2: Update admin app
+### Task 2: Update admin app
 
 1. Make sure you are still in the **PrioritZ** solution.
 2. Select **Apps** and click to open the **PrioritZ Admin** application.
@@ -310,17 +310,17 @@ Topic':newTopic,Photo:ThisRecord.photo}));Back()
 26. Select Publish this version and wait for the publishing to complete.
 27. You may close the **app designer**.
 
-### Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension
+## Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension
 
 In this exercise, you will install Visual Studio Code and Power Platform CLI. These tools are used in the
 labs in this course.
 
-#### Task 1: Install Node Package Manager
+### Task 1: Install Node Package Manager
 
 1. Install Npm and Node.js We recommend that you use LTS (Long-Term Support) version 16.14.
     or higher.
 
-#### Task 2: Install Visual Studio Code
+### Task 2: Install Visual Studio Code
 
 2. Navigate to Visual Studio Code
 3. Download Visual Studio Code and install it if you don’t already have it installed.
@@ -329,7 +329,7 @@ labs in this course.
 6. Click Continue.
 7. Wait for the Power Platform Tools to be installed.
 
-#### Task 3: Test the Power Platform CLI
+### Task 3: Test the Power Platform CLI
 
 1. Navigate to Power Platform admin center and select **Environments**.
 2. Click to open your dev environment you created.
