@@ -279,66 +279,66 @@ In this exercise, you will test the custom connector you created using a flow an
 In this task, you will use the custom connector you created to show the user’s current badge on the
 PrioritZ Ask canvas application.
 
-6. Navigate to Power Apps  maker portal and make sure you are in your dev environment.
+1. Navigate to Power Apps  maker portal and make sure you are in your dev environment.
         https://powerapps.microsoft.com/en-in/
-7. Expand **Solutions** and open the **PrioritZ** solution.
-8. Select **Apps** , select the **PrioritZ Ask** application, and click **Edit**.
+2. Expand **Solutions** and open the **PrioritZ** solution.
+3. Select **Apps** , select the **PrioritZ Ask** application, and click **Edit**.
 <img src="images/L03/image38.png">
 
-9. Select **Data** from the left and click **+ Add data.**
+4. Select **Data** from the left and click **+ Add data.**
 <img src="images/L03/image39.png">
 
-10. Expand **Connectors** and select the **Badges connector** you created.
+5. Expand **Connectors** and select the **Badges connector** you created.
 <img src="images/L03/image40.png">
 
 
-11. Click **+ Add a connection**.
-12. Open a new browser tab or window and navigate to Contoso Coffee Badges
+6. Click **+ Add a connection**.
+7. Open a new browser tab or window and navigate to Contoso Coffee Badges
     (contosobadgestest.azurewebsites.net)
-13. Click on open the **API Key** link
+8. Click on open the **API Key** link
 <img src="images/L03/image41.png">
 
-14. Copy the **API Key**. Keep this API Key in a notepad, you will need it again.
-15. Go back to the app designer, paste the **API Key** you copied, and click **Connect**.
+9. Copy the **API Key**. Keep this API Key in a notepad, you will need it again.
+10. Go back to the app designer, paste the **API Key** you copied, and click **Connect**.
 <img src="images/L03/image42.png">
 
 
-16. Select the **Tree view**.
-17. Select the **Components** tab, go to the **Insert** tab, click **Media** , and then select **Image**.
+11. Select the **Tree view**.
+12. Select the **Components** tab, go to the **Insert** tab, click **Media** , and then select **Image**.
 <img src="images/L03/image43.png">
 
-18. Change the Image name to **User badge**.
+13. Change the Image name to **User badge**.
 <img src="images/L03/image44.png">
 
 
-19. Set the User badge **Image** value to the formula below.
+14. Set the User badge **Image** value to the formula below.
 
 ```
 ContosoBadges.getcurrentbadge({id:User().Email}).image
 ```
 <img src="images/L03/image45.png">
 
-20. Set the Tooltip value of the User badge to the formula below.
+15. Set the Tooltip value of the User badge to the formula below.
 
 ```
 ContosoBadges.getcurrentbadge({id:User().Email}).name
 ```
-21. Make the image smaller and move it to top right corner of the screen.
-22. The User badge should now look like the image below.
+16. Make the image smaller and move it to top right corner of the screen.
+17. The User badge should now look like the image below.
 <img src="images/L03/image46.png">
 
-23. Select **Screens** tab in the Tree view. Click **Play** button.
-24. Hover over the badge to see the badge name.
+18. Select **Screens** tab in the Tree view. Click **Play** button.
+19. Hover over the badge to see the badge name.
 <img src="images/L03/image47.png">
 
-25. Close the preview.
-26. Click **File** and select **Save**.
-27. Select **Publish**.
-28. Select **Publish this version**.
-29. Go back to the solution by clicking on the  **Back** button.
+20. Close the preview.
+21. Click **File** and select **Save**.
+22. Select **Publish**.
+23. Select **Publish this version**.
+24. Go back to the solution by clicking on the  **Back** button.
 <img src="images/L03/imagee47.png">
 
-30. Do not navigate away from this page.
+25. Do not navigate away from this page.
 
 ### Task 2: Test connector from flow
 
