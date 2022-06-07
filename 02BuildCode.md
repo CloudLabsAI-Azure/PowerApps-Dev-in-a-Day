@@ -11,21 +11,21 @@ Lab Scenario
 
 1. Exercise 1 – Build Code Component 
 
- - Task 1: Create the code component 
+    - Task 1: Create the code component 
 
- - Task 2: Implement the component logic 
+    - Task 2: Implement the component logic 
 
- - Task 3: Confirm the control was added to environment 
+    - Task 3: Confirm the control was added to environment 
 
 2. Exercise 2 – Use Code Component 
 
- - Task 1: Allow Power Apps component framework 
+    - Task 1: Allow Power Apps component framework 
 
- - Task 2: Edit canvas app 
+    - Task 2: Edit canvas app 
 
 3. Exercise 3 – Add Code Component to Solution 
 
- - Task 1: Add component to solution 
+     - Task 1: Add component to solution 
 
 ### Lab Scenario
 
@@ -380,7 +380,10 @@ In this exercise, you will use the code component you created in the PrioritZ As
 
 In this task, you will allow publishing of canvas apps with code components for your environment.
 
-1. Navigate to Power Platform admin center and select environments.
+1. Navigate to Power Platform admin center by using below URL and select environments.
+ 
+         https://admin.powerplatform.microsoft.com/environments
+ 
 2. Open the dev environment you are using for this lab.
 3. Click **Settings**.
  <img src="images/L02/image34.png">
@@ -395,7 +398,10 @@ In this task, you will allow publishing of canvas apps with code components for 
 
 In this task, you will edit the PrioritZ Ask canvas application to use the code component you created.
 
-1. Navigate to Power Apps maker portal and make sure you are in the correct dev environment.
+1. Navigate to Power Apps maker portal  by using below URLand make sure you are in the correct dev environment.
+      
+              https://powerapps.microsoft.com/en-in/ 
+ 
 2. Select **Solutions** and open the **PrioritZ** solution.
 3. Select **Apps** , select the **PrioritZ** Ask app and click **Edit**.
 <img src="images/L02/image37.png">
