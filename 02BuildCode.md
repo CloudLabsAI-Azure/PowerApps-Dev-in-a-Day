@@ -9,23 +9,23 @@
 
 Lab Scenario 
 
-Exercise 1 – Build Code Component 
+1. Exercise 1 – Build Code Component 
 
-Task 1: Create the code component 
+ - Task 1: Create the code component 
 
-Task 2: Implement the component logic 
+ - Task 2: Implement the component logic 
 
-Task 3: Confirm the control was added to environment 
+ - Task 3: Confirm the control was added to environment 
 
-Exercise 2 – Use Code Component 
+2. Exercise 2 – Use Code Component 
 
-Task 1: Allow Power Apps component framework 
+ - Task 1: Allow Power Apps component framework 
 
-Task 2: Edit canvas app 
+ - Task 2: Edit canvas app 
 
-Exercise 3 – Add Code Component to Solution 
+3. Exercise 3 – Add Code Component to Solution 
 
-Task 1: Add component to solution 
+ - Task 1: Add component to solution 
 
 ### Lab Scenario
 
@@ -48,11 +48,11 @@ the code component. When an item is dragged and dropped the code component will 
 event that will be handled by the hosting app. The hosting app will update the collection items with
 their new rank. The code component will be stateless.
 
-### Exercise 1 – Build Code Component
+## Exercise 1 – Build Code Component
 
 In this exercise, you will build the code component.
 
-#### Task 1: Create the code component
+### Task 1: Create the code component
 
 1. Start Visual Studio Code.
 2. Select the Power Platform tab and make sure your Dev Auth profile is selected. NOTE: the Power
@@ -180,7 +180,7 @@ margin: 8px;
 
 24. Click **File** and save your changes.
 
-#### Task 2: Implement the component logic
+### Task 2: Implement the component logic
 
 1. Remove the HelloWorld.tsx component file that is automatically created as we won’t be using it.
 2. Go to the lab resources folder.
@@ -362,7 +362,7 @@ pac pcf push --publisher-prefix contoso
 
   <img src="images/L02/image31.png">
  
-#### Task 3: Confirm the control was added to environment
+### Task 3: Confirm the control was added to environment
 
 1. Navigate to https://make.powerapps.com/ and make sure you have the Dev environment
     selected.
@@ -372,11 +372,11 @@ pac pcf push --publisher-prefix contoso
  3. Confirm that the custom control is in this solution.
  <img src="images/L02/image33.png">
  
-### Exercise 2 – Use Code Component
+## Exercise 2 – Use Code Component
 
 In this exercise, you will use the code component you created in the PrioritZ Ask canvas application.
 
-#### Task 1: Allow Power Apps component framework
+### Task 1: Allow Power Apps component framework
 
 In this task, you will allow publishing of canvas apps with code components for your environment.
 
@@ -391,7 +391,7 @@ In this task, you will allow publishing of canvas apps with code components for 
  5. Turn on **Allow publishing of canvas apps with code components** and click **Save**.
  <img src="images/L02/image36.png">
 
- #### Task 2: Edit canvas app
+ ### Task 2: Edit canvas app
 
 In this task, you will edit the PrioritZ Ask canvas application to use the code component you created.
 
@@ -511,11 +511,11 @@ Rank:If(Rank<>sourceRank,Rank+1,destinationRank)
 39. You may **close** the canvas app studio.
 
 
-### Exercise 3 – Add Code Component to Solution
+## Exercise 3 – Add Code Component to Solution
 
 In this exercise, you will add the code component you created to the PrioritZ solution.
 
-#### Task 1: Add component to solution
+### Task 1: Add component to solution
 
 1. Navigate to https://make.powerapps.com/ and make sure you have the **Dev** environment
     selected.
