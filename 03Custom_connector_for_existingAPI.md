@@ -11,35 +11,35 @@ Lab Scenario
 
 1. Exercise 1 - Create Solution 
 
- - Task 1: Create solution 
+    - Task 1: Create solution 
 
 2. Exercise 2 – Create Custom Connector 
 
- - Task 1: Download open API definition and create connector 
+    - Task 1: Download open API definition and create connector 
 
- - Task 2: Modify the definition 
+    - Task 2: Modify the definition 
 
- - Task 3: Test connector 
+    - Task 3: Test connector 
 
 3. Exercise 3 – Add Custom Code 
 
- - Task 1: Add code from resource folder 
+    - Task 1: Add code from resource folder 
 
- - Task 2: Test custom code 
+    - Task 2: Test custom code 
 
 4. Exercise 4 – Test Custom Connector 
 
- - Task 1: Test connector from canvas app
+    - Task 1: Test connector from canvas app
 
- - Task 2: Test connector from flow 
+    - Task 2: Test connector from flow 
 
 5. Exercise 5 – Promote Solution to Test Environment 
 
- - Task 1: Export solution. 
+    - Task 1: Export solution. 
 
- - Task 1: Import solution 
+    - Task 1: Import solution 
 
- - Task 2: Test connector 
+    - Task 2: Test connector 
 
 ### Lab Scenario
 
@@ -195,7 +195,8 @@ You will do this by using the custom code feature to reshape the response from t
 ### Task 1: Add code from resource folder
 
 1. Navigate to Power Automate
-         https://powerplatform.microsoft.com/en-us/power-automate/)
+           https://powerplatform.microsoft.com/en-us/power-automate/)
+
 2. Expand **Data** and select **Custom connectors**.
 
 
@@ -280,7 +281,8 @@ In this task, you will use the custom connector you created to show the user’s
 PrioritZ Ask canvas application.
 
 1. Navigate to Power Apps  maker portal and make sure you are in your dev environment.
-        https://powerapps.microsoft.com/en-in/
+         https://powerapps.microsoft.com/en-in/
+
 2. Expand **Solutions** and open the **PrioritZ** solution.
 3. Select **Apps** , select the **PrioritZ Ask** application, and click **Edit**.
 <img src="images/L03/image38.png">
@@ -347,17 +349,16 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
 <img src="images/L03/image48.png">
 
 3. Enter **Test add credit** for flow name, select **Manually trigger a flow** , and click **Create**.
-
-<img src="images/L03/edd%20(1).png">
+  <img src="images/L03/edd%20(1).png">
 
 4. Click **+ New step**.
 5. Select the **Custom** tab and then select the **Add credit** action.
 <img src="images/L03/edd%20(2).png">
 6. Enter **Test connection** , paste the **API Key** you copied earlier, and click **Create**.
-<img src="images/L03/edd%20(3).png">
+  <img src="images/L03/edd%20(3).png">
 
 7. Click on the **recipientId** field, go to the Dynamic content pane, and select **User email**.
-<img src="images/L03/image49.png">
+  <img src="images/L03/image49.png">
 
 8. Click on the **name** field, go to the Dynamic content pane, and select **User name**.
 9. Enter **1** for points and click **Save**. Wait for the flow to be saved.
@@ -381,17 +382,17 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
 19. Make sure you are the correct environment.
 20. Select **Apps** and launch the **PrioritZ Ask** application.
 21. The application should now show **First Badge**.
-<img src="images/L03/image53.png">
+  <img src="images/L03/image53.png">
 
 22. Go back to flow and run it couple more times.
 23. Go back to the **PrioritZ Ask** application and refresh the page.
 24. You should now see the **Team Player** badge.
-<img src="images/L03/image54.png">
+  <img src="images/L03/image54.png">
 
 25. Go to the flow and run it two more times.
 26. Go back to the **PrioritZ Ask** application and refresh the page.
 27. You should now see the **Champ** badge
-<img src="images/L03/image55.png">
+  <img src="images/L03/image55.png">
 
 ## Exercise 5 – Promote Solution to Test Environment
 
@@ -406,7 +407,7 @@ environment and import it to Test environment.
 
 2. Select **Solutions**.
 3. Select the **Contoso Badges connector** solution and click **Export**.
-<img src="images/L03/image56.png">
+  <img src="images/L03/image56.png">
 
 4. Click **Publish** and wait for the publishing to complete.
 5. Click **Next**.
@@ -439,27 +440,27 @@ environment and import it to Test environment.
 
 3. Click **Edit**.
 4. Select the **Test** tab.
-<img src="images/L03/image59.png">
+  <img src="images/L03/image59.png">
 
 5. Click **+ New connection**.
 6. Start a new browser window or tab and navigate to Contoso Coffee Badges
     (contosobadgestest.azurewebsites.net)
 7. Click on the **Get an API Key** link.
-<img src="images/L03/image60.png">
+  <img src="images/L03/image60.png">
 
 8. Copy the **API Key.**
 9. Go back to the connector editor, paste the API Key you copied and click **Create connection**.
-<img src="images/L03/image61.png">
+  <img src="images/L03/image61.png">
 
 10. Click **Refresh** connections.
-<img src="images/L03/image62.png">
+  <img src="images/L03/image62.png">
 
 11. Go to the **Operations** section and select the **addcredit** operation.
 12. Provide your email for **recipientid** , provide a **name** , enter **1** for **points** , and click **Test operation**.
-<img src="images/L03/image63.png">
+  <img src="images/L03/image63.png">
 
 13. The test should succeed, and the response should look like the image below.
-<img src="images/L03/image64.png">
+   <img src="images/L03/image64.png">
 
 14. You may **test** the rest of the operations.
 
