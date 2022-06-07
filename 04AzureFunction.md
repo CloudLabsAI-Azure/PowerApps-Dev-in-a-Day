@@ -10,33 +10,33 @@
 
 Lab Scenario 
 
-Exercise 1 – Create Azure Function 
+1. Exercise 1 – Create Azure Function 
 
-Task 1: Install Azure tools extension 
+ - Task 1: Install Azure tools extension 
 
-Task 2: Create function 
+ - Task 2: Create function 
 
-Exercise 2 - Function implementation 
+2. Exercise 2 - Function implementation 
 
-Task 1: Implement function 
+ - Task 1: Implement function 
 
-Exercise 3 – Publish to Azure 
+3. Exercise 3 – Publish to Azure 
 
-Task 1: Publish 
+ - Task 1: Publish 
 
-Task 2: Register Connector Client app 
+ - Task 2: Register Connector Client app 
 
-Exercise 3 – Create Connector 
+4. Exercise 3 – Create Connector 
 
-Task 1: Create connector 
+ - Task 1: Create connector 
 
-Task 2: Test connector 
+ - Task 2: Test connector 
 
-Exercise 4 – Use Function from Canvas App 
+5. Exercise 4 – Use Function from Canvas App 
 
-Task 1: Use function 
+ - Task 1: Use function 
 
-Task 2: Test application 
+  - Task 2: Test application 
 
 
 
@@ -52,11 +52,11 @@ connector.
 Note: This lab requires an Azure subscription (or trial) in the same tenant as your Dataverse
 environment.
 
-### Exercise 1 – Create Azure Function
+## Exercise 1 – Create Azure Function
 
 In this exercise, you install Azure tools extension for Visual Studio Code and create the function
 
-#### Task 1: Install Azure tools extension
+### Task 1: Install Azure tools extension
 
 1. Start **Visual Studio Code**.
 2. Select the **Extensions** tab.
@@ -78,7 +78,7 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
 
 
-#### Task 2: Create function
+### Task 2: Create function
 
 1. Select **Azure Tool** , go to the **Functions** section, and click **Create New Project**.
 <img src="images/L04/image%20(5).png">
@@ -106,11 +106,11 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 12. The build should succeed.
 13. Go to Terminal and **press any key close it** .
 
-### Exercise 2 - Function implementation
+## Exercise 2 - Function implementation
 
 In this exercise, you will implement the function.
 
-#### Task 1: Implement function
+### Task 1: Implement function
 
 1. Click **New file**.
 <img src="images/L04/image%20(10).png">
@@ -304,11 +304,11 @@ r eturn new OkObjectResult(topicId);
 18. The run should succeed. Press any key to stop.
 
 
-### Exercise 3 – Publish to Azure
+## Exercise 3 – Publish to Azure
 
 In this exercise, you will deploy the function to Azure.
 
-#### Task 1: Publish
+### Task 1: Publish
 
 1. Select **Azure Tools**.
 2. Click **Deploy to Function App**.
@@ -427,7 +427,7 @@ trainer/administrator to consent.
 ```
 53. Click **Accept**.
 
-#### Task 2: Register Connector Client app
+### Task 2: Register Connector Client app
 
 1. Click on the **Portal menu** and select **Azure Active Directory**.
 2. Select **App registrations** and click **+ New registration**. This application registration will be used
@@ -452,11 +452,11 @@ trainer/administrator to consent.
     
  10. Check the **user_impersonation** checkbox and click **Add permission**.
 
-### Exercise 3 – Create Connector
+## Exercise 3 – Create Connector
 
 In this exercise, you will create a new custom connector.
 
-#### Task 1: Create connector
+### Task 1: Create connector
 
 1. Navigate to https://portal.azure.com/
 2. Select **All resources** , search for the function app you deployed and click to open it.
@@ -502,7 +502,7 @@ In this exercise, you will create a new custom connector.
 23. Click **Create connector**.
 <img src="images/L04/image%20(60).png">
 
-#### Task 2: Test connector
+### Task 2: Test connector
 
 1. Select the **Test** tab.
 2. Click **+ New connection**.
@@ -543,7 +543,7 @@ In this exercise, you will create a new custom connector.
 In this exercise, you will use then Azure function you created via the custom connector from the PrioritZ
 Admin canvas application.
 
-#### Task 1: Use function
+### Task 1: Use function
 
 1. Navigate to Power Apps maker portal a nd make sure you are in correct environment.
 2. Select Apps, select the **PrioritZ Admin** application and click **Edit**.
@@ -610,7 +610,7 @@ Back();
 13. Click on the  back button.
 14. Do not navigate away from this page.
 
-#### Task 2: Test application
+### Task 2: Test application
 
 1. Select the **Home Screen** and click **Preview the app**.
 <img src="images/L04/image%20(75).png"> 
