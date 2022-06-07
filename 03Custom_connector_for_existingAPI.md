@@ -458,7 +458,7 @@ environment and import it to Test environment.
 <img src="images/L03/image63.png">
 
 13. The test should succeed, and the response should look like the image below.
-<img src="images/L03/image63.png">
+<img src="images/L03/image64.png">
 
 14. You may **test** the rest of the operations.
 
