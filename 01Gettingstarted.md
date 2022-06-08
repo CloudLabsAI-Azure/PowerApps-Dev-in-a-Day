@@ -168,7 +168,8 @@ sample data to your environment, and test the applications in the solution.
 9. Click on the **+** button.
   <img src="images/L01/image16.png">
 
-10. Provide a topic, details, respond by date and click add a picture.
+
+ 10. Provide a topic, details, respond by date and click add a picture.
   <img src="images/L01/image17.png">
 
 11. Select any image from your computer.
