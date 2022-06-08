@@ -117,7 +117,7 @@ sample data to your environment, and test the applications in the solution.
   <img src="images/L01/image8.png">
 
 3. Expand **Tables** and select the **PrioritZ Topic** table.
-   <img src="images/L01/NewUi1.png">
+ <img src="images/L01/NewUi1.png">
 
 4. Select the **Columns** under Schema and review the columns of the PrioritZ Topic table. The standard columns are built-in, and all tables have them.
  The custom columns were created by the team for this application.
