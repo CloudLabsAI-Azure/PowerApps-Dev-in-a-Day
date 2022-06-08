@@ -290,7 +290,9 @@ Topic':newTopic,Photo:ThisRecord.photo}));Back()
 24. Click **File** and select **Save**.
 25. Click **Publish**.
 26. Select Publish this version and wait for the publishing to complete.
-27. You may close the **app designer**.
+<img src="images/L01/NewUipublish.png">
+
+ 27. You may close the **app designer**.
 
 ## Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension
 
