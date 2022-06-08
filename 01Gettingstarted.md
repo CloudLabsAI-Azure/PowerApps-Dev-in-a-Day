@@ -56,9 +56,9 @@ use in the ALM labs.
 ### Task 1: Create dev environment
 
 1. Navigate to Power Apps Developer Plan by using below link 
-    
-               https://powerapps.microsoft.com/en-in/developerplan/
-
+```
+https://powerapps.microsoft.com/en-in/developerplan/
+```
 2. Select **Add a dev environment**.
   <img src="images/L01/image1.png">
 
@@ -80,9 +80,9 @@ PrioritZ apps, flows and Dataverse tables.
 ### Task 1: Import solution
 
 1. Navigate to Power Apps maker portal by using below URL and make sure the development environment is selected.
-          
-          https://make.powerapps.com/?utm_source=PAMarketing&utm_medium=header&utm_campaign=signin
-
+```        
+ https://make.powerapps.com/?utm_source=PAMarketing&utm_medium=header&utm_campaign=signin
+```
 2. Select **Solutions** and click **Import**.
 3. Click **Browse**.
 4. Go to the lab resources folder, select the **PrioritZ_solution.zip** file, and click **Open**.
@@ -150,9 +150,9 @@ sample data to your environment, and test the applications in the solution.
 ### Task 2: Test the apps
 
 1. Navigate to Power Apps maker portal by using below URL and make sure the development environment is selected.
-
-          https://make.powerapps.com/?utm_source=PAMarketing&utm_medium=header&utm_campaign=signin
-
+```
+    https://make.powerapps.com/?utm_source=PAMarketing&utm_medium=header&utm_campaign=signin
+```
 2. Select **Apps**. You should see two applications. **PrioritZ Ask** and **PrioritZ Admin**. PrioritZ Admin
     app is used to manage topics being asked about. PrioritZ Ask app allows users to respond.
 3. Launch the **PrioritZ Admin** application.
@@ -203,9 +203,9 @@ application.
 ### Task 1: Add a new column
 
 1. Navigate to Power Apps maker portal by using below URL and make sure the development environment is selected.
-
-          https://make.powerapps.com/?utm_source=PAMarketing&utm_medium=header&utm_campaign=signin
-
+ ```
+ https://make.powerapps.com/?utm_source=PAMarketing&utm_medium=header&utm_campaign=signin
+```
 2. Select **Solutions** and open the **PrioritZ** solution.
 3. Expand **Tables** and select the **PrioritZ Topic** table.
 4. Select the **Columns** tab and click **+ Add column**.
@@ -309,9 +309,9 @@ labs in this course.
 ### Task 3: Test the Power Platform CLI
 
 1. Navigate to Power Platform admin center by using below URL and select **Environments**.
-
-         https://admin.powerplatform.microsoft.com/environments
-
+ ```
+    https://admin.powerplatform.microsoft.com/environments
+```
 2. Click to open your dev environment you created.
 3. Copy the Environment URL and keep it in your clipboard or on notepad.
   <img src="images/L01/image37.png">
