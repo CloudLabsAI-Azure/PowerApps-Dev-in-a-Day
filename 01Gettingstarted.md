@@ -206,7 +206,7 @@ application.
 
 1. Navigate to Power Apps maker portal by using below URL and make sure the development environment is selected.
  ```
- https://make.powerapps.com/?utm_source=PAMarketing&utm_medium=header&utm_campaign=signin
+ https://make.powerapps.com
 ```
 2. Select **Solutions** and open the **PrioritZ** solution.
 3. Expand **Tables** and select the **PrioritZ Topic** table.
