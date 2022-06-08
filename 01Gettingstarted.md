@@ -117,12 +117,14 @@ sample data to your environment, and test the applications in the solution.
   <img src="images/L01/image8.png">
 
 3. Expand **Tables** and select the **PrioritZ Topic** table.
-4. Select the **Columns** tab and review the columns of the **PrioritZ Topic** table. The standard
-    columns are built-in, and all tables have them. The custom columns were created by the team
-    for this application.
-5. Select the **Relationships** tab and review how this table is related to other tables.
-  <img src="images/L01/image9.png">
+   <img src="images/L01/NewUi1.png">
 
+4. Select the **Columns** under Schema and review the columns of the PrioritZ Topic table. The standard columns are built-in, and all tables have them.
+ The custom columns were created by the team for this application.
+   <img src="images/L01/NewUi2.png">
+5. Select the **Relationships** tab from Columns dropdown and review how this table is related to other tables.
+  <img src="images/L01/NewUi3.png">
+  <img src="images/L01/NewUi4.png">
 6. Select **Cloud flow**.
 7. Open the **Import sample data – Topics** flow.
   <img src="images/L01/image10.png">
@@ -141,7 +143,7 @@ sample data to your environment, and test the applications in the solution.
 15. Click Run to run the flow.
   <img src="images/L01/image13.png">
 
-16. Click **Run flow**.
+16. Click the **Run flow** on the Run flow blade.
 17. Click **Done** and wait for the flow run to complete.
 18. The flow should run successfully. If you want, you can click on the run row and it will show you
     the details of what the flow did.
@@ -151,12 +153,12 @@ sample data to your environment, and test the applications in the solution.
 
 1. Navigate to Power Apps maker portal by using below URL and make sure the development environment is selected.
 ```
-    https://make.powerapps.com/?utm_source=PAMarketing&utm_medium=header&utm_campaign=signin
+    https://make.powerapps.com
 ```
 2. Select **Apps**. You should see two applications. **PrioritZ Ask** and **PrioritZ Admin**. PrioritZ Admin
     app is used to manage topics being asked about. PrioritZ Ask app allows users to respond.
 3. Launch the **PrioritZ Admin** application.
-  <img src="images/L01/image15.png">
+  <mg src="images/L01/image15.png">
 
 4. You should see at least four topics.
 5. Click to open one of the topics.
