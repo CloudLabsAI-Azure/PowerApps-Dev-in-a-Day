@@ -418,12 +418,9 @@ In this exercise, you will deploy the function to Azure.
 51. Click **Continue**.
 52. Navigate to https://login.microsoftonline.com/{tenant id}/adminconsent?client_id={api app id}
     Replace {tenant id} and {api app id} with tenant id and PrioritZFL API application ID from your
+    notepad. If you are not a tenant administrator, you will need to work with your
+    trainer/administrator to consent.
 
-
-```
-notepad. If you are not a tenant administrator, you will need to work with your
-trainer/administrator to consent.
-```
 53. Click **Accept**.
 
 ### Task 2: Register Connector Client app
