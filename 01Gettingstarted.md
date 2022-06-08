@@ -65,11 +65,14 @@ https://powerapps.microsoft.com/en-in/developerplan/
 3. Sign in if prompted.
 4. Select your country and click **Accept**.
 5. You should be navigated to the new dev environment created for you. Select the new
-    environment.
+    environment and stay sign in.
   <img src="images/L01/image2.png">
 
-6. Expand **Dataverse** and select **Tables**.
-7. You should see several Dataverse tables that are created with every environment.
+6. Expand **Dataverse**   and select **Tables** .
+7. First we need to create database. Click Database and then give **Currency**  USD and Language **English**  Click **Create my database**.
+  <img src="images/L01/NewUidb1.png">
+  <img src="images/L01/NewUidb.png">
+8. You should see several Dataverse tables that are created with every environment.
   <img src="images/L01/image3.png">
 
 ## Exercise 2 - Import starting solution
@@ -81,15 +84,15 @@ PrioritZ apps, flows and Dataverse tables.
 
 1. Navigate to Power Apps maker portal by using below URL and make sure the development environment is selected.
 ```        
- https://make.powerapps.com/?utm_source=PAMarketing&utm_medium=header&utm_campaign=signin
+ https://make.powerapps.com
 ```
 2. Select **Solutions** and click **Import**.
 3. Click **Browse**.
-4. Go to the lab resources folder, select the **PrioritZ_solution.zip** file, and click **Open**.
-5. Click **Next**.
+4. Go to the lab resources folder C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources, select the **PrioritZ_solution.zip** file, and click **Open**.
+5. Click **Next** .
   <img src="images/L01/image4.png">
 
-6. Click **Next**.
+6. Click **Next**  again on the Import solution blade.
 7. Click on the **Select a connection** dropdown and the select **+ New connection**.
   <img src="images/L01/image5.png">
 
@@ -168,8 +171,7 @@ sample data to your environment, and test the applications in the solution.
 9. Click on the **+** button.
   <img src="images/L01/image16.png">
 
-
- 10. Provide a topic, details, respond by date and click add a picture.
+10. Provide a topic, details, respond by date and click add a picture.
   <img src="images/L01/image17.png">
 
 11. Select any image from your computer.
