@@ -133,6 +133,8 @@ sample data to your environment, and test the applications in the solution.
   <img src="images/L01/image10.png">
 
 8. Click **Edit**.
+  <img src="images/L01/NewUiImport.png">
+
 9. Expand the Parse JSON step and review the data this flow will create.
 10. Expand the **Apply to each topic** step.
 11. Expand the **Apply to each topic item** step.
