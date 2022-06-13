@@ -10,11 +10,11 @@
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/blob/main/02BuildCode.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/02BuildCode.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/blob/main/03Custom_connector_for_existingAPI.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/03Custom_connector_for_existingAPI.md",
         "Order": 3
       },
       {
