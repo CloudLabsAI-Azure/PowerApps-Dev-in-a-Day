@@ -41,8 +41,8 @@
 ### Lab Scenario
 
 
-Working as part of the PrioritZ fusion team you will be setting up your Power Platform development
-environment. You will import the current solution and explore the current state of the PrioritZ apps,
+Working as part of the Prioritz fusion team you will be setting up your Power Platform development
+environment. You will import the current solution and explore the current state of the Prioritz apps,
 flows and tables. You will be also adding a column to a table and modifying the app to use it.
 
 ## Exercise 1 - Create Dev environment
@@ -64,8 +64,8 @@ https://powerapps.microsoft.com/en-in/developerplan/
 
 3. Sign in if prompted.
 4. Select your country and click **Accept**.
-5. You should be navigated to the new dev environment created for you. Select the new
-    environment and stay sign in.
+5. You should be navigated to the new **dev environment created for you** . Select the new
+    **environment** and stay sign in.
   <img src="images/L01/image2.png">
 
 6. Expand **Dataverse**   and select **Tables** .
@@ -78,7 +78,7 @@ https://powerapps.microsoft.com/en-in/developerplan/
 ## Exercise 2 - Import starting solution
 
 In this exercise, you will import a solution into your dev environment. This solution contains the current
-PrioritZ apps, flows and Dataverse tables.
+Prioritz apps, flows and Dataverse tables.
 
 ### Task 1: Import solution
 
@@ -88,7 +88,7 @@ PrioritZ apps, flows and Dataverse tables.
 ```
 2. Select **Solutions** and click **Import**.
 3. Click **Browse**.
-4. Go to the lab resources folder C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources, select the **PrioritZ_solution.zip** file, and click **Open**.
+4. Go to the lab resources folder C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources, select the **Prioritz_1_0_0_7.zip** file, and click **Open**.
 5. Click **Next** .
   <img src="images/L01/image4.png">
 
