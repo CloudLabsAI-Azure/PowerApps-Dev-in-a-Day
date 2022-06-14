@@ -413,6 +413,9 @@ environment and import it to Test environment.
 5. Click **Next**.
 6. Select **Managed** and click **Export**.
 7. Wait for the solution to be exported.
+8. If Option Download is there ,Click Download Solution.
+ 
+ <img src="images/L03/SolutionDown.png">
 
 ###  Task 1: (ii) Import solution
 
