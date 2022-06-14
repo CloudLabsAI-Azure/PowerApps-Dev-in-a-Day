@@ -433,7 +433,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 ```
 'Votes gallery'.AllItems
 ```
-15. Select the **PrioritZDnDRanking** go to the **Properties** pane and click **Edit Fields**.
+15. Select the **PrioritZDnDRanking** go to the **Properties** pane ,set **Item Height** 160 and click **Edit Fields** .
 <img src="images/L02/image43.png">
 
 16. Click **+ Add field**.
