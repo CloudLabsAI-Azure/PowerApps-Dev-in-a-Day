@@ -416,7 +416,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
  <img src="images/L02/image39.png">
  
  7. Select the **Screens** tab.
-8. Select the **Votes gallery**.
+8. Expand **votescreen** and Select the **Votes gallery**.
 9. Set the **Width** value of the Votes gallery to **570**.
 10. The screen should now look like the image below.
 <img src="images/L02/image40.png">
@@ -424,7 +424,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 11. Select the **Votes Screen** and click **+ Insert**.
 <img src="images/L02/image41.png">
  
-12. Select **PrioritZDnDRanking**.
+12. Select under **Code Component**  **PrioritZDnDRanking**.
 <img src="images/L02/image42.png">
  
  13. Go to the Tree view tab and select the **PrioritZDnDRanking** you just added.
