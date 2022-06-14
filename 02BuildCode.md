@@ -476,30 +476,44 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 29. Set the **OnSelect** value of the **PrioritZDnDRanking** component to the formula below.
 
 ```
-With({
-sourceRank:First(Self.SelectedItems).Rank,
-destinationRank:Last(Self.SelectedItems).Rank
-},
-
-If(sourceRank<destinationRank,
-// Moving Up
-UpdateIf(colVotes,Rank>=sourceRank && Rank<=destinationRank,
-{
-Rank:If(Rank<>sourceRank,Rank-1,destinationRank)
-}
+With(
+    {
+        sourceRank: First(Self.SelectedItems).Rank,
+        destinationRank: Last(Self.SelectedItems).Rank
+    },
+    If(
+        sourceRank < destinationRank,
+ // Moving Up
+        UpdateIf(
+            colVotes,
+            Rank >= sourceRank && Rank <= destinationRank,
+            {
+                Rank: If(
+                    Rank <> sourceRank,
+                    Rank - 1,
+                    destinationRank
+                )
+            }
+        );
+    );
+    If(
+        sourceRank > destinationRank,
+ // Moving Down
+        UpdateIf(
+            colVotes,
+            Rank >= destinationRank && Rank <= sourceRank,
+            {
+                Rank: If(
+                    Rank <> sourceRank,
+                    Rank + 1,
+                    destinationRank
+                )
+            }
+        );
+    );
+    
 );
 
-);
-
-If(sourceRank>destinationRank,
-// Moving Down
-UpdateIf(colVotes,Rank>=destinationRank && Rank<=sourceRank,
-{
-Rank:If(Rank<>sourceRank,Rank+1,destinationRank)
-}
-);
-);
-);
 ```
 30. Select the **Home Screen** and click **Play**.
 31. Select one of the **topics**.
