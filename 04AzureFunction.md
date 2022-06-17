@@ -79,8 +79,10 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
 ### Task 2: Create function
 
-1. Select **Azure Tool** , go to the **Functions** section, and click **Create New Project**.
-  <img src="images/L04/image%20(5).png">
+1. Select **Azure Tool** , go to the **workspace** section click **+** , click Create Function, and click **Create New Project**.
+  
+  <img src="images/L04/NewVSazure.png">
+  <img src="images/L04/NewVSazure1.png">
 
 2. Select the **ContosoFunctions** folder you created and click **Select**.
 3. Select **C#** for language.
@@ -131,9 +133,6 @@ public string Choice { get; set; }
 public string Photo { get; set; }
 }
 public class TopicModel
-```
-
-```
 {
 [OpenApiProperty(Nullable = false, Description = "This is a topic")]
 public string Topic { get; set; }
@@ -311,8 +310,8 @@ In this exercise, you will deploy the function to Azure.
 
 1. Select **Azure Tools**.
 2. Click **Deploy to Function App**.
-  <img src="images/L04/image%20(25).png">
-
+  <img src="images/L04/NewVSazure3.png">
+  <img src="images/L04/NewVSazure4.png">
 3. Select **Sign in to Azure**.
   <img src="images/L04/image%20(26).png">
 
