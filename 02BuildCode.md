@@ -411,7 +411,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
  <img src="images/L02/image38.png">
  
- 5. Select the **Code** tab.
+5. Select the **Code** tab.
 6. Select the code component you created and click **Import**.
  <img src="images/L02/image39.png">
  
