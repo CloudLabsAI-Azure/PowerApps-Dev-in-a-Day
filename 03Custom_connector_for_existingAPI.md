@@ -3,7 +3,7 @@
 # Dev in a day
 
 #### Lab 03 Custom connector for existing API/ May 2022
-
+  
 
 ## Table of Contents
 
@@ -413,7 +413,7 @@ environment and import it to Test environment.
 5. Click **Next**.
 6. Select **Managed** and click **Export**.
 7. Wait for the solution to be exported.
-8. If Option Download is there ,Click Download Solution.
+8. Click Download button Right side top of the screen ,Click Download Solution.
  
  <img src="images/L03/SolutionDown.png">
 
