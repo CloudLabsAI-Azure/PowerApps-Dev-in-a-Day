@@ -69,10 +69,7 @@ https://powerapps.microsoft.com/en-in/developerplan/
   <img src="images/L01/image2.png">
 
 6. Expand **Dataverse**   and select **Tables** .
-7. First we need to create database. Click Database and then give **Currency**  USD and Language **English**  Click **Create my database**.
-  <img src="images/L01/NewUidb1.png">
-  <img src="images/L01/NewUidb.png">
-8. You should see several Dataverse tables that are created with every environment.
+7.  You should see several Dataverse tables that are created with every environment.
   <img src="images/L01/image3.png">
 
 ## Exercise 2 - Import starting solution
