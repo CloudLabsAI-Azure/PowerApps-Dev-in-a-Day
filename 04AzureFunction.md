@@ -310,15 +310,16 @@ In this exercise, you will deploy the function to Azure.
 
 1. Select **Azure Tools**.
 2. Click **Deploy to Function App**.
-  <img src="images/L04/NewVSazure3.png">
-  <img src="images/L04/NewVSazure4.png">
-3. Select **Sign in to Azure**.
+  <img src="images/L04/NewVSazure2.png">
+  
+3. It ask  **Sign in to Azure** give account details.
   <img src="images/L04/image%20(26).png">
 
 4. Sign into an Azure account that has a subscription or create a trial.
 5. Close the sign in browser window.
 6. Select **+ Create new Function App**.
-  <img src="images/L04/image%20(27).png">
+ <img src="images/L04/NewVSazure3.png"> 
+ <img src="images/L04/NewVSazure4.png">
 
 7. Enter **PrioritZFuncFL** for function app name an [ENTER]. Replace FL with your initials.
 8. Select **.NET 6**.
