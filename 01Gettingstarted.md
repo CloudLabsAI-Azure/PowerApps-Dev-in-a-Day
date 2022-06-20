@@ -298,21 +298,21 @@ Topic':newTopic,Photo:ThisRecord.photo}));Back()
 In this exercise, you will install Visual Studio Code and Power Platform CLI. These tools are used in the
 labs in this course.
 
-### Task 1: Install Node Package Manager
 
-1. Install Npm and Node.js We recommend that you use LTS (Long-Term Support) version 16.14.
-    or higher.
+### Task 1: Install Visual Studio Code
+   
+1. Navigate to Visual Studio Marketplace Power Platform Tools
+ 
+ ```
+  https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode
+ 
+  ```
+   
+2. Click **Install**.
+3. Click Continue.
+4. Wait for the Power Platform Tools to be installed.
 
-### Task 2: Install Visual Studio Code
-
-2. Navigate to Visual Studio Code
-3. Download Visual Studio Code and install it if you don’t already have it installed.
-4. Navigate to Visual Studio Marketplace Power Platform Tools
-5. Click **Install**.
-6. Click Continue.
-7. Wait for the Power Platform Tools to be installed.
-
-### Task 3: Test the Power Platform CLI
+### Task 2: Test the Power Platform CLI
 
 1. Navigate to Power Platform admin center by using below URL and select **Environments**.
  ```
