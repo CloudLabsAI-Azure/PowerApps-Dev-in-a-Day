@@ -411,12 +411,12 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
  <img src="images/L02/image38.png">
  
- 5. Select the **Code** tab.
+5. Select the **Code** tab.
 6. Select the code component you created and click **Import**.
  <img src="images/L02/image39.png">
  
  7. Select the **Screens** tab.
-8. Select the **Votes gallery**.
+8. Expand **votescreen** and Select the **Votes gallery**.
 9. Set the **Width** value of the Votes gallery to **570**.
 10. The screen should now look like the image below.
 <img src="images/L02/image40.png">
@@ -424,7 +424,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 11. Select the **Votes Screen** and click **+ Insert**.
 <img src="images/L02/image41.png">
  
-12. Select **PrioritZDnDRanking**.
+12. Select under **Code Component**  **PrioritZDnDRanking**.
 <img src="images/L02/image42.png">
  
  13. Go to the Tree view tab and select the **PrioritZDnDRanking** you just added.
@@ -433,7 +433,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 ```
 'Votes gallery'.AllItems
 ```
-15. Select the **PrioritZDnDRanking** go to the **Properties** pane and click **Edit Fields**.
+15. Select the **PrioritZDnDRanking** go to the **Properties** pane ,set **Item Height** 160 and click **Edit Fields** .
 <img src="images/L02/image43.png">
 
 16. Click **+ Add field**.
@@ -476,30 +476,44 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 29. Set the **OnSelect** value of the **PrioritZDnDRanking** component to the formula below.
 
 ```
-With({
-sourceRank:First(Self.SelectedItems).Rank,
-destinationRank:Last(Self.SelectedItems).Rank
-},
-
-If(sourceRank<destinationRank,
-// Moving Up
-UpdateIf(colVotes,Rank>=sourceRank && Rank<=destinationRank,
-{
-Rank:If(Rank<>sourceRank,Rank-1,destinationRank)
-}
+With(
+    {
+        sourceRank: First(Self.SelectedItems).Rank,
+        destinationRank: Last(Self.SelectedItems).Rank
+    },
+    If(
+        sourceRank < destinationRank,
+ // Moving Up
+        UpdateIf(
+            colVotes,
+            Rank >= sourceRank && Rank <= destinationRank,
+            {
+                Rank: If(
+                    Rank <> sourceRank,
+                    Rank - 1,
+                    destinationRank
+                )
+            }
+        );
+    );
+    If(
+        sourceRank > destinationRank,
+ // Moving Down
+        UpdateIf(
+            colVotes,
+            Rank >= destinationRank && Rank <= sourceRank,
+            {
+                Rank: If(
+                    Rank <> sourceRank,
+                    Rank + 1,
+                    destinationRank
+                )
+            }
+        );
+    );
+    
 );
 
-);
-
-If(sourceRank>destinationRank,
-// Moving Down
-UpdateIf(colVotes,Rank>=destinationRank && Rank<=sourceRank,
-{
-Rank:If(Rank<>sourceRank,Rank+1,destinationRank)
-}
-);
-);
-);
 ```
 30. Select the **Home Screen** and click **Play**.
 31. Select one of the **topics**.

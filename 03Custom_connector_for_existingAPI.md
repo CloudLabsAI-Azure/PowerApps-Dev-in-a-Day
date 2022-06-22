@@ -3,7 +3,7 @@
 # Dev in a day
 
 #### Lab 03 Custom connector for existing API/ May 2022
-
+  
 
 ## Table of Contents
 
@@ -125,7 +125,7 @@ In this exercise, you will create a custom connector from an existing API.
 3. Scroll down to the **Request** section, click on the chevron button of the **body** and select **Edit**.
 <img src="images/L03/image11.png">
 
-4. Click on the chevron button of **points** and select **Edit**.
+4. Scroll down and Click on the chevron button of **points** and select **Edit**.
 <img src="images/L03/image12.png">
 
 5. Select **Yes** for Is required and click on the  **Back** button.
@@ -413,6 +413,9 @@ environment and import it to Test environment.
 5. Click **Next**.
 6. Select **Managed** and click **Export**.
 7. Wait for the solution to be exported.
+8. Click Download button Right side top of the screen ,Click Download Solution.
+ 
+ <img src="images/L03/SolutionDown.png">
 
 ###  Task 1: (ii) Import solution
 

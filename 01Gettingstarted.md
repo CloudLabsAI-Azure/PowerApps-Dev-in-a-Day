@@ -41,8 +41,8 @@
 ### Lab Scenario
 
 
-Working as part of the PrioritZ fusion team you will be setting up your Power Platform development
-environment. You will import the current solution and explore the current state of the PrioritZ apps,
+Working as part of the Prioritz fusion team you will be setting up your Power Platform development
+environment. You will import the current solution and explore the current state of the Prioritz apps,
 flows and tables. You will be also adding a column to a table and modifying the app to use it.
 
 ## Exercise 1 - Create Dev environment
@@ -64,21 +64,18 @@ https://powerapps.microsoft.com/en-in/developerplan/
 
 3. Sign in if prompted.
 4. Select your country and click **Accept**.
-5. You should be navigated to the new dev environment created for you. Select the new
-    environment and stay sign in.
+5. You should be navigated to the new **dev environment created for you** . Select the new
+    **environment** and stay sign in.
   <img src="images/L01/image2.png">
 
 6. Expand **Dataverse**   and select **Tables** .
-7. First we need to create database. Click Database and then give **Currency**  USD and Language **English**  Click **Create my database**.
-  <img src="images/L01/NewUidb1.png">
-  <img src="images/L01/NewUidb.png">
-8. You should see several Dataverse tables that are created with every environment.
+7.  You should see several Dataverse tables that are created with every environment.
   <img src="images/L01/image3.png">
 
 ## Exercise 2 - Import starting solution
 
 In this exercise, you will import a solution into your dev environment. This solution contains the current
-PrioritZ apps, flows and Dataverse tables.
+Prioritz apps, flows and Dataverse tables.
 
 ### Task 1: Import solution
 
@@ -88,7 +85,7 @@ PrioritZ apps, flows and Dataverse tables.
 ```
 2. Select **Solutions** and click **Import**.
 3. Click **Browse**.
-4. Go to the lab resources folder C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources, select the **PrioritZ_solution.zip** file, and click **Open**.
+4. Go to the lab resources folder C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources, select the **Prioritz_1_0_0_7.zip** file, and click **Open**.
 5. Click **Next** .
   <img src="images/L01/image4.png">
 
@@ -133,6 +130,8 @@ sample data to your environment, and test the applications in the solution.
   <img src="images/L01/image10.png">
 
 8. Click **Edit**.
+  <img src="images/L01/NewUiImport.png">
+
 9. Expand the Parse JSON step and review the data this flow will create.
 10. Expand the **Apply to each topic** step.
 11. Expand the **Apply to each topic item** step.
@@ -299,21 +298,21 @@ Topic':newTopic,Photo:ThisRecord.photo}));Back()
 In this exercise, you will install Visual Studio Code and Power Platform CLI. These tools are used in the
 labs in this course.
 
-### Task 1: Install Node Package Manager
 
-1. Install Npm and Node.js We recommend that you use LTS (Long-Term Support) version 16.14.
-    or higher.
+### Task 1: Install Visual Studio Code
+   
+1. Navigate to Visual Studio Marketplace Power Platform Tools
+ 
+ ```
+  https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode
+ 
+  ```
+   
+2. Click **Install**.
+3. Click Continue.
+4. Wait for the Power Platform Tools to be installed.
 
-### Task 2: Install Visual Studio Code
-
-2. Navigate to Visual Studio Code
-3. Download Visual Studio Code and install it if you don’t already have it installed.
-4. Navigate to Visual Studio Marketplace Power Platform Tools
-5. Click **Install**.
-6. Click Continue.
-7. Wait for the Power Platform Tools to be installed.
-
-### Task 3: Test the Power Platform CLI
+### Task 2: Test the Power Platform CLI
 
 1. Navigate to Power Platform admin center by using below URL and select **Environments**.
  ```
