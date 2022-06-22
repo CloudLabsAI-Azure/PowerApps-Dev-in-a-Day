@@ -358,14 +358,15 @@ exported to the test environment.
 6. Change the name to **release-to-test**
 7. Add the following trigger. This will trigger on creation of a new release.
 
-
+    ![](images/L05/trigger.png)
+   
 ```
 on:
 release:
 types: [created]
 ```
    
-![](images/L05/trigger.png)
+
    
    
 8. Define constants. Add the below YAML snippet.
