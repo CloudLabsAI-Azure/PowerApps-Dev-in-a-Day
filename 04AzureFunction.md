@@ -308,7 +308,7 @@ Convert.FromBase64String(choice.Photo.Trim('\"').Split(',')[1]);
 16. Return the topic id as JSON (required by Power Apps). Add the code below to the **Run** method.
 
 ```
-r eturn new OkObjectResult(topicId);
+return new OkObjectResult(topicId);
 ```
 17. Click **Terminal** and select **Run Build Task**.
 18. The run should succeed. Press any key to stop.
@@ -322,97 +322,130 @@ In this exercise, you will deploy the function to Azure.
 
 1. Select **Azure Tools**.
 2. Click **Deploy to Function App**.
-  <img src="images/L04/NewVSazure2.png">
+ 
+    ![](images/L04/NewVSazure2.png)
   
 3. It ask  **Sign in to Azure** give account details.
-  <img src="images/L04/image%20(26).png">
+  
+    ![](images/L04/image%20(26).png)
 
 4. Sign into an Azure account that has a subscription or create a trial.
 5. Close the sign in browser window.
 6. Select **+ Create new Function App**.
- <img src="images/L04/NewVSazure3.png"> 
- <img src="images/L04/NewVSazure4.png">
+  
+  ![](images/L04/NewVSazure3.png)
+ 
+  ![](images/L04/NewVSazure4.png)
 
 7. Enter **PrioritZFuncFL** for function app name an [ENTER]. Replace FL with your initials.
 8. Select **.NET 6**.
 9. Select your location.
-10. Wait for the function to be deployed.
+10. Click Deploy Function App and choose Function app you are created .Wait for the function to be deployed.
+
+   ![](images/L04/DeployNew.png)
+   
+   ![](images/L04/DeployNew1.png)
+
 11. Navigate to https://portal.azure.com/
 12. Select **All resources** , search for the function app you deployed and click to open it.
-  <img src="images/L04/image%20(28).png">
+  
+   ![](images/L04/image%20(28).png)
 
 13. Select **Authentication** and click **Add identity provider.**
-  <img src="images/L04/image%20(29).png">
+  
+    ![](images/L04/image%20(29).png)
 
 14. Select **Microsoft** for Identity provider,
 15. Select **Current tenant - Single tenant** and click **Add**.
-  <img src="images/L04/image%20(30).png">
+   
+     ![](images/L04/image%20(30).png)
 
 16. Go to the **Portal menu** page of Azure portal.
 17. Select **Azure Active Directory**.
-  <img src="images/L04/image%20(31).png">
+    
+     ![](images/L04/image%20(31).png)
 
 18. Select **App registrations**.
 19. Click to open the **PrioritZFL**.
-  <img src="images/L04/image%20(32).png">
+     
+     ![](images/L04/image%20(32).png)
 
 
 20. Copy the **Application (client) ID** of the **PrioritZFL** application registration and keep it on a
     notepad as **PrioritZFL API application ID**. You will need this id in future steps. This ID will be
     used to configure protection of the API.
-  <img src="images/L04/image%20(33).png">
-  <img src="images/L04/image%20(34).png">
+    
+    ![](images/L04/image%20(33).png)
+    
+    ![](images/L04/image%20(34).png">
 
 21. Copy the **Directory (tenant) ID** and keep it on a notepad as **Tenant ID**. You will need this id in
     future steps.
-  <img src="images/L04/image%20(35).png">
+  
+    ![](images/L04/image%20(35).png)
 
 22. Select **Certificates & secrets**.
 23. Click **New + client secret**.
-  <img src="images/L04/image%20(36).png">
+  
+     ![](images/L04/image%20(36).png)
 
 24. Provide a description, select **3 months** , and click **Add**.
-  <img src="images/L04/image%20(37).png">
+    
+    ![](images/L04/image%20(37).png)
 
 25. Copy the **Value** and keep it in a notepad as **PrioritZFL API Secret**. You need this value in future
     steps.
-  <img src="images/L04/image%20(38).png">
+    
+     ![](images/L04/image%20(38).png)
 
 26. Select **API permissions**.
 27. Click **+ Add a permission**.
-  <img src="images/L04/image%20(39).png">
+  
+     ![](images/L04/image%20(39).png)
 
 28. Select **Dynamics CRM**. Dynamics CRM is Dataverse, the Azure portal just hasn’t been updated as
     of the time of the writing of these steps.
-  <img src="images/L04/image%20(40).png">
+     
+     ![](images/L04/image%20(40).png)
 
 29. Check the **user_impersonation** checkbox and click **Add permission**.
-  <img src="images/L04/image%20(41).png">
+
+    ![](images/L04/image%20(41).png)
 
 30. Go back to **Home** and open the **PrioritZFL** function app.
-  <img src="images/L04/image%20(42).png">
+   
+   ![](images/L04/image%20(42).png)
 
 31. Select **Configuration**.
-  <img src="images/L04/image%20(43).png">
+  
+     ![](images/L04/image%20(43).png)
 
 32. Click **+ New application setting.**
-  <img src="images/L04/image%20(44).png">
+     
+     ![](images/L04/image%20(44).png)
 
 33. Enter **ClientID** for Name.
 34. Go to your notepad and copy the **PrioritZFL API application ID**.
 35. Go back to the portal, paste the ID you copied in the **Value** field, and click **OK**.
-  <img src="images/L04/image%20(45).png">
+   
+     ![](images/L04/image%20(45).png)
 
 
 36. Click **+ New application setting** again.
-37. Enter **ClientSecret** for Name.
-38. Go to your notepad and copy the **PrioritZFL API Secret**.
-39. Go back to the portal, paste the secret you copied in the **Value** field, and click **OK**.
-40. Click **+ New application setting** again.
-41. Enter **TenantID** for Name.
-42. Go to your notepad and copy the **Tenant ID**.
-43. Go back to the portal, paste the Tenant ID you copied in the **Value** field, and click **OK**.
 
+37. Enter **ClientSecret** for Name.
+
+38. Go to your notepad and copy the **PrioritZFL API Secret**.
+
+39. Go back to the portal, paste the secret you copied in the **Value** field, and click **OK**.
+
+40. Click **+ New application setting** again.
+
+41. Enter **TenantID** for Name.
+
+42. Go to your notepad and copy the **Tenant ID**.
+
+43. Go back to the portal, paste the Tenant ID you copied in the **Value** field, and click **OK**.
 
 44. Click **+ New application setting** one more time.
 45. Enter **DataverseURL** for Name.
@@ -421,13 +454,16 @@ In this exercise, you will deploy the function to Azure.
 47. Click to open the Dev environment you are using for this lab.
 48. Copy the **Environment URL**.
 
-  <img src="images/L04/image%20(47).png">
+     ![](images/L04/image%20(47).png)
+
 49. Go back to the portal, paste the URL you copied in the **Value** field, and click **OK**.
 
 50. You should see the four application settings you added. Click **Save**.
-  <img src="images/L04/image%20(46).png">
+  
+     ![](images/L04/image%20(46).png)
 
 51. Click **Continue**.
+
 52. Navigate to https://login.microsoftonline.com/{tenant id}/adminconsent?client_id={api app id}
     Replace {tenant id} and {api app id} with tenant id and PrioritZFL API application ID from your
     notepad. If you are not a tenant administrator, you will need to work with your
@@ -444,19 +480,22 @@ In this exercise, you will deploy the function to Azure.
     **only** , select **Web** for Redirect URI, enter https://global.consent.azure-apim.net/redirect and
     click **Register**.
 
-   <img src="images/L04/image%20(48).png">
+     ![](images/L04/image%20(48).png)
     
 4. Copy the **Application (client) ID** and keep it in a notepad as **PrioritZFL Connector application ID**.
-  <img src="images/L04/image%20(49).png">
+     
+     ![](images/L04/image%20(49).png)
     
 5. Select **Certificates & secrets** and click **+ New client secret**.
 6. Provide a description, select **3 months** , and click **Add**.
 7. Copy the secret **Value** and keep it on a notepad as **PrioritZFL Connector Secret**.
 8. Select **API permissions** and click **+ Add a permission**.
-  <img src="images/L04/image%20(50).png">
+      
+     ![](images/L04/image%20(50).png)
 
 9. Select the **My APIs** tab and select **PrioritZFL**.
-  <img src="images/L04/image%20(51).png">
+    
+     ![](images/L04/image%20(51).png)
     
  10. Check the **user_impersonation** checkbox and click **Add permission**.
 
@@ -468,36 +507,44 @@ In this exercise, you will create a new custom connector.
 
 1. Navigate to https://portal.azure.com/
 2. Select **All resources** , search for the function app you deployed and click to open it.
-  <img src="images/L04/image%20(52).png">
+     
+     ![](images/L04/image%20(52).png)
     
 3. Copy the **URL**.
-  <img src="images/L04/image%20(53).png">
+   
+     ![](images/L04/image%20(53).png)
 
 4. Open a new browser tab or window and paste the URL you copied.
 5. Add **/api/swagger.json** to the end of the URL and [ENTER]
-  <img src="images/L04/image%20(54).png">
+     
+     ![](images/L04/image%20(54).png)
     
 6. Click **Accept** if prompted for permissions.
 7. Right click on the swagger and select **Save as**.
-  <img src="images/L04/image%20(55).png">
+    
+     ![](images/L04/image%20(55).png)
     
 8. Save the file on your local machine.
 9. Navigate to Power Apps maker portal and make sure you have the correct Dev environment
     selected.
 10. Expand **Data** and select **Custom Connectors**.
-  <img src="images/L04/image%20(56).png">
+     
+     ![](images/L04/image%20(56).png)
 
 11. Click on the chevron button next to the New custom connector and select **Import an OpenAPI**
     **file**.
-  <img src="images/L04/image%20(57).png">
+     
+     ![](images/L04/image%20(57).png)
     
 12. Enter **PrioritZ Connector** for name and click **Import**.
-  <img src="images/L04/image%20(58).png">
+    
+     ![](images/L04/image%20(58).png)
     
 13. Select the swagger file you saved and click **Open**.
 14. Click **Continue**.
 15. Provide Description and advance to **Security**.
-  <img src="images/L04/image%20(59).png">
+    
+     ![](images/L04/image%20(59).png)
 
 16. Select **OAuth 2.0** for Authentication type.
 17. Select **Azure Active Directory** Identity provider.
@@ -508,19 +555,22 @@ In this exercise, you will create a new custom connector.
 21. Copy the **PrioritZ API application ID** from your notepad and paste it in the **Resource URL** field.
 22. Enter **true** for Enable on-behalf-of login.
 23. Click **Create connector**.
-  <img src="images/L04/image%20(60).png">
+    
+     ![](images/L04/image%20(60).png)
 
 ### Task 2: Test connector
 
 1. Select the **Test** tab.
 2. Click **+ New connection**.
-  <img src="images/L04/image%20(61).png">
+     
+   ![](images/L04/image%20(61).png)
     
 3. Click **Create**.
 4. Provide your credentials.
 5. Click **Accept**.
 6. Select **Custom connectors** and click **Edit** on the **PrioritZ connector**.
-  <img src="images/L04/image%20(62).png">
+     
+   ![](images/L04/image%20(62).png)
     
 7. Select the **Test** tab.
 8. Make sure the connection you created is selected.
@@ -539,12 +589,13 @@ In this exercise, you will create a new custom connector.
     ]
     }
 ```
-  <img src="images/L04/image%20(64).png">
+     
+ ![](images/L04/image%20(64).png)
 
     
  11. The operation test should succeed, and the response should look like the image below.
 
-  <img src="images/L04/image%20(65).png">
+     ![](images/L04/image%20(65).png)
 
 ### Exercise 4 – Use Function from Canvas App
 
@@ -555,23 +606,28 @@ Admin canvas application.
 
 1. Navigate to Power Apps maker portal a nd make sure you are in correct environment.
 2. Select Apps, select the **PrioritZ Admin** application and click **Edit**.
-  <img src="images/L04/image%20(66).png">
+     
+   ![](images/L04/image%20(66).png)
 
 3. Select **Data** , click **+ Add data** , search for prioritz connector, and select the **PrioritZ Connector**
     you created.
-  <img src="images/L04/image%20(67).png">
+     
+    ![](images/L04/image%20(67).png)
     
     
 4. Add the connector by clicking again.
 5. Click on the **... More actions** button of the connector you just added and select **Rename**.
-  <img src="images/L04/image%20(68).png">
+    
+   ![](images/L04/image%20(68).png)
     
 6. Rename the connector **PrioritZFunction**.
-  <img src="images/L04/image%20(69).png">
+     
+     ![](images/L04/image%20(69).png)
 
 7. Select the **Tree view** and expand the **Add Topic Screen**.
 8. Select the **Add choice icon**.
-  <img src="images/L04/image%20(70).png">
+ 
+    ![](images/L04/image%20(70).png)
     
     
 9. Replace the **OnSelect** formula of the **Add choice icon** with the formula below. This adjusts the
@@ -591,7 +647,7 @@ JSONFormat.IncludeBinaryData
 Reset('Choice name textbox');
 Reset(AddMediaButton2)
 ```
-  <img src="images/L04/image%20(72).png">
+![](images/L04/image%20(72).png)
 
 10. Select **Save topic icon**.
 11. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. This changes to
@@ -609,7 +665,7 @@ Notify("Topic created! " & returnGuid, NotificationType.Success, 5000);
 Back();
 ```
 
-  <img src="images/L04/image%20(74).png"> 
+![](images/L04/image%20(74).png)
     
 12. Click **File** and select **Save**.
 
@@ -621,31 +677,33 @@ Back();
 ### Task 2: Test application
 
 1. Select the **Home Screen** and click **Preview the app**.
-  <img src="images/L04/image%20(75).png"> 
+    ![](images/L04/image%20(75).png)
 
 2. Click on the **+** add button.
 3. Enter **Function Test** for Topic, **Testing the function** for Details. **Note for testing the function** for
   Note, select a date for Response by, and click **add a picture**.
 
-  <img src="images/L04/image%20(76).png"> 
+    ![](images/L04/image%20(76).png)
     
 4. Select any small image from your local machine.
 5. Enter **Test choice one** for Choice and click **add a picture**.
 6. Select any small image from your machine and click **+**.
 
-   <img src="images/L04/image%20(77).png"> 
+     ![](images/L04/image%20(77).png) 
     
 7. Enter **Test choice two** for Choice and click **add a picture**.
 
 8. Select any image from your machine and click **+**.
 
 9. Click **Save**.
-  <img src="images/L04/image%20(78).png"> 
+  
+     ![](images/L04/image%20(78).png)
 
 10. The new topic should be saved, and you should be navigated back to the main screen.
 11. Locate the new topic you created and open it.
-  <img src="images/L04/image%20(79).png"> 
+    
+     ![](images/L04/image%20(79).png)
     
 12. You should see the two choices you added to topic.
 
-  <img src="images/L04/image%20(80).png"> 
+    ![](images/L04/image%20(80).png)
