@@ -26,13 +26,13 @@ Lab Scenario
 
    - Task 2: Register Connector Client app 
 
-4. Exercise 3 – Create Connector 
+4. Exercise 4 – Create Connector 
 
    - Task 1: Create connector 
 
    - Task 2: Test connector 
 
-5. Exercise 4 – Use Function from Canvas App 
+5. Exercise 5 – Use Function from Canvas App 
 
    - Task 1: Use function 
 
@@ -468,7 +468,7 @@ In this exercise, you will deploy the function to Azure.
     
  10. Check the **user_impersonation** checkbox and click **Add permission**.
 
-## Exercise 3 – Create Connector
+## Exercise 4 – Create Connector
 
 In this exercise, you will create a new custom connector.
 
@@ -554,7 +554,7 @@ In this exercise, you will create a new custom connector.
 
   <img src="images/L04/image%20(65).png">
 
-### Exercise 4 – Use Function from Canvas App
+### Exercise 5 – Use Function from Canvas App
 
 In this exercise, you will use then Azure function you created via the custom connector from the PrioritZ
 Admin canvas application.
