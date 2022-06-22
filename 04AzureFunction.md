@@ -61,19 +61,23 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 1. Start **Visual Studio Code**.
 2. Select the **Extensions** tab.
 3. Search for Azure and click **Install Azure Tools**.
-  <img src="images/L04/image%20(1).png">
+  
+    ![](images/L04/image%20(1).png)
 
 
 4. Wait for the installation to complete.
 5. You should now see the new Azure Tools extension you added.
-  <img src="images/L04/image%20(2).png">
+    
+    ![](images/L04/image%20(2).png)
 
 6. Click **Terminal** and select **New Terminal**.
-  <img src="images/L04/image%20(3).png">
+ 
+    ![](images/L04/image%20(3).png)
 
 7. Go to the terminal and run the command below to create new folder.
     md ContosoFunctions
-  <img src="images/L04/image%20(4).png">
+   
+     ![](images/L04/image%20(4).png)
 
 
 
@@ -81,28 +85,33 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
 1. Select **Azure Tool** , go to the **workspace** section click **+** , click Create Function, and click **Create New Project**.
   
-  <img src="images/L04/NewVSazure.png">
-  <img src="images/L04/NewVSazure1.png">
+    ![](images/L04/NewVSazure.png)
+  
+    ![](images/L04/NewVSazure1.png)
 
 2. Select the **ContosoFunctions** folder you created and click **Select**.
 3. Select **C#** for language.
 4. Select **.NET 6** for .NET runtime.
-  <img src="images/L04/image%20(6).png">
+ 
+    ![](images/L04/image%20(6).png)
 
 5. Select **HTTP trigger with OpenAPI** for template.
 6. Enter **CreateTopic** for function name and **[ENTER].**
-  <img src="images/L04/image%20(7).png">
+    
+    ![](images/L04/image%20(7).png)
 
 7. Enter **Contoso.PrioritZ** for namespace and [ENTER]
 8. Select **Anonymous** for AccessRights. Later we will protect the function using Azure AD.
 
 
 9. Select **Open in current window.**
-  <img src="images/L04/image%20(8).png">
+  
+    ![](images/L04/image%20(8).png)
 
 10. Your function should open in **Visual Studio Code** .
 11. Click **Terminal** and select **Run Build Task**.
-  <img src="images/L04/image%20(9).png">
+  
+   ![](images/L04/image%20(9).png)
 
 12. The build should succeed.
 13. Go to Terminal and **press any key close it** .
@@ -114,10 +123,12 @@ In this exercise, you will implement the function.
 ### Task 1: Implement function
 
 1. Click **New file**.
-  <img src="images/L04/image%20(10).png">
+    
+    ![](images/L04/image%20(10).png)
 
 2. Name the new file **Model.cs**
-  <img src="images/L04/image%20(11).png">
+  
+    ![](images/L04/image%20(11).png)
 
 3. Open the new **Model.cs** file and paste the code below. This will define the data that will be sent
     from the Power App.
@@ -159,11 +170,12 @@ OpenApiSecurityLocationType.Query)]
 [OpenApiRequestBody(contentType: "application/json", bodyType:
 typeof(TopicModel))]
 ```
-  <img src="images/L04/image%20(13).png">
+   ![](images/L04/image%20(13).png)
 
 
 6. Remove **get** from the Run method. You should only have post.
-  <img src="images/L04/image%20(14).png">
+  
+    ![](images/L04/image%20(14).png)
 
 
 7. Go to the **Terminal** and add **Power Platform Dataverse Client** package.
@@ -172,7 +184,7 @@ typeof(TopicModel))]
 dotnet add package Microsoft.PowerPlatform.Dataverse.Client
 ```
 
-  <img src="images/L04/image%20(17).png">
+ ![](images/L04/image%20(17).png)
 
 
 8. Wait for the package to be added.
