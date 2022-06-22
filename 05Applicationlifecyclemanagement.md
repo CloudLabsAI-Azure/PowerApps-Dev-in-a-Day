@@ -196,6 +196,9 @@ indentation shown in the images.
 5. Change the name to **export-and-branch**
 6. Add the below YAML snippet after the name line. This defines the action trigger and some input
     parameters that could be changed when manually running the action.
+   
+    ![](images/L05/Images%20(20).png)
+   
 ```
    on:
 workflow_dispatch:
@@ -221,7 +224,7 @@ description: 'folder name to be created and checked in *do not change*'
 required: true
 default: solutions/
 ```
- ![](images/L05/Images%20(20).png)
+
    
 7. Setup the workflow. Add below YAML snippet after the last snippet. This sets up the jobs and
     identifies the first job as export-from-dev. This also defines the steps with the first one checking
@@ -401,6 +404,9 @@ solution-type: Managed
 ```
 
 11. Package unmanaged solution. Add the below YAML snippet.
+   
+      ![](images/L05/Images%20(41).png)
+   
 ```
 - name: Pack unmanaged solution
     uses: microsoft/powerplatform-actions/pack-solution@0.4.
@@ -412,7 +418,7 @@ solution-type: Managed
     solution-type: Unmanaged
 ```
 
- ![](images/L05/Images%20(41).png)
+
    
    
    
