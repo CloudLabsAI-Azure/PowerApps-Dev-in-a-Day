@@ -254,9 +254,9 @@ return result.AccessToken;
 ```
 13. Replace the code inside the **Run** method with code below. This will get an instance of the
     Dataverse API and use the GetAccessToken function we just defined.
+    
+```    
 _logger.LogInformation("Starting Create Topic");
-
-```
 var serviceClient = new ServiceClient(
 instanceUrl: new Uri(Environment.GetEnvironmentVariable("DataverseUrl")),
 tokenProviderFunction: async uri => { return await
@@ -326,39 +326,37 @@ In this exercise, you will deploy the function to Azure.
 ### Task 1: Publish
 
 1. Select **Azure Tools**.
-2. Click **Deploy to Function App**.
- 
-    ![](images/L04/NewVSazure2.png)
-  
-3. It ask  **Sign in to Azure** give account details.
-  
-    ![](images/L04/image%20(26).png)
+2. Click **Sign in to Azure**.
+   
+   ![](images/L04/image%20(26).png)
+    
+3. It ask  **Sign in to Azure**  give account details.
 
 4. Sign into an Azure account that has a subscription or create a trial.
 5. Close the sign in browser window.
 6. Select **+ Create new Function App**.
   
-  ![](images/L04/NewVSazure3.png)
+    ![](images/L04/NewVSazure3.png)
  
-  ![](images/L04/NewVSazure4.png)
+    ![](images/L04/NewVSazure4.png)
 
 7. Enter **PrioritZFuncFL** for function app name an [ENTER]. Replace FL with your initials.
 8. Select **.NET 6**.
 9. Select your location.
-10. Click Deploy Function App and choose Function app you are created .Wait for the function to be deployed.
-
-   ![](images/L04/DeployNew.png)
+10. Click Deploy Function App and choose Function just now you created .Wait for the function app to be deployed.
+    
+     ![](images/L04/DeployNew.png)
    
-   ![](images/L04/DeployNew1.png)
+     ![](images/L04/DeployNew1.png)
 
 11. Navigate to https://portal.azure.com/
 12. Select **All resources** , search for the function app you deployed and click to open it.
   
-   ![](images/L04/image%20(28).png)
+     ![](images/L04/image%20(28).png)
 
 13. Select **Authentication** and click **Add identity provider.**
   
-    ![](images/L04/image%20(29).png)
+     ![](images/L04/image%20(29).png)
 
 14. Select **Microsoft** for Identity provider,
 15. Select **Current tenant - Single tenant** and click **Add**.
