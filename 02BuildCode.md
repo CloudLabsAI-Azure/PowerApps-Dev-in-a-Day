@@ -58,10 +58,11 @@ In this exercise, you will build the code component.
 2. Select the Power Platform tab and make sure your Dev Auth profile is selected. NOTE: the Power
     Platform tab is only available if you installed the Power Platform extension as explained in lab 1.
 
-<img src="images/L02/image1.png">
+     ![](images/L02/image1.png)
 
 3. Click **Terminal** and select **New Terminal.**
-<img src="images/L02/image2.png">
+     
+     ![](images/L02/image2.png)
 
 4. In the Terminal window, make a new directory by running the command below.
 
@@ -78,13 +79,13 @@ cd PrioritZDnDRanking
 ```
 pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --
 framework react --run-npm-install
-```
 
-<img src="images/L02/image3.png">
+```
+   ![](images/L02/image3.png)
 
 7. The component framework project should be created successfully.
 
-<img src="images/L02/image4.png">
+    ![](images/L02/image4.png)
 
 8. Run the command below to open the project.
 
@@ -92,26 +93,27 @@ framework react --run-npm-install
 code -a.
 ```
 9. Review the created code component files.
-<img src="images/L02/image5.png">
+    
+     ![](images/L02/image5.png)
 
 10. Expand the **PrioritZDnDRanking** folder and then expand the component folder.
 11. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a
     component including the properties exposed to the hosting app.
 
-<img src="images/L02/image6.png">
+      ![](images/L02/image6.png)
 
 12. Locate **data-set** XML element.
 
-<img src="images/L02/image7.png">
+      ![](images/L02/image7.png)
 
 13. change the **name** to **items** and the **display-name-key** to **items**. This defines the property the app
     will bind to a collection of items.
 
-<img src="images/L02/image8.png">
+      ![](images/L02/image8.png)
 
 14. Add the following properties after the closing tag of the data-set element **</data-set** >.
 
-<img src="images/L02/image9.png">
+      ![](images/L02/image9.png)
 
 ```
 <property name="BackgroundColor" display-name-key="Background color"
@@ -129,7 +131,7 @@ type="SingleLine.Text" default-value="#333333"/>
 15. Locate **<resources>** and uncomment **css** resource. This will ensure that our styles will be
     bundled with the code component when it is deployed.
 
- <img src="images/L02/image10.png">
+      ![](images/L02/image10.png)
  
  16. Notice the following two resources. This declares the component’s dependency on these two
     libraries. This is a result of specifying –framework React on initialization.
@@ -137,23 +139,23 @@ type="SingleLine.Text" default-value="#333333"/>
 <platform-library name="React" version="16.8.6" />
 <platform-library name="Fluent" version="8.29.0" />
 ```
-<img src="images/L02/image11.png">
+   
+   ![](images/L02/image11.png)
  
  
- 17. Click **File** and select **Save All**.
+17. Click **File** and select **Save All**.
 18. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
 
- <img src="images/L02/image12.png">
+      ![](images/L02/image12.png)
 
 19. Name the new folder **css**.
 20. Select the new **css** folder you created and then click New File
-
  
- <img src="images/L02/image13.png">
+      ![](images/L02/image13.png)
 
  
  21. Name the new file **PrioritZDnDRanking.css**.
-22. Paste the following css into the **PrioritZDnDRanking.css** file.
+ 22. Paste the following css into the **PrioritZDnDRanking.css** file.
 
 ```
 .prioritydnd-scroll-c ontainer {
@@ -163,20 +165,19 @@ overflow-y: auto;
 overflow-x: hidden;
 position: relative;
 }
-```
-```
 .prioritydnd-item-container {
 user-select: none;
 display: flex;
 align-items: center;
 }
-```
 . prioritydnd-item-column {
 margin: 8px;
 }
+
+```    
 23. The file should now look like the following.
 
-  <img src="images/L02/image14.png">
+     ![](images/L02/image14.png)
 
 24. Click **File** and save your changes.
 
@@ -186,11 +187,11 @@ margin: 8px;
 2. Go to the lab resources folder.
 3. Drag the **PriorityComponent.tsx** file and drop it in the **PrioriZDnDRanking** folder.
  
- <img src="images/L02/image15.png">
+     ![](images/L02/image15.png)
  
  4. The **PriorityComponent.tsx** file should now be in the **PrioriZDnDRanking** folder.
 
-  <img src="images/L02/image16.png">
+     ![](images/L02/image16.png)
 
 5. Click **File** and save your changes.
 6. Open the **PriorityComponent.tsx** and review the contents. This implements the React
@@ -198,7 +199,7 @@ margin: 8px;
 7. Notice line 9 from ‘react-beautiful-dnd’ has a red underline. This is a npm package the
     component uses that we haven’t referenced.
 
-  <img src="images/L02/image17.png">
+     ![](images/L02/image17.png)
  
  8. Run the following command in a terminal window to add a reference to react-beautiful-dnd
 
@@ -218,7 +219,8 @@ npm i --save-dev @types/react-beautiful-dnd
 import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
 ```
 13. **F**
-<img src="images/L02/image18.png">
+    
+     ![](images/L02/image18.png)
  
  14. Add the import below to the **index.ts** file. This will reference the PriorityComponent.
 
@@ -226,10 +228,11 @@ import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
 import { PriorityComponent, PriorityComponentProps } from
 './PriorityComponent';
 ```
-<img src="images/L02/image19.png">
+  ![](images/L02/image19.png)
  
  15. Locate the **Export** class.
-<img src="images/L02/image20.png">
+      
+     ![](images/L02/image20.png)
  
  16. Add the following code below inside the **export** class. This defines some working variables you
     will be using in the class logic.
@@ -237,12 +240,11 @@ import { PriorityComponent, PriorityComponentProps } from
  private context: ComponentFramework.Context<IInputs>;
  private items: ComponentFramework.PropertyTypes.DataSet;
 ```
-
- <img src="images/L02/image21.png">
+  ![](images/L02/image21.png)
  
  17. Locate the **init** function.
  
- <img src="images/L02/image22.png">    
+       ![](images/L02/image22.png)
       
  18. Paste the code below inside the **init** function. This logic initializes our class variables from the
     runtime values and enables resize notification.
@@ -250,11 +252,11 @@ import { PriorityComponent, PriorityComponentProps } from
 this.context = context;
 context.mode.trackContainerResize(true);
 ```
-<img src="images/L02/image23.png">
+ ![](images/L02/image23.png)
  
 19. Locate the **updateView** function.
 
- <img src="images/L02/imageUpdateView.png">
+      ![](images/L02/imageUpdateView.png)
  
 20. Replace **updateView** function with the function below. This logic creates the React Element
     from the PriorityComponent and adds it to the virtual DOM.
@@ -278,7 +280,7 @@ this.context.parameters.DragBackgroundColor.raw,
 }
 ```
 
-<img src="images/L02/image24.png"> 
+ ![](images/L02/image24.png)
  
 21. Add the function below after the **destroy** function. This logic handles the onReorder event from
     the PriorityComponent and identifies the involved items to the hosting app as selected items.
@@ -297,13 +299,13 @@ this.context.parameters.items.setSelectedRecordIds([sourceId,
 destinationId]);
 };
 ```
-<img src="images/L02/image25.png">
+  ![](images/L02/image25.png)
 
  
 22. Open the **package.json** file.
 23. Locate the **dependencies** JSON object.
 
-<img src="images/L02/image26.png">
+      ![](images/L02/image26.png)
  
 24. Replace **dependencies** with the JSON below.
 
@@ -323,7 +325,8 @@ destinationId]);
 ```
 25. Click **File** and save all your changes.
 26. Click **Terminal** and select **New Terminal**.
-<img src="images/L02/image27.png">
+     
+      ![](images/L02/image27.png)
 
 27. Run the command below. This will build your component and identify any problems.
 
@@ -331,7 +334,7 @@ destinationId]);
 npm run-script build
 ```
 28. The build should succeed. If any errors, resolve them before proceeding.
-<img src="images/L02/image28.png">
+      ![](images/L02/image28.png)
  
  29. Run the command below to start the test harness.
 
@@ -341,7 +344,7 @@ npm start
 30. The test harness should start. Try dragging the items and see if the behavior functions as
     expected.
 
- <img src="images/L02/imagee29.png">
+      ![](images/L02/imagee29.png)
  
  31. Close the test harness.
 32. Stop the run by holding the **[CONTROL]** key + **C**.
@@ -349,7 +352,8 @@ npm start
  
  
  33. Type **Y** and [ENTER].
-  <img src="images/L02/image30.png">
+     
+      ![](images/L02/image30.png)
 
  
  34. Run the command below to push the component to your environment.
@@ -360,17 +364,19 @@ pac pcf push --publisher-prefix contoso
 ```
 35. Wait for the solution to be imported and published to your environment.
 
-  <img src="images/L02/image31.png">
+      ![](images/L02/image31.png)
  
 ### Task 3: Confirm the control was added to environment
 
 1. Navigate to https://make.powerapps.com/ and make sure you have the Dev environment
     selected.
 2. Select **Solutions** and open the **PowerAppsTools** solution.
- <img src="images/L02/image32.png">
+    
+    ![](images/L02/image32.png)
 
  3. Confirm that the custom control is in this solution.
- <img src="images/L02/image33.png">
+     
+      ![](images/L02/image33.png)
  
 ## Exercise 2 – Use Code Component
 
@@ -386,13 +392,16 @@ In this task, you will allow publishing of canvas apps with code components for 
  
 2. Open the dev environment you are using for this lab.
 3. Click **Settings**.
- <img src="images/L02/image34.png">
+    
+     ![](images/L02/image34.png)
 
 4. Expand **Products** and select **Features**.
- <img src="images/L02/image35.png">
+    
+     ![](images/L02/image35.png)
 
  5. Turn on **Allow publishing of canvas apps with code components** and click **Save**.
- <img src="images/L02/image36.png">
+     
+      ![](images/L02/image36.png)
 
  ### Task 2: Edit canvas app
 
@@ -404,52 +413,63 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
  
 2. Select **Solutions** and open the **PrioritZ** solution.
 3. Select **Apps** , select the **PrioritZ** Ask app and click **Edit**.
-<img src="images/L02/image37.png">
+
+     ![](images/L02/image37.png)
 
 4. Select the **Components** tab, click on the **... Components option button** and select **Import**
     **components**.
 
- <img src="images/L02/image38.png">
+     ![](images/L02/image38.png)
  
 5. Select the **Code** tab.
 6. Select the code component you created and click **Import**.
- <img src="images/L02/image39.png">
+    
+     ![](images/L02/image39.png)
  
  7. Select the **Screens** tab.
 8. Expand **votescreen** and Select the **Votes gallery**.
 9. Set the **Width** value of the Votes gallery to **570**.
 10. The screen should now look like the image below.
-<img src="images/L02/image40.png">
+     
+      ![](images/L02/image40.png)
 
 11. Select the **Votes Screen** and click **+ Insert**.
-<img src="images/L02/image41.png">
+      
+     ![](images/L02/image41.png)
  
 12. Select under **Code Component**  **PrioritZDnDRanking**.
-<img src="images/L02/image42.png">
+      
+     ![](images/L02/image42.png)
  
- 13. Go to the Tree view tab and select the **PrioritZDnDRanking** you just added.
+13. Go to the Tree view tab and select the **PrioritZDnDRanking** you just added.
+
 14. Set the **Items** value of the **PrioritZDnDRanking** component to the formula below.
 
 ```
 'Votes gallery'.AllItems
 ```
 15. Select the **PrioritZDnDRanking** go to the **Properties** pane ,set **Item Height** 160 and click **Edit Fields** .
-<img src="images/L02/image43.png">
+
+      ![](images/L02/image43.png)
 
 16. Click **+ Add field**.
 17. Select **Rank** and click **Add**.
-<img src="images/L02/image44.png">
+     
+      ![](images/L02/image44.png)
  
 18. The rank should now show on the control, but it is sorted descending.
-<img src="images/L02/image45.png">
+      
+      ![](images/L02/image45.png)
 
 19. Select the **Votes gallery** and change the sort order to **Ascending**.
-<img src="images/L02/image46.png">
+     
+      ![](images/L02/image46.png)
  
  20. The rank should now get sorted ascending.
-<img src="images/L02/image47.png">
+     
+      ![](images/L02/image47.png)
  
- 21. Select the **PrioritZDnDRanking** component.
+21. Select the **PrioritZDnDRanking** component.
 22. Set the **X** value of the **PrioritZDnDRanking** component to the formula below.
 
 ```
@@ -518,10 +538,12 @@ With(
 30. Select the **Home Screen** and click **Play**.
 31. Select one of the **topics**.
 32. Make your browser widow smaller until it is the size of a phone screen.
-<img src="images/L02/image48.png">
+     
+     ![](images/L02/image48.png)
 
 33. Drag one of the topic items and drop it in a different location.
-<img src="images/L02/image49.png">
+     
+     ![](images/L02/image49.png)
  
  34. The drag/drop should work as expected.
 35. Close the preview.
@@ -541,10 +563,12 @@ In this exercise, you will add the code component you created to the PrioritZ so
     selected.
 2. Select **Solutions** and open the **PrioritZ** solution.
 3. Click **Add existing** and select **More | Developer | Custom control**.
-<img src="images/L02/image50.png">
+      
+      ![](images/L02/image50.png)
  
  4. Select **contoso_ContosoCoffee.PrioritZDnDRanking** and click **Add**.
-<img src="images/L02/image51.png">
+     
+      ![](images/L02/image51.png)
  
  5. Click **Publish all customizations** and wait for the publishing to complete.
 
