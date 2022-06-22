@@ -252,18 +252,22 @@ application.
 
 1. Make sure you are still in the **PrioritZ** solution.
 2. Select **Apps** and click to open the **PrioritZ Admin** application.
-  ![](images/L01/image25.png)
+    
+    ![](images/L01/image25.png)
 
 3. Select the **Add Topic Screen**.
 4. Select the **Insert** tab, click **Text** , and then select **Text input**.
-  ![](images/L01/image26.png)
+   
+     ![](images/L01/image26.png)
 
 5. Rename the text input **Notes textbox**.
-  ![](images/L01/image27.png)
+    
+     ![](images/L01/image27.png)
 
 6. Make the add picture control smaller if needed and move the respond by and label textbox
     down and place the Notes textbox between the Details control and the Respond by label.
-  ![](images/L01/image28.png)
+   
+    ![](images/L01/image28.png)
 
 
 7. Select Notes **textbox**.
