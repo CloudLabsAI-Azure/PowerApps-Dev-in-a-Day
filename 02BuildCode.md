@@ -228,7 +228,7 @@ import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
 import { PriorityComponent, PriorityComponentProps } from
 './PriorityComponent';
 ```
-    ![](images/L02/image19.png)
+  ![](images/L02/image19.png)
  
  15. Locate the **Export** class.
       
@@ -240,7 +240,7 @@ import { PriorityComponent, PriorityComponentProps } from
  private context: ComponentFramework.Context<IInputs>;
  private items: ComponentFramework.PropertyTypes.DataSet;
 ```
-     ![](images/L02/image21.png)
+  ![](images/L02/image21.png)
  
  17. Locate the **init** function.
  
@@ -252,7 +252,7 @@ import { PriorityComponent, PriorityComponentProps } from
 this.context = context;
 context.mode.trackContainerResize(true);
 ```
-    ![](images/L02/image23.png)
+ ![](images/L02/image23.png)
  
 19. Locate the **updateView** function.
 
