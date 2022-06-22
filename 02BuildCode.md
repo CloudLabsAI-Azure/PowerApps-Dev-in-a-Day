@@ -280,7 +280,7 @@ this.context.parameters.DragBackgroundColor.raw,
 }
 ```
 
-     ![](images/L02/image24.png)
+ ![](images/L02/image24.png)
  
 21. Add the function below after the **destroy** function. This logic handles the onReorder event from
     the PriorityComponent and identifies the involved items to the hosting app as selected items.
@@ -299,7 +299,7 @@ this.context.parameters.items.setSelectedRecordIds([sourceId,
 destinationId]);
 };
 ```
-     ![](images/L02/image25.png)
+  ![](images/L02/image25.png)
 
  
 22. Open the **package.json** file.
