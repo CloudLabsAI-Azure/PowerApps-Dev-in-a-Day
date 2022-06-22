@@ -76,12 +76,12 @@ cd PrioritZDnDRanking
 ```
 6. You should now be in the directory you created. Create a new component project and install
     dependencies by running the commands below.
-```
-pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --
-framework react --run-npm-install
-
-```
-   ![](images/L02/image3.png)
+       
+    ![](images/L02/image3.png)
+ ```
+ pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --
+ framework react --run-npm-install
+ ```
 
 7. The component framework project should be created successfully.
 
@@ -113,7 +113,7 @@ code -a.
 
 14. Add the following properties after the closing tag of the data-set element **</data-set** >.
 
-      ![](images/L02/image9.png)
+    ![](images/L02/image9.png)
 
 ```
 <property name="BackgroundColor" display-name-key="Background color"
@@ -135,12 +135,15 @@ type="SingleLine.Text" default-value="#333333"/>
  
  16. Notice the following two resources. This declares the component’s dependency on these two
     libraries. This is a result of specifying –framework React on initialization.
+     
+     ![](images/L02/image11.png)
+    
 ```
 <platform-library name="React" version="16.8.6" />
 <platform-library name="Fluent" version="8.29.0" />
 ```
    
-   ![](images/L02/image11.png)
+  
  
  
 17. Click **File** and select **Save All**.
@@ -223,12 +226,12 @@ import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
      ![](images/L02/image18.png)
  
  14. Add the import below to the **index.ts** file. This will reference the PriorityComponent.
-
+      ![](images/L02/image19.png)
 ```
 import { PriorityComponent, PriorityComponentProps } from
 './PriorityComponent';
 ```
-  ![](images/L02/image19.png)
+  
  
  15. Locate the **Export** class.
       
@@ -236,11 +239,12 @@ import { PriorityComponent, PriorityComponentProps } from
  
  16. Add the following code below inside the **export** class. This defines some working variables you
     will be using in the class logic.
+    ![](images/L02/image21.png)
 ```
  private context: ComponentFramework.Context<IInputs>;
  private items: ComponentFramework.PropertyTypes.DataSet;
 ```
-  ![](images/L02/image21.png)
+  
  
  17. Locate the **init** function.
  
@@ -248,11 +252,13 @@ import { PriorityComponent, PriorityComponentProps } from
       
  18. Paste the code below inside the **init** function. This logic initializes our class variables from the
     runtime values and enables resize notification.
+     
+      ![](images/L02/image23.png)
 ```
 this.context = context;
 context.mode.trackContainerResize(true);
 ```
- ![](images/L02/image23.png)
+ 
  
 19. Locate the **updateView** function.
 
@@ -260,6 +266,8 @@ context.mode.trackContainerResize(true);
  
 20. Replace **updateView** function with the function below. This logic creates the React Element
     from the PriorityComponent and adds it to the virtual DOM.
+    
+     ![](images/L02/image24.png)
  ```   
 public updateView(context: ComponentFramework.Context<IInputs>):
 React.ReactElement {
@@ -280,11 +288,13 @@ this.context.parameters.DragBackgroundColor.raw,
 }
 ```
 
- ![](images/L02/image24.png)
+
  
 21. Add the function below after the **destroy** function. This logic handles the onReorder event from
     the PriorityComponent and identifies the involved items to the hosting app as selected items.
-
+   
+     ![](images/L02/image25.png)
+    
 ```
 onReorder = (sourceIndex: number, destinationIndex: number): void => {
 const dataset = this.context.parameters.items;
@@ -299,7 +309,7 @@ this.context.parameters.items.setSelectedRecordIds([sourceId,
 destinationId]);
 };
 ```
-  ![](images/L02/image25.png)
+  
 
  
 22. Open the **package.json** file.
