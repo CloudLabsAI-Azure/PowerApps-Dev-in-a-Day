@@ -158,6 +158,9 @@ public TopicItemModel[] Choices {get;set;}
 4. Open the **CreateTopic** file.
 5. Locate the Run method attributes and replace them with the attributes below. This provides
     user friendly names when we create a connector to use the API.
+    
+    ![](images/L04/image%20(13).png)
+       
 ```
 [FunctionName("CreateTopic")]
 [OpenApiOperation(operationId: "CreateTopic", tags: new[] { "name" }, Summary =
@@ -170,7 +173,7 @@ OpenApiSecurityLocationType.Query)]
 [OpenApiRequestBody(contentType: "application/json", bodyType:
 typeof(TopicModel))]
 ```
-   ![](images/L04/image%20(13).png)
+
 
 
 6. Remove **get** from the Run method. You should only have post.
@@ -180,11 +183,13 @@ typeof(TopicModel))]
 
 7. Go to the **Terminal** and add **Power Platform Dataverse Client** package.
 
+   ![](images/L04/image%20(17).png)
+
 ```
 dotnet add package Microsoft.PowerPlatform.Dataverse.Client
 ```
 
- ![](images/L04/image%20(17).png)
+
 
 
 8. Wait for the package to be added.
@@ -414,7 +419,7 @@ In this exercise, you will deploy the function to Azure.
 
 30. Go back to **Home** and open the **PrioritZFL** function app.
    
-   ![](images/L04/image%20(42).png)
+     ![](images/L04/image%20(42).png)
 
 31. Select **Configuration**.
   
@@ -576,6 +581,9 @@ In this exercise, you will create a new custom connector.
 8. Make sure the connection you created is selected.
 9. Turn on **Raw Body.**
 10. Provide the JSON below and click **Test operation**.
+   
+     ![](images/L04/image%20(64).png)
+   
 ```
     {
     "topic": "Test Topic",
@@ -590,7 +598,7 @@ In this exercise, you will create a new custom connector.
     }
 ```
      
- ![](images/L04/image%20(64).png)
+
 
     
  11. The operation test should succeed, and the response should look like the image below.
@@ -632,6 +640,9 @@ Admin canvas application.
     
 9. Replace the **OnSelect** formula of the **Add choice icon** with the formula below. This adjusts the
     column names to match the API and encodes the photos.
+   
+    ![](images/L04/image%20(72).png)
+   
 ```    
 Collect(
 colAddChoices,
@@ -647,11 +658,14 @@ JSONFormat.IncludeBinaryData
 Reset('Choice name textbox');
 Reset(AddMediaButton2)
 ```
-![](images/L04/image%20(72).png)
+
 
 10. Select **Save topic icon**.
 11. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. This changes to
     have the API create the “ask”.
+   
+     ![](images/L04/image%20(74).png)
+   
 ```    
 Set(returnGuid, PrioritZFunction.CreateTopic({
 topic: 'Topic name textbox'.Text,
@@ -664,8 +678,6 @@ choices: ShowColumns(colAddChoices, "choice", "photo")
 Notify("Topic created! " & returnGuid, NotificationType.Success, 5000);
 Back();
 ```
-
-![](images/L04/image%20(74).png)
     
 12. Click **File** and select **Save**.
 
@@ -677,6 +689,7 @@ Back();
 ### Task 2: Test application
 
 1. Select the **Home Screen** and click **Preview the app**.
+   
     ![](images/L04/image%20(75).png)
 
 2. Click on the **+** add button.
