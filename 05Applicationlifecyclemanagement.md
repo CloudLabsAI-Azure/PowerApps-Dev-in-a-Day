@@ -146,7 +146,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 6. Go to the **Security** section, expand **Secrets** and select **Actions**. The values you provide will not be
     visible after you create the item so take your time to get the values correct. 
       
-     ![](images/L05/Images%20(14).png">
+     ![](images/L05/Images%20(14).png)
    
 7. Click **New repository secret**.
 8. Enter **PowerPlatformAppID** for Name and paste the **Application (client) ID** from your notepad
