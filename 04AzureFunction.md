@@ -208,6 +208,7 @@ using Microsoft.Xrm.Sdk;
 12. Add the below method after the Run method. This method will use the token passed from the
     calling app to get a new token that will allow the function to use the Dataverse API on behalf of
     the calling user.
+    
 ```
 public static async Task<string> GetAccessTokenAsync(HttpRequest req,string
 resourceUri)
@@ -246,7 +247,9 @@ userAssertion).ExecuteAsync();
 
 return result.AccessToken;
 }
+
 ```
+
 13. Replace the code inside the **Run** method with code below. This will get an instance of the
     Dataverse API and use the GetAccessToken function we just defined.
 _logger.LogInformation("Starting Create Topic");
@@ -266,8 +269,10 @@ if (!serviceClient.IsReady)
 throw new Exception("Authentication Failed!");
 }
 ```
+
 14. Add the following code after the if statement of the **Run** method to reserialize the request. This
     will get us the data passed from the caller.
+    
 ```
 string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
 var data = JsonConvert.DeserializeObject<TopicModel>(requestBody);
@@ -276,6 +281,7 @@ var data = JsonConvert.DeserializeObject<TopicModel>(requestBody);
 
 15. Add the code below that will create the row to the **Run** method. This code creates the rows in
     Dataverse and is where we might add more logic in the future.
+    
  ```
 var ask = new Entity("contoso_prioritztopic");
 ask["contoso_topic"] = data.Topic;
@@ -305,11 +311,13 @@ Convert.FromBase64String(choice.Photo.Trim('\"').Split(',')[1]);
 }
 
 ```
+
 16. Return the topic id as JSON (required by Power Apps). Add the code below to the **Run** method.
 
 ```
-r eturn new OkObjectResult(topicId);
+return new OkObjectResult(topicId);
 ```
+
 17. Click **Terminal** and select **Run Build Task**.
 18. The run should succeed. Press any key to stop.
 
