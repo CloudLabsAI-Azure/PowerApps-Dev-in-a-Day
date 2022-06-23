@@ -76,8 +76,9 @@ cd PrioritZDnDRanking
 ```
 6. You should now be in the directory you created. Create a new component project and install
     dependencies by running the commands below.
-       
-    ![](images/L02/image3.png)
+    
+     ![](images/L02/image3.png)
+    
  ```
  pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --
  framework react --run-npm-install
@@ -92,11 +93,13 @@ cd PrioritZDnDRanking
 ```
 code -a.
 ```
+
 9. Review the created code component files.
     
      ![](images/L02/image5.png)
 
 10. Expand the **PrioritZDnDRanking** folder and then expand the component folder.
+
 11. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a
     component including the properties exposed to the hosting app.
 
@@ -128,22 +131,21 @@ type="Whole.None" default-value="12"/>
 <property name="FontColor" display-name-key="Font color" usage="input" of-
 type="SingleLine.Text" default-value="#333333"/>
 ```
+
 15. Locate **<resources>** and uncomment **css** resource. This will ensure that our styles will be
     bundled with the code component when it is deployed.
 
-      ![](images/L02/image10.png)
+     ![](images/L02/image10.png)
  
  16. Notice the following two resources. This declares the component’s dependency on these two
     libraries. This is a result of specifying –framework React on initialization.
-     
-     ![](images/L02/image11.png)
     
 ```
 <platform-library name="React" version="16.8.6" />
 <platform-library name="Fluent" version="8.29.0" />
 ```
    
-  
+  ![](images/L02/image11.png)
  
  
 17. Click **File** and select **Save All**.
@@ -160,6 +162,7 @@ type="SingleLine.Text" default-value="#333333"/>
  21. Name the new file **PrioritZDnDRanking.css**.
  22. Paste the following css into the **PrioritZDnDRanking.css** file.
 
+    
 ```
 .prioritydnd-scroll-c ontainer {
 box-sizing: border-box;
@@ -178,6 +181,7 @@ margin: 8px;
 }
 
 ```    
+
 23. The file should now look like the following.
 
      ![](images/L02/image14.png)
@@ -239,13 +243,17 @@ import { PriorityComponent, PriorityComponentProps } from
  
  16. Add the following code below inside the **export** class. This defines some working variables you
     will be using in the class logic.
-    ![](images/L02/image21.png)
+   
+    
+
 ```
  private context: ComponentFramework.Context<IInputs>;
  private items: ComponentFramework.PropertyTypes.DataSet;
 ```
   
+  ![](images/L02/image21.png)
  
+
  17. Locate the **init** function.
  
        ![](images/L02/image22.png)
@@ -253,7 +261,10 @@ import { PriorityComponent, PriorityComponentProps } from
  18. Paste the code below inside the **init** function. This logic initializes our class variables from the
     runtime values and enables resize notification.
      
-      ![](images/L02/image23.png)
+    
+   ![](images/L02/image23.png)
+
+  
 ```
 this.context = context;
 context.mode.trackContainerResize(true);
@@ -268,6 +279,7 @@ context.mode.trackContainerResize(true);
     from the PriorityComponent and adds it to the virtual DOM.
     
      ![](images/L02/image24.png)
+    
  ```   
 public updateView(context: ComponentFramework.Context<IInputs>):
 React.ReactElement {
@@ -313,6 +325,7 @@ destinationId]);
 
  
 22. Open the **package.json** file.
+    
 23. Locate the **dependencies** JSON object.
 
       ![](images/L02/image26.png)
@@ -334,6 +347,7 @@ destinationId]);
 },
 ```
 25. Click **File** and save all your changes.
+
 26. Click **Terminal** and select **New Terminal**.
      
       ![](images/L02/image27.png)
@@ -343,8 +357,10 @@ destinationId]);
 ```
 npm run-script build
 ```
-28. The build should succeed. If any errors, resolve them before proceeding.
-      ![](images/L02/image28.png)
+
+ 28. The build should succeed. If any errors, resolve them before proceeding.
+      
+       ![](images/L02/image28.png)
  
  29. Run the command below to start the test harness.
 
@@ -356,22 +372,24 @@ npm start
 
       ![](images/L02/imagee29.png)
  
- 31. Close the test harness.
+31. Close the test harness.
+
 32. Stop the run by holding the **[CONTROL]** key + **C**.
 
  
  
- 33. Type **Y** and [ENTER].
+33. Type **Y** and [ENTER].
      
       ![](images/L02/image30.png)
 
  
- 34. Run the command below to push the component to your environment.
+34. Run the command below to push the component to your environment.
 
 
 ```
 pac pcf push --publisher-prefix contoso
 ```
+
 35. Wait for the solution to be imported and published to your environment.
 
       ![](images/L02/image31.png)
@@ -380,6 +398,7 @@ pac pcf push --publisher-prefix contoso
 
 1. Navigate to https://make.powerapps.com/ and make sure you have the Dev environment
     selected.
+
 2. Select **Solutions** and open the **PowerAppsTools** solution.
     
     ![](images/L02/image32.png)
@@ -401,7 +420,8 @@ In this task, you will allow publishing of canvas apps with code components for 
          https://admin.powerplatform.microsoft.com/environments
  
 2. Open the dev environment you are using for this lab.
-3. Click **Settings**.
+
+ 3. Click **Settings**.
     
      ![](images/L02/image34.png)
 
@@ -436,9 +456,12 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     
      ![](images/L02/image39.png)
  
- 7. Select the **Screens** tab.
+7. Select the **Screens** tab.
+
 8. Expand **votescreen** and Select the **Votes gallery**.
+
 9. Set the **Width** value of the Votes gallery to **570**.
+
 10. The screen should now look like the image below.
      
       ![](images/L02/image40.png)
@@ -503,8 +526,10 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 ```
 'Votes gallery'.Y
 ```
+    
 29. Set the **OnSelect** value of the **PrioritZDnDRanking** component to the formula below.
 
+    
 ```
 With(
     {
@@ -545,8 +570,11 @@ With(
 );
 
 ```
+    
 30. Select the **Home Screen** and click **Play**.
+
 31. Select one of the **topics**.
+
 32. Make your browser widow smaller until it is the size of a phone screen.
      
      ![](images/L02/image48.png)
