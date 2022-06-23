@@ -31,11 +31,9 @@
 
 5. Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension 
 
-   - Task 1: Install Node Package Manager 
+   - Task 1: Install Visual Studio Code and Msbuild
 
-   - Task 2: Install Visual Studio Code 
-
-   - Task 3: Test the Power Platform CLI 
+   - Task 2: Test the Power Platform CLI 
 
 
 ### Lab Scenario
@@ -339,8 +337,37 @@ In this exercise, you will install Visual Studio Code and Power Platform CLI. Th
 labs in this course.
 
 
-### Task 1: Install Visual Studio Code
+### Task 1: Install Visual Studio Code and Msbuild 
+
+1. 1.Download and Install Visual Studio tool Installer
+
+```
+https://visualstudio.microsoft.com/downloads/
+
+```
+![](images/L01/Vscode.png)
+
+![](images/L01/Vscode1.png)
+
+2. Check on ASP.NET and web Development and Azure Development  in Workloads and Click Install while download
+
+   ![](images/L01/VscodeMsb.png)
    
+3. Set a Environment Variable on Msbuild .Search Environment variable in search bar Click Environment Variable 
+
+   ![](images/L01/Env.png)
+   
+    ![](images/L01/Env1.png)
+
+4. In System Variables Section select path and click edit Paste Msbuild Path
+```
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
+```
+  
+ ![](images/L01/Env2.png)
+ 
+ 5. Click ok and again .
+
 1. Navigate to Visual Studio Marketplace Power Platform Tools
  
  ```
@@ -348,9 +375,9 @@ labs in this course.
  
   ```
    
-2. Click **Install**.
-3. Click Continue.
-4. Wait for the Power Platform Tools to be installed.
+6. Click **Install**.
+7. Click Continue.
+8. Wait for the Power Platform Tools to be installed.
 
 ### Task 2: Test the Power Platform CLI
 
