@@ -77,19 +77,17 @@ cd PrioritZDnDRanking
 6. You should now be in the directory you created. Create a new component project and install
     dependencies by running the commands below.
     
-     ![](images/L02/image3.png)
-    
  ```
  pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --
  framework react --run-npm-install
  ```
+   ![](images/L02/image3.png)
 
 7. The component framework project should be created successfully.
 
     ![](images/L02/image4.png)
 
 8. Run the command below to open the project.
-
 ```
 code -a.
 ```
@@ -116,8 +114,6 @@ code -a.
 
 14. Add the following properties after the closing tag of the data-set element **</data-set** >.
 
-    ![](images/L02/image9.png)
-
 ```
 <property name="BackgroundColor" display-name-key="Background color"
 usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
@@ -131,6 +127,8 @@ type="Whole.None" default-value="12"/>
 <property name="FontColor" display-name-key="Font color" usage="input" of-
 type="SingleLine.Text" default-value="#333333"/>
 ```
+
+ ![](images/L02/image9.png)
 
 15. Locate **<resources>** and uncomment **css** resource. This will ensure that our styles will be
     bundled with the code component when it is deployed.
@@ -191,7 +189,9 @@ margin: 8px;
 ### Task 2: Implement the component logic
 
 1. Remove the HelloWorld.tsx component file that is automatically created as we won’t be using it.
+    
 2. Go to the lab resources folder.
+    
 3. Drag the **PriorityComponent.tsx** file and drop it in the **PrioriZDnDRanking** folder.
  
      ![](images/L02/image15.png)
@@ -201,8 +201,10 @@ margin: 8px;
      ![](images/L02/image16.png)
 
 5. Click **File** and save your changes.
+    
 6. Open the **PriorityComponent.tsx** and review the contents. This implements the React
     component that will be rendered to represent our draggable items.
+    
 7. Notice line 9 from ‘react-beautiful-dnd’ has a red underline. This is a npm package the
     component uses that we haven’t referenced.
 
@@ -218,24 +220,28 @@ npm install react-beautiful-dnd
 ```
 npm i --save-dev @types/react-beautiful-dnd
 ```
+
 10. Notice the red underline in line 9 has been resolved.
+    
 11. Open the **index.ts** file.
+    
 12. Remove the following line 2 as we are no longer using HelloWorld
 
 ```
 import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
 ```
+
 13. **F**
     
-     ![](images/L02/image18.png)
+    ![](images/L02/image18.png)
  
  14. Add the import below to the **index.ts** file. This will reference the PriorityComponent.
-      ![](images/L02/image19.png)
+      
 ```
 import { PriorityComponent, PriorityComponentProps } from
 './PriorityComponent';
 ```
-  
+   ![](images/L02/image19.png)  
  
  15. Locate the **Export** class.
       
@@ -257,29 +263,22 @@ import { PriorityComponent, PriorityComponentProps } from
  17. Locate the **init** function.
  
        ![](images/L02/image22.png)
-      
+        
  18. Paste the code below inside the **init** function. This logic initializes our class variables from the
-    runtime values and enables resize notification.
-     
-    
-   ![](images/L02/image23.png)
-
-  
+    runtime values and enables resize notification.    
+    ![](images/L02/image23.png)
 ```
 this.context = context;
 context.mode.trackContainerResize(true);
 ```
  
- 
 19. Locate the **updateView** function.
 
-      ![](images/L02/imageUpdateView.png)
+     ![](images/L02/imageUpdateView.png)
  
 20. Replace **updateView** function with the function below. This logic creates the React Element
     from the PriorityComponent and adds it to the virtual DOM.
-    
-     ![](images/L02/image24.png)
-    
+  
  ```   
 public updateView(context: ComponentFramework.Context<IInputs>):
 React.ReactElement {
@@ -300,12 +299,12 @@ this.context.parameters.DragBackgroundColor.raw,
 }
 ```
 
-
+   ![](images/L02/image24.png)
  
 21. Add the function below after the **destroy** function. This logic handles the onReorder event from
     the PriorityComponent and identifies the involved items to the hosting app as selected items.
    
-     ![](images/L02/image25.png)
+    
     
 ```
 onReorder = (sourceIndex: number, destinationIndex: number): void => {
@@ -322,7 +321,7 @@ destinationId]);
 };
 ```
   
-
+   ![](images/L02/image25.png)
  
 22. Open the **package.json** file.
     
@@ -376,7 +375,6 @@ npm start
 
 32. Stop the run by holding the **[CONTROL]** key + **C**.
 
- 
  
 33. Type **Y** and [ENTER].
      
@@ -442,6 +440,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
               https://powerapps.microsoft.com/en-in/ 
  
 2. Select **Solutions** and open the **PrioritZ** solution.
+    
 3. Select **Apps** , select the **PrioritZ** Ask app and click **Edit**.
 
      ![](images/L02/image37.png)
@@ -452,6 +451,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
      ![](images/L02/image38.png)
  
 5. Select the **Code** tab.
+    
 6. Select the code component you created and click **Import**.
     
      ![](images/L02/image39.png)
@@ -486,6 +486,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
       ![](images/L02/image43.png)
 
 16. Click **+ Add field**.
+    
 17. Select **Rank** and click **Add**.
      
       ![](images/L02/image44.png)
@@ -503,12 +504,14 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
       ![](images/L02/image47.png)
  
 21. Select the **PrioritZDnDRanking** component.
+    
 22. Set the **X** value of the **PrioritZDnDRanking** component to the formula below.
 
 ```
 'Votes gallery'.Width
 ```
 23. Set the **Width** value of the **PrioritZDnDRanking** component to **60**.
+    
 24. Set the **Height** value of the **PrioritZDnDRanking** component to the formula below.
 
 ```
@@ -520,7 +523,9 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 'Votes gallery'.TemplateHeight
 ```
 26. Set the **BackgroundColor** value of the **PrioritZDnDRanking** component to **"LightBlue".**
+    
 27. Set the **DragBackgroundColor** value of the **PrioritZDnDRanking** component to **"#A70202".**
+
 28. Set the **Y** value of the **PrioritZDnDRanking** component to the formula below.
 
 ```
