@@ -354,10 +354,10 @@ In this exercise, you will build the code component.
  
  29. Run the command below to start the test harness.
     
-    ```
-    npm start
-    ```
-    
+        ```
+        npm start
+        ```
+
 30. The test harness should start. Try dragging the items and see if the behavior functions as
     expected.
 
