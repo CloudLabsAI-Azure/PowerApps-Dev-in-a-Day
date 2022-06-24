@@ -115,19 +115,20 @@ In this exercise, you will build the code component.
 
 14. Add the following properties after the closing tag of the data-set element **</data-set** >.
 
-        
-        <property name="BackgroundColor" display-name-key="Background color"
-        usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
-        <property name="DragBackgroundColor" display-name-key="Drag background
-        color" usage="input" of-type="SingleLine.Text" default-value="lightgreen"/>
+       
+            <property name="BackgroundColor" display-name-key="Background color"
+            usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
+            <property name="DragBackgroundColor" display-name-key="Drag background
+            color" usage="input" of-type="SingleLine.Text" default-value="lightgreen"/>
 
-        <property name="ItemHeight" display-name -key="Item height" usage="input"
-        of- type="Whole.None" default-value="32"/>
-        <property name="FontSize" display-name-key="Font size" usage="input" of-
-        type="Whole.None" default-value="12"/>
-        <property name="FontColor" display-name-key="Font color" usage="input" of-
-        type="SingleLine.Text" default-value="#333333"/>
-          
+            <property name="ItemHeight" display-name -key="Item height" usage="input"
+            of- type="Whole.None" default-value="32"/>
+            <property name="FontSize" display-name-key="Font size" usage="input" of-
+            type="Whole.None" default-value="12"/>
+            <property name="FontColor" display-name-key="Font color" usage="input" of-
+            type="SingleLine.Text" default-value="#333333"/>
+     
+
      ![](images/L02/image9.png)
 
 15. Locate **<resources>** and uncomment **css** resource. This will ensure that our styles will be
@@ -137,11 +138,11 @@ In this exercise, you will build the code component.
  
  16. Notice the following two resources. This declares the component’s dependency on these two
     libraries. This is a result of specifying –framework React on initialization.
-   
-       
-          <platform-library name="React" version="16.8.6" />
-          <platform-library name="Fluent" version="8.29.0" />
-       
+
+    
+            <platform-library name="React" version="16.8.6" />
+            <platform-library name="Fluent" version="8.29.0" />
+    
         ![](images/L02/image11.png)
  
 17. Click **File** and select **Save All**.
@@ -157,23 +158,23 @@ In this exercise, you will build the code component.
  21. Name the new file **PrioritZDnDRanking.css**.
  22. Paste the following css into the **PrioritZDnDRanking.css** file.
     
-   
-    .prioritydnd-scroll-c ontainer {
-    box-sizing: border-box;
-    padding: 2px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: relative;
-    }
-    .prioritydnd-item-container {
-    user-select: none;
-    display: flex;
-    align-items: center;
-    }
-    . prioritydnd-item-column {
-    margin: 8px;
-    }
-    
+       ```
+        .prioritydnd-scroll-c ontainer {
+        box-sizing: border-box;
+        padding: 2px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: relative;
+        }
+        .prioritydnd-item-container {
+        user-select: none;
+        display: flex;
+        align-items: center;
+        }
+        . prioritydnd-item-column {
+        margin: 8px;
+        }
+        ```
 23. The file should now look like the following.
 
      ![](images/L02/image14.png)
