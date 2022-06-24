@@ -1,9 +1,4 @@
-#### Microsoft Power Platform
-
-# Dev in a day
-
-#### Lab 03 Custom connector for existing API
-  
+# Lab 03 - Custom connector for existing API
 
 ## Table of Contents
 
