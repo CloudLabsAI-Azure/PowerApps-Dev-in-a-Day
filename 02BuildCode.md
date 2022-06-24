@@ -224,18 +224,17 @@ In this exercise, you will build the code component.
     ```
     import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
     ```
-
-13. **F**
     
     ![](images/L02/image18.png)
  
- 14. Add the import below to the **index.ts** file. This will reference the PriorityComponent.
+ 13. Add the import below to the **index.ts** file. This will reference the PriorityComponent.
       
-    ```
+    
     import { PriorityComponent, PriorityComponentProps } from
     './PriorityComponent';
-    ```
-   ![](images/L02/image19.png)  
+    
+    
+    ![](images/L02/image19.png)  
  
  15. Locate the **Export** class.
       
@@ -244,12 +243,11 @@ In this exercise, you will build the code component.
  16. Add the following code below inside the **export** class. This defines some working variables you
     will be using in the class logic.
    
-    ```
-     private context: ComponentFramework.Context<IInputs>;
-     private items: ComponentFramework.PropertyTypes.DataSet;
-    ```
-  
-    ![](images/L02/image21.png)
+        ```
+         private context: ComponentFramework.Context<IInputs>;
+         private items: ComponentFramework.PropertyTypes.DataSet;
+        ```
+        ![](images/L02/image21.png)
  
 
  17. Locate the **init** function.
@@ -260,11 +258,11 @@ In this exercise, you will build the code component.
     runtime values and enables resize notification.    
     
     ![](images/L02/image23.png)
+   
     
-    ```
     this.context = context;
     context.mode.trackContainerResize(true);
-    ```
+    
  
 19. Locate the **updateView** function.
 
