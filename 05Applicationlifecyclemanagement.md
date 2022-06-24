@@ -1,9 +1,4 @@
-#### Microsoft Power Platform
-
-# Dev in a day
-
-#### Lab 05 Application lifecycle management
-
+# Lab 05 - Application lifecycle management
 
 ## Table of Contents
 
