@@ -387,135 +387,127 @@ exported to the test environment.
 7. Add the following trigger. This will trigger on creation of a new release.
 
     ![](images/L05/trigger.png)
-   
-```
-on:
-release:
-types: [created]
-```
-   
 
-   
-   
+      ```
+      on:
+      release:
+      types: [created]
+      ```
+  
 8. Define constants. Add the below YAML snippet.
 
-```
-env:
-solution_name: Prioritz
-solution_source_folder: solutions
-solution_outbound_folder: out/solutions
-solution_release_folder: out/release
-```
+      ```
+      env:
+      solution_name: Prioritz
+      solution_source_folder: solutions
+      solution_outbound_folder: out/solutions
+      solution_release_folder: out/release
+      ```
    
 9. Add job and steps. Add the below YAML snippet.
 
-```
-jobs:
-convert-to- managed:
-runs-on: windows-latest
+      ```
+      jobs:
+      convert-to- managed:
+      runs-on: windows-latest
 
-steps:
+      steps:
 
-- uses: actions/checkout@v
-with:
-lfs: true
-```
+      - uses: actions/checkout@v
+      with:
+      lfs: true
+      ```
 10. Package managed solution. Add the below YAML snippet. This will take the individual files and
 put them in a compressed file that can be deployed.
    
-```
-- name: Pack managed solution
-uses: microsoft/powerplatform-actions/pack-solution@0.4.
-with:
-solution-folder: ${{ env.solution_source_folder}}/${{ env.solution_name
-}}
-solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name
-}}_managed.zip
-solution-type: Managed
-   
-```
+      ```
+      - name: Pack managed solution
+      uses: microsoft/powerplatform-actions/pack-solution@0.4.
+      with:
+      solution-folder: ${{ env.solution_source_folder}}/${{ env.solution_name
+      }}
+      solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name
+      }}_managed.zip
+      solution-type: Managed
+
+      ```
 
 11. Package unmanaged solution. Add the below YAML snippet.
    
-      ![](images/L05/Images%20(41).png)
+      ![](images/L05/Images%20(41).png)  
    
-   
-```
-- name: Pack unmanaged solution
-    uses: microsoft/powerplatform-actions/pack-solution@0.4.
-    with:
-    solution-folder: ${{ env.solution_source_folder}}/${{ env.solution_name
-    }}
-    solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name
-    }}_unmanaged.zip
-    solution-type: Unmanaged
-   
-```
+      ```
+      - name: Pack unmanaged solution
+          uses: microsoft/powerplatform-actions/pack-solution@0.4.
+          with:
+          solution-folder: ${{ env.solution_source_folder}}/${{ env.solution_name
+          }}
+          solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name
+          }}_unmanaged.zip
+          solution-type: Unmanaged
 
-
-   
-   
+      ```
    
 12. Upload solution artifacts. Add the below YAML snippet.
    
-   
-```
-- name: Upload the unmanaged solution to GH artifact store
-    uses: actions/upload-artifact@v
-    with:
-    name: unmanagedSolutions
-    path: ${{ env.solution_outbound_folder}}/${{ env.solution_name
-    }}_unmanaged.zip
-    - name: Upload the managed solution to GH artifact store
-    uses: actions/upload-artifact@v
-    with:
-    name: managedSolutions
-    path: ${{ env.solution_outbound_folder}}/${{ env.solution_name
-    }}_managed.zip
 
-```
+      ```
+      - name: Upload the unmanaged solution to GH artifact store
+          uses: actions/upload-artifact@v
+          with:
+          name: unmanagedSolutions
+          path: ${{ env.solution_outbound_folder}}/${{ env.solution_name
+          }}_unmanaged.zip
+          - name: Upload the managed solution to GH artifact store
+          uses: actions/upload-artifact@v
+          with:
+          name: managedSolutions
+          path: ${{ env.solution_outbound_folder}}/${{ env.solution_name
+          }}_managed.zip
+
+      ```
  
 13. Release to staging. Add the below YAML snippet. This defines a second job to deploy.
 
    
-```
-release-to- staging:
-needs: [ convert-to-managed ]
-runs-on: windows-latest
+      ```
+      release-to- staging:
+      needs: [ convert-to-managed ]
+      runs-on: windows-latest
 
-steps:
-- uses: actions/checkout@v
-with:
-lfs: true
- 
-```
+      steps:
+      - uses: actions/checkout@v
+      with:
+      lfs: true
+
+      ```
    
 14. Download artifacts. Add the below YAML snippet.
    
-   
-```
-- name: Fetch the ready to ship solution from GH artifact store
-uses: actions/download-artifact@v
-with:
-name: managedSolutions
-path: ${{ env.solution_release_folder}}
-```
+
+      ```
+      - name: Fetch the ready to ship solution from GH artifact store
+      uses: actions/download-artifact@v
+      with:
+      name: managedSolutions
+      path: ${{ env.solution_release_folder}}
+      ```
 
 15. Import the managed solution to the test environment. Add the below YANL snippet.
    
-```
-- name: Import solution to prod env
-uses: microsoft/powerplatform-actions/import-solution@0.4.
-with:
-environment-url: ${{secrets.PowerPlatformTestUrl}}
-app-id: ${{secrets.PowerPlatformAppID}}
-client-secret: ${{ secrets.PowerPlatformClientSecret }}
-tenant-id: ${{secrets.PowerPlatformTenantID}}
-solution-file: ${{ env.solution_release_folder}}/${{ env.solution_name
-}}_managed.zip
-run-asynchronously: true
-   
-```
+      ```
+      - name: Import solution to prod env
+      uses: microsoft/powerplatform-actions/import-solution@0.4.
+      with:
+      environment-url: ${{secrets.PowerPlatformTestUrl}}
+      app-id: ${{secrets.PowerPlatformAppID}}
+      client-secret: ${{ secrets.PowerPlatformClientSecret }}
+      tenant-id: ${{secrets.PowerPlatformTenantID}}
+      solution-file: ${{ env.solution_release_folder}}/${{ env.solution_name
+      }}_managed.zip
+      run-asynchronously: true
+
+      ```
    
 16. Click **Start commit** and then click **Commit new file**.
      
