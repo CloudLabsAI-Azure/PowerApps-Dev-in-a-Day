@@ -2,7 +2,7 @@
 
 # Dev in a day
 
-#### Lab 02 Build a code component/ May 2022
+#### Lab 02 Build a code component
 
 
 ## Table of Contents
