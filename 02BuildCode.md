@@ -127,9 +127,8 @@ In this exercise, you will build the code component.
         type="Whole.None" default-value="12"/>
         <property name="FontColor" display-name-key="Font color" usage="input" of-
         type="SingleLine.Text" default-value="#333333"/>
-        
-    
-    ![](images/L02/image9.png)
+          
+     ![](images/L02/image9.png)
 
 15. Locate **<resources>** and uncomment **css** resource. This will ensure that our styles will be
     bundled with the code component when it is deployed.
@@ -143,8 +142,7 @@ In this exercise, you will build the code component.
           <platform-library name="React" version="16.8.6" />
           <platform-library name="Fluent" version="8.29.0" />
        
- 
-    ![](images/L02/image11.png)
+        ![](images/L02/image11.png)
  
 17. Click **File** and select **Save All**.
 18. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
