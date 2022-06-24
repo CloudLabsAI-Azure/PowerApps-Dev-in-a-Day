@@ -2,7 +2,7 @@
 
 # Dev in a day
 
-#### Lab 05 Application lifecycle management/ May 2022
+#### Lab 05 Application lifecycle management
 
 
 ## Table of Contents
