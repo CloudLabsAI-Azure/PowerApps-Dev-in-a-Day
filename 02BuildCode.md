@@ -1,9 +1,4 @@
-#### Microsoft Power Platform
-
-# Dev in a day
-
-#### Lab 02 Build a code component
-
+# Lab 02 - Build a code component
 
 ## Table of Contents
 
