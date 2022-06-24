@@ -2,7 +2,7 @@
 
 # Dev in a day
 
-#### Lab 03 Custom connector for existing API/ May 2022
+#### Lab 03 Custom connector for existing API
   
 
 ## Table of Contents
