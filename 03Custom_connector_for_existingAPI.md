@@ -62,7 +62,7 @@ connectors must be in a separate solution from the apps and flows that use them.
 
 1. Navigate to Power Apps maker portal and make sure you are in your dev environment. 
 
-        https://powerapps.microsoft.com/en-in/ 
+         https://make.powerapps.com 
 
 2. Select **Solutions** and click **+ New solution**.
 
@@ -90,7 +90,7 @@ In this exercise, you will create a custom connector from an existing API.
 5. Save the **swagger.json** file on your machine.
 6. Navigate to Power Apps  maker portal and make sure you are in your dev environment.
 
-        https://powerapps.microsoft.com/en-in/
+         https://make.powerapps.com
 
 7. Select **Solutions** open the **Contoso Badges connector** solution you created.
 8. Click **+ New | Automation** and select **Custom connector**.
@@ -319,7 +319,7 @@ In this task, you will use the custom connector you created to show the user’s
 PrioritZ Ask canvas application.
 
 1. Navigate to Power Apps  maker portal and make sure you are in your dev environment.
-         https://powerapps.microsoft.com/en-in/
+          https://make.powerapps.com
 
 2. Expand **Solutions** and open the **PrioritZ** solution.
 3. Select **Apps** , select the **PrioritZ Ask** application, and click **Edit**.
@@ -469,7 +469,7 @@ environment and import it to Test environment.
 
 1. Navigate to Power Apps  maker portal and make sure you are in your dev environment.
 
-        https://powerapps.microsoft.com/en-in/
+         https://make.powerapps.com
 
 2. Select **Solutions**.
 3. Select the **Contoso Badges connector** solution and click **Export**.
@@ -488,7 +488,7 @@ environment and import it to Test environment.
 
 1. Navigate to Power Apps  maker portal and select your **Test** environment.
 
-        https://powerapps.microsoft.com/en-in/
+         https://make.powerapps.com
 
 2. Select **Solutions**.
 3. Click **Import**.
