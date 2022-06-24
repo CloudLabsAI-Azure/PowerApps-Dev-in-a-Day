@@ -162,7 +162,10 @@ In this exercise, you will create a custom connector from an existing API.
 
 1. Open a new browser tab or window and navigate to Contoso Coffee Badges 
      
-     (contosobadgestest.azurewebsites.net)
+ ```
+ https://contosobadgestest.azurewebsites.net/
+ 
+ ```
 
 2. Click on open the **API Key** link
     
