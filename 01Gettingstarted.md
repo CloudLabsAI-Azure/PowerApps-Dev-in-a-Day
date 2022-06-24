@@ -2,7 +2,7 @@
 
 # Dev in a day
 
-#### Lab 01 Getting Started/ May 2022
+#### Lab 01 Getting Started
 
 
 ## Table of Contents
@@ -53,7 +53,7 @@ use in the ALM labs.
 
 ### Task 1: Create dev environment
 
-1. Navigate to Power Apps Developer Plan by using below link copy and paste browser
+1. Navigate to Power Apps Developer Plan by using below link.
 ```
 https://powerapps.microsoft.com/en-in/developerplan/
 ```
@@ -80,10 +80,10 @@ Prioritz apps, flows and Dataverse tables.
 
 ### Task 1: Import solution
 
-1. Navigate to Power Apps maker portal by using below URL copy and paste to browser. Make sure the development environment is selected.
-```        
- https://make.powerapps.com
-```
+1. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
+   ```        
+    https://make.powerapps.com
+   ```
 2. Select **Solutions** and click **Import**.
 3. Click **Browse**.
 4. Go to the lab resources folder C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources, select the **Prioritz_1_0_0_7.zip** file, and click **Open**.
@@ -128,7 +128,9 @@ sample data to your environment, and test the applications in the solution.
 
 4. Select the **Columns** under Schema and review the columns of the PrioritZ Topic table. The standard columns are built-in, and all tables have them.
  The custom columns were created by the team for this application.
+ 
    ![](images/L01/NewUi2.png)
+
 5. Select the **Relationships** tab from Columns dropdown and review how this table is related to other tables.
  
     ![](images/L01/NewUi3.png)
@@ -169,10 +171,10 @@ sample data to your environment, and test the applications in the solution.
 
 ### Task 2: Test the apps
 
-1. Navigate to Power Apps maker portal by using below URL copy and paste to browser. Make sure the development environment is selected.
-```
-    https://make.powerapps.com
-```
+1. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
+   ```
+       https://make.powerapps.com
+   ```
 2. Select **Apps**. You should see two applications. **PrioritZ Ask** and **PrioritZ Admin**. PrioritZ Admin
     app is used to manage topics being asked about. PrioritZ Ask app allows users to respond.
 3. Launch the **PrioritZ Admin** application.
@@ -231,16 +233,17 @@ application.
 
 ### Task 1: Add a new column
 
-1. Navigate to Power Apps maker portal by using below URL copy and paste to browser. Make sure the development environment is selected.
- ```
- https://make.powerapps.com
-```
+1. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
+    ```
+    https://make.powerapps.com
+   ```
 2. Select **Solutions** and open the **PrioritZ** solution.
 3. Expand **Tables** and select the **PrioritZ Topic** table.
 4. Select the **Columns** tab and click **+ Add column**.
 
 
 5. Enter **My Notes** for Display name, select **Multiline Text** for Data type, and click **Done**.
+
   ![](images/L01/NewUi5.png)
 
 6. Click **Save Table**.
@@ -271,7 +274,7 @@ application.
 7. Select Notes **textbox**.
 8. Change the **HintText** value of the Notes textbox to **My notes**.
    
-   ![](images/L01/image29.png)
+    ![](images/L01/image29.png)
 
 9. Change the **Mode** to **TextMode.MultiLine**.
 10. Select **Save topic icon**.
@@ -285,15 +288,15 @@ application.
 
 
 
-```
-Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes':
-'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details
-textbox'.Text,'Respond By':'respond by date
-picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('P
-rioritz Topic Items',Defaults('Prioritz Topic
-Items'),{Choice:ThisRecord.choice,'PrioritZ
-Topic':newTopic,Photo:ThisRecord.photo}));Back()
-```
+      ```
+      Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes':
+      'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details
+      textbox'.Text,'Respond By':'respond by date
+      picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('P
+      rioritz Topic Items',Defaults('Prioritz Topic
+      Items'),{Choice:ThisRecord.choice,'PrioritZ
+      Topic':newTopic,Photo:ThisRecord.photo}));Back()
+      ```
 12. Select the **View Topic Screen**.
 13. Go to the **Insert** tab and click **Label**.
 14. Rename the label you just added **Notes label**.
@@ -341,10 +344,10 @@ labs in this course.
 
 1. Download and Install Visual Studio tool Installer by using below URL copy and paste browser.
 
-```
-https://visualstudio.microsoft.com/downloads/
+      ```
+      https://visualstudio.microsoft.com/downloads/
 
-```
+      ```
 2. Click Free download and open.
 
     ![](images/L01/Vscode.png)
@@ -363,18 +366,18 @@ https://visualstudio.microsoft.com/downloads/
     ![](images/L01/Env1.png)
 
 6. In System Variables Section select path and click edit to Paste Msbuild Path
-```
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
-```
-  
+      ```
+      C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
+      ```
+
   ![](images/L01/Env2.png)
  
 7. Click ok and again  Click ok.
 
-8. Navigate to Visual Studio Marketplace Power Platform Tools by using below URL copy and paste browser
- ```
-  https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode
-  ```
+8. Navigate to Visual Studio Marketplace Power Platform Tools by using below URL.
+      ```
+        https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode
+      ```
    
 9. Click **Install**.
 10. Click Continue.
@@ -383,9 +386,9 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
 ### Task 2: Test the Power Platform CLI
 
 1. Navigate to Power Platform admin center by using below URL and select **Environments**.
- ```
-    https://admin.powerplatform.microsoft.com/environments
-```
+      ```
+          https://admin.powerplatform.microsoft.com/environments
+      ```
 2. Click to open your dev environment you created.
 3. Copy the Environment URL and keep it in your clipboard or on notepad.
  
@@ -421,9 +424,9 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
 
 14. Run the command below to see list of solutions.
 
-```
-pac solution list
-```
+      ```
+      pac solution list
+      ```
 15. You should see list of solutions installed on your environment.
     
     ![](images/L01/image43.png)
