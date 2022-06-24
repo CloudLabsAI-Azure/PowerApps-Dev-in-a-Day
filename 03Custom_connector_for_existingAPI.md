@@ -205,9 +205,8 @@ In this exercise, you will create a custom connector from an existing API.
 13. The test should succeed, and you should get expected response.
 
 14. Go ahead and test the ListBadges and ListRecipients operations.
-
-
 15. All the tests should succeed.
+  
   ![](images/L03/image23.png)
 
 
