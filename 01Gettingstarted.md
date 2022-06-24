@@ -340,41 +340,44 @@ In this exercise, you will install Visual Studio Code and Power Platform CLI. Th
 labs in this course.
 
 
-### Task 1: Install Visual Studio Code Installer and Msbuild 
+### Task 1: Install Visual Studio Code and MSbuild 
 
-1. Download and Install Visual Studio tool Installer by using below URL copy and paste browser.
+1. Download and Install Visual Studio tool Installer by navigating to the below URL
 
       ```
       https://visualstudio.microsoft.com/downloads/
 
       ```
-2. Click Free download and open.
+2. Click Free download and Open.
 
     ![](images/L01/Vscode.png)
 
     ![](images/L01/Vscode1.png)
 
-3. Check on ASP.NET & web Development and Azure Development  in Workloads. Then Click Install while download button.
+3. Select the Check box for **ASP.NET & Web Development** and **Azure Development** in Workloads page. Then Click on **Install while downloading** button.
 
    ![](images/L01/VscodeMsb.png)
    
-4. Set an Environment Variable for Msbuild. Search Environment variable in windows  search bar.
-5.  Click Environment Variable 
+4. To set an Environment Variable for MSbuild. Search Environment variables in windows search bar.
+
+
+
+5.   Click Environment Variable 
 
     ![](images/L01/Env.png)
    
     ![](images/L01/Env1.png)
 
-6. In System Variables Section select path and click edit to Paste Msbuild Path
+6. In System Variables Section select **Path** and click **Edit** to Paste Msbuild Path
       ```
       C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
       ```
 
     ![](images/L01/Env2.png)
  
-7. Click ok and again  Click ok.
+7. Click Ok and again Click Ok.
 
-8. Navigate to Visual Studio Marketplace Power Platform Tools by using below URL.
+8. Navigate to Visual Studio Marketplace Power Platform Tools by using the below URL.
       ```
         https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode
       ```
@@ -387,7 +390,7 @@ labs in this course.
 
 1. Navigate to Power Platform admin center by using below URL and select **Environments**.
       ```
-          https://admin.powerplatform.microsoft.com/environments
+        https://admin.powerplatform.microsoft.com/environments
       ```
 2. Click to open your dev environment you created.
 3. Copy the Environment URL and keep it in your clipboard or on notepad.
