@@ -388,7 +388,7 @@ In this exercise, you will deploy the function to Azure.
     
     ![](images/L04/image%20(33).png)
     
-    ![](images/L04/image%20(34).png>
+    ![](images/L04/image%20(34).png)
 
 21. Copy the **Directory (tenant) ID** and keep it on a notepad as **Tenant ID**. You will need this id in
     future steps.
