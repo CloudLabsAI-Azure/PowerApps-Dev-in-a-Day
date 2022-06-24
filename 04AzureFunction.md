@@ -1,9 +1,4 @@
-#### Microsoft Power Platform
-
-# Dev in a day
-
-#### Lab 04 Azure Function
-
+# Lab 04 Azure Function
 
 ## Table of Contents
 
