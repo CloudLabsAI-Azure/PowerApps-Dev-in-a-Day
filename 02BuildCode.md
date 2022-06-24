@@ -228,13 +228,13 @@ In this exercise, you will build the code component.
     ![](images/L02/image18.png)
  
  13. Add the import below to the **index.ts** file. This will reference the PriorityComponent.
-      
     
-    import { PriorityComponent, PriorityComponentProps } from
-    './PriorityComponent';
-    
-    
-    ![](images/L02/image19.png)  
+        ```
+        import { PriorityComponent, PriorityComponentProps } from
+        './PriorityComponent';
+        ```
+        ![](images/L02/image19.png)  
+   
  
  15. Locate the **Export** class.
       
@@ -257,12 +257,12 @@ In this exercise, you will build the code component.
  18. Paste the code below inside the **init** function. This logic initializes our class variables from the
     runtime values and enables resize notification.    
     
-    ![](images/L02/image23.png)
+        ![](images/L02/image23.png)
    
-    
-    this.context = context;
-    context.mode.trackContainerResize(true);
-    
+       ```
+        this.context = context;
+        context.mode.trackContainerResize(true);
+       ```
  
 19. Locate the **updateView** function.
 
