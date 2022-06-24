@@ -76,11 +76,11 @@ cd PrioritZDnDRanking
 ```
 6. You should now be in the directory you created. Create a new component project and install
     dependencies by running the commands below.
-```
-pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --
-framework react --run-npm-install
-
-```
+    
+ ```
+ pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --
+ framework react --run-npm-install
+ ```
    ![](images/L02/image3.png)
 
 7. The component framework project should be created successfully.
@@ -88,15 +88,16 @@ framework react --run-npm-install
     ![](images/L02/image4.png)
 
 8. Run the command below to open the project.
-
 ```
 code -a.
 ```
+
 9. Review the created code component files.
     
      ![](images/L02/image5.png)
 
 10. Expand the **PrioritZDnDRanking** folder and then expand the component folder.
+
 11. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a
     component including the properties exposed to the hosting app.
 
@@ -113,8 +114,6 @@ code -a.
 
 14. Add the following properties after the closing tag of the data-set element **</data-set** >.
 
-      ![](images/L02/image9.png)
-
 ```
 <property name="BackgroundColor" display-name-key="Background color"
 usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
@@ -128,19 +127,23 @@ type="Whole.None" default-value="12"/>
 <property name="FontColor" display-name-key="Font color" usage="input" of-
 type="SingleLine.Text" default-value="#333333"/>
 ```
+
+ ![](images/L02/image9.png)
+
 15. Locate **<resources>** and uncomment **css** resource. This will ensure that our styles will be
     bundled with the code component when it is deployed.
 
-      ![](images/L02/image10.png)
+     ![](images/L02/image10.png)
  
  16. Notice the following two resources. This declares the component’s dependency on these two
     libraries. This is a result of specifying –framework React on initialization.
+    
 ```
 <platform-library name="React" version="16.8.6" />
 <platform-library name="Fluent" version="8.29.0" />
 ```
    
-   ![](images/L02/image11.png)
+  ![](images/L02/image11.png)
  
  
 17. Click **File** and select **Save All**.
@@ -157,6 +160,7 @@ type="SingleLine.Text" default-value="#333333"/>
  21. Name the new file **PrioritZDnDRanking.css**.
  22. Paste the following css into the **PrioritZDnDRanking.css** file.
 
+    
 ```
 .prioritydnd-scroll-c ontainer {
 box-sizing: border-box;
@@ -175,6 +179,7 @@ margin: 8px;
 }
 
 ```    
+
 23. The file should now look like the following.
 
      ![](images/L02/image14.png)
@@ -184,7 +189,9 @@ margin: 8px;
 ### Task 2: Implement the component logic
 
 1. Remove the HelloWorld.tsx component file that is automatically created as we won’t be using it.
+    
 2. Go to the lab resources folder.
+    
 3. Drag the **PriorityComponent.tsx** file and drop it in the **PrioriZDnDRanking** folder.
  
      ![](images/L02/image15.png)
@@ -194,8 +201,10 @@ margin: 8px;
      ![](images/L02/image16.png)
 
 5. Click **File** and save your changes.
+    
 6. Open the **PriorityComponent.tsx** and review the contents. This implements the React
     component that will be rendered to represent our draggable items.
+    
 7. Notice line 9 from ‘react-beautiful-dnd’ has a red underline. This is a npm package the
     component uses that we haven’t referenced.
 
@@ -211,24 +220,28 @@ npm install react-beautiful-dnd
 ```
 npm i --save-dev @types/react-beautiful-dnd
 ```
+
 10. Notice the red underline in line 9 has been resolved.
+    
 11. Open the **index.ts** file.
+    
 12. Remove the following line 2 as we are no longer using HelloWorld
 
 ```
 import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
 ```
+
 13. **F**
     
-     ![](images/L02/image18.png)
+    ![](images/L02/image18.png)
  
  14. Add the import below to the **index.ts** file. This will reference the PriorityComponent.
-
+      
 ```
 import { PriorityComponent, PriorityComponentProps } from
 './PriorityComponent';
 ```
-  ![](images/L02/image19.png)
+   ![](images/L02/image19.png)  
  
  15. Locate the **Export** class.
       
@@ -236,30 +249,36 @@ import { PriorityComponent, PriorityComponentProps } from
  
  16. Add the following code below inside the **export** class. This defines some working variables you
     will be using in the class logic.
+   
+    
+
 ```
  private context: ComponentFramework.Context<IInputs>;
  private items: ComponentFramework.PropertyTypes.DataSet;
 ```
+  
   ![](images/L02/image21.png)
  
+
  17. Locate the **init** function.
  
        ![](images/L02/image22.png)
-      
+        
  18. Paste the code below inside the **init** function. This logic initializes our class variables from the
-    runtime values and enables resize notification.
+    runtime values and enables resize notification.    
+    ![](images/L02/image23.png)
 ```
 this.context = context;
 context.mode.trackContainerResize(true);
 ```
- ![](images/L02/image23.png)
  
 19. Locate the **updateView** function.
 
-      ![](images/L02/imageUpdateView.png)
+     ![](images/L02/imageUpdateView.png)
  
 20. Replace **updateView** function with the function below. This logic creates the React Element
     from the PriorityComponent and adds it to the virtual DOM.
+  
  ```   
 public updateView(context: ComponentFramework.Context<IInputs>):
 React.ReactElement {
@@ -280,11 +299,13 @@ this.context.parameters.DragBackgroundColor.raw,
 }
 ```
 
- ![](images/L02/image24.png)
+   ![](images/L02/image24.png)
  
 21. Add the function below after the **destroy** function. This logic handles the onReorder event from
     the PriorityComponent and identifies the involved items to the hosting app as selected items.
-
+   
+    
+    
 ```
 onReorder = (sourceIndex: number, destinationIndex: number): void => {
 const dataset = this.context.parameters.items;
@@ -299,10 +320,11 @@ this.context.parameters.items.setSelectedRecordIds([sourceId,
 destinationId]);
 };
 ```
-  ![](images/L02/image25.png)
-
+  
+   ![](images/L02/image25.png)
  
 22. Open the **package.json** file.
+    
 23. Locate the **dependencies** JSON object.
 
       ![](images/L02/image26.png)
@@ -324,6 +346,7 @@ destinationId]);
 },
 ```
 25. Click **File** and save all your changes.
+
 26. Click **Terminal** and select **New Terminal**.
      
       ![](images/L02/image27.png)
@@ -333,8 +356,10 @@ destinationId]);
 ```
 npm run-script build
 ```
-28. The build should succeed. If any errors, resolve them before proceeding.
-      ![](images/L02/image28.png)
+
+ 28. The build should succeed. If any errors, resolve them before proceeding.
+      
+       ![](images/L02/image28.png)
  
  29. Run the command below to start the test harness.
 
@@ -346,22 +371,23 @@ npm start
 
       ![](images/L02/imagee29.png)
  
- 31. Close the test harness.
+31. Close the test harness.
+
 32. Stop the run by holding the **[CONTROL]** key + **C**.
 
  
- 
- 33. Type **Y** and [ENTER].
+33. Type **Y** and [ENTER].
      
       ![](images/L02/image30.png)
 
  
- 34. Run the command below to push the component to your environment.
+34. Run the command below to push the component to your environment.
 
 
 ```
 pac pcf push --publisher-prefix contoso
 ```
+
 35. Wait for the solution to be imported and published to your environment.
 
       ![](images/L02/image31.png)
@@ -370,6 +396,7 @@ pac pcf push --publisher-prefix contoso
 
 1. Navigate to https://make.powerapps.com/ and make sure you have the Dev environment
     selected.
+
 2. Select **Solutions** and open the **PowerAppsTools** solution.
     
     ![](images/L02/image32.png)
@@ -391,7 +418,8 @@ In this task, you will allow publishing of canvas apps with code components for 
          https://admin.powerplatform.microsoft.com/environments
  
 2. Open the dev environment you are using for this lab.
-3. Click **Settings**.
+
+ 3. Click **Settings**.
     
      ![](images/L02/image34.png)
 
@@ -412,6 +440,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
               https://powerapps.microsoft.com/en-in/ 
  
 2. Select **Solutions** and open the **PrioritZ** solution.
+    
 3. Select **Apps** , select the **PrioritZ** Ask app and click **Edit**.
 
      ![](images/L02/image37.png)
@@ -422,13 +451,17 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
      ![](images/L02/image38.png)
  
 5. Select the **Code** tab.
+    
 6. Select the code component you created and click **Import**.
     
      ![](images/L02/image39.png)
  
- 7. Select the **Screens** tab.
+7. Select the **Screens** tab.
+
 8. Expand **votescreen** and Select the **Votes gallery**.
+
 9. Set the **Width** value of the Votes gallery to **570**.
+
 10. The screen should now look like the image below.
      
       ![](images/L02/image40.png)
@@ -453,6 +486,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
       ![](images/L02/image43.png)
 
 16. Click **+ Add field**.
+    
 17. Select **Rank** and click **Add**.
      
       ![](images/L02/image44.png)
@@ -470,12 +504,14 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
       ![](images/L02/image47.png)
  
 21. Select the **PrioritZDnDRanking** component.
+    
 22. Set the **X** value of the **PrioritZDnDRanking** component to the formula below.
 
 ```
 'Votes gallery'.Width
 ```
 23. Set the **Width** value of the **PrioritZDnDRanking** component to **60**.
+    
 24. Set the **Height** value of the **PrioritZDnDRanking** component to the formula below.
 
 ```
@@ -487,14 +523,18 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 'Votes gallery'.TemplateHeight
 ```
 26. Set the **BackgroundColor** value of the **PrioritZDnDRanking** component to **"LightBlue".**
+    
 27. Set the **DragBackgroundColor** value of the **PrioritZDnDRanking** component to **"#A70202".**
+
 28. Set the **Y** value of the **PrioritZDnDRanking** component to the formula below.
 
 ```
 'Votes gallery'.Y
 ```
+    
 29. Set the **OnSelect** value of the **PrioritZDnDRanking** component to the formula below.
 
+    
 ```
 With(
     {
@@ -535,8 +575,11 @@ With(
 );
 
 ```
+    
 30. Select the **Home Screen** and click **Play**.
+
 31. Select one of the **topics**.
+
 32. Make your browser widow smaller until it is the size of a phone screen.
      
      ![](images/L02/image48.png)

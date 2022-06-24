@@ -162,7 +162,10 @@ In this exercise, you will create a custom connector from an existing API.
 
 1. Open a new browser tab or window and navigate to Contoso Coffee Badges 
      
-     (contosobadgestest.azurewebsites.net)
+ ```
+ https://contosobadgestest.azurewebsites.net/
+ 
+ ```
 
 2. Click on open the **API Key** link
     
@@ -200,12 +203,11 @@ In this exercise, you will create a custom connector from an existing API.
      ![](images/L03/image22.png)
 
 13. The test should succeed, and you should get expected response.
+
 14. Go ahead and test the ListBadges and ListRecipients operations.
-
-
 15. All the tests should succeed.
-    
-    ![](images/L03/image23.png)
+  
+  ![](images/L03/image23.png)
 
 
 ## Exercise 3 – Add Custom Code
@@ -267,10 +269,13 @@ You will do this by using the custom code feature to reshape the response from t
 
 
 18. The test should succeed, and you should get current badge for the user you created.
-<img src="images/L03/image32.png)
+    
+    ![](images/L03/image32.png)
 
 19. Copy the Response **Body** JSON.
+
 20. Select the Definition tab.
+
 21. Select the **getcurrentbadge** action.
      
       ![](images/L03/image33.png)
@@ -333,6 +338,12 @@ PrioritZ Ask canvas application.
 6. Click **+ Add a connection**.
 7. Open a new browser tab or window and navigate to Contoso Coffee Badges
     (contosobadgestest.azurewebsites.net)
+    
+```
+https://contosobadgestest.azurewebsites.net/
+ 
+```
+    
 8. Click on open the **API Key** link
      
     ![](images/L03/image41.png)
@@ -398,7 +409,9 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
 
 4. Click **+ New step**.
 5. Select the **Custom** tab and then select the **Add credit** action.
-<img src="images/L03/edd%20(2).png)
+   
+    ![](images/L03/edd%20(2).png)
+    
 6. Enter **Test connection** , paste the **API Key** you copied earlier, and click **Create**.
   
     ![](images/L03/edd%20(3).png)
@@ -505,6 +518,9 @@ environment and import it to Test environment.
 5. Click **+ New connection**.
 6. Start a new browser window or tab and navigate to Contoso Coffee Badges
     (contosobadgestest.azurewebsites.net)
+```
+https://contosobadgestest.azurewebsites.net/
+```
 
 7. Click on the **Get an API Key** link.
   

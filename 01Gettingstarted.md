@@ -29,13 +29,11 @@
 
    - Task 2: Update admin app 
 
-5. Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension 
+5. Exercise 5 – Install Visual Studio Code Installer and Power Platform CLI Extension 
 
-   - Task 1: Install Node Package Manager 
+   - Task 1: Install Visual Studio Code Installer and Msbuild
 
-   - Task 2: Install Visual Studio Code 
-
-   - Task 3: Test the Power Platform CLI 
+   - Task 2: Test the Power Platform CLI 
 
 
 ### Lab Scenario
@@ -55,7 +53,7 @@ use in the ALM labs.
 
 ### Task 1: Create dev environment
 
-1. Navigate to Power Apps Developer Plan by using below link 
+1. Navigate to Power Apps Developer Plan by using below link copy and paste browser
 ```
 https://powerapps.microsoft.com/en-in/developerplan/
 ```
@@ -82,7 +80,7 @@ Prioritz apps, flows and Dataverse tables.
 
 ### Task 1: Import solution
 
-1. Navigate to Power Apps maker portal by using below URL and make sure the development environment is selected.
+1. Navigate to Power Apps maker portal by using below URL copy and paste to browser. Make sure the development environment is selected.
 ```        
  https://make.powerapps.com
 ```
@@ -171,7 +169,7 @@ sample data to your environment, and test the applications in the solution.
 
 ### Task 2: Test the apps
 
-1. Navigate to Power Apps maker portal by using below URL and make sure the development environment is selected.
+1. Navigate to Power Apps maker portal by using below URL copy and paste to browser. Make sure the development environment is selected.
 ```
     https://make.powerapps.com
 ```
@@ -233,7 +231,7 @@ application.
 
 ### Task 1: Add a new column
 
-1. Navigate to Power Apps maker portal by using below URL and make sure the development environment is selected.
+1. Navigate to Power Apps maker portal by using below URL copy and paste to browser. Make sure the development environment is selected.
  ```
  https://make.powerapps.com
 ```
@@ -333,24 +331,54 @@ Topic':newTopic,Photo:ThisRecord.photo}));Back()
 
  27. You may close the **app designer**.
 
-## Exercise 5 – Install Visual Studio Code and Power Platform CLI Extension
+## Exercise 5 – Install Visual Studio Code Installer and Power Platform CLI Extension
 
 In this exercise, you will install Visual Studio Code and Power Platform CLI. These tools are used in the
 labs in this course.
 
 
-### Task 1: Install Visual Studio Code
+### Task 1: Install Visual Studio Code Installer and Msbuild 
+
+1. Download and Install Visual Studio tool Installer by using below URL copy and paste browser.
+
+```
+https://visualstudio.microsoft.com/downloads/
+
+```
+2. Click Free download and open.
+
+    ![](images/L01/Vscode.png)
+
+    ![](images/L01/Vscode1.png)
+
+3. Check on ASP.NET & web Development and Azure Development  in Workloads. Then Click Install while download button.
+
+   ![](images/L01/VscodeMsb.png)
    
-1. Navigate to Visual Studio Marketplace Power Platform Tools
+4. Set an Environment Variable for Msbuild. Search Environment variable in windows  search bar.
+5.  Click Environment Variable 
+
+    ![](images/L01/Env.png)
+   
+    ![](images/L01/Env1.png)
+
+6. In System Variables Section select path and click edit to Paste Msbuild Path
+```
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
+```
+  
+  ![](images/L01/Env2.png)
  
+7. Click ok and again  Click ok.
+
+8. Navigate to Visual Studio Marketplace Power Platform Tools by using below URL copy and paste browser
  ```
   https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode
- 
   ```
    
-2. Click **Install**.
-3. Click Continue.
-4. Wait for the Power Platform Tools to be installed.
+9. Click **Install**.
+10. Click Continue.
+11. Wait for the Power Platform Tools to be installed.
 
 ### Task 2: Test the Power Platform CLI
 

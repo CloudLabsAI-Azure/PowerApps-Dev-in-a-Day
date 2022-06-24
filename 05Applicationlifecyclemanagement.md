@@ -196,6 +196,9 @@ indentation shown in the images.
 5. Change the name to **export-and-branch**
 6. Add the below YAML snippet after the name line. This defines the action trigger and some input
     parameters that could be changed when manually running the action.
+   
+    ![](images/L05/Images%20(20).png)
+   
 ```
    on:
 workflow_dispatch:
@@ -221,11 +224,13 @@ description: 'folder name to be created and checked in *do not change*'
 required: true
 default: solutions/
 ```
- ![](images/L05/Images%20(20).png)
+
    
 7. Setup the workflow. Add below YAML snippet after the last snippet. This sets up the jobs and
     identifies the first job as export-from-dev. This also defines the steps with the first one checking
     out the current main branch content.
+
+
 ```
 jobs:
 export-from-dev:
@@ -235,8 +240,11 @@ steps:
 with:
 lfs: true
 ```
+
 8. Next you will export both an unmanaged and managed solution file from your dev environment.
+   
 9. Export the unmanaged solution. Add below snippet after the last snippet.
+   
 ```
     - name: export-solution action
     uses: microsoft/powerplatform-actions/export-solution@0.4.
@@ -252,6 +260,8 @@ lfs: true
 ```
    
 10. Export the managed solution. Add below snippet after the last snippet.
+   
+   
 ```
  - name: export-managed-solution action
 uses: microsoft/powerplatform-actions/export-solution@0.4.
@@ -266,9 +276,13 @@ github.event.inputs.solution_exported_folder}}/${{
 github.event.inputs.solution_name }}_managed.zip
 managed: true
 ```
+
 11. The solution files are compressed files and don’t version control well. Using unpack you will
     expand the solution files into a set of files that can be easily checked into the repo.
+   
 12. Unpack solution file. Add below snippet after the last snippet.
+
+   
 ```
 - name: unpack-solution action
     uses: microsoft/powerplatform-actions/unpack-solution@0.4.
@@ -279,7 +293,10 @@ managed: true
     github.event.inputs.solution_name }}
     solution-type: 'Both'
 ```
+   
+   
 13. Branch and prepare for pull. Add below snippet after the last snippet.
+   
 ```
 - name: branch-solution, prepare it for a PullRequest
     uses: microsoft/powerplatform-actions/branch-solution@v
@@ -292,11 +309,13 @@ managed: true
     repo-token: ${{ secrets.GITHUB_TOKEN }}
     allow-empty-commit: true
 ```
+   
 14. Click **Start commit** and then click **Commit new file**.
     
      ![](images/L05/Images%20(26).png)
 
 15. Select the **Actions** tab and select the workflow you created.
+   
 16. Click **Run workflow.**
       
       ![](images/L05/Images%20(27).png)
@@ -306,7 +325,9 @@ managed: true
       ![](images/L05/Images%20(28).png)
    
 18. Select the **Code** tab.
+   
 19. Select **Branches**. You should see two branches.
+   
 20. Click to open the branch that was created by the workflow action.
    
       ![](images/L05/Images%20(29).png)
@@ -321,16 +342,21 @@ managed: true
      ![](images/L05/Images%20(31).png)
    
 23. Add description if you like and then click **Create pull request**.
+   
 24. You should now see the pull request summary. Confirm that the branch has no conflicts with the
     main branch and that the changes can be merged into the main branch automatically.
+   
 25. Click on the chevron button next to the **Merge pull request** button and select **Squash and**
     **merge**.
       
     ![](images/L05/Images%20(32).png)
 
 26. Click **Squash and merge**.
+   
 27. Click **Confirm squash and merge**.
+   
 28. The pull request should get merged successfully.
+   
 29. Do not navigate away from this page.
 
 ### Exercise 4 – Release to Test
@@ -341,28 +367,34 @@ exported to the test environment.
 ### Task 1: Create workflow
 
 1. Select the **Actions** tab.
+   
 2. Click **New workflow**.
+   
 3. Click **set up a workflow yourself**.
      
      ![](images/L05/Images%20(33).png)
    
 4. Change the file name to it **release-to-test.yml**.
+   
 5. Remove everything below the name line.
+   
      
      ![](images/L05/Images%20(34).png)
    
    
 6. Change the name to **release-to-test**
+   
 7. Add the following trigger. This will trigger on creation of a new release.
 
-
+    ![](images/L05/trigger.png)
+   
 ```
 on:
 release:
 types: [created]
 ```
    
-![](images/L05/trigger.png)
+
    
    
 8. Define constants. Add the below YAML snippet.
@@ -374,6 +406,7 @@ solution_source_folder: solutions
 solution_outbound_folder: out/solutions
 solution_release_folder: out/release
 ```
+   
 9. Add job and steps. Add the below YAML snippet.
 
 ```
@@ -389,6 +422,7 @@ lfs: true
 ```
 10. Package managed solution. Add the below YAML snippet. This will take the individual files and
 put them in a compressed file that can be deployed.
+   
 ```
 - name: Pack managed solution
 uses: microsoft/powerplatform-actions/pack-solution@0.4.
@@ -398,9 +432,14 @@ solution-folder: ${{ env.solution_source_folder}}/${{ env.solution_name
 solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name
 }}_managed.zip
 solution-type: Managed
+   
 ```
 
 11. Package unmanaged solution. Add the below YAML snippet.
+   
+      ![](images/L05/Images%20(41).png)
+   
+   
 ```
 - name: Pack unmanaged solution
     uses: microsoft/powerplatform-actions/pack-solution@0.4.
@@ -410,13 +449,16 @@ solution-type: Managed
     solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name
     }}_unmanaged.zip
     solution-type: Unmanaged
+   
 ```
 
- ![](images/L05/Images%20(41).png)
+
    
    
    
 12. Upload solution artifacts. Add the below YAML snippet.
+   
+   
 ```
 - name: Upload the unmanaged solution to GH artifact store
     uses: actions/upload-artifact@v
@@ -435,6 +477,7 @@ solution-type: Managed
  
 13. Release to staging. Add the below YAML snippet. This defines a second job to deploy.
 
+   
 ```
 release-to- staging:
 needs: [ convert-to-managed ]
@@ -446,7 +489,10 @@ with:
 lfs: true
  
 ```
+   
 14. Download artifacts. Add the below YAML snippet.
+   
+   
 ```
 - name: Fetch the ready to ship solution from GH artifact store
 uses: actions/download-artifact@v
@@ -456,6 +502,7 @@ path: ${{ env.solution_release_folder}}
 ```
 
 15. Import the managed solution to the test environment. Add the below YANL snippet.
+   
 ```
 - name: Import solution to prod env
 uses: microsoft/powerplatform-actions/import-solution@0.4.
@@ -467,12 +514,15 @@ tenant-id: ${{secrets.PowerPlatformTenantID}}
 solution-file: ${{ env.solution_release_folder}}/${{ env.solution_name
 }}_managed.zip
 run-asynchronously: true
+   
 ```
+   
 16. Click **Start commit** and then click **Commit new file**.
      
      ![](images/L05/Images%20(46).png)
 
 17. Select the **Code** tab.
+   
 18. Go to the **Releases** section and click **Create new release**.
      
      ![](images/L05/Images%20(47).png) 
@@ -483,11 +533,13 @@ run-asynchronously: true
      ![](images/L05/Images%20(48).png)  
 
 20. Click **Publish release**.
+   
 21. Select the **Actions** tab and monitor the workflow.
       
      ![](images/L05/Images%20(49).png)
 
 22. The release should complete successfully.
+   
 23. Check your test environment and you should see the solution deployed.
 
 
