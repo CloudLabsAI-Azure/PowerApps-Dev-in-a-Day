@@ -55,10 +55,11 @@ In this exercise, you will build the code component.
 ### Task 1: Create the code component
 
 1. Start Visual Studio Code.
-2. Select the Power Platform tab and make sure your Dev Auth profile is selected. NOTE: the Power
-    Platform tab is only available if you installed the Power Platform extension as explained in lab 1.
-
-     ![](images/L02/image1.png)
+2. Select the Power Platform tab and make sure your Dev Auth profile is selected. 
+    ```
+       NOTE: The Power Platform tab is only available if you installed the Power Platform extension as explained in lab 1.
+    ```
+    ![](images/L02/image1.png)
 
 3. Click **Terminal** and select **New Terminal.**
      
@@ -66,31 +67,31 @@ In this exercise, you will build the code component.
 
 4. In the Terminal window, make a new directory by running the command below.
 
-```
-md PrioritZDnDRanking
-```
+    ```
+    md PrioritZDnDRanking
+    ```
 5. Run the command below to switch to the PrioritZDnRanking directory you created.
 
-```
-cd PrioritZDnDRanking
-```
-6. You should now be in the directory you created. Create a new component project and install
-    dependencies by running the commands below.
+    ```
+    cd PrioritZDnDRanking
+    ```
+6. You should now be in the directory you created. Create a new component project and install dependencies by running the commands below.
     
- ```
- pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --
- framework react --run-npm-install
- ```
-   ![](images/L02/image3.png)
+     ```
+     pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --
+     framework react --run-npm-install
+     ```
+     
+     ![](images/L02/image3.png)
 
 7. The component framework project should be created successfully.
 
     ![](images/L02/image4.png)
 
 8. Run the command below to open the project.
-```
-code -a.
-```
+    ```
+    code -a.
+    ```
 
 9. Review the created code component files.
     
@@ -114,21 +115,21 @@ code -a.
 
 14. Add the following properties after the closing tag of the data-set element **</data-set** >.
 
-```
-<property name="BackgroundColor" display-name-key="Background color"
-usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
-<property name="DragBackgroundColor" display-name-key="Drag background
-color" usage="input" of-type="SingleLine.Text" default-value="lightgreen"/>
+    ```
+    <property name="BackgroundColor" display-name-key="Background color"
+    usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
+    <property name="DragBackgroundColor" display-name-key="Drag background
+    color" usage="input" of-type="SingleLine.Text" default-value="lightgreen"/>
 
-<property name="ItemHeight" display-name -key="Item height" usage="input"
-of- type="Whole.None" default-value="32"/>
-<property name="FontSize" display-name-key="Font size" usage="input" of-
-type="Whole.None" default-value="12"/>
-<property name="FontColor" display-name-key="Font color" usage="input" of-
-type="SingleLine.Text" default-value="#333333"/>
-```
+    <property name="ItemHeight" display-name -key="Item height" usage="input"
+    of- type="Whole.None" default-value="32"/>
+    <property name="FontSize" display-name-key="Font size" usage="input" of-
+    type="Whole.None" default-value="12"/>
+    <property name="FontColor" display-name-key="Font color" usage="input" of-
+    type="SingleLine.Text" default-value="#333333"/>
+    ```
 
- ![](images/L02/image9.png)
+    ![](images/L02/image9.png)
 
 15. Locate **<resources>** and uncomment **css** resource. This will ensure that our styles will be
     bundled with the code component when it is deployed.
@@ -138,12 +139,12 @@ type="SingleLine.Text" default-value="#333333"/>
  16. Notice the following two resources. This declares the component’s dependency on these two
     libraries. This is a result of specifying –framework React on initialization.
     
-```
-<platform-library name="React" version="16.8.6" />
-<platform-library name="Fluent" version="8.29.0" />
-```
+    ```
+    <platform-library name="React" version="16.8.6" />
+    <platform-library name="Fluent" version="8.29.0" />
+    ```
    
-  ![](images/L02/image11.png)
+    ![](images/L02/image11.png)
  
  
 17. Click **File** and select **Save All**.
@@ -154,31 +155,31 @@ type="SingleLine.Text" default-value="#333333"/>
 19. Name the new folder **css**.
 20. Select the new **css** folder you created and then click New File
  
-      ![](images/L02/image13.png)
+     ![](images/L02/image13.png)
 
  
  21. Name the new file **PrioritZDnDRanking.css**.
  22. Paste the following css into the **PrioritZDnDRanking.css** file.
 
     
-```
-.prioritydnd-scroll-c ontainer {
-box-sizing: border-box;
-padding: 2px;
-overflow-y: auto;
-overflow-x: hidden;
-position: relative;
-}
-.prioritydnd-item-container {
-user-select: none;
-display: flex;
-align-items: center;
-}
-. prioritydnd-item-column {
-margin: 8px;
-}
+    ```
+    .prioritydnd-scroll-c ontainer {
+    box-sizing: border-box;
+    padding: 2px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    }
+    .prioritydnd-item-container {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    }
+    . prioritydnd-item-column {
+    margin: 8px;
+    }
 
-```    
+    ```    
 
 23. The file should now look like the following.
 
@@ -212,14 +213,14 @@ margin: 8px;
  
  8. Run the following command in a terminal window to add a reference to react-beautiful-dnd
 
-```
-npm install react-beautiful-dnd
-```
+    ```
+    npm install react-beautiful-dnd
+    ```
 9. And the following command for the type definitions.
 
-```
-npm i --save-dev @types/react-beautiful-dnd
-```
+    ```
+    npm i --save-dev @types/react-beautiful-dnd
+    ```
 
 10. Notice the red underline in line 9 has been resolved.
     
@@ -227,9 +228,9 @@ npm i --save-dev @types/react-beautiful-dnd
     
 12. Remove the following line 2 as we are no longer using HelloWorld
 
-```
-import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
-```
+    ```
+    import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
+    ```
 
 13. **F**
     
@@ -237,10 +238,10 @@ import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
  
  14. Add the import below to the **index.ts** file. This will reference the PriorityComponent.
       
-```
-import { PriorityComponent, PriorityComponentProps } from
-'./PriorityComponent';
-```
+    ```
+    import { PriorityComponent, PriorityComponentProps } from
+    './PriorityComponent';
+    ```
    ![](images/L02/image19.png)  
  
  15. Locate the **Export** class.
@@ -250,27 +251,27 @@ import { PriorityComponent, PriorityComponentProps } from
  16. Add the following code below inside the **export** class. This defines some working variables you
     will be using in the class logic.
    
-    
-
-```
- private context: ComponentFramework.Context<IInputs>;
- private items: ComponentFramework.PropertyTypes.DataSet;
-```
+    ```
+     private context: ComponentFramework.Context<IInputs>;
+     private items: ComponentFramework.PropertyTypes.DataSet;
+    ```
   
-  ![](images/L02/image21.png)
+    ![](images/L02/image21.png)
  
 
  17. Locate the **init** function.
  
-       ![](images/L02/image22.png)
+      ![](images/L02/image22.png)
         
  18. Paste the code below inside the **init** function. This logic initializes our class variables from the
     runtime values and enables resize notification.    
+    
     ![](images/L02/image23.png)
-```
-this.context = context;
-context.mode.trackContainerResize(true);
-```
+    
+    ```
+    this.context = context;
+    context.mode.trackContainerResize(true);
+    ```
  
 19. Locate the **updateView** function.
 
@@ -279,47 +280,45 @@ context.mode.trackContainerResize(true);
 20. Replace **updateView** function with the function below. This logic creates the React Element
     from the PriorityComponent and adds it to the virtual DOM.
   
- ```   
-public updateView(context: ComponentFramework.Context<IInputs>):
-React.ReactElement {
-const dataset = context.parameters.items;
-return React.createElement(PriorityComponent, {
-width: context.mode.allocatedWidth,
-height: context.mode.allocatedHeight,
-itemHeight: context.parameters.ItemHeight.raw,
-fontSize: context.parameters.FontSize.raw,
-fontColor: context.parameters.FontColor.raw,
+     ```   
+    public updateView(context: ComponentFramework.Context<IInputs>):
+    React.ReactElement {
+    const dataset = context.parameters.items;
+    return React.createElement(PriorityComponent, {
+    width: context.mode.allocatedWidth,
+    height: context.mode.allocatedHeight,
+    itemHeight: context.parameters.ItemHeight.raw,
+    fontSize: context.parameters.FontSize.raw,
+    fontColor: context.parameters.FontColor.raw,
 
-dataset: dataset,
-onReorder: this.onReorder,
-backgroundColor: this.context.parameters.BackgroundColor.raw,
-dragBackgroundColor:
-this.context.parameters.DragBackgroundColor.raw,
-} as PriorityComponentProps);
-}
-```
+    dataset: dataset,
+    onReorder: this.onReorder,
+    backgroundColor: this.context.parameters.BackgroundColor.raw,
+    dragBackgroundColor:
+    this.context.parameters.DragBackgroundColor.raw,
+    } as PriorityComponentProps);
+    }
+    ```
 
    ![](images/L02/image24.png)
  
 21. Add the function below after the **destroy** function. This logic handles the onReorder event from
     the PriorityComponent and identifies the involved items to the hosting app as selected items.
-   
-    
-    
-```
-onReorder = (sourceIndex: number, destinationIndex: number): void => {
-const dataset = this.context.parameters.items;
-const sourceId = dataset.sortedRecordIds[sourceIndex];
-const destinationId = dataset.sortedRecordIds[destinationIndex];
-// raise the OnSelect event
+       
+    ```
+    onReorder = (sourceIndex: number, destinationIndex: number): void => {
+    const dataset = this.context.parameters.items;
+    const sourceId = dataset.sortedRecordIds[sourceIndex];
+    const destinationId = dataset.sortedRecordIds[destinationIndex];
+    // raise the OnSelect event
 
-this.context.parameters.items.openDatasetItem(dataset.records[sourceId].getName
-dReference());
-// set the SelectedItems property
-this.context.parameters.items.setSelectedRecordIds([sourceId,
-destinationId]);
-};
-```
+    this.context.parameters.items.openDatasetItem(dataset.records[sourceId].getName
+    dReference());
+    // set the SelectedItems property
+    this.context.parameters.items.setSelectedRecordIds([sourceId,
+    destinationId]);
+    };
+    ```
   
    ![](images/L02/image25.png)
  
@@ -331,20 +330,20 @@ destinationId]);
  
 24. Replace **dependencies** with the JSON below.
 
-```
-"dependencies": {
-"@fluentui/react": "8.29.0",
-"eslint-config-prettier": "^8.5.0",
-"eslint-plugin-prettier": "^4.0.0",
-"eslint-plugin-react": "^7.29.4",
-"eslint-plugin-react-hooks": "^4.4.0",
-"eslint-plugin-sonarjs": "^0.13.0",
-"prettier": "^2.6.1",
-"react": "16.8.6",
-"react-beautiful-dnd": "^13.1.0",
-"react-dom": "16.8.6"
-},
-```
+    ```
+    "dependencies": {
+    "@fluentui/react": "8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-sonarjs": "^0.13.0",
+    "prettier": "^2.6.1",
+    "react": "16.8.6",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-dom": "16.8.6"
+    },
+    ```
 25. Click **File** and save all your changes.
 
 26. Click **Terminal** and select **New Terminal**.
@@ -353,9 +352,9 @@ destinationId]);
 
 27. Run the command below. This will build your component and identify any problems.
 
-```
-npm run-script build
-```
+    ```
+    npm run-script build
+    ```
 
  28. The build should succeed. If any errors, resolve them before proceeding.
       
@@ -363,9 +362,9 @@ npm run-script build
  
  29. Run the command below to start the test harness.
 
-```
-npm start
-```
+    ```
+    npm start
+    ```
 30. The test harness should start. Try dragging the items and see if the behavior functions as
     expected.
 
@@ -384,9 +383,9 @@ npm start
 34. Run the command below to push the component to your environment.
 
 
-```
-pac pcf push --publisher-prefix contoso
-```
+    ```
+    pac pcf push --publisher-prefix contoso
+    ```
 
 35. Wait for the solution to be imported and published to your environment.
 
@@ -414,9 +413,9 @@ In this exercise, you will use the code component you created in the PrioritZ As
 In this task, you will allow publishing of canvas apps with code components for your environment.
 
 1. Navigate to Power Platform admin center by using below URL and select environments.
- 
-         https://admin.powerplatform.microsoft.com/environments
- 
+     ```
+        https://admin.powerplatform.microsoft.com/environments
+     ```
 2. Open the dev environment you are using for this lab.
 
  3. Click **Settings**.
@@ -436,9 +435,9 @@ In this task, you will allow publishing of canvas apps with code components for 
 In this task, you will edit the PrioritZ Ask canvas application to use the code component you created.
 
 1. Navigate to Power Apps maker portal  by using below URLand make sure you are in the correct dev environment.
-      
-              https://powerapps.microsoft.com/en-in/ 
- 
+   ```   
+   https://powerapps.microsoft.com/en-in/ 
+   ```
 2. Select **Solutions** and open the **PrioritZ** solution.
     
 3. Select **Apps** , select the **PrioritZ** Ask app and click **Edit**.
@@ -478,9 +477,9 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 14. Set the **Items** value of the **PrioritZDnDRanking** component to the formula below.
 
-```
-'Votes gallery'.AllItems
-```
+    ```
+    'Votes gallery'.AllItems
+    ```
 15. Select the **PrioritZDnDRanking** go to the **Properties** pane ,set **Item Height** 160 and click **Edit Fields** .
 
       ![](images/L02/image43.png)
@@ -507,75 +506,75 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     
 22. Set the **X** value of the **PrioritZDnDRanking** component to the formula below.
 
-```
-'Votes gallery'.Width
-```
+    ```
+    'Votes gallery'.Width
+    ```
 23. Set the **Width** value of the **PrioritZDnDRanking** component to **60**.
     
 24. Set the **Height** value of the **PrioritZDnDRanking** component to the formula below.
 
-```
-'Votes gallery'.Height
-```
+    ```
+    'Votes gallery'.Height
+    ```
 25. Set the **ItemHeight** value of the **PrioritZDnDRanking** component to the formula below.
 
-```
-'Votes gallery'.TemplateHeight
-```
+    ```
+    'Votes gallery'.TemplateHeight
+    ```
 26. Set the **BackgroundColor** value of the **PrioritZDnDRanking** component to **"LightBlue".**
     
 27. Set the **DragBackgroundColor** value of the **PrioritZDnDRanking** component to **"#A70202".**
 
 28. Set the **Y** value of the **PrioritZDnDRanking** component to the formula below.
 
-```
-'Votes gallery'.Y
-```
+    ```
+    'Votes gallery'.Y
+    ```
     
 29. Set the **OnSelect** value of the **PrioritZDnDRanking** component to the formula below.
 
-    
-```
-With(
-    {
-        sourceRank: First(Self.SelectedItems).Rank,
-        destinationRank: Last(Self.SelectedItems).Rank
-    },
-    If(
-        sourceRank < destinationRank,
- // Moving Up
-        UpdateIf(
-            colVotes,
-            Rank >= sourceRank && Rank <= destinationRank,
-            {
-                Rank: If(
-                    Rank <> sourceRank,
-                    Rank - 1,
-                    destinationRank
-                )
-            }
-        );
-    );
-    If(
-        sourceRank > destinationRank,
- // Moving Down
-        UpdateIf(
-            colVotes,
-            Rank >= destinationRank && Rank <= sourceRank,
-            {
-                Rank: If(
-                    Rank <> sourceRank,
-                    Rank + 1,
-                    destinationRank
-                )
-            }
-        );
-    );
-    
-);
 
-```
-    
+    ```
+    With(
+        {
+            sourceRank: First(Self.SelectedItems).Rank,
+            destinationRank: Last(Self.SelectedItems).Rank
+        },
+        If(
+            sourceRank < destinationRank,
+     // Moving Up
+            UpdateIf(
+                colVotes,
+                Rank >= sourceRank && Rank <= destinationRank,
+                {
+                    Rank: If(
+                        Rank <> sourceRank,
+                        Rank - 1,
+                        destinationRank
+                    )
+                }
+            );
+        );
+        If(
+            sourceRank > destinationRank,
+     // Moving Down
+            UpdateIf(
+                colVotes,
+                Rank >= destinationRank && Rank <= sourceRank,
+                {
+                    Rank: If(
+                        Rank <> sourceRank,
+                        Rank + 1,
+                        destinationRank
+                    )
+                }
+            );
+        );
+
+    );
+
+    ```
+
 30. Select the **Home Screen** and click **Play**.
 
 31. Select one of the **topics**.
@@ -588,7 +587,7 @@ With(
      
      ![](images/L02/image49.png)
  
- 34. The drag/drop should work as expected.
+34. The drag/drop should work as expected.
 35. Close the preview.
 36. Click **File** and select **Save**.
 37. Click **Publish**.
