@@ -1,8 +1,4 @@
-#### Microsoft Power Platform
-
-# Dev in a day
-
-#### Lab 01 Getting Started
+# Lab 01 - Getting Started
 
 
 ## Table of Contents
