@@ -360,11 +360,13 @@ labs in this course.
    
 4. To set an Environment Variable for MSbuild. Search Environment variables in windows search bar.
 
-5.   Click Environment Variable 
+     ![](images/L01/envvar.jpg)
 
-      ![](images/L01/Env.png)
+5. Click Environment Variable 
+
+     ![](images/L01/Env.png)
    
-      ![](images/L01/Env1.png)
+     ![](images/L01/Env1.png)
 
 6. In System Variables Section select **Path** and click **Edit** to Paste Msbuild Path
       ```
