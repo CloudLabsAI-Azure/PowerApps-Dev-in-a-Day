@@ -244,7 +244,7 @@ application.
 
 5. Enter **My Notes** for Display name, select **Multiline Text** for Data type, and click **Done**.
 
-  ![](images/L01/NewUi5.png)
+    ![](images/L01/NewUi5.png)
 
 6. Click **Save Table**.
 7. Do not navigate away from this page.
@@ -370,7 +370,7 @@ labs in this course.
       C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
       ```
 
-  ![](images/L01/Env2.png)
+    ![](images/L01/Env2.png)
  
 7. Click ok and again  Click ok.
 
