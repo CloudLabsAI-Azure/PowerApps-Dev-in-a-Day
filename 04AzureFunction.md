@@ -2,7 +2,7 @@
 
 # Dev in a day
 
-#### Lab 04 Azure Function/ May 2022
+#### Lab 04 Azure Function
 
 
 ## Table of Contents
@@ -132,47 +132,47 @@ In this exercise, you will implement the function.
 
 3. Open the new **Model.cs** file and paste the code below. This will define the data that will be sent
     from the Power App.
-```
-using System;
-using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
-using Microsoft.OpenApi.Models;
-namespace Contoso.PrioritZ
-{
-public class TopicItemModel
-{
-public string Choice { get; set; }
-public string Photo { get; set; }
-}
-public class TopicModel
-{
-[OpenApiProperty(Nullable = false, Description = "This is a topic")]
-public string Topic { get; set; }
-public string Details { get; set; }
-public DateTime RespondBy { get; set; }
-public string MyNotes { get; set; }
-public string Photo { get; set; }
-public TopicItemModel[] Choices {get;set;}
-}
-}
-```
+      ```
+      using System;
+      using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
+      using Microsoft.OpenApi.Models;
+      namespace Contoso.PrioritZ
+      {
+      public class TopicItemModel
+      {
+      public string Choice { get; set; }
+      public string Photo { get; set; }
+      }
+      public class TopicModel
+      {
+      [OpenApiProperty(Nullable = false, Description = "This is a topic")]
+      public string Topic { get; set; }
+      public string Details { get; set; }
+      public DateTime RespondBy { get; set; }
+      public string MyNotes { get; set; }
+      public string Photo { get; set; }
+      public TopicItemModel[] Choices {get;set;}
+      }
+      }
+      ```
 4. Open the **CreateTopic** file.
 5. Locate the Run method attributes and replace them with the attributes below. This provides
     user friendly names when we create a connector to use the API.
     
     ![](images/L04/image%20(13).png)
        
-```
-[FunctionName("CreateTopic")]
-[OpenApiOperation(operationId: "CreateTopic", tags: new[] { "name" }, Summary =
-"Create Topic", Description = "Create Topic", Visibility =
-OpenApiVisibilityType.Important)]
-[OpenApiSecurity("function_key", SecuritySchemeType.ApiKey, Name = "code", In =
-OpenApiSecurityLocationType.Query)]
-[OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType:
-"application/json", bodyType: typeof(Guid), Description = "The Guid response")]
-[OpenApiRequestBody(contentType: "application/json", bodyType:
-typeof(TopicModel))]
-```
+      ```
+      [FunctionName("CreateTopic")]
+      [OpenApiOperation(operationId: "CreateTopic", tags: new[] { "name" }, Summary =
+      "Create Topic", Description = "Create Topic", Visibility =
+      OpenApiVisibilityType.Important)]
+      [OpenApiSecurity("function_key", SecuritySchemeType.ApiKey, Name = "code", In =
+      OpenApiSecurityLocationType.Query)]
+      [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType:
+      "application/json", bodyType: typeof(Guid), Description = "The Guid response")]
+      [OpenApiRequestBody(contentType: "application/json", bodyType:
+      typeof(TopicModel))]
+      ```
 
 
 
@@ -185,9 +185,9 @@ typeof(TopicModel))]
 
    ![](images/L04/image%20(17).png)
 
-```
-dotnet add package Microsoft.PowerPlatform.Dataverse.Client
-```
+      ```
+      dotnet add package Microsoft.PowerPlatform.Dataverse.Client
+      ```
 
 
 
@@ -201,127 +201,127 @@ dotnet add package Azure.Identity
 10. Wait for the package to be added.
 11. Open the **CreateTopic** file and add the using statements below.
 
-```
-using System;
-using Microsoft.Identity.Client;
-using Azure.Core;
-using Azure.Identity;
-using Microsoft.PowerPlatform.Dataverse.Client;
-using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums;
-using Microsoft.Xrm.Sdk;
-```
+      ```
+      using System;
+      using Microsoft.Identity.Client;
+      using Azure.Core;
+      using Azure.Identity;
+      using Microsoft.PowerPlatform.Dataverse.Client;
+      using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums;
+      using Microsoft.Xrm.Sdk;
+      ```
 12. Add the below method after the Run method. This method will use the token passed from the
     calling app to get a new token that will allow the function to use the Dataverse API on behalf of
     the calling user.
     
-```
-public static async Task<string> GetAccessTokenAsync(HttpRequest req,string
-resourceUri)
-{
-//Get the calling user token from the request to use as
-UserAssertion
-var headers = req.Headers;
-var token = string.Empty;
-if (headers.TryGetValue("Authorization", out var authHeader))
-{
-if (authHeader[0].StartsWith("Bearer "))
-{
-token = authHeader[0].Substring(7, authHeader[0].Length -
-7);
-}
-}
+      ```
+      public static async Task<string> GetAccessTokenAsync(HttpRequest req,string
+      resourceUri)
+      {
+      //Get the calling user token from the request to use as
+      UserAssertion
+      var headers = req.Headers;
+      var token = string.Empty;
+      if (headers.TryGetValue("Authorization", out var authHeader))
+      {
+      if (authHeader[0].StartsWith("Bearer "))
+      {
+      token = authHeader[0].Substring(7, authHeader[0].Length -
+      7);
+      }
+      }
 
 
-string[] scopes = new[] {$"{resourceUri}/.default" };
+      string[] scopes = new[] {$"{resourceUri}/.default" };
 
-string clientSecret =
-Environment.GetEnvironmentVariable("ClientSecret");
-string clientId = Environment.GetEnvironmentVariable("ClientID");
-string tenantId = Environment.GetEnvironmentVariable("TenantID");
+      string clientSecret =
+      Environment.GetEnvironmentVariable("ClientSecret");
+      string clientId = Environment.GetEnvironmentVariable("ClientID");
+      string tenantId = Environment.GetEnvironmentVariable("TenantID");
 
-var app = ConfidentialClientApplicationBuilder.Create(clientId)
-.WithClientSecret(clientSecret)
-.WithAuthority($"https://login.microsoftonline.com/{tenantId}")
-.Build();
+      var app = ConfidentialClientApplicationBuilder.Create(clientId)
+      .WithClientSecret(clientSecret)
+      .WithAuthority($"https://login.microsoftonline.com/{tenantId}")
+      .Build();
 
 
-//Get On Behalf Of Token for calling user
-UserAssertion userAssertion = new UserAssertion(token);
-var result = await app.AcquireTokenOnBehalfOf(scopes,
-userAssertion).ExecuteAsync();
+      //Get On Behalf Of Token for calling user
+      UserAssertion userAssertion = new UserAssertion(token);
+      var result = await app.AcquireTokenOnBehalfOf(scopes,
+      userAssertion).ExecuteAsync();
 
-return result.AccessToken;
-}
+      return result.AccessToken;
+      }
 
-```
+      ```
 
 13. Replace the code inside the **Run** method with code below. This will get an instance of the
     Dataverse API and use the GetAccessToken function we just defined.
     
-```    
-_logger.LogInformation("Starting Create Topic");
-var serviceClient = new ServiceClient(
-instanceUrl: new Uri(Environment.GetEnvironmentVariable("DataverseUrl")),
-tokenProviderFunction: async uri => { return await
-GetAccessTokenAsync(req, Environment.GetEnvironmentVariable("DataverseUrl"));
-},
-useUniqueInstance: true,
-logger: _logger);
-```
-```
-if (!serviceClient.IsReady)
-{
-throw new Exception("Authentication Failed!");
-}
-```
+      ```    
+      _logger.LogInformation("Starting Create Topic");
+      var serviceClient = new ServiceClient(
+      instanceUrl: new Uri(Environment.GetEnvironmentVariable("DataverseUrl")),
+      tokenProviderFunction: async uri => { return await
+      GetAccessTokenAsync(req, Environment.GetEnvironmentVariable("DataverseUrl"));
+      },
+      useUniqueInstance: true,
+      logger: _logger);
+      ```
+      ```
+      if (!serviceClient.IsReady)
+      {
+      throw new Exception("Authentication Failed!");
+      }
+      ```
 
 14. Add the following code after the if statement of the **Run** method to reserialize the request. This
     will get us the data passed from the caller.
     
-```
-string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-var data = JsonConvert.DeserializeObject<TopicModel>(requestBody);
+      ```
+      string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
+      var data = JsonConvert.DeserializeObject<TopicModel>(requestBody);
 
-```
+      ```
 
 15. Add the code below that will create the row to the **Run** method. This code creates the rows in
     Dataverse and is where we might add more logic in the future.
     
- ```
-var ask = new Entity("contoso_prioritztopic");
-ask["contoso_topic"] = data.Topic;
-ask["contoso_details"] = data.Details;
-ask["contoso_mynotes"] = data.MyNotes;
-ask["contoso_respondby"] = data.RespondBy.Date;
-if (data.Photo != null)
- {
-// Remove unnecessary double quotes,
-// Remove everything before the first comma (embedded stuff)
- ask["contoso_photo"] =
-Convert.FromBase64String(data.Photo.Trim('\"').Split(',')[1]);
- }
-var topicId = await serviceClient.CreateAsync(ask);
-foreach (var choice in data.Choices)
-{
- var item = new Entity("contoso_prioritztopicitem");
- item["contoso_choice"] = choice.Choice;
- item["contoso_prioritztopic"] = new
-EntityReference("contoso_prioritztopic", topicId);
-if (choice.Photo != null)
- {
- item["contoso_photo"] =
-Convert.FromBase64String(choice.Photo.Trim('\"').Split(',')[1]);
- }
- var choiceId = await serviceClient.CreateAsync(item);
-}
+       ```
+      var ask = new Entity("contoso_prioritztopic");
+      ask["contoso_topic"] = data.Topic;
+      ask["contoso_details"] = data.Details;
+      ask["contoso_mynotes"] = data.MyNotes;
+      ask["contoso_respondby"] = data.RespondBy.Date;
+      if (data.Photo != null)
+       {
+      // Remove unnecessary double quotes,
+      // Remove everything before the first comma (embedded stuff)
+       ask["contoso_photo"] =
+      Convert.FromBase64String(data.Photo.Trim('\"').Split(',')[1]);
+       }
+      var topicId = await serviceClient.CreateAsync(ask);
+      foreach (var choice in data.Choices)
+      {
+       var item = new Entity("contoso_prioritztopicitem");
+       item["contoso_choice"] = choice.Choice;
+       item["contoso_prioritztopic"] = new
+      EntityReference("contoso_prioritztopic", topicId);
+      if (choice.Photo != null)
+       {
+       item["contoso_photo"] =
+      Convert.FromBase64String(choice.Photo.Trim('\"').Split(',')[1]);
+       }
+       var choiceId = await serviceClient.CreateAsync(item);
+      }
 
-```
+      ```
 
 16. Return the topic id as JSON (required by Power Apps). Add the code below to the **Run** method.
 
-```
-return new OkObjectResult(topicId);
-```
+      ```
+      return new OkObjectResult(topicId);
+      ```
 
 17. Click **Terminal** and select **Run Build Task**.
 18. The run should succeed. Press any key to stop.
@@ -388,7 +388,7 @@ In this exercise, you will deploy the function to Azure.
     
     ![](images/L04/image%20(33).png)
     
-    ![](images/L04/image%20(34).png">
+    ![](images/L04/image%20(34).png>
 
 21. Copy the **Directory (tenant) ID** and keep it on a notepad as **Tenant ID**. You will need this id in
     future steps.
@@ -590,19 +590,19 @@ In this exercise, you will create a new custom connector.
    
      ![](images/L04/image%20(64).png)
    
-```
-    {
-    "topic": "Test Topic",
-    "details": "From Azure Function",
-    "respondBy": "2022-11-01",
-    "myNotes": "It worked",
-    "choices": [
-    {
-    "choice": "Choice 1"
-    }
-    ]
-    }
-```
+      ```
+          {
+          "topic": "Test Topic",
+          "details": "From Azure Function",
+          "respondBy": "2022-11-01",
+          "myNotes": "It worked",
+          "choices": [
+          {
+          "choice": "Choice 1"
+          }
+          ]
+          }
+      ```
      
 
 
@@ -649,21 +649,21 @@ Admin canvas application.
    
     ![](images/L04/image%20(72).png)
    
-```    
-Collect(
-colAddChoices,
-{
-choice: 'Choice name textbox'.Text,
-photoRaw: UploadedImage1.Image,
-photo: JSON(
-UploadedImage1.Image,
-JSONFormat.IncludeBinaryData
-)
-}
-);
-Reset('Choice name textbox');
-Reset(AddMediaButton2)
-```
+      ```    
+      Collect(
+      colAddChoices,
+      {
+      choice: 'Choice name textbox'.Text,
+      photoRaw: UploadedImage1.Image,
+      photo: JSON(
+      UploadedImage1.Image,
+      JSONFormat.IncludeBinaryData
+      )
+      }
+      );
+      Reset('Choice name textbox');
+      Reset(AddMediaButton2)
+      ```
 
 
 10. Select **Save topic icon**.
@@ -672,22 +672,21 @@ Reset(AddMediaButton2)
    
      ![](images/L04/image%20(74).png)
    
-```    
-Set(returnGuid, PrioritZFunction.CreateTopic({
-topic: 'Topic name textbox'.Text,
-details: 'Topic details textbox'.Text,
-respondBy: 'respond by date picker'.SelectedDate,
-myNotes: 'Notes textbox'.Text,
-photo: JSON(AddTopicImage.Image, JSONFormat.IncludeBinaryData),
-choices: ShowColumns(colAddChoices, "choice", "photo")
-}));
-Notify("Topic created! " & returnGuid, NotificationType.Success, 5000);
-Back();
-```
+      ```    
+      Set(returnGuid, PrioritZFunction.CreateTopic({
+      topic: 'Topic name textbox'.Text,
+      details: 'Topic details textbox'.Text,
+      respondBy: 'respond by date picker'.SelectedDate,
+      myNotes: 'Notes textbox'.Text,
+      photo: JSON(AddTopicImage.Image, JSONFormat.IncludeBinaryData),
+      choices: ShowColumns(colAddChoices, "choice", "photo")
+      }));
+      Notify("Topic created! " & returnGuid, NotificationType.Success, 5000);
+      Back();
+      ```
     
 12. Click **File** and select **Save**.
-
-    
+   
     
 13. Click on the  back button.
 14. Do not navigate away from this page.
