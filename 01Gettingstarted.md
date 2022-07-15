@@ -58,6 +58,9 @@ https://powerapps.microsoft.com/en-in/developerplan/
       ![](images/L01/image1.png)
 
 3. Sign in if prompted.
+* Email/Username: <inject key="AzureAdUserEmail"></inject>
+* Password: <inject key="AzureAdUserPassword"></inject>
+
 4. Select your country and click **Accept**.
 5. You should be navigated to the new **dev environment created for you** . Select the new
     **environment** and stay sign in.
@@ -69,6 +72,7 @@ https://powerapps.microsoft.com/en-in/developerplan/
  
     ![](images/L01/image3.png)
 
+**NOTE** [If you not able see table data could you please  wait 1 or 2 minutes it will show] 
 ## Exercise 2 - Import starting solution
 
 In this exercise, you will import a solution into your dev environment. This solution contains the current
@@ -235,7 +239,7 @@ application.
    ```
 2. Select **Solutions** and open the **PrioritZ** solution.
 3. Expand **Tables** and select the **PrioritZ Topic** table.
-4. Select the **Columns** tab and click **+ Add column**.
+4. Select the **Columns** tab and click **+ New column**.
 
 
 5. Enter **My Notes** for Display name, select **Multiline Text** for Data type, and click **Done**.
@@ -322,7 +326,7 @@ application.
 
  27. You may close the **app designer**.
 
-## Exercise 5 – Install Visual Studio Code Installer and Power Platform CLI Extension
+## Exercise 5 – Install Visual Studio Code and Install  Power Platorm CLI
 
 In this exercise, you will install Visual Studio Code and Power Platform CLI. These tools are used in the
 labs in this course.
@@ -386,39 +390,33 @@ labs in this course.
     ![](images/L01/image37.png)
 
 4. Open Visual Studio Code.
-5. Select the **Power Platform** tab and click **Add Dataverse Auth Profile**.
+5. Click terminal  new terminal
+6. Run this command 
+   ```
+   pac
+   ```
+
+7. Run this Command and paste environment URL your copyed before. 
+   ```
+   pac auth create --name DevAuth --url 
+   ```
  
-    ![](images/L01/image38.png)
+     ![](images/L01/Eeditpac.png)
 
-6. Paste the environment URL copied and [ENTER].
-    
-    ![](images/L01/image39.png)
 
-7. Provide your credentials and sign in.
-8. Right click on the auth profile you created and select **Name** / **Rename Auth profile**.
-9. Rename the profile **Dev Auth**.
-10. You should now have at least one auth profile. If you have more than profile, make sure the
-    profile you created is selected.
+8. You should now have at least one auth profile. If you have more than profile, make sure the profile you created is selected
    
-    ![](images/L01/image40.png)
+   ![](images/L01/DevAuth.png)
 
-
-11. Go to the Environments & Solutions pane and expand the environment you are using for this
-    lab.
-12. You should see all the solutions in the environment.
-    
-     ![](images/L01/image41.png)
-
-13. Click **Terminal** and select **New Terminal**.
+9. Click **Terminal** and select **New Terminal**.
 
      ![](images/L01/image42.png)
 
-14. Run the command below to see list of solutions.
+10. Run the command below to see list of solutions.
 
       ```
       pac solution list
       ```
-15. You should see list of solutions installed on your environment.
+11. You should see list of solutions installed on your environment.
     
-    ![](images/L01/image43.png)
 

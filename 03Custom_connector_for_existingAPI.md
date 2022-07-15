@@ -539,6 +539,6 @@ https://contosobadgestest.azurewebsites.net/
       
       ![](images/L03/image64.png)
 
-14. You may **test** the rest of the operations.
+
 
 
