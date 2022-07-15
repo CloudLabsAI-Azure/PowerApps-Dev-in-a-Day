@@ -390,18 +390,18 @@ labs in this course.
     ![](images/L01/image37.png)
 
 4. Open Visual Studio Code.
-5. Click terminal  new terminal
+5. Click **Terminal** and select **New Terminal**.
 6. Run this command 
    ```
    pac
    ```
-
-7. Run this Command and paste environment URL your copyed before. 
+   
+7. Replace `<your environment URL>` in the below command with the value of environment URL that you copied earlier then run the command. 
    ```
-   pac auth create --name DevAuth --url 
+   pac auth create --name DevAuth --url <your environment URL>
    ```
- 
-     ![](images/L01/Eeditpac.png)
+   > After adding the environment URL, the command will look like this: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
+  ![](images/L01/Eeditpac.png)
 
 
 8. You should now have at least one auth profile. If you have more than profile, make sure the profile you created is selected
