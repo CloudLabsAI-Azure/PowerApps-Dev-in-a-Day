@@ -72,8 +72,12 @@ In this exercise, you will create a custom connector from an existing API.
 
 ### Task 1: Download open API definition and create connector
 
-1. Navigate to Contoso Coffee Badges (contosobadgestest.azurewebsites.net)
-2. Click on open the **Open API definition file** link.
+1. Navigate to the below URL to open the Contoso Coffee Badges API.
+
+   ```
+   https://contosobadgestest.azurewebsites.net/
+   ```
+3. Click on open the **Open API definition file** link.
    
     ![](images/L03/image3.png)
 
