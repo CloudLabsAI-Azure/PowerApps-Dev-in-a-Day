@@ -402,10 +402,6 @@ labs in this course.
  
      ![](images/L01/Eeditpac.png)
 
-
-11. Go to the Environments & Solutions pane and expand the environment you are using for this
-    lab.
-
 13. Click **Terminal** and select **New Terminal**.
 
      ![](images/L01/image42.png)
