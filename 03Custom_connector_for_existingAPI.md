@@ -216,8 +216,11 @@ You will do this by using the custom code feature to reshape the response from t
 
 ### Task 1: Add code from resource folder
 
-1. Navigate to Power Automate
-           https://powerplatform.microsoft.com/en-us/power-automate/)
+1. Navigate to Power Automate using below URL.
+          
+   ```
+   https://powerautomate.microsoft.com/en-us/
+   ```
 
 2. Expand **Data** and select **Custom connectors**.
 
@@ -239,11 +242,10 @@ You will do this by using the custom code feature to reshape the response from t
     
     ![](images/L03/image27.png)
 
-7. Select Get for Verb, enter
-                https://contosobadgestest.azurewebsites.net/getcurrentbadge?id={id} 
-     for URL, and click
-    Import.
-
+7. Select Get for Verb, enter the below value for URL, and click **Import**.
+   ```
+   https://contosobadgestest.azurewebsites.net/getcurrentbadge?id={id} 
+   ```
 
   ![](images/L03/image28.png)
 
@@ -253,7 +255,7 @@ You will do this by using the custom code feature to reshape the response from t
     
      ![](images/L03/image29.png)
 
-11. Select the **CustomConnectorCode.csx** file located in the lab resources folder and click **Open**.
+11. Select the **CustomConnectorCode.csx** file located in this path `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` and click **Open**.
 12. Select the **getcurrentbadge** action.
      
      ![](images/L03/image30.png)
