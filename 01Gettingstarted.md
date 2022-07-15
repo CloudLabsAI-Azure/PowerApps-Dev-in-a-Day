@@ -391,7 +391,7 @@ labs in this course.
 
 4. Open Visual Studio Code.
 5. Click **Terminal** and select **New Terminal**.
-6. Run this command 
+6. Run the below command in the terminal.
    ```
    pac
    ```
