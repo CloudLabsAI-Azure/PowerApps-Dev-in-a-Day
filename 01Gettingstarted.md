@@ -405,9 +405,6 @@ labs in this course.
 
 11. Go to the Environments & Solutions pane and expand the environment you are using for this
     lab.
-12. You should see all the solutions in the environment.
-    
-     ![](images/L01/image41.png)
 
 13. Click **Terminal** and select **New Terminal**.
 
@@ -420,5 +417,4 @@ labs in this course.
       ```
 15. You should see list of solutions installed on your environment.
     
-    ![](images/L01/image43.png)
 
