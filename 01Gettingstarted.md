@@ -58,6 +58,9 @@ https://powerapps.microsoft.com/en-in/developerplan/
       ![](images/L01/image1.png)
 
 3. Sign in if prompted.
+* Email/Username: <inject key="AzureAdUserEmail"></inject>
+* Password: <inject key="AzureAdUserPassword"></inject>
+
 4. Select your country and click **Accept**.
 5. You should be navigated to the new **dev environment created for you** . Select the new
     **environment** and stay sign in.
@@ -69,6 +72,7 @@ https://powerapps.microsoft.com/en-in/developerplan/
  
     ![](images/L01/image3.png)
 
+**NOTE** [I you not able see table data could you please  wait 1 or 2 minutes it will show] 
 ## Exercise 2 - Import starting solution
 
 In this exercise, you will import a solution into your dev environment. This solution contains the current
@@ -235,7 +239,7 @@ application.
    ```
 2. Select **Solutions** and open the **PrioritZ** solution.
 3. Expand **Tables** and select the **PrioritZ Topic** table.
-4. Select the **Columns** tab and click **+ Add column**.
+4. Select the **Columns** tab and click **+ New column**.
 
 
 5. Enter **My Notes** for Display name, select **Multiline Text** for Data type, and click **Done**.
