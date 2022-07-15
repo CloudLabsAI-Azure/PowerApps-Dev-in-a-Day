@@ -72,7 +72,7 @@ https://powerapps.microsoft.com/en-in/developerplan/
  
     ![](images/L01/image3.png)
 
-**NOTE** [I you not able see table data could you please  wait 1 or 2 minutes it will show] 
+**NOTE** [If you not able see table data could you please  wait 1 or 2 minutes it will show] 
 ## Exercise 2 - Import starting solution
 
 In this exercise, you will import a solution into your dev environment. This solution contains the current
