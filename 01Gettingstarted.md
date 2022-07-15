@@ -402,15 +402,20 @@ labs in this course.
  
      ![](images/L01/Eeditpac.png)
 
-13. Click **Terminal** and select **New Terminal**.
+
+7. You should now have at least one auth profile. If you have more than profile, make sure the profile you created is selected
+   
+   ![](images/L01/DevAuth.png)
+
+8. Click **Terminal** and select **New Terminal**.
 
      ![](images/L01/image42.png)
 
-14. Run the command below to see list of solutions.
+9. Run the command below to see list of solutions.
 
       ```
       pac solution list
       ```
-15. You should see list of solutions installed on your environment.
+10. You should see list of solutions installed on your environment.
     
 
