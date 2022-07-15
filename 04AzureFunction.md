@@ -70,8 +70,9 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
     ![](images/L04/image%20(3).png)
 
 7. Go to the terminal and run the command below to create new folder.
-    md ContosoFunctions
-   
+   ```
+   md ContosoFunctions
+   ```
      ![](images/L04/image%20(4).png)
 
 
@@ -158,17 +159,11 @@ In this exercise, you will implement the function.
        
       ```
       [FunctionName("CreateTopic")]
-      [OpenApiOperation(operationId: "CreateTopic", tags: new[] { "name" }, Summary =
-      "Create Topic", Description = "Create Topic", Visibility =
-      OpenApiVisibilityType.Important)]
-      [OpenApiSecurity("function_key", SecuritySchemeType.ApiKey, Name = "code", In =
-      OpenApiSecurityLocationType.Query)]
-      [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType:
-      "application/json", bodyType: typeof(Guid), Description = "The Guid response")]
-      [OpenApiRequestBody(contentType: "application/json", bodyType:
-      typeof(TopicModel))]
+      [OpenApiOperation(operationId: "CreateTopic", tags: new[] { "name" }, Summary = "Create Topic", Description = "Create Topic", Visibility =  OpenApiVisibilityType.Important)]
+      [OpenApiSecurity("function_key", SecuritySchemeType.ApiKey, Name = "code", In = OpenApiSecurityLocationType.Query)]
+      [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(Guid), Description = "The Guid response")]
+      [OpenApiRequestBody(contentType: "application/json", bodyType: typeof(TopicModel))]
       ```
-
 
 
 6. Remove **get** from the Run method. You should only have post.
@@ -183,8 +178,6 @@ In this exercise, you will implement the function.
       ```
       dotnet add package Microsoft.PowerPlatform.Dataverse.Client
       ```
-
-
 
 
 8. Wait for the package to be added.
@@ -210,8 +203,7 @@ dotnet add package Azure.Identity
     the calling user.
     
       ```
-      public static async Task<string> GetAccessTokenAsync(HttpRequest req,string
-      resourceUri)
+      public static async Task<string> GetAccessTokenAsync(HttpRequest req,string resourceUri)
       {
       //Get the calling user token from the request to use as
       UserAssertion
@@ -225,21 +217,14 @@ dotnet add package Azure.Identity
       7);
       }
       }
-
-
       string[] scopes = new[] {$"{resourceUri}/.default" };
-
-      string clientSecret =
-      Environment.GetEnvironmentVariable("ClientSecret");
+      string clientSecret = Environment.GetEnvironmentVariable("ClientSecret");
       string clientId = Environment.GetEnvironmentVariable("ClientID");
       string tenantId = Environment.GetEnvironmentVariable("TenantID");
-
       var app = ConfidentialClientApplicationBuilder.Create(clientId)
       .WithClientSecret(clientSecret)
       .WithAuthority($"https://login.microsoftonline.com/{tenantId}")
       .Build();
-
-
       //Get On Behalf Of Token for calling user
       UserAssertion userAssertion = new UserAssertion(token);
       var result = await app.AcquireTokenOnBehalfOf(scopes,
@@ -248,7 +233,7 @@ dotnet add package Azure.Identity
       return result.AccessToken;
       }
 
-      ```
+     ```
 
 13. Replace the code inside the **Run** method with code below. This will get an instance of the
     Dataverse API and use the GetAccessToken function we just defined.
@@ -262,8 +247,6 @@ dotnet add package Azure.Identity
       },
       useUniqueInstance: true,
       logger: _logger);
-      ```
-      ```
       if (!serviceClient.IsReady)
       {
       throw new Exception("Authentication Failed!");
@@ -292,8 +275,7 @@ dotnet add package Azure.Identity
        {
       // Remove unnecessary double quotes,
       // Remove everything before the first comma (embedded stuff)
-       ask["contoso_photo"] =
-      Convert.FromBase64String(data.Photo.Trim('\"').Split(',')[1]);
+       ask["contoso_photo"] = Convert.FromBase64String(data.Photo.Trim('\"').Split(',')[1]);
        }
       var topicId = await serviceClient.CreateAsync(ask);
       foreach (var choice in data.Choices)
