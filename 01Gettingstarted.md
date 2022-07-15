@@ -330,7 +330,7 @@ application.
 
  27. You may close the **app designer**.
 
-## Exercise 5 – Install Visual Studio Code Installer and Power Platform CLI Extension
+## Exercise 5 – Install Visual Studio Code and Install  Power Platorm CLI
 
 In this exercise, you will install Visual Studio Code and Power Platform CLI. These tools are used in the
 labs in this course.
