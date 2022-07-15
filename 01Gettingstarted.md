@@ -394,21 +394,13 @@ labs in this course.
     ![](images/L01/image37.png)
 
 4. Open Visual Studio Code.
-5. Select the **Power Platform** tab and click **Add Dataverse Auth Profile**.
+5. Click terminal  new terminal
+6. Run this command and paste environment URL your copyed before. 
+   ```
+   pac auth create --name DevAuth --url 
+   ```
  
-    ![](images/L01/image38.png)
-
-6. Paste the environment URL copied and [ENTER].
-    
-    ![](images/L01/image39.png)
-
-7. Provide your credentials and sign in.
-8. Right click on the auth profile you created and select **Name** / **Rename Auth profile**.
-9. Rename the profile **Dev Auth**.
-10. You should now have at least one auth profile. If you have more than profile, make sure the
-    profile you created is selected.
-   
-    ![](images/L01/image40.png)
+     ![](images/L01/Eeditpac.png)
 
 
 11. Go to the Environments & Solutions pane and expand the environment you are using for this
