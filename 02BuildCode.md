@@ -73,8 +73,7 @@ In this exercise, you will build the code component.
 6. You should now be in the directory you created. Create a new component project and install dependencies by running the commands below.
     
      ```
-     pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --
-     framework react --run-npm-install
+     pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --framework react --run-npm-install
      ```
      
      ![](images/L02/image3.png)
