@@ -109,19 +109,13 @@ In this exercise, you will build the code component.
 
 14. Add the following properties after the closing tag of the data-set element **</data-set** >.
 
-       
-            <property name="BackgroundColor" display-name-key="Background color"
-            usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
-            <property name="DragBackgroundColor" display-name-key="Drag background
-            color" usage="input" of-type="SingleLine.Text" default-value="lightgreen"/>
-
-            <property name="ItemHeight" display-name -key="Item height" usage="input"
-            of- type="Whole.None" default-value="32"/>
-            <property name="FontSize" display-name-key="Font size" usage="input" of-
-            type="Whole.None" default-value="12"/>
-            <property name="FontColor" display-name-key="Font color" usage="input" of-
-            type="SingleLine.Text" default-value="#333333"/>
-     
+    ```
+    <property name="BackgroundColor" display-name-key="Background color" usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
+    <property name="DragBackgroundColor" display-name-key="Drag background color" usage="input" of-type="SingleLine.Text" default-value="lightgreen"/>
+    <property name="ItemHeight" display-name-key="Item height" usage="input" of-type="Whole.None" default-value="32"/>
+    <property name="FontSize" display-name-key="Font size" usage="input" of-type="Whole.None" default-value="12"/>
+    <property name="FontColor" display-name-key="Font color" usage="input" of-type="SingleLine.Text" default-value="#333333"/>
+    ```
 
      ![](images/L02/image9.png)
 
@@ -132,12 +126,11 @@ In this exercise, you will build the code component.
  
  16. Notice the following two resources. This declares the component’s dependency on these two
     libraries. This is a result of specifying –framework React on initialization.
-
-    
-            <platform-library name="React" version="16.8.6" />
-            <platform-library name="Fluent" version="8.29.0" />
-    
-        ![](images/L02/image11.png)
+     ```
+     <platform-library name="React" version="16.8.6" />
+     <platform-library name="Fluent" version="8.29.0" />
+     ```
+     ![](images/L02/image11.png)
  
 17. Click **File** and select **Save All**.
 18. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
@@ -165,7 +158,7 @@ In this exercise, you will build the code component.
         display: flex;
         align-items: center;
         }
-        . prioritydnd-item-column {
+        .prioritydnd-item-column {
         margin: 8px;
         }
         ```
@@ -179,7 +172,7 @@ In this exercise, you will build the code component.
 
 1. Remove the HelloWorld.tsx component file that is automatically created as we won’t be using it.
     
-2. Go to the lab resources folder.
+2. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` in file explorer.
     
 3. Drag the **PriorityComponent.tsx** file and drop it in the **PrioriZDnDRanking** folder.
  
@@ -225,8 +218,7 @@ In this exercise, you will build the code component.
  13. Add the import below to the **index.ts** file. This will reference the PriorityComponent.
     
         ```
-        import { PriorityComponent, PriorityComponentProps } from
-        './PriorityComponent';
+        import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
         ```
         ![](images/L02/image19.png)  
    
@@ -267,22 +259,20 @@ In this exercise, you will build the code component.
     from the PriorityComponent and adds it to the virtual DOM.
   
      ```   
-    public updateView(context: ComponentFramework.Context<IInputs>):
-    React.ReactElement {
-    const dataset = context.parameters.items;
-    return React.createElement(PriorityComponent, {
-    width: context.mode.allocatedWidth,
-    height: context.mode.allocatedHeight,
-    itemHeight: context.parameters.ItemHeight.raw,
-    fontSize: context.parameters.FontSize.raw,
-    fontColor: context.parameters.FontColor.raw,
-
-    dataset: dataset,
-    onReorder: this.onReorder,
-    backgroundColor: this.context.parameters.BackgroundColor.raw,
-    dragBackgroundColor:
-    this.context.parameters.DragBackgroundColor.raw,
-    } as PriorityComponentProps);
+    public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
+        const dataset = context.parameters.items;
+        return React.createElement(PriorityComponent, {
+            width: context.mode.allocatedWidth,
+            height: context.mode.allocatedHeight,
+            itemHeight: context.parameters.ItemHeight.raw,
+            fontSize: context.parameters.FontSize.raw,
+            fontColor: context.parameters.FontColor.raw,
+            dataset: dataset,
+            onReorder: this.onReorder,
+            backgroundColor: this.context.parameters.BackgroundColor.raw,
+            dragBackgroundColor:
+            this.context.parameters.DragBackgroundColor.raw,
+        } as PriorityComponentProps);
     }
     ```
 
@@ -297,12 +287,9 @@ In this exercise, you will build the code component.
     const sourceId = dataset.sortedRecordIds[sourceIndex];
     const destinationId = dataset.sortedRecordIds[destinationIndex];
     // raise the OnSelect event
-
-    this.context.parameters.items.openDatasetItem(dataset.records[sourceId].getName
-    dReference());
+    this.context.parameters.items.openDatasetItem(dataset.records[sourceId].getNamedReference());
     // set the SelectedItems property
-    this.context.parameters.items.setSelectedRecordIds([sourceId,
-    destinationId]);
+    this.context.parameters.items.setSelectedRecordIds([sourceId, destinationId]);
     };
     ```
   
@@ -369,12 +356,9 @@ In this exercise, you will build the code component.
 
  
 34. Run the command below to push the component to your environment.
-
-
     ```
     pac pcf push --publisher-prefix contoso
     ```
-
 35. Wait for the solution to be imported and published to your environment.
 
       ![](images/L02/image31.png)
@@ -520,7 +504,6 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     ```
     
 29. Set the **OnSelect** value of the **PrioritZDnDRanking** component to the formula below.
-
 
     ```
     With(
