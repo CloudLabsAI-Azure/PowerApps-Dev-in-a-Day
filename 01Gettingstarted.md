@@ -395,7 +395,12 @@ labs in this course.
 
 4. Open Visual Studio Code.
 5. Click terminal  new terminal
-6. Run this command and paste environment URL your copyed before. 
+6. Run this command 
+   ```
+   pac
+   ```
+
+7. Run this Command and paste environment URL your copyed before. 
    ```
    pac auth create --name DevAuth --url 
    ```
@@ -403,19 +408,19 @@ labs in this course.
      ![](images/L01/Eeditpac.png)
 
 
-7. You should now have at least one auth profile. If you have more than profile, make sure the profile you created is selected
+8. You should now have at least one auth profile. If you have more than profile, make sure the profile you created is selected
    
    ![](images/L01/DevAuth.png)
 
-8. Click **Terminal** and select **New Terminal**.
+9. Click **Terminal** and select **New Terminal**.
 
      ![](images/L01/image42.png)
 
-9. Run the command below to see list of solutions.
+10. Run the command below to see list of solutions.
 
       ```
       pac solution list
       ```
-10. You should see list of solutions installed on your environment.
+11. You should see list of solutions installed on your environment.
     
 
