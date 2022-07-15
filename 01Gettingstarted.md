@@ -282,17 +282,9 @@ application.
      
      ![](images/L01/image31.png)
 
-
-
-      ```
-      Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes':
-      'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details
-      textbox'.Text,'Respond By':'respond by date
-      picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('P
-      rioritz Topic Items',Defaults('Prioritz Topic
-      Items'),{Choice:ThisRecord.choice,'PrioritZ
-      Topic':newTopic,Photo:ThisRecord.photo}));Back()
-      ```
+    ```
+    Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
+    ```
 12. Select the **View Topic Screen**.
 13. Go to the **Insert** tab and click **Label**.
 14. Rename the label you just added **Notes label**.
