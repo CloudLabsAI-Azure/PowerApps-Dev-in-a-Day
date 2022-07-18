@@ -146,7 +146,7 @@ In this exercise, you will build the code component.
  22. Paste the following css into the **PrioritZDnDRanking.css** file.
     
        ```
-        .prioritydnd-scroll-c ontainer {
+        .prioritydnd-scroll-container {
         box-sizing: border-box;
         padding: 2px;
         overflow-y: auto;
