@@ -159,7 +159,7 @@ In this exercise, you will implement the function.
        
       ```
       [FunctionName("CreateTopic")]
-      [OpenApiOperation(operationId: "CreateTopic", tags: new[] { "name" }, Summary = "Create Topic", Description = "Create Topic", Visibility =  OpenApiVisibilityType.Important)]
+      [OpenApiOperation(operationId: "CreateTopic", tags: new[] { "name" }, Summary = "Create Topic", Description = "Create Topic", Visibility = OpenApiVisibilityType.Important)]
       [OpenApiSecurity("function_key", SecuritySchemeType.ApiKey, Name = "code", In = OpenApiSecurityLocationType.Query)]
       [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(Guid), Description = "The Guid response")]
       [OpenApiRequestBody(contentType: "application/json", bodyType: typeof(TopicModel))]
@@ -205,8 +205,7 @@ dotnet add package Azure.Identity
       ```
       public static async Task<string> GetAccessTokenAsync(HttpRequest req,string resourceUri)
       {
-      //Get the calling user token from the request to use as
-      UserAssertion
+      //Get the calling user token from the request to use as UserAssertion
       var headers = req.Headers;
       var token = string.Empty;
       if (headers.TryGetValue("Authorization", out var authHeader))
