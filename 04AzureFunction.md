@@ -542,32 +542,50 @@ In this exercise, you will deploy the function to Azure.
 
 ### Task 2: Register Connector Client app
 
-1. Click on the **Portal menu** and select **Azure Active Directory**.
-2. Select **App registrations** and click **+ New registration**. This application registration will be used
-    for the connector to access the protected API.
-3. Enter **PrioritZConnector<Initials>** for Name, select **Accounts in this organizational directory**
-    **only** , select **Web** for Redirect URI, enter https://global.consent.azure-apim.net/redirect and
-    click **Register**.
+1. Navigate to the Azure portal, then search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
 
-     ![](images/L04/image%20(48).png)
+   ![](images/L04/diad4l1.png)
+
+1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(1)***. This application registration will be used for the connector to access the protected API.
+
+   ![](images/L04/diad4l2.png)
+
+1. Please provide the following details and click on **Register** ***(5)***.
+   
+   - Name: **PrioritZConnector<inject key="DeploymentID" enableCopy="false" />** ***(1)***
+   - Supported account types: **Accounts in this organizational directory only (OTU WA AIW [SUFFIX] only - Single tenant)** ***(2)***
+   - Redirect URL: Select **Web** ***(3)*** and provide **https://global.consent.azure-apim.net/redirect** ***(4)*** as the URL
+
+   ![](images/L04/diad4l3.png)
     
-4. Copy the **Application (client) ID** and keep it in a notepad as **PrioritZFL Connector application ID**.
+1. Copy the **Application (client) ID** and save it in a notepad as you need it for later use.
      
-     ![](images/L04/image%20(49).png)
+   ![](images/L04/diad4l4.png)
     
-5. Select **Certificates & secrets** and click **+ New client secret**.
-6. Provide a description, select **3 months** , and click **Add**.
-7. Copy the secret **Value** and keep it on a notepad as **PrioritZFL Connector Secret**.
-8. Select **API permissions** and click **+ Add a permission**.
+1. Select **Certificates & secrets** from the side blade and click on **+ New client secret**.
+   
+   ![](images/L04/diad4l5.png)
+    
+1. Provide **PrioritZsecret** ***(1)*** as description, set expiry to **3 months** ***(2)***, and click on **Add** ***(3)***.
+
+   ![](images/L04/diad4l6.png)
+
+1. Copy the **Secret ID** and save it in a notepad as you need it for later use.
+
+   ![](images/L04/diad4l7.png)
+
+1. Select **API permissions** ***(1)*** from the side blade and click on **+ Add a permission** ***(2)***.
       
-     ![](images/L04/image%20(50).png)
+   ![](images/L04/diad4l8.png)
 
-9. Select the **My APIs** tab and select **PrioritZFL**.
+1. In the Request API Permissions tab, select the **My APIs** ***(1)*** tab and select **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** ***(2)***.
     
-     ![](images/L04/image%20(51).png)
+   ![](images/L04/diad4l9.png)
     
- 10. Check the **user_impersonation** checkbox and click **Add permission**.
+1. Toggle the **user_impersonation** ***(1)*** checkbox and click **Add permission** ***(2)***.
 
+   ![](images/L04/diad4l10.png)
+   
 ## Exercise 4 – Create Connector
 
 In this exercise, you will create a new custom connector.
@@ -575,69 +593,84 @@ In this exercise, you will create a new custom connector.
 ### Task 1: Create connector
 
 1. Navigate to https://portal.azure.com/
-2. Select **All resources** , search for the function app you deployed and click to open it.
+
+1. Now in the Azure portal, click on **Resource Groups** present under Navigate.
+
+   ![](images/L04/diad4l11.png)
+ 
+1. Select the  **prioritzfunc<inject key="DeploymentID" enableCopy="false" />** resource Group from the list.
+
+   ![](images/L04/diad4l12.png)
+
+1. Select **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** function resource from the list.
      
-     ![](images/L04/image%20(52).png)
+   ![](images/L04/diad4l13.png)
     
-3. Copy the **URL**.
+1. From the overview page, Copy the **URL** of the function. 
    
-     ![](images/L04/image%20(53).png)
+   ![](images/L04/diad4l14.png) 
 
-4. Open a new browser tab or window and paste the URL you copied.
-5. Add **/api/swagger.json** to the end of the URL and [ENTER]
+1. Add **/api/swagger.json** to the end of the URL and access it using the browser.
      
-     ![](images/L04/image%20(54).png)
+   ![](images/L04/image%20(54).png)
     
-6. Click **Accept** if prompted for permissions.
-7. Right click on the swagger and select **Save as**.
+   >**Note**: If permissions prompt pops up, Click on **Accept** and continue.
+   
+1. Right click on the swagger and select **Save as** and Save the file in your local machine.
     
-     ![](images/L04/image%20(55).png)
-    
-8. Save the file on your local machine.
-9. Navigate to Power Apps maker portal and make sure you have the correct Dev environment
-    selected.
-10. Expand **Data** and select **Custom Connectors**.
+   ![](images/L04/diad4l15.png) 
+   
+1. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
+   ```
+       https://make.powerapps.com
+   ```
+   
+   ![](images/L01/diadl7.png)
+   
+1. Expand **Data** ***(1)*** and select **Custom Connectors** ***(1)***.
      
-     ![](images/L04/image%20(56).png)
+   ![](images/L04/diad4l16.png) 
 
-11. Click on the chevron button next to the New custom connector and select **Import an OpenAPI**
-    **file**.
+1. Click on the chevron button next to the New custom connector and select **Import an OpenAPI file**.
      
-     ![](images/L04/image%20(57).png)
+   ![](images/L04/diad4l17.png) 
     
-12. Enter **PrioritZ Connector** for name and click **Import**.
+1. Enter **PrioritZ Connector** ***(1)*** for name and click **Import** ***(2)***.
     
-     ![](images/L04/image%20(58).png)
+   ![](images/L04/diad4l20.png) 
     
-13. Select the swagger file you saved and click **Open**.
-14. Click **Continue**.
-15. Provide Description and advance to **Security**.
-    
-     ![](images/L04/image%20(59).png)
+1. Select the swagger file which you saved in step 7 of this task and Click **Continue**.
 
-16. Select **OAuth 2.0** for Authentication type.
-17. Select **Azure Active Directory** Identity provider.
-18. Copy the **PrioritZFL Connector application ID** from your notepad and paste it in the **Client id**
-    field.
-19. Copy the **PrioritZFL Connector Secret** your notepad and paste it in the **Client secret** field.
-20. Copy the **Tenat ID** from your notepad and replace common with it in the **Tenant ID** field.
-21. Copy the **PrioritZ API application ID** from your notepad and paste it in the **Resource URL** field.
-22. Enter **true** for Enable on-behalf-of login.
-23. Click **Create connector**.
+   ![](images/L04/diad4l18.png) 
+ 
+1. Provide **PrioritZ<inject key="DeploymentID" enableCopy="false" /> Connector** ***(1)*** as description as and advance to **Security** ***(2)***.
     
-     ![](images/L04/image%20(60).png)
+   ![](images/L04/diad4l19.png) 
 
+16. Select **OAuth 2.0** ***(1)*** for Authentication type. Provide the following details and Click on **Create connector** ***(8)***.
+
+    - Identity Provider: **Azure Active Directory** ***(2)***
+    - Client id: Paste **PrioritZFL Connector application ID** ***(3)*** which you copied earlier
+    - Client secret: Paste **PrioritZFL Connector Secret** ***(4)*** which you copied earlier
+    - Tenant ID: Paste the **Tenant ID** ***(5)*** which you copied earlier
+    - Resource URL: Paste **PrioritZ API application ID** ***(6)*** which you copied earlier
+    - Enable on-behalf-of login: **true** ***(7)***
+
+   ![](images/L04/diad4l21.png) 
+   
 ### Task 2: Test connector
 
-1. Select the **Test** tab.
-2. Click **+ New connection**.
+1. Select the **Test** ***(1)*** tab and click **+ New connection** ***(2)***.
      
-   ![](images/L04/image%20(61).png)
+   ![](images/L04/diad4l22.png) 
     
-3. Click **Create**.
-4. Provide your credentials.
-5. Click **Accept**.
-6. Select **Custom connectors** and click **Edit** on the **PrioritZ connector**.
+1. Click on **Create**.
+
+   ![](images/L04/diad4l23.png) 
+   
+   >**Note**: If login prrompts pops up. Provide your credentials and accept the terms.
+   
+7. Select **Custom connectors** and click **Edit** on the **PrioritZ connector**.
      
    ![](images/L04/image%20(62).png)
     
@@ -646,7 +679,7 @@ In this exercise, you will create a new custom connector.
 9. Turn on **Raw Body.**
 10. Provide the JSON below and click **Test operation**.
    
-     ![](images/L04/image%20(64).png)
+   ![](images/L04/diad4l24.png) 
    
       ```
           {
