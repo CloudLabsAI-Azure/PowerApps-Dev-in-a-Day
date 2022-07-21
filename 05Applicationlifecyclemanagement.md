@@ -35,94 +35,135 @@ actions, so they don’t execute under your individual user identity.
 
 ### Task 1: Create app registration
 
-1. Navigate to https://portal.azure.com/
-2. Select **Azure active directory**.
-3. Select **App registrations**.
-4. Click **+ New registration**.
-   
-   ![](images/L05/Images%20(1).png)
+1. Navigate to https://portal.azure.com/.
 
-5. Enter **GitHub Deploy** . <Your Name> e.g., **GitHub Deploy** **Lab Admin 1** for Name, select **Accounts**
-    **in this organizational directory only** for Supported account types, and click **Register**.
-   
-     ![](images/L05/Images%20(2).png)
+1. Navigate to the Azure portal, then search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
 
-6. Copy the **Application (client) ID** and the Directory (tenant) ID. Keep the ids in a notepad, you will
-    need them in future steps.
+   ![](images/L05/diad5l1.png)
    
-   ![](images/L05/Images%20(3).png)
+1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(1)***. This application registration will be used for the connector to access the protected API.
 
-7. Select **Certificates and secrets**.
-8. Click **+ New client secret**.
+   ![](images/L05/diad5l2.png)
 
+1. Please provide the following details and click on **Register** ***(3)***.
    
-9. Enter **Lab admin GitHub client secret** for Description, select **3 months** for Expires, and click **Add**.
-   
-   ![](images/L05/Images%20(4).png)
-   
- 10. Copy the **Value** and save it on a notepad, you will need this value in future step. The value will
-    not show again after you leave this page.
+   - Name: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
+   - Supported account types: **Accounts in this organizational directory only (OTU WA AIW [SUFFIX] only - Single tenant)** ***(2)***
 
-     ![](images/L05/Images%20(5).png)
+   ![](images/L05/diad5l3.png).
+   
+1. Copy the **Application (client) ID**, **Directory(Tenant) ID**, and save it in a notepad as you need it for later use.
+     
+   ![](images/L05/diad5l4.png)
 
+1. Select **Certificates & secrets** from the side blade and click on **+ New client secret**.
+
+   ![](images/L05/diad5l5.png)
+
+1. Enter **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** ***(1)*** as description, set expiry to **3 months** ***(2)***, and click on **Add** ***(3)***.
    
+   ![](images/L05/diad5l6.png)
    
+1. Copy the **value** and save it in a notepad as you need it for later use.
+
+   ![](images/L05/diad5l7.png)
+ 
 ### Task 2: Create app user in Dataverse
 
 In this task, you will be registering the app you created in Azure Active Directory into the dev and test
 Dataverse environments. You will also be assigning a security role that will allow the service principal to
 deploy solutions.
 
-1. Navigate to Power Platform Admin Center https://admin.powerplatform.microsoft.com/
-2. Select **Environments**.
-3. Select your **Dev** environment and click **Settings**.
-4. Expand **Users + permissions** and select **Application users**.
-    
-     ![](images/L05/Images%20(6).png)
+1. Navigate to Power Platform Admin Center https://admin.powerplatform.microsoft.com/.
 
+1. Click on **Environments** ***(1)*** from the side blade and select your **ODL_User <inject key="DeploymentID" enableCopy="false" />'s environement** ***(2)***.
+
+   ![](images/L05/diad5l8.png)
    
-5. Click **+ New app user**.
-6. Click **+ Add an app**.
+1. From your environment page, click on **Settings**.
+
+   ![](images/L05/diad5l9.png)
+   
+1. Expand **Users + permissions** ***(1)*** and select **Application users** ***(2)***.
+    
+   ![](images/L05/diad5l10.png)
+
+1. In the Application users page, Click on **+ New app user**.
+
+   ![](images/L05/diad5l11.png)
+   
+1. In Create a new app user tab, Click on **+ Add an app**.
       
-     ![](images/L05/Images%20(7).png)
+   ![](images/L05/diad5l12.png)
    
-   
-7. Select application registration you created and click **Add**.
-8. Select your Business unit and click **Create**. There should only be one unless you created more.
-9. Select the application user you just created and click **Edit security roles**.
-    
-     ![](images/L05/Images%20(8).png)
+1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application registration which you created earlier and click on **Add** ***(2)***.
 
-10. Select **System administrator** and click **Save**.
-11. Select **Environments** again.
-12. Select your **Test** environment and click **Settings**.
-13. Expand **Users + permissions** and select **Application users**.
-     
-     ![](images/L05/Images%20(9).png)
+   ![](images/L05/diad5l13.png)
+
+1. Select your **Business unit** ***(1)*** from the drop down and click on **Create** ***(2)***. There should only be one Business unit unless you created more.
+
+   ![](images/L05/diad5l14.png)
+
+1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application user you just created and click on **Edit security roles** ***(2)***.
+    
+   ![](images/L05/diad5l15.png)
+
+1. Select **System administrator** ***(1)*** and click on **Save** ***(2)***.
+
+   ![](images/L05/diad5l16.png)
    
-14. Click **+ New app user**.
-15. Click **+ Add an app**.
+1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environement** ***(2)***.
+
+   ![](images/L05/diad5l17.png)
+   
+1. From your test environment page, click on **Settings**.
+
+   ![](images/L05/diad5l18.png)
+
+1. Expand **Users + permissions** ***(1)*** and select **Application users** ***(2)***.
+    
+   ![](images/L05/diad5l19.png)
+   
+1. In the Application users page, Click on **+ New app user**.
+
+   ![](images/L05/diad5l11.png)
+   
+1. In Create a new app user tab, Click on **+ Add an app**.
       
-     ![](images/L05/Images%20(10).png)
+   ![](images/L05/diad5l12.png)
    
-16. Select application registration you created and click **Add**.
-17. Select your Business unit and click **Create**.
-18. Select the application user you just created and click **Edit security roles**.
+1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application registration which you created earlier and click on **Add** ***(2)***.
 
+   ![](images/L05/diad5l13.png)
 
-19. Select **System administrator** and click **Save**.
-     
-      ![](images/L05/Images%20(11).png)
-   
-   
-20. Select **Environments** and click to open the **Dev** environment.
-21. Copy the **Environment URL** and keep it on a notepad, you will use this URL in future steps.
+1. Select your **Business unit** ***(1)*** from the drop down and click on **Create** ***(2)***. There should only be one Business unit unless you created more.
+
+   ![](images/L05/diad5l14.png)
+
+1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application user you just created and click on **Edit security roles** ***(2)***.
     
-      ![](images/L05/Images%20(12).png)
+   ![](images/L05/diad5l20.png)
    
-22. Select **Environments** and click to open the **Test** environment.
-23. Copy the **Environment URL** and keep it on a notepad, you will this URL in future steps.
+1. Select **System administrator** ***(1)*** and click on **Save** ***(2)***.
 
+   ![](images/L05/diad5l16.png)
+   
+1. Click on **Environments** ***(1)*** from the side blade and select your **ODL_User <inject key="DeploymentID" enableCopy="false" />'s environement** ***(2)***.
+
+   ![](images/L05/diad5l8.png)
+   
+1. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
+    
+   ![](images/L05/diad5l21.png)
+   
+1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environement** ***(2)***.
+
+   ![](images/L05/diad5l17.png)
+   
+1. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
+    
+   ![](images/L05/diad5l22.png)
+   
 ## Exercise 2 – Create GitHub Repo
 
 In this exercise, you will create a GitHub repository and add repository secrets.
