@@ -672,7 +672,10 @@ In this exercise, you will create a new custom connector.
 
    ![](images/L04/diad4l23.png) 
    
-   >**Note**: If login prrompts pops up. Provide your credentials and accept the terms.
+1. If login prompt pops up enter the below credentials and click on **Accept** to accept the terms.
+
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   * Password: <inject key="AzureAdUserPassword"></inject>
    
 7. Select **Custom connectors** and click **Edit** on the **PrioritZ connector**.
      
@@ -680,12 +683,9 @@ In this exercise, you will create a new custom connector.
     
 7. Select the **Test** tab.
 8. Make sure the connection you created is selected.
-9. Turn on **Raw Body.**
-10. Provide the JSON below and click **Test operation**.
-   
-   ![](images/L04/diad4l24.png) 
-   
-      ```
+9. Turn on **Raw Body** and provide the JSON below and click **Test operation**.
+    
+    ```
           {
           "topic": "Test Topic",
           "details": "From Azure Function",
@@ -698,10 +698,8 @@ In this exercise, you will create a new custom connector.
           ]
           }
       ```
-     
-
-
-    
+     ![](images/L04/diad4l24.png) 
+        
  11. The operation test should succeed, and the response should look like the image below.
 
      ![](images/L04/image%20(65).png)
