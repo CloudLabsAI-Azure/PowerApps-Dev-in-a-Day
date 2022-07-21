@@ -378,7 +378,7 @@ In this exercise, you will deploy the function to Azure.
 1. Select **.NET 6**.
 
     ![](images/L04/vscode26.png)
-10. Select any location form the list.
+10. Select any location form the list and wait for the Function App to be deployed.
 
     ![](images/L04/vscode27.png)
     
@@ -388,7 +388,7 @@ In this exercise, you will deploy the function to Azure.
    
      ![](images/L04/DeployNew1.png)
 
-11. Wait for the function app to be deployed the navigate to Azure Portal using the below URL.
+11. Wait for the function app to be deployed then navigate to Azure Portal using the below URL.
 
     ```
     https://portal.azure.com/
@@ -554,7 +554,7 @@ In this exercise, you will deploy the function to Azure.
    
    - Name: **PrioritZConnector<inject key="DeploymentID" enableCopy="false" />** ***(1)***
    - Supported account types: **Accounts in this organizational directory only (OTU WA AIW [SUFFIX] only - Single tenant)** ***(2)***
-   - Redirect URL: Select **Web** ***(3)*** and provide **https://global.consent.azure-apim.net/redirect** ***(4)*** as the URL
+   - Redirect URL: Select **Web** ***(3)*** and provide `https://global.consent.azure-apim.net/redirect` ***(4)*** as the URL.
 
    ![](images/L04/diad4l3.png)
     
@@ -592,7 +592,11 @@ In this exercise, you will create a new custom connector.
 
 ### Task 1: Create connector
 
-1. Navigate to https://portal.azure.com/
+1. Navigate to Azure Portal using the below URL.
+
+   ```
+   https://portal.azure.com/
+   ```
 
 1. Now in the Azure portal, click on **Resource Groups** present under Navigate.
 
@@ -627,7 +631,7 @@ In this exercise, you will create a new custom connector.
    
    ![](images/L01/diadl7.png)
    
-1. Expand **Data** ***(1)*** and select **Custom Connectors** ***(1)***.
+1. Expand **Dataverse** ***(1)*** and select **Custom Connectors** ***(1)***.
      
    ![](images/L04/diad4l16.png) 
 
