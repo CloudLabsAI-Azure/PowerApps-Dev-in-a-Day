@@ -35,9 +35,13 @@ actions, so they don’t execute under your individual user identity.
 
 ### Task 1: Create app registration
 
-1. Navigate to https://portal.azure.com/.
+1. Navigate to Azure Portal using the below URL.
 
-1. Navigate to the Azure portal, then search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
+   ```
+   https://portal.azure.com/
+   ```
+
+1. From Aure Portal home page, search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
 
    ![](images/L05/diad5l1.png)
    
@@ -170,35 +174,63 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 ### Task 1: Create repository
 
-1. Navigate to https://github.com/
-2. **Sign in** or signup for GitHub.
-3. Click **New repository**.
-4. Enter **PrioritZ** for Repository name, select **Public** , check the **Add a README file** , and click **Create**
-    **repository**.
+1. Navigate to the below URL and sign-in using youe GitHub credentials.
+
+   ```
+   https://github.com/
+   ```
+1. Click on your profile icon and select **Your repositories**.
+
+   ![](images/L05/github1.png)
+
+3. Click **New repository** to create a repository.
+
+   ![](images/L05/github2.png)
+
+4. Enter **PrioritZ** for Repository name, select **Public** , check the **Add a README file**.
+
+   ![](images/L05/github3.png)
+
+1. Click **Create repository** to create it.
+
+   ![](images/L05/github4.png)
+
 5. Click **Settings**.
     
      ![](images/L05/Images%20(13).png)
 
-6. Go to the **Security** section, expand **Secrets** and select **Actions**. The values you provide will not be
-    visible after you create the item so take your time to get the values correct. 
+6. Go to the **Security** section, expand **Secrets (1)** and select **Actions (2)**. The values you provide will not be visible after you create the item so take your time to get the values correct. 
       
-     ![](images/L05/Images%20(14).png)
+     ![](images/L05/github5.png)
    
 7. Click **New repository secret**.
-8. Enter **PowerPlatformAppID** for Name and paste the **Application (client) ID** from your notepad
-    in the **Value** field and click **Add secret**.
+
+   ![](images/L05/github6.png)
+
+8. Enter **PowerPlatformAppID (1)** for Name and paste the **Application (client) ID (2)** from your notepad in the **Value** field and click **Add secret (3)**.
+
+   ![](images/L05/github7.png)
+
 9. Click **New repository secret** again.
-10. Enter **PowerPlatformClientSecret** for Name and paste the secret **Value** from your notepad in
-    the **Value** field and click **Add secret**.
+10. Enter **PowerPlatformClientSecret** for Name and paste the secret **Value** from your notepad in the **Value** field and click **Add secret**.
+
+   ![](images/L05/github8.png)
+
 11. Click **New repository secret** again.
-12. Enter **PowerPlatformTenantID** for Name and paste the secret **Tenant ID** from your notepad in
-    the **Value** field and click **Add secret**.
+12. Enter **PowerPlatformTenantID (1)** for Name and paste the secret **Tenant ID (2)** from your notepad in the **Value** field and click **Add secret (3)**.
+
+   ![](images/L05/github9.png)
+
 13. Click **New repository secret** again.
-14. Enter **PowerPlatformDevUrl** for Name and paste the secret **Dev environment URL** from your
-    notepad in the **Value** field and click **Add secret**.
+14. Enter **PowerPlatformDevUrl** for Name and paste the secret **Dev environment URL** from your notepad in the **Value** field and click **Add secret**.
+
+   ![](images/L05/github10.png)
+   
 15. Click **New repository secret** one more time.
-16. Enter **PowerPlatformTestUrl** for Name and paste the secret **Test environment URL** from your
-    notepad in the **Value** field and click **Add secret**.
+16. Enter **PowerPlatformTestUrl** for Name and paste the secret **Test environment URL** from your notepad in the **Value** field and click **Add secret**.
+
+   ![](images/L05/github11.png)
+   
 17. You should now have **5** repository secrets.
      
      ![](images/L05/Images%20(15).png)
@@ -217,13 +249,14 @@ space indentation so follow that carefully as you build the workflow definition.
 indentation shown in the images.
 
 1. Select the **Actions** tab.
-2. Click **set up a workflow yourself**.
+
+2. Click on **set up a workflow yourself** to create a new workflow.
  
      ![](images/L05/Images%20(16).png)
    
 3. Change the file name to it **export-and-branch.yml**.
      
-     ![](images/L05/Images%20(17).png)
+     ![](images/L05/github12.png)
    
 4. Remove everything below the name line.
   
@@ -235,32 +268,29 @@ indentation shown in the images.
    
     ![](images/L05/Images%20(20).png)
    
-```
-   on:
-workflow_dispatch:
-inputs:
-#Change this value
-solution_name:
-description: 'name of the solution to worked on from Power Platform'
-required: true
-default: Prioritz
-#Do Not change these values
-solution_exported_folder:
-description: 'folder name for staging the exported solution *do not
-change*'
-required: true
-default: out/exported/
-solution_folder:
-description: 'staging the unpacked solution folder before check-in *do
-not change*'
-required: true
-default: out/solutions/
-solution_target_folder:
-description: 'folder name to be created and checked in *do not change*'
-required: true
-default: solutions/
-```
-
+    ```
+    on:
+    workflow_dispatch:
+      inputs:
+      #Change this value
+      solution_name:
+        description: 'name of the solution to worked on from Power Platform'
+        required: true
+        default: Prioritz
+        #Do Not change these values
+      solution_exported_folder:
+        description: 'folder name for staging the exported solution *do not change*'
+        required: true
+        default: out/exported/
+      solution_folder:
+        description: 'staging the unpacked solution folder before check-in *do not change*'
+        required: true
+        default: out/solutions/
+      solution_target_folder:
+        description: 'folder name to be created and checked in *do not change*'
+        required: true
+        default: solutions/
+   ```     
    
 7. Setup the workflow. Add below YAML snippet after the last snippet. This sets up the jobs and
     identifies the first job as export-from-dev. This also defines the steps with the first one checking
