@@ -253,9 +253,7 @@ indentation shown in the images.
    ![](images/L05/Images%20(16).png)
    
 1. Change the file name to it **export-and-branch.yml**.
-     
-   ![](images/L05/github12.png)
-   
+       
 1. Remove everything from the workflow file.
   
    ![](images/L05/diad5l32.png)
