@@ -369,7 +369,11 @@ exported to the test environment.
      ![](images/L05/Images%20(49).png)
 
 22. The release should complete successfully.
-   
-23. Check your test environment and you should see the solution deployed.
+    
+     ![](images/L05/relecompl.png)
+     
+23. Navigate back to powerapps portal and select the solutions tab from the left side and you should see the solution deployed with the name of Prioritz. Make sure that you are in test powerapps environment.
+
+      ![](images/L05/last.png)
 
 
