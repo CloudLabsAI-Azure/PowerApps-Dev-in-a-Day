@@ -364,7 +364,7 @@ In this exercise, you will deploy the function to Azure.
 
 4. Close the sign in browser window once the sign in is process is completed.
 
-5. Navigat back to Viual Studio Code and click on **+** that is next to your subscription to create new Function App.
+5. Navigate back to Visual Studio Code and click on **+** that is next to your subscription to create new Function App.
   
     ![](images/L04/NewVSazure3.png)
  
@@ -383,7 +383,7 @@ In this exercise, you will deploy the function to Azure.
 
     ![](images/L04/vscode27.png)
     
-10. Once Function App is deployed, Click **Deploy Function App** under **Worskpaces** section and choose the Function App just now you created. 
+10. Once Function App is deployed, Click **Deploy Function App** under **Workspaces** section and choose the Function App just now you created. 
     
      ![](images/L04/DeployNew.png)
    
@@ -535,7 +535,7 @@ In this exercise, you will deploy the function to Azure.
      https://login.microsoftonline.com/{tenant-id}/adminconsent?client_id={api app id}
      ```
  
-45. After updating the values, navigate to the URL in a browser tab and sign in with below creadentails.
+45. After updating the values, navigate to the URL in a browser tab and sign in with below credentials.
    
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    * Password: <inject key="AzureAdUserPassword"></inject>
