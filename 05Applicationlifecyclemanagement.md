@@ -160,7 +160,7 @@ deploy solutions.
     
    ![](images/L05/diad5l21.png)
    
-1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environement** ***(2)***.
+1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environment** ***(2)***.
 
    ![](images/L05/diad5l17.png)
    
