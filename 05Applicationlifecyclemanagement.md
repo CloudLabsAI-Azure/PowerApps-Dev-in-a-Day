@@ -31,7 +31,7 @@ Platform Build Tools to automate the team’s deployments.
 ## Exercise 1 – Configure a Service Principal
 
 In this exercise, you will create service principal. The service principal will be used by the workflow
-actions, so they don’t execute under your individual user identity.
+actions, so they do not execute under your individual user identity.
 
 ### Task 1: Create app registration
 
@@ -41,7 +41,7 @@ actions, so they don’t execute under your individual user identity.
    https://portal.azure.com/
    ```
 
-1. From Aure Portal home page, search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
+1. From Azure Portal home page, search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
 
    ![](images/L05/diad5l1.png)
    
@@ -80,7 +80,7 @@ deploy solutions.
 
 1. Navigate to Power Platform Admin Center https://admin.powerplatform.microsoft.com/.
 
-1. Click on **Environments** ***(1)*** from the side blade and select your **ODL_User <inject key="DeploymentID" enableCopy="false" />'s environement** ***(2)***.
+1. Click on **Environments** ***(1)*** from the side blade and select your **ODL_User <inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
 
    ![](images/L05/diad5l8.png)
    
@@ -92,11 +92,11 @@ deploy solutions.
     
    ![](images/L05/diad5l10.png)
 
-1. In the Application users page, Click on **+ New app user**.
+1. In the Application users page, click on **+ New app user**.
 
    ![](images/L05/diad5l11.png)
    
-1. In Create a new app user tab, Click on **+ Add an app**.
+1. In Create a new app user tab, click on **+ Add an app**.
       
    ![](images/L05/diad5l12.png)
    
@@ -116,7 +116,7 @@ deploy solutions.
 
    ![](images/L05/diad5l16.png)
    
-1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environement** ***(2)***.
+1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environment** ***(2)***.
 
    ![](images/L05/diad5l17.png)
    
@@ -152,7 +152,7 @@ deploy solutions.
 
    ![](images/L05/diad5l16.png)
    
-1. Click on **Environments** ***(1)*** from the side blade and select your **ODL_User <inject key="DeploymentID" enableCopy="false" />'s environement** ***(2)***.
+1. Click on **Environments** ***(1)*** from the side blade and select your **ODL_User <inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
 
    ![](images/L05/diad5l8.png)
    
@@ -174,7 +174,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 ### Task 1: Create repository
 
-1. Navigate to the below URL and sign-in using youe GitHub credentials.
+1. Navigate to the below URL and sign-in using your GitHub credentials.
 
    ```
    https://github.com/
@@ -260,7 +260,7 @@ indentation shown in the images.
   
    ![](images/L05/diad5l32.png)
 
-1. Naivigate to `https://raw.githubusercontent.com/tejaswini972/PowerApps-Dev-in-a-Day/main/export-and-branch.yml` URL, Copy the full content of the file and paste it in the **export-and-branch.yml** workflow.
+1. Navigate to `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/export-and-branch.yml` URL, Copy the full content of the file and paste it in the **export-and-branch.yml** workflow.
 
    ![](images/L05/diad5l28.png)
 
@@ -284,19 +284,21 @@ indentation shown in the images.
    
    ![](images/L05/diad5l29.png)
    
-1. Click to open the branch that was created by the workflow action.
+1. Click to open the branch that was created by the workflow action named as Prioritz-XXXXXXX.
    
-   ![](images/L05/Images%20(29).png)
+   ![](images/L05/changesbranch.png)
 
-1. You should be able to see the solution folder.
+1. On the Prioritz-XXXXXXX. branch, you should be able to see the solution folder.
       
    ![](images/L05/diad5l30.png)
    
-1. Click **Contribute** ***(1)*** and select **Open pull request** ***(2)***.
+1. Click on **Contribute** ***(1)*** button and select **Open pull request** ***(2)***.
         
-   ![](images/L05/diad5l29.png)
+   ![](images/L05/opnpr.png)
    
 23. Add description if you like and then click **Create pull request**.
+
+     ![](images/L05/pr1.png)
    
 24. You should now see the pull request summary. Confirm that the branch has no conflicts with the
     main branch and that the changes can be merged into the main branch automatically.
@@ -312,7 +314,8 @@ indentation shown in the images.
    
 28. The pull request should get merged successfully.
    
-29. Do not navigate away from this page.
+     ![](images/L05/prdone.png)
+
 
 ### Exercise 4 – Release to Test
 
@@ -321,147 +324,30 @@ exported to the test environment.
 
 ### Task 1: Create workflow
 
-1. Select the **Actions** tab.
+1. Now navigate to the **Actions** tab.
+
+    ![](images/L05/act.png)
    
 1. Click **New workflow**.
-   
-1. Click **set up a workflow yourself**.
-     
-     ![](images/L05/Images%20(33).png)
-   
-1. Change the file name to it **release-to-test.yml**.
-   
-1. Remove everything below the name line.
-     
-   ![](images/L05/Images%20(34).png)
-   
-1. Change the name to **release-to-test**
-   
-1. Add the following trigger. This will trigger on creation of a new release.
 
-    ![](images/L05/trigger.png)
-
-      ```
-      on:
-      release:
-      types: [created]
-      ```
+    ![](images/L05/nwwf.png)
+   
+1. Now on **Choose a workflow** page, click **set up a workflow yourself**.
+     
+    ![](images/L05/Images%20(33).png)
+   
+1. Change the file name to **release-to-test.yml**
+   
+    ![](images/L05/fname.png)
+     
+1. Remove everything from the workflow file.
   
-8. Define constants. Add the below YAML snippet.
+   ![](images/L05/diad5l32.png)
 
-      ```
-      env:
-      solution_name: Prioritz
-      solution_source_folder: solutions
-      solution_outbound_folder: out/solutions
-      solution_release_folder: out/release
-      ```
-   
-9. Add job and steps. Add the below YAML snippet.
-
-      ```
-      jobs:
-      convert-to- managed:
-      runs-on: windows-latest
-
-      steps:
-
-      - uses: actions/checkout@v
-      with:
-      lfs: true
-      ```
-10. Package managed solution. Add the below YAML snippet. This will take the individual files and
-put them in a compressed file that can be deployed.
-   
-      ```
-      - name: Pack managed solution
-      uses: microsoft/powerplatform-actions/pack-solution@0.4.
-      with:
-      solution-folder: ${{ env.solution_source_folder}}/${{ env.solution_name
-      }}
-      solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name
-      }}_managed.zip
-      solution-type: Managed
-
-      ```
-
-11. Package unmanaged solution. Add the below YAML snippet.
-   
-      ![](images/L05/Images%20(41).png)  
-   
-      ```
-      - name: Pack unmanaged solution
-          uses: microsoft/powerplatform-actions/pack-solution@0.4.
-          with:
-          solution-folder: ${{ env.solution_source_folder}}/${{ env.solution_name
-          }}
-          solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name
-          }}_unmanaged.zip
-          solution-type: Unmanaged
-
-      ```
-   
-12. Upload solution artifacts. Add the below YAML snippet.
-   
-
-      ```
-      - name: Upload the unmanaged solution to GH artifact store
-          uses: actions/upload-artifact@v
-          with:
-          name: unmanagedSolutions
-          path: ${{ env.solution_outbound_folder}}/${{ env.solution_name
-          }}_unmanaged.zip
-          - name: Upload the managed solution to GH artifact store
-          uses: actions/upload-artifact@v
-          with:
-          name: managedSolutions
-          path: ${{ env.solution_outbound_folder}}/${{ env.solution_name
-          }}_managed.zip
-
-      ```
+1. Navigate to `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/release-to-test.yml` URL in the browser and copy the full content of the file and paste it in the **release-to-test.yml** workflow file.
  
-13. Release to staging. Add the below YAML snippet. This defines a second job to deploy.
-
-   
-      ```
-      release-to- staging:
-      needs: [ convert-to-managed ]
-      runs-on: windows-latest
-
-      steps:
-      - uses: actions/checkout@v
-      with:
-      lfs: true
-
-      ```
-   
-14. Download artifacts. Add the below YAML snippet.
-   
-
-      ```
-      - name: Fetch the ready to ship solution from GH artifact store
-      uses: actions/download-artifact@v
-      with:
-      name: managedSolutions
-      path: ${{ env.solution_release_folder}}
-      ```
-
-15. Import the managed solution to the test environment. Add the below YANL snippet.
-   
-      ```
-      - name: Import solution to prod env
-      uses: microsoft/powerplatform-actions/import-solution@0.4.
-      with:
-      environment-url: ${{secrets.PowerPlatformTestUrl}}
-      app-id: ${{secrets.PowerPlatformAppID}}
-      client-secret: ${{ secrets.PowerPlatformClientSecret }}
-      tenant-id: ${{secrets.PowerPlatformTenantID}}
-      solution-file: ${{ env.solution_release_folder}}/${{ env.solution_name
-      }}_managed.zip
-      run-asynchronously: true
-
-      ```
-   
+   ![](images/L05/cntn.png)
+      
 16. Click **Start commit** and then click **Commit new file**.
      
      ![](images/L05/Images%20(46).png)
@@ -470,8 +356,7 @@ put them in a compressed file that can be deployed.
    
 18. Go to the **Releases** section and click **Create new release**.
      
-     ![](images/L05/Images%20(47).png) 
-   
+     ![](images/L05/Images%20(47).png)    
    
 19. Click on the **Choose a tag** button, enter **v1.0.0** , and select **+ Create new tag on publish**.
       
