@@ -248,164 +248,53 @@ In this task you will create the workflow definition using the YAML provided. Th
 space indentation so follow that carefully as you build the workflow definition. If in doubt, review the
 indentation shown in the images.
 
-1. Select the **Actions** tab.
-
-2. Click on **set up a workflow yourself** to create a new workflow.
+1. Select the **Actions** tab and click on **set up a workflow yourself** to create a new workflow.
  
-     ![](images/L05/Images%20(16).png)
+   ![](images/L05/Images%20(16).png)
    
-3. Change the file name to it **export-and-branch.yml**.
+1. Change the file name to it **export-and-branch.yml**.
      
-     ![](images/L05/github12.png)
+   ![](images/L05/github12.png)
    
-4. Remove everything below the name line.
+1. Remove everything from the workflow file.
   
-     ![](images/L05/Images%20(18).png)
+   ![](images/L05/diad5l32.png)
 
-5. Change the name to **export-and-branch**
-6. Add the below YAML snippet after the name line. This defines the action trigger and some input
-    parameters that could be changed when manually running the action.
-   
-    ![](images/L05/Images%20(20).png)
-   
-    ```
-    on:
-    workflow_dispatch:
-      inputs:
-      #Change this value
-      solution_name:
-        description: 'name of the solution to worked on from Power Platform'
-        required: true
-        default: Prioritz
-        #Do Not change these values
-      solution_exported_folder:
-        description: 'folder name for staging the exported solution *do not change*'
-        required: true
-        default: out/exported/
-      solution_folder:
-        description: 'staging the unpacked solution folder before check-in *do not change*'
-        required: true
-        default: out/solutions/
-      solution_target_folder:
-        description: 'folder name to be created and checked in *do not change*'
-        required: true
-        default: solutions/
-   ```     
-   
-7. Setup the workflow. Add below YAML snippet after the last snippet. This sets up the jobs and
-    identifies the first job as export-from-dev. This also defines the steps with the first one checking
-    out the current main branch content.
+1. Naivigate to `https://raw.githubusercontent.com/tejaswini972/PowerApps-Dev-in-a-Day/main/export-and-branch.yml` URL, Copy the full content of the file and paste it in the **export-and-branch.yml** workflow.
 
+   ![](images/L05/diad5l28.png)
 
-```
-jobs:
-export-from-dev:
-runs-on: windows-latest
-steps:
-- uses: actions/checkout@v
-with:
-lfs: true
-```
-
-8. Next you will export both an unmanaged and managed solution file from your dev environment.
-   
-9. Export the unmanaged solution. Add below snippet after the last snippet.
-   
-```
-    - name: export-solution action
-    uses: microsoft/powerplatform-actions/export-solution@0.4.
-    with:
-    environment-url: ${{secrets.PowerPlatformDevUrl}}
-    app-id: ${{secrets.PowerPlatformAppID}}
-    client-secret: ${{ secrets.PowerPlatformClientSecret }}
-    tenant-id: ${{secrets.PowerPlatformTenantID}}
-    solution-name: ${{ github.event.inputs.solution_name }}
-    solution-output-file: ${{
-    github.event.inputs.solution_exported_folder}}/${{
-    github.event.inputs.solution_name }}.zip
-```
-   
-10. Export the managed solution. Add below snippet after the last snippet.
-   
-   
-```
- - name: export-managed-solution action
-uses: microsoft/powerplatform-actions/export-solution@0.4.
-with:
-environment-url: ${{secrets.PowerPlatformDevUrl}}
-app-id: ${{secrets.PowerPlatformAppID}}
-client-secret: ${{ secrets.PowerPlatformClientSecret }}
-tenant-id: ${{secrets.PowerPlatformTenantID}}
-solution-name: ${{ github.event.inputs.solution_name }}
-solution-output-file: ${{
-github.event.inputs.solution_exported_folder}}/${{
-github.event.inputs.solution_name }}_managed.zip
-managed: true
-```
-
-11. The solution files are compressed files and don’t version control well. Using unpack you will
-    expand the solution files into a set of files that can be easily checked into the repo.
-   
-12. Unpack solution file. Add below snippet after the last snippet.
-
-   
-```
-- name: unpack-solution action
-    uses: microsoft/powerplatform-actions/unpack-solution@0.4.
-    with:
-    solution-file: ${{ github.event.inputs.solution_exported_folder}}/${{
-    github.event.inputs.solution_name }}.zip
-    solution-folder: ${{ github.event.inputs.solution_folder}}/${{
-    github.event.inputs.solution_name }}
-    solution-type: 'Both'
-```
-   
-   
-13. Branch and prepare for pull. Add below snippet after the last snippet.
-   
-```
-- name: branch-solution, prepare it for a PullRequest
-    uses: microsoft/powerplatform-actions/branch-solution@v
-    with:
-    solution-folder: ${{ github.event.inputs.solution_folder}}/${{
-    github.event.inputs.solution_name }}
-    solution-target-folder: ${{
-    github.event.inputs.solution_target_folder}}/${{
-    github.event.inputs.solution_name }}
-    repo-token: ${{ secrets.GITHUB_TOKEN }}
-    allow-empty-commit: true
-```
-   
-14. Click **Start commit** and then click **Commit new file**.
+1. Click **Start commit** and then click **Commit new file**.
     
-     ![](images/L05/Images%20(26).png)
+   ![](images/L05/Images%20(26).png)
 
-15. Select the **Actions** tab and select the workflow you created.
-   
-16. Click **Run workflow.**
-      
-      ![](images/L05/Images%20(27).png)
-   
-17. Click **Run workflow** again and wait for the workflow run to complete.
-      
-      ![](images/L05/Images%20(28).png)
-   
-18. Select the **Code** tab.
-   
-19. Select **Branches**. You should see two branches.
-   
-20. Click to open the branch that was created by the workflow action.
-   
-      ![](images/L05/Images%20(29).png)
+1. Select the **Actions** ***(1)** tab and select the **workflow** ***(2)*** you created.
 
-21. You should see solution folder.
+   ![](images/L05/diad5l27.png)
+   
+1. Click on **Run workflow.**
       
-       ![](images/L05/Images%20(30).png) 
+   ![](images/L05/Images%20(27).png)
    
+1. Click **Run workflow** again and wait for the workflow run to complete.
+      
+   ![](images/L05/Images%20(28).png)
    
-22. Click **Contribute** and select **Open pull request**.
+1. Select the **Code** ***(1)*** tab and click on **Branches** ***(2)***. You should see two branches
+   
+   ![](images/L05/diad5l29.png)
+   
+1. Click to open the branch that was created by the workflow action.
+   
+   ![](images/L05/Images%20(29).png)
+
+1. You should be able to see the solution folder.
+      
+   ![](images/L05/diad5l30.png)
+   
+1. Click **Contribute** ***(1)*** and select **Open pull request** ***(2)***.
         
-     ![](images/L05/Images%20(31).png)
+   ![](images/L05/diad5l29.png)
    
 23. Add description if you like and then click **Create pull request**.
    
@@ -434,23 +323,21 @@ exported to the test environment.
 
 1. Select the **Actions** tab.
    
-2. Click **New workflow**.
+1. Click **New workflow**.
    
-3. Click **set up a workflow yourself**.
+1. Click **set up a workflow yourself**.
      
      ![](images/L05/Images%20(33).png)
    
-4. Change the file name to it **release-to-test.yml**.
+1. Change the file name to it **release-to-test.yml**.
    
-5. Remove everything below the name line.
-   
+1. Remove everything below the name line.
      
-     ![](images/L05/Images%20(34).png)
+   ![](images/L05/Images%20(34).png)
    
+1. Change the name to **release-to-test**
    
-6. Change the name to **release-to-test**
-   
-7. Add the following trigger. This will trigger on creation of a new release.
+1. Add the following trigger. This will trigger on creation of a new release.
 
     ![](images/L05/trigger.png)
 
