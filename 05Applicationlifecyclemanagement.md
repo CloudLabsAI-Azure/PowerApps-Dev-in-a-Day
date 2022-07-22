@@ -35,129 +35,202 @@ actions, so they don’t execute under your individual user identity.
 
 ### Task 1: Create app registration
 
-1. Navigate to https://portal.azure.com/
-2. Select **Azure active directory**.
-3. Select **App registrations**.
-4. Click **+ New registration**.
-   
-   ![](images/L05/Images%20(1).png)
+1. Navigate to Azure Portal using the below URL.
 
-5. Enter **GitHub Deploy** . <Your Name> e.g., **GitHub Deploy** **Lab Admin 1** for Name, select **Accounts**
-    **in this organizational directory only** for Supported account types, and click **Register**.
-   
-     ![](images/L05/Images%20(2).png)
+   ```
+   https://portal.azure.com/
+   ```
 
-6. Copy the **Application (client) ID** and the Directory (tenant) ID. Keep the ids in a notepad, you will
-    need them in future steps.
-   
-   ![](images/L05/Images%20(3).png)
+1. From Aure Portal home page, search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
 
-7. Select **Certificates and secrets**.
-8. Click **+ New client secret**.
+   ![](images/L05/diad5l1.png)
+   
+1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(1)***. This application registration will be used for the connector to access the protected API.
 
-   
-9. Enter **Lab admin GitHub client secret** for Description, select **3 months** for Expires, and click **Add**.
-   
-   ![](images/L05/Images%20(4).png)
-   
- 10. Copy the **Value** and save it on a notepad, you will need this value in future step. The value will
-    not show again after you leave this page.
+   ![](images/L05/diad5l2.png)
 
-     ![](images/L05/Images%20(5).png)
+1. Please provide the following details and click on **Register** ***(3)***.
+   
+   - Name: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
+   - Supported account types: **Accounts in this organizational directory only (OTU WA AIW [SUFFIX] only - Single tenant)** ***(2)***
 
+   ![](images/L05/diad5l3.png).
    
+1. Copy the **Application (client) ID**, **Directory(Tenant) ID**, and save it in a notepad as you need it for later use.
+     
+   ![](images/L05/diad5l4.png)
+
+1. Select **Certificates & secrets** from the side blade and click on **+ New client secret**.
+
+   ![](images/L05/diad5l5.png)
+
+1. Enter **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** ***(1)*** as description, set expiry to **3 months** ***(2)***, and click on **Add** ***(3)***.
    
+   ![](images/L05/diad5l6.png)
+   
+1. Copy the **value** and save it in a notepad as you need it for later use.
+
+   ![](images/L05/diad5l7.png)
+ 
 ### Task 2: Create app user in Dataverse
 
 In this task, you will be registering the app you created in Azure Active Directory into the dev and test
 Dataverse environments. You will also be assigning a security role that will allow the service principal to
 deploy solutions.
 
-1. Navigate to Power Platform Admin Center https://admin.powerplatform.microsoft.com/
-2. Select **Environments**.
-3. Select your **Dev** environment and click **Settings**.
-4. Expand **Users + permissions** and select **Application users**.
-    
-     ![](images/L05/Images%20(6).png)
+1. Navigate to Power Platform Admin Center https://admin.powerplatform.microsoft.com/.
 
+1. Click on **Environments** ***(1)*** from the side blade and select your **ODL_User <inject key="DeploymentID" enableCopy="false" />'s environement** ***(2)***.
+
+   ![](images/L05/diad5l8.png)
    
-5. Click **+ New app user**.
-6. Click **+ Add an app**.
+1. From your environment page, click on **Settings**.
+
+   ![](images/L05/diad5l9.png)
+   
+1. Expand **Users + permissions** ***(1)*** and select **Application users** ***(2)***.
+    
+   ![](images/L05/diad5l10.png)
+
+1. In the Application users page, Click on **+ New app user**.
+
+   ![](images/L05/diad5l11.png)
+   
+1. In Create a new app user tab, Click on **+ Add an app**.
       
-     ![](images/L05/Images%20(7).png)
+   ![](images/L05/diad5l12.png)
    
-   
-7. Select application registration you created and click **Add**.
-8. Select your Business unit and click **Create**. There should only be one unless you created more.
-9. Select the application user you just created and click **Edit security roles**.
-    
-     ![](images/L05/Images%20(8).png)
+1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application registration which you created earlier and click on **Add** ***(2)***.
 
-10. Select **System administrator** and click **Save**.
-11. Select **Environments** again.
-12. Select your **Test** environment and click **Settings**.
-13. Expand **Users + permissions** and select **Application users**.
-     
-     ![](images/L05/Images%20(9).png)
+   ![](images/L05/diad5l13.png)
+
+1. Select your **Business unit** ***(1)*** from the drop down and click on **Create** ***(2)***. There should only be one Business unit unless you created more.
+
+   ![](images/L05/diad5l14.png)
+
+1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application user you just created and click on **Edit security roles** ***(2)***.
+    
+   ![](images/L05/diad5l15.png)
+
+1. Select **System administrator** ***(1)*** and click on **Save** ***(2)***.
+
+   ![](images/L05/diad5l16.png)
    
-14. Click **+ New app user**.
-15. Click **+ Add an app**.
+1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environement** ***(2)***.
+
+   ![](images/L05/diad5l17.png)
+   
+1. From your test environment page, click on **Settings**.
+
+   ![](images/L05/diad5l18.png)
+
+1. Expand **Users + permissions** ***(1)*** and select **Application users** ***(2)***.
+    
+   ![](images/L05/diad5l19.png)
+   
+1. In the Application users page, Click on **+ New app user**.
+
+   ![](images/L05/diad5l11.png)
+   
+1. In Create a new app user tab, Click on **+ Add an app**.
       
-     ![](images/L05/Images%20(10).png)
+   ![](images/L05/diad5l12.png)
    
-16. Select application registration you created and click **Add**.
-17. Select your Business unit and click **Create**.
-18. Select the application user you just created and click **Edit security roles**.
+1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application registration which you created earlier and click on **Add** ***(2)***.
 
+   ![](images/L05/diad5l13.png)
 
-19. Select **System administrator** and click **Save**.
-     
-      ![](images/L05/Images%20(11).png)
-   
-   
-20. Select **Environments** and click to open the **Dev** environment.
-21. Copy the **Environment URL** and keep it on a notepad, you will use this URL in future steps.
+1. Select your **Business unit** ***(1)*** from the drop down and click on **Create** ***(2)***. There should only be one Business unit unless you created more.
+
+   ![](images/L05/diad5l14.png)
+
+1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application user you just created and click on **Edit security roles** ***(2)***.
     
-      ![](images/L05/Images%20(12).png)
+   ![](images/L05/diad5l20.png)
    
-22. Select **Environments** and click to open the **Test** environment.
-23. Copy the **Environment URL** and keep it on a notepad, you will this URL in future steps.
+1. Select **System administrator** ***(1)*** and click on **Save** ***(2)***.
 
+   ![](images/L05/diad5l16.png)
+   
+1. Click on **Environments** ***(1)*** from the side blade and select your **ODL_User <inject key="DeploymentID" enableCopy="false" />'s environement** ***(2)***.
+
+   ![](images/L05/diad5l8.png)
+   
+1. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
+    
+   ![](images/L05/diad5l21.png)
+   
+1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environement** ***(2)***.
+
+   ![](images/L05/diad5l17.png)
+   
+1. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
+    
+   ![](images/L05/diad5l22.png)
+   
 ## Exercise 2 – Create GitHub Repo
 
 In this exercise, you will create a GitHub repository and add repository secrets.
 
 ### Task 1: Create repository
 
-1. Navigate to https://github.com/
-2. **Sign in** or signup for GitHub.
-3. Click **New repository**.
-4. Enter **PrioritZ** for Repository name, select **Public** , check the **Add a README file** , and click **Create**
-    **repository**.
+1. Navigate to the below URL and sign-in using youe GitHub credentials.
+
+   ```
+   https://github.com/
+   ```
+1. Click on your profile icon and select **Your repositories**.
+
+   ![](images/L05/github1.png)
+
+3. Click **New repository** to create a repository.
+
+   ![](images/L05/github2.png)
+
+4. Enter **PrioritZ** for Repository name, select **Public** , check the **Add a README file**.
+
+   ![](images/L05/github3.png)
+
+1. Click **Create repository** to create it.
+
+   ![](images/L05/github4.png)
+
 5. Click **Settings**.
     
      ![](images/L05/Images%20(13).png)
 
-6. Go to the **Security** section, expand **Secrets** and select **Actions**. The values you provide will not be
-    visible after you create the item so take your time to get the values correct. 
+6. Go to the **Security** section, expand **Secrets (1)** and select **Actions (2)**. The values you provide will not be visible after you create the item so take your time to get the values correct. 
       
-     ![](images/L05/Images%20(14).png)
+     ![](images/L05/github5.png)
    
 7. Click **New repository secret**.
-8. Enter **PowerPlatformAppID** for Name and paste the **Application (client) ID** from your notepad
-    in the **Value** field and click **Add secret**.
+
+   ![](images/L05/github6.png)
+
+8. Enter **PowerPlatformAppID (1)** for Name and paste the **Application (client) ID (2)** from your notepad in the **Value** field and click **Add secret (3)**.
+
+   ![](images/L05/github7.png)
+
 9. Click **New repository secret** again.
-10. Enter **PowerPlatformClientSecret** for Name and paste the secret **Value** from your notepad in
-    the **Value** field and click **Add secret**.
+10. Enter **PowerPlatformClientSecret** for Name and paste the secret **Value** from your notepad in the **Value** field and click **Add secret**.
+
+   ![](images/L05/github8.png)
+
 11. Click **New repository secret** again.
-12. Enter **PowerPlatformTenantID** for Name and paste the secret **Tenant ID** from your notepad in
-    the **Value** field and click **Add secret**.
+12. Enter **PowerPlatformTenantID (1)** for Name and paste the secret **Tenant ID (2)** from your notepad in the **Value** field and click **Add secret (3)**.
+
+   ![](images/L05/github9.png)
+
 13. Click **New repository secret** again.
-14. Enter **PowerPlatformDevUrl** for Name and paste the secret **Dev environment URL** from your
-    notepad in the **Value** field and click **Add secret**.
+14. Enter **PowerPlatformDevUrl** for Name and paste the secret **Dev environment URL** from your notepad in the **Value** field and click **Add secret**.
+
+   ![](images/L05/github10.png)
+   
 15. Click **New repository secret** one more time.
-16. Enter **PowerPlatformTestUrl** for Name and paste the secret **Test environment URL** from your
-    notepad in the **Value** field and click **Add secret**.
+16. Enter **PowerPlatformTestUrl** for Name and paste the secret **Test environment URL** from your notepad in the **Value** field and click **Add secret**.
+
+   ![](images/L05/github11.png)
+   
 17. You should now have **5** repository secrets.
      
      ![](images/L05/Images%20(15).png)
@@ -175,166 +248,53 @@ In this task you will create the workflow definition using the YAML provided. Th
 space indentation so follow that carefully as you build the workflow definition. If in doubt, review the
 indentation shown in the images.
 
-1. Select the **Actions** tab.
-2. Click **set up a workflow yourself**.
+1. Select the **Actions** tab and click on **set up a workflow yourself** to create a new workflow.
  
-     ![](images/L05/Images%20(16).png)
+   ![](images/L05/Images%20(16).png)
    
-3. Change the file name to it **export-and-branch.yml**.
+1. Change the file name to it **export-and-branch.yml**.
      
-     ![](images/L05/Images%20(17).png)
+   ![](images/L05/github12.png)
    
-4. Remove everything below the name line.
+1. Remove everything from the workflow file.
   
-     ![](images/L05/Images%20(18).png)
+   ![](images/L05/diad5l32.png)
 
-5. Change the name to **export-and-branch**
-6. Add the below YAML snippet after the name line. This defines the action trigger and some input
-    parameters that could be changed when manually running the action.
-   
-    ![](images/L05/Images%20(20).png)
-   
-```
-   on:
-workflow_dispatch:
-inputs:
-#Change this value
-solution_name:
-description: 'name of the solution to worked on from Power Platform'
-required: true
-default: Prioritz
-#Do Not change these values
-solution_exported_folder:
-description: 'folder name for staging the exported solution *do not
-change*'
-required: true
-default: out/exported/
-solution_folder:
-description: 'staging the unpacked solution folder before check-in *do
-not change*'
-required: true
-default: out/solutions/
-solution_target_folder:
-description: 'folder name to be created and checked in *do not change*'
-required: true
-default: solutions/
-```
+1. Naivigate to `https://raw.githubusercontent.com/tejaswini972/PowerApps-Dev-in-a-Day/main/export-and-branch.yml` URL, Copy the full content of the file and paste it in the **export-and-branch.yml** workflow.
 
-   
-7. Setup the workflow. Add below YAML snippet after the last snippet. This sets up the jobs and
-    identifies the first job as export-from-dev. This also defines the steps with the first one checking
-    out the current main branch content.
+   ![](images/L05/diad5l28.png)
 
-
-```
-jobs:
-export-from-dev:
-runs-on: windows-latest
-steps:
-- uses: actions/checkout@v
-with:
-lfs: true
-```
-
-8. Next you will export both an unmanaged and managed solution file from your dev environment.
-   
-9. Export the unmanaged solution. Add below snippet after the last snippet.
-   
-```
-    - name: export-solution action
-    uses: microsoft/powerplatform-actions/export-solution@0.4.
-    with:
-    environment-url: ${{secrets.PowerPlatformDevUrl}}
-    app-id: ${{secrets.PowerPlatformAppID}}
-    client-secret: ${{ secrets.PowerPlatformClientSecret }}
-    tenant-id: ${{secrets.PowerPlatformTenantID}}
-    solution-name: ${{ github.event.inputs.solution_name }}
-    solution-output-file: ${{
-    github.event.inputs.solution_exported_folder}}/${{
-    github.event.inputs.solution_name }}.zip
-```
-   
-10. Export the managed solution. Add below snippet after the last snippet.
-   
-   
-```
- - name: export-managed-solution action
-uses: microsoft/powerplatform-actions/export-solution@0.4.
-with:
-environment-url: ${{secrets.PowerPlatformDevUrl}}
-app-id: ${{secrets.PowerPlatformAppID}}
-client-secret: ${{ secrets.PowerPlatformClientSecret }}
-tenant-id: ${{secrets.PowerPlatformTenantID}}
-solution-name: ${{ github.event.inputs.solution_name }}
-solution-output-file: ${{
-github.event.inputs.solution_exported_folder}}/${{
-github.event.inputs.solution_name }}_managed.zip
-managed: true
-```
-
-11. The solution files are compressed files and don’t version control well. Using unpack you will
-    expand the solution files into a set of files that can be easily checked into the repo.
-   
-12. Unpack solution file. Add below snippet after the last snippet.
-
-   
-```
-- name: unpack-solution action
-    uses: microsoft/powerplatform-actions/unpack-solution@0.4.
-    with:
-    solution-file: ${{ github.event.inputs.solution_exported_folder}}/${{
-    github.event.inputs.solution_name }}.zip
-    solution-folder: ${{ github.event.inputs.solution_folder}}/${{
-    github.event.inputs.solution_name }}
-    solution-type: 'Both'
-```
-   
-   
-13. Branch and prepare for pull. Add below snippet after the last snippet.
-   
-```
-- name: branch-solution, prepare it for a PullRequest
-    uses: microsoft/powerplatform-actions/branch-solution@v
-    with:
-    solution-folder: ${{ github.event.inputs.solution_folder}}/${{
-    github.event.inputs.solution_name }}
-    solution-target-folder: ${{
-    github.event.inputs.solution_target_folder}}/${{
-    github.event.inputs.solution_name }}
-    repo-token: ${{ secrets.GITHUB_TOKEN }}
-    allow-empty-commit: true
-```
-   
-14. Click **Start commit** and then click **Commit new file**.
+1. Click **Start commit** and then click **Commit new file**.
     
-     ![](images/L05/Images%20(26).png)
+   ![](images/L05/Images%20(26).png)
 
-15. Select the **Actions** tab and select the workflow you created.
-   
-16. Click **Run workflow.**
-      
-      ![](images/L05/Images%20(27).png)
-   
-17. Click **Run workflow** again and wait for the workflow run to complete.
-      
-      ![](images/L05/Images%20(28).png)
-   
-18. Select the **Code** tab.
-   
-19. Select **Branches**. You should see two branches.
-   
-20. Click to open the branch that was created by the workflow action.
-   
-      ![](images/L05/Images%20(29).png)
+1. Select the **Actions** ***(1)** tab and select the **workflow** ***(2)*** you created.
 
-21. You should see solution folder.
+   ![](images/L05/diad5l27.png)
+   
+1. Click on **Run workflow.**
       
-       ![](images/L05/Images%20(30).png) 
+   ![](images/L05/Images%20(27).png)
    
+1. Click **Run workflow** again and wait for the workflow run to complete.
+      
+   ![](images/L05/Images%20(28).png)
    
-22. Click **Contribute** and select **Open pull request**.
+1. Select the **Code** ***(1)*** tab and click on **Branches** ***(2)***. You should see two branches
+   
+   ![](images/L05/diad5l29.png)
+   
+1. Click to open the branch that was created by the workflow action.
+   
+   ![](images/L05/Images%20(29).png)
+
+1. You should be able to see the solution folder.
+      
+   ![](images/L05/diad5l30.png)
+   
+1. Click **Contribute** ***(1)*** and select **Open pull request** ***(2)***.
         
-     ![](images/L05/Images%20(31).png)
+   ![](images/L05/diad5l29.png)
    
 23. Add description if you like and then click **Create pull request**.
    
@@ -363,23 +323,21 @@ exported to the test environment.
 
 1. Select the **Actions** tab.
    
-2. Click **New workflow**.
+1. Click **New workflow**.
    
-3. Click **set up a workflow yourself**.
+1. Click **set up a workflow yourself**.
      
      ![](images/L05/Images%20(33).png)
    
-4. Change the file name to it **release-to-test.yml**.
+1. Change the file name to it **release-to-test.yml**.
    
-5. Remove everything below the name line.
-   
+1. Remove everything below the name line.
      
-     ![](images/L05/Images%20(34).png)
+   ![](images/L05/Images%20(34).png)
    
+1. Change the name to **release-to-test**
    
-6. Change the name to **release-to-test**
-   
-7. Add the following trigger. This will trigger on creation of a new release.
+1. Add the following trigger. This will trigger on creation of a new release.
 
     ![](images/L05/trigger.png)
 
