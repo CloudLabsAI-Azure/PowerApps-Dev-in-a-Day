@@ -1,0 +1,57 @@
+# This is a basic workflow to help you get started with Actions
+
+name:  release-to-test
+on:
+ release:
+     types: [created]
+env:
+  solution_name: Prioritz
+  solution_source_folder: solutions
+  solution_outbound_folder: out/solutions
+  solution_release_folder: out/release
+jobs:
+  convert-to-managed:
+   runs-on: windows-latest
+   steps:
+   - uses: actions/checkout@v2
+     with:
+       lfs: true
+   - name: Pack managed solution
+     uses: microsoft/powerplatform-actions/pack-solution@0.4.0
+     with:
+       solution-folder: ${{ env.solution_source_folder}}/${{ env.solution_name}}
+       solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name}}_managed.zip
+       solution-type: Managed
+   - name: Pack unmanaged solution
+     uses: microsoft/powerplatform-actions/pack-solution@0.4.0
+     with:
+       solution-folder: ${{ env.solution_source_folder}}/${{ env.solution_name}}
+       solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name}}_unmanaged.zip
+       solution-type: Unmanaged
+   - name: Upload the unmanaged solution to GH artifact store
+     uses: actions/upload-artifact@v2
+     with:
+       name: managedSolutions
+       path: ${{ env.solution_outbound_folder}}/${{ env.solution_name}}_managed.zip
+  release-to-staging:
+    needs: [ convert-to-managed ]
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        lfs: true
+    - name: Fetch the ready to ship solution from GH artifact store
+      uses: actions/download-artifact@v2
+      with:
+        name: managedSolutions
+        path: ${{ env.solution_release_folder}}
+    - name: Import solution to prod env
+      uses: microsoft/powerplatform-actions/import-solution@0.4.0
+      with:
+        environment-url: ${{secrets.PowerPlatformTestUrl}}
+        app-id: ${{secrets.PowerPlatformAppID}}
+        client-secret: ${{ secrets.PowerPlatformClientSecret }}
+        tenant-id: ${{secrets.PowerPlatformTenantID}}
+        solution-file: ${{ env.solution_release_folder}}/${{ env.solution_name}}_managed.zip
+        run-asynchronously: true
