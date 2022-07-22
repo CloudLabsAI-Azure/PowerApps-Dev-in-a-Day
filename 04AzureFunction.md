@@ -649,7 +649,7 @@ In this exercise, you will create a new custom connector.
 
    ![](images/L04/diad4l18.png) 
  
-1. Provide **PrioritZ<inject key="DeploymentID" enableCopy="false" /> Connector** ***(1)*** as description as and advance to **Security** ***(2)***.
+1. Provide **PrioritZ<inject key="DeploymentID" enableCopy="false" /> Connector** ***(1)*** as description as and click on **Security** ***(2)***.
     
    ![](images/L04/diad4l19.png) 
 
@@ -666,7 +666,7 @@ In this exercise, you will create a new custom connector.
    
 ### Task 2: Test connector
 
-1. Select the **Test** ***(1)*** tab and click **+ New connection** ***(2)***.
+1. Now navigate to the connecter you just created and click on **edit** button Select the **Test** ***(1)*** tab from the drop down menu and click **+ New connection** ***(2)***.
      
    ![](images/L04/diad4l22.png) 
     
@@ -679,13 +679,19 @@ In this exercise, you will create a new custom connector.
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-7. Select **Custom connectors** and click **Edit** on the **PrioritZ connector**.
+7. Once the connect is done, select **Custom connectors** from the left side menu and click **Edit** on the **PrioritZ connector**.
      
    ![](images/L04/image%20(62).png)
     
-7. Select the **Test** tab.
-8. Make sure the connection you created is selected.
-9. Turn on **Raw Body** and provide the JSON below and click **Test operation**.
+7. Select the **Test** from the drop down menu tab.
+
+    ![](images/L04/tstcnt.png)
+    
+9. Make sure the connection you created is selected.
+
+    ![](images/L04/cntcr.png)
+    
+11. Turn on **Raw Body** and provide the JSON below and click **Test operation**.
     
     ```
           {
@@ -713,7 +719,7 @@ Admin canvas application.
 
 ### Task 1: Use function
 
-1. Navigate to Power Apps maker portal a nd make sure you are in correct environment.
+1. Navigate to Power Apps maker portal and make sure you are in correct environment.
 2. Select Apps, select the **PrioritZ Admin** application and click **Edit**.
      
    ![](images/L04/image%20(66).png)
@@ -734,7 +740,10 @@ Admin canvas application.
      ![](images/L04/image%20(69).png)
 
 7. Select the **Tree view** and expand the **Add Topic Screen**.
-8. Select the **Add choice icon**.
+    
+    ![](images/L04/tree.png)
+
+9. Select the **Add choice icon**.
  
     ![](images/L04/image%20(70).png)
     
@@ -765,6 +774,7 @@ Admin canvas application.
 11. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. This changes to
     have the API create the “ask”.
    
+     
      ![](images/L04/image%20(74).png)
    
       ```    
@@ -782,9 +792,13 @@ Admin canvas application.
     
 12. Click **File** and select **Save**.
    
+     ![](images/L04/savee.png)
     
 13. Click on the  back button.
-14. Do not navigate away from this page.
+
+    ![](images/L04/bck.png)
+
+15. Do not navigate away from this page.
 
 ### Task 2: Test application
 
