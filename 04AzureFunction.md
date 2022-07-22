@@ -144,14 +144,14 @@ In this exercise, you will implement the function.
 
 1. Click **New file** that is next to **ContosoFunctions** to add a new file.
     
-    ![](images/L04/image%20(10).png)
+   ![](images/L04/image%20(10).png)
 
-1. Name the new file **Model.cs**
+2. Name the new file **Model.cs**
   
-    ![](images/L04/vscode13.png)
+   ![](images/L04/vscode13.png)
 
 
-1. Open the new **Model.cs** file and paste the code below. This will define the data that will be sent
+3. Open the new **Model.cs** file and paste the code below. This will define the data that will be sent
     from the Power App.
       ```
       using System;
@@ -179,8 +179,8 @@ In this exercise, you will implement the function.
       
    ![](images/L04/vscode14.png)
    
-1. Open the **CreateTopic** file.
-1. Locate the Run method attributes that are present above the **Run method** and replace them with the attributes below. This provides user friendly names when we create a connector to use the API.
+4. Open the **CreateTopic** file.
+5. Locate the Run method attributes that are present above the **Run method** and replace them with the attributes below. This provides user friendly names when we create a connector to use the API.
     
     ![](images/L04/image%20(13).png)
        
@@ -192,21 +192,21 @@ In this exercise, you will implement the function.
       [OpenApiRequestBody(contentType: "application/json", bodyType: typeof(TopicModel))]
       ```
 
-1. Remove **get** from the Run method as you should only have **post**.
+6. Remove **get** from the Run method as you should only have **post**.
   
     ![](images/L04/image%20(14).png)
 
 
-1. Click on **Terminal** from the top menu and select the **New Terminal**.
+7. Click on **Terminal** from the top menu and select the **New Terminal**.
 
-1. Run the below command in the terminal to add the **Power Platform Dataverse Client** package.
+8. Run the below command in the terminal to add the **Power Platform Dataverse Client** package.
 
       ```
       dotnet add package Microsoft.PowerPlatform.Dataverse.Client
       ```
     ![](images/L04/image%20(17).png)
 
-1. Wait for the package to be added then run the below command to add **Azure Identity** package.
+9. Wait for the package to be added then run the below command to add **Azure Identity** package.
 
     ```
     dotnet add package Azure.Identity
@@ -341,7 +341,7 @@ In this exercise, you will implement the function.
 
     ![](images/L04/vscode21.png)
 
-19. The run should succeed. Press any key to stop.
+18. The run should succeed. Press any key to stop.
 
 ## Exercise 3 – Publish to Azure
 
@@ -353,36 +353,37 @@ In this exercise, you will deploy the function to Azure.
 
     ![](images/L04/vscode22.png)
 
-1. Click **Sign in to Azure** under **Resources** section.
+2. Click **Sign in to Azure** under **Resources** section.
    
    ![](images/L04/vscode23.png)
     
-1. Complete the **Sign-in** process using the below credentials.
+3. Complete the **Sign-in** process using the below credentials.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    * Password: <inject key="AzureAdUserPassword"></inject>
 
-1. Close the sign in browser window once the sign in is process is completed.
-1. Navigat back to Viual Studio Code and click on **+** that is next to your subscription to create new Function App.
+4. Close the sign in browser window once the sign in is process is completed.
+
+5. Navigat back to Viual Studio Code and click on **+** that is next to your subscription to create new Function App.
   
     ![](images/L04/NewVSazure3.png)
  
-1. Now, search for and select **Create Function App in Azure**.
+6. Now, search for and select **Create Function App in Azure**.
 
     ![](images/L04/vscode24.png)
 
-1. Enter **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** for function app name and hit [ENTER].
+7. Enter **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** for function app name and hit [ENTER].
 
     ![](images/L04/vscode25.png)
 
-1. Select **.NET 6**.
+8. Select **.NET 6**.
 
     ![](images/L04/vscode26.png)
-10. Select any location form the list and wait for the Function App to be deployed.
+9. Select any location form the list and wait for the Function App to be deployed.
 
     ![](images/L04/vscode27.png)
     
-11. Once Function App is deployed, Click **Deploy Function App** under **Worskpaces** section and choose the Function App just now you created. 
+10. Once Function App is deployed, Click **Deploy Function App** under **Worskpaces** section and choose the Function App just now you created. 
     
      ![](images/L04/DeployNew.png)
    
@@ -396,33 +397,33 @@ In this exercise, you will deploy the function to Azure.
     
 12. Select **All resources** , search for the function app **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** that you have deployed earlier and click to open it.
   
-     ![](images/L04/vscode27.1.png)
+   ![](images/L04/vscode27.1.png)
 
 13. Select **Authentication** from the left hand side menu and click on **Add identity provider**.
   
-     ![](images/L04/image%20(29).png)
+   ![](images/L04/image%20(29).png)
 
-1. Select **Microsoft** for Identity provider and **Current tenant - Single tenant** for **Supported Account types** then click on **Add**.
+14. Select **Microsoft** for Identity provider and **Current tenant - Single tenant** for **Supported Account types** then click on **Add**.
    
      ![](images/L04/image%20(30).png)
 
-16. Open the **Portal menu** by clicking on the Portal menu icon.
+15. Open the **Portal menu** by clicking on the Portal menu icon.
 
     ![](images/L04/vscode28.png)
 
-17. Select **Azure Active Directory** from the list of resources.
+16. Select **Azure Active Directory** from the list of resources.
     
     ![](images/L04/vscode29.png)
 
-18. Select **App registrations** under **Manage**  from the left hand side menu.
+17. Select **App registrations** under **Manage**  from the left hand side menu.
 
     ![](images/L04/vscode30.png)
     
-19. Click to open the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** to open the app.
+18. Click to open the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** to open the app.
      
      ![](images/L04/vscode31.png)
 
-20. Copy the **Application (client) ID** of the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** application registration and keep it on a
+19. Copy the **Application (client) ID** of the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** application registration and keep it on a
     notepad as **PrioritZFL API application ID**. You will need this id in future steps. This ID will be
     used to configure protection of the API.
     
@@ -430,110 +431,111 @@ In this exercise, you will deploy the function to Azure.
     
     ![](images/L04/image%20(34).png)
 
-21. Copy the **Directory (tenant) ID** and keep it on a notepad as **Tenant ID**. You will need this id in
+20. Copy the **Directory (tenant) ID** and keep it on a notepad as **Tenant ID**. You will need this id in
     future steps.
   
     ![](images/L04/image%20(35).png)
 
-22. Select **Certificates & secrets** under **Manage** from the left hand side menu.
+21. Select **Certificates & secrets** under **Manage** from the left hand side menu.
 
     ![](images/L04/vscode32.png)
 
-23. Click **+ New client secret**.
+22. Click **+ New client secret**.
   
      ![](images/L04/image%20(36).png)
 
-24. Provide a description, select **3 months** , and click **Add**.
+23. Provide a description, select **3 months** , and click **Add**.
     
     ![](images/L04/image%20(37).png)
 
-25. Copy the **Value** and keep it in a notepad as **PrioritZFL API Secret**. You need this value in future
+24. Copy the **Value** and keep it in a notepad as **PrioritZFL API Secret**. You need this value in future
     steps.
     
      ![](images/L04/image%20(38).png)
 
-26. Select **API permissions** under **Manage** from the left hand side menu.
+25. Select **API permissions** under **Manage** from the left hand side menu.
 
     ![](images/L04/vscode33.png)
     
-27. Click **+ Add a permission**.
+26. Click **+ Add a permission**.
   
      ![](images/L04/image%20(39).png)
 
-28. Select **Dynamics CRM** from the list of API permissions. Dynamics CRM is Dataverse, the Azure portal just hasn’t been updated as of the time of the writing of these steps.
+27. Select **Dynamics CRM** from the list of API permissions. Dynamics CRM is Dataverse, the Azure portal just hasn’t been updated as of the time of the writing of these steps.
      
      ![](images/L04/vscode34.png)
 
-29. Check the **user_impersonation** checkbox and click **Add permission**.
+28. Check the **user_impersonation** checkbox and click **Add permission**.
 
     ![](images/L04/image%20(41).png)
 
-30. Go back to **Home** and open the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** function app.
+29. Go back to **Home** and open the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** function app.
    
      ![](images/L04/vscode27.1.png)
 
-31. Select **Configuration** under **Settings** from the left hand side menu..
+30. Select **Configuration** under **Settings** from the left hand side menu..
   
      ![](images/L04/vscode35.png)
 
-32. Click **+ New application setting.**
+31. Click **+ New application setting.**
      
      ![](images/L04/vscode36.png)
 
-33. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
+32. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
       
       - **Name**: **ClientID**
       - **Value**: Paste the **PrioritZFL API application ID** that you have noted earlier in the notepad.
 
      ![](images/L04/vscode37.png)
 
-1. Click **+ New application setting** again.
+33. Click **+ New application setting** again.
 
-37. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
+34. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
       
       - **Name**: **ClientSecret**
       - **Value**: Paste the **PrioritZFL API Secret** that you have noted earlier in the notepad.
 
      ![](images/L04/vscode38.png)
      
-40. Click **+ New application setting** again.
+35. Click **+ New application setting** again.
 
-1. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
+36. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
       
       - **Name**: **TenantID**
       - **Value**: Paste the **TenantID** that you have noted earlier in the notepad.
 
      ![](images/L04/vscode39.png)
      
-46. Start a new browser window or tab and navigate to Power Platform admin center and select
+37. Start a new browser window or tab and navigate to Power Platform admin center and select
     **Environments**.
-47. Click to open the Dev environment you are using for this lab.
-48. Copy the **Environment URL** and paste it in the notepad.
+38. Click to open the Dev environment you are using for this lab.
+
+39. Copy the **Environment URL** and paste it in the notepad.
 
      ![](images/L04/image%20(47).png)
 
-44. Click **+ New application setting** one more time.
+40. Click **+ New application setting** one more time.
 
-45. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
+41. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
       
       - **Name**: **DataverseURL**
       - **Value**: Paste the **Environment URL** that you have noted earlier in the notepad.
       
     ![](images/L04/vscode40.png)
-50. You should see the four application settings you added. Click **Save**.
+42. You should see the four application settings you added. Click **Save**.
   
      ![](images/L04/image%20(46).png)
 
-51. Click **Continue**.
+43. Click **Continue**.
 
-52. Paste the below URL in notepad and replace `{tenant id}` and `{api app id}` with **tenant id** and **PrioritZFL API application ID** values from your
+44. Paste the below URL in notepad and replace `{tenant id}` and `{api app id}` with **tenant id** and **PrioritZFL API application ID** values from your
     notepad. 
 
     ```
      https://login.microsoftonline.com/{tenant-id}/adminconsent?client_id={api app id}
      ```
  
- 1. After updating the values, navigate to the URL in a browser tab and sign in with below creadentails.
+45. After updating the values, navigate to the URL in a browser tab and sign in with below creadentails.
    
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    * Password: <inject key="AzureAdUserPassword"></inject>
@@ -570,9 +572,9 @@ In this exercise, you will deploy the function to Azure.
 
    ![](images/L04/diad4l6.png)
 
-1. Copy the **Secret ID** and save it in a notepad as you need it for later use.
+1. Copy the **Secret value** and save it in a notepad as you need it for later use.
 
-   ![](images/L04/diad4l7.png)
+   ![](images/L04/diad5l33.png)
 
 1. Select **API permissions** ***(1)*** from the side blade and click on **+ Add a permission** ***(2)***.
       
