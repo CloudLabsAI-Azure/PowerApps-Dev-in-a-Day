@@ -296,7 +296,6 @@ application.
 ### Task 1: Test the Power Platform CLI
 > **Note:** Visual studio code and Power platform CLI installation is already done as a part of the prerequisits.
 
-
 1. Navigate to Power Platform admin center by using below URL and select **Environments**.
       ```
         https://admin.powerplatform.microsoft.com/environments
@@ -307,16 +306,20 @@ application.
     ![](images/L01/image37.png)
 
 4. Open Visual Studio Code.
-5. Click **Terminal** and select **New Terminal**.
+5. You can observe the Power Platform CLI tool is already installed.
+
+    ![](images/L01/EX3-T1-CLI.png)
+
+6. Click **Terminal** and select **New Terminal**.
 
     ![](images/L01/image42.png)
 
-6. Run the below command in the terminal.
+7. Run the below command in the terminal.
    ```
    pac
    ```
    
-7. Replace `<your environment URL>` in the below command with the value of environment URL that you copied earlier then run the command. 
+8. Replace `<your environment URL>` in the below command with the value of environment URL that you copied earlier then run the command. 
    ```
    pac auth create --name DevAuth --url <your environment URL>
    ```
@@ -324,19 +327,19 @@ application.
   ![](images/L01/Eeditpac.png)
 
 
-8. You should now have at least one auth profile. If you have more than profile, make sure the profile you created is selected
+9. You should now have at least one auth profile. If you have more than profile, make sure the profile you created is selected
    
    ![](images/L01/DevAuth.png)
 
-9. Click **Terminal** and select **New Terminal**.
+10. Click **Terminal** and select **New Terminal**.
 
      ![](images/L01/image42.png)
 
-10. Run the command below to see list of solutions.
+11. Run the command below to see list of solutions.
 
       ```
       pac solution list
       ```
-11. You should see list of solutions installed on your environment.
+12. You should see list of solutions installed on your environment.
     
 
