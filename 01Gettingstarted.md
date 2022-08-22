@@ -323,7 +323,9 @@ application.
    ```
    pac auth create --name DevAuth --url <your environment URL>
    ```
-   > After adding the environment URL, the command will look like this: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
+  > **Note:** Sign In if prompted
+  
+  > After adding the environment URL, the command will look like this: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
   ![](images/L01/Eeditpac.png)
 
 
