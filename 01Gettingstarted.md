@@ -3,114 +3,39 @@
 
 ## Table of Contents
 
-**Lab Scenario**
+**Lab Scenario** 
 
-1. Exercise 1 - Create Dev environment 
-
-   - Task 1: Create dev environment 
-
-2. Exercise 2 - Import starting solution 
-
-    - Task 1: Import solution 
-
-3. Exercise 3 - Review solution components 
+1. Exercise 1 - Review solution components 
 
    - Task 1: Review solution components and run flow 
 
    - Task 2: Test the apps 
 
-4. Exercise 4 – Add a column for My Notes 
+2. Exercise 2 – Add a column for My Notes 
 
    - Task 1: Add a new column 
 
    - Task 2: Update admin app 
 
-5. Exercise 5 – Install Visual Studio Code Installer and Power Platform CLI Extension 
+3. Exercise 3 – Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension 
 
-   - Task 1: Install Visual Studio Code Installer and Msbuild
-
-   - Task 2: Test the Power Platform CLI 
+   - Task 1: Test the Power Platform CLI 
 
 
 ### Lab Scenario
 
 
 Working as part of the Prioritz fusion team you will be setting up your Power Platform development
-environment. You will import the current solution and explore the current state of the Prioritz apps,
+environment. You will review the current solution and explore the current state of the Prioritz apps,
 flows and tables. You will be also adding a column to a table and modifying the app to use it.
 
-## Exercise 1 - Create Dev environment
 
-In this exercise, you will create a Power Platform developer environment. You will do all the
-development work for this course in this environment. You will also be assigned a test environment for
-use in the ALM labs.
+## Exercise 1 - Review solution components
 
-**Note:** Do not use an existing environment.
-
-### Task 1: Create dev environment
-
-1. Navigate to Power Apps Developer Plan by using below link.
-```
-https://powerapps.microsoft.com/en-in/developerplan/
-```
-2. Select **Add a dev environment**.
-    
-      ![](images/L01/image1.png)
-
-3. Sign in if prompted.
-* Email/Username: <inject key="AzureAdUserEmail"></inject>
-* Password: <inject key="AzureAdUserPassword"></inject>
-
-4. Select your country and click **Accept**.
-5. You should be navigated to the new **dev environment created for you** . Select the new
-    **environment** and stay sign in.
-
-    ![](images/L01/image2.png)
-
-6. Expand **Dataverse**   and select **Tables** .
-7. You should see several Dataverse tables that are created with every environment.
- 
-    ![](images/L01/image3.png)
-
-**NOTE** [If you not able see table data could you please  wait 1 or 2 minutes it will show] 
-## Exercise 2 - Import starting solution
-
-In this exercise, you will import a solution into your dev environment. This solution contains the current
-Prioritz apps, flows and Dataverse tables.
-
-### Task 1: Import solution
-
-1. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
-   ```        
-    https://make.powerapps.com
-   ```
-2. Select **Solutions** and click **Import**.
-3. Click **Browse**.
-4. Go to the lab resources folder C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources, select the **Prioritz_1_0_0_7.zip** file, and click **Open**.
-5. Click **Next** .
-   
-    ![](images/L01/image4.png)
-
-6. Click **Next**  again on the Import solution blade.
-7. Click on the **Select a connection** dropdown and the select **+ New connection**.
-  
-    ![](images/L01/image5.png)
-
-8. Click **Create**.
-9. Sign in if prompted.
-10. Close the connections browser window or tab.
-11. Click **Refresh**.
-12. Click **Import** and wait for the solution import to complete.
-     
-     ![](images/L01/image6.png)
-
-13. You should now see the solution you imported in the list of solutions.
-14. Do not navigate away from this page.
-
-## Exercise 3 - Review solution components
-
-In this exercise, you will review the components of the solution you imported, run a flow that will add
+In this exercise, you will review the components of the solution which is already imported, run a flow that will add
 sample data to your environment, and test the applications in the solution.
+
+> **Note:** The Dev environment and Prioritz solution are already created and imported respectively as a part of the prerequisits.
 
 ### Task 1: Review solution components and run flow
 
@@ -118,53 +43,75 @@ sample data to your environment, and test the applications in the solution.
     
      ![](images/L01/image7.png)
 
-2. Open the **PrioritZ** solution you imported.
+2. Now, click on Solutions from the left hand side menu
+
+      ![](images/L01/Ex1-T1-2.png)
+
+3.  Open the **PrioritZ** solution which is imported.
     
      ![](images/L01/image8.png)
 
-3. Expand **Tables** and select the **PrioritZ Topic** table.
+4. Expand **Tables** and select the **PrioritZ Topic** table.
    
      ![](images/L01/NewUi1.png)
 
-4. Select the **Columns** under Schema and review the columns of the PrioritZ Topic table. The standard columns are built-in, and all tables have them.
+5. Select the **Columns** under Schema and review the columns of the PrioritZ Topic table. The standard columns are built-in, and all tables have them.
  The custom columns were created by the team for this application.
  
    ![](images/L01/NewUi2.png)
 
-5. Select the **Relationships** tab from Columns dropdown and review how this table is related to other tables.
+6. Select the **Relationships** tab from Columns dropdown and review how this table is related to other tables.
  
     ![](images/L01/NewUi3.png)
  
     ![](images/L01/NewUi4.png)
 
-6. Select **Cloud flow**.
-7. Open the **Import sample data – Topics** flow.
+7. Select **Cloud flow**.
+8. Open the **Import sample data – Topics** flow.
  
     ![](images/L01/image10.png)
 
-8. Click **Edit**.
+9. Click **Edit**.
   
     ![](images/L01/NewUiImport.png)
 
-9. Expand the Parse JSON step and review the data this flow will create.
-10. Expand the **Apply to each topic** step.
-11. Expand the **Apply to each topic item** step.
-12. The apply to each step should look like the image below. This is the logic for the automation.
+10. Expand the Parse JSON step and review the data this flow will create.
+
+    ![](images/L01/Ex1-T1-10.png)
+
+11. Expand the **Apply to each topic** step.
+    
+    ![](images/L01/EX1-T1-11-1.png)
+
+12. Expand the **Apply to each topic item** step.
+   
+     ![](images/L01/EX1-T1-12-2.png)
+
+13. The apply to each step should look like the image below. This is the logic for the automation.
  
      ![](images/L01/image11.png)
 
-13. Click on the **<- back** button.
+14. Click on the **<- back** button.
  
      ![](images/L01/image12.png)
 
-14. Click on the flow name to open the flow detail screen.
-15. Click Run to run the flow.
+15. Click on the flow name to open the flow detail screen.
+
+     ![](images/L01/EX1-T1-14.png)
+
+16. Click Run to run the flow.
    
      ![](images/L01/image13.png)
 
-16. Click the **Run flow** on the Run flow blade.
-17. Click **Done** and wait for the flow run to complete.
-18. The flow should run successfully. If you want, you can click on the run row and it will show you
+17. Click the **Run flow** on the Run flow blade.
+
+     ![](images/L01/EX1-T1-17.png)
+
+18. Click **Done** and wait for the flow run to complete.
+
+     ![](images/L01/EX1-T1-18.png)
+
+19. The flow should run successfully. If you want, you can click on the run row and it will show you
     the details of what the flow did.
    
       ![](images/L01/image14.png)
@@ -177,13 +124,22 @@ sample data to your environment, and test the applications in the solution.
    ```
 2. Select **Apps**. You should see two applications. **PrioritZ Ask** and **PrioritZ Admin**. PrioritZ Admin
     app is used to manage topics being asked about. PrioritZ Ask app allows users to respond.
+
+      ![](images/L01/EX1-T2-2_1.png)
+
 3. Launch the **PrioritZ Admin** application.
     
     ![](images/L01/image15.png)
 
 4. You should see at least four topics.
+
+    ![](images/L01/EX1-T2-4-2.png)
+
 5. Click to open one of the topics.
 6. You should see the topic details with some topic items.
+
+    ![](images/L01/EX1-T2-6-1.png)
+
 7. Click on the **<** back button
 8. You should go back to the home screen.
 9. Click on the **+** button.
@@ -210,12 +166,18 @@ sample data to your environment, and test the applications in the solution.
 
 16. The new topic should be saved, and you should be navigated back to main screen.
 17. You should see the topic you added in the list of topics.
+
+     ![](images/L01/EX1-T2-17.png)
+
 18. Close the PrioritZ Admin application.
 19. Launch the **PrioritZ Ask** application.
      
      ![](images/L01/image21.png)
 
 20. You should see a list of topics. Open the topic you created.
+
+     ![](images/L01/EX1-T2-20.png)
+
 21. Click on the up/down icons and order the items in the order you prefer them and click **Vote**.
      
       ![](images/L01/image22.png)
@@ -226,7 +188,7 @@ sample data to your environment, and test the applications in the solution.
 
 23. Close the PrioritZ Ask app.
 
-## Exercise 4 – Add a column for My Notes
+## Exercise 2 – Add a column for My Notes
 
 In this exercise, you will add a new column **My Notes** to the topic table and update the PriortZ Admin
 application.
@@ -238,16 +200,19 @@ application.
     https://make.powerapps.com
    ```
 2. Select **Solutions** and open the **PrioritZ** solution.
+
+   ![](images/L01/EX2-T1-2.png)
+
 3. Expand **Tables** and select the **PrioritZ Topic** table.
 4. Select the **Columns** tab and click **+ New column**.
 
+    ![](images/L01/EX2-T1-4.png)
 
-5. Enter **My Notes** for Display name, select **Multiline Text** for Data type, and click **Done**.
+5. Enter **My Notes** for Display name, select **Multiline Text** for Data type, and click **Save**.
 
     ![](images/L01/NewUi5.png)
 
-6. Click **Save Table**.
-7. Do not navigate away from this page.
+6. Do not navigate away from this page.
 
 ### Task 2: Update admin app
 
@@ -326,59 +291,11 @@ application.
 
  27. You may close the **app designer**.
 
-## Exercise 5 – Install Visual Studio Code and Install  Power Platorm CLI
+## Exercise 3 – Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension
 
-In this exercise, you will install Visual Studio Code and Power Platform CLI. These tools are used in the
-labs in this course.
+### Task 1: Test the Power Platform CLI
+> **Note:** Visual studio code and Power platform CLI installation is already done as a part of the prerequisits.
 
-
-### Task 1: Install Visual Studio Code and MSbuild 
-
-1. Download and Install Visual Studio tool Installer by navigating to the below URL
-
-      ```
-      https://visualstudio.microsoft.com/downloads/
-
-      ```
-2. Click Free download and Open.
-
-    ![](images/L01/Vscode.png)
-
-    ![](images/L01/Vscode1.png)
-
-3. Select the Check box for **ASP.NET & Web Development** and **Azure Development** in Workloads page. Then Click on **Install while downloading** button.
-
-   ![](images/L01/VscodeMsb.png)
-   
-4. To set an Environment Variable for MSbuild. Search Environment variables in windows search bar.
-
-     ![](images/L01/envvar.jpg)
-
-5. Click Environment Variable 
-
-     ![](images/L01/Env.png)
-   
-     ![](images/L01/Env1.png)
-
-6. In System Variables Section select **Path** and click **Edit** to Paste Msbuild Path
-      ```
-      C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin
-      ```
-
-    ![](images/L01/Env2.png)
- 
-7. Click Ok and again Click Ok.
-
-8. Navigate to Visual Studio Marketplace Power Platform Tools by using the below URL.
-      ```
-        https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode
-      ```
-   
-9. Click **Install**.
-10. Click Continue.
-11. Wait for the Power Platform Tools to be installed.
-
-### Task 2: Test the Power Platform CLI
 
 1. Navigate to Power Platform admin center by using below URL and select **Environments**.
       ```
@@ -391,6 +308,9 @@ labs in this course.
 
 4. Open Visual Studio Code.
 5. Click **Terminal** and select **New Terminal**.
+
+    ![](images/L01/image42.png)
+
 6. Run the below command in the terminal.
    ```
    pac
