@@ -43,7 +43,7 @@ sample data to your environment, and test the applications in the solution.
     
      ![](images/L01/image7.png)
 
-2. Now, click on Solutions from the left hand side menu
+2. Now, click on **Solutions** from the left hand side menu
 
       ![](images/L01/Ex1-T1-2.png)
 
@@ -75,7 +75,7 @@ sample data to your environment, and test the applications in the solution.
   
     ![](images/L01/NewUiImport.png)
 
-10. Expand the Parse JSON step and review the data this flow will create.
+10. Expand the **Parse JSON** step and review the data this flow will create.
 
     ![](images/L01/Ex1-T1-10.png)
 
@@ -99,7 +99,7 @@ sample data to your environment, and test the applications in the solution.
 
      ![](images/L01/EX1-T1-14.png)
 
-16. Click Run to run the flow.
+16. Click **Run** to run the flow.
    
      ![](images/L01/image13.png)
 
@@ -151,7 +151,7 @@ sample data to your environment, and test the applications in the solution.
      ![](images/L01/image17.png)
 
 11. Select any image from your computer.
-12. Type something on the Choice filed and click add a picture.
+12. Type something on the Choice field and click add a picture.
      
       ![](images/L01/image18.png)
 
