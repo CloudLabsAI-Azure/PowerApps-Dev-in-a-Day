@@ -52,7 +52,7 @@ In this exercise, you will build the code component.
 1. Start Visual Studio Code.
 2. Select the Power Platform tab and make sure your Dev Auth profile is selected. 
     ```
-       NOTE: The Power Platform tab is only available if you installed the Power Platform extension as explained in lab 1.
+       NOTE: The Power Platform tab is already installed in lab 1.
     ```
     ![](images/L02/image1.png)
 
@@ -87,7 +87,7 @@ In this exercise, you will build the code component.
     code -a.
     ```
 
-9. Review the created code component files.
+9. Review the created code component files by selecting the **Explorer** tab.
     
      ![](images/L02/image5.png)
 
@@ -107,7 +107,7 @@ In this exercise, you will build the code component.
 
       ![](images/L02/image8.png)
 
-14. Add the following properties after the closing tag of the data-set element **</data-set** >.
+14. Add the following properties after the closing tag of the data-set element **</data-set**>.
 
     ```
     <property name="BackgroundColor" display-name-key="Background color" usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
@@ -138,7 +138,7 @@ In this exercise, you will build the code component.
       ![](images/L02/image12.png)
 
 19. Name the new folder **css**.
-20. Select the new **css** folder you created and then click New File
+20. Select the new **css** folder you created and then click **New File**
  
      ![](images/L02/image13.png)
  
@@ -171,7 +171,9 @@ In this exercise, you will build the code component.
 ### Task 2: Implement the component logic
 
 1. Remove the HelloWorld.tsx component file that is automatically created as we won’t be using it.
-    
+     
+     ![](images/L02/L02-EX1-T2-1.png)
+
 2. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` in file explorer.
     
 3. Drag the **PriorityComponent.tsx** file and drop it in the **PrioriZDnDRanking** folder.
@@ -340,7 +342,7 @@ In this exercise, you will build the code component.
         npm start
         ```
 
-30. The test harness should start. Try dragging the items and see if the behavior functions as
+30. The test harness should start, if not then copy the address and paste it in a new browser window. Try dragging the items and see if the behavior functions as
     expected.
 
       ![](images/L02/imagee29.png)
