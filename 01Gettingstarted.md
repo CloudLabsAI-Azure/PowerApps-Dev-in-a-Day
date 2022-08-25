@@ -217,7 +217,7 @@ application.
 ### Task 2: Update admin app
 
 1. Make sure you are still in the **PrioritZ** solution.
-2. Select **Apps** and click to open the **PrioritZ Admin** application.
+2. Select **Apps** and select the **PrioritZ Admin** application and click on **Edit**.
     
     ![](images/L01/image25.png)
 
