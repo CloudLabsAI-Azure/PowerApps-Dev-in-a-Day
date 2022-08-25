@@ -587,4 +587,5 @@ In this exercise, you will add the code component you created to the PrioritZ so
  
  5. Click **Publish all customizations** and wait for the publishing to complete.
 
+    ![](images/L02/L02-EX3.png)
 
