@@ -93,6 +93,8 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
     ![](images/L04/vscode5.png)
 
+1. Select the **ContosoFunction** folder you created and click **select**
+
 1. Now, you will be presented with the below pop-up, click on **Yes** to create a new project.
 
     ![](images/L04/vscode6.png)
