@@ -219,7 +219,7 @@ You will do this by using the custom code feature to reshape the response from t
 1. Navigate to Power Automate using below URL.
           
    ```
-   https://powerautomate.microsoft.com/en-us/
+   https://make.powerautomate.com
    ```
 
 2. Expand **Data** and select **Custom connectors**.
@@ -229,9 +229,9 @@ You will do this by using the custom code feature to reshape the response from t
 
     ![](images/L03/image24.png)
 
-4. Select the **Definition** tab and click **New action**.
+4. Select the **Definition** tab from the dropdown and click **New action** in the definition tab.
   
-    ![](images/L03/image25.png)
+    ![](images/L03/L03-EX3.png)
 
 5. Enter **Get current badge** for Summary, **Get current badge** for Description, and **getcurrentbadge**
     for Operation ID.
@@ -337,6 +337,9 @@ PrioritZ Ask canvas application.
 
 
 6. Click **+ Add a connection**.
+
+    ![](images/L03/L03-EX4.png)
+
 7. Open a new browser tab or window and navigate to Contoso Coffee Badges
     (contosobadgestest.azurewebsites.net)
     
@@ -377,6 +380,8 @@ ContosoBadges.getcurrentbadge({id:User().Email}).image
 ```
 ContosoBadges.getcurrentbadge({id:User().Email}).name
 ```
+ ![](images/L03/L03-EX4-T1.png)
+
 16. Make the image smaller and move it to top right corner of the screen.
 17. The User badge should now look like the image below.
       
@@ -409,6 +414,9 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
     ![](images/L03/edd%20(1).png)
 
 4. Click **+ New step**.
+
+    ![](images/L03/L03-EX3-T2.png)
+
 5. Select the **Custom** tab and then select the **Add credit** action.
    
     ![](images/L03/edd%20(2).png)
@@ -427,8 +435,12 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
      ![](images/L03/image50.png)
 
 10. Click **Test**.
+
+     ![](images/L03/L03-EX4-test.png)
+
 11. Select **Manually** and click **Test** again.
 
+     ![](images/L03/L03-EX3-manually.png)
 
 12. Click **Continue**.
 13. Click **Run flow**.
@@ -450,6 +462,9 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
      ![](images/L03/image53.png)
 
 22. Go back to flow and run it couple more times.
+
+     ![](images/L03/L03-EX4-run.png)
+
 23. Go back to the **PrioritZ Ask** application and refresh the page.
 24. You should now see the **Team Player** badge.
   
@@ -473,9 +488,9 @@ environment and import it to Test environment.
          https://make.powerapps.com
 
 2. Select **Solutions**.
-3. Select the **Contoso Badges connector** solution and click **Export**.
+3. Select the **Contoso Badges connector** solution and click **Export Solution**.
    
-     ![](images/L03/image56.png)
+     ![](images/L03/L03-EX4-export.png)
 
 4. Click **Publish** and wait for the publishing to complete.
 5. Click **Next**.
@@ -492,9 +507,12 @@ environment and import it to Test environment.
          https://make.powerapps.com
 
 2. Select **Solutions**.
-3. Click **Import**.
+
+  Note: Click on create database and leave the currency and lanaguage field to default and click on create database and wait for somtime till the solutions are loaded
+
+3. Click **Import Solution**.
     
-     ![](images/L03/image57.png)
+     ![](images/L03/L03-EX5.png)
 
 4. Click **Browse**.
 5. Select the solution you exported from the Dev environment and click **Open**.
@@ -512,9 +530,9 @@ environment and import it to Test environment.
 
 
 3. Click **Edit**.
-4. Select the **Test** tab.
+4. Select the **Test** tab from the dropdown.
    
-     ![](images/L03/image59.png)
+     ![](images/L03/L03-EX5-default.png)
 
 5. Click **+ New connection**.
 6. Start a new browser window or tab and navigate to Contoso Coffee Badges
