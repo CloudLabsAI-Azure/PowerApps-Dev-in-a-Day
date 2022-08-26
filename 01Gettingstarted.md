@@ -35,7 +35,7 @@ flows and tables. You will be also adding a column to a table and modifying the 
 In this exercise, you will review the components of the solution which is already imported, run a flow that will add
 sample data to your environment, and test the applications in the solution.
 
-> **Note:** The Dev environment and Prioritz solution are already created and imported respectively as a part of the prerequisits.
+>**Note**: The Dev environment and Prioritz solution are already created and imported respectively as a part of the prerequisits.
 
 ### Task 1: Review solution components and run flow
 
@@ -105,7 +105,7 @@ sample data to your environment, and test the applications in the solution.
 
 17. Click the **Run flow** on the Run flow blade.
 
-     ![](images/L01/EX1-T1-17.png)
+     ![](images/L01/L01-new.png)
 
 18. Click **Done** and wait for the flow run to complete.
 
@@ -222,6 +222,9 @@ application.
     ![](images/L01/image25.png)
 
 3. Select the **Add Topic Screen**.
+
+    ![](images/L01/L01-addtopic.png)
+
 4. Select the **Insert** tab, click **Text** , and then select **Text input**.
    
      ![](images/L01/image26.png)
@@ -235,13 +238,15 @@ application.
    
     ![](images/L01/image28.png)
 
-
 7. Select Notes **textbox**.
 8. Change the **HintText** value of the Notes textbox to **My notes**.
    
     ![](images/L01/image29.png)
 
 9. Change the **Mode** to **TextMode.MultiLine**.
+
+    ![](images/L01/L01-mode.png)
+
 10. Select **Save topic icon**.
      
      ![](images/L01/image30.png)
@@ -254,47 +259,55 @@ application.
     ```
     Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
     ```
-12. Select the **View Topic Screen**.
-13. Go to the **Insert** tab and click **Label**.
-14. Rename the label you just added **Notes label**.
-15. Change the **Text** value of the Notes label to **'Topics gallery'.Selected.'My Notes'**
+12. Select the **View Topic Screen (1)** and go to the **Insert** tab and click **Label (2)**.
+
+    ![](images/L01/L01-viewtopic.png)
+
+13. Rename the label you just added **Notes label**.
+
+    ![](images/L01/L01-label.png)
+
+14. Change the **Text** value of the Notes label to **'Topics gallery'.Selected.'My Notes'**
   
       ![](images/L01/image32.png)
 
-16. Rearrange the controls and move the **Notes label** between the details label and Topic items
+15. Rearrange the controls and move the **Notes label** between the details label and Topic items
     gallery.
    
       ![](images/L01/image33.png)
 
 
-17. Select the **Home Screen** and click **Preview the app**.
+16. Select the **Home Screen** and click **Preview the app**.
       
       ![](images/L01/image34.png)
 
-18. Click **+**.
-19. Fill out the form, add some choices, and then click **Save**.
+17. Click **+**.
+
+      ![](images/L01/L01-add.png)
+
+18. Fill out the form, add some choices, and then click **Save**.
  
       ![](images/L01/image35.png)
 
-20. The new topic should be **saved**.
-21. Click to open the topic you just created.
-22. The notes should now be shown.
+19. The new topic should be **saved**.
+20. Click to open the topic you just created.
+21. The notes should now be shown.
  
      ![](images/L01/image36.png)
 
-23. Close the app **preview**.
-24. Click **File** and select **Save**.
-25. Click **Publish**.
-26. Select Publish this version and wait for the publishing to complete.
+22. Close the app **preview**.
+23. Click **File** and select **Save**.
+24. Click **Publish**.
+25. Select Publish this version and wait for the publishing to complete.
 
      ![](images/L01/NewUipublish.png)
 
- 27. You may close the **app designer**.
+ 26. You may close the **app designer**.
 
 ## Exercise 3 – Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension
 
 ### Task 1: Test the Power Platform CLI
-> **Note:** Visual studio code and Power platform CLI installation is already done as a part of the prerequisits.
+>**Note**: Visual studio code and Power platform CLI installation is already done as a part of the prerequisits.
 
 1. Navigate to Power Platform admin center by using below URL and select **Environments**.
       ```
@@ -323,7 +336,7 @@ application.
    ```
    pac auth create --name DevAuth --url <your environment URL>
    ```
-  > **Note:** Sign In if prompted
+  >**Note**: Sign In if prompted
   
   > After adding the environment URL, the command will look like this: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
   ![](images/L01/Eeditpac.png)
