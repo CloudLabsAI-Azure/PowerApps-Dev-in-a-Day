@@ -35,7 +35,7 @@ flows and tables. You will be also adding a column to a table and modifying the 
 In this exercise, you will review the components of the solution which is already imported, run a flow that will add
 sample data to your environment, and test the applications in the solution.
 
->**Note**: The Dev environment and Prioritz solution are already created and imported respectively as a part of the prerequisits.
+>**Note**: The Dev environment is already pre-created and Prioritz solution is imported into the Dev environment as a part of the prerequisites.
 
 ### Task 1: Review solution components and run flow
 
