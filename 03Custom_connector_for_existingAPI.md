@@ -61,6 +61,8 @@ connectors must be in a separate solution from the apps and flows that use them.
 
 2. Select **Solutions** and click **+ New solution**.
 
+    ![](images/L03/L03-solution.png)
+
 3. Enter **Contoso Badges connector** for Display name, select **Contoso Coffee** for Publisher, and
     click **Create**.
    
@@ -222,8 +224,9 @@ You will do this by using the custom code feature to reshape the response from t
    https://make.powerautomate.com
    ```
 
-2. Expand **Data** and select **Custom connectors**.
+2. Expand **Data (1)** and select **Custom connectors (2)**.
 
+     ![](images/L03/L03-connector.png)
 
 3. Click the **Edit** button of the custom connector you created.
 
@@ -247,7 +250,7 @@ You will do this by using the custom code feature to reshape the response from t
    https://contosobadgestest.azurewebsites.net/getcurrentbadge?id={id} 
    ```
 
-  ![](images/L03/image28.png)
+    ![](images/L03/image28.png)
 
 8. Click **Update connector** and wait for the connector to be updated.
 9. Select the **Code** tab.
