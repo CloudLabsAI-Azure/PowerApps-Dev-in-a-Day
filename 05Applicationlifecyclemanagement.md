@@ -45,7 +45,7 @@ actions, so they do not execute under your individual user identity.
 
    ![](images/L05/diad5l1.png)
    
-1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(1)***. This application registration will be used for the connector to access the protected API.
+1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
 
    ![](images/L05/diad5l2.png)
 
