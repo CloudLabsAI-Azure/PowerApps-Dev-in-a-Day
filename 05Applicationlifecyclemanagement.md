@@ -78,7 +78,12 @@ In this task, you will be registering the app you created in Azure Active Direct
 Dataverse environments. You will also be assigning a security role that will allow the service principal to
 deploy solutions.
 
-1. Navigate to Power Platform Admin Center https://admin.powerplatform.microsoft.com/.
+
+1. Open a new browser window ot tab and navigate to Power Platform Admin Center.
+
+     ```
+     https://admin.powerplatform.microsoft.com/environments
+     ```
 
 1. Click on **Environments** ***(1)*** from the side blade and select your **ODL_User <inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
 
@@ -187,7 +192,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
    ![](images/L05/github2.png)
 
-4. Enter **PrioritZ** for Repository name, select **Public** , check the **Add a README file**.
+4. Enter **PrioritZ (1)** for Repository name, select **Public (2)** , check the **Add a README file (3)**.
 
    ![](images/L05/github3.png)
 
@@ -201,39 +206,39 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 6. Go to the **Security** section, expand **Secrets (1)** and select **Actions (2)**. The values you provide will not be visible after you create the item so take your time to get the values correct. 
       
-     ![](images/L05/github5.png)
+     ![](images/L05/github6.png)
    
 7. Click **New repository secret**.
 
-   ![](images/L05/github6.png)
+     ![](images/L05/github7.png)
 
 8. Enter **PowerPlatformAppID (1)** for Name and paste the **Application (client) ID (2)** from your notepad in the **Value** field and click **Add secret (3)**.
 
-   ![](images/L05/github7.png)
+     ![](images/L05/github8.png)
 
 9. Click **New repository secret** again.
-10. Enter **PowerPlatformClientSecret** for Name and paste the secret **Value** from your notepad in the **Value** field and click **Add secret**.
+10. Enter **PowerPlatformClientSecret (1)** for Name and paste the **secret Value (2)** from your notepad in the **Value** field and click **Add secret (3)**.
 
-   ![](images/L05/github8.png)
+     ![](images/L05/github9.png)
 
 11. Click **New repository secret** again.
 12. Enter **PowerPlatformTenantID (1)** for Name and paste the secret **Tenant ID (2)** from your notepad in the **Value** field and click **Add secret (3)**.
 
-   ![](images/L05/github9.png)
+     ![](images/L05/github10.png)
 
 13. Click **New repository secret** again.
-14. Enter **PowerPlatformDevUrl** for Name and paste the secret **Dev environment URL** from your notepad in the **Value** field and click **Add secret**.
+14. Enter **PowerPlatformDevUrl (1)** for Name and paste the secret **Dev environment URL (2)** from your notepad in the **Value** field and click **Add secret (3)**.
 
-   ![](images/L05/github10.png)
+     ![](images/L05/github11.png) 
    
 15. Click **New repository secret** one more time.
-16. Enter **PowerPlatformTestUrl** for Name and paste the secret **Test environment URL** from your notepad in the **Value** field and click **Add secret**.
+16. Enter **PowerPlatformTestUrl (1)** for Name and paste the secret **Test environment URL (2)** from your notepad in the **Value** field and click **Add secret (3)**.
 
-   ![](images/L05/github11.png)
+      ![](images/L05/L05-testurl.png)
    
 17. You should now have **5** repository secrets.
      
-     ![](images/L05/Images%20(15).png)
+       ![](images/L05/Images%20(15).png)
 
 18. Do not navigate away from this page.
 
@@ -292,7 +297,7 @@ indentation shown in the images.
    
 1. Click on **Contribute** ***(1)*** button and select **Open pull request** ***(2)***.
         
-   ![](images/L05/opnpr.png)
+   ![](images/L05/L05-t1-1.png)
    
 23. Add description if you like and then click **Create pull request**.
 
