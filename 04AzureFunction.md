@@ -510,6 +510,11 @@ In this exercise, you will deploy the function to Azure.
      
 37. Start a new browser window or tab and navigate to Power Platform admin center and select
     **Environments**.
+
+      ```
+        https://admin.powerplatform.microsoft.com/environments
+      ```
+
 38. Click to open the Dev environment you are using for this lab.
 
 39. Copy the **Environment URL** and paste it in the notepad.
@@ -524,11 +529,11 @@ In this exercise, you will deploy the function to Azure.
       - **Value**: Paste the **Environment URL** that you have noted earlier in the notepad.
       
     ![](images/L04/vscode40.png)
-42. You should see the four application settings you added. Click **Save**.
+42. You should see the four application settings you added.
   
      ![](images/L04/image%20(46).png)
 
-43. Click **Continue**.
+43. Click **Save** and **Continue**.
 
 44. Paste the below URL in notepad and replace `{tenant id}` and `{api app id}` with **tenant id** and **PrioritZFL API application ID** values from your
     notepad. 
@@ -550,7 +555,7 @@ In this exercise, you will deploy the function to Azure.
 
    ![](images/L04/diad4l1.png)
 
-1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(1)***. This application registration will be used for the connector to access the protected API.
+1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
 
    ![](images/L04/diad4l2.png)
 
@@ -633,8 +638,6 @@ In this exercise, you will create a new custom connector.
        https://make.powerapps.com
    ```
    
-   ![](images/L01/diadl7.png)
-   
 1. Expand **Dataverse** ***(1)*** and select **Custom Connectors** ***(1)***.
      
    ![](images/L04/diad4l16.png) 
@@ -647,7 +650,7 @@ In this exercise, you will create a new custom connector.
     
    ![](images/L04/diad4l20.png) 
     
-1. Select the swagger file which you saved in step 7 of this task and Click **Continue**.
+1. Select the **swagger file (1)** which you saved in step 7 of this task and Click **Continue (2)**.
 
    ![](images/L04/diad4l18.png) 
  
@@ -668,7 +671,7 @@ In this exercise, you will create a new custom connector.
    
 ### Task 2: Test connector
 
-1. Now navigate to the connecter you just created and click on **edit** button Select the **Test** ***(1)*** tab from the drop down menu and click **+ New connection** ***(2)***.
+1. Now navigate to the connecter you just created and click on **edit** button. Select the **Test** ***(1)*** tab from the drop down menu and click **+ New connection** ***(2)***.
      
    ![](images/L04/diad4l22.png) 
     
@@ -687,11 +690,11 @@ In this exercise, you will create a new custom connector.
     
 7. Select the **Test** from the drop down menu tab.
 
-    ![](images/L04/tstcnt.png)
+    ![](images/tstcnt.png)
     
 9. Make sure the connection you created is selected.
 
-    ![](images/L04/cntcr.png)
+    ![](images/cntcr.png)
     
 11. Turn on **Raw Body** and provide the JSON below and click **Test operation**.
     
@@ -730,8 +733,7 @@ Admin canvas application.
     you created.
      
     ![](images/L04/image%20(67).png)
-    
-    
+       
 4. Add the connector by clicking again.
 5. Click on the **... More actions** button of the connector you just added and select **Rename**.
     
@@ -743,13 +745,12 @@ Admin canvas application.
 
 7. Select the **Tree view** and expand the **Add Topic Screen**.
     
-    ![](images/L04/tree.png)
+    ![](images/tree.png)
 
 9. Select the **Add choice icon**.
  
     ![](images/L04/image%20(70).png)
-    
-    
+        
 9. Replace the **OnSelect** formula of the **Add choice icon** with the formula below. This adjusts the
     column names to match the API and encodes the photos.
    
@@ -770,7 +771,6 @@ Admin canvas application.
       Reset('Choice name textbox');
       Reset(AddMediaButton2)
       ```
-
 
 10. Select **Save topic icon**.
 11. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. This changes to
@@ -794,11 +794,11 @@ Admin canvas application.
     
 12. Click **File** and select **Save**.
    
-     ![](images/L04/savee.png)
+     ![](images/savee.png)
     
 13. Click on the  back button.
 
-    ![](images/L04/bck.png)
+    ![](images/bck.png)
 
 15. Do not navigate away from this page.
 
