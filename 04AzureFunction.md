@@ -85,11 +85,11 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
 ### Task 2: Create function
 
-1. Select **Azure Tools** from the left navigtion menu and navigate to the **Workspace** section.
+1. Select **Azure Tools (1)** from the left navigtion menu and navigate to the **Workspace (2)** section.
 
     ![](images/L04/vscode4.png)
 
-1. Click on **+** under **Workspace** section, click Create Function, and click **Create New Project**.
+1. Click on **+ (1)** under **Workspace** section, click **Create Function (2)**, and click **Create New Project**.
 
     ![](images/L04/vscode5.png)
 
@@ -339,7 +339,7 @@ In this exercise, you will implement the function.
    
     ![](images/L04/vscode20.png)
 
-17. Click **Terminal** and select **Run Build Task**.
+17. Click **Terminal (1)** and select **Run Build Task (2)**.
 
     ![](images/L04/vscode21.png)
 
@@ -364,7 +364,7 @@ In this exercise, you will deploy the function to Azure.
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    * Password: <inject key="AzureAdUserPassword"></inject>
 
-4. Close the sign in browser window once the sign in is process is completed.
+4. Close the sign in browser window once the sign in process is completed.
 
 5. Navigate back to Visual Studio Code and click on **+** that is next to your subscription to create new Function App.
   
@@ -399,11 +399,11 @@ In this exercise, you will deploy the function to Azure.
     
 12. Select **All resources** , search for the function app **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** that you have deployed earlier and click to open it.
   
-   ![](images/L04/vscode27.1.png)
+     ![](images/L04/vscode27.1.png)
 
 13. Select **Authentication** from the left hand side menu and click on **Add identity provider**.
   
-   ![](images/L04/image%20(29).png)
+     ![](images/L04/image%20(29).png)
 
 14. Select **Microsoft** for Identity provider and **Current tenant - Single tenant** for **Supported Account types** then click on **Add**.
    
@@ -411,11 +411,11 @@ In this exercise, you will deploy the function to Azure.
 
 15. Open the **Portal menu** by clicking on the Portal menu icon.
 
-    ![](images/L04/vscode28.png)
+     ![](images/L04/vscode28.png)
 
 16. Select **Azure Active Directory** from the list of resources.
     
-    ![](images/L04/vscode29.png)
+     ![](images/L04/vscode29.png)
 
 17. Select **App registrations** under **Manage**  from the left hand side menu.
 
@@ -483,28 +483,28 @@ In this exercise, you will deploy the function to Azure.
      
      ![](images/L04/vscode36.png)
 
-32. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
+32. Enter the following details on the **Add/Edit application setting** blade and click **OK (3)**.
       
-      - **Name**: **ClientID**
-      - **Value**: Paste the **PrioritZFL API application ID** that you have noted earlier in the notepad.
+      - **Name**: **ClientID (1)**
+      - **Value**: Paste the **PrioritZFL API application ID (2)** that you have noted earlier in the notepad.
 
      ![](images/L04/vscode37.png)
 
 33. Click **+ New application setting** again.
 
-34. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
+34. Enter the following details on the **Add/Edit application setting** blade and click **OK (3)**.
       
-      - **Name**: **ClientSecret**
-      - **Value**: Paste the **PrioritZFL API Secret** that you have noted earlier in the notepad.
+      - **Name**: **ClientSecret (1)**
+      - **Value**: Paste the **PrioritZFL API Secret (2)** that you have noted earlier in the notepad.
 
      ![](images/L04/vscode38.png)
      
 35. Click **+ New application setting** again.
 
-36. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
+36. Enter the following details on the **Add/Edit application setting** blade and click **OK (3)**.
       
-      - **Name**: **TenantID**
-      - **Value**: Paste the **TenantID** that you have noted earlier in the notepad.
+      - **Name**: **TenantID (1)**
+      - **Value**: Paste the **TenantID (2)** that you have noted earlier in the notepad.
 
      ![](images/L04/vscode39.png)
      
