@@ -51,9 +51,9 @@ In this exercise, you will build the code component.
 
 1. Start Visual Studio Code.
 2. Select the Power Platform tab and make sure your Dev Auth profile is selected. 
-    ```
-       NOTE: The Power Platform tab is already installed in lab 1.
-    ```
+    
+   >**Note** : The Power Platform tab is already installed.
+    
     ![](images/L02/image1.png)
 
 3. Click **Terminal** and select **New Terminal.**
@@ -431,10 +431,14 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
  
 7. Select the **Screens** tab.
 
-8. Expand **votescreen** and Select the **Votes gallery**.
+8. Expand **votescreen (1)** and Select the **Votes gallery (2)**.
 
+     ![](images/L02/L02-votescreen.png)
+    
 9. Set the **Width** value of the Votes gallery to **570**.
 
+     ![](images/L02/L02-width.png)
+    
 10. The screen should now look like the image below.
      
       ![](images/L02/image40.png)
@@ -454,6 +458,8 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     ```
     'Votes gallery'.AllItems
     ```
+     ![](images/L02/L02-voteitem.png)
+    
 15. Select the **PrioritZDnDRanking** go to the **Properties** pane ,set **Item Height** 160 and click **Edit Fields** .
 
       ![](images/L02/image43.png)
