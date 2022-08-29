@@ -50,11 +50,11 @@ In this exercise, you will build the code component.
 ### Task 1: Create the code component
 
 1. Start Visual Studio Code.
-2. Select the Power Platform tab and make sure your Dev Auth profile is selected. 
+2. Select the **Power Platform (1)** tab and make sure your **Dev Auth (2)** profile is selected. 
     
    >**Note** : The Power Platform tab is already installed.
     
-    ![](images/L02/image1.png)
+    ![](images/L02/L01-auth.png)
 
 3. Click **Terminal** and select **New Terminal.**
      
@@ -361,6 +361,8 @@ In this exercise, you will build the code component.
     ```
     pac pcf push --publisher-prefix contoso
     ```
+    >**Note** : If the run fails with nuget package error, try running the command again.
+    
 35. Wait for the solution to be imported and published to your environment.
 
       ![](images/L02/image31.png)
@@ -390,7 +392,7 @@ In this task, you will allow publishing of canvas apps with code components for 
      ```
         https://admin.powerplatform.microsoft.com/environments
      ```
-2. Open the dev environment you are using for this lab.
+2. Open the dev environment named Test_odl_user<inject key="Deployment ID" enableCopy="false" /> you are using for this lab.
 
  3. Click **Settings**.
     
