@@ -44,7 +44,7 @@ In this exercise, you will review the components of the solution that is already
    ```
 1. Now, click on **Environment (1)** and select the pre-created dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
-     ![](images/L01/L01-dev.png)
+     ![](images/L01/L01-dev1.png)
 
 2. Now, click on **Solutions** from the left hand side menu.
 
@@ -79,7 +79,7 @@ In this exercise, you will review the components of the solution that is already
 
 1. A new browser window will be opened to create the connection, in the search bar search for **Microsoft Dataverse (1)** and select it from the list.
 
-    ![](images/L01/L01-dataverse.png)
+    ![](images/L01/L01-dataverse1.png)
 
 1. Click on the **create** button to create a new connection.
 
@@ -103,7 +103,7 @@ In this exercise, you will review the components of the solution that is already
 
 9. Click on **Edit** button to review the flow.
   
-    ![](images/L01/NewUiImport.png)
+    ![](images/L01/L01-edit.png)
 
 10. Expand the **Parse JSON** step and review the data this flow will create.
 
