@@ -392,9 +392,10 @@ In this task, you will allow publishing of canvas apps with code components for 
      ```
         https://admin.powerplatform.microsoft.com/environments
      ```
-2. Open the dev environment named Test_odl_user<inject key="Deployment ID" enableCopy="false" /> you are using for this lab.
 
- 3. Click **Settings**.
+2. Open the dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />**  you are using for this lab.
+
+3. Click **Settings**.
     
      ![](images/L02/image34.png)
 
@@ -416,20 +417,18 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
    ```
 2. Select **Solutions** and open the **PrioritZ** solution.
     
-3. Select **Apps** , select the **PrioritZ** Ask app and click **Edit**.
+3. Select **Apps (1)** , select the **PrioritZ Ask (2)** app and click **Edit (3)**.
 
-     ![](images/L02/image37.png)
+     ![](images/L02/L02-edit.png)
 
 4. Select the **Components** tab, click on the **... Components option button** and select **Import**
     **components**.
 
      ![](images/L02/image38.png)
  
-5. Select the **Code** tab.
+1. Select the **Code (1)** tab, select the code component (2) you created and click **Import (3)**.
     
-6. Select the code component you created and click **Import**.
-    
-     ![](images/L02/image39.png)
+     ![](images/L02/L02-code.png)
  
 7. Select the **Screens** tab.
 
