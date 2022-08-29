@@ -32,18 +32,21 @@ flows and tables. You will be also adding a column to a table and modifying the 
 
 ## Exercise 1 - Review solution components
 
-In this exercise, you will review the components of the solution which is already imported, run a flow that will add
-sample data to your environment, and test the applications in the solution.
+In this exercise, you will review the components of the solution that is already imported in your dev environment. You will also run a flow that will add sample data to your environment, and test the applications in the solution.
 
 >**Note**: The Dev environment is already pre-created and Prioritz solution is imported into the Dev environment as a part of the prerequisites.
 
 ### Task 1: Review solution components and run flow
 
-1. Review data model diagram
-    
-     ![](images/L01/image7.png)
+1. Navigate to Power Apps maker portal by using below URL.
+   ```        
+    https://make.powerapps.com
+   ```
+1. Now, click on **Environment (1)** and select the pre-created dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
-2. Now, click on **Solutions** from the left hand side menu
+     ![](images/L01/L01-dev.png)
+
+2. Now, click on **Solutions** from the left hand side menu.
 
       ![](images/L01/Ex1-T1-2.png)
 
@@ -51,41 +54,68 @@ sample data to your environment, and test the applications in the solution.
     
      ![](images/L01/image8.png)
 
-4. Expand **Tables** and select the **PrioritZ Topic** table.
+4. Expand **Tables (1)** and select the **PrioritZ Topic (2)** table.
    
-     ![](images/L01/NewUi1.png)
+     ![](images/L01/L01-table1.png)
 
 5. Select the **Columns** under Schema and review the columns of the PrioritZ Topic table. The standard columns are built-in, and all tables have them.
  The custom columns were created by the team for this application.
  
-   ![](images/L01/NewUi2.png)
+   ![](images/L01/L01-coulumn.png)
 
 6. Select the **Relationships** tab from Columns dropdown and review how this table is related to other tables.
  
-    ![](images/L01/NewUi3.png)
+    ![](images/L01/L01-relation.png)
  
-    ![](images/L01/NewUi4.png)
+    ![](images/L01/L01-relation1.png)
 
-7. Select **Cloud flow**.
-8. Open the **Import sample data – Topics** flow.
+1. Now, select **Connection reference (1)** and click on **Microsoft Datavaerse Prioritz (2)**
+
+    ![](images/L01/L01-ref.png)
+
+1. In the pop up window opened, select the connection dropdown and click on **New Connection**.
+
+    ![](images/L01/L01-con.png)
+
+1. A new browser window will open, in the search bar type **Microsoft Dataverse (1)** and select the **Microsoft Dataverse (2)** from the list provided.
+
+    ![](images/L01/L01-dataverse.png)
+
+1. Click on the **create** button to create a new connection.
+
+    ![](images/L01/L01-create.png)
+
+1. Verify that the new connection is created or not and close the browser window.
+
+    ![](images/L01/L01-connection.png)
+
+1. Navigate back to the connection pop-up screen and click on **Refresh** and select the connection dropdown, you should see the connection added in the previous step.select the connection and click on Save. 
+
+    ![](images/L01/L01-newcon.png)
+
+1. click on **Save changes**
+
+    ![](images/L01/L01-save.png)
+
+1. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
  
-    ![](images/L01/image10.png)
+    ![](images/L01/L01-cloud.png)
 
-9. Click **Edit**.
+9. Click on **Edit** button to review the flow.
   
     ![](images/L01/NewUiImport.png)
 
 10. Expand the **Parse JSON** step and review the data this flow will create.
 
-    ![](images/L01/Ex1-T1-10.png)
+    ![](images/L01/L01-parse.png)
 
 11. Expand the **Apply to each topic** step.
     
-    ![](images/L01/EX1-T1-11-1.png)
+    ![](images/L01/L01-topic.png)
 
 12. Expand the **Apply to each topic item** step.
    
-     ![](images/L01/EX1-T1-12-2.png)
+     ![](images/L01/L01-eachtopic.png)
 
 13. The apply to each step should look like the image below. This is the logic for the automation.
  
@@ -99,11 +129,11 @@ sample data to your environment, and test the applications in the solution.
 
      ![](images/L01/EX1-T1-14.png)
 
-16. Click **Run** to run the flow.
+16. Click on **Run** to run the flow.
    
      ![](images/L01/image13.png)
 
-17. Click the **Run flow** on the Run flow blade.
+17. Click the **Run flow** button on the Run flow blade.
 
      ![](images/L01/L01-new.png)
 
@@ -122,20 +152,20 @@ sample data to your environment, and test the applications in the solution.
    ```
        https://make.powerapps.com
    ```
-2. Select **Apps**. You should see two applications. **PrioritZ Ask** and **PrioritZ Admin**. PrioritZ Admin
+2. Select **Apps (1)** and you should see two applications named **PrioritZ Ask** and **PrioritZ Admin (2)**. PrioritZ Admin
     app is used to manage topics being asked about. PrioritZ Ask app allows users to respond.
 
-      ![](images/L01/EX1-T2-2_1.png)
+      ![](images/L01/EX1-T2-2_1_1.png)
 
 3. Launch the **PrioritZ Admin** application.
     
-    ![](images/L01/image15.png)
+    ![](images/L01/L01-admin.png)
 
 4. You should see at least four topics.
 
     ![](images/L01/EX1-T2-4-2.png)
 
-5. Click to open one of the topics.
+5. Click to open **Event banner** topic.
 6. You should see the topic details with some topic items.
 
     ![](images/L01/EX1-T2-6-1.png)
@@ -146,12 +176,18 @@ sample data to your environment, and test the applications in the solution.
     
     ![](images/L01/image16.png)
 
-10. Provide a topic, details, respond by date and click add a picture.
+10. Provide the below information and click **add a picture**.
+     
+     Topic : Enter `Change Taco Tuesday to some other food`
+     
+     Details : Enter `People are tired of tacos, what should we have instead of tacos?`
+     
+     Respond By : Select **today's date**
      
      ![](images/L01/image17.png)
 
-11. Select any image from your computer.
-12. Type something on the Choice field and click add a picture.
+11. Navigate to this path `C:\LabFiles` in file explorer, select image.png and click open.
+12. Type **Tamale Tuesday** on the Choice field and click **add a picture**.
      
       ![](images/L01/image18.png)
 
@@ -159,7 +195,12 @@ sample data to your environment, and test the applications in the solution.
      
       ![](images/L01/image19.png)
 
-14. Add couple more choices.
+14. Add couple more choices by repeating step 12 and 13.
+       
+       Choice 1 : Enter `Steak Tuesday`
+       
+       Choice 2: Enter `Cheese and Wine Tuesday`
+
 15. Click **Save**.
     
     ![](images/L01/image20.png)
@@ -167,20 +208,20 @@ sample data to your environment, and test the applications in the solution.
 16. The new topic should be saved, and you should be navigated back to main screen.
 17. You should see the topic you added in the list of topics.
 
-     ![](images/L01/EX1-T2-17.png)
+     ![](images/L01/L01-taco.png)
 
 18. Close the PrioritZ Admin application.
-19. Launch the **PrioritZ Ask** application.
+19. Select **Apps (1)** and launch the **PrioritZ Ask (2)** application.
      
-     ![](images/L01/image21.png)
+     ![](images/L01/L01-prioritzask.png)
 
 20. You should see a list of topics. Open the topic you created.
 
-     ![](images/L01/EX1-T2-20.png)
+     ![](images/L01/L01-list.png)
 
 21. Click on the up/down icons and order the items in the order you prefer them and click **Vote**.
      
-      ![](images/L01/image22.png)
+      ![](images/L01/L01-choice.png)
 
 22. You should be navigated back to the main screens, and you should see a notification message.
       
@@ -199,18 +240,18 @@ application.
     ```
     https://make.powerapps.com
    ```
-2. Select **Solutions** and open the **PrioritZ** solution.
+2. Select **Solutions (1)** and open the **PrioritZ (2)** solution.
 
-   ![](images/L01/EX2-T1-2.png)
+   ![](images/L01/EX2-T1-2-1.png)
 
 3. Expand **Tables** and select the **PrioritZ Topic** table.
 4. Select the **Columns** tab and click **+ New column**.
 
     ![](images/L01/EX2-T1-4.png)
 
-5. Enter **My Notes** for Display name, select **Multiline Text** for Data type, and click **Save**.
+5. Enter **My Notes (1)** for Display name, select **Multiline Text (2)** for Data type, and click **Save (3)**.
 
-    ![](images/L01/NewUi5.png)
+    ![](images/L01/L01-notes.png)
 
 6. Do not navigate away from this page.
 
@@ -283,7 +324,7 @@ application.
 
 17. Click **+**.
 
-      ![](images/L01/L01-add.png)
+      ![](images/L01/L01-taco-1_1.png)
 
 18. Fill out the form, add some choices, and then click **Save**.
  
@@ -313,15 +354,12 @@ application.
       ```
         https://admin.powerplatform.microsoft.com/environments
       ```
-2. Click to open your dev environment you created.
+2. Click to open your dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />**.
 3. Copy the Environment URL and keep it in your clipboard or on notepad.
  
     ![](images/L01/image37.png)
 
 4. Open Visual Studio Code.
-5. You can observe the Power Platform CLI tool is already installed.
-
-    ![](images/L01/EX3-T1-CLI.png)
 
 6. Click **Terminal** and select **New Terminal**.
 
@@ -342,9 +380,9 @@ application.
   ![](images/L01/Eeditpac.png)
 
 
-9. You should now have at least one auth profile. If you have more than profile, make sure the profile you created is selected
+9. Select **Power Platform (1)** tool, you should now have at least one **auth profile (2)**. If you have more than profile, make sure the profile you created is selected
    
-   ![](images/L01/DevAuth.png)
+   ![](images/L01/L01-auth.png)
 
 10. Click **Terminal** and select **New Terminal**.
 
