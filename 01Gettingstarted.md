@@ -260,17 +260,17 @@ application.
 ### Task 2: Update admin app
 
 1. Make sure you are still in the **PrioritZ** solution.
-2. Select **Apps** and select the **PrioritZ Admin** application and click on **Edit**.
+2. Select **Apps (1)** and select the **PrioritZ Admin (2)** application and click on **Edit (3)**.
     
-    ![](images/L01/image25.png)
+    ![](images/L01/L01-adminedit.png)
 
 3. Select the **Add Topic Screen**.
 
     ![](images/L01/L01-addtopic.png)
 
-4. Select the **Insert** tab, click **Text** , and then select **Text input**.
+4. Select the **Insert (1)** tab, click **Text (2)** , and then select **Text input (3)**.
    
-     ![](images/L01/image26.png)
+     ![](images/L01/L01-insert.png)
 
 5. Rename the text input **Notes textbox**.
     
@@ -328,9 +328,17 @@ application.
 
       ![](images/L01/L01-taco-1_1.png)
 
-18. Fill out the form, add some choices, and then click **Save**.
- 
-      ![](images/L01/image35.png)
+18. Fill out the form by providing below information, add some choices, and then click **Save**.
+  
+       Topic: `Test Notes` (1)
+       
+       Details: `Testing the notes` (2)
+       
+       Text input: `Prioritz Admin topic` (3)
+       
+       Respond By: **Today's date** (4)
+      
+      ![](images/L01/L01-testnotes.png)
 
 19. The new topic should be **saved**.
 20. Click to open the topic you just created.
