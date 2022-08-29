@@ -49,7 +49,10 @@ In this exercise, you will build the code component.
 
 ### Task 1: Create the code component
 
-1. Start Visual Studio Code.
+1. Start **Visual Studio Code** using the shortcut available on the desktop.
+
+   ![](images/L04/vscode1.png)
+   
 2. Select the **Power Platform (1)** tab and make sure your **Dev Auth (2)** profile is selected. 
     
    >**Note** : The Power Platform tab is already installed.
@@ -98,12 +101,11 @@ In this exercise, you will build the code component.
 
       ![](images/L02/image6.png)
 
-12. Locate **data-set** XML element.
+12. Locate **data-set** XML element in the **ControlManifest.Input.xml** file.
 
       ![](images/L02/image7.png)
 
-13. change the **name** to **items** and the **display-name-key** to **items**. This defines the property the app
-    will bind to a collection of items.
+13. Change the **name** to **items** and the **display-name-key** to **items**. This defines the property the app will bind to a collection of items.
 
       ![](images/L02/image8.png)
 
@@ -189,17 +191,17 @@ In this exercise, you will build the code component.
 6. Open the **PriorityComponent.tsx** and review the contents. This implements the React
     component that will be rendered to represent our draggable items.
     
-7. Notice line 9 from ‘react-beautiful-dnd’ has a red underline. This is a npm package the
+7. Notice line 9 `from react-beautiful-dnd` has a red underline. This is a npm package the
     component uses that we haven’t referenced.
 
      ![](images/L02/image17.png)
  
- 8. Run the following command in a terminal window to add a reference to react-beautiful-dnd
+ 8. Run the following command in a terminal window to add a reference to react-beautiful-dnd.
 
     ```
     npm install react-beautiful-dnd
     ```
-9. And the following command for the type definitions.
+9. Run the following command for the type definitions.
 
     ```
     npm i --save-dev @types/react-beautiful-dnd
@@ -278,7 +280,7 @@ In this exercise, you will build the code component.
     }
     ```
 
-   ![](images/L02/image24.png)
+    ![](images/L02/image24.png)
  
 21. Add the function below after the **destroy** function. This logic handles the onReorder event from
     the PriorityComponent and identifies the involved items to the hosting app as selected items.
@@ -295,7 +297,7 @@ In this exercise, you will build the code component.
     };
     ```
   
-   ![](images/L02/image25.png)
+    ![](images/L02/image25.png)
  
 22. Open the **package.json** file.
     
@@ -370,9 +372,12 @@ In this exercise, you will build the code component.
  
 ### Task 3: Confirm the control was added to environment
 
-1. Navigate to https://make.powerapps.com/ and make sure you have the Dev environment
-    selected.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
 
+   ```
+    https://make.powerapps.com/
+    ```
+    
 2. Select **Solutions** and open the **PowerAppsTools** solution.
     
     ![](images/L02/image32.png)
@@ -394,9 +399,9 @@ In this task, you will allow publishing of canvas apps with code components for 
         https://admin.powerplatform.microsoft.com/environments
      ```
 
-2. Open the dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />**  you are using for this lab.
+2. Open the dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />** that you are using for this lab.
 
-3. Click **Settings**.
+3. Click **Settings** from top menu.
     
      ![](images/L02/image34.png)
 
@@ -412,9 +417,9 @@ In this task, you will allow publishing of canvas apps with code components for 
 
 In this task, you will edit the PrioritZ Ask canvas application to use the code component you created.
 
-1. Navigate to Power Apps maker portal  by using below URLand make sure you are in the correct dev environment.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
    ```   
-   https://powerapps.microsoft.com/en-in/ 
+   https://make.powerapps.com/
    ```
 2. Select **Solutions** and open the **PrioritZ** solution.
     
@@ -422,7 +427,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
      ![](images/L02/L02-edit.png)
 
-4. Select the **Components** tab, click on the **... Components option button** and select **Import**
+4. Select the **Components** tab, click on the ellipsis button (**...**) and select **Import**
     **components**.
 
      ![](images/L02/image38.png)
@@ -449,7 +454,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
       
      ![](images/L02/image41.png)
  
-12. Select under **Code Component**  **PrioritZDnDRanking**.
+12. Select the component **PrioritZDnDRanking** under **Code Components**.
       
      ![](images/L02/image42.png)
  
@@ -462,13 +467,13 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     ```
      ![](images/L02/L02-voteitem.png)
     
-15. Select the **PrioritZDnDRanking** go to the **Properties** pane ,set **Item Height** 160 and click **Edit Fields** .
+15. Select the **PrioritZDnDRanking**, go to the **Properties** pane ,set **Item Height** 160 and click **Edit Fields** .
 
       ![](images/L02/image43.png)
 
-16. Click **+ Add field**.
+16. Click on **+ Add field** to add a new field.
     
-17. Select **Rank** and click **Add**.
+17. Select **Rank** and click on **Add**.
      
       ![](images/L02/image44.png)
  
@@ -486,19 +491,19 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
  
 21. Select the **PrioritZDnDRanking** component.
     
-22. Set the **X** value of the **PrioritZDnDRanking** component to the formula below.
+22. Set the **X** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     'Votes gallery'.Width
     ```
 23. Set the **Width** value of the **PrioritZDnDRanking** component to **60**.
     
-24. Set the **Height** value of the **PrioritZDnDRanking** component to the formula below.
+24. Set the **Height** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     'Votes gallery'.Height
     ```
-25. Set the **ItemHeight** value of the **PrioritZDnDRanking** component to the formula below.
+25. Set the **ItemHeight** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     'Votes gallery'.TemplateHeight
@@ -507,13 +512,13 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     
 27. Set the **DragBackgroundColor** value of the **PrioritZDnDRanking** component to **"#A70202".**
 
-28. Set the **Y** value of the **PrioritZDnDRanking** component to the formula below.
+28. Set the **Y** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     'Votes gallery'.Y
     ```
     
-29. Set the **OnSelect** value of the **PrioritZDnDRanking** component to the formula below.
+29. Set the **OnSelect** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     With(
@@ -582,8 +587,11 @@ In this exercise, you will add the code component you created to the PrioritZ so
 
 ### Task 1: Add component to solution
 
-1. Navigate to https://make.powerapps.com/ and make sure you have the **Dev** environment
-    selected.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+
+   ```
+    https://make.powerapps.com/
+    ```
 2. Select **Solutions** and open the **PrioritZ** solution.
 3. Click **Add existing** and select **More | Developer | Custom control**.
       
