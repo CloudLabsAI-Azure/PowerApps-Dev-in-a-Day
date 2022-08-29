@@ -361,6 +361,7 @@ In this exercise, you will build the code component.
     ```
     pac pcf push --publisher-prefix contoso
     ```
+    
     >**Note** : If the run fails with nuget package error, try running the command again.
     
 35. Wait for the solution to be imported and published to your environment.
