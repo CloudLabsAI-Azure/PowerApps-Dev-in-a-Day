@@ -32,19 +32,19 @@ flows and tables. You will be also adding a column to a table and modifying the 
 
 ## Exercise 1 - Review solution components
 
-In this exercise, you will review the components of the solution that is already imported in your dev environment. You will also run a flow that will add sample data to your environment, and test the applications in the solution.
+In this exercise, you will review the components of the solution that is already imported in your pre-created dev environment. You will also run a flow that will add sample data to your environment, and test the applications in the solution.
 
 >**Note**: The Dev environment is already pre-created and Prioritz solution is imported into the Dev environment as a part of the prerequisites.
 
 ### Task 1: Review solution components and run flow
 
-1. Navigate to Power Apps maker portal by using below URL.
+1. Navigate to **Power Apps maker **portal by using the below URL.
    ```        
     https://make.powerapps.com
    ```
 1. Now, click on **Environment (1)** and select the pre-created dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
-     ![](images/L01/L01-dev1.png)
+     ![](images/L01/L01-dev.png)
 
 2. Now, click on **Solutions** from the left hand side menu.
 
@@ -58,7 +58,7 @@ In this exercise, you will review the components of the solution that is already
    
      ![](images/L01/L01-table1.png)
 
-5. Select the **Columns** under Schema and review the columns of the PrioritZ Topic table. The standard columns are built-in, and all tables have them.
+5. Select the **Columns** under Schema and review the columns of the **PrioritZ Topic** table. The standard columns are built-in, and all tables have them.
  The custom columns were created by the team for this application.
  
    ![](images/L01/L01-coulumn.png)
@@ -69,31 +69,31 @@ In this exercise, you will review the components of the solution that is already
  
     ![](images/L01/L01-relation1.png)
 
-1. Now, select **Connection reference (1)** and click on **Microsoft Datavaerse Prioritz (2)**
+1. Now, select **Connection reference (1)** and click on **Microsoft Dataverse Prioritz (2)**.
 
     ![](images/L01/L01-ref.png)
 
-1. In the pop up window opened, select the connection dropdown and click on **New Connection**.
+1. On the **Edit Microsoft Dataverse Prioritz** connection window, select the **Connection** dropdown and click on **New Connection**.
 
     ![](images/L01/L01-con.png)
 
-1. A new browser window will open, in the search bar type **Microsoft Dataverse (1)** and select the **Microsoft Dataverse (2)** from the list provided.
+1. A new browser window will be opened to create the connection, in the search bar search for **Microsoft Dataverse (1)** and select it from the list.
 
-    ![](images/L01/L01-dataverse1.png)
+    ![](images/L01/L01-dataverse.png)
 
 1. Click on the **create** button to create a new connection.
 
     ![](images/L01/L01-create.png)
 
-1. Verify that the new connection is created or not and close the browser window.
+1. Verify the new connection that is created and close the browser window.
 
     ![](images/L01/L01-connection.png)
 
-1. Navigate back to the connection pop-up screen and click on **Refresh** and select the connection dropdown, you should see the connection added in the previous step.select the connection and click on Save. 
+1. Navigate back to the **Edit Microsoft Dataverse Prioritz** connection window and click on **Refresh**. Select the connection dropdown, you should see the connection added in the previous step, select the connection and click on Save. 
 
     ![](images/L01/L01-newcon.png)
 
-1. click on **Save changes**
+1. Click on **Save changes** on **Save Changes to this connection reference** pop-up.
 
     ![](images/L01/L01-save.png)
 
@@ -103,7 +103,7 @@ In this exercise, you will review the components of the solution that is already
 
 9. Click on **Edit** button to review the flow.
   
-    ![](images/L01/L01-edit.png)
+    ![](images/L01/NewUiImport.png)
 
 10. Expand the **Parse JSON** step and review the data this flow will create.
 
@@ -117,7 +117,7 @@ In this exercise, you will review the components of the solution that is already
    
      ![](images/L01/L01-eachtopic.png)
 
-13. The apply to each step should look like the image below. This is the logic for the automation.
+13. The **Apply to each** step should look like the image below. This is the logic for the automation.
  
      ![](images/L01/image11.png)
 
@@ -125,7 +125,7 @@ In this exercise, you will review the components of the solution that is already
  
      ![](images/L01/image12.png)
 
-15. Click on the flow name to open the flow detail screen.
+15. Click on the flow name to open the flow details screen.
 
      ![](images/L01/EX1-T1-14.png)
 
@@ -148,12 +148,12 @@ In this exercise, you will review the components of the solution that is already
 
 ### Task 2: Test the apps
 
-1. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
    ```
        https://make.powerapps.com
    ```
-2. Select **Apps (1)** and you should see two applications named **PrioritZ Ask** and **PrioritZ Admin (2)**. PrioritZ Admin
-    app is used to manage topics being asked about. PrioritZ Ask app allows users to respond.
+2. Select **Apps (1)** and you should see two applications named **PrioritZ Ask** and **PrioritZ Admin (2)**. **PrioritZ Admin**
+    app is used to manage topics being asked about and **PrioritZ Ask** app allows users to respond.
 
       ![](images/L01/EX1-T2-2_1_1.png)
 
@@ -161,7 +161,7 @@ In this exercise, you will review the components of the solution that is already
     
     ![](images/L01/L01-admin.png)
 
-4. You should see at least four topics.
+4. You should see the below four topics.
 
     ![](images/L01/EX1-T2-4-2.png)
 
@@ -178,18 +178,20 @@ In this exercise, you will review the components of the solution that is already
 
 10. Provide the below information and click **add a picture**.
      
-     Topic : Enter `Change Taco Tuesday to some other food`
+     1. Topic : Enter `Change Taco Tuesday to some other food`
      
-     Details : Enter `People are tired of tacos, what should we have instead of tacos?`
+     1. Details : Enter `People are tired of tacos, what should we have instead of tacos?`
      
-     Respond By : Select **today's date**
+     1. Respond By : Select **today's date**
      
      ![](images/L01/image17.png)
 
-11. Navigate to this path `C:\LabFiles` in file explorer, select image.png and click open.
+
 12. Type **Tamale Tuesday** on the Choice field and click **add a picture**.
      
       ![](images/L01/image18.png)
+
+11. Navigate to this path `C:\LabFiles` in file explorer, select **image.png** and click open.
 
 13. Click **+** to add the choice.
      
@@ -201,7 +203,7 @@ In this exercise, you will review the components of the solution that is already
        
        Choice 2: Enter `Cheese and Wine Tuesday`
 
-15. Click **Save**.
+15. Click on **Save** button to save th topic.
     
     ![](images/L01/image20.png)
 
@@ -219,7 +221,7 @@ In this exercise, you will review the components of the solution that is already
 
      ![](images/L01/L01-list.png)
 
-21. Click on the up/down icons and order the items in the order you prefer them and click **Vote**.
+21. Click on the **up/down** icons and order the items in the order you prefer them and click **Vote**.
      
       ![](images/L01/L01-choice.png)
 
@@ -236,7 +238,7 @@ application.
 
 ### Task 1: Add a new column
 
-1. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
     ```
     https://make.powerapps.com
    ```
@@ -322,7 +324,7 @@ application.
       
       ![](images/L01/image34.png)
 
-17. Click **+**.
+17. Click on the **+** button to add a new topic.
 
       ![](images/L01/L01-taco-1_1.png)
 
@@ -345,10 +347,11 @@ application.
 
  26. You may close the **app designer**.
 
-## Exercise 3 – Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension
+## Exercise 3 – Test the Power Platform CLI
 
-### Task 1: Test the Power Platform CLI
->**Note**: Visual studio code and Power platform CLI installation is already done as a part of the prerequisits.
+In this exercise, you will review and test the Power Platform CLI extension in Visual Studio Code.
+
+>**Note**: Visual studio code and Power platform CLI installation is already done as a part of the prerequisites.
 
 1. Navigate to Power Platform admin center by using below URL and select **Environments**.
       ```
