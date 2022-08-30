@@ -55,18 +55,20 @@ connectors must be in a separate solution from the apps and flows that use them.
 
 ### Task 1: Create solution
 
-1. Navigate to Power Apps maker portal and make sure you are in your dev environment. 
+1. Navigate to Power Apps maker portal and select **Environments (1)**, make sure you are in your dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
 
          https://make.powerapps.com 
+
+    ![](images/L03/L01-dev1.png)
 
 2. Select **Solutions** and click **+ New solution**.
 
     ![](images/L03/L03-solution.png)
 
-3. Enter **Contoso Badges connector** for Display name, select **Contoso Coffee** for Publisher, and
-    click **Create**.
+3. Enter **Contoso Badges connector (1)** for Display name, select **Contoso Coffee (2)** for Publisher, and
+    click **Create (3)**.
    
-   ![](images/L03/image2.png)
+   ![](images/L03/image2-1.png)
 
 ## Exercise 2 – Create Custom Connector
 
@@ -89,47 +91,53 @@ In this exercise, you will create a custom connector from an existing API.
      ![](images/L03/image4.png)
 
 5. Save the **swagger.json** file on your machine.
-6. Navigate to Power Apps  maker portal and make sure you are in your dev environment.
+6. Navigate to Power Apps  maker portal and make sure you are in your dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />**.
 
          https://make.powerapps.com
 
-7. Select **Solutions** open the **Contoso Badges connector** solution you created.
-8. Click **+ New | Automation** and select **Custom connector**.
+7. Select **Solutions (1)** open the **Contoso Badges connector (2)** solution you created.
+
+     ![](images/L03/L03-contoso.png)
+
+8. Click **+ New (1) | Automation (2)** and select **Custom connector (3)**.
      
-     ![](images/L03/image5.png)
+     ![](images/L03/image5-1.png)
 
 
-9. Enter **Badges connector** for Connector name, **Connector for badges** for Description,
-    **contosobadgestest.azurewebsites.net** for Host, and click **Create connector**.
+9. Enter **Badges connector (1)** for Connector name, **Connector for badges (2)** for Description,
+    **contosobadgestest.azurewebsites.net (3)** for Host, and click **Create connector (4)**.
     
-    ![](images/L03/image6.png)
+    ![](images/L03/L03-badges1.png)
 
-10. Select **Custom connectors** from the sitemap.
-11. Click on the **... More actions** button of the custom connector you created and select **Update**
-    **from Open API file**.
+1. Select **Custom connectors (1)** from the sitemap.Click on the **... More actions (2)** button of the custom connector you created and select **Update from Open API file (3)** 
 
-      ![](images/L03/image7.png)
+      ![](images/L03/L03-custom.png)
 
 12. Click **Import**.
+
+      ![](images/L03/L03-import.png)
+
 13. Select the **swagger.json** file you saved to your machine and click **Open**.
 14. Click **Continue**.
     
-    ![](images/L03/image8.png)
+    ![](images/L03/image8-1.png)
 
-15. Enter **Connector for badges** for Description, **contosobadgestest.azurewebsites.net** for Host,
-    and advance to **Security**.
+15. Enter **Connector for badges (1)** for Description, **contosobadgestest.azurewebsites.net (2)** for Host,
+    and advance to **Security (3)**.
       
-      ![](images/L03/image9.png)
+      ![](images/L03/image9-1.png)
 
-16. Review the security configuration and advance to **Definition**.
+16. Review the **security configuration (1)** and advance to **Definition (2)**.
+
+      ![](images/L03/L03-security.png)
+
 17. Do not navigate away from this page.
 
 ### Task 2: Modify the definition
 
-1. Select the **AddCredit** action.
-2. Select **Important** for Visibility.
+1. Select the **AddCredit (1)** action and select **Important (2)** for Visibility.
     
-     ![](images/L03/image10.png)
+     ![](images/L03/image10-1.png)
 
 3. Scroll down to the **Request** section, click on the chevron button of the **body** and select **Edit**.
      
@@ -144,15 +152,30 @@ In this exercise, you will create a custom connector from an existing API.
      ![](images/L03/image13.png)
 
 6. Click on the chevron button of **recipientid** and select **Edit**.
+
+     ![](images/L03/L03-recepient.png)
+
 7. Select **Yes** for Is required and click on the  **Back** button.
+
+     ![](images/L03/image13.png)
+
 8. Click on the chevron button of **name** and select **Edit**.
+
+     ![](images/L03/L03-name.png)
+
 9. Select **Yes** for Is required and click on the  **Back** button.
+
+     ![](images/L03/image13.png)
+
 10. Click on the  **Back** button again.
 
       ![](images/L03/image14.png)
 
 11. Advance to **Code**.
 12. Review the code and advance to **Test**.
+
+      ![](images/L03/L03-test.png)
+
 13. Click **Update connector** and wait for the connector to be updated
 
      ![](images/L03/image15.png)
@@ -177,9 +200,9 @@ In this exercise, you will create a custom connector from an existing API.
     
      ![](images/L03/image17.png)
 
-5. Paste the **API Key** you copied and click **Create connection**.
+5. Paste the **API Key (1)** you copied and click **Create connection (2)**.
    
-    ![](images/L03/image18.png)
+    ![](images/L03/image18-1.png)
 
 6. Click on the **Refresh** connections button.
    
@@ -187,11 +210,10 @@ In this exercise, you will create a custom connector from an existing API.
 
 
 7. The connection you created should get selected.
-8. Go to the **AddCredit** operation.
-9. Enter your email address for recipientid, enter your name for name, enter **1** for points, and click
-    **Test operation**.
+1. Go to the **AddCredit (1)** operation. Enter your email address for recipientid, enter your name for name, enter **1** for points, and click
+    **Test operation (2)**.
     
-    ![](images/L03/image20.png)
+    ![](images/L03/image20-1.png)
 
 10. The test should succeed, and the response should look like the image below.
      
@@ -201,14 +223,14 @@ In this exercise, you will create a custom connector from an existing API.
 11. Select the **GetRecipient** operation.
 12. Provide your email address as the id and click **Test operation**.
       
-     ![](images/L03/image22.png)
+     ![](images/L03/image22-1.png)
 
 13. The test should succeed, and you should get expected response.
 
 14. Go ahead and test the ListBadges and ListRecipients operations.
 15. All the tests should succeed.
   
-  ![](images/L03/image23.png)
+     ![](images/L03/image23.png)
 
 
 ## Exercise 3 – Add Custom Code
@@ -236,40 +258,40 @@ You will do this by using the custom code feature to reshape the response from t
   
     ![](images/L03/L03-EX3.png)
 
-5. Enter **Get current badge** for Summary, **Get current badge** for Description, and **getcurrentbadge**
+5. Enter **Get current badge (1)** for Summary, **Get current badge (2)** for Description, and **getcurrentbadge (3)**
     for Operation ID.
     
-    ![](images/L03/image26.png)
+    ![](images/L03/image26-1.png)
 
 6. Scroll down to the **Request** section and click **+ Import from sample**.
     
     ![](images/L03/image27.png)
 
-7. Select Get for Verb, enter the below value for URL, and click **Import**.
+7. Select **Get (1)** for Verb, enter the below value for **URL (2)**, and click **Import (3)**.
    ```
    https://contosobadgestest.azurewebsites.net/getcurrentbadge?id={id} 
    ```
 
-    ![](images/L03/image28.png)
+    ![](images/L03/image28-1.png)
 
 8. Click **Update connector** and wait for the connector to be updated.
-9. Select the **Code** tab.
-10. Enable **Code** and click **Upload**.
+9. Select the **Code** tab from the dropdown.
+10. Enable **Code (1)** and click **Upload (2)**.
     
-     ![](images/L03/image29.png)
+     ![](images/L03/image29-1.png)
 
 11. Select the **CustomConnectorCode.csx** file located in this path `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` and click **Open**.
-12. Select the **getcurrentbadge** action.
+12. Select the **getcurrentbadge** action from the dropdown.
      
      ![](images/L03/image30.png)
 
 13. Review the code you just added.
 14. Click **Update connector** and wait for the connector to be updated.
-15. Advance to **Test**.
+15. Advance to **Test** by selecting it in the dropdown.
 16. Select the **getcurrentbadge** action.
 17. Provide your email address as id and click **Test operation**.
      
-     ![](images/L03/image31.png)
+     ![](images/L03/image31-1.png)
 
 
 18. The test should succeed, and you should get current badge for the user you created.
@@ -278,7 +300,7 @@ You will do this by using the custom code feature to reshape the response from t
 
 19. Copy the Response **Body** JSON.
 
-20. Select the Definition tab.
+20. Select the Definition tab from the dropdown.
 
 21. Select the **getcurrentbadge** action.
      
@@ -289,9 +311,9 @@ You will do this by using the custom code feature to reshape the response from t
       ![](images/L03/image34.png)
 
 
-23. Paste the JSON you copied in the **Body** and click **Import**.
+23. Paste the JSON you copied in the **Body (1)** and click **Import (2)**.
      
-     ![](images/L03/image35.png)
+     ![](images/L03/image35-1.png)
 
 24. Click **Update connector** and wait for the connector to be updated.
 25. **Do not** navigate away from this page.
@@ -304,10 +326,9 @@ In this task, you will test your custom code.
 2. Select the connection you created earlier.
 
 
-3. Go to the **Operations** section and select the **getcurrentbadge** operation.
-4. Provide your email as **id** and click **Test operation**.
+1. Go to the **Operations** section and select the **getcurrentbadge (1)** operation. Provide your email as **id (2)** and click **Test operation (3)**.
    
-     ![](images/L03/image36.png)
+     ![](images/L03/image36-1.png)
 
 5. The operation should succeed, and the response **Body** should look like the image below.
     
@@ -326,9 +347,9 @@ PrioritZ Ask canvas application.
           https://make.powerapps.com
 
 2. Expand **Solutions** and open the **PrioritZ** solution.
-3. Select **Apps** , select the **PrioritZ Ask** application, and click **Edit**.
+3. Select **Apps (1)** , select the **PrioritZ Ask (2)** application, and click **Edit (3)**.
  
-     ![](images/L03/image38.png)
+     ![](images/L03/image38-1.png)
 
 4. Select **Data** from the left and click **+ Add data.**
      
@@ -356,15 +377,15 @@ https://contosobadgestest.azurewebsites.net/
     ![](images/L03/image41.png)
 
 9. Copy the **API Key**. Keep this API Key in a notepad, you will need it again.
-10. Go back to the app designer, paste the **API Key** you copied, and click **Connect**.
+10. Go back to the app designer, paste the **API Key (1)** you copied, and click **Connect (2)**.
      
-     ![](images/L03/image42.png)
+     ![](images/L03/image42-1.png)
 
 
 11. Select the **Tree view**.
-12. Select the **Components** tab, go to the **Insert** tab, click **Media** , and then select **Image**.
+12. Select the **Components (1)** tab, go to the **Insert (2)** tab, click **Media** , and then select **Image (3)**.
      
-     ![](images/L03/image43.png)
+     ![](images/L03/L03-component.png)
 
 13. Change the Image name to **User badge**.
     
