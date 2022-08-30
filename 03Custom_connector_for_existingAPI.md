@@ -524,7 +524,7 @@ environment and import it to Test environment.
 
 ###  Task 1: (ii) Import solution
 
-1. Navigate to Power Apps  maker portal and select your **Test** environment.
+1. Navigate to Power Apps maker portal and select your **Default** environment named OTU XXXXXX (default).
 
          https://make.powerapps.com
 
