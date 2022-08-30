@@ -49,16 +49,19 @@ In this exercise, you will build the code component.
 
 ### Task 1: Create the code component
 
-1. Start Visual Studio Code.
-2. Select the Power Platform tab and make sure your Dev Auth profile is selected. 
-    ```
-       NOTE: The Power Platform tab is only available if you installed the Power Platform extension as explained in lab 1.
-    ```
-    ![](images/L02/image1.png)
+1. Start **Visual Studio Code** using the shortcut available on the desktop.
 
-3. Click **Terminal** and select **New Terminal.**
+   ![](images/L04/vscode1.png)
+   
+2. Select the **Power Platform (1)** tab and make sure your **Dev Auth (2)** profile is selected. 
+    
+   >**Note** : The Power Platform tab is already installed.
+    
+    ![](images/L02/L01-auth.png)
+
+3. Click **Terminal (1)** and select **New Terminal (2).**
      
-     ![](images/L02/image2.png)
+     ![](images/L02/L02-terminal.png)
 
 4. In the Terminal window, make a new directory by running the command below.
 
@@ -87,9 +90,9 @@ In this exercise, you will build the code component.
     code -a.
     ```
 
-9. Review the created code component files.
+9. Review the created code component files by selecting the **Explorer** tab.
     
-     ![](images/L02/image5.png)
+     ![](images/L02/L02-explorer.png)
 
 10. Expand the **PrioritZDnDRanking** folder and then expand the component folder.
 
@@ -98,16 +101,15 @@ In this exercise, you will build the code component.
 
       ![](images/L02/image6.png)
 
-12. Locate **data-set** XML element.
+12. Locate **data-set** XML element in the **ControlManifest.Input.xml** file.
 
       ![](images/L02/image7.png)
 
-13. change the **name** to **items** and the **display-name-key** to **items**. This defines the property the app
-    will bind to a collection of items.
+13. Change the **name** to **items** and the **display-name-key** to **items**. This defines the property the app will bind to a collection of items.
 
       ![](images/L02/image8.png)
 
-14. Add the following properties after the closing tag of the data-set element **</data-set** >.
+14. Add the following properties after the closing tag of the data-set element **</data-set**>.
 
     ```
     <property name="BackgroundColor" display-name-key="Background color" usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
@@ -138,7 +140,7 @@ In this exercise, you will build the code component.
       ![](images/L02/image12.png)
 
 19. Name the new folder **css**.
-20. Select the new **css** folder you created and then click New File
+20. Select the new **css** folder you created and then click **New File**
  
      ![](images/L02/image13.png)
  
@@ -171,14 +173,14 @@ In this exercise, you will build the code component.
 ### Task 2: Implement the component logic
 
 1. Remove the HelloWorld.tsx component file that is automatically created as we won’t be using it.
-    
+     
+     ![](images/L02/L02-EX1-T2-1.png)
+
 2. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` in file explorer.
     
 3. Drag the **PriorityComponent.tsx** file and drop it in the **PrioriZDnDRanking** folder.
  
-     ![](images/L02/image15.png)
- 
- 4. The **PriorityComponent.tsx** file should now be in the **PrioriZDnDRanking** folder.
+4. The **PriorityComponent.tsx** file should now be in the **PrioriZDnDRanking** folder.
 
      ![](images/L02/image16.png)
 
@@ -187,17 +189,17 @@ In this exercise, you will build the code component.
 6. Open the **PriorityComponent.tsx** and review the contents. This implements the React
     component that will be rendered to represent our draggable items.
     
-7. Notice line 9 from ‘react-beautiful-dnd’ has a red underline. This is a npm package the
+7. Notice line 9 `from react-beautiful-dnd` has a red underline. This is a npm package the
     component uses that we haven’t referenced.
 
      ![](images/L02/image17.png)
  
- 8. Run the following command in a terminal window to add a reference to react-beautiful-dnd
+ 8. Run the following command in a terminal window to add a reference to react-beautiful-dnd.
 
     ```
     npm install react-beautiful-dnd
     ```
-9. And the following command for the type definitions.
+9. Run the following command for the type definitions.
 
     ```
     npm i --save-dev @types/react-beautiful-dnd
@@ -276,7 +278,7 @@ In this exercise, you will build the code component.
     }
     ```
 
-   ![](images/L02/image24.png)
+    ![](images/L02/image24.png)
  
 21. Add the function below after the **destroy** function. This logic handles the onReorder event from
     the PriorityComponent and identifies the involved items to the hosting app as selected items.
@@ -293,7 +295,7 @@ In this exercise, you will build the code component.
     };
     ```
   
-   ![](images/L02/image25.png)
+    ![](images/L02/image25.png)
  
 22. Open the **package.json** file.
     
@@ -340,7 +342,7 @@ In this exercise, you will build the code component.
         npm start
         ```
 
-30. The test harness should start. Try dragging the items and see if the behavior functions as
+30. The test harness should start, if not then copy the address and paste it in a new browser window. Try dragging the items and see if the behavior functions as
     expected.
 
       ![](images/L02/imagee29.png)
@@ -359,15 +361,26 @@ In this exercise, you will build the code component.
     ```
     pac pcf push --publisher-prefix contoso
     ```
+    
+    >**Note** : If the run fails with nuget package error,run the below command in Powershell and try running the above command again.
+    
+    ```
+    dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
+    ```
+    
+    
 35. Wait for the solution to be imported and published to your environment.
 
       ![](images/L02/image31.png)
  
 ### Task 3: Confirm the control was added to environment
 
-1. Navigate to https://make.powerapps.com/ and make sure you have the Dev environment
-    selected.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
 
+   ```
+    https://make.powerapps.com/
+    ```
+    
 2. Select **Solutions** and open the **PowerAppsTools** solution.
     
     ![](images/L02/image32.png)
@@ -388,9 +401,10 @@ In this task, you will allow publishing of canvas apps with code components for 
      ```
         https://admin.powerplatform.microsoft.com/environments
      ```
-2. Open the dev environment you are using for this lab.
 
- 3. Click **Settings**.
+2. Open the dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />** that you are using for this lab.
+
+3. Click **Settings** from top menu.
     
      ![](images/L02/image34.png)
 
@@ -406,33 +420,35 @@ In this task, you will allow publishing of canvas apps with code components for 
 
 In this task, you will edit the PrioritZ Ask canvas application to use the code component you created.
 
-1. Navigate to Power Apps maker portal  by using below URLand make sure you are in the correct dev environment.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
    ```   
-   https://powerapps.microsoft.com/en-in/ 
+   https://make.powerapps.com/
    ```
 2. Select **Solutions** and open the **PrioritZ** solution.
     
-3. Select **Apps** , select the **PrioritZ** Ask app and click **Edit**.
+3. Select **Apps (1)** , select the **PrioritZ Ask (2)** app and click **Edit (3)**.
 
-     ![](images/L02/image37.png)
+     ![](images/L02/L02-edit.png)
 
-4. Select the **Components** tab, click on the **... Components option button** and select **Import**
+4. Select the **Components** tab, click on the ellipsis button (**...**) and select **Import**
     **components**.
 
      ![](images/L02/image38.png)
  
-5. Select the **Code** tab.
+1. Select the **Code (1)** tab, select the code component (2) you created and click **Import (3)**.
     
-6. Select the code component you created and click **Import**.
-    
-     ![](images/L02/image39.png)
+     ![](images/L02/L02-code.png)
  
 7. Select the **Screens** tab.
 
-8. Expand **votescreen** and Select the **Votes gallery**.
+8. Expand **votescreen (1)** and Select the **Votes gallery (2)**.
 
+     ![](images/L02/L02-votescreen.png)
+    
 9. Set the **Width** value of the Votes gallery to **570**.
 
+     ![](images/L02/L02-width.png)
+    
 10. The screen should now look like the image below.
      
       ![](images/L02/image40.png)
@@ -441,7 +457,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
       
      ![](images/L02/image41.png)
  
-12. Select under **Code Component**  **PrioritZDnDRanking**.
+12. Select the component **PrioritZDnDRanking** under **Code Components**.
       
      ![](images/L02/image42.png)
  
@@ -452,13 +468,15 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     ```
     'Votes gallery'.AllItems
     ```
-15. Select the **PrioritZDnDRanking** go to the **Properties** pane ,set **Item Height** 160 and click **Edit Fields** .
+     ![](images/L02/L02-voteitem.png)
+    
+15. Select the **PrioritZDnDRanking**, go to the **Properties** pane ,set **Item Height** 160 and click **Edit Fields** .
 
       ![](images/L02/image43.png)
 
-16. Click **+ Add field**.
+16. Click on **+ Add field** to add a new field.
     
-17. Select **Rank** and click **Add**.
+17. Select **Rank** and click on **Add**.
      
       ![](images/L02/image44.png)
  
@@ -476,19 +494,19 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
  
 21. Select the **PrioritZDnDRanking** component.
     
-22. Set the **X** value of the **PrioritZDnDRanking** component to the formula below.
+22. Set the **X** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     'Votes gallery'.Width
     ```
 23. Set the **Width** value of the **PrioritZDnDRanking** component to **60**.
     
-24. Set the **Height** value of the **PrioritZDnDRanking** component to the formula below.
+24. Set the **Height** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     'Votes gallery'.Height
     ```
-25. Set the **ItemHeight** value of the **PrioritZDnDRanking** component to the formula below.
+25. Set the **ItemHeight** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     'Votes gallery'.TemplateHeight
@@ -497,13 +515,13 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     
 27. Set the **DragBackgroundColor** value of the **PrioritZDnDRanking** component to **"#A70202".**
 
-28. Set the **Y** value of the **PrioritZDnDRanking** component to the formula below.
+28. Set the **Y** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     'Votes gallery'.Y
     ```
     
-29. Set the **OnSelect** value of the **PrioritZDnDRanking** component to the formula below.
+29. Set the **OnSelect** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     With(
@@ -572,8 +590,11 @@ In this exercise, you will add the code component you created to the PrioritZ so
 
 ### Task 1: Add component to solution
 
-1. Navigate to https://make.powerapps.com/ and make sure you have the **Dev** environment
-    selected.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+
+   ```
+    https://make.powerapps.com/
+    ```
 2. Select **Solutions** and open the **PrioritZ** solution.
 3. Click **Add existing** and select **More | Developer | Custom control**.
       
@@ -585,4 +606,5 @@ In this exercise, you will add the code component you created to the PrioritZ so
  
  5. Click **Publish all customizations** and wait for the publishing to complete.
 
+    ![](images/L02/L02-EX3.png)
 
