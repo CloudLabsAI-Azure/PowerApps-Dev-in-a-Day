@@ -59,9 +59,9 @@ In this exercise, you will build the code component.
     
     ![](images/L02/L01-auth.png)
 
-3. Click **Terminal** and select **New Terminal.**
+3. Click **Terminal (1)** and select **New Terminal (2).**
      
-     ![](images/L02/image2.png)
+     ![](images/L02/L02-terminal.png)
 
 4. In the Terminal window, make a new directory by running the command below.
 
@@ -92,7 +92,7 @@ In this exercise, you will build the code component.
 
 9. Review the created code component files by selecting the **Explorer** tab.
     
-     ![](images/L02/image5.png)
+     ![](images/L02/L02-explorer.png)
 
 10. Expand the **PrioritZDnDRanking** folder and then expand the component folder.
 
@@ -180,9 +180,7 @@ In this exercise, you will build the code component.
     
 3. Drag the **PriorityComponent.tsx** file and drop it in the **PrioriZDnDRanking** folder.
  
-     ![](images/L02/image15.png)
- 
- 4. The **PriorityComponent.tsx** file should now be in the **PrioriZDnDRanking** folder.
+4. The **PriorityComponent.tsx** file should now be in the **PrioriZDnDRanking** folder.
 
      ![](images/L02/image16.png)
 
