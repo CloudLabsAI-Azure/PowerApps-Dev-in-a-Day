@@ -93,7 +93,9 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
     ![](images/L04/vscode5.png)
 
-1. Select the **ContosoFunction** folder you created and click **select**
+1. Select the **ContosoFunction (1)** folder you created and click **select Folder (2)**
+
+    ![](images/L04/L04-contoso.png)
 
 1. Now, you will be presented with the below pop-up, click on **Yes** to create a new project.
 
@@ -111,11 +113,11 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
     ![](images/L04/vscode9.png)
 
-1. Enter **CreateTopic** for function name and **[ENTER].**
+1. Enter **CreateTopic** for function name and hit **[ENTER].**
     
     ![](images/L04/image%20(7).png)
 
-1. Enter **Contoso.PrioritZ** for namespace and **[ENTER]**.
+1. Enter **Contoso.PrioritZ** for namespace and hit **[ENTER]**.
 
     ![](images/L04/vscode10.png)
 
@@ -178,13 +180,14 @@ In this exercise, you will implement the function.
       }
       }
       ```
-      
+   After adding the code your **Model.cs** will look like below screenshot 
+   
    ![](images/L04/vscode14.png)
    
 4. Open the **CreateTopic** file.
 5. Locate the Run method attributes that are present above the **Run method** and replace them with the attributes below. This provides user friendly names when we create a connector to use the API.
     
-    ![](images/L04/image%20(13).png)
+    
        
       ```
       [FunctionName("CreateTopic")]
@@ -193,6 +196,9 @@ In this exercise, you will implement the function.
       [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(Guid), Description = "The Guid response")]
       [OpenApiRequestBody(contentType: "application/json", bodyType: typeof(TopicModel))]
       ```
+      
+      After adding the attributes your **Run method** should look like this
+      ![](images/L04/image%20(13).png)
 
 6. Remove **get** from the Run method as you should only have **post**.
   
@@ -366,7 +372,7 @@ In this exercise, you will deploy the function to Azure.
 
 4. Close the sign in browser window once the sign in process is completed.
 
-5. Navigate back to Visual Studio Code and click on **+** that is next to your subscription to create new Function App.
+5. Navigate back to Visual Studio Code and click on **+** that is next to your **Resources tab**  to create new Function App.
   
     ![](images/L04/NewVSazure3.png)
  
@@ -401,9 +407,9 @@ In this exercise, you will deploy the function to Azure.
   
      ![](images/L04/vscode27.1.png)
 
-13. Select **Authentication** from the left hand side menu and click on **Add identity provider**.
+13. Select **Authentication (1)** from the left hand side menu and click on **Add identity provider (2)**.
   
-     ![](images/L04/image%20(29).png)
+     ![](images/L04/L04-auth.png)
 
 14. Select **Microsoft** for Identity provider and **Current tenant - Single tenant** for **Supported Account types** then click on **Add**.
    
@@ -515,7 +521,7 @@ In this exercise, you will deploy the function to Azure.
         https://admin.powerplatform.microsoft.com/environments
       ```
 
-38. Click to open the Dev environment you are using for this lab.
+38. Click to open the Dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />** you are using for this lab.
 
 39. Copy the **Environment URL** and paste it in the notepad.
 
@@ -565,7 +571,7 @@ In this exercise, you will deploy the function to Azure.
    - Supported account types: **Accounts in this organizational directory only (OTU WA AIW [SUFFIX] only - Single tenant)** ***(2)***
    - Redirect URL: Select **Web** ***(3)*** and provide `https://global.consent.azure-apim.net/redirect` ***(4)*** as the URL.
 
-   ![](images/L04/diad4l3.png)
+   ![](images/L04/diad4l3-1.png)
     
 1. Copy the **Application (client) ID** and save it in a notepad as you need it for later use.
      
@@ -629,7 +635,7 @@ In this exercise, you will create a new custom connector.
     
    >**Note**: If permissions prompt pops up, Click on **Accept** and continue.
    
-1. Right click on the swagger and select **Save as** and Save the file in your local machine.
+1. Right click on the swagger and select **Save as** and Save the file in your local machine-Provide a name to file as swag.json.
     
    ![](images/L04/diad4l15.png) 
    
@@ -684,9 +690,9 @@ In this exercise, you will create a new custom connector.
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-7. Once the connect is done, select **Custom connectors** from the left side menu and click **Edit** on the **PrioritZ connector**.
+7. Once the connect is done, select **Custom connectors (1)** from the left side menu and click **Edit (2)** on the **PrioritZ connector**.
      
-   ![](images/L04/image%20(62).png)
+   ![](images/L04/L04-custom.png)
     
 7. Select the **Test** from the drop down menu tab.
 
