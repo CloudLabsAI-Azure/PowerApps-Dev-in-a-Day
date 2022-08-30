@@ -38,7 +38,7 @@ In this exercise, you will review the components of the solution that is already
 
 ### Task 1: Review solution components and run flow
 
-1. Navigate to **Power Apps maker **portal by using the below URL.
+1. Navigate to **Power Apps maker** portal by using the below URL.
    ```        
     https://make.powerapps.com
    ```
