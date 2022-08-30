@@ -429,13 +429,13 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
 ### Task 2: Test connector from flow
 
 1. Make sure you are still in the **PrioritZ** solution.
-2. Click **+ New** and select **Automation | Cloud flow | Instant**.
+2. Click **+ New (1)** and select **Automation(2) | Cloud flow(3) | Instant(4)**.
 
-    ![](images/L03/image48.png)
+    ![](images/L03/image48-1.png)
 
-3. Enter **Test add credit** for flow name, select **Manually trigger a flow** , and click **Create**.
+3. Enter **Test add credit (1)** for flow name, select **Manually trigger a flow (2)** , and click **Create (3)**.
      
-    ![](images/L03/edd%20(1).png)
+    ![](images/L03/L03-testcredit.png)
 
 4. Click **+ New step**.
 
@@ -445,9 +445,9 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
    
     ![](images/L03/edd%20(2).png)
     
-6. Enter **Test connection** , paste the **API Key** you copied earlier, and click **Create**.
+6. Enter **Test connection (1)** for connection name , paste the **API Key (2)** you copied earlier, and click **Create (3)**.
   
-    ![](images/L03/edd%20(3).png)
+    ![](images/L03/edd%20(3)-1.png)
 
 7. Click on the **recipientId** field, go to the Dynamic content pane, and select **User email**.
     
@@ -516,9 +516,14 @@ environment and import it to Test environment.
    
      ![](images/L03/L03-EX4-export.png)
 
-4. Click **Publish** and wait for the publishing to complete.
-5. Click **Next**.
+1. Click **Publish (1)** and wait for the publishing to complete. Click **Next (2)**.
+
+     ![](images/L03/L03-piblish.png)
+
 6. Select **Managed** and click **Export**.
+
+    ![](images/L03/L03-managed.png)
+
 7. Wait for the solution to be exported.
 8. Click Download button Right side top of the screen ,Click Download Solution.
  
@@ -532,7 +537,7 @@ environment and import it to Test environment.
 
 2. Select **Solutions**.
 
-  Note: Click on create database and leave the currency and lanaguage field to default and click on create database and wait for somtime till the solutions are loaded
+  >**Note**: Click on create database and leave the currency and lanaguage field to default and click on create database and wait for somtime till the solutions are loaded.
 
 3. Click **Import Solution**.
     
