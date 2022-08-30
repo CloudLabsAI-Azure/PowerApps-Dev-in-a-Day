@@ -547,9 +547,7 @@ environment and import it to Test environment.
 
 2. Click to open the **Badges connector**.
   
-   ![](images/L03/image58.png)
-
-
+    ![](images/L03/image58.png)
 3. Click **Edit**.
 4. Select the **Test** tab from the dropdown.
    
