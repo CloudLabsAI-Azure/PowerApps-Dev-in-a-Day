@@ -79,13 +79,13 @@ Dataverse environments. You will also be assigning a security role that will all
 deploy solutions.
 
 
-1. Open a new browser window ot tab and navigate to Power Platform Admin Center.
+1. Open a new browser window or tab and navigate to Power Platform Admin Center using the below URL.
 
      ```
      https://admin.powerplatform.microsoft.com/environments
      ```
 
-1. Click on **Environments** ***(1)*** from the side blade and select your **ODL_User <inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
+1. Click on **Environments** ***(1)*** from the side blade and select your **Testodl_user_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
 
    ![](images/L05/diad5l8.png)
    
