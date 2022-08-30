@@ -180,7 +180,7 @@ In this exercise, you will implement the function.
       }
       }
       ```
-   After adding the code your **Model.cs** will look like below screenshot 
+   After adding the code your **Model.cs** will look like below screenshot:
    
    ![](images/L04/vscode14.png)
    
@@ -197,7 +197,8 @@ In this exercise, you will implement the function.
       [OpenApiRequestBody(contentType: "application/json", bodyType: typeof(TopicModel))]
       ```
       
-      After adding the attributes your **Run method** should look like this
+      After adding the attributes your **Run method** should look like below screenshot:
+      
       ![](images/L04/image%20(13).png)
 
 6. Remove **get** from the Run method as you should only have **post**.
@@ -387,7 +388,7 @@ In this exercise, you will deploy the function to Azure.
 8. Select **.NET 6**.
 
     ![](images/L04/vscode26.png)
-9. Select any location form the list and wait for the Function App to be deployed.
+9. Select the location: **<inject key="Region" enableCopy="false" />** form the list and wait for the Function App to be deployed.
 
     ![](images/L04/vscode27.png)
     
@@ -568,7 +569,7 @@ In this exercise, you will deploy the function to Azure.
 1. Please provide the following details and click on **Register** ***(5)***.
    
    - Name: **PrioritZConnector<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-   - Supported account types: **Accounts in this organizational directory only (OTU WA AIW [SUFFIX] only - Single tenant)** ***(2)***
+   - Supported account types: **Accounts in this organizational directory only (TenantName only - Single tenant)** ***(2)***
    - Redirect URL: Select **Web** ***(3)*** and provide `https://global.consent.azure-apim.net/redirect` ***(4)*** as the URL.
 
    ![](images/L04/diad4l3-1.png)
@@ -690,7 +691,7 @@ In this exercise, you will create a new custom connector.
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-7. Once the connect is done, select **Custom connectors (1)** from the left side menu and click **Edit (2)** on the **PrioritZ connector**.
+7. Once the connector is created, select **Custom connectors (1)** from the left side menu and click **Edit (2)** on the **PrioritZ connector**.
      
    ![](images/L04/L04-custom.png)
     
