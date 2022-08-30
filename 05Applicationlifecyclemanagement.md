@@ -105,7 +105,7 @@ deploy solutions.
       
    ![](images/L05/diad5l12.png)
    
-1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application registration which you created earlier and click on **Add** ***(2)***.
+1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application registration which you created earlier and click on **Add** **(2)**.
 
    ![](images/L05/diad5l13.png)
 
@@ -133,11 +133,11 @@ deploy solutions.
     
    ![](images/L05/diad5l19.png)
    
-1. In the Application users page, Click on **+ New app user**.
+1. In the Application users page, click on **+ New app user**.
 
    ![](images/L05/diad5l11.png)
    
-1. In Create a new app user tab, Click on **+ Add an app**.
+1. On the **Create a new app user** tab, click on **+ Add an app**.
       
    ![](images/L05/diad5l12.png)
    
@@ -200,7 +200,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
    ![](images/L05/github4.png)
 
-5. Click **Settings**.
+5. Click **Settings** to open the settings tab.
     
      ![](images/L05/Images%20(13).png)
 
@@ -208,7 +208,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
       
      ![](images/L05/github6.png)
    
-7. Click **New repository secret**.
+7. Click **New repository secret** to add a secret.
 
      ![](images/L05/github7.png)
 
