@@ -362,7 +362,12 @@ In this exercise, you will build the code component.
     pac pcf push --publisher-prefix contoso
     ```
     
-    >**Note** : If the run fails with nuget package error, try running the command again.
+    >**Note** : If the run fails with nuget package error,run the below command in Powershell and try running the above command again.
+    
+          ```
+          dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
+          ```
+    
     
 35. Wait for the solution to be imported and published to your environment.
 
