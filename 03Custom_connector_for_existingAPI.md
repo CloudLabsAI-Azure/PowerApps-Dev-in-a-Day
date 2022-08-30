@@ -184,16 +184,14 @@ In this exercise, you will create a custom connector from an existing API.
 
 ### Task 3: Test connector
 
-1. Open a new browser tab or window and navigate to the below URL to open Contoso Coffee Badges API.
-     
+1. Open a new browser tab or window and navigate to the below URL to open Contoso Coffee Badges API. 
     ```
     https://contosobadgestest.azurewebsites.net/
- 
     ```
 
 2. Click on open the **API Key** link
     
-     ![](images/L03/image16.png)
+   ![](images/L03/image16.png)
 
 3. Copy the **API Key**. Save this key you will use it multiple times.
 4. Go back to the connector test page and click **+ New Connection**.
@@ -324,7 +322,6 @@ In this task, you will test your custom code.
 
 1. Select the **Test** tab.
 2. Select the connection you created earlier.
-
 
 1. Go to the **Operations** section and select the **getcurrentbadge (1)** operation. Provide your email as **id (2)** and click **Test operation (3)**.
    
@@ -547,9 +544,10 @@ environment and import it to Test environment.
 ### Task 2: Test connector
 
 1. Click to open the solution you just imported.
+
 2. Click to open the **Badges connector**.
   
-     ![](images/L03/image58.png)
+   ![](images/L03/image58.png)
 
 
 3. Click **Edit**.
