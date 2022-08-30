@@ -93,6 +93,9 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
     ![](images/L04/vscode5.png)
 
+     >**Note**: If the **+** symbol is not visible, select settings and look if there are any update is required for vscode and update the app.Close the current vscode and open it again and perform the above step.
+
+
 1. Select the **ContosoFunction (1)** folder you created and click **select Folder (2)**
 
     ![](images/L04/L04-contoso.png)
