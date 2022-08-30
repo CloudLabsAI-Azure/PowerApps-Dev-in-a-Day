@@ -87,7 +87,7 @@ deploy solutions.
 
 1. Click on **Environments** ***(1)*** from the side blade and select your **Testodl_user_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
 
-   ![](images/L05/diad5l8.png)
+   ![](images/L05/L05-testodl.png)
    
 1. From your environment page, click on **Settings**.
 
@@ -157,15 +157,15 @@ deploy solutions.
 
    ![](images/L05/diad5l16.png)
    
-1. Click on **Environments** ***(1)*** from the side blade and select your **ODL_User <inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
+1. Click on **Environments** ***(1)*** from the side blade and select your **Testodl_user_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
 
-   ![](images/L05/diad5l8.png)
+   ![](images/L05/L05-testodl.png)
    
 1. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
     
    ![](images/L05/diad5l21.png)
    
-1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environment** ***(2)***.
+1. Again go back to **Environments** ***(1)*** in the side blade and select your **OTU XXXXXX (default) (2)** environment.
 
    ![](images/L05/diad5l17.png)
    
