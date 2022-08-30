@@ -86,11 +86,11 @@ In this exercise, you will create a custom connector from an existing API.
     ![](images/L03/image3.png)
 
 3. Do a quick review of the Open API definition.
-4. Right click on the page and select **Save as**.
+4. Right click on the page and select **Save as** and name the file as **swagger.json** in your machine..
       
      ![](images/L03/image4.png)
 
-5. Save the **swagger.json** file on your machine.
+
 6. Navigate to Power Apps  maker portal and make sure you are in your dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />**.
 
          https://make.powerapps.com
@@ -113,12 +113,12 @@ In this exercise, you will create a custom connector from an existing API.
 
       ![](images/L03/L03-custom.png)
 
-12. Click **Import**.
+12. Click **Import** to select the API file.
 
       ![](images/L03/L03-import.png)
 
 13. Select the **swagger.json** file you saved to your machine and click **Open**.
-14. Click **Continue**.
+14. Click **Continue** on the **Import an OpenAPI file** pop-up.
     
     ![](images/L03/image8-1.png)
 
@@ -167,7 +167,7 @@ In this exercise, you will create a custom connector from an existing API.
 
      ![](images/L03/image13.png)
 
-10. Click on the  **Back** button again.
+10. Click on the **Back** button again.
 
       ![](images/L03/image14.png)
 
@@ -184,12 +184,12 @@ In this exercise, you will create a custom connector from an existing API.
 
 ### Task 3: Test connector
 
-1. Open a new browser tab or window and navigate to Contoso Coffee Badges 
+1. Open a new browser tab or window and navigate to the below URL to open Contoso Coffee Badges API.
      
- ```
- https://contosobadgestest.azurewebsites.net/
+    ```
+    https://contosobadgestest.azurewebsites.net/
  
- ```
+    ```
 
 2. Click on open the **API Key** link
     
@@ -364,13 +364,12 @@ PrioritZ Ask canvas application.
 
     ![](images/L03/L03-EX4.png)
 
-7. Open a new browser tab or window and navigate to Contoso Coffee Badges
-    (contosobadgestest.azurewebsites.net)
+7. Open a new browser tab or window and navigate to the below URL to open the Contoso Coffee Badge API.
     
-```
-https://contosobadgestest.azurewebsites.net/
+    ```
+    https://contosobadgestest.azurewebsites.net/
  
-```
+    ```
     
 8. Click on open the **API Key** link
      
@@ -394,17 +393,17 @@ https://contosobadgestest.azurewebsites.net/
 
 14. Set the User badge **Image** value to the formula below.
 
-```
-ContosoBadges.getcurrentbadge({id:User().Email}).image
-```
-![](images/L03/image45.png)
+    ```
+    ContosoBadges.getcurrentbadge({id:User().Email}).image
+    ```
+    ![](images/L03/image45.png)
 
 15. Set the Tooltip value of the User badge to the formula below.
 
-```
-ContosoBadges.getcurrentbadge({id:User().Email}).name
-```
- ![](images/L03/L03-EX4-T1.png)
+    ```
+    ContosoBadges.getcurrentbadge({id:User().Email}).name
+    ```
+    ![](images/L03/L03-EX4-T1.png)
 
 16. Make the image smaller and move it to top right corner of the screen.
 17. The User badge should now look like the image below.
@@ -429,13 +428,13 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
 ### Task 2: Test connector from flow
 
 1. Make sure you are still in the **PrioritZ** solution.
-2. Click **+ New (1)** and select **Automation(2) | Cloud flow(3) | Instant(4)**.
+2. Click **+ New** and select **Automation | Cloud flow | Instant**.
 
-    ![](images/L03/image48-1.png)
+    ![](images/L03/image48.png)
 
-3. Enter **Test add credit (1)** for flow name, select **Manually trigger a flow (2)** , and click **Create (3)**.
+3. Enter **Test add credit** for flow name, select **Manually trigger a flow** , and click **Create**.
      
-    ![](images/L03/L03-testcredit.png)
+    ![](images/L03/edd%20(1).png)
 
 4. Click **+ New step**.
 
@@ -445,9 +444,9 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
    
     ![](images/L03/edd%20(2).png)
     
-6. Enter **Test connection (1)** for connection name , paste the **API Key (2)** you copied earlier, and click **Create (3)**.
+6. Enter **Test connection** , paste the **API Key** you copied earlier, and click **Create**.
   
-    ![](images/L03/edd%20(3)-1.png)
+    ![](images/L03/edd%20(3).png)
 
 7. Click on the **recipientId** field, go to the Dynamic content pane, and select **User email**.
     
@@ -469,8 +468,7 @@ ContosoBadges.getcurrentbadge({id:User().Email}).name
 12. Click **Continue**.
 13. Click **Run flow**.
 14. Click **Done**.
-15. The flow run should succeed.
-16. Click on the  back button.
+15. The flow run should succeed. Once succeeded, click on the **Back** button.
     
      ![](images/L03/image51.png)
 
@@ -516,14 +514,9 @@ environment and import it to Test environment.
    
      ![](images/L03/L03-EX4-export.png)
 
-1. Click **Publish (1)** and wait for the publishing to complete. Click **Next (2)**.
-
-     ![](images/L03/L03-piblish.png)
-
+4. Click **Publish** and wait for the publishing to complete.
+5. Click **Next**.
 6. Select **Managed** and click **Export**.
-
-    ![](images/L03/L03-managed.png)
-
 7. Wait for the solution to be exported.
 8. Click Download button Right side top of the screen ,Click Download Solution.
  
@@ -537,7 +530,9 @@ environment and import it to Test environment.
 
 2. Select **Solutions**.
 
-  >**Note**: Click on create database and leave the currency and lanaguage field to default and click on create database and wait for somtime till the solutions are loaded.
+3. Click on **Create database** to create a database.
+ 
+5. Leave the **Currency** and **Lanaguage** field to default and click on **Create database** and wait for somtime till the solutions are loaded.
 
 3. Click **Import Solution**.
     
@@ -547,8 +542,7 @@ environment and import it to Test environment.
 5. Select the solution you exported from the Dev environment and click **Open**.
 6. Click **Next**.
 7. Click **Import** and wait for the import to complete.
-8. The solution should import successfully.
-9. **Do not** navigate away from this page.
+8. The solution should import successfully. **Do not** navigate away from this page.
 
 ### Task 2: Test connector
 
@@ -564,11 +558,11 @@ environment and import it to Test environment.
      ![](images/L03/L03-EX5-default.png)
 
 5. Click **+ New connection**.
-6. Start a new browser window or tab and navigate to Contoso Coffee Badges
-    (contosobadgestest.azurewebsites.net)
-```
-https://contosobadgestest.azurewebsites.net/
-```
+6. Start a new browser window or tab and navigate to the below URL to open Contoso Coffee Badges API.
+
+   ```
+   https://contosobadgestest.azurewebsites.net/
+   ```
 
 7. Click on the **Get an API Key** link.
   
@@ -591,7 +585,4 @@ https://contosobadgestest.azurewebsites.net/
 13. The test should succeed, and the response should look like the image below.
       
       ![](images/L03/image64.png)
-
-
-
 
