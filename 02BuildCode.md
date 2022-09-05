@@ -1,5 +1,7 @@
 # Lab 02 - Build a code component
 
+Duration: 90 mins
+
 ## Table of Contents
 
 Lab Scenario 
