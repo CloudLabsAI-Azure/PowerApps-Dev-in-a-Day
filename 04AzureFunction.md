@@ -1,5 +1,7 @@
 # Lab 04 - Azure Function
 
+Duration: 110 mins
+
 ## Table of Contents
 
 
