@@ -1,5 +1,7 @@
 # Lab 03 - Custom connector for existing API
 
+Duration: 140 mins
+
 ## Table of Contents
 
 Lab Scenario 
