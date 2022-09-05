@@ -1,5 +1,6 @@
 # Lab 01 - Getting Started
 
+Duration: 45 mins
 
 ## Table of Contents
 
