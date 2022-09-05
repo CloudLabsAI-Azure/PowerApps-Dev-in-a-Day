@@ -1,5 +1,7 @@
 # Lab 05 - Application lifecycle management
 
+Duration: 95 mins
+
 ## Table of Contents
 
 
