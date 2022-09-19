@@ -438,17 +438,20 @@ In this exercise, you will deploy the function to Azure.
      ![](images/L04/vscode31.png)
 
 19. Copy the **Application (client) ID** of the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** application registration and keep it on a
-    notepad as **PrioritZFL API application ID**. You will need this id in future steps. This ID will be
-    used to configure protection of the API.
+    notepad as **PrioritZFL API application ID**. You will need this id in future steps. This ID will be used to configure protection of the API.
     
     ![](images/L04/image%20(33).png)
     
     ![](images/L04/image%20(34).png)
+    
+    >**Note**: Make sure to copy and paste the correct **Application (client) ID** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
 20. Copy the **Directory (tenant) ID** and keep it on a notepad as **Tenant ID**. You will need this id in
     future steps.
   
     ![](images/L04/image%20(35).png)
+    
+    >**Note**: Make sure to copy and paste the correct **Directory (tenant) ID** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
 21. Select **Certificates & secrets** under **Manage** from the left hand side menu.
 
@@ -462,10 +465,11 @@ In this exercise, you will deploy the function to Azure.
     
     ![](images/L04/image%20(37).png)
 
-24. Copy the **Value** and keep it in a notepad as **PrioritZFL API Secret**. You need this value in future
-    steps.
+24. Copy the **Value** and keep it in a notepad as **PrioritZFL API Secret**. You need this value in future steps.
     
      ![](images/L04/image%20(38).png)
+
+    >**Note**: Make sure to copy and paste the correct **Secret** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
 25. Select **API permissions** under **Manage** from the left hand side menu.
 
@@ -541,6 +545,9 @@ In this exercise, you will deploy the function to Azure.
       - **Value**: Paste the **Environment URL** that you have noted earlier in the notepad.
       
     ![](images/L04/vscode40.png)
+
+    >**Note**: Make sure to paste the correct **Environment URL** that you noted earlier in this task. Copying the incorrect value will result in issues in the next steps/tasks.
+
 42. You should see the four application settings you added.
   
      ![](images/L04/image%20(46).png)
