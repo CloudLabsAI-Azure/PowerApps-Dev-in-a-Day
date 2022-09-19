@@ -195,12 +195,13 @@ In this exercise, you will create a custom connector from an existing API.
     
    ![](images/L03/image16.png)
 
-3. Copy the **API Key**. Save this key you will use it multiple times.
+3. Copy the **API Key** value and save it to notepad as you will be using this value in next steps.
+
 4. Go back to the connector test page and click **+ New Connection**.
     
      ![](images/L03/image17.png)
 
-5. Paste the **API Key (1)** you copied and click **Create connection (2)**.
+5. Paste the **API Key (1)** you copied in **step 3** of this task and click **Create connection (2)**.
    
     ![](images/L03/image18-1.png)
 
@@ -210,6 +211,7 @@ In this exercise, you will create a custom connector from an existing API.
 
 
 7. The connection you created should get selected.
+
 1. Go to the **AddCredit (1)** operation. Enter your email address for recipientid, enter your name for name, enter **1** for points, and click
     **Test operation (2)**.
     
@@ -339,11 +341,12 @@ In this exercise, you will test the custom connector you created using a flow an
 
 ### Task 1: Test connector from canvas app
 
-In this task, you will use the custom connector you created to show the user’s current badge on the
-PrioritZ Ask canvas application.
+In this task, you will use the custom connector you created to show the user’s current badge on the PrioritZ Ask canvas application.
 
-1. Navigate to Power Apps  maker portal and make sure you are in your dev environment.
-          https://make.powerapps.com
+1. Navigate to Power Apps  maker portal using the below URL and make sure you are in your dev environment.
+   ```
+   https://make.powerapps.com
+   ```
 
 2. Expand **Solutions** and open the **PrioritZ** solution.
 3. Select **Apps (1)** , select the **PrioritZ Ask (2)** application, and click **Edit (3)**.
@@ -374,8 +377,9 @@ PrioritZ Ask canvas application.
      
     ![](images/L03/image41.png)
 
-9. Copy the **API Key**. Keep this API Key in a notepad, you will need it again.
-10. Go back to the app designer, paste the **API Key (1)** you copied, and click **Connect (2)**.
+9. Copy the **API Key** value and save it to notepad as you will be using this value in next steps.
+
+10. Go back to the app designer, paste the **API Key (1)** you copied in the previous step, and click **Connect (2)**.
      
      ![](images/L03/image42-1.png)
 
@@ -443,7 +447,7 @@ PrioritZ Ask canvas application.
    
     ![](images/L03/edd%20(2).png)
     
-6. Enter **Test connection** , paste the **API Key** you copied earlier, and click **Create**.
+6. Enter **Test connection** , paste the **API Key** you copied earlier in **step 9** of task1 in this exercise, and click **Create**.
   
     ![](images/L03/edd%20(3).png)
 
@@ -521,7 +525,7 @@ environment and import it to Test environment.
  
     ![](images/L03/SolutionDown.png)
 
-###  Task 1: (ii) Import solution
+###  Task 1: Import solution
 
 1. Navigate to Power Apps maker portal and select your **Test** environment named OTU XXXXXX (default).
 
@@ -550,6 +554,9 @@ environment and import it to Test environment.
 2. Click to open the **Badges connector**.
   
     ![](images/L03/image58.png)
+
+    >**Note**: If you receive the error message as **could not retrive the connector data**, delete the imported connector and perform the **steps 5-10** in the **Task 1: Import solution** task again then try to open the connector.
+
 3. Click **Edit**.
 4. Select the **Test** tab from the dropdown.
    
@@ -566,8 +573,8 @@ environment and import it to Test environment.
   
      ![](images/L03/image60.png)
 
-8. Copy the **API Key.**
-9. Go back to the connector editor, paste the API Key you copied and click **Create connection**.
+8. Copy the **API Key** value.
+9. Go back to the connector editor, paste the API Key you copied in the previous step and click **Create connection**.
    
      ![](images/L03/image61.png)
 
