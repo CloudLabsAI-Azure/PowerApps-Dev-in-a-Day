@@ -73,6 +73,9 @@ actions, so they do not execute under your individual user identity.
 1. Copy the **value** and save it in a notepad as you need it for later use.
 
    ![](images/L05/diad5l7.png)
+
+    >**Note**: Make sure to copy and paste the correct **Application (client) ID**, **Directory(Tenant) ID** and **Secret** value. Copying the incorrect value will result in issues in the next steps/tasks.
+
  
 ### Task 2: Create app user in Dataverse
 
@@ -238,6 +241,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
       ![](images/L05/L05-testurl.png)
    
+
 17. You should now have **5** repository secrets.
      
        ![](images/L05/Images%20(15).png)
