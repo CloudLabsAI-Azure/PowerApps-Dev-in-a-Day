@@ -370,7 +370,9 @@ In this exercise, you will build the code component.
     
     >**Note** : 
     
-     1. If the push operation fails with this error **`Sorry, the app encountered an non recoverable error and will need to terminate`**, please make sure that you have followed the previous instructions and added the code correctly in **Manifest.xml and Index.cs** file. Additionally you can find the **Manifest.xml and Index.cs** files in this location `C:\LabFiles`, you can compare your code with these files and fix the issues if there any then retry to push the component by running the push command again.
+     1. If the push operation fails with the error **`Sorry, the app encountered an non recoverable error and will need to terminate`**, please make sure that you have followed the previous instructions and added the code correctly in **Manifest.xml and Index.cs** file. 
+        
+        Additionally you can find the **Manifest.xml and Index.cs** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there any then retry to push the component by running the push command again.
 
      2. If the run fails with nuget package error,run the below command in Powershell and try running the above command again.
     
