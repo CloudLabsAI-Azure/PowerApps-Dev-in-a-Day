@@ -136,6 +136,8 @@ In this exercise, you will build the code component.
      ```
      ![](images/L02/image11.png)
  
+      >**Note** : Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
+    
 17. Click **File** and select **Save All**.
 18. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
 
@@ -334,6 +336,8 @@ In this exercise, you will build the code component.
     npm run-script build
     ```
 
+      >**Note** : If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
+    
  28. The build should succeed. If any errors, resolve them before proceeding.
       
        ![](images/L02/image28.png)
@@ -364,12 +368,16 @@ In this exercise, you will build the code component.
     pac pcf push --publisher-prefix contoso
     ```
     
-    >**Note** : If the run fails with nuget package error,run the below command in Powershell and try running the above command again.
+    >**Note** : 
     
-    ```
-    dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
-    ```
+     1. If the push operation fails with this error **`Sorry, the app encountered an non recoverable error and will need to terminate`**, please make sure that you have followed the previous instructions and added the code correctly in **Manifest.xml and Index.cs** file. Additionally you can find the **Manifest.xml and Index.cs** files in this location `C:\LabFiles`, you can compare your code with these files and fix the issues if there any then retry to push the component by running the push command again.
+
+     2. If the run fails with nuget package error,run the below command in Powershell and try running the above command again.
     
+        ```
+        dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
+        ```
+
     
 35. Wait for the solution to be imported and published to your environment.
 
