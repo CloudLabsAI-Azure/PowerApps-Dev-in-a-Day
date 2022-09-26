@@ -506,7 +506,7 @@ In this task, you will use the custom connector you created to show the user’s
 In this exercise, you will export the export the Contoso Badges connector solution from the Dev
 environment and import it to Test environment.
 
-###  Task 1: (i) Export solution.
+###  Task 1: Export solution.
 
 1. Navigate to Power Apps  maker portal and make sure you are in your dev environment.
 
@@ -525,7 +525,7 @@ environment and import it to Test environment.
  
     ![](images/L03/SolutionDown.png)
 
-###  Task 1: Import solution
+###  Task 2: Import solution
 
 1. Navigate to Power Apps maker portal and select your **Test** environment named OTU XXXXXX (default).
 
@@ -533,7 +533,7 @@ environment and import it to Test environment.
 
 2. Select **Solutions**.
 
-3. Click on **Create database** to create a database.
+3. Click on **Create database** to create a Dataverse database.
  
 5. Leave the **Currency** and **Lanaguage** field to default and click on **Create database** and wait for somtime till the solutions are loaded.
 
@@ -547,7 +547,7 @@ environment and import it to Test environment.
 7. Click **Import** and wait for the import to complete.
 8. The solution should import successfully. **Do not** navigate away from this page.
 
-### Task 2: Test connector
+### Task 3: Test connector
 
 1. Click to open the solution you just imported.
 
