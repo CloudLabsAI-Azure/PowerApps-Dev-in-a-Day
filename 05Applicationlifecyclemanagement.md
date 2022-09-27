@@ -236,14 +236,14 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
      ![](images/L05/github11.png) 
    
-    >**Note**: Make sure you are pasting the URL copied form **Testodl_user_<inject key="DeploymentID" enableCopy="false" />'s environment** 
+    >**Note**: Make sure you are pasting the dev environment URL named **Testodl_user_<inject key="DeploymentID" enableCopy="false" />** that you copied in the EX1->                  Step 21  
    
 15. Click **New repository secret** one more time.
 16. Enter **PowerPlatformTestUrl (1)** for Name and paste the secret **Test environment URL (2)** from your notepad in the **Value** field and click **Add secret (3)**.
 
       ![](images/L05/L05-testurl.png)
    
-    >**Note**: Make sure you are pasting the URL copied form **OTU XXXXXX (default)**
+    >**Note**: Make sure you are pasting the test environment URL named **OTU XXXXXX (default)** that you copied in the EX1-> Step 23
  
 17. You should now have **5** repository secrets.
      
