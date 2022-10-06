@@ -473,7 +473,11 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 8. Expand **votescreen (1)** and Select the **Votes gallery (2)**.
 
      ![](images/L02/L02-votescreen.png)
-    
+
+1. Select the **Width** from the properties dropdown.    
+
+     ![](images/L02/L02-votescreen1.png)
+
 9. Set the **Width** value of the Votes gallery to **570**.
 
      ![](images/L02/L02-width.png)
@@ -499,7 +503,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     ```
      ![](images/L02/L02-voteitem.png)
     
-15. Select the **PrioritZDnDRanking**, go to the **Properties** pane ,set **Item Height** 160 and click **Edit Fields** .
+15. Select the **PrioritZDnDRanking**, go to the **Properties** pane that is present at the right side of the screen, set **Item Height** 160 and click **Edit Fields** .
 
       ![](images/L02/image43.png)
 
@@ -513,7 +517,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
       
       ![](images/L02/image45.png)
 
-19. Select the **Votes gallery** and change the sort order to **Ascending**.
+19. Select the **Votes gallery**, then select the **Items** property from the property dropdown and change the sort order to **Ascending**.
      
       ![](images/L02/image46.png)
  
@@ -521,36 +525,38 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
      
       ![](images/L02/image47.png)
  
-21. Select the **PrioritZDnDRanking** component.
-    
+21. Select the **PrioritZDnDRanking** component then **X** property from the property dropdown.
+ 
+      ![](images/L02/image47.1.png)
+      
 22. Set the **X** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     'Votes gallery'.Width
     ```
-23. Set the **Width** value of the **PrioritZDnDRanking** component to **60**.
+23. Select the **Width** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value to **60**.
     
-24. Set the **Height** value of the **PrioritZDnDRanking** component to the below formula.
+24. Select the **Height** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value with the below formula.
 
     ```
     'Votes gallery'.Height
     ```
-25. Set the **ItemHeight** value of the **PrioritZDnDRanking** component to the below formula.
+25. Select the **ItemHeight** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value with the below formula
 
     ```
     'Votes gallery'.TemplateHeight
     ```
-26. Set the **BackgroundColor** value of the **PrioritZDnDRanking** component to **"LightBlue".**
+26. Select the **BackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value to **"LightBlue"**
     
-27. Set the **DragBackgroundColor** value of the **PrioritZDnDRanking** component to **"#A70202".**
+27. Select the **DragBackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value to **"#A70202"**
 
-28. Set the **Y** value of the **PrioritZDnDRanking** component to the below formula.
+28. Select the **Y** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value with the below formula.
 
     ```
     'Votes gallery'.Y
     ```
     
-29. Set the **OnSelect** value of the **PrioritZDnDRanking** component to the below formula.
+29. Select the **OnSelect** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value with the below formula.
 
     ```
     With(
@@ -609,7 +615,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 35. Close the preview.
 36. Click **File** and select **Save**.
 37. Click **Publish**.
-38. Select Publish this version and wait for the publish to be completed.
+38. Select **Publish this version** and wait for the publish to be completed.
 39. You may **close** the canvas app studio.
 
 
@@ -627,11 +633,11 @@ In this exercise, you will add the code component you created to the PrioritZ so
 2. Select **Solutions** and open the **PrioritZ** solution.
 3. Click **Add existing** and select **More | Developer | Custom control**.
       
-      ![](images/L02/image50.png)
+      ![](images/L02/image50.1.png)
  
- 4. Select **contoso_ContosoCoffee.PrioritZDnDRanking** and click **Add**.
+ 4. Select **contoso_ContosoCoffee.PrioritZDnDRanking (1)** and click **Add (2)**.
      
-      ![](images/L02/image51.png)
+      ![](images/L02/image51.1.png)
  
  5. Click **Publish all customizations** and wait for the publishing to complete.
 
