@@ -360,7 +360,7 @@ application.
 
     ![](images/L01/hintext.png)
 
-8. Change the **HintText** value of the Notes textbox to the velow value. 
+8. Change the **HintText** value of the Notes textbox to the below value. 
 
     ```
     My notes
@@ -425,18 +425,36 @@ application.
 
       ![](images/L01/L01-taco-1_1.png)
 
-18. Fill out the form by providing below information and add some choices like **Test One** and **Test Two**.
+18. Fill out the form by providing below information and click **add a picture** that is present below **Respond By** field.
 
-       Topic: `Test Notes` (1)
+       1. Topic: `Test Notes` (1)
        
-       Details: `Testing the notes` (2)
+       2. Details: `Testing the notes` (2)
        
-       Text input: `Prioritz Admin topic` (3)
+       3. Text input: `Prioritz Admin topic` (3)
        
-       Respond By: **Today's date** (4)
+       4. Respond By: **Today's date** (4)
       
-      ![](images/L01/L01-testnotes.png)
+      
+1. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
 
+12. Type **Test One** on the Choice field and click **add a picture** that is present below Choice field.
+     
+      ![](images/L01/image18.png)
+
+11. Navigate to this path `C:\LabFiles` in file explorer, select **image.png** and click open.
+
+13. Click **+** to add the choice.
+     
+      ![](images/L01/image19.png)
+
+14. Add one more choices by repeating **steps 20-22** of this task.
+       
+       1. **Choice 1** : Enter `Test Two`
+1. After adding all the Choices an topic dteails, your screen should look like beow screenshot.
+
+   ![](images/L01/L01-testnotes.png)
+      
 19. Now, click on **Save** button.The new topic should be **saved**.
 20. Click to open the **Test Notes** topic that you just created.
 21. The notes **Prioritz Admin topic** that you have added earlier should now be visible now.
