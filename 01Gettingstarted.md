@@ -216,9 +216,11 @@ In this exercise, you will review the components of the solution that is already
 
    ![](images/L01/solutions.png)
    
-2. Select **Apps (1)** from the left-hand side menu of Power Apps,  you should see two applications named **PrioritZ Ask** and **PrioritZ Admin (2)**. **PrioritZ Admin** app is used to manage topics being asked about and **PrioritZ Ask** app allows users to respond.
+2. Select **Apps (1)** from the left-hand side menu of Power Apps,  you should see two applications named **PrioritZ Ask** and **PrioritZ Admin (2)**. 
 
-      ![](images/L01/EX1-T2-2_1_1.png)
+     >**Info:** **PrioritZ Admin** app is used to manage topics being asked about and **PrioritZ Ask** app allows users to respond.
+
+    ![](images/L01/EX1-T2-2_1_1.png)
 
 3. Launch the **PrioritZ Admin** application.
     
