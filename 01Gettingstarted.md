@@ -494,8 +494,10 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
     ![](images/L01/image37.png)
 
-4. In the JumpVM, click on **Visual Studio Code** shortcut that is available on desktop to open Visual Studio Code.
+4. In the JumpVM, start **Visual Studio Code** using the shortcut available on the desktop.
 
+   ![](images/L04/vscode1.png)
+   
 6. Click **Terminal** and select **New Terminal**.
 
     ![](images/L01/image42.png)
