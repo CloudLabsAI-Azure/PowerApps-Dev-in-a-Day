@@ -51,7 +51,7 @@ In this exercise, you will build the code component.
 
 ### Task 1: Create the code component
 
-1. Start **Visual Studio Code** using the shortcut available on the desktop.
+1. Start **Visual Studio Code** if not already open using the shortcut available on the desktop.
 
    ![](images/L04/vscode1.png)
    
@@ -75,7 +75,7 @@ In this exercise, you will build the code component.
     ```
     cd PrioritZDnDRanking
     ```
-6. You should now be in the directory you created. Create a new component project and install dependencies by running the commands below.
+6. You should now be in the directory you created. Create a new component project and install dependencies by running the below command.
     
      ```
      pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --framework react --run-npm-install
@@ -92,18 +92,22 @@ In this exercise, you will build the code component.
     code -a.
     ```
 
+1. If you are presented with below pop-up, click on **Yes** to trust the authors of the files.
+
+    ![](images/L02/image4.1.png)
+
 9. Review the created code component files by selecting the **Explorer** tab.
     
      ![](images/L02/L02-explorer.png)
 
-10. Expand the **PrioritZDnDRanking** folder and then expand the component folder.
+10. Expand the **PrioritZDnDRanking** folder and then expand the sub-folder **generated**.
 
 11. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a
     component including the properties exposed to the hosting app.
 
       ![](images/L02/image6.png)
 
-12. Locate **data-set** XML element in the **ControlManifest.Input.xml** file.
+12. Locate **data-set** XML element in **line number 21** in the **ControlManifest.Input.xml** file.
 
       ![](images/L02/image7.png)
 
@@ -111,7 +115,9 @@ In this exercise, you will build the code component.
 
       ![](images/L02/image8.png)
 
-14. Add the following properties after the closing tag of the data-set element **</data-set**>.
+14. Add the following properties in between the closing tag of the data-set element `</data-set>` and opening tag of `<resources>` element.
+
+    > Add the following properties after **line number 26** in the **ControlManifest.Input.xml** file.
 
     ```
     <property name="BackgroundColor" display-name-key="Background color" usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
@@ -123,11 +129,16 @@ In this exercise, you will build the code component.
 
      ![](images/L02/image9.png)
 
-15. Locate **<resources>** and uncomment **css** resource. This will ensure that our styles will be
-    bundled with the code component when it is deployed.
+15. Locate `<resources>` section and add the below code after **code path** to add **css** resource. This will ensure that our styles will be bundled with the code component when it is deployed.
 
+    ```
+    <css path="css/PrioritZDnDRanking.css" order="1" />
+    ```
+    
      ![](images/L02/image10.png)
  
+      >**Note** : Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
+      
  16. Notice the following two resources. This declares the component’s dependency on these two
     libraries. This is a result of specifying –framework React on initialization.
      ```
@@ -135,20 +146,18 @@ In this exercise, you will build the code component.
      <platform-library name="Fluent" version="8.29.0" />
      ```
      ![](images/L02/image11.png)
- 
-      >**Note** : Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
     
-17. Click **File** and select **Save All**.
+17. Click **File** and select **Save All** to save your changes.
 18. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
 
       ![](images/L02/image12.png)
 
-19. Name the new folder **css**.
+19. Name the new folder ass **css**.
 20. Select the new **css** folder you created and then click **New File**
  
      ![](images/L02/image13.png)
  
- 21. Name the new file **PrioritZDnDRanking.css**.
+ 21. Name the new file **PrioritZDnDRanking.css**
  22. Paste the following css into the **PrioritZDnDRanking.css** file.
     
        ```
@@ -172,14 +181,14 @@ In this exercise, you will build the code component.
 
      ![](images/L02/image14.png)
 
-24. Click **File** and save your changes.
+24. Click **File** and select **Save All** to save your changes.
 
 ### Task 2: Implement the component logic
 
-1. Remove the HelloWorld.tsx component file that is automatically created as we won’t be using it.
+1. Select the **HelloWorld.tsx** component file, right click on it and select **Delete** to remove the component file as it is automatically created and we won’t be using it. 
      
      ![](images/L02/L02-EX1-T2-1.png)
-
+    
 2. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` in file explorer.
     
 3. Drag the **PriorityComponent.tsx** file and drop it in the **PrioriZDnDRanking** folder.
@@ -203,6 +212,12 @@ In this exercise, you will build the code component.
     ```
     npm install react-beautiful-dnd
     ```
+    > **Note:** If you receive this error **npm is not recognised**, the perform the below steps:
+
+      1. Open PowerShell then run this command `choco install -y --force nodejs`.
+      2. Oce the command execution is done, close the Visual Studio Code and open it again.
+      3. Perform **Step 8** of this task again to insall the **react-beautiful-dnd** package.
+
 9. Run the following command for the type definitions.
 
     ```
@@ -213,7 +228,7 @@ In this exercise, you will build the code component.
     
 11. Open the **index.ts** file.
     
-12. Remove the following line 2 as we are no longer using HelloWorld
+12. Remove the following line (line number 2 in Index.ts file) as we are no longer using HelloWorld
 
     ```
     import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
@@ -221,7 +236,7 @@ In this exercise, you will build the code component.
     
     ![](images/L02/image18.png)
  
- 13. Add the import below to the **index.ts** file. This will reference the PriorityComponent.
+ 13. Add the below code to the **index.ts** file after **line number 1**. This will reference the PriorityComponent.
     
         ```
         import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
@@ -229,7 +244,7 @@ In this exercise, you will build the code component.
         ![](images/L02/image19.png)  
    
  
- 15. Locate the **Export** class.
+ 15. Locate the **Export** class in **line number 5**.
       
      ![](images/L02/image20.png)
  
@@ -243,11 +258,11 @@ In this exercise, you will build the code component.
         ![](images/L02/image21.png)
  
 
- 17. Locate the **init** function.
+ 17. Locate the **init** function in **line number 21**.
  
       ![](images/L02/image22.png)
         
- 18. Paste the code below inside the **init** function. This logic initializes our class variables from the
+ 18. Paste the code below inside the **init** function after **line number 25**. This logic initializes our class variables from the
     runtime values and enables resize notification.    
     
         ![](images/L02/image23.png)
@@ -284,7 +299,7 @@ In this exercise, you will build the code component.
 
     ![](images/L02/image24.png)
  
-21. Add the function below after the **destroy** function. This logic handles the onReorder event from
+21. Add the below code after the **destroy** function. This logic handles the onReorder event from
     the PriorityComponent and identifies the involved items to the hosting app as selected items.
        
     ```
@@ -301,6 +316,7 @@ In this exercise, you will build the code component.
   
     ![](images/L02/image25.png)
  
+     > **Note:** **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
 22. Open the **package.json** file.
     
 23. Locate the **dependencies** JSON object.
@@ -336,7 +352,7 @@ In this exercise, you will build the code component.
     npm run-script build
     ```
 
-      >**Note** : If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
+      > **Note** : If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
     
  28. The build should succeed. If any errors, resolve them before proceeding.
       
@@ -353,10 +369,11 @@ In this exercise, you will build the code component.
 
       ![](images/L02/imagee29.png)
  
-31. Close the test harness.
+     > **Note:** If the test harness didn't start as expected and you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
+
+31. Close the test harness by closing the browser tab.
 
 32. Stop the run by holding the **[CONTROL]** key + **C**.
-
  
 33. Type **Y** and [ENTER].
      
@@ -368,11 +385,11 @@ In this exercise, you will build the code component.
     pac pcf push --publisher-prefix contoso
     ```
     
-    >**Note** : 
+    > **Note** : 
     
      1. If the push operation fails with the error **`Sorry, the app encountered an non recoverable error and will need to terminate`**, please make sure that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
         
-        Additionally you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there any then retry to push the component by running the push command again.
+        Additionally you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there any then retry to push the component by running the  **pac push command** again.
 
      2. If the run fails with nuget package error,run the below command in Powershell and try running the above command again.
     
@@ -418,15 +435,15 @@ In this task, you will allow publishing of canvas apps with code components for 
 
 3. Click **Settings** from top menu.
     
-     ![](images/L02/image34.png)
+     ![](images/L02/image34.1.png)
 
 4. Expand **Products** and select **Features**.
     
-     ![](images/L02/image35.png)
+     ![](images/L02/image35.1.png)
 
  5. Turn on **Allow publishing of canvas apps with code components** and click **Save**.
      
-      ![](images/L02/image36.png)
+      ![](images/L02/image35.2.png)
 
  ### Task 2: Edit canvas app
 
