@@ -212,7 +212,7 @@ In this exercise, you will build the code component.
     ```
     npm install react-beautiful-dnd
     ```
-    > **Note:** If you receive this error **npm is not recognised**, the perform the below steps:
+    >**Note** : If you receive this error **npm is not recognised**, then perform the below steps:
 
       1. Open PowerShell then run this command `choco install -y --force nodejs`.
       2. Oce the command execution is done, close the Visual Studio Code and open it again.
@@ -316,7 +316,7 @@ In this exercise, you will build the code component.
   
     ![](images/L02/image25.png)
  
-     > **Note:** **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
+     > **Note** : **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
 22. Open the **package.json** file.
     
 23. Locate the **dependencies** JSON object.
@@ -369,7 +369,7 @@ In this exercise, you will build the code component.
 
       ![](images/L02/imagee29.png)
  
-     > **Note:** If the test harness didn't start as expected and you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
+     > **Note** : If the test harness didn't start as expected and you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
 
 31. Close the test harness by closing the browser tab.
 
