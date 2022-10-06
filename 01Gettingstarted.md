@@ -96,7 +96,7 @@ In this exercise, you will review the components of the solution that is already
     
      ![](images/L01/image8.png)
 
-    > **Note:** **PrioritZ** solution is imported into your dev environment as a part of the pre-requisite.
+    > **Note** : **PrioritZ** solution is imported into your dev environment as a part of the pre-requisite.
     
 4. Expand **Tables (1)** and select the **PrioritZ Topic (2)** table.
    
@@ -104,7 +104,7 @@ In this exercise, you will review the components of the solution that is already
 
 5. Select the **Columns** under Schema and review the columns of the **PrioritZ Topic** table.
 
-   > **Info**: The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
+   >**Info** : The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
  
    ![](images/L01/L01-coulumn.png)
 
@@ -195,7 +195,7 @@ In this exercise, you will review the components of the solution that is already
 
      ![](images/L01/L01-new.png)
 
-     > **Note:** If you receive this error `Error from token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** not being added correctly. You can perform the **Steps 24-26** of this task again, then try to trigger the floe again.
+     > **Note** : If you receive this error `Error from token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** not being added correctly. You can perform the **Steps 24-26** of this task again, then try to trigger the floe again.
 
 18. Click **Done** and wait for the flow run to complete.
 
@@ -237,7 +237,7 @@ In this exercise, you will review the components of the solution that is already
 
 7. Click on the **<** back button.
 
-    > **Note:** You should go back to the home screen.
+    > **Note** : You should go back to the home screen.
 
 9. Now, click on the **+** button to add a new topic.
     
@@ -328,7 +328,7 @@ application.
 
     ![](images/L01/L01-notes.png)
    
-   > **Note:** Do not navigate away from this page.
+   > **Note** : Do not navigate away from this page.
 
 ### Task 2: Update admin app
 
@@ -474,7 +474,7 @@ application.
 
 In this exercise, you will review and test the Power Platform CLI extension in Visual Studio Code.
 
->**Note**: Visual studio code and Power platform CLI installation is already done as a part of the prerequisites.
+>**Note** : Visual studio code and Power platform CLI installation is already done as a part of the prerequisites.
 
 1. Navigate to Power Platform admin center by using below URL and select **Environments**.
       ```
@@ -490,7 +490,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 2. Click to open your dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />**.
 3. Right click on the **Environment URL** value and paste the value in notepad.
  
-    >**Note:** Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
+    >**Note** : Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
 
     ![](images/L01/image37.png)
 
@@ -529,7 +529,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
    
     ![](images/L01/L01-auth.png)
 
-    > **Note:** If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 8. To fix this issue, follow the below steps:
+    > **Note** : If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 8. To fix this issue, follow the below steps:
 
       1. Delete the **Universal Profile** from Visual Studio Code by clicking on delete button.
       2. Copy the correct **Environment URL** value by following **Step 5** of this task. 
