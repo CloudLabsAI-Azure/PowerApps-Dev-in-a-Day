@@ -30,7 +30,16 @@ Working as part of the Prioritz fusion team you will be setting up your Power Pl
 environment. You will review the current solution and explore the current state of the Prioritz apps,
 flows and tables. You will be also adding a column to a table and modifying the app to use it.
 
+# Getting Started with Lab
 
+1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the the lab.
+
+   ![](images/L01/env.png "Lab Environment")
+   
+1. To get the lab environment details, you can select **Environment Details** tab. Additionally, the credentials will also be sent to your email address provided during registration. 
+
+   ![](images/L01/labenv.png "Lab Environment")
+   
 ## Exercise 1 - Review solution components
 
 In this exercise, you will review the components of the solution that is already imported in your pre-created dev environment. You will also run a flow that will add sample data to your environment, and test the applications in the solution.
@@ -39,11 +48,43 @@ In this exercise, you will review the components of the solution that is already
 
 ### Task 1: Review solution components and run flow
 
-1. Navigate to **Power Apps maker** portal by using the below URL.
-   ```        
-    https://make.powerapps.com
-   ```
-1. Now, click on **Environment (1)** and select the pre-created dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
+1. In the JumpVM, click on **Power Apps** portal shortcut of Microsoft Edge browser that is available on desktop.
+
+   ![azure portal.](images/L01/PAportal.png)
+   
+1. When you click on Power Apps portal, the edge browser welcome screen will come up, select **Start without your data**.
+
+   ![](/images/L01/browser-1.png)
+
+1. On the **We can help you import your browsing data from Google** window, click on **Continue without this data**.
+   
+   ![](/images/L01/browser-1.1.png)
+   
+1. On the next window, click on **Confirm and start browsing**.
+
+   ![](/images/L01/browser-2.png)
+
+1. Now, you will see two tabs in the edge browser, close the first tab named with **Microsoft Edge**.
+
+1. On the **Sign in** window, you will see the login screen, enter the following username **(1)** and click on **Next** **(2)**.
+
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+
+   ![](/images/L01/portalsignin-1.png)
+
+1. Now enter the following password **(1)** and click on **Sign in** **(2)**. 
+
+   * Password: <inject key="AzureAdUserPassword"></inject>
+   
+   ![](/images/L01/portalsignin-2.png)
+
+1. If you are presented with **Help us protect your account**, click on **Skip for now**.
+
+   ![](/images/L01/portalsignin-3.png)
+
+1. If you see the pop-up **Stay Signed in?**, click **No**.
+
+1. Once logged in, click on **Environment (1)** and select the pre-created dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
      ![](images/L01/L01-dev1.png)
 
@@ -51,16 +92,19 @@ In this exercise, you will review the components of the solution that is already
 
       ![](images/L01/Ex1-T1-2.png)
 
-3.  Open the **PrioritZ** solution which is imported.
+3.  Open the **PrioritZ** solution that is imported into your dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)**.
     
      ![](images/L01/image8.png)
 
+    > **Note:** **PrioritZ** solution is imported into your dev environment as a part of the pre-requisite.
+    
 4. Expand **Tables (1)** and select the **PrioritZ Topic (2)** table.
    
      ![](images/L01/L01-table1.png)
 
-5. Select the **Columns** under Schema and review the columns of the **PrioritZ Topic** table. The standard columns are built-in, and all tables have them.
- The custom columns were created by the team for this application.
+5. Select the **Columns** under Schema and review the columns of the **PrioritZ Topic** table.
+
+   > **Info**: The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
  
    ![](images/L01/L01-coulumn.png)
 
@@ -70,7 +114,7 @@ In this exercise, you will review the components of the solution that is already
  
     ![](images/L01/L01-relation1.png)
 
-1. Now, select **Connection reference (1)** and click on **Microsoft Dataverse Prioritz (2)**.
+1. Now, select **Connection references (1)** under **Objects** and click on **Microsoft Dataverse Prioritz (2)**.
 
     ![](images/L01/L01-ref.png)
 
@@ -78,21 +122,34 @@ In this exercise, you will review the components of the solution that is already
 
     ![](images/L01/L01-con.png)
 
-1. A new browser window will be opened to create the connection, in the search bar search for **Microsoft Dataverse (1)** and select it from the list.
+1. A new browser window will be opened to create the connection, search for **Microsoft Dataverse (1)** and select it from the list.
 
     ![](images/L01/L01-dataverse1.png)
 
-1. Click on the **create** button to create a new connection.
+1. On the **Microsoft Dataverse** pop-up, click on the **create** button to create a new connection.
 
     ![](images/L01/L01-create.png)
+
+1. Complete the **Sign in** process using the below credentials.
+
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   * Password: <inject key="AzureAdUserPassword"></inject>
+
+1. If you are presented with **Help us protect your account**, click on **Skip for now**.
+
+1. If you see the pop-up **Stay Signed in?**, click **No**.
 
 1. Verify the new connection that is created and close the browser window.
 
     ![](images/L01/L01-connection.png)
 
-1. Navigate back to the **Edit Microsoft Dataverse Prioritz** connection window and click on **Refresh**. Select the connection dropdown, you should see the connection added in the previous step, select the connection and click on Save. 
+1. Navigate back to the **Edit Microsoft Dataverse Prioritz** connection window and click on **Refresh (1)**. 
 
-    ![](images/L01/L01-newcon.png)
+   ![](images/L01/L01-newcon.png)
+
+1. Select the connection dropdown, you should see the connection added in the previous step, select the connection **(1)** and click on **Save** **(2)**. 
+
+    ![](images/L01/L01-newcon1.png)
 
 1. Click on **Save changes** on **Save Changes to this connection reference** pop-up.
 
@@ -138,6 +195,8 @@ In this exercise, you will review the components of the solution that is already
 
      ![](images/L01/L01-new.png)
 
+     > **Note:** If you receive this error `Error from token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** not being added correctly. You can perform the **Steps 24-26** of this task again, then try to trigger the floe again.
+
 18. Click **Done** and wait for the flow run to complete.
 
      ![](images/L01/EX1-T1-18.png)
@@ -149,12 +208,15 @@ In this exercise, you will review the components of the solution that is already
 
 ### Task 2: Test the apps
 
-1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
-   ```
-       https://make.powerapps.com
-   ```
-2. Select **Apps (1)** and you should see two applications named **PrioritZ Ask** and **PrioritZ Admin (2)**. **PrioritZ Admin**
-    app is used to manage topics being asked about and **PrioritZ Ask** app allows users to respond.
+1. Navigate back to **PrioritZ** solution by clicking on **Cloud flows**. Alernatively you can also open **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+       
+   ![](images/L01/pzsolution.png)
+
+1. Navigate to **Solutions** blade by clicking on **Back to Solutions** **(<-)** button.
+
+   ![](images/L01/solutions.png)
+   
+2. Select **Apps (1)** from the left-hand side menu of Power Apps,  you should see two applications named **PrioritZ Ask** and **PrioritZ Admin (2)**. **PrioritZ Admin** app is used to manage topics being asked about and **PrioritZ Ask** app allows users to respond.
 
       ![](images/L01/EX1-T2-2_1_1.png)
 
@@ -171,24 +233,27 @@ In this exercise, you will review the components of the solution that is already
 
     ![](images/L01/EX1-T2-6-1.png)
 
-7. Click on the **<** back button
-8. You should go back to the home screen.
-9. Click on the **+** button.
+7. Click on the **<** back button.
+
+    > **Note:** You should go back to the home screen.
+
+9. Now, click on the **+** button to add a new topic.
     
     ![](images/L01/image16.png)
 
-10. Provide the below information and click **add a picture**.
+10. Provide the below information and click **add a picture** that is present below **Respond By** field.
      
-     1. Topic : Enter `Change Taco Tuesday to some other food`
+     1. **Topic** : Enter `Change Taco Tuesday to some other food`
      
-     1. Details : Enter `People are tired of tacos, what should we have instead of tacos?`
+     1. **Details** : Enter `People are tired of tacos, what should we have instead of tacos?`
      
-     1. Respond By : Select **today's date**
+     1. **Respond By** : Select **today's date**.
      
      ![](images/L01/image17.png)
 
+1. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
 
-12. Type **Tamale Tuesday** on the Choice field and click **add a picture**.
+12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below Choice field.
      
       ![](images/L01/image18.png)
 
@@ -198,11 +263,11 @@ In this exercise, you will review the components of the solution that is already
      
       ![](images/L01/image19.png)
 
-14. Add couple more choices by repeating step 12 and 13.
+14. Add couple more choices by repeating **steps 12-14**.
        
-       Choice 1 : Enter `Steak Tuesday`
+       1. **Choice 1** : Enter `Steak Tuesday`
        
-       Choice 2: Enter `Cheese and Wine Tuesday`
+       2. **Choice 2**: Enter `Cheese and Wine Tuesday`
 
 15. Click on **Save** button to save th topic.
     
@@ -213,12 +278,12 @@ In this exercise, you will review the components of the solution that is already
 
      ![](images/L01/L01-taco.png)
 
-18. Close the PrioritZ Admin application.
-19. Select **Apps (1)** and launch the **PrioritZ Ask (2)** application.
+18. Close the PrioritZ Admin application by closing the browser tab in which PrioritZ Admin application is open.
+19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **PrioritZ Ask (2)** application.
      
      ![](images/L01/L01-prioritzask.png)
 
-20. You should see a list of topics. Open the topic you created.
+20. You should see a list of topics. Open the **Change Taco Tuesday to some other food** topic that you created in the previous steps.
 
      ![](images/L01/L01-list.png)
 
@@ -230,7 +295,7 @@ In this exercise, you will review the components of the solution that is already
       
       ![](images/L01/image23.png)
 
-23. Close the PrioritZ Ask app.
+23. Close the PrioritZ Ask app by closing the browser tab in which PrioritZ Ask application is open.
 
 ## Exercise 2 – Add a column for My Notes
 
@@ -243,25 +308,29 @@ application.
     ```
     https://make.powerapps.com
    ```
-2. Select **Solutions (1)** and open the **PrioritZ (2)** solution.
+2. Select **Solutions (1)** from the left-hand side menu of Power Apps and open the **PrioritZ (2)** solution.
 
    ![](images/L01/EX2-T1-2-1.png)
 
 3. Expand **Tables** and select the **PrioritZ Topic** table.
-4. Select the **Columns** tab and click **+ New column**.
+4. Select the **Columns** tab that is present under **Schema** and click **+ New column**.
 
     ![](images/L01/EX2-T1-4.png)
 
-5. Enter **My Notes (1)** for Display name, select **Multiline Text (2)** for Data type, and click **Save (3)**.
+5. Enter the below value in the Display name field.
+
+   ```
+   My Notes
+   ```
+1. Now, search for **Plain text (1)** under Data type then select the one that comes under **Multiline Text (2)** , and click **Save (3)**.
 
     ![](images/L01/L01-notes.png)
-
-6. Do not navigate away from this page.
+   
+   > **Note:** Do not navigate away from this page.
 
 ### Task 2: Update admin app
 
-1. Make sure you are still in the **PrioritZ** solution.
-2. Select **Apps (1)** and select the **PrioritZ Admin (2)** application and click on **Edit (3)**.
+1. Make sure you are still in the **PrioritZ** solution. Select **Apps (1)** under **Objects** and select the **PrioritZ Admin (2)** application and click on **Edit (3)**.
     
     ![](images/L01/L01-adminedit.png)
 
@@ -273,25 +342,40 @@ application.
    
      ![](images/L01/L01-insert.png)
 
-5. Rename the text input **Notes textbox**.
+5. Double click on the newly added **Text input** and enter the below value to rename the text input.
+
+    ```
+    Notes textbox
+    ```
     
      ![](images/L01/image27.png)
 
-6. Make the add picture control smaller if needed and move the respond by and label textbox
-    down and place the Notes textbox between the Details control and the Respond by label.
+6. Make the add picture control smaller if needed, and move the **Respond By and label textbox** down and place the **Notes textbox** between the Details control and the Respond by label.
    
     ![](images/L01/image28.png)
 
-7. Select Notes **textbox**.
-8. Change the **HintText** value of the Notes textbox to **My notes**.
+7. Select **Notes textbox** and then **HintText** from the properties dropdown.
+
+    ![](images/L01/hintext.png)
+
+8. Change the **HintText** value of the Notes textbox to the velow value. 
+
+    ```
+    My notes
+    ```
    
     ![](images/L01/image29.png)
 
-9. Change the **Mode** to **TextMode.MultiLine**.
+
+9. Select the **Mode** from the properties dropdown and change it's value by entering the below text.
+
+    ```
+    TextMode.MultiLine
+    ```
 
     ![](images/L01/L01-mode.png)
 
-10. Select **Save topic icon**.
+10. Select **Save topic icon** under **Add Topics Screen** section.
      
      ![](images/L01/image30.png)
 
@@ -303,15 +387,25 @@ application.
     ```
     Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
     ```
-12. Select the **View Topic Screen (1)** and go to the **Insert** tab and click **Label (2)**.
+12. Select the **View Topic Screen (1)** from the **Screens** tab.
+
+1.  Navigate to the **Insert** tab and click **Label (2)**.
 
     ![](images/L01/L01-viewtopic.png)
 
-13. Rename the label you just added **Notes label**.
+13. Double click on the newly added label and enter the below value to rename the label you just added.
 
+     ```
+     Notes label
+     ```
+     
     ![](images/L01/L01-label.png)
 
-14. Change the **Text** value of the Notes label to **'Topics gallery'.Selected.'My Notes'**
+14. Change the **Text** value of the Notes label with the below text.
+
+     ```
+     'Topics gallery'.Selected.'My Notes'
+     ```
   
       ![](images/L01/image32.png)
 
@@ -329,8 +423,8 @@ application.
 
       ![](images/L01/L01-taco-1_1.png)
 
-18. Fill out the form by providing below information, add some choices, and then click **Save**.
-  
+18. Fill out the form by providing below information and add some choices like **Test One** and **Test Two**.
+
        Topic: `Test Notes` (1)
        
        Details: `Testing the notes` (2)
@@ -341,18 +435,18 @@ application.
       
       ![](images/L01/L01-testnotes.png)
 
-19. The new topic should be **saved**.
-20. Click to open the topic you just created.
-21. The notes should now be shown.
+19. Now, click on **Save** button.The new topic should be **saved**.
+20. Click to open the **Test Notes** topic that you just created.
+21. The notes **Prioritz Admin topic** that you have added earlier should now be visible now.
  
-     ![](images/L01/image36.png)
+     ![](images/L01/image36.1.png)
 
 22. Close the app **preview**.
 23. Click **File** and select **Save**.
 24. Click **Publish**.
 25. Select Publish this version and wait for the publishing to complete.
 
-     ![](images/L01/NewUipublish.png)
+     ![](images/L01/NewUipublish1.png)
 
  26. You may close the **app designer**.
 
@@ -366,12 +460,21 @@ In this exercise, you will review and test the Power Platform CLI extension in V
       ```
         https://admin.powerplatform.microsoft.com/environments
       ```
+
+1. If you are presented with **Help us protect your account**, click on **Skip for now**.
+
+   ![](/images/L01/portalsignin-3.png)
+
+1. If you see the pop-up **Stay Signed in?**, click **No**.
+
 2. Click to open your dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />**.
-3. Copy the Environment URL and keep it in your clipboard or on notepad.
+3. Right click on the **Environment URL** value and paste the value in notepad.
  
+    >**Note:** Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
+
     ![](images/L01/image37.png)
 
-4. Open Visual Studio Code.
+4. In the JumpVM, click on **Visual Studio Code** shortcut that is available on desktop to open Visual Studio Code.
 
 6. Click **Terminal** and select **New Terminal**.
 
@@ -386,17 +489,31 @@ In this exercise, you will review and test the Power Platform CLI extension in V
    ```
    pac auth create --name DevAuth --url <your environment URL>
    ```
-  >**Note**: Sign In if prompted
-  
-  > After adding the environment URL, the command will look like this: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
-  ![](images/L01/Eeditpac.png)
 
+   > **Info:** After adding the environment URL, the command will look like this: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
+  
+    ![](images/L01/Eeditpac.png)
+
+1.  Complete the **Sign in** process, using the below credentials.
+
+      * Email/Username: <inject key="AzureAdUserEmail"></inject>
+      * Password: <inject key="AzureAdUserPassword"></inject>
+
+1. If you are presented with **Help us protect your account**, click on **Skip for now**.
+
+   ![](/images/L01/portalsignin-3.png)  
 
 9. Select **Power Platform (1)** tool, you should now have at least one **auth profile (2)**. If you have more than profile, make sure the profile you created is selected
    
-   ![](images/L01/L01-auth.png)
+    ![](images/L01/L01-auth.png)
 
-10. Click **Terminal** and select **New Terminal**.
+    > **Note:** If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 8. To fix this issue, follow the below steps:
+
+      1. Delete the **Universal Profile** from Visual Studio Code by clicking on delete button.
+      2. Copy the correct **Environment URL** value by following **Step 5** of this task. 
+      3. Perform the **Step 8** of this task again to create the auth profile.
+
+10. Click **Terminal** and select **New Terminal** if not already open.
 
      ![](images/L01/image42.png)
 
@@ -407,4 +524,4 @@ In this exercise, you will review and test the Power Platform CLI extension in V
       ```
 12. You should see list of solutions installed on your environment.
     
-
+    ![](images/L01/sollist.png)
