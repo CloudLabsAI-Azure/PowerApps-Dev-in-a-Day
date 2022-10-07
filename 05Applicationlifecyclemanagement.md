@@ -37,7 +37,7 @@ actions, so they do not execute under your individual user identity.
 
 ### Task 1: Create app registration
 
-1. Navigate to Azure Portal using the below URL.
+1. Navigate back to the browser tab in which Azure Portal is open. If not already open, navigate to Azure Portal using the below URL.
 
    ```
    https://portal.azure.com/
@@ -122,7 +122,7 @@ deploy solutions.
     
    ![](images/L05/diad5l15.png)
 
-1. Select **System administrator** ***(1)*** and click on **Save** ***(2)***.
+1. On the **Edit security roles** blade, scroll down and select **System administrator** ***(1)*** and click on **Save** ***(2)***.
 
    ![](images/L05/diad5l16.png)
    
@@ -209,7 +209,9 @@ In this exercise, you will create a GitHub repository and add repository secrets
     
      ![](images/L05/Images%20(13).png)
 
-6. Go to the **Security** section, expand **Secrets (1)** and select **Actions (2)**. The values you provide will not be visible after you create the item so take your time to get the values correct. 
+6. Go to the **Security** section, expand **Secrets (1)** and select **Actions (2)**.
+
+    > **Note:** The values you provide will not be visible after you create the item so take your time to get the values correct. 
       
      ![](images/L05/github6.png)
    
@@ -217,33 +219,34 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
      ![](images/L05/github7.png)
 
-8. Enter **PowerPlatformAppID (1)** for Name and paste the **Application (client) ID (2)** from your notepad in the **Value** field and click **Add secret (3)**.
+8. Enter **PowerPlatformAppID (1)** for Name and paste the **Application (client) ID (2)** of **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** that you noted earlier in **`Exercise 1 -> Task 1 -> Step 5`** from your notepad in the **Value** field and click **Add secret (3)**.
 
      ![](images/L05/github8.png)
 
 9. Click **New repository secret** again.
-10. Enter **PowerPlatformClientSecret (1)** for Name and paste the **secret Value (2)** from your notepad in the **Value** field and click **Add secret (3)**.
+10. Enter **PowerPlatformClientSecret (1)** for Name and paste the **secret Value (2)** from your notepad that you noted earlier in **`Exercise 1 -> Task 1 -> Step 8`** in the **Value** field and click **Add secret (3)**.
 
      ![](images/L05/github9.png)
 
 11. Click **New repository secret** again.
-12. Enter **PowerPlatformTenantID (1)** for Name and paste the secret **Tenant ID (2)** from your notepad in the **Value** field and click **Add secret (3)**.
+12. Enter **PowerPlatformTenantID (1)** for Name and paste the secret **Tenant ID (2)** from your notepad that you noted earlier in **`Exercise 1 -> Task 1 -> Step 5`** in the **Value** field and click **Add secret (3)**.
 
      ![](images/L05/github10.png)
 
 13. Click **New repository secret** again.
-14. Enter **PowerPlatformDevUrl (1)** for Name and paste the secret **Dev environment URL (2)** from your notepad in the **Value** field and click **Add secret (3)**.
+14. Enter **PowerPlatformDevUrl (1)** for Name and paste the secret **Dev environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 2 -> Step 21`** in the **Value** field and click **Add secret (3)**.
 
+    >**Note**: Make sure you are pasting the dev environment URL named **Testodl_user_<inject key="DeploymentID" enableCopy="false" />** that you copied in the **`Exercise 1 -> Task 2 -> Step 21`**
+   
      ![](images/L05/github11.png) 
-   
-    >**Note**: Make sure you are pasting the dev environment URL named **Testodl_user_<inject key="DeploymentID" enableCopy="false" />** that you copied in the EX1->                  Step 21  
-   
+  
 15. Click **New repository secret** one more time.
-16. Enter **PowerPlatformTestUrl (1)** for Name and paste the secret **Test environment URL (2)** from your notepad in the **Value** field and click **Add secret (3)**.
+16. Enter **PowerPlatformTestUrl (1)** for Name and paste the **Test Environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 2 -> Step 23`** in the **Value** field and click **Add secret (3)**.
 
-      ![](images/L05/L05-testurl.png)
+     >**Note**: Make sure you are pasting the test environment URL named **OTU XXXXXX (default)** that you copied in the **`Exercise 1 -> Task 2 -> Step 23`**
+ 
+     ![](images/L05/L05-testurl.png)
    
-    >**Note**: Make sure you are pasting the test environment URL named **OTU XXXXXX (default)** that you copied in the EX1-> Step 23
  
 17. You should now have **5** repository secrets.
      
@@ -266,7 +269,7 @@ indentation shown in the images.
  
    ![](images/L05/Images%20(16).png)
    
-1. Change the file name to it **export-and-branch.yml**.
+1. Change the file name to it **export-and-branch.yml**
        
 1. Remove everything from the workflow file.
   
@@ -280,7 +283,7 @@ indentation shown in the images.
     
    ![](images/L05/Images%20(26).png)
 
-1. Select the **Actions** ***(1)** tab and select the **workflow** ***(2)*** you created.
+1. Select the **Actions** **(1)** tab and select the **workflow** ***(2)*** you created.
 
    ![](images/L05/diad5l27.png)
    
