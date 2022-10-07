@@ -526,25 +526,35 @@ environment and import it to Test environment.
    
      ![](images/L03/L03-EX4-export.png)
 
-4. Click **Publish** and wait for the publishing to complete.
-5. Click **Next**.
+4. On the **Before you export** blade, click **Publish** and wait for the publishing to complete.
+5. Once published, click on **Next**.
 6. Select **Managed** and click **Export**.
 7. Wait for the solution to be exported.
 8. Click Download button Right side top of the screen ,Click Download Solution.
  
-    ![](images/L03/SolutionDown.png)
+    ![](images/L03/SolutionDown1.png)
 
 ###  Task 2: Import solution
 
-1. Navigate to Power Apps maker portal and select your **Test** environment named OTU XXXXXX (default).
+1. Navigate to Power Apps maker portal if not already open and select your **Test** environment named OTU XXXXXX (default).
 
          https://make.powerapps.com
 
-2. Select **Solutions**.
+2. Select **Solutions** from the left-hand side menu of Power Apps.
 
 3. Click on **Create database** to create a Dataverse database.
  
-5. Leave the **Currency** and **Lanaguage** field to default and click on **Create database** and wait for somtime till the solutions are loaded.
+    ![](images/L03/db1.png)
+
+5. Leave the **Currency** and **Lanaguage** field to default and click on **Create database**.
+    ![](images/L03/db2.png)
+
+1. Wait for somtime (5-7 mins) until the solutions are loaded.
+
+   > **Note**: If solutions are not loading and you are **Try again** error this is because Power Apps takes sometime to create the Database and load the daa. You can follow the below steps to fix the issue:
+
+      1. Try refreshing the browser few times.
+      2. IF refresh doesn't work, try logging in to the Power Apps maker portal from private window and check solutions info.
 
 3. Click **Import Solution**.
     
@@ -564,14 +574,14 @@ environment and import it to Test environment.
   
     ![](images/L03/image58.png)
 
-    >**Note**: If you receive the error message as **could not retrive the connector data**, delete the imported connector and perform the **steps 5-10** in the **Task 2: Import solution** task again then try to open the connector.
+    >**Note**: If you receive the error message as **could not retrive the connector data**, Wait for few mins (5-10 mins) to get theconnector data updated. If that doesn' work, you can delete the imported connector and perform the **steps 5-10** in the **Task 2: Import solution** task again then try to open the connector.
 
 3. Click **Edit**.
 4. Select the **Test** tab from the dropdown.
    
      ![](images/L03/L03-EX5-default.png)
 
-5. Click **+ New connection**.
+5. Click **+ New connection**. A new browser tab will be opened to create connection.
 6. Start a new browser window or tab and navigate to the below URL to open Contoso Coffee Badges API.
 
    ```
