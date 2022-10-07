@@ -88,7 +88,7 @@ In this exercise, you will create a custom connector from an existing API.
     ![](images/L03/image3.png)
 
 3. Do a quick review of the Open API definition.
-4. Right click on the page and select **Save as** and name the file as **swagger.json** in your machine..
+4. Right click on the page and select **Save as** and name the file as **swagger.json** in your machine. Now, close the browser tab by clicking on **X**.
       
      ![](images/L03/image4.png)
 
@@ -106,8 +106,12 @@ In this exercise, you will create a custom connector from an existing API.
      ![](images/L03/image5-1.png)
 
 
-9. Enter **Badges connector (1)** for Connector name, **Connector for badges (2)** for Description,
-    **contosobadgestest.azurewebsites.net (3)** for Host, and click **Create connector (4)**.
+9. Enter the following information on the **Create Connector** blade.
+
+     1. Connector name: **Badges connector (1)** 
+     2. Description : **Connector for badges (2)**
+     3. Host: **contosobadgestest.azurewebsites.net (3)** and 
+     4. click **Create connector (4)**.
     
     ![](images/L03/L03-badges1.png)
 
@@ -137,7 +141,7 @@ In this exercise, you will create a custom connector from an existing API.
 
 ### Task 2: Modify the definition
 
-1. Select the **AddCredit (1)** action and select **Important (2)** for Visibility.
+1. Select the **AddCredit (1)** action then **Important (2)** for Visibility.
     
      ![](images/L03/image10-1.png)
 
@@ -149,7 +153,7 @@ In this exercise, you will create a custom connector from an existing API.
     
     ![](images/L03/image12.png)
 
-5. Select **Yes** for Is required and click on the  **Back** button.
+5. Select **Yes** for Is required and click on the **Back** button.
      
      ![](images/L03/image13.png)
 
@@ -195,7 +199,7 @@ In this exercise, you will create a custom connector from an existing API.
     
    ![](images/L03/image16.png)
 
-3. Copy the **API Key** value and save it to notepad as you will be using this value in next steps.
+3. Copy the **API Key** value and save it to notepad as you will be using this value in next steps. Now, close the browser tab by clicking on **X**.
 
 4. Go back to the connector test page and click **+ New Connection**.
     
@@ -258,7 +262,7 @@ You will do this by using the custom code feature to reshape the response from t
 
 4. Select the **Definition** tab from the dropdown and click **New action** in the definition tab.
   
-    ![](images/L03/L03-EX3.png)
+    ![](images/L03/L03-EX3.1.png)
 
 5. Enter **Get current badge (1)** for Summary, **Get current badge (2)** for Description, and **getcurrentbadge (3)**
     for Operation ID.
@@ -343,7 +347,7 @@ In this exercise, you will test the custom connector you created using a flow an
 
 In this task, you will use the custom connector you created to show the user’s current badge on the PrioritZ Ask canvas application.
 
-1. Navigate to Power Apps  maker portal using the below URL and make sure you are in your dev environment.
+1. Navigate to **Power Apps** maker portal using the below URL if not already open and make sure you are in your dev environment.
    ```
    https://make.powerapps.com
    ```
@@ -373,11 +377,11 @@ In this task, you will use the custom connector you created to show the user’s
  
     ```
     
-8. Click on open the **API Key** link
+8. Click on the **open the API Key** link
      
     ![](images/L03/image41.png)
 
-9. Copy the **API Key** value and save it to notepad as you will be using this value in next steps.
+9. Copy the **API Key** value and paste the value to notepad as you will be using this value in next steps. Now, close the browser tab by clicking on **X**.
 
 10. Go back to the app designer, paste the **API Key (1)** you copied in the previous step, and click **Connect (2)**.
      
@@ -389,7 +393,7 @@ In this task, you will use the custom connector you created to show the user’s
      
      ![](images/L03/L03-component.png)
 
-13. Change the Image name to **User badge**.
+13. Double click on the newly added image and change it's name to **User badge**.
     
      ![](images/L03/image44.png)
 
