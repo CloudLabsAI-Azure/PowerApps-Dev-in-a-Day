@@ -34,9 +34,9 @@ Lab Scenario
 
     - Task 1: Export solution. 
 
-    - Task 1: Import solution 
+    - Task 2: Import solution 
 
-    - Task 2: Test connector 
+    - Task 3: Test connector 
 
 ### Lab Scenario
 
@@ -564,7 +564,7 @@ environment and import it to Test environment.
   
     ![](images/L03/image58.png)
 
-    >**Note**: If you receive the error message as **could not retrive the connector data**, delete the imported connector and perform the **steps 5-10** in the **Task 1: Import solution** task again then try to open the connector.
+    >**Note**: If you receive the error message as **could not retrive the connector data**, delete the imported connector and perform the **steps 5-10** in the **Task 2: Import solution** task again then try to open the connector.
 
 3. Click **Edit**.
 4. Select the **Test** tab from the dropdown.
