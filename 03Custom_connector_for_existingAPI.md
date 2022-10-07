@@ -264,8 +264,12 @@ You will do this by using the custom code feature to reshape the response from t
   
     ![](images/L03/L03-EX3.1.png)
 
-5. Enter **Get current badge (1)** for Summary, **Get current badge (2)** for Description, and **getcurrentbadge (3)**
-    for Operation ID.
+5. Enter the following information to add **Get current badge** action.
+
+     1. Summary: **Get current badge**
+     2. Description: **Get current badge (2)** 
+     3. Operation ID: **getcurrentbadge (3)**
+    
     
     ![](images/L03/image26-1.png)
 
@@ -304,6 +308,7 @@ You will do this by using the custom code feature to reshape the response from t
     
     ![](images/L03/image32.png)
 
+     > **Note**: If the test operation fails, try updating the connector then test the connector by performing Steps 15-18 again.
 19. Copy the Response **Body** JSON.
 
 20. Select the Definition tab from the dropdown.
@@ -578,7 +583,7 @@ environment and import it to Test environment.
      ![](images/L03/image60.png)
 
 8. Copy the **API Key** value.
-9. Go back to the connector editor, paste the API Key you copied in the previous step and click **Create connection**.
+9. Go back to the connector editor, paste the API Key you copied in the previous step and click **Create connection**. Now, close the browser tab by clicking on **X**.
    
      ![](images/L03/image61.png)
 
