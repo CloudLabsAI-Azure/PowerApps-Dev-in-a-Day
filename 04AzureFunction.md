@@ -93,9 +93,9 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
 1. Click on **+ (1)** under **Workspace** section, click **Create Function (2)**, and click **Create New Project**.
 
-    ![](images/L04/vscode5.png)
+     ![](images/L04/vscode5.png)
 
-     >**Note**: If the **+** symbol is not visible, select settings and look if there are any update is required for vscode and update the app.Close the current vscode and open it again and perform the above step.
+       >**Note**: If the **+** symbol is not visible, select settings and look if there are any update is required for vscode and update the app.Close the current vscode and open it again and perform the above step.
 
 
 1. Select the **ContosoFunction (1)** folder you created and click **select Folder (2)**
@@ -159,7 +159,6 @@ In this exercise, you will implement the function.
   
    ![](images/L04/vscode13.png)
 
-
 3. Open the new **Model.cs** file and paste the code below. This will define the data that will be sent
     from the Power App.
       ```
@@ -189,9 +188,8 @@ In this exercise, you will implement the function.
    
    ![](images/L04/vscode14.png)
    
-4. Open the **CreateTopic** file.
-5. Locate the Run method attributes that are present above the **Run method** and replace them with the attributes below. This provides user friendly names when we create a connector to use the API.
-    
+4. Open the **CreateTopic.cs** file.
+5. Locate the Run method attributes (line number 24-27) that are present above the **Run method** and replace them with the attributes below. This provides user friendly names when we create a connector to use the API.
     
        
       ```
@@ -227,7 +225,8 @@ In this exercise, you will implement the function.
     ```
 
 10. Wait for the **Azure Identity** package to be added.
-11. Open the **CreateTopic** file and add the using statements below.
+
+11. Open the **CreateTopic** file and add the using statements below after line number 11.
 
       ```
       using System;
@@ -357,6 +356,11 @@ In this exercise, you will implement the function.
 
 18. The run should succeed. Press any key to stop.
 
+     > **Note** :
+
+      1. If the build task operation fails with the errors, please make sure that you have followed the previous instructions and added the code correctly in **CreateTopic.cs and Model.cs files.**
+      2. Additionally you can find the **CreateTopic.cs and Model.cs** files in the location **C:\LabFiles**, you can compare your code with these files and fix the issues if there any then try to perform **step 17 again**.
+
 ## Exercise 3 – Publish to Azure
 
 In this exercise, you will deploy the function to Azure.
@@ -415,11 +419,11 @@ In this exercise, you will deploy the function to Azure.
 
 13. Select **Authentication (1)** from the left hand side menu and click on **Add identity provider (2)**.
   
-     ![](images/L04/L04-auth.png)
+     ![](images/L04/L04-auth.1.png)
 
 14. Select **Microsoft** for Identity provider and **Current tenant - Single tenant** for **Supported Account types** then click on **Add**.
    
-     ![](images/L04/image%20(30).png)
+     ![](images/L04/L04-auth.2.png)
 
 15. Open the **Portal menu** by clicking on the Portal menu icon.
 
@@ -461,13 +465,13 @@ In this exercise, you will deploy the function to Azure.
   
      ![](images/L04/image%20(36).png)
 
-23. Provide a description, select **3 months** , and click **Add**.
+23. Provide a description as **PrioritZ API secret**, select **3 months** , and click **Add**.
     
     ![](images/L04/image%20(37).png)
 
 24. Copy the **Value** and keep it in a notepad as **PrioritZFL API Secret**. You need this value in future steps.
     
-     ![](images/L04/image%20(38).png)
+     ![](images/L04/image38.png)
 
     >**Note**: Make sure to copy and paste the correct **Secret** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
@@ -560,6 +564,8 @@ In this exercise, you will deploy the function to Azure.
     ```
      https://login.microsoftonline.com/{tenant-id}/adminconsent?client_id={api app id}
      ```
+     
+     After updating the values, your URL should look like this: `https://login.microsoftonline.com/2140cxxxxxxx/adminconsent?client_id=195b2axxxxxxx`
  
 45. After updating the values, navigate to the URL in a browser tab and sign in with below credentials.
    
@@ -654,7 +660,7 @@ In this exercise, you will create a new custom connector.
    
 1. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
    ```
-       https://make.powerapps.com
+   https://make.powerapps.com
    ```
    
 1. Expand **Dataverse** ***(1)*** and select **Custom Connectors** ***(1)***.
@@ -753,7 +759,7 @@ Admin canvas application.
      
     ![](images/L04/image%20(67).png)
        
-4. Add the connector by clicking again.
+4. Add the connector by clicking on it again.
 5. Click on the **... More actions** button of the connector you just added and select **Rename**.
     
    ![](images/L04/image%20(68).png)
@@ -792,6 +798,7 @@ Admin canvas application.
       ```
 
 10. Select **Save topic icon**.
+
 11. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. This changes to
     have the API create the “ask”.
    
@@ -833,15 +840,16 @@ Admin canvas application.
 
     ![](images/L04/image%20(76).png)
     
-4. Select any small image from your local machine.
+4. Navigate to this path **C:\LabFiles** in file explorer, select **image.png** and click open.
+
 5. Enter **Test choice one** for Choice and click **add a picture**.
-6. Select any small image from your machine and click **+**.
+6. Navigate to this path **C:\LabFiles** in file explorer, select **image.png** and click **+**.
 
      ![](images/L04/image%20(77).png) 
     
 7. Enter **Test choice two** for Choice and click **add a picture**.
 
-8. Select any image from your machine and click **+**.
+8. Navigate to this path **C:\LabFiles** in file explorer, select **image.png** and click **+**.
 
 9. Click **Save**.
   
@@ -850,8 +858,8 @@ Admin canvas application.
 10. The new topic should be saved, and you should be navigated back to the main screen.
 11. Locate the new topic you created and open it.
     
-     ![](images/L04/image%20(79).png)
+     ![](images/L04/image80.png)
     
 12. You should see the two choices you added to topic.
 
-    ![](images/L04/image%20(80).png)
+    ![](images/L04/image81.png)
