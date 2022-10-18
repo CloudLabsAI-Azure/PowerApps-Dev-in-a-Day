@@ -258,7 +258,7 @@ In this exercise, you will build the code component.
         ![](images/L02/image21.png)
  
 
- 17. Locate the **init** function in **line number 21**.
+ 17. Locate the **init** function in **line number 24**.
  
       ![](images/L02/image22.png)
         
