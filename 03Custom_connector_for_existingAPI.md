@@ -549,12 +549,12 @@ environment and import it to Test environment.
 5. Leave the **Currency** and **Lanaguage** field to default and click on **Create database**.
     ![](images/L03/db2.png)
 
-1. Wait for somtime (5-7 mins) until the solutions are loaded.
+1. Wait for sometime (5-7 mins) until the solutions are loaded.
 
    > **Note**: If solutions are not loading and you are **Try again** error this is because Power Apps takes sometime to create the Database and load the daa. You can follow the below steps to fix the issue:
 
       1. Try refreshing the browser few times.
-      2. IF refresh doesn't work, try logging in to the Power Apps maker portal from private window and check solutions info.
+      2. If refresh doesn't work, try logging in to the Power Apps maker portal from private window and check solutions info.
 
 3. Click **Import Solution**.
     
@@ -574,7 +574,7 @@ environment and import it to Test environment.
   
     ![](images/L03/image58.png)
 
-    >**Note**: If you receive the error message as **could not retrive the connector data**, Wait for few mins (5-10 mins) to get theconnector data updated. If that doesn' work, you can delete the imported connector and perform the **steps 5-10** in the **Task 2: Import solution** task again then try to open the connector.
+    >**Note**: If you receive the error message as **could not retrive the connector data**, wait for few mins (5-10 mins) to get the connector data updated. If that doesn't work, you can delete the imported connector and perform the **steps 5-10** in the **Task 2: Import solution** task again then try to open the connector.
 
 3. Click **Edit**.
 4. Select the **Test** tab from the dropdown.
