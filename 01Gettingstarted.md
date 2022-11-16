@@ -507,6 +507,8 @@ In this exercise, you will review and test the Power Platform CLI extension in V
    pac
    ```
    
+   > **Info:** If u found error after using pac command, try un-installing the Power Platform tool and re-install it, then retry the step.
+   
 8. Replace `<your environment URL>` in the below command with the value of environment URL that you copied earlier then run the command. 
    ```
    pac auth create --name DevAuth --url <your environment URL>
