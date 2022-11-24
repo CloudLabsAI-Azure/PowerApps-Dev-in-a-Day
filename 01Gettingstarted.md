@@ -6,9 +6,9 @@ Duration: 45 mins
 
 **Lab Scenario** 
 
-1. Exercise 1 - Review solution components 
+1. Exercise 1 - Import and review solution components 
 
-   - Task 1: Review solution components and run flow 
+   - Task 1: Import,review solution components and run flow 
 
    - Task 2: Test the apps 
 
@@ -84,20 +84,52 @@ In this exercise, you will review the components of the solution that is already
 
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
-1. Once logged in, click on **Environment (1)** and select the pre-created dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
+1. Once logged in, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
-     ![](images/L01/L01-dev1.png)
+     ![](images/L01/dev11.png)
 
-2. Now, click on **Solutions** from the left hand side menu.
+2. Now, click on **Solutions(1)** from the left hand side menu and click **Import Solution(2)**.
 
-      ![](images/L01/Ex1-T1-2.png)
+      ![](images/L01/importsolution.png)
 
-3.  Open the **PrioritZ** solution that is imported into your dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)**.
+3.  Click **Browse**.
     
-     ![](images/L01/image8.png)
+     ![](images/L01/browse.png)
+     
+1. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` in file explorer , select the **Prioritz_1_0_0_7.zip** file, and click **Open**.
 
-    > **Note** : **PrioritZ** solution is imported into your dev environment as a part of the pre-requisite.
+1. Make sure the **Prioritz(1)** file is selected and Click **Next(2)**.
     
+     ![](images/L01/next.png)
+     
+1. Click **Next** again on the import solution blade.
+
+1. Click on the **select a connection** dropdown and then select **+ New connection**.
+
+     ![](images/L01/connection.png) 
+      
+1. Click **Create** in a newly opened browser window and **Sign In** if prompted.
+
+     ![](images/L01/create.png) 
+     
+1. Close the connection browser window or tab.
+
+1. Click **Refresh**.
+
+     ![](images/L01/refresh.png) 
+     
+1. Check the connection and click **Import** button to import the solution.
+
+     ![](images/L01/import.png)
+     
+1. Wait until the solution import to complete.
+
+     ![](images/L01/solutionsuccess.png)
+     
+1. You should now see the solution you imported in the list of solutions.
+
+1. Open the **Prioritz** solution you imported.
+
 4. Expand **Tables (1)** and select the **PrioritZ Topic (2)** table.
    
      ![](images/L01/L01-table1.png)
@@ -114,54 +146,13 @@ In this exercise, you will review the components of the solution that is already
  
     ![](images/L01/L01-relation1.png)
 
-1. Now, select **Connection references (1)** under **Objects** and click on **Microsoft Dataverse Prioritz (2)**.
-
-    ![](images/L01/L01-ref.png)
-
-1. On the **Edit Microsoft Dataverse Prioritz** connection window, select the **Connection** dropdown and click on **New Connection**.
-
-    ![](images/L01/L01-con.png)
-
-1. A new browser window will be opened to create the connection, search for **Microsoft Dataverse (1)** and select it from the list.
-
-    ![](images/L01/L01-dataverse1.png)
-
-1. On the **Microsoft Dataverse** pop-up, click on the **create** button to create a new connection.
-
-    ![](images/L01/L01-create.png)
-
-1. Complete the **Sign in** process using the below credentials.
-
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
-   * Password: <inject key="AzureAdUserPassword"></inject>
-
-1. If you are presented with **Help us protect your account**, click on **Skip for now**.
-
-1. If you see the pop-up **Stay Signed in?**, click **No**.
-
-1. Verify the new connection that is created and close the browser window.
-
-    ![](images/L01/L01-connection.png)
-
-1. Navigate back to the **Edit Microsoft Dataverse Prioritz** connection window and click on **Refresh (1)**. 
-
-   ![](images/L01/L01-newcon.png)
-
-1. Select the connection dropdown, you should see the connection added in the previous step, select the connection **(1)** and click on **Save** **(2)**. 
-
-    ![](images/L01/L01-newcon1.png)
-
-1. Click on **Save changes** on **Save Changes to this connection reference** pop-up.
-
-    ![](images/L01/L01-save.png)
-
 1. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
  
     ![](images/L01/L01-cloud.png)
 
 9. Click on **Edit** button to review the flow.
   
-    ![](images/L01/L01-edit.png)
+    ![](images/L01/edit2.png)
 
 10. Expand the **Parse JSON** step and review the data this flow will create.
 
@@ -208,9 +199,9 @@ In this exercise, you will review the components of the solution that is already
 
 ### Task 2: Test the apps
 
-1. Navigate back to **PrioritZ** solution by clicking on **Cloud flows**. Alernatively you can also open **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate back to **PrioritZ** solution by clicking on **Cloud flows**. Alernatively you can also open **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
        
-   ![](images/L01/pzsolution.png)
+   ![](images/L01/cloud1.png)
 
 1. Navigate to **Solutions** blade by clicking on **Back to Solutions** **(<-)** button.
 
@@ -306,7 +297,7 @@ application.
 
 ### Task 1: Add a new column
 
-1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
     ```
     https://make.powerapps.com
    ```
@@ -487,7 +478,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
-2. Click to open your dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />**.
+2. Click to open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 3. Right click on the **Environment URL** value and paste the value in notepad.
  
     >**Note** : Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
