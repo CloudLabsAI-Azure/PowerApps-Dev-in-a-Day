@@ -8,7 +8,7 @@ Duration: 45 mins
 
 1. Exercise 1 - Import and review solution components 
 
-   - Task 1: Import,review solution components and run flow 
+   - Task 1: Import, review solution components and run flow 
 
    - Task 2: Test the apps 
 
