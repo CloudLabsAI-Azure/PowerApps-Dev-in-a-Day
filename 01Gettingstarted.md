@@ -186,7 +186,7 @@ In this exercise, you will review the components of the solution that is already
 
      ![](images/L01/L01-new.png)
 
-     > **Note** : If you receive this error `Error from token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** not being added correctly. You can perform the **Steps 24-26** of this task again, then try to trigger the floe again.
+     > **Note** : If you receive this error `Error from token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** not being added correctly. Delete the imported solution and you can perform the **Steps 11-21** of this task again, then try to trigger the flow again.
 
 18. Click **Done** and wait for the flow run to complete.
 
@@ -522,11 +522,11 @@ In this exercise, you will review and test the Power Platform CLI extension in V
    
     ![](images/L01/L01-auth.png)
 
-    > **Note** : If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 8. To fix this issue, follow the below steps:
+    > **Note** : If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the below steps:
 
       1. Delete the **Universal Profile** from Visual Studio Code by clicking on delete button.
       2. Copy the correct **Environment URL** value by following **Step 5** of this task. 
-      3. Perform the **Step 8** of this task again to create the auth profile.
+      3. Perform the **Step 9** of this task again to create the auth profile.
 
 10. Click **Terminal** and select **New Terminal** if not already open.
 
