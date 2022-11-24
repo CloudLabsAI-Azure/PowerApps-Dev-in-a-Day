@@ -404,7 +404,7 @@ In this exercise, you will build the code component.
  
 ### Task 3: Confirm the control was added to environment
 
-1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
 
    ```
     https://make.powerapps.com/
@@ -431,7 +431,7 @@ In this task, you will allow publishing of canvas apps with code components for 
         https://admin.powerplatform.microsoft.com/environments
      ```
 
-2. Open the dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />** that you are using for this lab.
+2. Open the dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** that you are using for this lab.
 
 3. Click **Settings** from top menu.
     
