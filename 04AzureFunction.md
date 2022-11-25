@@ -91,7 +91,7 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
     ![](images/L04/vscode4.png)
 
-1. Click on the shwon **symbol(1)** after the **+** under **Workspace** section, click **Create Function (2)**, and click **Create New Project**.
+1. Click on the shown **symbol(1)** in the image, after the **+** under **Workspace** section, click **Create Function (2)**, and click **Create New Project**.
 
     ![](images/L04/function.png)
 
