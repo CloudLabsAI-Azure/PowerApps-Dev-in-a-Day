@@ -91,9 +91,9 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
     ![](images/L04/vscode4.png)
 
-1. Click on **+ (1)** under **Workspace** section, click **Create Function (2)**, and click **Create New Project**.
+1. Click on the shwon **symbol(1)** after the **+** under **Workspace** section, click **Create Function (2)**, and click **Create New Project**.
 
-    ![](images/L04/vscode5.png)
+    ![](images/L04/function.png)
 
     >**Note**: If the **+** symbol is not visible, select settings and look if there are any update is required for vscode and update the app.Close the current vscode and open it again and perform the above step.
 
@@ -464,13 +464,12 @@ In this exercise, you will deploy the function to Azure.
   
      ![](images/L04/image%20(36).png)
 
-23. Provide a description as **PrioritZ API secret**, select **3 months** , and click **Add**.
+23. Provide a description as **PrioritZ API secret(1)**, select **3 months(2)** , and click **Add(3)**.
     
-    ![](images/L04/image%20(37).png)
+    ![](images/L04/image38.png)
 
 24. Copy the **Value** and keep it in a notepad as **PrioritZFL API Secret**. You need this value in future steps.
     
-     ![](images/L04/image38.png)
 
     >**Note**: Make sure to copy and paste the correct **Secret** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
@@ -534,7 +533,7 @@ In this exercise, you will deploy the function to Azure.
         https://admin.powerplatform.microsoft.com/environments
       ```
 
-38. Click to open the Dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />** you are using for this lab.
+38. Click to open the Dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** you are using for this lab.
 
 39. Copy the **Environment URL** and paste it in the notepad.
 
