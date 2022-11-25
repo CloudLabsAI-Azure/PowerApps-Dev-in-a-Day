@@ -354,6 +354,21 @@ In this exercise, you will build the code component.
 
       > **Note** : If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
     
+ 1. If you encounter with an **ESLint Validation error: no-undef, no-unused-vars**, please add the below line of codes in **.eslintric.json** file at end in vscode.
+
+     ```
+    "overrides": [
+      {
+          "files": ["*.ts", "*.tsx"],
+          "rules": {
+              "no-undef": "off",
+              "no-unused-vars": "off"
+          }
+      }
+     ]
+    ```
+    
+ 
  28. The build should succeed. If any errors, resolve them before proceeding.
       
        ![](images/L02/image28.png)
