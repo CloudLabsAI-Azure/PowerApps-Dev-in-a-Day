@@ -367,7 +367,7 @@ In this exercise, you will build the code component.
       }
      ]
     ```
-    
+    ![](images/L02/eslint.png)
  
  28. The build should succeed. If any errors, resolve them before proceeding.
       
