@@ -57,11 +57,11 @@ connectors must be in a separate solution from the apps and flows that use them.
 
 ### Task 1: Create solution
 
-1. Navigate to Power Apps maker portal and select **Environments (1)**, make sure you are in your dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
+1. Navigate to Power Apps maker portal and select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
 
          https://make.powerapps.com 
 
-    ![](images/L03/L01-dev1.png)
+    ![](images/L03/dev11.png)
 
 2. Select **Solutions** and click **+ New solution**.
 
@@ -93,7 +93,7 @@ In this exercise, you will create a custom connector from an existing API.
      ![](images/L03/image4.png)
 
 
-6. Navigate to Power Apps  maker portal and make sure you are in your dev environment named **Testodl_user_<inject key="Deployment ID" enableCopy="false" />**.
+6. Navigate to Power Apps  maker portal and make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
          https://make.powerapps.com
 
@@ -497,7 +497,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 22. Go back to flow and run it couple more times.
 
-     ![](images/L03/L03-EX4-run.png)
+     ![](images/L03/L03-EX4-run1.png)
 
 23. Go back to the **PrioritZ Ask** application and refresh the page.
 24. You should now see the **Team Player** badge.
