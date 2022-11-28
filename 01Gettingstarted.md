@@ -186,7 +186,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
      ![](images/L01/L01-new.png)
 
-     > **Note** : If you receive this error `Error from token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** not being added correctly. Delete the imported solution and you can perform the **Steps 11-21** of this task again, then try to trigger the flow again.
+     > **Note** : If you receive this error `Error from token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 11-21** of this task again, then try to trigger the flow again.
 
 18. Click **Done** and wait for the flow run to complete.
 
@@ -222,6 +222,7 @@ In this exercise, you will import the current solution into the pre-created dev 
     ![](images/L01/EX1-T2-4-2.png)
 
 5. Click to open **Event banner** topic.
+
 6. You should see the topic details with some topic items.
 
     ![](images/L01/EX1-T2-6-1.png)
@@ -267,11 +268,13 @@ In this exercise, you will import the current solution into the pre-created dev 
     ![](images/L01/image20.png)
 
 16. The new topic should be saved, and you should be navigated back to main screen.
+
 17. You should see the topic you added in the list of topics.
 
      ![](images/L01/L01-taco.png)
 
 18. Close the PrioritZ Admin application by closing the browser tab in which PrioritZ Admin application is open.
+
 19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **PrioritZ Ask (2)** application.
      
      ![](images/L01/L01-prioritzask.png)
@@ -306,6 +309,7 @@ application.
    ![](images/L01/EX2-T1-2-1.png)
 
 3. Expand **Tables** and select the **PrioritZ Topic** table.
+
 4. Select the **Columns** tab that is present under **Schema** and click **+ New column**.
 
     ![](images/L01/EX2-T1-4.png)
@@ -479,6 +483,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
 2. Click to open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
+
 3. Right click on the **Environment URL** value and paste the value in notepad.
  
     >**Note** : Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
