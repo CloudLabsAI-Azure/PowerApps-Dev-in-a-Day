@@ -40,13 +40,13 @@ flows and tables. You will be also adding a column to a table and modifying the 
 
    ![](images/L01/labenv.png "Lab Environment")
    
-## Exercise 1 - Review solution components
+## Exercise 1 - Import, review solution components
 
-In this exercise, you will review the components of the solution that is already imported in your pre-created dev environment. You will also run a flow that will add sample data to your environment, and test the applications in the solution.
+In this exercise, you will import the current solution into the pre-created dev environment and review the components of the solution. You will also run a flow that will add sample data to your environment, and test the applications in the solution.
 
->**Note**: The Dev environment is already pre-created and Prioritz solution is imported into the Dev environment as a part of the prerequisites.
+>**Note**: The Dev environment is already pre-created as a part of the prerequisites.
 
-### Task 1: Review solution components and run flow
+### Task 1: Import, Review solution components and run flow
 
 1. In the JumpVM, click on **Power Apps** portal shortcut of Microsoft Edge browser that is available on desktop.
 
