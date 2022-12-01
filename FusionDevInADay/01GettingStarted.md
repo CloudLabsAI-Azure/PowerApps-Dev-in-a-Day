@@ -34,11 +34,11 @@ You will import the current solution and use this to start your work. You will a
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the the lab.
 
-   ![](images/L01/env.png "Lab Environment")
+   ![](/images/L01/env.png "Lab Environment")
    
 1. To get the lab environment details, you can select **Environment Details** tab. Additionally, the credentials will also be sent to your email address provided during registration. 
 
-   ![](images/L01/labenv.png "Lab Environment")
+   ![](/images/L01/labenv.png "Lab Environment")
    
 ## Exercise 1 - Import starting solution
 
@@ -50,7 +50,7 @@ In this exercise, you will import a solution into your pre-created dev environme
 
 1. In the JumpVM, click on **Power Apps** portal shortcut of Microsoft Edge browser that is available on desktop.
 
-   ![azure portal.](images/L01/PAportal.png)
+   ![](/images/L01/PAportal.png)
    
 1. When you click on Power Apps portal, the edge browser welcome screen will come up, select **Start without your data**.
 
@@ -86,45 +86,45 @@ In this exercise, you will import a solution into your pre-created dev environme
 
 1.  Once logged in, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
-     ![](images/L01/dev11.png)
+     ![](/images/L01/dev11.png)
 
 1. Now, click on **Solutions(1)** from the left hand side menu and click **Import Solution(2)**.
 
-      ![](images/L01/importsolution.png)
+      ![](/images/L01/importsolution.png)
 
 1.  Click **Browse**.
     
-     ![](images/L01/browse.png)
+     ![](/images/L01/browse.png)
      
 1. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` in file explorer , select the **Prioritz_1_0_0_7.zip** file, and        click **Open**.
 
 1. Make sure the **Prioritz(1)** file is selected and Click **Next(2)**.
     
-     ![](images/L01/next.png)
+     ![](/images/L01/next.png)
      
 1. Click **Next** again on the import solution blade.
 
 1. Click on the **select a connection** dropdown and then select **+ New connection**.
 
-     ![](images/L01/connection.png) 
+     ![](/images/L01/connection.png) 
       
 1. Click **Create** in a newly opened browser window and **Sign In** if prompted.
 
-     ![](images/L01/create.png) 
+     ![](/images/L01/create.png) 
      
 1. Close the connection browser window or tab.
 
 1. Click **Refresh**.
 
-     ![](images/L01/refresh.png) 
+     ![](/images/L01/refresh.png) 
      
 1. Check the connection and click **Import** button to import the solution.
 
-     ![](images/L01/import.png)
+     ![](/images/L01/import.png)
      
 1. Wait until the solution import to complete.
 
-     ![](images/L01/solutionsuccess.png)
+     ![](/images/L01/solutionsuccess.png)
      
 1. You should now see the solution you imported in the list of solutions.
 
@@ -142,26 +142,26 @@ In this exercise, you will run a flow that will add sample data to your environm
 
 1. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
  
-    ![](images/L01/L01-cloud.png)
+    ![](/images/L01/L01-cloud.png)
 
 1. Click on **Run** to run the flow.
    
-     ![](images/L01/image13.png)
+     ![](/images/L01/image13.png)
 
 1. Click the **Run flow** button on the Run flow blade.
 
-     ![](images/L01/L01-new.png)
+     ![](/images/L01/L01-new.png)
 
      > **Note** : If you receive this error `Error from token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 11-21** of this task again, then try to trigger the flow again.
 
 1. Click **Done** and wait for the flow run to complete.
 
-     ![](images/L01/EX1-T1-18.png)
+     ![](/images/L01/EX1-T1-18.png)
 
 1. The flow should run successfully. If you want, you can click on the run row and it will show you
    the details of what the flow did.
    
-      ![](images/L01/image14.png)
+      ![](/images/L01/image14.png)
       
 1.	Click on the browser back button.
 
@@ -180,13 +180,13 @@ application.
    ```
 1. Select **Solutions (1)** from the left-hand side menu of Power Apps and open the **PrioritZ (2)** solution.
 
-   ![](images/L01/EX2-T1-2-1.png)
+   ![](/images/L01/EX2-T1-2-1.png)
 
 1. Expand **Tables** and select the **PrioritZ Topic** table.
 
-1. Select the **Columns** tab that is present under **Schema** and click **+ New column**.
+1. Click **+ New(1)** and select **Column(2)**.
 
-    ![](images/L01/EX2-T1-4.png)
+    ![](images/L01/clmn.png)
 
 1. Enter the below value in the Display name field.
 
@@ -195,7 +195,7 @@ application.
    ```
 1. Now, search for **Plain text (1)** under Data type then select the one that comes under **Multiline Text (2)** , and click **Save (3)**.
 
-    ![](images/L01/L01-notes.png)
+    ![](/images/L01/L01-notes.png)
    
    > **Note** : Do not navigate away from this page.
 
@@ -203,15 +203,15 @@ application.
 
 1. Make sure you are still in the **PrioritZ** solution. Select **Apps (1)** under **Objects** and select the **PrioritZ Admin (2)** application and click on **Edit (3)**.
     
-    ![](images/L01/L01-adminedit.png)
+    ![](/images/L01/L01-adminedit.png)
 
 1. Select the **Add Topic Screen**.
 
-    ![](images/L01/L01-addtopic.png)
+    ![](/images/L01/L01-addtopic.png)
 
 1. Click **+ Insert** and select **Text input**.
    
-     ![](images/L01/L01-insert.png)
+     ![](images/L01/tinput.png)
 
 1. Double click on the newly added **Text input** and enter the below value to rename the text input.
 
@@ -219,15 +219,15 @@ application.
     Notes textbox
     ```
     
-     ![](images/L01/image27.png)
+     ![](/images/L01/image27.png)
 
 1. Make the add picture control smaller if needed, and move the **Respond By and label textbox** down and place the **Notes textbox** between the Details control and the Respond by label.
    
-    ![](images/L01/image28.png)
+    ![](/images/L01/image28.png)
 
 1. Select **Notes textbox** and then **HintText** from the properties dropdown.
 
-    ![](images/L01/hintext.png)
+    ![](/images/L01/hintext.png)
 
 1. Change the **HintText** value of the Notes textbox to the below value. 
 
@@ -235,7 +235,7 @@ application.
     My notes
     ```
    
-    ![](images/L01/image29.png)
+    ![](/images/L01/image29.png)
 
 1. Remove the Default text.
 
@@ -245,16 +245,16 @@ application.
     TextMode.MultiLine
     ```
 
-    ![](images/L01/L01-mode.png)
+    ![](/images/L01/L01-mode.png)
 
 1. Select **Save topic icon** under **Add Topics Screen** section.
      
-     ![](images/L01/image30.png)
+     ![](/images/L01/image30.png)
 
 1. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates
    the new row in the Dataverse table.
      
-     ![](images/L01/image31.png)
+     ![](/images/L01/image31.png)
 
     ```
     Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
@@ -271,7 +271,7 @@ application.
      Notes label
      ```
      
-    ![](images/L01/L01-label.png)
+    ![](/images/L01/L01-label.png)
 
 1. Change the **Text** value of the Notes label with the below text.
 
@@ -279,21 +279,21 @@ application.
      'Topics gallery'.Selected.'My Notes'
      ```
   
-      ![](images/L01/image32.png)
+      ![](/images/L01/image32.png)
 
 1. Rearrange the controls and move the **Notes label** between the details label and Topic items
     gallery.
    
-      ![](images/L01/image33.png)
+      ![](/images/L01/image33.png)
 
 
 1. Select the **Home Screen** and click **Preview the app**.
       
-      ![](images/L01/image34.png)
+      ![](/images/L01/image34.png)
 
 1. Click on the **+** button to add a new topic.
 
-      ![](images/L01/L01-taco-1_1.png)
+      ![](/images/L01/L01-taco-1_1.png)
 
 1. Fill out the form by providing below information and click **add a picture** that is present below **Respond By** field.
 
@@ -310,13 +310,13 @@ application.
 
 1. Type **Test One** on the Choice field and click **add a picture** that is present below Choice field.
      
-      ![](images/L01/image18.png)
+      ![](/images/L01/image18.png)
 
 1. Navigate to this path `C:\LabFiles` in file explorer, select **image.png** and click open.
 
 1. Click **+** to add the choice.
      
-      ![](images/L01/image19.png)
+      ![](/images/L01/image19.png)
 
 1. Add one more choices by repeating **steps 20-22** of this task.
        
@@ -324,7 +324,7 @@ application.
 
 1. After adding all the Choices an topic dteails, your screen should look like beow screenshot.
 
-   ![](images/L01/L01-testnotes.png)
+    ![](/images/L01/L01-testnotes.png)
       
 1. Now, click on **Save** button.The new topic should be **saved**.
 
@@ -332,7 +332,7 @@ application.
 
 1. The notes **Prioritz Admin topic** that you have added earlier should now be visible now.
  
-     ![](images/L01/image36.1.png)
+     ![](/images/L01/image36.1.png)
 
 1. Close the app **preview**.
 
@@ -340,7 +340,7 @@ application.
 
 1. Select Publish this version and wait for the publishing to complete.
 
-     ![](images/L01/NewUipublish1.png)
+     ![](/images/L01/NewUipublish1.png)
 
 1. You may close the **app designer**.
 
