@@ -358,35 +358,35 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
    
 1. Select the **Power Platform tab(1)** and click **Add Auth Profile(2)**.
 
-    ![](images/L01/image42.png)
+    ![](images/L01/auth.png)
 
 1. The sign in popup should appear.
 
 1. Provide your credentials and sign in.
 
-1. Right click on the auth profile you created and select Name/Rename Auth profile.
+1. Right click on the auth profile you created and select **Name/Rename Auth profile**.
 
-   ![](images/L01/image42.png)
+   ![](images/L01/rename.png)
 
 1. Type Dev Auth and hit [ENTER].
 
-   ![](images/L01/image42.png)
+   ![](images/L01/devauth.png)
 
 1. You should now have at least one auth profile. If you have more than profile, make sure the 
    profile you created is selected.
  
-   ![](images/L01/image42.png)
+   ![](images/L01/authprofile.png)
 
 1. Go to the Environments & Solutions pane and expand the environment you are using for this 
    lab.
 
 1. You should see all the solutions in the environment.
 
-   ![](images/L01/image42.png)
+   ![](images/L01/envsolution.png)
 
 1. Right click on the dev environment you created and select copy the Environment Url
 
-   ![](images/L01/image42.png)
+   ![](images/L01/cpenv.png)
 
 1. Click **Terminal** and select **New Terminal**.
 
@@ -400,7 +400,7 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
 
    > **Info:** After adding the environment URL, the command will look like this: `pac org select --environment https://org32172839283.crm.dynamics.com/`
   
-    ![](images/L01/Eeditpac.png)
+    ![](images/L01/org1.png)
 
 1. If you are presented with **Help us protect your account**, click on **Skip for now**.
 
