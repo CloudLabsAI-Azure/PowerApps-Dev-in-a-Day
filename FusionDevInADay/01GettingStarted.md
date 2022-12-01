@@ -1,6 +1,6 @@
 # Lab 01 - Getting Started
 
-Duration: 45 mins
+Duration: 30 mins
 
 ## Table of Contents
 
@@ -42,7 +42,9 @@ You will import the current solution and use this to start your work. You will a
    
 ## Exercise 1 - Import starting solution
 
-In this exercise, you will import a solution into your dev environment.  This solution contains the current version of the PrioritZ apps, flows and Dataverse tables.
+In this exercise, you will import a solution into your pre-created dev environment. This solution contains the current version of the PrioritZ apps, flows and Dataverse tables.
+
+>**Note**: The Dev environment is already pre-created as a part of the prerequisites.
 
 ### Task 1: Import solution
 
@@ -82,19 +84,19 @@ In this exercise, you will import a solution into your dev environment.  This so
 
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
-1. Once logged in, click on **Environment** and make sure the development environment is selected.   
+1.  Once logged in, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
      ![](images/L01/dev11.png)
 
-2. Now, click on **Solutions(1)** from the left hand side menu and click **Import Solution(2)**.
+1. Now, click on **Solutions(1)** from the left hand side menu and click **Import Solution(2)**.
 
       ![](images/L01/importsolution.png)
 
-3.  Click **Browse**.
+1.  Click **Browse**.
     
      ![](images/L01/browse.png)
      
-1. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` in file explorer , select the **Prioritz_1_0_0_7.zip** file, and click **Open**.
+1. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` in file explorer , select the **Prioritz_1_0_0_7.zip** file, and        click **Open**.
 
 1. Make sure the **Prioritz(1)** file is selected and Click **Next(2)**.
     
@@ -132,36 +134,38 @@ In this exercise, you will import a solution into your dev environment.  This so
 
 In this exercise, you will run a flow that will add sample data to your environment.
 
+### Task 1 - Run Flow
+
 1.	Open the **PrioritZ** solution you imported.
 
-   ![](images/L01/.png)
+   ![](images/L01/prioritz.png)
 
 1. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
  
     ![](images/L01/L01-cloud.png)
 
-16. Click on **Run** to run the flow.
+1. Click on **Run** to run the flow.
    
      ![](images/L01/image13.png)
 
-17. Click the **Run flow** button on the Run flow blade.
+1. Click the **Run flow** button on the Run flow blade.
 
      ![](images/L01/L01-new.png)
 
      > **Note** : If you receive this error `Error from token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 11-21** of this task again, then try to trigger the flow again.
 
-18. Click **Done** and wait for the flow run to complete.
+1. Click **Done** and wait for the flow run to complete.
 
      ![](images/L01/EX1-T1-18.png)
 
-19. The flow should run successfully. If you want, you can click on the run row and it will show you
-    the details of what the flow did.
+1. The flow should run successfully. If you want, you can click on the run row and it will show you
+   the details of what the flow did.
    
       ![](images/L01/image14.png)
       
-8.	Click on the browser back button.
+1.	Click on the browser back button.
 
-9.	You should be back on the solution you imported.
+1.	You should be back on the solution you imported.
 
 ## Exercise 3 – Add a column for My Notes
 
@@ -174,17 +178,17 @@ application.
     ```
     https://make.powerapps.com
    ```
-2. Select **Solutions (1)** from the left-hand side menu of Power Apps and open the **PrioritZ (2)** solution.
+1. Select **Solutions (1)** from the left-hand side menu of Power Apps and open the **PrioritZ (2)** solution.
 
    ![](images/L01/EX2-T1-2-1.png)
 
-3. Expand **Tables** and select the **PrioritZ Topic** table.
+1. Expand **Tables** and select the **PrioritZ Topic** table.
 
-4. Select the **Columns** tab that is present under **Schema** and click **+ New column**.
+1. Select the **Columns** tab that is present under **Schema** and click **+ New column**.
 
     ![](images/L01/EX2-T1-4.png)
 
-5. Enter the below value in the Display name field.
+1. Enter the below value in the Display name field.
 
    ```
    My Notes
@@ -201,15 +205,15 @@ application.
     
     ![](images/L01/L01-adminedit.png)
 
-3. Select the **Add Topic Screen**.
+1. Select the **Add Topic Screen**.
 
     ![](images/L01/L01-addtopic.png)
 
-4. Select the **Insert (1)** tab, click **Text (2)** , and then select **Text input (3)**.
+1. Click **+ Insert** and select **Text input**.
    
      ![](images/L01/L01-insert.png)
 
-5. Double click on the newly added **Text input** and enter the below value to rename the text input.
+1. Double click on the newly added **Text input** and enter the below value to rename the text input.
 
     ```
     Notes textbox
@@ -217,15 +221,15 @@ application.
     
      ![](images/L01/image27.png)
 
-6. Make the add picture control smaller if needed, and move the **Respond By and label textbox** down and place the **Notes textbox** between the Details control and the Respond by label.
+1. Make the add picture control smaller if needed, and move the **Respond By and label textbox** down and place the **Notes textbox** between the Details control and the Respond by label.
    
     ![](images/L01/image28.png)
 
-7. Select **Notes textbox** and then **HintText** from the properties dropdown.
+1. Select **Notes textbox** and then **HintText** from the properties dropdown.
 
     ![](images/L01/hintext.png)
 
-8. Change the **HintText** value of the Notes textbox to the below value. 
+1. Change the **HintText** value of the Notes textbox to the below value. 
 
     ```
     My notes
@@ -233,8 +237,9 @@ application.
    
     ![](images/L01/image29.png)
 
+1. Remove the Default text.
 
-9. Select the **Mode** from the properties dropdown and change it's value by entering the below text.
+1. Select the **Mode** from the properties dropdown and change it's value by entering the below text.
 
     ```
     TextMode.MultiLine
@@ -242,25 +247,25 @@ application.
 
     ![](images/L01/L01-mode.png)
 
-10. Select **Save topic icon** under **Add Topics Screen** section.
+1. Select **Save topic icon** under **Add Topics Screen** section.
      
      ![](images/L01/image30.png)
 
-11. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates
-    the new row in the Dataverse table.
+1. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates
+   the new row in the Dataverse table.
      
      ![](images/L01/image31.png)
 
     ```
     Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
     ```
-12. Select the **View Topic Screen (1)** from the **Screens** tab.
+1. Select the **View Topic Screen (1)** from the **Screens** tab.
 
-1.  Navigate to the **Insert** tab and click **Label (2)**.
+1.  Click + Insert tab and select Text label.
 
-    ![](images/L01/L01-viewtopic.png)
+    ![](images/L01/tlabel.png)
 
-13. Double click on the newly added label and enter the below value to rename the label you just added.
+1. Double click on the newly added label and enter the below value to rename the label you just added.
 
      ```
      Notes label
@@ -268,7 +273,7 @@ application.
      
     ![](images/L01/L01-label.png)
 
-14. Change the **Text** value of the Notes label with the below text.
+1. Change the **Text** value of the Notes label with the below text.
 
      ```
      'Topics gallery'.Selected.'My Notes'
@@ -276,21 +281,21 @@ application.
   
       ![](images/L01/image32.png)
 
-15. Rearrange the controls and move the **Notes label** between the details label and Topic items
+1. Rearrange the controls and move the **Notes label** between the details label and Topic items
     gallery.
    
       ![](images/L01/image33.png)
 
 
-16. Select the **Home Screen** and click **Preview the app**.
+1. Select the **Home Screen** and click **Preview the app**.
       
       ![](images/L01/image34.png)
 
-17. Click on the **+** button to add a new topic.
+1. Click on the **+** button to add a new topic.
 
       ![](images/L01/L01-taco-1_1.png)
 
-18. Fill out the form by providing below information and click **add a picture** that is present below **Respond By** field.
+1. Fill out the form by providing below information and click **add a picture** that is present below **Respond By** field.
 
        1. Topic: `Test Notes` (1)
        
@@ -303,115 +308,110 @@ application.
       
 1. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
 
-12. Type **Test One** on the Choice field and click **add a picture** that is present below Choice field.
+1. Type **Test One** on the Choice field and click **add a picture** that is present below Choice field.
      
       ![](images/L01/image18.png)
 
-11. Navigate to this path `C:\LabFiles` in file explorer, select **image.png** and click open.
+1. Navigate to this path `C:\LabFiles` in file explorer, select **image.png** and click open.
 
-13. Click **+** to add the choice.
+1. Click **+** to add the choice.
      
       ![](images/L01/image19.png)
 
-14. Add one more choices by repeating **steps 20-22** of this task.
+1. Add one more choices by repeating **steps 20-22** of this task.
        
        1. **Choice 1** : Enter `Test Two`
+
 1. After adding all the Choices an topic dteails, your screen should look like beow screenshot.
 
    ![](images/L01/L01-testnotes.png)
       
-19. Now, click on **Save** button.The new topic should be **saved**.
-20. Click to open the **Test Notes** topic that you just created.
-21. The notes **Prioritz Admin topic** that you have added earlier should now be visible now.
+1. Now, click on **Save** button.The new topic should be **saved**.
+
+1. Click to open the **Test Notes** topic that you just created.
+
+1. The notes **Prioritz Admin topic** that you have added earlier should now be visible now.
  
      ![](images/L01/image36.1.png)
 
-22. Close the app **preview**.
-23. Click **File** and select **Save**.
-24. Click **Publish**.
-25. Select Publish this version and wait for the publishing to complete.
+1. Close the app **preview**.
+
+1. Click **Publish**.
+
+1. Select Publish this version and wait for the publishing to complete.
 
      ![](images/L01/NewUipublish1.png)
 
- 26. You may close the **app designer**.
+1. You may close the **app designer**.
 
-## Exercise 3 – Test the Power Platform CLI
+## Exercise 4 – Test the Power Platform CLI
 
-In this exercise, you will review and test the Power Platform CLI extension in Visual Studio Code.
+In this exercise, you will test the **Power Platform CLI extension** in Visual Studio Code.
 
 >**Note** : Visual studio code and Power platform CLI installation is already done as a part of the prerequisites.
 
-1. Navigate to Power Platform admin center by using below URL and select **Environments**.
-      ```
-        https://admin.powerplatform.microsoft.com/environments
-      ```
+### Task 1 - Test Power Platform CLI
 
-1. If you are presented with **Help us protect your account**, click on **Skip for now**.
-
-   ![](/images/L01/portalsignin-3.png)
-
-1. If you see the pop-up **Stay Signed in?**, click **No**.
-
-2. Click to open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
-
-3. Right click on the **Environment URL** value and paste the value in notepad.
- 
-    >**Note** : Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
-
-    ![](images/L01/image37.png)
-
-4. In the JumpVM, start **Visual Studio Code** using the shortcut available on the desktop.
+1. In the JumpVM, start **Visual Studio Code** using the shortcut available on the desktop.
 
    ![](images/L04/vscode1.png)
    
-6. Click **Terminal** and select **New Terminal**.
+1. Select the **Power Platform tab(1)** and click **Add Auth Profile(2)**.
 
     ![](images/L01/image42.png)
 
-7. Run the below command in the terminal.
-   ```
-   pac
-   ```
+1. The sign in popup should appear.
+
+1. Provide your credentials and sign in.
+
+1. Right click on the auth profile you created and select Name/Rename Auth profile.
+
+   ![](images/L01/image42.png)
+
+1. Type Dev Auth and hit [ENTER].
+
+   ![](images/L01/image42.png)
+
+1. You should now have at least one auth profile. If you have more than profile, make sure the 
+   profile you created is selected.
+ 
+   ![](images/L01/image42.png)
+
+1. Go to the Environments & Solutions pane and expand the environment you are using for this 
+   lab.
+
+1. You should see all the solutions in the environment.
+
+   ![](images/L01/image42.png)
+
+1. Right click on the dev environment you created and select copy the Environment Url
+
+   ![](images/L01/image42.png)
+
+1. Click **Terminal** and select **New Terminal**.
+
+    ![](images/L01/image42.png)
+    
    
-   > **Info:** If u found error after using pac command, try un-installing the Power Platform tool and re-install it, then retry the step.
-   
-8. Replace `<your environment URL>` in the below command with the value of environment URL that you copied earlier then run the command. 
+1. Run the command below to select the dev environment. Replace `<your environment URL>` in the below command with the value of environment URL that you copied earlier    then run the command. 
    ```
-   pac auth create --name DevAuth --url <your environment URL>
+   pac org select --environment <your environment URL>
    ```
 
-   > **Info:** After adding the environment URL, the command will look like this: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
+   > **Info:** After adding the environment URL, the command will look like this: `pac org select --environment https://org32172839283.crm.dynamics.com/`
   
     ![](images/L01/Eeditpac.png)
-
-1.  Complete the **Sign in** process, using the below credentials.
-
-      * Email/Username: <inject key="AzureAdUserEmail"></inject>
-      * Password: <inject key="AzureAdUserPassword"></inject>
 
 1. If you are presented with **Help us protect your account**, click on **Skip for now**.
 
    ![](/images/L01/portalsignin-3.png)  
 
-9. Select **Power Platform (1)** tool, you should now have at least one **auth profile (2)**. If you have more than profile, make sure the profile you created is selected
-   
-    ![](images/L01/L01-auth.png)
 
-    > **Note** : If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the below steps:
-
-      1. Delete the **Universal Profile** from Visual Studio Code by clicking on delete button.
-      2. Copy the correct **Environment URL** value by following **Step 5** of this task. 
-      3. Perform the **Step 9** of this task again to create the auth profile.
-
-10. Click **Terminal** and select **New Terminal** if not already open.
-
-     ![](images/L01/image42.png)
-
-11. Run the command below to see list of solutions.
+1. Run the command below to see list of solutions.
 
       ```
       pac solution list
       ```
-12. You should see list of solutions installed on your environment.
+1. You should see list of solutions installed on your environment.
     
     ![](images/L01/sollist.png)
