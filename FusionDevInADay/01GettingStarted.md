@@ -6,11 +6,13 @@ Duration: 45 mins
 
 **Lab Scenario** 
 
-1. Exercise 1 - Import and review solution components 
+1. Exercise 1 - Import starting solution 
 
-   - Task 1: Import, review solution components and run flow 
+   - Task 1: Import solution 
 
-   - Task 2: Test the apps 
+2. Exercise 1 - Import starting solution 
+
+   - Task 1: Import solution 
 
 2. Exercise 2 – Add a column for My Notes 
 
