@@ -36,35 +36,35 @@ In this exercise, you will create a Power Platform developer environment. You wi
 
 1.	Select Add a dev environment.
 
-    ![](FusionDevInADay/images/L01/01.png)
+    ![](images/L00/01.png)
     
 1.	Sign in if prompted.
 1.	Select your country and click Accept.
 1.	You should be navigated back to the maker portal.
 1.	Click Settings and select Admin center.
 
-    ![](FusionDevInADay/images/L01/01.png)
+    ![](images/L00/01.png)
     
 1.	Wait for the dev environment to be created.
 
-    ![](FusionDevInADay/images/L01/01.png)
+    ![](images/L00/01.png)
     
 1.	Refresh until the status changes to Ready.
 
-    ![](FusionDevInADay/images/L01/01.png)
+    ![](images/L00/01.png)
     
 1.	Go back to the maker portal https://make.powerapps.com/ refresh the page if you already have it open.
 
 1.	Click on the environment name and select the dev environment you created.
 
-    ![](FusionDevInADay/images/L01/01.png)
+    ![](images/L00/01.png)
     
 1.	Expand Dataverse and select Tables.
+
 1.	You should see several Dataverse tables that are created with every environment.
 
-    ![](FusionDevInADay/images/L01/01.png)
-    
-    
+    ![](images/L00/01.png)
+      
 ## Exercise 2 – Install Visual Studio Code and Power Platform CLI Extension
 
 In this exercise, you will install Visual Studio Code, Power Platform Tools, Azure tools. These tools are used in the labs for this course.
@@ -75,12 +75,11 @@ In this exercise, you will install Visual Studio Code, Power Platform Tools, Azu
 
 1.	Select the recommended version. We recommend that you use LTS (Long-Term Support) version 18.12.1 or higher. 
 
-    ![](FusionDevInADay/images/L01/01.png)
+    ![](images/L00/01.png)
     
 1.	Double click on the downloaded installation file.
 
 1.	Flow the installation wizard to install node package manager.
-
     
 ### Task 2: Install Visual Studio Code
 
@@ -94,23 +93,23 @@ In this exercise, you will install Visual Studio Code, Power Platform Tools, Azu
 
 1.	Search for Azure and click Install Azure Tools.
 
-    ![](FusionDevInADay/images/L01/01.png)
+    ![](images/L00/01.png)
     
 1.	Wait for the installation to complete.
 
 1.	You should now see the new Azure Tools extension you added.
 
-    ![](FusionDevInADay/images/L01/01.png)
+    ![](images/L00/01.png)
     
 1.	Select the Extensions tab.
 
 1.	Search for power platform and click Power Platform Tools.
 
-    ![](FusionDevInADay/images/L01/01.png)
+    ![](images/L00/01.png)
     
 1.	You should now see the Power Platform Tools tab.
 
-    ![](FusionDevInADay/images/L01/01.png)
+    ![](images/L00/01.png)
 
 
 
