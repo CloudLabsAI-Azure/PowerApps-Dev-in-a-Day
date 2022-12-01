@@ -10,17 +10,17 @@ Duration: 45 mins
 
    - Task 1: Import solution 
 
-2. Exercise 1 - Import starting solution 
+2. Exercise 2 - Run flow 
 
-   - Task 1: Import solution 
+   - Task 1: Run flow
 
-2. Exercise 2 – Add a column for My Notes 
+3. Exercise 3 – Add a column for My Notes 
 
    - Task 1: Add a new column 
 
    - Task 2: Update admin app 
 
-3. Exercise 3 – Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension 
+3. Exercise 4 – Test Power Platform CLI
 
    - Task 1: Test the Power Platform CLI 
 
@@ -28,9 +28,7 @@ Duration: 45 mins
 ### Lab Scenario
 
 
-Working as part of the Prioritz fusion team you will be setting up your Power Platform development
-environment. You will import and review the current solution and explore the current state of the Prioritz apps,
-flows and tables. You will be also adding a column to a table and modifying the app to use it.
+You will import the current solution and use this to start your work. You will also add a column to a table and modifying the app to use it. You will also configure and test the Power Platform CLI.
 
 # Getting Started with Lab
 
@@ -42,13 +40,11 @@ flows and tables. You will be also adding a column to a table and modifying the 
 
    ![](images/L01/labenv.png "Lab Environment")
    
-## Exercise 1 - Import, review solution components
+## Exercise 1 - Import starting solution
 
-In this exercise, you will import the current solution into the pre-created dev environment and review the components of the solution. You will also run a flow that will add sample data to your environment, and test the applications in the solution.
+In this exercise, you will import a solution into your dev environment.  This solution contains the current version of the PrioritZ apps, flows and Dataverse tables.
 
->**Note**: The Dev environment is already pre-created as a part of the prerequisites.
-
-### Task 1: Import, Review solution components and run flow
+### Task 1: Import solution
 
 1. In the JumpVM, click on **Power Apps** portal shortcut of Microsoft Edge browser that is available on desktop.
 
@@ -86,7 +82,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
-1. Once logged in, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
+1. Once logged in, click on **Environment** and make sure the development environment is selected.   
 
      ![](images/L01/dev11.png)
 
@@ -130,55 +126,19 @@ In this exercise, you will import the current solution into the pre-created dev 
      
 1. You should now see the solution you imported in the list of solutions.
 
-1. Open the **Prioritz** solution you imported.
+1.	Do not navigate away from this page.
 
-4. Expand **Tables (1)** and select the **PrioritZ Topic (2)** table.
-   
-     ![](images/L01/L01-table1.png)
+## Exercise 2 – Run flow
 
-5. Select the **Columns** under Schema and review the columns of the **PrioritZ Topic** table.
+In this exercise, you will run a flow that will add sample data to your environment.
 
-   >**Info** : The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
- 
-   ![](images/L01/L01-coulumn.png)
+1.	Open the **PrioritZ** solution you imported.
 
-6. Select the **Relationships** tab from Columns dropdown and review how this table is related to other tables.
- 
-    ![](images/L01/L01-relation.png)
- 
-    ![](images/L01/L01-relation1.png)
+   ![](images/L01/.png)
 
 1. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
  
     ![](images/L01/L01-cloud.png)
-
-9. Click on **Edit** button to review the flow.
-  
-    ![](images/L01/edit2.png)
-
-10. Expand the **Parse JSON** step and review the data this flow will create.
-
-    ![](images/L01/L01-parse.png)
-
-11. Expand the **Apply to each topic** step.
-    
-    ![](images/L01/L01-topic.png)
-
-12. Expand the **Apply to each topic item** step.
-   
-     ![](images/L01/L01-eachtopic.png)
-
-13. The **Apply to each** step should look like the image below. This is the logic for the automation.
- 
-     ![](images/L01/image11.png)
-
-14. Click on the **<- back** button.
- 
-     ![](images/L01/image12.png)
-
-15. Click on the flow name to open the flow details screen.
-
-     ![](images/L01/EX1-T1-14.png)
 
 16. Click on **Run** to run the flow.
    
@@ -198,111 +158,19 @@ In this exercise, you will import the current solution into the pre-created dev 
     the details of what the flow did.
    
       ![](images/L01/image14.png)
-
-### Task 2: Test the apps
-
-1. Navigate back to **PrioritZ** solution by clicking on **Cloud flows**. Alernatively you can also open **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
-       
-   ![](images/L01/cloud1.png)
-
-1. Navigate to **Solutions** blade by clicking on **Back to Solutions** **(<-)** button.
-
-   ![](images/L01/solutions.png)
-   
-2. Select **Apps (1)** from the left-hand side menu of Power Apps,  you should see two applications named **PrioritZ Ask** and **PrioritZ Admin (2)**. 
-
-     >**Info:** **PrioritZ Admin** app is used to manage topics being asked about and **PrioritZ Ask** app allows users to respond.
-
-    ![](images/L01/EX1-T2-2_1_1.png)
-
-3. Launch the **PrioritZ Admin** application.
-    
-    ![](images/L01/L01-admin.png)
-
-4. You should see the below four topics.
-
-    ![](images/L01/EX1-T2-4-2.png)
-
-5. Click to open **Event banner** topic.
-
-6. You should see the topic details with some topic items.
-
-    ![](images/L01/EX1-T2-6-1.png)
-
-7. Click on the **<** back button.
-
-    > **Note** : You should go back to the home screen.
-
-9. Now, click on the **+** button to add a new topic.
-    
-    ![](images/L01/image16.png)
-
-10. Provide the below information and click **add a picture** that is present below **Respond By** field.
-     
-     1. **Topic** : Enter `Change Taco Tuesday to some other food`
-     
-     1. **Details** : Enter `People are tired of tacos, what should we have instead of tacos?`
-     
-     1. **Respond By** : Select **today's date**.
-     
-     ![](images/L01/image17.png)
-
-1. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
-
-12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below Choice field.
-     
-      ![](images/L01/image18.png)
-
-11. Navigate to this path `C:\LabFiles` in file explorer, select **image.png** and click open.
-
-13. Click **+** to add the choice.
-     
-      ![](images/L01/image19.png)
-
-14. Add couple more choices by repeating **steps 12-14**.
-       
-       1. **Choice 1** : Enter `Steak Tuesday`
-       
-       2. **Choice 2**: Enter `Cheese and Wine Tuesday`
-
-15. Click on **Save** button to save th topic.
-    
-    ![](images/L01/image20.png)
-
-16. The new topic should be saved, and you should be navigated back to main screen.
-
-17. You should see the topic you added in the list of topics.
-
-     ![](images/L01/L01-taco.png)
-
-18. Close the PrioritZ Admin application by closing the browser tab in which PrioritZ Admin application is open.
-
-19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **PrioritZ Ask (2)** application.
-     
-     ![](images/L01/L01-prioritzask.png)
-
-20. You should see a list of topics. Open the **Change Taco Tuesday to some other food** topic that you created in the previous steps.
-
-     ![](images/L01/L01-list.png)
-
-21. Click on the **up/down** icons and order the items in the order you prefer them and click **Vote**.
-     
-      ![](images/L01/L01-choice.png)
-
-22. You should be navigated back to the main screens, and you should see a notification message.
       
-      ![](images/L01/image23.png)
+8.	Click on the browser back button.
 
-23. Close the PrioritZ Ask app by closing the browser tab in which PrioritZ Ask application is open.
+9.	You should be back on the solution you imported.
 
-## Exercise 2 – Add a column for My Notes
+## Exercise 3 – Add a column for My Notes
 
 In this exercise, you will add a new column **My Notes** to the topic table and update the PriortZ Admin
 application.
 
 ### Task 1: Add a new column
 
-1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment is selected.
     ```
     https://make.powerapps.com
    ```
