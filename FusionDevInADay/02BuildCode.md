@@ -355,7 +355,7 @@ In this exercise, you will build the code component.
 
 25. Click **File** and save all your changes.
 
-26. Click **Terminal** and select **New Terminal**.
+26. Click **Terminal** and select **New Terminal**, if not already opened.
      
       ![](/images/L02/image27.png)
 
@@ -400,7 +400,7 @@ In this exercise, you will build the code component.
 1. You should have the dev environment you created selected. If not, run the select command 
 from the end of lab one again.
 
-   ![](images/L02/.png)
+   ![](images/L02/org.png)
 
 34. Run the command below to push the component to your environment.
     ```
