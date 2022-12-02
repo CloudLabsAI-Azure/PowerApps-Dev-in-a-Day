@@ -81,8 +81,6 @@ use them, and then create the custom connector.
    
 4. open the **Contoso Badges connector** solution you created.
 
-     ![](images/L03/.png)
-
 5. Click **+ New (1) | Automation (2)** and select **Custom connector (3)**.
      
      ![](/images/L03/image5-1.png)
@@ -232,9 +230,9 @@ You will do this by using the custom code feature to reshape the response from t
 
     ![](/images/L03/image24.png)
 
-4. Select the **Definition** tab from the dropdown and click **New action** in the definition tab.
+4. Select the **Definition** tab and click **New action** in the definition tab.
   
-    ![](/images/L03/L03-EX3.1.png)
+    ![](images/L03/def.png)
 
 5. Enter the following information to add **Get current badge** action.
 
@@ -258,7 +256,7 @@ You will do this by using the custom code feature to reshape the response from t
 
 8. Click **Update connector** and wait for the connector to be updated.
 
-9. Select the **Code** tab from the dropdown.
+9. Select the **Code** tab.
 
 10. Enable **Code (1)** and click **Upload (2)**.
     
@@ -274,7 +272,7 @@ You will do this by using the custom code feature to reshape the response from t
 
 14. Click **Update connector** and wait for the connector to be updated.
 
-15. Advance to **Test** by selecting it in the dropdown.
+15. Advance to **Test**.
 
 16. Select the **getcurrentbadge** action.
 
@@ -282,16 +280,13 @@ You will do this by using the custom code feature to reshape the response from t
      
      ![](/images/L03/image31-1.png)
 
-
 18. The test should succeed, and you should get current badge for the user you created.
     
     ![](/images/L03/image32.png)
 
-     > **Note**: If the test operation fails, try updating the connector then test the connector by performing Steps 15-18 again.
-
 19. Copy the Response **Body** JSON.
 
-20. Select the Definition tab from the dropdown.
+20. Select the Definition tab.
 
 21. Select the **getcurrentbadge** action.
      
@@ -378,9 +373,9 @@ In this task, you will use the custom connector you created to show the user’s
 
 11. Select the **Tree view**.
 
-12. Select the **Components (1)** tab, go to the **Insert (2)** tab, click **Media** , and then select **Image (3)**.
+12. Select the **Components (1)** tab, Click ** + Insert (2)** tab, search for image and then select **Image (2)**.
      
-     ![](/images/L03/L03-component.png)
+     ![](images/L03/image.png)
 
 13. Double click on the newly added image and change it's name to **User badge**.
     
