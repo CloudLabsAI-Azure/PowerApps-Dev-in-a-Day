@@ -117,7 +117,7 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
 17. Click on **Terminal** from the top menu and select **Run Build Task**.
   
-   ![](/images/L04/image%20(9).png)
+      ![](/images/L04/image%20(9).png)
 
 18. Once the build is succeeded, go to terminal and **press any key to close the terminal**.
 
@@ -353,7 +353,7 @@ In this exercise, you will deploy the function to Azure.
 
 2. Type **create function** and select **Create Function App in Azure**.
 
-    ![](images/L04/function.png)
+    ![](/images/L04/function.png)
 
 3. Select **+ Create Function App** if prompted.
 
@@ -377,7 +377,7 @@ In this exercise, you will deploy the function to Azure.
 
 8. Click Deploy and wait for the deployment to complete.
 
-    ![](/images/L04/deploy.png)
+   ![](images/L04/deploy.png)
 
 9. Wait for the function app to be deployed then navigate to Azure Portal using the below URL.
 
@@ -589,7 +589,7 @@ In this exercise, you will deploy the function to Azure.
     
 10. Toggle the **user_impersonation** ***(1)*** checkbox and click **Add permission** ***(2)***.
 
-   ![](/images/L04/diad4l10.png)
+    ![](/images/L04/diad4l10.png)
    
 ## Exercise 4 – Create Connector
 
@@ -640,19 +640,19 @@ In this exercise, you will create a new custom connector.
 
 10. Click on the chevron button next to the New custom connector and select **Import an OpenAPI file**.
      
-   ![](/images/L04/diad4l17.png) 
+    ![](/images/L04/diad4l17.png) 
     
 11. Enter **PrioritZ Connector** ***(1)*** for name and click **Import** ***(2)***.
     
-   ![](/images/L04/diad4l20.png) 
+    ![](/images/L04/diad4l20.png) 
     
 12. Select the **swagger file (1)** which you saved in step 7 of this task and Click **Continue (2)**.
 
-   ![](/images/L04/diad4l18.png) 
+    ![](/images/L04/diad4l18.png) 
  
 13. Provide **PrioritZ<inject key="DeploymentID" enableCopy="false" /> Connector** ***(1)*** as description as and click on **Security** ***(2)***.
     
-   ![](/images/L04/diad4l19.png) 
+    ![](/images/L04/diad4l19.png) 
 
 14. Select **OAuth 2.0** ***(1)*** for Authentication type. Provide the following details and Click on **Create connector** ***(8)***.
 
@@ -663,7 +663,7 @@ In this exercise, you will create a new custom connector.
     - Resource URL: Paste **PrioritZ API application ID** ***(6)*** which you copied earlier
     - Enable on-behalf-of login: **true** ***(7)***
 
-   ![](/images/L04/diad4l21.png) 
+      ![](/images/L04/diad4l21.png) 
    
 ### Task 2: Test connector
 
