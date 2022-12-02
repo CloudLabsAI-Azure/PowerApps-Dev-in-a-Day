@@ -90,30 +90,30 @@ In this exercise, you will build the code component.
     code -a.
     ```
 
-1. If you are presented with below pop-up, click on **Yes** to trust the authors of the files.
+9. If you are presented with below pop-up, click on **Yes** to trust the authors of the files.
 
     ![](/images/L02/image4.1.png)
 
-9. Review the created code component files by selecting the **Explorer** tab.
+10. Review the created code component files by selecting the **Explorer** tab.
     
      ![](/images/L02/L02-explorer.png)
 
-10. Expand the **PrioritZDnDRanking** folder and then expand the sub-folder **generated**.
+11. Expand the **PrioritZDnDRanking** folder and then expand the sub-folder **generated**.
 
-11. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a
+12. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a
     component including the properties exposed to the hosting app.
 
       ![](/images/L02/image6.png)
 
-12. Locate **data-set** XML element in **line number 21** in the **ControlManifest.Input.xml** file.
+13. Locate **data-set** XML element in **line number 21** in the **ControlManifest.Input.xml** file.
 
       ![](/images/L02/image7.png)
 
-13. Change the **name** to **items** and the **display-name-key** to **items**. This defines the property the app will bind to a collection of items.
+14. Change the **name** to **items** and the **display-name-key** to **items**. This defines the property the app will bind to a collection of items.
 
       ![](/images/L02/image8.png)
 
-14. Add the following properties in between the closing tag of the data-set element `</data-set>` and opening tag of `<resources>` element.
+15. Add the following properties in between the closing tag of the data-set element `</data-set>` and opening tag of `<resources>` element.
 
     > Add the following properties after **line number 26** in the **ControlManifest.Input.xml** file.
 
@@ -127,7 +127,7 @@ In this exercise, you will build the code component.
 
      ![](/images/L02/image9.png)
 
-15. Locate `<resources>` section and add the below code after **code path** to add **css** resource. This will ensure that our styles will be bundled with the code component when it is deployed.
+16. Locate `<resources>` section and add the below code after **code path** to add **css** resource. This will ensure that our styles will be bundled with the code component when it is deployed.
 
     ```
     <css path="css/PrioritZDnDRanking.css" order="1" />
@@ -137,7 +137,7 @@ In this exercise, you will build the code component.
  
       >**Note** : Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
       
- 16. Notice the following two resources. This declares the component’s dependency on these two
+ 17. Notice the following two resources. This declares the component’s dependency on these two
     libraries. This is a result of specifying –framework React on initialization.
      ```
      <platform-library name="React" version="16.8.6" />
@@ -145,18 +145,21 @@ In this exercise, you will build the code component.
      ```
      ![](/images/L02/image11.png)
     
-17. Click **File** and select **Save All** to save your changes.
-18. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
+18. Click **File** and select **Save All** to save your changes.
+
+19. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
 
       ![](/images/L02/image12.png)
 
-19. Name the new folder ass **css**.
-20. Select the new **css** folder you created and then click **New File**
+20. Name the new folder ass **css**.
+
+21. Select the new **css** folder you created and then click **New File**
  
      ![](/images/L02/image13.png)
  
- 21. Name the new file **PrioritZDnDRanking.css**
- 22. Paste the following css into the **PrioritZDnDRanking.css** file.
+22. Name the new file **PrioritZDnDRanking.css**
+
+23. Paste the following css into the **PrioritZDnDRanking.css** file.
     
        ```
         .prioritydnd-scroll-container {
@@ -175,11 +178,11 @@ In this exercise, you will build the code component.
         margin: 8px;
         }
         ```
-23. The file should now look like the following.
+24. The file should now look like the following.
 
      ![](/images/L02/image14.png)
 
-24. Click **File** and select **Save All** to save your changes.
+25. Click **File** and select **Save All** to save your changes.
 
 ### Task 2: Implement the component logic
 
@@ -205,7 +208,7 @@ In this exercise, you will build the code component.
 
      ![](/images/L02/image17.png)
  
- 8. Run the following command in a terminal window to add a reference to react-beautiful-dnd.
+8. Run the following command in a terminal window to add a reference to react-beautiful-dnd.
 
     ```
     npm install react-beautiful-dnd
@@ -239,7 +242,7 @@ In this exercise, you will build the code component.
     
     ![](/images/L02/image18.png)
  
- 13. Add the below code to the **index.ts** file after **line number 1**. This will reference the PriorityComponent.
+13. Add the below code to the **index.ts** file after **line number 1**. This will reference the PriorityComponent.
     
         ```
         import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
@@ -247,11 +250,11 @@ In this exercise, you will build the code component.
         ![](/images/L02/image19.png)  
    
  
- 15. Locate the **Export** class in **line number 5**.
+14. Locate the **Export** class in **line number 5**.
       
      ![](/images/L02/image20.png)
  
- 16. Add the following code below inside the **export** class. This defines some working variables you
+15. Add the following code below inside the **export** class. This defines some working variables you
     will be using in the class logic.
    
         ```
@@ -261,11 +264,11 @@ In this exercise, you will build the code component.
         ![](/images/L02/image21.png)
  
 
- 17. Locate the **init** function in **line number 24**.
+16. Locate the **init** function in **line number 24**.
  
       ![](/images/L02/image22.png)
         
- 18. Paste the code below inside the **init** function after **line number 25**. This logic initializes our class variables from the
+17. Paste the code below inside the **init** function after **line number 25**. This logic initializes our class variables from the
     runtime values and enables resize notification.    
     
         ![](/images/L02/image23.png)
@@ -275,11 +278,11 @@ In this exercise, you will build the code component.
         context.mode.trackContainerResize(true);
        ```
  
-19. Locate the **updateView** function.
+18. Locate the **updateView** function.
 
      ![](/images/L02/imageUpdateView.png)
  
-20. Replace **updateView** function with the function below. This logic creates the React Element
+19. Replace **updateView** function with the function below. This logic creates the React Element
     from the PriorityComponent and adds it to the virtual DOM.
   
      ```   
@@ -302,7 +305,7 @@ In this exercise, you will build the code component.
 
     ![](/images/L02/image24.png)
  
-21. Add the below code after the **destroy** function. This logic handles the onReorder event from
+20. Add the below code after the **destroy** function. This logic handles the onReorder event from
     the PriorityComponent and identifies the involved items to the hosting app as selected items.
        
     ```
@@ -321,13 +324,13 @@ In this exercise, you will build the code component.
  
      > **Note** : **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
 
-22. Open the **package.json** file.
+21. Open the **package.json** file.
     
-23. Locate the **dependencies** JSON object.
+22. Locate the **dependencies** JSON object.
 
       ![](/images/L02/image26.png)
  
-24. Replace **dependencies** with the JSON below.
+23. Replace **dependencies** with the JSON below.
 
     ```
     "dependencies": {
@@ -344,7 +347,7 @@ In this exercise, you will build the code component.
     },
     ```
     
-1. Make the following modification to the file .eslintrc.json to work around a new lint rule that was 
+24. Make the following modification to the file .eslintrc.json to work around a new lint rule that was 
    too strict.
    
    a) Open the **.eslintrc.json(1)** file.
@@ -372,11 +375,11 @@ In this exercise, you will build the code component.
 
       > **Note** : If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
  
- 28. The build should succeed. If any errors, resolve them before proceeding.
+28. The build should succeed. If any errors, resolve them before proceeding.
       
        ![](/images/L02/image28.png)
  
- 29. Run the command below to start the test harness.
+29. Run the command below to start the test harness.
     
         ```
         npm start
@@ -397,17 +400,17 @@ In this exercise, you will build the code component.
      
       ![](/images/L02/image30.png)
 
-1. Run the command below to see your currently selected environment.
+34. Run the command below to see your currently selected environment.
     ```
     pac org who
     ```
     
-1. You should have the dev environment you created selected. If not, run the select command 
+35. You should have the dev environment you created selected. If not, run the select command 
 from the end of lab one again.
 
    ![](images/L02/org.png)
 
-34. Run the command below to push the component to your environment.
+36. Run the command below to push the component to your environment.
     ```
     pac pcf push --publisher-prefix contoso
     ```
@@ -425,7 +428,7 @@ from the end of lab one again.
         ```
 
     
-35. Wait for the solution to be imported and published to your environment.
+37. Wait for the solution to be imported and published to your environment.
 
       ![](/images/L02/image31.png)
  
@@ -453,7 +456,7 @@ In this task, you will allow publishing of canvas apps with code components for 
     
      ![](/images/L02/feature.png)
 
- 5. Turn on **Allow publishing of canvas apps with code components** and click **Save**.
+5. Turn on **Allow publishing of canvas apps with code components** and click **Save**.
      
       ![](/images/L02/image35.2.png)
 
@@ -476,17 +479,17 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
      ![](/images/L02/image38.png)
  
-1. Select the **Code (1)** tab, select the code component (2) you created and click **Import (3)**.
+5. Select the **Code (1)** tab, select the code component (2) you created and click **Import (3)**.
     
      ![](/images/L02/L02-code.png)
  
-7. Select the **Screens** tab.
+6. Select the **Screens** tab.
 
-8. Expand **votescreen (1)** and Select the **Votes gallery (2)**.
+7. Expand **votescreen (1)** and Select the **Votes gallery (2)**.
 
      ![](/images/L02/L02-votescreen.png)
 
-1. Select the **Width** from the properties dropdown.    
+8. Select the **Width** from the properties dropdown.    
 
      ![](/images/L02/L02-votescreen1.png)
 
@@ -525,37 +528,37 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
      
       ![](/images/L02/image44.png)
  
-1. Set the ItemHeight of the PrioritZDnDRanking to the formula below.
+18. Set the ItemHeight of the PrioritZDnDRanking to the formula below.
     
     ```
     'Votes gallery'.TemplateHeight + 2
 
     ```
 
-18. The rank should now show on the control, but it is sorted descending.
+19. The rank should now show on the control, but it is sorted descending.
       
       ![](/images/L02/image45.png)
 
-19. Select the **Votes gallery**, then select the **Items** property from the property dropdown and change the sort order to **Ascending**.
+20. Select the **Votes gallery**, then select the **Items** property from the property dropdown and change the sort order to **Ascending**.
      
       ![](/images/L02/image46.png)
  
- 20. The rank should now get sorted ascending.
+21. The rank should now get sorted ascending.
      
       ![](/images/L02/image47.png)
  
-21. Select the **PrioritZDnDRanking** component then **X** property from the property dropdown.
+22. Select the **PrioritZDnDRanking** component then **X** property from the property dropdown.
  
       ![](/images/L02/image47.1.png)
       
-22. Set the **X** value of the **PrioritZDnDRanking** component to the below formula.
+23. Set the **X** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     'Votes gallery'.Width
     ```
-23. Select the **Width** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value to **60**.
+24. Select the **Width** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value to **60**.
     
-24. Select the **Height** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value with the below formula.
+25. Select the **Height** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value with the below formula.
 
     ```
     'Votes gallery'.Height
@@ -630,19 +633,19 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 35. Close the preview.
 
-37. Click **Publish**.
+36. Click **Publish**.
 
     ![](images/L02/publish.png)
 
-38. Select **Publish this version** and wait for the publish to be completed.
+37. Select **Publish this version** and wait for the publish to be completed.
 
-1. Click on the  button.
+38. Click on the  button.
 
    ![](images/L02/back.png)
 
-1. Select Leave if prompted.
+39. Select Leave if prompted.
 
-1. Do not navigate away from this page.
+40. Do not navigate away from this page.
 
 ## Exercise 3 – Add Code Component to Solution
 
@@ -653,19 +656,19 @@ later when we move from dev to test our component is included.
 
 1. Make sure you are still in the **PrioritZ** solution.
 
-3. Click **Add existing** and select **More | Developer | Custom control**.
+2. Click **Add existing** and select **More | Developer | Custom control**.
       
       ![](/images/L02/image50.1.png)
  
-4. Select **contoso_ContosoCoffee.PrioritZDnDRanking (1)** and click **Add (2)**.
+3. Select **contoso_ContosoCoffee.PrioritZDnDRanking (1)** and click **Add (2)**.
      
       ![](/images/L02/image51.1.png)
  
-5. Click **Publish all customizations** and wait for the publishing to complete.
+4. Click **Publish all customizations** and wait for the publishing to complete.
 
     ![](/images/L02/L02-EX3.png)
     
-1. The custom control should now be in your solution.
+5. The custom control should now be in your solution.
 
     ![](images/L02/contoso.png)
 
