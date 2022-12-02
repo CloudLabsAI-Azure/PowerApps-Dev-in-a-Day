@@ -210,6 +210,9 @@ In this exercise, you will build the code component.
     ```
     npm install react-beautiful-dnd
     ```
+    
+    ![](/images/L02/npm.png)
+    
     >**Note** : If you receive this error **npm is not recognised**, then perform the below steps:
 
       1. Open PowerShell then run this command `choco install -y --force nodejs`.
@@ -223,6 +226,8 @@ In this exercise, you will build the code component.
     ```
 
 10. Notice the red underline in line 9 has been resolved.
+
+    ![](/images/L02/react.png)
     
 11. Open the **index.ts** file.
     
