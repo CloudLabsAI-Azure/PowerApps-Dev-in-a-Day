@@ -92,7 +92,7 @@ In this exercise, you will build the code component.
 
 1. If you are presented with below pop-up, click on **Yes** to trust the authors of the files.
 
-    ![]/(images/L02/image4.1.png)
+    ![](/images/L02/image4.1.png)
 
 9. Review the created code component files by selecting the **Explorer** tab.
     
@@ -211,7 +211,7 @@ In this exercise, you will build the code component.
     npm install react-beautiful-dnd
     ```
     
-    ![](/images/L02/npm.png)
+    ![](images/L02/npm.png)
     
     >**Note** : If you receive this error **npm is not recognised**, then perform the below steps:
 
@@ -227,7 +227,7 @@ In this exercise, you will build the code component.
 
 10. Notice the red underline in line 9 has been resolved.
 
-    ![](/images/L02/react.png)
+    ![](images/L02/react.png)
     
 11. Open the **index.ts** file.
     
@@ -258,7 +258,7 @@ In this exercise, you will build the code component.
          private context: ComponentFramework.Context<IInputs>;
          private items: ComponentFramework.PropertyTypes.DataSet;
         ```
-        ![](images/L02/image21.png)
+        ![](/images/L02/image21.png)
  
 
  17. Locate the **init** function in **line number 24**.
@@ -352,6 +352,11 @@ In this exercise, you will build the code component.
    b) Locate **rules(2)** and paste the rules below.
 
    ![](images/L02/eslint.png)
+   
+   ```
+    "no-unused-vars": ["off"],
+    "no-undef": ["off"]
+   ```
 
 25. Click **File** and save all your changes.
 
@@ -627,33 +632,36 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 37. Click **Publish**.
 
+    ![](images/L02/publish.png)
+
 38. Select **Publish this version** and wait for the publish to be completed.
 
-39. You may **close** the canvas app studio.
+1. Click on the  button.
 
+   ![](images/L02/back.png)
+
+1. Select Leave if prompted.
+
+1. Do not navigate away from this page.
 
 ## Exercise 3 – Add Code Component to Solution
 
-In this exercise, you will add the code component you created to the PrioritZ solution.
+In this exercise, you will add the code component you created to the PrioritZ solution. This will ensure 
+later when we move from dev to test our component is included.
 
 ### Task 1: Add component to solution
 
-1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
-
-   ```
-    https://make.powerapps.com/
-    ```
-2. Select **Solutions** and open the **PrioritZ** solution.
+1. Make sure you are still in the **PrioritZ** solution.
 
 3. Click **Add existing** and select **More | Developer | Custom control**.
       
       ![](/images/L02/image50.1.png)
  
- 4. Select **contoso_ContosoCoffee.PrioritZDnDRanking (1)** and click **Add (2)**.
+4. Select **contoso_ContosoCoffee.PrioritZDnDRanking (1)** and click **Add (2)**.
      
       ![](/images/L02/image51.1.png)
  
- 5. Click **Publish all customizations** and wait for the publishing to complete.
+5. Click **Publish all customizations** and wait for the publishing to complete.
 
     ![](/images/L02/L02-EX3.png)
     
