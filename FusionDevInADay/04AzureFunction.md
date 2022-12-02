@@ -792,8 +792,6 @@ Admin canvas application.
       ```
     
 12. Click **Save**.
-   
-     ![](/images/savee.png)
 
 13. Click **Publish**.
 
