@@ -338,6 +338,8 @@ application.
 
 1. Click **Publish**.
 
+   ![](images/L02/publish.png)
+
 1. Select Publish this version and wait for the publishing to complete.
 
      ![](/images/L01/NewUipublish1.png)
@@ -354,7 +356,7 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
 
 1. In the JumpVM, start **Visual Studio Code** using the shortcut available on the desktop.
 
-   ![](images/L04/vscode1.png)
+   ![](/images/L04/vscode1.png)
    
 1. Select the **Power Platform tab(1)** and click **Add Auth Profile(2)**.
 
@@ -390,7 +392,7 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
 
 1. Click **Terminal** and select **New Terminal**.
 
-    ![](images/L01/image42.png)
+    ![](/images/L01/image42.png)
     
    
 1. Run the command below to select the dev environment. Replace `<your environment URL>` in the below command with the value of environment URL that you copied earlier    then run the command. 
@@ -414,4 +416,4 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
       ```
 1. You should see list of solutions installed on your environment.
     
-    ![](images/L01/sollist.png)
+    ![](/images/L01/sollist.png)
