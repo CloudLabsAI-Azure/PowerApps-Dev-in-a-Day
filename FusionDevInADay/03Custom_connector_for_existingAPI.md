@@ -474,7 +474,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 17. Select **Cloud flows** and open the flow you created.
      
-     ![](images/L03/image52.png)
+     ![](/images/L03/image52.png)
 
 18. Start a new browser window and navigate to Power Apps maker portal.
 
