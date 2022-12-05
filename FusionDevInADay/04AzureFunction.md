@@ -182,7 +182,7 @@ In this exercise, you will implement the function.
       
       After adding the attributes your **Run method** should look like below screenshot:
       
-      ![](images/L04/image%20(13).png)
+    ![](/images/L04/image%20(13).png)
 
 6. Remove **get** from the Run method as you should only have **post**.
   
@@ -353,7 +353,7 @@ In this exercise, you will deploy the function to Azure.
 
 2. Type **create function** and select **Create Function App in Azure**.
 
-    ![](/images/L04/function.png)
+    ![](images/L04/function.png)
 
 3. Select **+ Create Function App** if prompted.
 
