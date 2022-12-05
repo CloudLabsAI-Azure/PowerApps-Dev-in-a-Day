@@ -335,9 +335,9 @@ application.
 
     ![](images/L01/L01-addtopic.png)
 
-4. Select the **Insert (1)** tab, click **Text (2)** , and then select **Text input (3)**.
+4. Click **+ Insert(1)** and select **Text input(2)**.
    
-     ![](images/L01/L01-insert.png)
+     ![](images/L01/tinput.png)
 
 5. Double click on the newly added **Text input** and enter the below value to rename the text input.
 
@@ -386,9 +386,9 @@ application.
     ```
 12. Select the **View Topic Screen (1)** from the **Screens** tab.
 
-1.  Navigate to the **Insert** tab and click **Label (2)**.
+1. Click **+ Insert(1)** tab and select **Text label(2)**.
 
-    ![](images/L01/L01-viewtopic.png)
+    ![](images/L01/tlabel.png)
 
 13. Double click on the newly added label and enter the below value to rename the label you just added.
 
