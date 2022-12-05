@@ -453,8 +453,7 @@ In this task, you will use the custom connector you created to show the user’s
       ![](images/L03/image47.png)
 
 20. Close the preview.
-21. Click **File** and select **Save**.
-22. Select **Publish**.
+1. Select **Publish**.
 23. Select **Publish this version**.
 24. Go back to the solution by clicking on the  **Back** button.
      
