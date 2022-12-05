@@ -6,11 +6,15 @@ Duration: 140 mins
 
 Lab Scenario 
 
-1. Exercise 1 - Create Solution 
+1. Exercise 0 - Create Database in Default Environment 
+
+    - Task 1: Create Database 
+    
+2. Exercise 1 - Create Solution 
 
     - Task 1: Create solution 
 
-2. Exercise 2 – Create Custom Connector 
+3. Exercise 2 – Create Custom Connector 
 
     - Task 1: Download open API definition and create connector 
 
@@ -18,19 +22,19 @@ Lab Scenario
 
     - Task 3: Test connector 
 
-3. Exercise 3 – Add Custom Code 
+4. Exercise 3 – Add Custom Code 
 
     - Task 1: Add code from resource folder 
 
     - Task 2: Test custom code 
 
-4. Exercise 4 – Test Custom Connector 
+5. Exercise 4 – Test Custom Connector 
 
     - Task 1: Test connector from canvas app
 
     - Task 2: Test connector from flow 
 
-5. Exercise 5 – Promote Solution to Test Environment 
+6. Exercise 5 – Promote Solution to Test Environment 
 
     - Task 1: Export solution. 
 
@@ -50,6 +54,27 @@ When you review the API, you see that it has four operations and uses API key au
 
  ![](images/L03/image1.png)
 
+## Exercise 0 - Create Database in Default Environment 
+
+In this exercise, you will create a Dataverse database in the test environment, which will be used to import the solution in next exercises.
+
+### Task 1: Create Database 
+
+1. Navigate to Power Apps maker portal and select your **Test** environment named OTU XXXXXX (default).
+
+         https://make.powerapps.com
+
+2. Select **Solutions** from the left-hand side menu of Power Apps.
+
+3. Click on **Create database** to create a Dataverse database.
+ 
+    ![](images/L03/db1.png)
+
+5. Leave the **Currency** and **Lanaguage** field to default and click on **Create database**.
+    ![](images/L03/db2.png)
+    
+    >**Note:** You can leave this browser tab open and continue with next exersise,as Dataverse database creation will take some time.
+
 ## Exercise 1 - Create Solution
 
 In this exercise, you will create a solution for Contoso Badges custom connector. Currently, custom
@@ -57,7 +82,7 @@ connectors must be in a separate solution from the apps and flows that use them.
 
 ### Task 1: Create solution
 
-1. Navigate to Power Apps maker portal and select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
+1. Open a new browser tab and navigate to Power Apps maker portal and select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
 
          https://make.powerapps.com 
 
@@ -428,8 +453,7 @@ In this task, you will use the custom connector you created to show the user’s
       ![](images/L03/image47.png)
 
 20. Close the preview.
-21. Click **File** and select **Save**.
-22. Select **Publish**.
+1. Select **Publish**.
 23. Select **Publish this version**.
 24. Go back to the solution by clicking on the  **Back** button.
      
@@ -540,25 +564,11 @@ environment and import it to Test environment.
 
          https://make.powerapps.com
 
-2. Select **Solutions** from the left-hand side menu of Power Apps.
-
-3. Click on **Create database** to create a Dataverse database.
- 
-    ![](images/L03/db1.png)
-
-5. Leave the **Currency** and **Lanaguage** field to default and click on **Create database**.
-    ![](images/L03/db2.png)
-
-1. Wait for sometime (5-7 mins) until the solutions are loaded.
-
-   > **Note**: If solutions are not loading and you are **Try again** error this is because Power Apps takes sometime to create the Database and load the daa. You can follow the below steps to fix the issue:
-
-      1. Try refreshing the browser few times.
-      2. If refresh doesn't work, try logging in to the Power Apps maker portal from private window and check solutions info.
-
 3. Click **Import Solution**.
     
      ![](images/L03/L03-EX5.png)
+     
+     >**Note:** Try refreshing the browser if solutions are not opened.
 
 4. Click **Browse**.
 5. Select the solution you exported from the Dev environment and click **Open**.

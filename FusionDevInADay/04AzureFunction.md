@@ -9,9 +9,7 @@ Lab Scenario
 
 1. Exercise 1 – Create Azure Function 
 
-   - Task 1: Install Azure tools extension 
-
-   - Task 2: Create function 
+   - Task 1: Create function 
 
 2. Exercise 2 - Function implementation 
 
@@ -29,7 +27,7 @@ Lab Scenario
 
    - Task 2: Test connector 
 
-5. Exercise 5 – Use Function from Canvas App 
+5. Exercise 5 – Use Function from Canvas App (Optional)
 
    - Task 1: Use function 
 
@@ -46,102 +44,84 @@ added in the future. In this lab you will create the function, use the Dataverse
 Azure AD, configure a custom connector to use the API, and change the Power App to use the
 connector.
 
-Note: This lab requires an Azure subscription (or trial) in the same tenant as your Dataverse
+>**Note**: This lab requires an Azure subscription (or trial) in the same tenant as your Dataverse
 environment.
 
 ## Exercise 1 – Create Azure Function
 
 In this exercise, you install Azure tools extension for Visual Studio Code and create the function
 
-### Task 1: Install Azure tools extension
+### Task 1: Create function
 
 1. Start **Visual Studio Code** using the shortcut available on the desktop.
 
-   ![](images/L04/vscode1.png)
-    
-2. Select the **Extensions** tab.
+   ![](/images/L04/vscode1.png)
 
-   ![](images/L04/vscode2.png)
-
-3. Search for **Azure tools (1)** and click on **Install (2)** to install the  Azure Tools extension.
-  
-    ![](images/L04/vscode3.png)
-
-4. Wait for the installation to complete.
-
-5. You should now see the new Azure Tools extension you added.
-    
-    ![](images/L04/image%20(2).png)
-
-6. Click on **Terminal** from the top menu and select **New Terminal**.
+2. Click on **Terminal** from the top menu and select **New Terminal**.
  
-    ![](images/L04/image%20(3).png)
+    ![](/images/L04/image%20(3).png)
 
-7. Run the below command in the terminal to create new folder.
+3. Run the below command in the terminal to create new folder.
    ```
    md ContosoFunctions
    ```
-     ![](images/L04/image%20(4).png)
+     ![](/images/L04/image%20(4).png)
 
+4. Select **Azure Tool(1)** and click **Sign in to Azure(2)**.
 
-
-### Task 2: Create function
-
-1. Select **Azure Tools (1)** from the left navigtion menu and navigate to the **Workspace (2)** section.
-
-    ![](images/L04/vscode4.png)
-
-1. Click on the shown **symbol(1)** in the image, after the **+** under **Workspace** section, click **Create Function (2)**, and click **Create New Project**.
-
-    ![](images/L04/function.png)
-
-    >**Note**: If the **+** symbol is not visible, select settings and look if there are any update is required for vscode and update the app.Close the current vscode and open it again and perform the above step.
-
-1. Select the **ContosoFunction (1)** folder you created and click **select Folder (2)**
-
-    ![](images/L04/L04-contoso.png)
-
-1. Now, you will be presented with the below pop-up, click on **Yes** to create a new project.
-
-    ![](images/L04/vscode6.png)
-
-1. Select **C#** for language.
-
-    ![](images/L04/vscode7.png)
-
-1. Select **.NET 6.0 LTS** for .NET runtime.
- 
-    ![](images/L04/vscode8.png)
-
-1. Select **HTTP trigger with OpenAPI** for template.
-
-    ![](images/L04/vscode9.png)
-
-1. Enter **CreateTopic** for function name and hit **[ENTER].**
+    ![](images/L04/azure.png)
     
-    ![](images/L04/image%20(7).png)
+ >**Note**: Azure Tool installation is already done as a part of pre-requisits.
 
-1. Enter **Contoso.PrioritZ** for namespace and hit **[ENTER]**.
+5. A browser popup should appear. Provide your Azure credentials and login.
 
-    ![](images/L04/vscode10.png)
+6. Press [CONTROL + SHIFT + P] to open the command palette or you can select it under **View** tab.
 
-1. Select **Anonymous** for AccessRights. Later we will protect the function using Azure AD.
+7. Type **create new project** and select **Create new project**.
+ 
+    ![](images/L04/project.png)
 
-    ![](images/L04/vscode11.png)
+8. Select the **ContosoFunctions(1)** folder you created and click **Select(2)**.
 
-9. If you are presented with below window, select **Open in current window.**
+   ![](images/L04/contoso.png)
+
+9. Select **C#** for language.
+
+    ![](/images/L04/vscode7.png)
+
+10. Select **.NET 6.0 LTS** for .NET runtime.
+ 
+    ![](/images/L04/vscode8.png)
+
+11. Select **HTTP trigger with OpenAPI** for template.
+
+    ![](/images/L04/vscode9.png)
+
+12. Enter **CreateTopic** for function name and hit **[ENTER].**
+    
+    ![](/images/L04/image%20(7).png)
+
+13. Enter **Contoso.PrioritZ** for namespace and hit **[ENTER]**.
+
+    ![](/images/L04/vscode10.png)
+
+14. Select **Anonymous** for AccessRights. Later we will protect the function using Azure AD.
+
+    ![](/images/L04/vscode11.png)
+
+15. If you are presented with below window, select **Open in current window.**
   
-    ![](images/L04/image%20(8).png)
+    ![](/images/L04/image%20(8).png)
 
-1. Your function should open in **Visual Studio Code** .
+16. Your function should open in **Visual Studio Code** .
 
-1. Click on **Terminal** from the top menu and select **Run Build Task**.
+17. Click on **Terminal** from the top menu and select **Run Build Task**.
   
-   ![](images/L04/image%20(9).png)
+      ![](/images/L04/image%20(9).png)
 
-1. Once the build is succeeded, **press any key to close the terminal**.
+18. Once the build is succeeded, go to terminal and **press any key to close the terminal**.
 
-    ![](images/L04/vscode12.png)
+    ![](/images/L04/vscode12.png)
 
 
 ## Exercise 2 - Function implementation
@@ -152,11 +132,11 @@ In this exercise, you will implement the function.
 
 1. Click **New file** that is next to **ContosoFunctions** to add a new file.
     
-   ![](images/L04/image%20(10).png)
+   ![](/images/L04/image%20(10).png)
 
 2. Name the new file **Model.cs**
   
-   ![](images/L04/vscode13.png)
+   ![](/images/L04/vscode13.png)
 
 3. Open the new **Model.cs** file and paste the code below. This will define the data that will be sent
     from the Power App.
@@ -185,9 +165,10 @@ In this exercise, you will implement the function.
       ```
    After adding the code your **Model.cs** will look like below screenshot:
    
-   ![](images/L04/vscode14.png)
+   ![](/images/L04/vscode14.png)
    
 4. Open the **CreateTopic.cs** file.
+
 5. Locate the Run method attributes (line number 24-27) that are present above the **Run method** and replace them with the attributes below. This provides user friendly names when we create a connector to use the API.
     
        
@@ -201,11 +182,11 @@ In this exercise, you will implement the function.
       
       After adding the attributes your **Run method** should look like below screenshot:
       
-      ![](images/L04/image%20(13).png)
+    ![](/images/L04/image%20(13).png)
 
 6. Remove **get** from the Run method as you should only have **post**.
   
-    ![](images/L04/image%20(14).png)
+    ![](/images/L04/image%20(14).png)
 
 
 7. Click on **Terminal** from the top menu and select the **New Terminal**.
@@ -215,7 +196,7 @@ In this exercise, you will implement the function.
       ```
       dotnet add package Microsoft.PowerPlatform.Dataverse.Client
       ```
-    ![](images/L04/image%20(17).png)
+    ![](/images/L04/image%20(17).png)
 
 9. Wait for the package to be added then run the below command to add **Azure Identity** package.
 
@@ -237,7 +218,7 @@ In this exercise, you will implement the function.
       using Microsoft.Xrm.Sdk;
       ```
       
-     ![](images/L04/vscode15.png)
+     ![](/images/L04/vscode15.png)
   
 12. Add the below method after the **Run** method. This method will use the token passed from the
     calling app to get a new token that will allow the function to use the Dataverse API on behalf of
@@ -275,7 +256,7 @@ In this exercise, you will implement the function.
 
      ```
 
-    ![](images/L04/vscode16.png)
+    ![](/images/L04/vscode16.png)
 
 13. Replace the code inside the **Run** method with code below. This will get an instance of the
     Dataverse API and use the GetAccessToken function we just defined.
@@ -295,7 +276,7 @@ In this exercise, you will implement the function.
       }
       ```
 
-    ![](images/L04/vscode17.png)
+    ![](/images/L04/vscode17.png)
 
 14. Add the following code after the if statement of the **Run** method to reserialize the request. This
     will get us the data passed from the caller.
@@ -305,7 +286,7 @@ In this exercise, you will implement the function.
       var data = JsonConvert.DeserializeObject<TopicModel>(requestBody);
 
       ```
-    ![](images/L04/vscode18.png)
+    ![](/images/L04/vscode18.png)
 
 15. Add the below code that creates the row to the **Run** method after the code you added in previous step to **reserialize the request**. This code creates the rows in
     Dataverse and is where we might add more logic in the future.
@@ -339,7 +320,7 @@ In this exercise, you will implement the function.
 
       ```
 
-    ![](images/L04/vscode19.png)
+    ![](/images/L04/vscode19.png)
 
 16. Add the code below to the **Run** method to return the topic id as JSON (required by Power Apps) after the code you added in previous step to create the row to the **Run** method.
 
@@ -347,18 +328,20 @@ In this exercise, you will implement the function.
       return new OkObjectResult(topicId);
       ```
    
-    ![](images/L04/vscode20.png)
+    ![](/images/L04/vscode20.png)
 
-17. Click **Terminal (1)** and select **Run Build Task (2)**.
+17. Click **File** and save all your changes.
 
-    ![](images/L04/vscode21.png)
+18. Click **Terminal (1)** and select **Run Build Task (2)**.
 
-18. The run should succeed. Press any key to stop.
+    ![](/images/L04/vscode21.png)
+
+19. The run should succeed. Press any key to stop.
 
      > **Note** :
 
       1. If the build task operation fails with the errors, please make sure that you have followed the previous instructions and added the code correctly in **CreateTopic.cs and Model.cs files.**
-      2. Additionally you can find the **CreateTopic.cs and Model.cs** files in the location **C:\LabFiles**, you can compare your code with these files and fix the issues if there any then try to perform **step 17 again**.
+      2. Additionally you can find the **CreateTopic.cs and Model.cs** files in the location **C:\LabFiles**, you can compare your code with these files and fix the issues if there any then try to perform **step 18 again**.
 
 ## Exercise 3 – Publish to Azure
 
@@ -366,197 +349,187 @@ In this exercise, you will deploy the function to Azure.
 
 ### Task 1: Publish
 
-1. Select **Azure Tools** from the left hand side menu.
+1. Press [CONTROL + SHIFT + P] to open the command palette.
 
-    ![](images/L04/vscode22.png)
+2. Type **create function** and select **Create Function App in Azure**.
 
-2. Click **Sign in to Azure** under **Resources** section.
+    ![](images/L04/function.png)
+
+3. Select **+ Create Function App** if prompted.
+
+4. Enter **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** for function app name and hit [ENTER].
+
+    ![](/images/L04/vscode25.png)
+
+5. Select **.NET 6**.
+
+    ![](/images/L04/vscode26.png)
+
+6. Select the location: **<inject key="Region" enableCopy="false" />** form the list and wait for the Function App to be deployed.
+
+    ![](/images/L04/vscode27.png)
+    
+7. Once Function App is deployed, Click **Deploy Function App** under **Workspaces** section and choose the Function App just now you created. 
+    
+     ![](/images/L04/DeployNew.png)
    
-   ![](images/L04/vscode23.png)
-    
-3. Complete the **Sign-in** process using the below credentials.
+     ![](/images/L04/DeployNew1.png)
 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
-   * Password: <inject key="AzureAdUserPassword"></inject>
+8. Click Deploy and wait for the deployment to complete.
 
-4. Close the sign in browser window once the sign in process is completed.
+   ![](images/L04/deploy.png)
 
-5. Navigate back to Visual Studio Code and click on **+** that is next to your **Resources tab**  to create new Function App.
-  
-    ![](images/L04/NewVSazure3.png)
- 
-6. Now, search for and select **Create Function App in Azure**.
-
-    ![](images/L04/vscode24.png)
-
-7. Enter **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** for function app name and hit [ENTER].
-
-    ![](images/L04/vscode25.png)
-
-8. Select **.NET 6**.
-
-    ![](images/L04/vscode26.png)
-9. Select the location: **<inject key="Region" enableCopy="false" />** form the list and wait for the Function App to be deployed.
-
-    ![](images/L04/vscode27.png)
-    
-10. Once Function App is deployed, Click **Deploy Function App** under **Workspaces** section and choose the Function App just now you created. 
-    
-     ![](images/L04/DeployNew.png)
-   
-     ![](images/L04/DeployNew1.png)
-
-11. Wait for the function app to be deployed then navigate to Azure Portal using the below URL.
+9. Wait for the function app to be deployed then navigate to Azure Portal using the below URL.
 
     ```
     https://portal.azure.com/
     ```
     
-12. Select **All resources** , search for the function app **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** that you have deployed earlier and click to open it.
+10. Select **All resources** , search for the function app **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** that you have deployed earlier and click to open it.
   
-     ![](images/L04/vscode27.1.png)
+     ![](/images/L04/vscode27.1.png)
 
-13. Select **Authentication (1)** from the left hand side menu and click on **Add identity provider (2)**.
+11. Select **Authentication (1)** from the left hand side menu and click on **Add identity provider (2)**.
   
-     ![](images/L04/L04-auth.1.png)
+     ![](/images/L04/L04-auth.1.png)
 
-14. Select **Microsoft** for Identity provider and **Current tenant - Single tenant** for **Supported Account types** then click on **Add**.
+12. Select **Microsoft** for Identity provider and **Current tenant - Single tenant** for **Supported Account types** then click on **Add**.
    
-     ![](images/L04/L04-auth.2.png)
+     ![](/images/L04/L04-auth.2.png)
 
-15. Open the **Portal menu** by clicking on the Portal menu icon.
+13. Open the **Portal menu** by clicking on the Portal menu icon.
 
-     ![](images/L04/vscode28.png)
+     ![](/images/L04/vscode28.png)
 
-16. Select **Azure Active Directory** from the list of resources.
+14. Select **Azure Active Directory** from the list of resources.
     
-     ![](images/L04/vscode29.png)
+     ![](/images/L04/vscode29.png)
 
-17. Select **App registrations** under **Manage**  from the left hand side menu.
+15. Select **App registrations** under **Manage**  from the left hand side menu.
 
-    ![](images/L04/vscode30.png)
+    ![](/images/L04/vscode30.png)
     
-18. Click to open the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** to open the app.
+16. Click to open the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** to open the app.
      
-     ![](images/L04/vscode31.png)
+     ![](/images/L04/vscode31.png)
 
-19. Copy the **Application (client) ID** of the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** application registration and keep it on a
+17. Copy the **Application (client) ID** of the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** application registration and keep it on a
     notepad as **PrioritZFL API application ID**. You will need this id in future steps. This ID will be used to configure protection of the API.
     
-    ![](images/L04/image%20(33).png)
+    ![](/images/L04/image%20(33).png)
     
-    ![](images/L04/image%20(34).png)
+    ![](/images/L04/image%20(34).png)
     
     >**Note**: Make sure to copy and paste the correct **Application (client) ID** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
-20. Copy the **Directory (tenant) ID** and keep it on a notepad as **Tenant ID**. You will need this id in
+18. Copy the **Directory (tenant) ID** and keep it on a notepad as **Tenant ID**. You will need this id in
     future steps.
   
-    ![](images/L04/image%20(35).png)
+    ![](/images/L04/image%20(35).png)
     
     >**Note**: Make sure to copy and paste the correct **Directory (tenant) ID** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
-21. Select **Certificates & secrets** under **Manage** from the left hand side menu.
+19. Select **Certificates & secrets** under **Manage** from the left hand side menu.
 
-    ![](images/L04/vscode32.png)
+    ![](/images/L04/vscode32.png)
 
-22. Click **+ New client secret**.
+20. Click **+ New client secret**.
   
-     ![](images/L04/image%20(36).png)
+     ![](/images/L04/image%20(36).png)
 
-23. Provide a description as **PrioritZ API secret(1)**, select **3 months(2)** , and click **Add(3)**.
+21. Provide a description as **PrioritZ API secret(1)**, select **3 months(2)** , and click **Add(3)**.
     
-    ![](images/L04/image38.png)
+    ![](/images/L04/image38.png)
 
-24. Copy the **Value** and keep it in a notepad as **PrioritZFL API Secret**. You need this value in future steps.
+22. Copy the **Value** and keep it in a notepad as **PrioritZFL API Secret**. You need this value in future steps.
     
 
     >**Note**: Make sure to copy and paste the correct **Secret** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
-25. Select **API permissions** under **Manage** from the left hand side menu.
+23. Select **API permissions** under **Manage** from the left hand side menu.
 
-    ![](images/L04/vscode33.png)
+    ![](/images/L04/vscode33.png)
     
-26. Click **+ Add a permission**.
+24. Click **+ Add a permission**.
   
-     ![](images/L04/image%20(39).png)
+     ![](/images/L04/image%20(39).png)
 
-27. Select **Dynamics CRM** from the list of API permissions. Dynamics CRM is Dataverse, the Azure portal just hasn’t been updated as of the time of the writing of these steps.
+25. Select **Dynamics CRM** from the list of API permissions. Dynamics CRM is Dataverse, the Azure portal just hasn’t been updated as of the time of the writing of these steps.
      
-     ![](images/L04/vscode34.png)
+     ![](/images/L04/vscode34.png)
 
-28. Check the **user_impersonation** checkbox and click **Add permission**.
+26. Check the **user_impersonation** checkbox and click **Add permission**.
 
-    ![](images/L04/image%20(41).png)
+    ![](/images/L04/image%20(41).png)
 
-29. Go back to **Home** and open the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** function app.
+27. Go back to **Home** and open the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** function app.
    
-     ![](images/L04/vscode27.1.png)
+     ![](/images/L04/vscode27.1.png)
 
-30. Select **Configuration** under **Settings** from the left hand side menu..
+28. Select **Configuration** under **Settings** from the left hand side menu..
   
-     ![](images/L04/vscode35.png)
+     ![](/images/L04/vscode35.png)
 
-31. Click **+ New application setting.**
+29. Click **+ New application setting.**
      
-     ![](images/L04/vscode36.png)
+     ![](/images/L04/vscode36.png)
 
-32. Enter the following details on the **Add/Edit application setting** blade and click **OK (3)**.
+30. Enter the following details on the **Add/Edit application setting** blade and click **OK (3)**.
       
       - **Name**: **ClientID (1)**
       - **Value**: Paste the **PrioritZFL API application ID (2)** that you have noted earlier in the notepad.
 
-     ![](images/L04/vscode37.png)
+     ![](/images/L04/vscode37.png)
 
-33. Click **+ New application setting** again.
+31. Click **+ New application setting** again.
 
-34. Enter the following details on the **Add/Edit application setting** blade and click **OK (3)**.
+32. Enter the following details on the **Add/Edit application setting** blade and click **OK (3)**.
       
       - **Name**: **ClientSecret (1)**
       - **Value**: Paste the **PrioritZFL API Secret (2)** that you have noted earlier in the notepad.
 
-     ![](images/L04/vscode38.png)
+     ![](/images/L04/vscode38.png)
      
-35. Click **+ New application setting** again.
+33. Click **+ New application setting** again.
 
-36. Enter the following details on the **Add/Edit application setting** blade and click **OK (3)**.
+34. Enter the following details on the **Add/Edit application setting** blade and click **OK (3)**.
       
       - **Name**: **TenantID (1)**
       - **Value**: Paste the **TenantID (2)** that you have noted earlier in the notepad.
 
-     ![](images/L04/vscode39.png)
+     ![](/images/L04/vscode39.png)
      
-37. Start a new browser window or tab and navigate to Power Platform admin center and select
+35. Start a new browser window or tab and navigate to Power Platform admin center and select
     **Environments**.
 
       ```
         https://admin.powerplatform.microsoft.com/environments
       ```
 
-38. Click to open the Dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** you are using for this lab.
+36. Click to open the Dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** you are using for this lab.
 
-39. Copy the **Environment URL** and paste it in the notepad.
+37. Copy the **Environment URL** and paste it in the notepad.
 
-     ![](images/L04/image%20(47).png)
+     ![](/images/L04/image%20(47).png)
 
-40. Click **+ New application setting** one more time.
+38. Click **+ New application setting** one more time.
 
-41. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
+39. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
       
       - **Name**: **DataverseURL**
       - **Value**: Paste the **Environment URL** that you have noted earlier in the notepad.
       
-    ![](images/L04/vscode40.png)
+    ![](/images/L04/vscode40.png)
 
     >**Note**: Make sure to paste the correct **Environment URL** that you noted earlier in this task. Copying the incorrect value will result in issues in the next steps/tasks.
 
-42. You should see the four application settings you added.
+40. You should see the four application settings you added.
   
-     ![](images/L04/image%20(46).png)
+     ![](/images/L04/image%20(46).png)
 
-43. Click **Save** and **Continue**.
+41. Click **Save** and **Continue**.
 
-44. Paste the below URL in notepad and replace `{tenant id}` and `{api app id}` with **tenant id** and **PrioritZFL API application ID** values from your
+42. Paste the below URL in notepad and replace `{tenant id}` and `{api app id}` with **tenant id** and **PrioritZFL API application ID** values from your
     notepad. 
 
     ```
@@ -565,24 +538,24 @@ In this exercise, you will deploy the function to Azure.
      
      After updating the values, your URL should look like this: `https://login.microsoftonline.com/2140cxxxxxxx/adminconsent?client_id=195b2axxxxxxx`
  
-45. After updating the values, navigate to the URL in a browser tab and sign in with below credentials.
+43. After updating the values, navigate to the URL in a browser tab and sign in with below credentials.
    
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-53. Click **Accept**.
+44. Click **Accept**.
 
 ### Task 2: Register Connector Client app
 
 1. Navigate to the Azure portal, then search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
 
-   ![](images/L04/diad4l1.png)
+   ![](/images/L04/diad4l1.png)
 
-1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
+2. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
 
-   ![](images/L04/diad4l2.png)
+   ![](/images/L04/diad4l2.png)
 
-1. Please provide the following details and click on **Register** ***(5)***.
+3. Please provide the following details and click on **Register** ***(5)***.
    
    - Name: **PrioritZConnector<inject key="DeploymentID" enableCopy="false" />** ***(1)***
    - Supported account types: **Accounts in this organizational directory only (TenantName only - Single tenant)** ***(2)***
@@ -590,33 +563,33 @@ In this exercise, you will deploy the function to Azure.
 
    ![](images/L04/diad4l3-1.png)
     
-1. Copy the **Application (client) ID** and save it in a notepad as **PrioritZ Connector application ID**.
+4. Copy the **Application (client) ID** and save it in a notepad as **PriooritZ Connector application ID**.
      
-   ![](images/L04/diad4l4.png)
+   ![](/images/L04/diad4l4.png)
     
-1. Select **Certificates & secrets** from the side blade and click on **+ New client secret**.
+5. Select **Certificates & secrets** from the side blade and click on **+ New client secret**.
    
-   ![](images/L04/diad4l5.png)
+   ![](/images/L04/diad4l5.png)
     
-1. Provide **PrioritZsecret** ***(1)*** as description, set expiry to **3 months** ***(2)***, and click on **Add** ***(3)***.
+6. Provide **PrioritZsecret** ***(1)*** as description, set expiry to **3 months** ***(2)***, and click on **Add** ***(3)***.
 
-   ![](images/L04/diad4l6.png)
+   ![](/images/L04/diad4l6.png)
 
-1. Copy the **Secret value** and save it in a notepad as **PrioritZ Connector secert**.
+7. Copy the **Secret value** and save it in a notepad as **PrioritZ Connector secert**.
 
-   ![](images/L04/diad5l33.png)
+   ![](/images/L04/diad5l33.png)
 
-1. Select **API permissions** ***(1)*** from the side blade and click on **+ Add a permission** ***(2)***.
+8. Select **API permissions** ***(1)*** from the side blade and click on **+ Add a permission** ***(2)***.
       
-   ![](images/L04/diad4l8.png)
+   ![](/images/L04/diad4l8.png)
 
-1. In the Request API Permissions tab, select the **My APIs** ***(1)*** tab and select **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** ***(2)***.
+9. In the Request API Permissions tab, select the **My APIs** ***(1)*** tab and select **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** ***(2)***.
     
-   ![](images/L04/diad4l9.png)
+   ![](/images/L04/diad4l9.png)
     
-1. Toggle the **user_impersonation** ***(1)*** checkbox and click **Add permission** ***(2)***.
+10. Toggle the **user_impersonation** ***(1)*** checkbox and click **Add permission** ***(2)***.
 
-   ![](images/L04/diad4l10.png)
+    ![](/images/L04/diad4l10.png)
    
 ## Exercise 4 – Create Connector
 
@@ -630,96 +603,96 @@ In this exercise, you will create a new custom connector.
    https://portal.azure.com/
    ```
 
-1. Now in the Azure portal, click on **Resource Groups** present under Navigate.
+2. Now in the Azure portal, click on **Resource Groups** present under Navigate.
 
-   ![](images/L04/diad4l11.png)
+   ![](/images/L04/diad4l11.png)
  
-1. Select the  **prioritzfunc<inject key="DeploymentID" enableCopy="false" />** resource Group from the list.
+3. Select the  **prioritzfunc<inject key="DeploymentID" enableCopy="false" />** resource Group from the list.
 
-   ![](images/L04/diad4l12.png)
+   ![](/images/L04/diad4l12.png)
 
-1. Select **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** function resource from the list.
+4. Select **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** function resource from the list.
      
-   ![](images/L04/diad4l13.png)
+   ![](/images/L04/diad4l13.png)
     
-1. From the overview page, Copy the **URL** of the function. 
+5. From the overview page, Copy the **URL** of the function. 
    
-   ![](images/L04/diad4l14.png) 
+   ![](/images/L04/diad4l14.png) 
 
-1. Add **/api/swagger.json** to the end of the URL and access it using the browser.
+6. Add **/api/swagger.json** to the end of the URL and access it using the browser.
      
-   ![](images/L04/image%20(54).png)
+   ![](/images/L04/image%20(54).png)
     
    >**Note**: If permissions prompt pops up, Click on **Accept** and continue.
    
-1. Right click on the swagger and select **Save as** and Save the file in your local machine-Provide a name to file as swag.json.
+7. Right click on the swagger and select **Save as** and Save the file in your local machine-Provide a name to file as swag.json.
     
-   ![](images/L04/diad4l15.png) 
+   ![](/images/L04/diad4l15.png) 
    
-1. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
+8. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
    ```
    https://make.powerapps.com
    ```
    
-1. Expand **Dataverse** ***(1)*** and select **Custom Connectors** ***(1)***.
+9. Expand **Dataverse** ***(1)*** and select **Custom Connectors** ***(1)***.
      
-   ![](images/L04/diad4l16.png) 
+   ![](/images/L04/diad4l16.png) 
 
-1. Click on the chevron button next to the New custom connector and select **Import an OpenAPI file**.
+10. Click on the chevron button next to the New custom connector and select **Import an OpenAPI file**.
      
-   ![](images/L04/diad4l17.png) 
+    ![](/images/L04/diad4l17.png) 
     
-1. Enter **PrioritZ Connector** ***(1)*** for name and click **Import** ***(2)***.
+11. Enter **PrioritZ Connector** ***(1)*** for name and click **Import** ***(2)***.
     
-   ![](images/L04/diad4l20.png) 
+    ![](/images/L04/diad4l20.png) 
     
-1. Select the **swagger file (1)** which you saved in step 7 of this task and Click **Continue (2)**.
+12. Select the **swagger file (1)** which you saved in step 7 of this task and Click **Continue (2)**.
 
-   ![](images/L04/diad4l18.png) 
+    ![](/images/L04/diad4l18.png) 
  
-1. Provide **PrioritZ<inject key="DeploymentID" enableCopy="false" /> Connector** ***(1)*** as description as and click on **Security** ***(2)***.
+13. Provide **PrioritZ<inject key="DeploymentID" enableCopy="false" /> Connector** ***(1)*** as description as and click on **Security** ***(2)***.
     
-   ![](images/L04/diad4l19.png) 
+    ![](/images/L04/diad4l19.png) 
 
-16. Select **OAuth 2.0** ***(1)*** for Authentication type. Provide the following details and Click on **Create connector** ***(8)***.
+14. Select **OAuth 2.0** ***(1)*** for Authentication type. Provide the following details and Click on **Create connector** ***(8)***.
 
     - Identity Provider: **Azure Active Directory** ***(2)***
-    - Client id: Paste **PrioritZ Connector application ID** ***(3)*** which you copied earlier
-    - Client secret: Paste **PrioritZ Connector Secret** ***(4)*** which you copied earlier
+    - Client id: Paste **PrioritZFL Connector application ID** ***(3)*** which you copied earlier
+    - Client secret: Paste **PrioritZFL Connector Secret** ***(4)*** which you copied earlier
     - Tenant ID: Paste the **Tenant ID** ***(5)*** which you copied earlier
     - Resource URL: Paste **PrioritZ API application ID** ***(6)*** which you copied earlier
     - Enable on-behalf-of login: **true** ***(7)***
 
-   ![](images/L04/diad4l21.png) 
+      ![](/images/L04/diad4l21.png) 
    
 ### Task 2: Test connector
 
-1. Now navigate to the connecter you just created and click on **edit** button. Select the **Test** ***(1)*** tab from the drop down menu and click **+ New connection** ***(2)***.
+1. Select the **Test** ***(1)*** tab from the drop down menu and click **+ New connection** ***(2)***.
      
-   ![](images/L04/diad4l22.png) 
+   ![](/images/L04/diad4l22.png) 
     
-1. Click on **Create**.
+2. Click on **Create**.
 
-   ![](images/L04/diad4l23.png) 
+   ![](/images/L04/diad4l23.png) 
    
-1. If login prompt pops up enter the below credentials and click on **Accept** to accept the terms.
+3. If login prompt pops up enter the below credentials and click on **Accept** to accept the terms.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-7. Once the connector is created, select **Custom connectors (1)** from the left side menu and click **Edit (2)** on the **PrioritZ connector**.
+4. Once the connector is created, select **Custom connectors (1)** from the left side menu and click **Edit (2)** on the **PrioritZ connector**.
      
-   ![](images/L04/L04-custom.png)
+   ![](/images/L04/L04-custom.png)
     
-7. Select the **Test** from the drop down menu tab.
+5. Select the **Test** from the drop down menu tab.
 
-    ![](images/tstcnt.png)
+    ![](/images/tstcnt.png)
     
-9. Make sure the connection you created is selected.
+6. Make sure the connection you created is selected.
 
-    ![](images/cntcr.png)
+    ![](/images/cntcr.png)
     
-11. Turn on **Raw Body** and provide the JSON below and click **Test operation**.
+7. Turn on **Raw Body** and provide the JSON below and click **Test operation**.
     
     ```
           {
@@ -734,11 +707,11 @@ In this exercise, you will create a new custom connector.
           ]
           }
       ```
-     ![](images/L04/diad4l24.png) 
+     ![](/images/L04/diad4l24.png) 
         
- 11. The operation test should succeed, and the response should look like the image below.
+ 8. The operation test should succeed, and the response should look like the image below.
 
-     ![](images/L04/image%20(65).png)
+     ![](/images/L04/image%20(65).png)
 
 ### Exercise 5 – Use Function from Canvas App
 
@@ -748,36 +721,38 @@ Admin canvas application.
 ### Task 1: Use function
 
 1. Navigate to Power Apps maker portal and make sure you are in correct environment.
+
 2. Select Apps, select the **PrioritZ Admin** application and click **Edit**.
      
-   ![](images/L04/image%20(66).png)
+   ![](/images/L04/image%20(66).png)
 
 3. Select **Data** , click **+ Add data** , search for prioritz connector, and select the **PrioritZ Connector**
     you created.
      
-    ![](images/L04/image%20(67).png)
+    ![](/images/L04/image%20(67).png)
        
 4. Add the connector by clicking on it again.
+
 5. Click on the **... More actions** button of the connector you just added and select **Rename**.
     
-   ![](images/L04/image%20(68).png)
+   ![](/images/L04/image%20(68).png)
     
 6. Rename the connector **PrioritZFunction**.
      
-     ![](images/L04/image%20(69).png)
+     ![](/images/L04/image%20(69).png)
 
 7. Select the **Tree view** and expand the **Add Topic Screen**.
     
-    ![](images/tree.png)
+    ![](/images/tree.png)
 
 9. Select the **Add choice icon**.
  
-    ![](images/L04/image%20(70).png)
+    ![](/images/L04/image%20(70).png)
         
 9. Replace the **OnSelect** formula of the **Add choice icon** with the formula below. This adjusts the
     column names to match the API and encodes the photos.
    
-    ![](images/L04/image%20(72).png)
+    ![](/images/L04/image%20(72).png)
    
       ```    
       Collect(
@@ -801,7 +776,7 @@ Admin canvas application.
     have the API create the “ask”.
    
      
-     ![](images/L04/image%20(74).png)
+     ![](/images/L04/image%20(74).png)
    
       ```    
       Set(returnGuid, PrioritZFunction.CreateTopic({
@@ -818,30 +793,32 @@ Admin canvas application.
     
 12. Click **Save**.
 
-1. Click **Publish**.
+13. Click **Publish**.
 
-1. Select **Publish this version** and wait for publishing to complete.
+14. Select **Publish this version** and wait for the publishing to complete.   
 
-1. Do not navigate away from this page.
+15. Do not navigate away from this page.
 
 ### Task 2: Test application
 
 1. Select the **Home Screen** and click **Preview the app**.
    
-    ![](images/L04/image%20(75).png)
+    ![](/images/L04/image%20(75).png)
 
 2. Click on the **+** add button.
+
 3. Enter **Function Test** for Topic, **Testing the function** for Details. **Note for testing the function** for
   Note, select a date for Response by, and click **add a picture**.
 
-    ![](images/L04/image%20(76).png)
+    ![](/images/L04/image%20(76).png)
     
 4. Navigate to this path **C:\LabFiles** in file explorer, select **image.png** and click open.
 
 5. Enter **Test choice one** for Choice and click **add a picture**.
+
 6. Navigate to this path **C:\LabFiles** in file explorer, select **image.png** and click **+**.
 
-     ![](images/L04/image%20(77).png) 
+     ![](/images/L04/image%20(77).png) 
     
 7. Enter **Test choice two** for Choice and click **add a picture**.
 
@@ -849,13 +826,14 @@ Admin canvas application.
 
 9. Click **Save**.
   
-     ![](images/L04/image%20(78).png)
+     ![](/images/L04/image%20(78).png)
 
 10. The new topic should be saved, and you should be navigated back to the main screen.
+
 11. Locate the new topic you created and open it.
     
-     ![](images/L04/image80.png)
+     ![](/images/L04/image80.png)
     
 12. You should see the two choices you added to topic.
 
-    ![](images/L04/image81.png)
+    ![](/images/L04/image81.png)
