@@ -138,11 +138,11 @@ In this exercise, you will run a flow that will add sample data to your environm
 
 1.	Open the **PrioritZ** solution you imported.
 
-   ![](images/L01/prioritz.png)
+     ![](images/L01/prioritz.png)
 
 2. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
  
-    ![](/images/L01/L01-cloud.png)
+     ![](/images/L01/L01-cloud.png)
 
 3. Click on **Run** to run the flow.
    
@@ -263,7 +263,7 @@ application.
 
 13.  Click + Insert tab and select Text label.
 
-    ![](images/L01/tlabel.png)
+     ![](images/L01/tlabel.png)
 
 14. Double click on the newly added label and enter the below value to rename the label you just added.
 
@@ -338,7 +338,7 @@ application.
 
 30. Click **Publish**.
 
-   ![](images/L02/publish.png)
+     ![](images/L02/publish.png)
 
 31. Select Publish this version and wait for the publishing to complete.
 
@@ -384,17 +384,16 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
 
 9. You should see all the solutions in the environment.
 
-   ![](images/L01/envsolution.png)
+    ![](images/L01/envsolution.png)
 
 10. Right click on the dev environment you created and select copy the Environment Url
 
-   ![](images/L01/cpenv.png)
+    ![](images/L01/cpenv.png)
 
 11. Click **Terminal** and select **New Terminal**.
 
     ![](/images/L01/image42.png)
-    
-   
+       
 12. Run the command below to select the dev environment. Replace `<your environment URL>` in the below command with the value of environment URL that you copied          earlier    then run the command. 
    ```
    pac org select --environment <your environment URL>
@@ -402,11 +401,11 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
 
    > **Info:** After adding the environment URL, the command will look like this: `pac org select --environment https://org32172839283.crm.dynamics.com/`
   
-    ![](images/L01/org1.png)
+   ![](images/L01/org1.png)
 
 13. If you are presented with **Help us protect your account**, click on **Skip for now**.
 
-   ![](/images/L01/portalsignin-3.png)  
+    ![](/images/L01/portalsignin-3.png)  
 
 
 14. Run the command below to see list of solutions.
