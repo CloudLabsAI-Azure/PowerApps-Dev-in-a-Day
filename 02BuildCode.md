@@ -340,19 +340,16 @@ In this exercise, you will build the code component.
     },
     ```
     
-25. Navigate to **.eslintric.json** file from left navigation and make the following modification to the file, as a workaround to the new lint rule that was 
-   too strict.
+25. Navigate to **.eslintric.json(1)** file from left navigation to add the new lint rule.
    
-   a) Open the **.eslintrc.json(1)** file.
+    Locate **rules(2)** in **line number 21** and paste the rules below.
    
-   b) Locate **rules(2)** and paste the rules below.
+      ```
+      "no-unused-vars": ["off"],
+      "no-undef": ["off"]
+     ```
    
-   ```
-    "no-unused-vars": ["off"],
-    "no-undef": ["off"]
-   ```
-   
-   ![](images/L02/eslint.png)
+      ![](images/L02/eslint.png)
    
    
 26. Click **File** and save all your changes.
