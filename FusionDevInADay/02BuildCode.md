@@ -353,13 +353,13 @@ In this exercise, you will build the code component.
    a) Open the **.eslintrc.json(1)** file.
    
    b) Locate **rules(2)** and paste the rules below.
-
-   ![](images/L02/eslint.png)
    
    ```
     "no-unused-vars": ["off"],
     "no-undef": ["off"]
    ```
+   
+   ![](images/L02/eslint.png)
 
 25. Click **File** and save all your changes.
 
