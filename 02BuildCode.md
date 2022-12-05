@@ -340,62 +340,62 @@ In this exercise, you will build the code component.
     },
     ```
     
-25. Click **File** and save all your changes.
+25. Make the following modification to the file .eslintrc.json to work around a new lint rule that was 
+   too strict.
+   
+   a) Open the **.eslintrc.json(1)** file.
+   
+   b) Locate **rules(2)** and paste the rules below.
+   
+   ```
+    "no-unused-vars": ["off"],
+    "no-undef": ["off"]
+   ```
+   
+   ![](images/L02/eslint.png)
+   
+   
+26. Click **File** and save all your changes.
 
-26. Click **Terminal** and select **New Terminal**.
+27. Click **Terminal** and select **New Terminal**.
      
       ![](images/L02/image27.png)
 
-27. Run the command below. This will build your component and identify any problems.
+28. Run the command below. This will build your component and identify any problems.
 
     ```
     npm run-script build
     ```
 
       > **Note** : If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
-    
- 1. If you encounter with an **ESLint Validation error: no-undef, no-unused-vars**, please add the below line of codes in **.eslintric.json** file at end in vscode.
-
-     ```
-    "overrides": [
-      {
-          "files": ["*.ts", "*.tsx"],
-          "rules": {
-              "no-undef": "off",
-              "no-unused-vars": "off"
-          }
-      }
-     ]
-    ```
-    ![](images/L02/eslint.png)
  
- 28. The build should succeed. If any errors, resolve them before proceeding.
+ 29. The build should succeed. If any errors, resolve them before proceeding.
       
        ![](images/L02/image28.png)
  
- 29. Run the command below to start the test harness.
+ 30. Run the command below to start the test harness.
     
         ```
         npm start
         ```
 
-30. The test harness should start, if not then copy the address and paste it in a new browser window. Try dragging the items and see if the behavior functions as
+31. The test harness should start, if not then copy the address and paste it in a new browser window. Try dragging the items and see if the behavior functions as
     expected.
 
       ![](images/L02/imagee29.png)
  
      > **Note** : If the test harness didn't start as expected and you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
 
-31. Close the test harness by closing the browser tab.
+32. Close the test harness by closing the browser tab.
 
-32. Stop the run by holding the **[CONTROL]** key + **C**.
+33. Stop the run by holding the **[CONTROL]** key + **C**.
  
-33. Type **Y** and [ENTER].
+34. Type **Y** and [ENTER].
      
       ![](images/L02/image30.png)
 
  
-34. Run the command below to push the component to your environment.
+35. Run the command below to push the component to your environment.
     ```
     pac pcf push --publisher-prefix contoso
     ```
@@ -413,7 +413,7 @@ In this exercise, you will build the code component.
         ```
 
     
-35. Wait for the solution to be imported and published to your environment.
+36. Wait for the solution to be imported and published to your environment.
 
       ![](images/L02/image31.png)
  
