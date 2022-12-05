@@ -6,6 +6,10 @@ Duration: 140 mins
 
 Lab Scenario 
 
+0. Exercise 0 - Create Database in Default Environment 
+
+    - Task 1: Create Database 
+    
 1. Exercise 1 - Create Solution 
 
     - Task 1: Create solution 
@@ -49,6 +53,27 @@ When you review the API, you see that it has four operations and uses API key au
 
 
  ![](images/L03/image1.png)
+
+## Exercise 0 - Create Database in Default Environment 
+
+In this exercise, you will create a database in default environment to import the solution u will be exporting in future.
+
+### Task 1: Create Database 
+
+1. Navigate to Power Apps maker portal and select your **Test** environment named OTU XXXXXX (default).
+
+         https://make.powerapps.com
+
+2. Select **Solutions** from the left-hand side menu of Power Apps.
+
+3. Click on **Create database** to create a Dataverse database.
+ 
+    ![](images/L03/db1.png)
+
+5. Leave the **Currency** and **Lanaguage** field to default and click on **Create database**.
+    ![](images/L03/db2.png)
+    
+    >**Note:** You can continue the next exersises as database will be in creation state.
 
 ## Exercise 1 - Create Solution
 
@@ -540,25 +565,11 @@ environment and import it to Test environment.
 
          https://make.powerapps.com
 
-2. Select **Solutions** from the left-hand side menu of Power Apps.
-
-3. Click on **Create database** to create a Dataverse database.
- 
-    ![](images/L03/db1.png)
-
-5. Leave the **Currency** and **Lanaguage** field to default and click on **Create database**.
-    ![](images/L03/db2.png)
-
-1. Wait for sometime (5-7 mins) until the solutions are loaded.
-
-   > **Note**: If solutions are not loading and you are **Try again** error this is because Power Apps takes sometime to create the Database and load the daa. You can follow the below steps to fix the issue:
-
-      1. Try refreshing the browser few times.
-      2. If refresh doesn't work, try logging in to the Power Apps maker portal from private window and check solutions info.
-
 3. Click **Import Solution**.
     
      ![](images/L03/L03-EX5.png)
+     
+     >**Note:** Try refreshing the browser if solutions are not opened.
 
 4. Click **Browse**.
 5. Select the solution you exported from the Dev environment and click **Open**.
