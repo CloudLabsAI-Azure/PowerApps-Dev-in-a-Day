@@ -457,8 +457,10 @@ application.
      ![](images/L01/image36.1.png)
 
 22. Close the app **preview**.
-23. Click **File** and select **Save**.
-24. Click **Publish**.
+1. Click **Publish**.
+
+    ![](images/L01/publish.png)
+
 25. Select Publish this version and wait for the publishing to complete.
 
      ![](images/L01/NewUipublish1.png)
