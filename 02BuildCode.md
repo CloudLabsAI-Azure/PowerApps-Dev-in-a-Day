@@ -628,8 +628,10 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
  
 34. The drag/drop should work as expected.
 35. Close the preview.
-36. Click **File** and select **Save**.
-37. Click **Publish**.
+1. Click **Publish**.
+
+    ![](images/L02/publish.png)
+
 38. Select **Publish this version** and wait for the publish to be completed.
 39. You may **close** the canvas app studio.
 
