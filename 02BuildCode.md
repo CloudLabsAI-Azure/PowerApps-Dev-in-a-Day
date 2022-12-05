@@ -258,11 +258,11 @@ In this exercise, you will build the code component.
         ![](images/L02/image21.png)
  
 
- 17. Locate the **init** function in **line number 24**.
+ 17. Locate the **init** function.
  
       ![](images/L02/init.png)
         
- 18. Paste the code below inside the **init** function after **line number 28**. This logic initializes our class variables from the
+ 18. Paste the code below inside the **init** function. This logic initializes our class variables from the
     runtime values and enables resize notification.    
     
         ![](images/L02/init1.png)
@@ -340,7 +340,7 @@ In this exercise, you will build the code component.
     },
     ```
     
-25. Make the following modification to the file .eslintrc.json to work around a new lint rule that was 
+25. Navigate to **.eslintric.json** file from left navigation and make the following modification to the file, as a workaround to the new lint rule that was 
    too strict.
    
    a) Open the **.eslintrc.json(1)** file.
