@@ -56,7 +56,7 @@ When you review the API, you see that it has four operations and uses API key au
 
 ## Exercise 0 - Create Database in Default Environment 
 
-In this exercise, you will create a dataverse database in the test environment, which will be used to import the solution in next exercises.
+In this exercise, you will create a Dataverse database in the test environment, which will be used to import the solution in next exercises.
 
 ### Task 1: Create Database 
 
@@ -73,7 +73,7 @@ In this exercise, you will create a dataverse database in the test environment, 
 5. Leave the **Currency** and **Lanaguage** field to default and click on **Create database**.
     ![](images/L03/db2.png)
     
-    >**Note:** You can leave this browser tab open and continue with next exersise.
+    >**Note:** You can leave this browser tab open and continue with next exersise,as Dataverse database creation will take some time.
 
 ## Exercise 1 - Create Solution
 
