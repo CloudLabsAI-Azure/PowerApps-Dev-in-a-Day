@@ -293,42 +293,42 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
      ![](/images/L05/github7.png)
 
-9. Enter **PowerPlatformAppID (1)** for Name and paste the **Application (client) ID (2)** of **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** that you noted earlier in **`Exercise 1 -> Task 1 -> Step 5`** from your notepad in the **Value** field and click **Add secret (3)**.
+9. Enter **PowerPlatformAppID (1)** for Name and paste the **Application (client) ID (2)** of **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** that you noted earlier in **`Exercise 2 -> Task 1 -> Step 5`** from your notepad in the **Value** field and click **Add secret (3)**.
 
      ![](/images/L05/github8.png)
 
 10. Click **New repository secret** again.
 
-11. Enter **PowerPlatformClientSecret (1)** for Name and paste the **secret Value (2)** from your notepad that you noted earlier in **`Exercise 1 -> Task 1 -> Step 8`** in the **Value** field and click **Add secret (3)**.
+11. Enter **PowerPlatformClientSecret (1)** for Name and paste the **secret Value (2)** from your notepad that you noted earlier in **`Exercise 2 -> Task 1 -> Step 8`** in the **Value** field and click **Add secret (3)**.
 
      ![](/images/L05/github9.png)
 
 12. Click **New repository secret** again.
 
-13. Enter **PowerPlatformTenantID (1)** for Name and paste the secret **Tenant ID (2)** from your notepad that you noted earlier in **`Exercise 1 -> Task 1 -> Step 5`** in the **Value** field and click **Add secret (3)**.
+13. Enter **PowerPlatformTenantID (1)** for Name and paste the secret **Tenant ID (2)** from your notepad that you noted earlier in **`Exercise 2 -> Task 1 -> Step 5`** in the **Value** field and click **Add secret (3)**.
 
      ![](/images/L05/github10.png)
 
 14. Click **New repository secret** again.
 
-15. Enter **PowerPlatformDevUrl (1)** for Name and paste the secret **Dev environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 2 -> Step 21`** in the **Value** field and click **Add secret (3)**.
+15. Enter **PowerPlatformDevUrl (1)** for Name and paste the secret **Dev environment URL (2)** from your notepad that you copied in the **`Exercise 2 -> Task 2 -> Step 21`** in the **Value** field and click **Add secret (3)**.
 
-    >**Note**: Make sure you are pasting the dev environment URL named **Testodl_user_<inject key="DeploymentID" enableCopy="false" />** that you copied in the **`Exercise 1 -> Task 2 -> Step 21`**
+    >**Note**: Make sure you are pasting the dev environment URL named **Testodl_user_<inject key="DeploymentID" enableCopy="false" />** that you copied in the **`Exercise 2 -> Task 2 -> Step 21`**
    
      ![](/images/L05/github11.png) 
   
 16. Click **New repository secret** one more time.
 
-17. Enter **PowerPlatformTestUrl (1)** for Name and paste the **Test Environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 2 -> Step 23`** in the **Value** field and click **Add secret (3)**.
+17. Enter **PowerPlatformTestUrl (1)** for Name and paste the **Test Environment URL (2)** from your notepad that you copied in the **`Exercise 2 -> Task 2 -> Step 23`** in the **Value** field and click **Add secret (3)**.
 
-     >**Note**: Make sure you are pasting the test environment URL named **OTU XXXXXX (default)** that you copied in the **`Exercise 1 -> Task 2 -> Step 23`**
+     >**Note**: Make sure you are pasting the test environment URL named **OTU XXXXXX (default)** that you copied in the **`Exercise 2 -> Task 2 -> Step 23`**
  
      ![](images/L05/L05-testurl.png)
    
  
 18. You should now have **5** repository secrets.
      
-       ![](images/L05/Images%20(15).png)
+       ![](/images/L05/Images%20(15).png)
 
 19. Do not navigate away from this page.
 
@@ -379,15 +379,15 @@ indentation shown in the images.
    
 10. Click to open the branch that was created by the workflow action named as Prioritz-XXXXXXX.
    
-   ![](/images/L05/changesbranch.png)
+    ![](/images/L05/changesbranch.png)
 
 11. On the Prioritz-XXXXXXX. branch, you should be able to see the solution folder.
       
-   ![](/images/L05/diad5l30.png)
+    ![](/images/L05/diad5l30.png)
    
 12. Click on **Contribute** ***(1)*** button and select **Open pull request** ***(2)***.
         
-   ![](/images/L05/L05-t1-1.png)
+    ![](/images/L05/L05-t1-1.png)
    
 13. Add description if you like and then click **Create pull request**.
 
