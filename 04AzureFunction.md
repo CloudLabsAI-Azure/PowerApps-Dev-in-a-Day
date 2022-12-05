@@ -816,15 +816,13 @@ Admin canvas application.
       Back();
       ```
     
-12. Click **File** and select **Save**.
-   
-     ![](images/savee.png)
-    
-13. Click on the  back button.
+12. Click **Save**.
 
-    ![](images/bck.png)
+1. Click **Publish**.
 
-15. Do not navigate away from this page.
+1. Select **Publish this version** and wait for publishing to complete.
+
+1. Do not navigate away from this page.
 
 ### Task 2: Test application
 
