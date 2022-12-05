@@ -209,7 +209,7 @@ application.
 
     ![](/images/L01/L01-addtopic.png)
 
-3. Click **+ Insert** and select **Text input**.
+3. Click **+ Insert(1)** and select **Text input(2)**.
    
      ![](images/L01/tinput.png)
 
@@ -261,7 +261,7 @@ application.
     ```
 12. Select the **View Topic Screen (1)** from the **Screens** tab.
 
-13.  Click + Insert tab and select Text label.
+13.  Click **+ Insert(1)** tab and select **Text label(2)**.
 
      ![](images/L01/tlabel.png)
 
