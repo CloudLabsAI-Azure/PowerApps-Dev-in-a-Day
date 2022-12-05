@@ -340,9 +340,7 @@ In this exercise, you will build the code component.
     },
     ```
     
-25. Navigate to **.eslintric.json(1)** file from left navigation to add the new lint rule.
-   
-    Locate **rules(2)** in **line number 21** and paste the rules below.
+25. Navigate to **.eslintric.json(1)** file from left navigation to add the new lint rule. Locate **rules(2)** in **line number 21** and paste the rules below.
    
       ```
       "no-unused-vars": ["off"],
