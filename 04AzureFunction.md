@@ -590,7 +590,7 @@ In this exercise, you will deploy the function to Azure.
 
    ![](images/L04/diad4l3-1.png)
     
-1. Copy the **Application (client) ID** and save it in a notepad as you need it for later use.
+1. Copy the **Application (client) ID** and save it in a notepad as **PriooritZ Connector application ID**.
      
    ![](images/L04/diad4l4.png)
     
@@ -602,7 +602,7 @@ In this exercise, you will deploy the function to Azure.
 
    ![](images/L04/diad4l6.png)
 
-1. Copy the **Secret value** and save it in a notepad as you need it for later use.
+1. Copy the **Secret value** and save it in a notepad as **PrioritZ Connector secert**.
 
    ![](images/L04/diad5l33.png)
 
@@ -684,8 +684,8 @@ In this exercise, you will create a new custom connector.
 16. Select **OAuth 2.0** ***(1)*** for Authentication type. Provide the following details and Click on **Create connector** ***(8)***.
 
     - Identity Provider: **Azure Active Directory** ***(2)***
-    - Client id: Paste **PrioritZFL Connector application ID** ***(3)*** which you copied earlier
-    - Client secret: Paste **PrioritZFL Connector Secret** ***(4)*** which you copied earlier
+    - Client id: Paste **PrioritZ Connector application ID** ***(3)*** which you copied earlier
+    - Client secret: Paste **PrioritZ Connector Secret** ***(4)*** which you copied earlier
     - Tenant ID: Paste the **Tenant ID** ***(5)*** which you copied earlier
     - Resource URL: Paste **PrioritZ API application ID** ***(6)*** which you copied earlier
     - Enable on-behalf-of login: **true** ***(7)***
