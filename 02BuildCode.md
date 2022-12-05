@@ -260,12 +260,12 @@ In this exercise, you will build the code component.
 
  17. Locate the **init** function in **line number 24**.
  
-      ![](images/L02/image22.png)
+      ![](images/L02/init.png)
         
- 18. Paste the code below inside the **init** function after **line number 25**. This logic initializes our class variables from the
+ 18. Paste the code below inside the **init** function after **line number 28**. This logic initializes our class variables from the
     runtime values and enables resize notification.    
     
-        ![](images/L02/image23.png)
+        ![](images/L02/init1.png)
    
        ```
         this.context = context;
