@@ -6,15 +6,15 @@ Duration: 140 mins
 
 Lab Scenario 
 
-0. Exercise 0 - Create Database in Default Environment 
+1. Exercise 0 - Create Database in Default Environment 
 
     - Task 1: Create Database 
     
-1. Exercise 1 - Create Solution 
+2. Exercise 1 - Create Solution 
 
     - Task 1: Create solution 
 
-2. Exercise 2 – Create Custom Connector 
+3. Exercise 2 – Create Custom Connector 
 
     - Task 1: Download open API definition and create connector 
 
@@ -22,19 +22,19 @@ Lab Scenario
 
     - Task 3: Test connector 
 
-3. Exercise 3 – Add Custom Code 
+4. Exercise 3 – Add Custom Code 
 
     - Task 1: Add code from resource folder 
 
     - Task 2: Test custom code 
 
-4. Exercise 4 – Test Custom Connector 
+5. Exercise 4 – Test Custom Connector 
 
     - Task 1: Test connector from canvas app
 
     - Task 2: Test connector from flow 
 
-5. Exercise 5 – Promote Solution to Test Environment 
+6. Exercise 5 – Promote Solution to Test Environment 
 
     - Task 1: Export solution. 
 
@@ -56,7 +56,7 @@ When you review the API, you see that it has four operations and uses API key au
 
 ## Exercise 0 - Create Database in Default Environment 
 
-In this exercise, you will create a database in default environment to import the solution u will be exporting in future.
+In this exercise, you will create a dataverse database in the test environment, which will be used to import the solution in next exercises.
 
 ### Task 1: Create Database 
 
@@ -73,7 +73,7 @@ In this exercise, you will create a database in default environment to import th
 5. Leave the **Currency** and **Lanaguage** field to default and click on **Create database**.
     ![](images/L03/db2.png)
     
-    >**Note:** You can continue the next exersises as database will be in creation state.
+    >**Note:** You can leave this browser tab open and continue with next exersise.
 
 ## Exercise 1 - Create Solution
 
@@ -82,7 +82,7 @@ connectors must be in a separate solution from the apps and flows that use them.
 
 ### Task 1: Create solution
 
-1. Navigate to Power Apps maker portal and select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
+1. Open a new browser tab and navigate to Power Apps maker portal and select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
 
          https://make.powerapps.com 
 
