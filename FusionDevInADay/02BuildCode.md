@@ -381,9 +381,9 @@ In this exercise, you will build the code component.
  
 29. Run the command below to start the test harness.
     
-        ```
-        npm start
-        ```
+      ```
+      npm start
+      ```
 
 30. The test harness should start, if not then copy the address and paste it in a new browser window. Try dragging the items and see if the behavior functions as
     expected.
@@ -408,7 +408,7 @@ In this exercise, you will build the code component.
 35. You should have the dev environment you created selected. If not, run the select command 
 from the end of lab one again.
 
-   ![](images/L02/org.png)
+     ![](images/L02/org.png)
 
 36. Run the command below to push the component to your environment.
     ```
@@ -641,7 +641,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 38. Click on the  button.
 
-   ![](images/L02/back.png)
+    ![](images/L02/back.png)
 
 39. Select Leave if prompted.
 
