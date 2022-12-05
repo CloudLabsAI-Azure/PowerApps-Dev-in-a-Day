@@ -590,7 +590,7 @@ In this exercise, you will deploy the function to Azure.
 
    ![](images/L04/diad4l3-1.png)
     
-1. Copy the **Application (client) ID** and save it in a notepad as **PriooritZ Connector application ID**.
+1. Copy the **Application (client) ID** and save it in a notepad as **PrioritZ Connector application ID**.
      
    ![](images/L04/diad4l4.png)
     
