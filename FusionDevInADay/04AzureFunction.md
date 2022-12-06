@@ -75,7 +75,7 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
 5. A browser popup should appear. Provide your Azure credentials and login.
 
-6. Press [CONTROL + SHIFT + P] to open the command palette or you can select it under **View** tab.
+6. Press **[CONTROL + SHIFT + P]** to open the command palette or you can select it under **View** tab.
 
 7. Type **create new project** and select **Create new project**.
  
@@ -349,7 +349,7 @@ In this exercise, you will deploy the function to Azure.
 
 ### Task 1: Publish
 
-1. Press [CONTROL + SHIFT + P] to open the command palette.
+1. Press **[CONTROL + SHIFT + P]** to open the command palette.
 
 2. Type **create function** and select **Create Function App in Azure**.
 
@@ -357,7 +357,7 @@ In this exercise, you will deploy the function to Azure.
 
 3. Select **+ Create Function App** if prompted.
 
-4. Enter **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** for function app name and hit [ENTER].
+4. Enter **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** for function app name and hit **[ENTER]**.
 
     ![](/images/L04/vscode25.png)
 
@@ -561,9 +561,9 @@ In this exercise, you will deploy the function to Azure.
    - Supported account types: **Accounts in this organizational directory only (TenantName only - Single tenant)** ***(2)***
    - Redirect URL: Select **Web** ***(3)*** and provide `https://global.consent.azure-apim.net/redirect` ***(4)*** as the URL.
 
-   ![](images/L04/diad4l3-1.png)
+   ![](/images/L04/diad4l3-1.png)
     
-4. Copy the **Application (client) ID** and save it in a notepad as **PriooritZ Connector application ID**.
+4. Copy the **Application (client) ID** and save it in a notepad as **PrioritZ Connector application ID**.
      
    ![](/images/L04/diad4l4.png)
     
