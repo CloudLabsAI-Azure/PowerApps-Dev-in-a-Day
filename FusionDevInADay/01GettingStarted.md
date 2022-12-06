@@ -88,7 +88,7 @@ In this exercise, you will import a solution into your pre-created dev environme
 
      ![](/images/L01/dev11.png)
 
-11. Now, click on **Solutions(1)** from the left hand side menu and click **Import Solution(2)**.
+11. Now, click on **Solutions(1)** from the left hand side menu and click **Import solution(2)**.
 
       ![](/images/L01/importsolution.png)
 
@@ -108,7 +108,7 @@ In this exercise, you will import a solution into your pre-created dev environme
 
      ![](/images/L01/connection.png) 
       
-17. Click **Create** in a newly opened browser window and **Sign In** if prompted.
+17. Click **Create**, in a newly opened browser window and **Sign In** if prompted.
 
      ![](/images/L01/create.png) 
      
@@ -370,7 +370,7 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
 
    ![](images/L01/rename.png)
 
-6. Type Dev Auth and hit [ENTER].
+6. Type **Dev Auth** and hit **[ENTER]**.
 
    ![](images/L01/devauth.png)
 
@@ -403,16 +403,11 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
   
       ![](images/L01/org1.png)
 
-13. If you are presented with **Help us protect your account**, click on **Skip for now**.
-
-    ![](/images/L01/portalsignin-3.png)  
-
-
-14. Run the command below to see list of solutions.
+13. Run the command below to see list of solutions.
 
       ```
       pac solution list
       ```
-15. You should see list of solutions installed on your environment.
+14. You should see list of solutions installed on your environment.
     
     ![](/images/L01/sollist.png)
