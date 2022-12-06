@@ -71,7 +71,7 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
     ![](images/L04/azure.png)
     
- >**Note**: Azure Tool installation is already done as a part of pre-requisits.
+ >**Note**: Azure Tool installation is already done as a part of prerequisites.
 
 5. A browser popup should appear. Provide your Azure credentials and login.
 
