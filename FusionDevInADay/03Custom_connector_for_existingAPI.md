@@ -212,7 +212,7 @@ use them, and then create the custom connector.
 In this exercise, you will add a new operation to only return the current badge name and image URL.
 You will do this by using the custom code feature to reshape the response from the API.
 
->**Note:** If you already have the custom connector open, skip to **step 4**
+>**Note**: If you already have the custom connector open, skip to **step 4**
 
 ### Task 1: Add code from resource folder
 
@@ -230,9 +230,9 @@ You will do this by using the custom code feature to reshape the response from t
 
     ![](/images/L03/image24.png)
 
-4. Select the **Definition** tab and click **New action** in the definition tab.
+4. Select the **Definition** tab from the dropdown and click **New action** in the definition tab.
   
-    ![](images/L03/def.png)
+    ![](/images/L03/L03-EX3.1.png)
 
 5. Enter the following information to add **Get current badge** action.
 
@@ -272,7 +272,7 @@ You will do this by using the custom code feature to reshape the response from t
 
 14. Click **Update connector** and wait for the connector to be updated.
 
-15. Advance to **Test**.
+15. Advance to **Test** by selecting it in the dropdown.
 
 16. Select the **getcurrentbadge** action.
 
@@ -283,10 +283,12 @@ You will do this by using the custom code feature to reshape the response from t
 18. The test should succeed, and you should get current badge for the user you created.
     
     ![](/images/L03/image32.png)
+    
+    > **Note**: If the test operation fails, try updating the connector then test the connector by performing Steps 15-18 again.
 
 19. Copy the Response **Body** JSON.
 
-20. Select the Definition tab.
+20. Select the Definition tab from the dropdown.
 
 21. Select the **getcurrentbadge** action.
      
@@ -420,7 +422,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 25. Do not navigate away from this page.
 
-### Task 2: Test connector from flow(this task is optional)
+### Task 2: Test connector from flow(This task is optional)
 
 1. Make sure you are still in the **PrioritZ** solution.
 
