@@ -386,7 +386,7 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
 
     ![](images/L01/envsolution.png)
 
-10. Right click on the dev environment you created and select copy the Environment Url
+10. Right click on the dev environment you created and select **copy Environment Url** and paste it in notepad for the next step.
 
     ![](images/L01/cpenv.png)
 
@@ -394,14 +394,14 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
 
     ![](/images/L01/image42.png)
        
-12. Run the command below to select the dev environment. Replace `<your environment URL>` in the below command with the value of environment URL that you copied          earlier    then run the command. 
-   ```
-   pac org select --environment <your environment URL>
-   ```
+12. Run the command below to select the dev environment. Replace `<your environment URL>` in the below command with the value of environment URL that you copied          earlier, then run the command. 
+      ```
+      pac org select --environment <your environment URL>
+      ```
 
-   > **Info:** After adding the environment URL, the command will look like this: `pac org select --environment https://org32172839283.crm.dynamics.com/`
+      > **Info:** After adding the environment URL, the command will look like this: `pac org select --environment https://org32172839283.crm.dynamics.com/`
   
-   ![](images/L01/org1.png)
+      ![](images/L01/org1.png)
 
 13. If you are presented with **Help us protect your account**, click on **Skip for now**.
 
