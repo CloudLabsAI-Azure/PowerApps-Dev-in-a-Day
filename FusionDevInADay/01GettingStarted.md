@@ -54,15 +54,15 @@ In this exercise, you will import a solution into your pre-created dev environme
    
 2. When you click on Power Apps portal, the edge browser welcome screen will come up, select **Start without your data**.
 
-   ![](/images/L01/browser-1.png)
+   ![](../images/L01/browser-1.png)
 
 3. On the **We can help you import your browsing data from Google** window, click on **Continue without this data**.
    
-   ![](/images/L01/browser-1.1.png)
+   ![](../images/L01/browser-1.1.png)
    
 4. On the next window, click on **Confirm and start browsing**.
 
-   ![](/images/L01/browser-2.png)
+   ![](../images/L01/browser-2.png)
 
 5. Now, you will see two tabs in the edge browser, close the first tab named with **Microsoft Edge**.
 
@@ -70,61 +70,61 @@ In this exercise, you will import a solution into your pre-created dev environme
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-   ![](/images/L01/portalsignin-1.png)
+   ![](../images/L01/portalsignin-1.png)
 
 7. Now enter the following password **(1)** and click on **Sign in** **(2)**. 
 
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-   ![](/images/L01/portalsignin-2.png)
+   ![](../images/L01/portalsignin-2.png)
 
 8. If you are presented with **Help us protect your account**, click on **Skip for now**.
 
-   ![](/images/L01/portalsignin-3.png)
+   ![](../images/L01/portalsignin-3.png)
 
 9. If you see the pop-up **Stay Signed in?**, click **No**.
 
 10.  Once logged in, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
-     ![](/images/L01/dev11.png)
+     ![](../images/L01/dev11.png)
 
 11. Now, click on **Solutions(1)** from the left hand side menu and click **Import solution(2)**.
 
-      ![](/images/L01/importsolution.png)
+      ![](../images/L01/importsolution.png)
 
 12.  Click **Browse**.
     
-     ![](/images/L01/browse.png)
+     ![](../images/L01/browse.png)
      
 13. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` in file explorer , select the **Prioritz_1_0_0_7.zip** file, and        click **Open**.
 
 14. Make sure the **Prioritz(1)** file is selected and Click **Next(2)**.
     
-     ![](/images/L01/next.png)
+     ![](../images/L01/next.png)
      
 15. Click **Next** again on the import solution blade.
 
 16. Click on the **select a connection** dropdown and then select **+ New connection**.
 
-     ![](/images/L01/connection.png) 
+     ![](../images/L01/connection.png) 
       
 17. Click **Create**, in a newly opened browser window and **Sign In** if prompted.
 
-     ![](/images/L01/create.png) 
+     ![](../images/L01/create.png) 
      
 18. Close the connection browser window or tab.
 
 19. Click **Refresh**.
 
-     ![](/images/L01/refresh.png) 
+     ![](../images/L01/refresh.png) 
      
 20. Check the connection and click **Import** button to import the solution.
 
-     ![](/images/L01/import.png)
+     ![](../images/L01/import.png)
      
 21. Wait until the solution import to complete.
 
-     ![](/images/L01/solutionsuccess.png)
+     ![](../images/L01/solutionsuccess.png)
      
 22. You should now see the solution you imported in the list of solutions.
 
@@ -142,26 +142,26 @@ In this exercise, you will run a flow that will add sample data to your environm
 
 2. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
  
-     ![](/images/L01/L01-cloud.png)
+     ![](../images/L01/L01-cloud.png)
 
 3. Click on **Run** to run the flow.
    
-     ![](/images/L01/image13.png)
+     ![](../images/L01/image13.png)
 
 4. Click the **Run flow** button on the Run flow blade.
 
-     ![](/images/L01/L01-new.png)
+     ![](../images/L01/L01-new.png)
 
      > **Note** : If you receive this error `Error from token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 11-21** of task1 again, then try to trigger the flow again.
 
 5. Click **Done** and wait for the flow run to complete.
 
-     ![](/images/L01/EX1-T1-18.png)
+     ![](../images/L01/EX1-T1-18.png)
 
 6. The flow should run successfully. If you want, you can click on the run row and it will show you
    the details of what the flow did.
    
-      ![](/images/L01/image14.png)
+      ![](../images/L01/image14.png)
       
 7.	Click on the browser back button.
 
@@ -180,7 +180,7 @@ application.
    ```
 2. Select **Solutions (1)** from the left-hand side menu of Power Apps and open the **PrioritZ (2)** solution.
 
-   ![](/images/L01/EX2-T1-2-1.png)
+   ![](../images/L01/EX2-T1-2-1.png)
 
 3. Expand **Tables** and select the **PrioritZ Topic** table.
 
@@ -195,7 +195,7 @@ application.
    ```
 6. Now, search for **Plain text (1)** under Data type then select the one that comes under **Multiline Text (2)** , and click **Save (3)**.
 
-    ![](/images/L01/L01-notes.png)
+    ![](../images/L01/L01-notes.png)
    
    > **Note** : Do not navigate away from this page.
 
@@ -203,11 +203,11 @@ application.
 
 1. Make sure you are still in the **PrioritZ** solution. Select **Apps (1)** under **Objects** and select the **PrioritZ Admin (2)** application and click on **Edit (3)**.
     
-    ![](/images/L01/L01-adminedit.png)
+    ![](../images/L01/L01-adminedit.png)
 
 2. Select the **Add Topic Screen**.
 
-    ![](/images/L01/L01-addtopic.png)
+    ![](../images/L01/L01-addtopic.png)
 
 3. Click **+ Insert(1)** and select **Text input(2)**.
    
@@ -219,15 +219,15 @@ application.
     Notes textbox
     ```
     
-     ![](/images/L01/image27.png)
+     ![](../images/L01/image27.png)
 
 5. Make the add picture control smaller if needed, and move the **Respond By and label textbox** down and place the **Notes textbox** between the Details control and the Respond by label.
    
-    ![](/images/L01/image28.png)
+    ![](../images/L01/image28.png)
 
 6. Select **Notes textbox** and then **HintText** from the properties dropdown.
 
-    ![](/images/L01/hintext.png)
+    ![](../images/L01/hintext.png)
 
 7. Change the **HintText** value of the Notes textbox to the below value. 
 
@@ -235,7 +235,7 @@ application.
     My notes
     ```
    
-    ![](/images/L01/image29.png)
+    ![](../images/L01/image29.png)
 
 8. Remove the Default text.
 
@@ -245,16 +245,16 @@ application.
     TextMode.MultiLine
     ```
 
-    ![](/images/L01/L01-mode.png)
+    ![](../images/L01/L01-mode.png)
 
 10. Select **Save topic icon** under **Add Topics Screen** section.
      
-     ![](/images/L01/image30.png)
+     ![](../images/L01/image30.png)
 
 11. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates
    the new row in the Dataverse table.
      
-     ![](/images/L01/image31.png)
+     ![](../images/L01/image31.png)
 
     ```
     Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
@@ -271,7 +271,7 @@ application.
      Notes label
      ```
      
-    ![](/images/L01/L01-label.png)
+    ![](../images/L01/L01-label.png)
 
 15. Change the **Text** value of the Notes label with the below text.
 
@@ -279,21 +279,21 @@ application.
      'Topics gallery'.Selected.'My Notes'
      ```
   
-      ![](/images/L01/image32.png)
+      ![](../images/L01/image32.png)
 
 16. Rearrange the controls and move the **Notes label** between the details label and Topic items
     gallery.
    
-      ![](/images/L01/image33.png)
+      ![](../images/L01/image33.png)
 
 
 17. Select the **Home Screen** and click **Preview the app**.
       
-      ![](/images/L01/image34.png)
+      ![](../images/L01/image34.png)
 
 18. Click on the **+** button to add a new topic.
 
-      ![](/images/L01/L01-taco-1_1.png)
+      ![](../images/L01/L01-taco-1_1.png)
 
 19. Fill out the form by providing below information and click **add a picture** that is present below **Respond By** field.
 
@@ -310,13 +310,13 @@ application.
 
 21. Type **Test One** on the Choice field and click **add a picture** that is present below Choice field.
      
-      ![](/images/L01/image18.png)
+      ![](../images/L01/image18.png)
 
 22. Navigate to this path `C:\LabFiles` in file explorer, select **image.png** and click open.
 
 23. Click **+** to add the choice.
      
-      ![](/images/L01/image19.png)
+      ![](../images/L01/image19.png)
 
 24. Add one more choices by repeating **steps 20-22** of this task.
        
@@ -324,7 +324,7 @@ application.
 
 25. After adding all the Choices an topic dteails, your screen should look like beow screenshot.
 
-    ![](/images/L01/L01-testnotes.png)
+    ![](../images/L01/L01-testnotes.png)
       
 26. Now, click on **Save** button.The new topic should be **saved**.
 
@@ -332,7 +332,7 @@ application.
 
 28. The notes **Prioritz Admin topic** that you have added earlier should now be visible now.
  
-     ![](/images/L01/image36.1.png)
+     ![](../images/L01/image36.1.png)
 
 29. Close the app **preview**.
 
@@ -342,7 +342,7 @@ application.
 
 31. Select Publish this version and wait for the publishing to complete.
 
-     ![](/images/L01/NewUipublish1.png)
+     ![](../images/L01/NewUipublish1.png)
 
 32. You may close the **app designer**.
 
@@ -356,7 +356,7 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
 
 1. In the JumpVM, start **Visual Studio Code** using the shortcut available on the desktop.
 
-   ![](/images/L04/vscode1.png)
+   ![](../images/L04/vscode1.png)
    
 2. Select the **Power Platform tab(1)** and click **Add Auth Profile(2)**.
 
@@ -392,7 +392,7 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
 
 11. Click **Terminal** and select **New Terminal**.
 
-    ![](/images/L01/image42.png)
+    ![](../images/L01/image42.png)
        
 12. Run the command below to select the dev environment. Replace `<your environment URL>` in the below command with the value of environment URL that you copied          earlier, then run the command. 
       ```
@@ -410,4 +410,4 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
       ```
 14. You should see list of solutions installed on your environment.
     
-    ![](/images/L01/sollist.png)
+    ![](../images/L01/sollist.png)
