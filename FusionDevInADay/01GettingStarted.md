@@ -38,7 +38,7 @@ You will import the current solution and use this to start your work. You will a
    
 2. To get the lab environment details, you can select **Environment Details** tab. Additionally, the credentials will also be sent to your email address provided during registration. 
 
-   ![](/images/L01/labenv.png "Lab Environment")
+   ![](../images/L01/labenv.png "Lab Environment")
    
 ## Exercise 1 - Import starting solution
 
@@ -50,7 +50,7 @@ In this exercise, you will import a solution into your pre-created dev environme
 
 1. In the JumpVM, click on **Power Apps** portal shortcut of Microsoft Edge browser that is available on desktop.
 
-   ![](/images/L01/PAportal.png)
+   ![](../images/L01/PAportal.png)
    
 2. When you click on Power Apps portal, the edge browser welcome screen will come up, select **Start without your data**.
 
