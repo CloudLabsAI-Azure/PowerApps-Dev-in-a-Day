@@ -244,12 +244,12 @@ In this exercise, you will build the code component.
  
 13. Add the below code to the **index.ts** file after **line number 1**. This will reference the PriorityComponent.
     
-        ```
-        import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
-        ```
-        ![](/images/L02/image19.png)  
+     ```
+     import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
+     ```
+        
+     ![](/images/L02/image19.png)  
    
- 
 14. Locate the **Export** class in **line number 5**.
       
      ![](/images/L02/image20.png)
@@ -257,26 +257,26 @@ In this exercise, you will build the code component.
 15. Add the following code below inside the **export** class. This defines some working variables you
     will be using in the class logic.
    
-        ```
-         private context: ComponentFramework.Context<IInputs>;
-         private items: ComponentFramework.PropertyTypes.DataSet;
-        ```
-        ![](/images/L02/image21.png)
- 
-
-16. Locate the **init** function in **line number 24**.
- 
-      ![](/images/L02/image22.png)
+     ```
+     private context: ComponentFramework.Context<IInputs>;
+     private items: ComponentFramework.PropertyTypes.DataSet;
+     ```
         
-17. Paste the code below inside the **init** function after **line number 25**. This logic initializes our class variables from the
+     ![](/images/L02/image21.png)
+ 
+16. Locate the **init** function.
+ 
+      ![](images/L02/init.png)
+        
+17. Paste the code below inside the **init** function. This logic initializes our class variables from the
     runtime values and enables resize notification.    
-    
-        ![](/images/L02/image23.png)
    
        ```
-        this.context = context;
-        context.mode.trackContainerResize(true);
+       this.context = context;
+       context.mode.trackContainerResize(true);
        ```
+       
+       ![](images/L02/init1.png)
  
 18. Locate the **updateView** function.
 
@@ -347,19 +347,16 @@ In this exercise, you will build the code component.
     },
     ```
     
-24. Make the following modification to the file .eslintrc.json to work around a new lint rule that was 
-   too strict.
+24. Navigate to **.eslintric.json(1)** file from left navigation to add the new lint rule.
    
-   a) Open the **.eslintrc.json(1)** file.
+    Locate **rules(2)** in **line number 21** and paste the rules below.
    
-   b) Locate **rules(2)** and paste the rules below.
+      ```
+      "no-unused-vars": ["off"],
+      "no-undef": ["off"]
+      ```
    
-   ```
-    "no-unused-vars": ["off"],
-    "no-undef": ["off"]
-   ```
-   
-   ![](images/L02/eslint.png)
+      ![](images/L02/eslint.png)
 
 25. Click **File** and save all your changes.
 

@@ -198,59 +198,59 @@ deploy solutions.
 
 10. On the **Edit security roles** blade, scroll down and select **System administrator** ***(1)*** and click on **Save** ***(2)***.
 
-   ![](/images/L05/diad5l16.png)
+    ![](/images/L05/diad5l16.png)
    
 11. Again go back to **Environments** ***(1)*** in the side blade and select your **test environment** ***(2)***.
 
-   ![](/images/L05/diad5l17.png)
+    ![](/images/L05/diad5l17.png)
    
 12. From your test environment page, click on **Settings**.
 
-   ![](/images/L05/diad5l18.png)
+    ![](/images/L05/diad5l18.png)
 
 13. Expand **Users + permissions** ***(1)*** and select **Application users** ***(2)***.
     
-   ![](/images/L05/diad5l19.png)
+    ![](/images/L05/diad5l19.png)
    
 14. In the Application users page, click on **+ New app user**.
 
-   ![](/images/L05/diad5l11.png)
+    ![](/images/L05/diad5l11.png)
    
 15. On the **Create a new app user** tab, click on **+ Add an app**.
       
-   ![](/images/L05/diad5l12.png)
+    ![](/images/L05/diad5l12.png)
    
 16. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application registration which you created earlier and click on **Add** ***(2)***.
 
-   ![](/images/L05/diad5l13.png)
+    ![](/images/L05/diad5l13.png)
 
 17. Select your **Business unit** ***(1)*** from the drop down and click on **Create** ***(2)***. There should only be one Business unit unless you created more.
 
-   ![](/images/L05/diad5l14.png)
+    ![](/images/L05/diad5l14.png)
 
 18. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application user you just created and click on **Edit security roles** ***(2)***.
     
-   ![](/images/L05/diad5l20.png)
+    ![](/images/L05/diad5l20.png)
    
 19. Select **System administrator** ***(1)*** and click on **Save** ***(2)***.
 
-   ![](/images/L05/diad5l16.png)
+    ![](/images/L05/diad5l16.png)
    
 20. Click on **Environments** ***(1)*** from the side blade and select your **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
 
-   ![](/images/L05/env.png)
+    ![](/images/L05/env.png)
    
 21. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
     
-   ![](/images/L05/diad5l211.png)
+    ![](/images/L05/diad5l211.png)
    
 22. Again go back to **Environments** ***(1)*** in the side blade and select your **OTU XXXXXX (default) (2)** environment.
 
-   ![](/images/L05/diad5l17.png)
+    ![](/images/L05/diad5l17.png)
    
 23. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
     
-   ![](/images/L05/diad5l22.png)
+    ![](/images/L05/diad5l22.png)
    
 ## Exercise 3 – Create GitHub Repo
 
@@ -263,7 +263,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
    ```
    https://github.com/
    ```
-2. Click on your profile icon and select **Your repositories**.
+2. Click on your **profile icon(1)** and select **Your repositories(2)**.
 
    ![](/images/L05/github1.png)
 
@@ -285,7 +285,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 7. Go to the **Security** section, expand **Secrets (1)** and select **Actions (2)**.
 
-    > **Note:** The values you provide will not be visible after you create the item so take your time to get the values correct. 
+    > **Note**: The values you provide will not be visible after you create the item so take your time to get the values correct. 
       
      ![](/images/L05/github6.png)
    
@@ -323,9 +323,8 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
      >**Note**: Make sure you are pasting the test environment URL named **OTU XXXXXX (default)** that you copied in the **`Exercise 2 -> Task 2 -> Step 23`**
  
-     ![](images/L05/L05-testurl.png)
+     ![](/images/L05/L05-testurl.png)
    
- 
 18. You should now have **5** repository secrets.
      
        ![](/images/L05/Images%20(15).png)
