@@ -34,7 +34,7 @@ You will import the current solution and use this to start your work. You will a
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the the lab.
 
-   ![](/images/L01/env.png "Lab Environment")
+   ![](../images/L01/env.png "Lab Environment")
    
 2. To get the lab environment details, you can select **Environment Details** tab. Additionally, the credentials will also be sent to your email address provided during registration. 
 
