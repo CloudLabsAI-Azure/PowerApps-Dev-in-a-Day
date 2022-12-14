@@ -177,7 +177,8 @@ In this exercise, you will build the code component.
         .prioritydnd-item-column {
         margin: 8px;
         }
-        ```
+        
+       ```
 24. The file should now look like the following.
 
      ![](../images/L02/image14.png)
@@ -402,7 +403,7 @@ In this exercise, you will build the code component.
     pac org who
     ```
     
-35. You should have the dev environment you created selected. If not, run the select command 
+35. You should have the dev environment which is precreated is selected. If not, run the select command 
 from the end of lab one again.
 
      ![](images/L02/org.png)
@@ -620,7 +621,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 32. Make your browser widow smaller until it is the size of a phone screen.
      
-     ![](../images/L02/image48.png)
+     ![](images/L02/test2.png)
 
 33. Drag one of the topic items and drop it in a different location.
      
