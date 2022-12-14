@@ -386,7 +386,7 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
 
     ![](images/L01/envsolution.png)
 
-10. Right click on the dev environment and select **copy Environment Url** and paste it in notepad for the next step.
+10. Right click on the dev environment which is precreated for you and select **copy Environment Url** and paste it in notepad for the next step.
 
     ![](images/L01/cpenv.png)
 
