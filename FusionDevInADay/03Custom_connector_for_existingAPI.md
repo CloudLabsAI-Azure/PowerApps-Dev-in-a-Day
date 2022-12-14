@@ -256,7 +256,7 @@ You will do this by using the custom code feature to reshape the response from t
 
 8. Click **Update connector** and wait for the connector to be updated.
 
-9. Select the **Code** tab.
+9. Select the **Code** tab from the dropdown.
 
 10. Enable **Code (1)** and click **Upload (2)**.
     
@@ -311,7 +311,7 @@ You will do this by using the custom code feature to reshape the response from t
 
 In this task, you will test your custom code.
 
-1. Select the **Test** tab.
+1. Select the **Test** tab from the dropdown.
 
 2. Select the connection you created earlier.
 

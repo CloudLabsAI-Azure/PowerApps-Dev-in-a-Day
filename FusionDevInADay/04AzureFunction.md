@@ -77,7 +77,7 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
 6. Press **[CONTROL + SHIFT + P]** to open the command palette or you can select it under **View** tab.
 
-7. Type **create new project** and select **Create new project**.
+7. Type **create new project** and select **Create New Project**.
  
     ![](images/L04/project.png)
 
@@ -369,7 +369,7 @@ In this exercise, you will deploy the function to Azure.
 
     ![](../images/L04/vscode27.png)
     
-7. Once Function App is deployed, Click **Deploy Function App** under **Workspaces** section and choose the Function App just now you created. 
+7. Once Function App is deployed, Select **Azure Tool** and  Click **Deploy Function App** under **Workspaces** section and choose the Function App just now you created. 
     
      ![](../images/L04/DeployNew.png)
    
@@ -547,9 +547,9 @@ In this exercise, you will deploy the function to Azure.
 
 ### Task 2: Register Connector Client app
 
-1. Navigate to the Azure portal, then search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
+1. Navigate to the Azure portal, then open the **Portal menu** by clicking on the portal menu icon and select **Azure Active Directory** from the list of resources.
 
-   ![](../images/L04/diad4l1.png)
+   ![](../images/L04/vscode29.png)
 
 2. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
 
@@ -603,17 +603,13 @@ In this exercise, you will create a new custom connector.
    https://portal.azure.com/
    ```
 
-2. Now in the Azure portal, click on **Resource Groups** present under Navigate.
+2. Now in the Azure portal, click on **All resources** present under Navigate.
 
-   ![](../images/L04/diad4l11.png)
- 
-3. Select the  **prioritzfunc<inject key="DeploymentID" enableCopy="false" />** resource Group from the list.
+   ![](images/L04/res.png)
 
-   ![](../images/L04/diad4l12.png)
-
-4. Select **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** function resource from the list.
+1. Search for the function app you created and select **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** function app from the list.
      
-   ![](../images/L04/diad4l13.png)
+   ![](images/L04/func.png)
     
 5. From the overview page, Copy the **URL** of the function. 
    
