@@ -403,8 +403,8 @@ In this exercise, you will build the code component.
     pac org who
     ```
     
-35. You should have the dev environment which is precreated is selected. If not, run the select command 
-from the end of lab one again.
+35. You should have the dev environment which is precreated for you is selected. If not, run the select command 
+from the end of lab once again.
 
      ![](images/L02/org.png)
 
