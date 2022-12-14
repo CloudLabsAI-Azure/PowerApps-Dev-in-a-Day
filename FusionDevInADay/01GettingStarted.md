@@ -310,13 +310,13 @@ application.
 
 21. Type **Test One** on the Choice field and click **add a picture** that is present below Choice field.
      
-      ![](../images/L01/image18.png)
+      ![](images/L01/test1.png)
 
 22. Navigate to this path `C:\LabFiles` in file explorer, select **image.png** and click open.
 
 23. Click **+** to add the choice.
      
-      ![](../images/L01/image19.png)
+      ![](images/L01/plus.png)
 
 24. Add one more choices by repeating **steps 20-22** of this task.
        
@@ -386,7 +386,7 @@ In this exercise, you will test the **Power Platform CLI extension** in Visual S
 
     ![](images/L01/envsolution.png)
 
-10. Right click on the dev environment you created and select **copy Environment Url** and paste it in notepad for the next step.
+10. Right click on the dev environment and select **copy Environment Url** and paste it in notepad for the next step.
 
     ![](images/L01/cpenv.png)
 
