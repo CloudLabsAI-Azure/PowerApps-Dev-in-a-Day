@@ -38,7 +38,7 @@ Platform Build Tools to automate the team’s deployments.
 
 ## Exercise 1 – Promote Solution to Test Environment
 
-In this exercise, you will export the export the Contoso Badges connector solution from the Dev
+In this exercise, you will export the Contoso Badges connector solution from the Dev
 environment and import it to Test environment.You will be doing this promotion manually for this 
 solution so you see how it can be done. However, in a real project it could all be automated using the 
 build tasks you will use in the remaining parts of this lab.
