@@ -73,7 +73,7 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
     
  >**Note**: Azure Tool installation is already done as a part of prerequisites.
 
-5. A browser popup should appear. Provide your Azure credentials and login.
+5. A browser popup should appear. Provide your ***Azure** credentials and login.
 
 6. Press **[CONTROL + SHIFT + P]** to open the command palette or you can select it under **View** tab.
 
@@ -375,7 +375,7 @@ In this exercise, you will deploy the function to Azure.
    
      ![](../images/L04/DeployNew1.png)
 
-8. Click Deploy and wait for the deployment to complete.
+8. Click **Deploy** and wait for the deployment to complete.
 
    ![](images/L04/deploy.png)
 
@@ -709,7 +709,7 @@ In this exercise, you will create a new custom connector.
 
      ![](../images/L04/image%20(65).png)
 
-### Exercise 5 – Use Function from Canvas App
+### Exercise 5 – Use Function from Canvas App (Optional)
 
 In this exercise, you will use then Azure function you created via the custom connector from the PrioritZ
 Admin canvas application.
