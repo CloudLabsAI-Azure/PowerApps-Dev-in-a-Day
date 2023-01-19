@@ -38,7 +38,7 @@ Platform Build Tools to automate the team’s deployments.
 
 ## Exercise 1 – Promote Solution to Test Environment
 
-In this exercise, you will export the Contoso Badges connector solution from the Dev
+In this exercise, you will manually export the Contoso Badges connector solution from the Dev
 environment and import it to Test environment.You will be doing this promotion manually for this 
 solution so you see how it can be done. However, in a real project it could all be automated using the 
 build tasks you will use in the remaining parts of this lab.
@@ -66,6 +66,12 @@ build tasks you will use in the remaining parts of this lab.
 8. Click Download button Right side top of the screen ,Click Download Solution.
  
     ![](../images/L03/SolutionDown1.png)
+    
+>**Note**: In the interest of time, we’ve only added steps to export the solution as managed. It is best 
+practice to also export the unmanaged solution and keep it available for future edits if needed. The 
+steps to follow are essentially the same regardless of the exported solution being managed, or 
+unamanged.
+
 
 
 ###  Task 2: Import solution
@@ -103,6 +109,8 @@ build tasks you will use in the remaining parts of this lab.
 10. Click **Import** and wait for the import to complete.
 
 11. The solution should import successfully.
+
+12. Do not navigate away from this page.
 
 ## Exercise 2 – Configure a Service Principal
 
@@ -327,9 +335,17 @@ In this exercise, you will create a GitHub repository and add repository secrets
    
 18. You should now have **5** repository secrets.
      
-       ![](../images/L05/Images%20(15).png)
+      ![](../images/L05/Images%20(15).png)
+       
+19. On the left navigation in the **Code and Automation** section expand **Actions** and select **General**.
 
-19. Do not navigate away from this page.
+20. Scroll down to the Workflow Permissions section.
+
+21. Select **Read and write permissions** and click on **Save**.
+
+      ![](../images/L05/permission.png)
+
+22. Do not navigate away from this page.
 
 ### Exercise 4 – Export and Branch
 

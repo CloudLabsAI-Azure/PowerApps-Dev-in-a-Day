@@ -25,7 +25,7 @@ Lab Scenario
 ### Lab Scenario
 
 Working as part of the PrioritZ fusion team you have been asked to create to create a Power Apps code
- component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
+component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
 a code component using the React JavaScript framework. A code component approach is used to
 address the requirement because there isn’t a similar control already built-in.
 
@@ -73,7 +73,7 @@ In this exercise, you will build the code component.
     ```
     cd PrioritZDnDRanking
     ```
-6. You should now be in the directory you created. Create a new component project and install dependencies by running the below command.
+6. You should now be in the directory you created. Create a new component project and install dependencies by running the below command.This will create the initial files for your code component.
     
      ```
      pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --framework react --run-npm-install
