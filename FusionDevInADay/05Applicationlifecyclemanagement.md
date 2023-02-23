@@ -91,7 +91,7 @@ unamanged.
 
 5. Wait for sometime (5-7 mins) until the solutions are loaded.
 
-   > **Note**: If solutions are not loading and you are **Try again** error this is because Power Apps takes sometime to create the Database and load the daa. You can follow the below steps to fix the issue:
+   > **Note**: If solutions are not loading and getting **Try again** error this is because Power Apps takes sometime to create the Database and load the data. You can follow the below steps to fix the issue:
 
       1. Try refreshing the browser few times.
       2. If refresh doesn't work, try logging in to the Power Apps maker portal from private window and check solutions info.
