@@ -24,7 +24,7 @@ Lab Scenario
 
 ### Lab Scenario
 
-Working as part of the PrioritZ fusion team you have been asked to create to create a Power Apps code
+Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code
 component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
 a code component using the React JavaScript framework. A code component approach is used to
 address the requirement because there isn’t a similar control already built-in.
@@ -637,7 +637,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 37. Select **Publish this version** and wait for the publish to be completed.
 
-38. Click on the  button.
+38. Click on the **Back** button.
 
     ![](images/L02/back.png)
 
