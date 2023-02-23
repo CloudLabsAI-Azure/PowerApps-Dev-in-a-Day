@@ -440,7 +440,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 5. Select the **Custom** tab and then select the **Add credit** action.
    
-    ![](../images/L03/edd%20(2).png)
+    ![](../images/L03/L3E3T2S5.png)
     
 6. Enter **Test connection** , paste the **API Key** you copied earlier in **step 9** of task1 in this exercise, and click **Create**.
   
