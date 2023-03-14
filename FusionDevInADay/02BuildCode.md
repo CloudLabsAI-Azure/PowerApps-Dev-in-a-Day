@@ -485,7 +485,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 7. Expand **votescreen (1)** and Select the **Votes gallery (2)**.
 
-     ![](../images/L02/L02-votescreen.png)
+     ![](../images/L02/L2E2T2S7.png)
 
 8. Select the **Width** from the properties dropdown.    
 
