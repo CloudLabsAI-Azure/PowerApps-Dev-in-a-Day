@@ -625,18 +625,19 @@ In this exercise, you will create a new custom connector.
     
    ![](../images/L04/diad4l15.png) 
    
-8. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
+8. Navigate to Power Automate using below URL.
+          
    ```
-   https://make.powerapps.com
+   https://make.powerautomate.com
    ```
    
-9. Expand **Dataverse** ***(1)*** and select **Custom Connectors** ***(1)***.
+9. Expand **Data** ***(1)*** and select **Custom Connectors** ***(1)***.
      
-   ![](../images/L04/diad4l16.png) 
+   ![](../images/L04/customconnector.png) 
 
 10. Click on the chevron button next to the New custom connector and select **Import an OpenAPI file**.
      
-    ![](../images/L04/diad4l17.png) 
+    ![](../images/L04/openapi.png) 
     
 11. Enter **PrioritZ Connector** ***(1)*** for name and click **Import** ***(2)***.
     
