@@ -2,6 +2,12 @@
 
 Duration: 95 mins
 
+### Lab Scenario
+
+Working as part of the PrioritZ fusion team you will be configuring GitHub Actions using the Power
+Platform Build Tools to automate the team’s deployments.
+
+
 ## Table of Contents
 
 
@@ -31,10 +37,6 @@ Lab Scenario
 
    - Task 1: Create workflow
 
-### Lab Scenario
-
-Working as part of the PrioritZ fusion team you will be configuring GitHub Actions using the Power
-Platform Build Tools to automate the team’s deployments.
 
 ## Exercise 1 – Promote Solution to Test Environment
 
