@@ -2,6 +2,12 @@
 
 Duration: 30 mins
 
+### Lab Scenario
+
+
+Working as part of the PrioritZ fusion team, you will import the current solution and use this to start your work. You will also add a column to a table and modifying the app to use it. You will also configure and test the Power Platform CLI.
+
+
 ## Table of Contents
 
 **Lab Scenario** 
@@ -24,11 +30,6 @@ Duration: 30 mins
 
    - Task 1: Test the Power Platform CLI 
 
-
-### Lab Scenario
-
-
-You will import the current solution and use this to start your work. You will also add a column to a table and modifying the app to use it. You will also configure and test the Power Platform CLI.
 
 # Getting Started with Lab
 
