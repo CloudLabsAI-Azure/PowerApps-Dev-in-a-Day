@@ -2,6 +2,19 @@
 
 Duration: 140 mins
 
+### Lab Scenario
+
+Working as part of the PrioritZ fusion team you will be configuring a custom connector for an existing
+API. The team would like to add badging to the PrioritZ application to give credit to users when they
+have completed ranking an item. The team identified an existing API, but it doesn't have a Power
+Platform connector.
+
+When you review the API, you see that it has four operations and uses API key authentication.
+
+
+ ![](../images/L03/image1.png)
+ 
+
 ## Table of Contents
 
 Lab Scenario 
@@ -28,17 +41,6 @@ Lab Scenario
 
     - Task 2: Test connector from flow(This task is optional) 
 
-### Lab Scenario
-
-Working as part of the PrioritZ fusion team you will be configuring a custom connector for an existing
-API. The team would like to add badging to the PrioritZ application to give credit to users when they
-have completed ranking an item. The team identified an existing API, but it doesn't have a Power
-Platform connector.
-
-When you review the API, you see that it has four operations and uses API key authentication.
-
-
- ![](../images/L03/image1.png)
 
 ## Exercise 1 – Create Custom Connector
 

@@ -2,26 +2,6 @@
 
 Duration: 90 mins
 
-## Table of Contents
-
-Lab Scenario 
-
-1. Exercise 1 – Build Code Component 
-
-    - Task 1: Create the code component 
-
-    - Task 2: Implement the component logic  
-
-2. Exercise 2 – Use Code Component 
-
-    - Task 1: Allow Power Apps component framework 
-
-    - Task 2: Edit canvas app 
-
-3. Exercise 3 – Add Code Component to Solution 
-
-     - Task 1: Add component to solution 
-
 ### Lab Scenario
 
 Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code
@@ -42,6 +22,28 @@ The PrioritZ Ask app will prepare a collection of the items to rank that will be
 the code component. When an item is dragged and dropped the code component will raise an OnSelect
 event that will be handled by the hosting app. The hosting app will update the collection items with
 their new rank. The code component will be stateless.
+
+
+## Table of Contents
+
+Lab Scenario 
+
+1. Exercise 1 – Build Code Component 
+
+    - Task 1: Create the code component 
+
+    - Task 2: Implement the component logic  
+
+2. Exercise 2 – Use Code Component 
+
+    - Task 1: Allow Power Apps component framework 
+
+    - Task 2: Edit canvas app 
+
+3. Exercise 3 – Add Code Component to Solution 
+
+     - Task 1: Add component to solution 
+
 
 ## Exercise 1 – Build Code Component
 
