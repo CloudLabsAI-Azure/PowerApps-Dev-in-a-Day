@@ -138,7 +138,7 @@ In this exercise, you will run a flow that will add sample data to your environm
 
 1.	Open the **PrioritZ** solution you imported.
 
-     ![](../images/L01/solution.png)
+     ![](https://github.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/blob/main/images/L01/solution.png)
 
 2. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
  
