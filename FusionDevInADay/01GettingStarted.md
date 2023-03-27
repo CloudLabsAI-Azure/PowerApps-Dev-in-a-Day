@@ -12,7 +12,7 @@ Working as part of the PrioritZ fusion team, you will import the current solutio
 
 **Lab Scenario** 
 
-1. Exercise 1 - Import starting solution 
+1.Exercise 1 - Import starting solution 
 
    - Task 1: Import solution 
 
