@@ -139,7 +139,7 @@ In this exercise, you will run a flow that will add sample data to your environm
 
 1. Open the **Prioritz** solution you imported.
 
-    ![](../images/L01/newsolution.png)
+     ![](../images/L01/newsolution.png)
 
 2. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
  
