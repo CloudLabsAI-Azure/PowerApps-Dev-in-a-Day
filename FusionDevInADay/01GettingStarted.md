@@ -129,7 +129,8 @@ In this exercise, you will import a solution into your pre-created dev environme
      
 22. You should now see the solution you imported in the list of solutions.
 
-23.	Do not navigate away from this page.
+23. Do not navigate away from this page.
+
 
 ## Exercise 2 – Run flow
 
@@ -139,7 +140,7 @@ In this exercise, you will run a flow that will add sample data to your environm
 
 1.	Open the **PrioritZ** solution you imported.
 
-     ![](https://github.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/blob/main/images/L01/solution.png)
+     ![](../images/L01/solution.png)
 
 2. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
  
