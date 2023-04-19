@@ -28,21 +28,16 @@ their new rank. The code component will be stateless.
 
 Lab Scenario 
 
-1. Exercise 1 – Build Code Component 
+- Exercise 1 – Build Code Component 
+  - Task 1: Create the code component 
+  - Task 2: Implement the component logic  
 
-    - Task 1: Create the code component 
+- Exercise 2 – Use Code Component 
+  - Task 1: Allow Power Apps component framework 
+  - Task 2: Edit canvas app 
 
-    - Task 2: Implement the component logic  
-
-2. Exercise 2 – Use Code Component 
-
-    - Task 1: Allow Power Apps component framework 
-
-    - Task 2: Edit canvas app 
-
-3. Exercise 3 – Add Code Component to Solution 
-
-    - Task 1: Add component to solution 
+- Exercise 3 – Add Code Component to Solution 
+  - Task 1: Add component to solution 
 
 
 ## Exercise 1 – Build Code Component
