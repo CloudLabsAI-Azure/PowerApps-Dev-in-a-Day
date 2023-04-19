@@ -12,23 +12,18 @@ Working as part of the PrioritZ fusion team, you will import the current solutio
 
 **Lab Scenario** 
 
-1. Exercise 1 - Import starting solution 
+- Exercise 1 - Import starting solution 
+  - Task 1: Import solution 
 
-   - Task 1: Import solution 
+- Exercise 2 - Run flow 
+  - Task 1: Run flow
 
-2. Exercise 2 - Run flow 
+- Exercise 3 – Add a column for My Notes 
+  - Task 1: Add a new column 
+  - Task 2: Update admin app 
 
-   - Task 1: Run flow
-
-3. Exercise 3 – Add a column for My Notes 
-
-   - Task 1: Add a new column 
-
-   - Task 2: Update admin app 
-
-3. Exercise 4 – Test Power Platform CLI
-
-   - Task 1: Test the Power Platform CLI 
+- Exercise 4 – Test Power Platform CLI
+  - Task 1: Test the Power Platform CLI 
 
 
 # Getting Started with Lab
