@@ -20,31 +20,23 @@ environment.
 
 Lab Scenario 
 
-1. Exercise 1 – Create Azure Function 
+- Exercise 1 – Create Azure Function 
+  - Task 1: Create function 
 
-   - Task 1: Create function 
+- Exercise 2 - Function implementation 
+  - Task 1: Implement function 
 
-2. Exercise 2 - Function implementation 
+- Exercise 3 – Publish to Azure 
+  - Task 1: Publish 
+  - Task 2: Register Connector Client app 
 
-   - Task 1: Implement function 
+- Exercise 4 – Create Connector 
+  - Task 1: Create connector 
+  - Task 2: Test connector 
 
-3. Exercise 3 – Publish to Azure 
-
-   - Task 1: Publish 
-
-   - Task 2: Register Connector Client app 
-
-4. Exercise 4 – Create Connector 
-
-   - Task 1: Create connector 
-
-   - Task 2: Test connector 
-
-5. Exercise 5 – Use Function from Canvas App (Optional)
-
-   - Task 1: Use function 
-
-   - Task 2: Test application 
+- Exercise 5 – Use Function from Canvas App (Optional)
+  - Task 1: Use function 
+  - Task 2: Test application 
 
 
 
@@ -74,7 +66,7 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
     
  >**Note**: Azure Tool installation is already done as a part of prerequisites.
 
-5. A browser popup should appear. Provide your ***Azure** credentials and login.
+5. A browser popup should appear. Provide your **Azure** credentials and login.
 
 6. Press **[CONTROL + SHIFT + P]** to open the command palette or you can select it under **View** tab.
 
@@ -342,7 +334,7 @@ In this exercise, you will implement the function.
      > **Note** :
 
       1. If the build task operation fails with the errors, please make sure that you have followed the previous instructions and added the code correctly in **CreateTopic.cs and Model.cs files.**
-      2. Additionally you can find the **CreateTopic.cs and Model.cs** files in the location **C:\LabFiles**, you can compare your code with these files and fix the issues if there any then try to perform **step 18 again**.
+      2. Additionally you can find the **CreateTopic.cs and Model.cs** files in the location **C:\LabFiles**, you can compare your code with these files and fix the issues if there any and then try to perform **step 18 again**.
 
 ## Exercise 3 – Publish to Azure
 
@@ -394,7 +386,7 @@ In this exercise, you will deploy the function to Azure.
   
      ![](../images/L04/L04-auth.1.png)
 
-12. Select **Microsoft** for Identity provider and **Current tenant - Single tenant** for **Supported Account types** then click on **Add**.
+12. Select **Microsoft (1)** for Identity provider and **Current tenant - Single tenant (2)** for **Supported Account types** then click on **Add (3)**.
    
      ![](../images/L04/L04-auth.2.png)
 
