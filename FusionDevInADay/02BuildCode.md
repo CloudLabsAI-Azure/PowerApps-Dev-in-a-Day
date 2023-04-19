@@ -42,7 +42,7 @@ Lab Scenario
 
 3. Exercise 3 – Add Code Component to Solution 
 
-     - Task 1: Add component to solution 
+    - Task 1: Add component to solution 
 
 
 ## Exercise 1 – Build Code Component
@@ -417,7 +417,7 @@ from the end of lab once again.
     
     > **Note** : 
     
-     1. If the push operation fails with the error **`Sorry, the app encountered an non recoverable error and will need to terminate`**,this is a known issue with windows terminal console buffer size as commands pasted could wrap to the next line and exceeds the buffer height may result in such type of probelm sometimes, please try to run the same command couple more time to succeed in pushing the component, and also please make sure that you have followed the previous instructions and added the code correctly in **Manifest and Index** files if it is related to that. please make sure that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
+     1. If the push operation fails with the error **`Sorry, the app encountered an non recoverable error and will need to terminate`**,this is a known issue with windows terminal console buffer size as commands pasted could wrap to the next line and exceeds the buffer height may result in such type of probelm sometimes, please try to run the same command couple more time to succeed in pushing the component, and also please make sure that you have followed the previous instructions and added the code correctly in **Manifest and Index** files if it is related to that.
         
         Additionally you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there any then retry to push the component by running the  **pac push command** again.
 
