@@ -19,27 +19,19 @@ When you review the API, you see that it has four operations and uses API key au
 
 Lab Scenario 
 
-1. Exercise 1 – Create Custom Connector 
+- Exercise 1 – Create Custom Connector 
+  - Task 1: Download open API definition and create connector 
+  - Task 2: Create custom connector 
+  - Task 3: Modify the definition 
+  - Task 4: Test connector 
 
-    - Task 1: Download open API definition and create connector 
+- Exercise 2 – Add Custom Code 
+  - Task 1: Add code from resource folder 
+  - Task 2: Test custom code 
 
-    - Task 2: Create custom connector 
-   
-    - Task 3: Modify the definition 
-
-    - Task 4: Test connector 
-
-2. Exercise 2 – Add Custom Code 
-
-    - Task 1: Add code from resource folder 
-
-    - Task 2: Test custom code 
-
-3. Exercise 3 – Use Custom Connector 
-
-    - Task 1: Test connector from canvas app
-
-    - Task 2: Test connector from flow(This task is optional) 
+- Exercise 3 – Use Custom Connector 
+  - Task 1: Test connector from canvas app
+  - Task 2: Test connector from flow(This task is optional) 
 
 
 ## Exercise 1 – Create Custom Connector
