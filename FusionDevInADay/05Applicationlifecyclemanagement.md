@@ -13,28 +13,21 @@ Platform Build Tools to automate the team’s deployments.
 
 Lab Scenario 
 
-1. Exercise 1 – Promote Solution to Test Environment 
-
+Exercise 1 – Promote Solution to Test Environment 
    - Task 1: Export Solution 
-
    - Task 2: Import Solution 
 
-2. Exercise 2 – Configure a Service Principal 
-
+Exercise 2 – Configure a Service Principal 
    - Task 1: Create app registration 
-
    - Task 2: Create app user in Dataverse 
 
-3. Exercise 3 – Create GitHub Repo 
-
+Exercise 3 – Create GitHub Repo 
    - Task 1: Create repository 
 
-4. Exercise 4 – Export and Branch 
-
+Exercise 4 – Export and Branch 
    - Task 1: Export and branch 
 
-5. Exercise 5 – Release to Test 
-
+Exercise 5 – Release to Test 
    - Task 1: Create workflow
 
 
