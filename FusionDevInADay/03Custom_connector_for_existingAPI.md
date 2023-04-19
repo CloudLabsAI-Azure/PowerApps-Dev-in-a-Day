@@ -276,6 +276,8 @@ You will do this by using the custom code feature to reshape the response from t
 
 15. Advance to **Test** by selecting it in the dropdown.
 
+    > **Note**: Click on **Update connector** if it asks again and then move to next step.
+
 16. Select the **getcurrentbadge** action.
 
 17. Provide your email address as id and click **Test operation**.
@@ -377,7 +379,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 11. Select the **Tree view**.
 
-12. Select the **Components (1)** tab, Click ** + Insert (2)** tab, search for image and then select **Image (2)**.
+12. Select the **Components (1)** tab, Click **+ Insert (2)** tab, search for image and then select **Image (2)**.
      
      ![](images/L03/image.png)
 
