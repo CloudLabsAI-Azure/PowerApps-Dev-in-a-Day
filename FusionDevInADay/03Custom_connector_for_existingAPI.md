@@ -387,6 +387,16 @@ In this task, you will use the custom connector you created to show the user’s
     ```
     ![](../images/L03/image45.png)
 
+    >**Note**: If you face any issue in loading the image as per lab guide, this is due to timeout issue of the connector which we have created, to overcome this issue please follow the below instructions,
+     
+       1. To overcome the issue and set the image property in Ex3, please re-perform the **Exercise1-Task4-step1 to step9** to create the new connector. Make sure to refresh the          connector and select the newly created one if you have tried it multiple times to overcome any conflict.
+
+           ![](../images/L03/L3-EX1-T4.png)
+         
+       2. Now, perform **Exercise2-Task1-step15 to step25** to paste the image property created using new connections and continue with **Task2** full to test the connector.
+
+       3. We can now try performing **Exercise 3** again by removing the previous badgesconnector if any inside the canvas app.
+
 15. Set the Tooltip value of the User badge to the formula below.
 
     ```

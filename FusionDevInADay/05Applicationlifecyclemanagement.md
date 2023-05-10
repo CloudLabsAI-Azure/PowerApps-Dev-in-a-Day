@@ -84,12 +84,13 @@ unamanged.
 4. Leave the **Currency** and **Lanaguage** field to default and click on **Create database**.
     ![](../images/L03/db2.png)
 
-5. Wait for sometime (5-7 mins) until the solutions are loaded.
+5. Leave the page open and continue from Exercise 2 and come back again after finishing exercise 2 as portal takes time to load the solution.
 
    > **Note**: If solutions are not loading and getting **Try again** error this is because Power Apps takes sometime to create the Database and load the data. You can follow the below steps to fix the issue:
 
       1. Try refreshing the browser few times.
       2. If refresh doesn't work, try logging in to the Power Apps maker portal from private window and check solutions info.
+      3. Try, signout from power apps portal and signin again.
 
 6. Click **Import Solution**.
     
@@ -230,6 +231,16 @@ deploy solutions.
 17. Select your **Business unit** ***(1)*** from the drop down and click on **Create** ***(2)***. There should only be one Business unit unless you created more.
 
     ![](../images/L05/diad5l14.png)
+
+    >**Note**: If you face issue in adding the app user, please follow these workaround for the resolution and continue with step 18,
+
+      1. Go to the default OTU environment and select Users.
+        
+       ![](../images/L05/L5-app_user.png)
+           
+      2. Now, select the odl_user and click on **Refresh** user and confirm Roles have been added.
+           
+       ![](../images/L05/L5-app-user01.png)
 
 18. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application user you just created and click on **Edit security roles** ***(2)***.
     
