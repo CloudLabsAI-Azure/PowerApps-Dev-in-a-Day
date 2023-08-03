@@ -519,9 +519,9 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 16. Click on **+ Add field** to add a new field.
     
-17. Select **Rank** and click on **Add**.
+17. Select **Rank (1)** and click on **Add (2)**.
      
-      ![](images/L02/image44.png)
+      ![](images/L02/image44.1.png)
  
 18. The rank should now show on the control, but it is sorted descending.
       
