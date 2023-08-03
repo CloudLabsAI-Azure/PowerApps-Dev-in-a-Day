@@ -364,7 +364,7 @@ In this exercise, you will deploy the function to Azure.
     
 7. Once Function App is deployed, Select **Azure Tool** and  Click **Deploy Function App** under **Workspaces** section and choose the Function App just now you created. 
     
-     ![](../images/L04/DeployNew.png)
+     ![](../images/L04/lowcodeimg1.png)
    
      ![](../images/L04/DeployNew1.png)
 
