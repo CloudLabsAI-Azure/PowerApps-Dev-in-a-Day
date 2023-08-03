@@ -364,7 +364,7 @@ In this exercise, you will deploy the function to Azure.
     
 7. Once Function App is deployed, Select **Azure Tool** and  Click **Deploy Function App** under **Workspaces** section and choose the Function App just now you created. 
     
-     ![](../images/L04/DeployNew.png)
+     ![](../images/L04/lowcodeimg1.png)
    
      ![](../images/L04/DeployNew1.png)
 
@@ -636,7 +636,7 @@ In this exercise, you will create a new custom connector.
     
     ![](../images/L04/diad4l20.png) 
     
-12. Select the **swagger file (1)** which you saved in step 7 of this task and Click **Continue (2)**.
+12. Select the **swag file (1)** which you saved in step 7 of this task and Click **Continue (2)**.
 
     ![](../images/L04/diad4l18.png) 
  

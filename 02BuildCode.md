@@ -459,7 +459,7 @@ In this task, you will allow publishing of canvas apps with code components for 
 
 In this task, you will edit the PrioritZ Ask canvas application to use the code component you created.
 
-1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
    ```   
    https://make.powerapps.com/
    ```
@@ -474,7 +474,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
      ![](images/L02/image38.png)
  
-1. Select the **Code (1)** tab, select the code component (2) you created and click **Import (3)**.
+1. Select the **Code (1)** tab, select the code component **(2)** you created and click **Import (3)**.
     
      ![](images/L02/L02-code.png)
  
@@ -519,9 +519,9 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 16. Click on **+ Add field** to add a new field.
     
-17. Select **Rank** and click on **Add**.
+17. Select **Rank (1)** and click on **Add (2)**.
      
-      ![](images/L02/image44.png)
+      ![](images/L02/image44.1.png)
  
 18. The rank should now show on the control, but it is sorted descending.
       

@@ -297,11 +297,11 @@ In this exercise, you will create a GitHub repository and add repository secrets
     
      ![](../images/L05/Images%20(13).png)
 
-7. Go to the **Security** section, expand **Secrets (1)** and select **Actions (2)**.
+7. Go to the **Security** section, expand **Secrets and variables (1)** and select **Actions (2)**.
 
     > **Note**: The values you provide will not be visible after you create the item so take your time to get the values correct. 
       
-     ![](../images/L05/github6.png)
+     ![](../images/L05/secrets.png)
    
 8. Click **New repository secret** to add a secret.
 
