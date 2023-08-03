@@ -459,7 +459,7 @@ In this task, you will allow publishing of canvas apps with code components for 
 
 In this task, you will edit the PrioritZ Ask canvas application to use the code component you created.
 
-1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
    ```   
    https://make.powerapps.com/
    ```
