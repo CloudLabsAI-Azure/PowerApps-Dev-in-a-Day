@@ -43,7 +43,7 @@ Working as part of the PrioritZ fusion team you will be configuring a custom con
 build using Azure Functions. The team has decided to move the logic when a user creates a new “ask” to
 the Azure Function API. This will keep the Power App formula simple and allow more complex logic to be
 added in the future. In this lab, you will create the function, use the Dataverse API, and secure the API with
-Azure AD, configures a custom connector to use the API and changes the Power App to use the
+Microsoft Entra ID configures a custom connector to use the API and changes the Power App to use the
 connector.
 
 Note: This lab requires an Azure subscription (or trial) in the same tenant as your Dataverse
@@ -125,7 +125,7 @@ In this exercise, you install the Azure tools extension for Visual Studio Code a
 
     ![](images/L04/vscode10.png)
 
-1. Select **Anonymous** for AccessRights. Later we will protect the function using Azure AD.
+1. Select **Anonymous** for AccessRights. Later we will protect the function using Microsoft Entra ID.
 
     ![](images/L04/vscode11.png)
 
@@ -428,7 +428,7 @@ In this exercise, you will deploy the function to Azure.
 
      ![](images/L04/vscode28.png)
 
-16. Select **Azure Active Directory** from the list of resources.
+16. Select **Microsoft Entra ID** from the list of resources.
     
      ![](images/L04/vscode29.png)
 
@@ -574,7 +574,7 @@ In this exercise, you will deploy the function to Azure.
 
 ### Task 2: Register Connector Client app
 
-1. Navigate to the Azure portal, then search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
+1. Navigate to the Azure portal, then search for **Microsoft Entra ID** ***(1)*** in the search bar and select **Microsoft Entra ID** ***(2)*** from the suggestions.
 
    ![](images/L04/diad4l1.png)
 
