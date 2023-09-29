@@ -426,11 +426,11 @@ In this exercise, you will deploy the function to Azure.
 
 15. Open the **Portal menu** by clicking on the Portal menu icon.
 
-     ![](images/L04/vscode28.png)
+     ![](images/dev4.png)
 
 16. Select **Microsoft Entra ID** from the list of resources.
     
-     ![](images/L04/vscode29.png)
+     ![](images/dev1.png)
 
 17. Select **App registrations** under **Manage**  from the left hand side menu.
 
@@ -576,7 +576,7 @@ In this exercise, you will deploy the function to Azure.
 
 1. Navigate to the Azure portal, then search for **Microsoft Entra ID** ***(1)*** in the search bar and select **Microsoft Entra ID** ***(2)*** from the suggestions.
 
-   ![](images/L04/diad4l1.png)
+   ![](images/dev3.png)
 
 1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
 
@@ -683,7 +683,7 @@ In this exercise, you will create a new custom connector.
 
 16. Select **OAuth 2.0** ***(1)*** for Authentication type. Provide the following details and Click on **Create connector** ***(8)***.
 
-    - Identity Provider: **Azure Active Directory** ***(2)***
+    - Identity Provider: **Microsoft Entra ID** ***(2)***
     - Client id: Paste **PrioritZ Connector application ID** ***(3)*** which you copied earlier
     - Client secret: Paste **PrioritZ Connector Secret** ***(4)*** which you copied earlier
     - Tenant ID: Paste the **Tenant ID** ***(5)*** which you copied earlier
