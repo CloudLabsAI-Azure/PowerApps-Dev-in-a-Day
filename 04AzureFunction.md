@@ -683,7 +683,7 @@ In this exercise, you will create a new custom connector.
 
 16. Select **OAuth 2.0** ***(1)*** for Authentication type. Provide the following details and Click on **Create connector** ***(8)***.
 
-    - Identity Provider: **Microsoft Entra ID** ***(2)***
+    - Identity Provider: **Azure Active Directory** ***(2)***
     - Client id: Paste **PrioritZ Connector application ID** ***(3)*** which you copied earlier
     - Client secret: Paste **PrioritZ Connector Secret** ***(4)*** which you copied earlier
     - Tenant ID: Paste the **Tenant ID** ***(5)*** which you copied earlier
