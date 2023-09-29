@@ -43,9 +43,9 @@ actions, so they do not execute under your individual user identity.
    https://portal.azure.com/
    ```
 
-1. From Azure Portal home page, search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
+1. From Azure Portal home page, search for **Microsoft Entra ID** ***(1)*** in the search bar and select **Microsoft Entra ID** ***(2)*** from the suggestions.
 
-   ![](images/L05/diad5l1.png)
+   ![](images/dev3.png)
    
 1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
 
@@ -79,7 +79,7 @@ actions, so they do not execute under your individual user identity.
  
 ### Task 2: Create an app user in Dataverse
 
-In this task, you will be registering the app you created in Azure Active Directory into the dev and test
+In this task, you will be registering the app you created in Microsoft Entra ID into the dev and test
 Dataverse environments. You will also be assigned a security role that will allow the service principal to
 deploy solutions.
 
