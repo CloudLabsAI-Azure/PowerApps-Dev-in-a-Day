@@ -12,7 +12,7 @@ Lab Scenario
 
     - Task 2: Implement the component logic 
 
-    - Task 3: Confirm the control was added to environment 
+    - Task 3: Confirm the control was added to the environment 
 
 2. Exercise 2 – Use Code Component 
 
@@ -26,10 +26,10 @@ Lab Scenario
 
 ### Lab Scenario
 
-Working as part of the PrioritZ fusion team you have been asked to create to create a Power Apps code
+Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code
  component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
 a code component using the React JavaScript framework. A code component approach is used to
-address the requirement because there isn’t a similar control already built-in.
+address the requirement because there isn’t a similar control already built in.
 
 You have collaborated with the app makers to identify the following properties to allow them to
 configure the code component in the app:
@@ -57,7 +57,7 @@ In this exercise, you will build the code component.
    
 2. Select the **Power Platform (1)** tab and make sure your **Dev Auth (2)** profile is selected. 
     
-   >**Note** : The Power Platform tab is already installed.
+   >**Note**: The Power Platform tab is already installed.
     
     ![](images/L02/L01-auth.png)
 
@@ -92,7 +92,7 @@ In this exercise, you will build the code component.
     code -a.
     ```
 
-1. If you are presented with below pop-up, click on **Yes** to trust the authors of the files.
+1. If you are presented with the below pop-up, click on **Yes** to trust the authors of the files.
 
     ![](images/L02/image4.1.png)
 
@@ -115,7 +115,7 @@ In this exercise, you will build the code component.
 
       ![](images/L02/image8.png)
 
-14. Add the following properties in between the closing tag of the data-set element `</data-set>` and opening tag of `<resources>` element.
+14. Add the following properties in between the closing tag of the data-set element `</data-set>` and the opening tag of the `<resources>` element.
 
     > Add the following properties after **line number 26** in the **ControlManifest.Input.xml** file.
 
@@ -137,7 +137,7 @@ In this exercise, you will build the code component.
     
      ![](images/L02/image10.png)
  
-      >**Note** : Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
+      >**Note**: Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
       
  16. Notice the following two resources. This declares the component’s dependency on these two
     libraries. This is a result of specifying –framework React on initialization.
@@ -158,7 +158,7 @@ In this exercise, you will build the code component.
      ![](images/L02/image13.png)
  
  21. Name the new file **PrioritZDnDRanking.css**
- 22. Paste the following css into the **PrioritZDnDRanking.css** file.
+ 22. Paste the following CSS into the **PrioritZDnDRanking.css** file.
     
        ```
         .prioritydnd-scroll-container {
@@ -185,7 +185,7 @@ In this exercise, you will build the code component.
 
 ### Task 2: Implement the component logic
 
-1. Select the **HelloWorld.tsx** component file, right click on it and select **Delete** to remove the component file as it is automatically created and we won’t be using it. 
+1. Select the **HelloWorld.tsx** component file, right-click on it and select **Delete** to remove the component file as it is automatically created and we won’t be using it. 
      
      ![](images/L02/L02-EX1-T2-1.png)
     
@@ -215,7 +215,7 @@ In this exercise, you will build the code component.
     >**Note** : If you receive this error **npm is not recognised**, then perform the below steps:
 
       1. Open PowerShell then run this command `choco install -y --force nodejs`.
-      2. Oce the command execution is done, close the Visual Studio Code and open it again.
+      2. Once the command execution is done, close the Visual Studio Code and open it again.
       3. Perform **Step 8** of this task again to insall the **react-beautiful-dnd** package.
 
 9. Run the following command for the type definitions.
@@ -276,7 +276,7 @@ In this exercise, you will build the code component.
 
      ![](images/L02/imageUpdateView.png)
  
-20. Replace **updateView** function with the function below. This logic creates the React Element
+20. Replace the **updateView** function with the function below. This logic creates the React Element
     from the PriorityComponent and adds it to the virtual DOM.
   
      ```   
@@ -362,7 +362,7 @@ In this exercise, you will build the code component.
     npm run-script build
     ```
 
-      > **Note** : If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
+      > **Note**: If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
  
  29. The build should succeed. If any errors, resolve them before proceeding.
       
@@ -379,7 +379,7 @@ In this exercise, you will build the code component.
 
       ![](images/L02/imagee29.png)
  
-     > **Note** : If the test harness didn't start as expected and you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
+     > **Note**: If the test harness didn't start as expected you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in the **Manifest and Index** files. 
 
 32. Close the test harness by closing the browser tab.
 
@@ -397,11 +397,11 @@ In this exercise, you will build the code component.
     
     > **Note** : 
     
-     1. If the push operation fails with the error **`Sorry, the app encountered an non recoverable error and will need to terminate`**, please make sure that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
+     1. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
         
-        Additionally you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there any then retry to push the component by running the  **pac push command** again.
+        Additionally, you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there are any then retry to push the component by running the  **pac push command** again.
 
-     2. If the run fails with nuget package error,run the below command in Powershell and try running the above command again.
+     2. If the run fails with a Nuget package error, run the below command in Powershell and try running the above command again.
     
         ```
         dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
@@ -412,9 +412,9 @@ In this exercise, you will build the code component.
 
       ![](images/L02/image31.png)
  
-### Task 3: Confirm the control was added to environment
+### Task 3: Confirm the control was added to the environment
 
-1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
 
    ```
     https://make.powerapps.com/
@@ -434,9 +434,9 @@ In this exercise, you will use the code component you created in the PrioritZ As
 
 ### Task 1: Allow Power Apps component framework
 
-In this task, you will allow publishing of canvas apps with code components for your environment.
+In this task, you will allow the publishing of canvas apps with code components for your environment.
 
-1. Navigate to Power Platform admin center by using below URL and select environments.
+1. Navigate to the Power Platform admin center by using the below URL and select environments.
      ```
         https://admin.powerplatform.microsoft.com/environments
      ```
@@ -459,7 +459,7 @@ In this task, you will allow publishing of canvas apps with code components for 
 
 In this task, you will edit the PrioritZ Ask canvas application to use the code component you created.
 
-1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
+1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
    ```   
    https://make.powerapps.com/
    ```
@@ -513,7 +513,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     ```
      ![](images/L02/L02-voteitem.png)
     
-15. Select the **PrioritZDnDRanking**, go to the **Properties** pane that is present at the right side of the screen, set **Item Height** 160 and click **Edit Fields** .
+15. Select the **PrioritZDnDRanking**, go to the **Properties** pane that is present at the right side of the screen, set **Item Height** 160 and click **Edit Fields**.
 
       ![](images/L02/image43.png)
 
@@ -544,29 +544,29 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     ```
     'Votes gallery'.Width
     ```
-23. Select the **Width** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value to **60**.
+23. Select the **Width** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **60**.
     
-24. Select the **Height** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value with the below formula.
+24. Select the **Height** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
 
     ```
     'Votes gallery'.Height
     ```
-25. Select the **ItemHeight** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value with the below formula
+25. Select the **ItemHeight** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula
 
     ```
     'Votes gallery'.TemplateHeight
     ```
-26. Select the **BackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value to **"LightBlue"**
+26. Select the **BackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"LightBlue"**
     
-27. Select the **DragBackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value to **"#A70202"**
+27. Select the **DragBackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"#A70202"**
 
-28. Select the **Y** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value with the below formula.
+28. Select the **Y** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
 
     ```
     'Votes gallery'.Y
     ```
     
-29. Select the **OnSelect** property  of the **PrioritZDnDRanking** component from the property dropdown and set it's value with the below formula.
+29. Select the **OnSelect** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
 
     ```
     With(
@@ -613,7 +613,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 31. Select one of the **topics**.
 
-32. Make your browser widow smaller until it is the size of a phone screen.
+32. Make your browser window smaller until it is the size of a phone screen.
      
      ![](images/L02/image48.png)
 
@@ -635,9 +635,9 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 In this exercise, you will add the code component you created to the PrioritZ solution.
 
-### Task 1: Add component to solution
+### Task 1: Add the component to the solution
 
-1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
 
    ```
     https://make.powerapps.com/
