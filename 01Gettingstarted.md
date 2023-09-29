@@ -32,15 +32,15 @@ flows and tables. You will be also adding a column to a table and modifying the 
 
 # Getting Started with Lab
 
-1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the the lab.
+1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab.
 
    ![](images/L01/env.png "Lab Environment")
    
-1. To get the lab environment details, you can select **Environment Details** tab. Additionally, the credentials will also be sent to your email address provided during registration. 
+1. To get the lab environment details, you can select the **Environment Details** tab. Additionally, the credentials will also be sent to your email address provided during registration. 
 
    ![](images/L01/labenv.png "Lab Environment")
    
-## Exercise 1 - Import, review solution components
+## Exercise 1 - Import, and review solution components
 
 In this exercise, you will import the current solution into the pre-created dev environment and review the components of the solution. You will also run a flow that will add sample data to your environment, and test the applications in the solution.
 
@@ -48,11 +48,11 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 ### Task 1: Import, Review solution components and run flow
 
-1. In the JumpVM, click on **Power Apps** portal shortcut of Microsoft Edge browser that is available on desktop.
+1. In the JumpVM, click on the **Power Apps** portal shortcut of the Microsoft Edge browser that is available on the desktop.
 
    ![azure portal.](images/L01/PAportal.png)
    
-1. When you click on Power Apps portal, the edge browser welcome screen will come up, select **Start without your data**.
+1. When you click on the Power Apps portal, the edge browser welcome screen will come up, and select **Start without your data**.
 
    ![](/images/L01/browser-1.png)
 
@@ -64,7 +64,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
    ![](/images/L01/browser-2.png)
 
-1. Now, you will see two tabs in the edge browser, close the first tab named with **Microsoft Edge**.
+1. Now, you will see two tabs in the Edge browser, close the first tab named **Microsoft Edge**.
 
 1. On the **Sign in** window, you will see the login screen, enter the following username **(1)** and click on **Next** **(2)**.
 
@@ -118,7 +118,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
      ![](images/L01/refresh.png) 
      
-1. Check the connection and click **Import** button to import the solution.
+1. Check the connection and click the **Import** button to import the solution.
 
      ![](images/L01/import.png)
      
@@ -136,11 +136,11 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 5. Select the **Columns** under Schema and review the columns of the **PrioritZ Topic** table.
 
-   >**Info** : The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
+   >**Info**: The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
  
    ![](images/L01/L01-coulumn.png)
 
-6. Select the **Relationships** tab from Columns dropdown and review how this table is related to other tables.
+6. Select the **Relationships** tab from the Columns dropdown and review how this table is related to other tables.
  
     ![](images/L01/L01-relation.png)
  
@@ -186,7 +186,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
      ![](images/L01/L01-new.png)
 
-     > **Note** : If you receive this error `Error from token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 11-21** of this task again, then try to trigger the flow again.
+     > **Note**: If you receive this error `Error from the token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** is not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 11-21** of this task again, then try to trigger the flow again.
 
 18. Click **Done** and wait for the flow run to complete.
 
@@ -199,7 +199,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 ### Task 2: Test the apps
 
-1. Navigate back to **PrioritZ** solution by clicking on **Cloud flows**. Alernatively you can also open **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate back to **PrioritZ** solution by clicking on **Cloud flows**. Alternatively, you can also open the **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
        
    ![](images/L01/cloud1.png)
 
@@ -229,7 +229,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 7. Click on the **<** back button.
 
-    > **Note** : You should go back to the home screen.
+    > **Note**: You should go back to the home screen.
 
 9. Now, click on the **+** button to add a new topic.
     
@@ -237,27 +237,27 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 10. Provide the below information and click **add a picture** that is present below **Respond By** field.
      
-     1. **Topic** : Enter `Change Taco Tuesday to some other food`
+     1. **Topic**: Enter `Change Taco Tuesday to some other food`
      
-     1. **Details** : Enter `People are tired of tacos, what should we have instead of tacos?`
+     1. **Details**: Enter `People are tired of tacos, what should we have instead of tacos?`
      
-     1. **Respond By** : Select **today's date**.
+     1. **Respond By**: Select **today's date**.
      
      ![](images/L01/image17.png)
 
 1. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
 
-12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below Choice field.
+12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below the Choice field.
      
       ![](images/L01/image18.png)
 
-11. Navigate to this path `C:\LabFiles` in file explorer, select **image.png** and click open.
+11. Navigate to this path `C:\LabFiles` in File Explorer, select **image.png** and click open.
 
 13. Click **+** to add the choice.
      
       ![](images/L01/image19.png)
 
-14. Add couple more choices by repeating **steps 12-14**.
+14. Add a couple more choices by repeating **steps 12-14**.
        
        1. **Choice 1** : Enter `Steak Tuesday`
        
@@ -267,13 +267,13 @@ In this exercise, you will import the current solution into the pre-created dev 
     
     ![](images/L01/image20.png)
 
-16. The new topic should be saved, and you should be navigated back to main screen.
+16. The new topic should be saved, and you should be navigated back to the main screen.
 
-17. You should see the topic you added in the list of topics.
+17. You should see the topic you added to the list of topics.
 
      ![](images/L01/L01-taco.png)
 
-18. Close the PrioritZ Admin application by closing the browser tab in which PrioritZ Admin application is open.
+18. Close the PrioritZ Admin application by closing the browser tab in which the PrioritZ Admin application is open.
 
 19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **PrioritZ Ask (2)** application.
      
@@ -283,7 +283,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
      ![](images/L01/L01-list.png)
 
-21. Click on the **up/down** icons and order the items in the order you prefer them and click **Vote**.
+21. Click on the **up/down** icons order the items in the order you prefer them and click **Vote**.
      
       ![](images/L01/L01-choice.png)
 
@@ -291,7 +291,7 @@ In this exercise, you will import the current solution into the pre-created dev 
       
       ![](images/L01/image23.png)
 
-23. Close the PrioritZ Ask app by closing the browser tab in which PrioritZ Ask application is open.
+23. Close the PrioritZ Ask app by closing the browser tab in which the PrioritZ Ask application is open.
 
 ## Exercise 2 – Add a column for My Notes
 
@@ -300,7 +300,7 @@ application.
 
 ### Task 1: Add a new column
 
-1. Navigate to Power Apps maker portal by using below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
     ```
     https://make.powerapps.com
    ```
@@ -323,9 +323,9 @@ application.
 
     ![](images/L01/L01-notes.png)
    
-   > **Note** : Do not navigate away from this page.
+   > **Note**: Do not navigate away from this page.
 
-### Task 2: Update admin app
+### Task 2: Update the admin app
 
 1. Make sure you are still in the **PrioritZ** solution. Select **Apps (1)** under **Objects** and select the **PrioritZ Admin (2)** application and click on **Edit (3)**.
     
@@ -339,7 +339,7 @@ application.
    
      ![](images/L01/tinput.png)
 
-5. Double click on the newly added **Text input** and enter the below value to rename the text input.
+5. Double-click on the newly added **Text input** and enter the below value to rename the text input.
 
     ```
     Notes textbox
@@ -364,7 +364,7 @@ application.
     ![](images/L01/image29.png)
 
 
-9. Select the **Mode** from the properties dropdown and change it's value by entering the below text.
+9. Select the **Mode** from the properties dropdown and change its value by entering the below text.
 
     ```
     TextMode.MultiLine
@@ -377,7 +377,7 @@ application.
      ![](images/L01/image30.png)
 
 11. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates
-    the new row in the Dataverse table.
+    a new row in the Dataverse table.
      
      ![](images/L01/image31.png)
 
@@ -390,7 +390,7 @@ application.
 
     ![](images/L01/tlabel.png)
 
-13. Double click on the newly added label and enter the below value to rename the label you just added.
+13. Double-click on the newly added label and enter the below value to rename the label you just added.
 
      ```
      Notes label
@@ -406,7 +406,7 @@ application.
   
       ![](images/L01/image32.png)
 
-15. Rearrange the controls and move the **Notes label** between the details label and Topic items
+15. Rearrange the controls and move the **Notes label** between the details label and the Topic items
     gallery.
    
       ![](images/L01/image33.png)
@@ -420,7 +420,7 @@ application.
 
       ![](images/L01/L01-taco-1_1.png)
 
-18. Fill out the form by providing below information and click **add a picture** that is present below **Respond By** field.
+18. Fill out the form by providing the below information and click **add a picture** that is present below the **Respond By** field.
 
        1. Topic: `Test Notes` (1)
        
@@ -433,26 +433,26 @@ application.
       
 1. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
 
-12. Type **Test One** on the Choice field and click **add a picture** that is present below Choice field.
+12. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
      
       ![](images/L01/image18.png)
 
-11. Navigate to this path `C:\LabFiles` in file explorer, select **image.png** and click open.
+11. Navigate to this path `C:\LabFiles` in File Explorer, select **image.png** and click open.
 
 13. Click **+** to add the choice.
      
       ![](images/L01/image19.png)
 
-14. Add one more choices by repeating **steps 20-22** of this task.
+14. Add one more choice by repeating **steps 20-22** of this task.
        
        1. **Choice 1** : Enter `Test Two`
-1. After adding all the Choices an topic dteails, your screen should look like beow screenshot.
+1. After adding all the Choices and topic details, your screen should look like the below screenshot.
 
    ![](images/L01/L01-testnotes.png)
       
-19. Now, click on **Save** button.The new topic should be **saved**.
+19. Now, click on the **Save** button. The new topic should be **saved**.
 20. Click to open the **Test Notes** topic that you just created.
-21. The notes **Prioritz Admin topic** that you have added earlier should now be visible now.
+21. The notes **Prioritz Admin topic** that you added earlier should now be visible.
  
      ![](images/L01/image36.1.png)
 
@@ -471,9 +471,9 @@ application.
 
 In this exercise, you will review and test the Power Platform CLI extension in Visual Studio Code.
 
->**Note** : Visual studio code and Power platform CLI installation is already done as a part of the prerequisites.
+>**Note**: Visual studio code and Power platform CLI installation are already done as a part of the prerequisites.
 
-1. Navigate to Power Platform admin center by using below URL and select **Environments**.
+1. Navigate to the Power Platform admin center by using the below URL and select **Environments**.
       ```
         https://admin.powerplatform.microsoft.com/environments
       ```
@@ -486,9 +486,9 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
 2. Click to open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
-3. Right click on the **Environment URL** value and paste the value in notepad.
+3. Right-click on the **Environment URL** value and paste the value in Notepad.
  
-    >**Note** : Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
+    >**Note**: Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
 
     ![](images/L01/image37.png)
 
@@ -505,9 +505,9 @@ In this exercise, you will review and test the Power Platform CLI extension in V
    pac
    ```
    
-   > **Info:** If u found error after using pac command, try un-installing the Power Platform tool and re-install it, then retry the step.
+   > **Info:** If u found an error after using the pac command, try uninstalling the Power Platform tool and re-install it, then retry the step.
    
-8. Replace `<your environment URL>` in the below command with the value of environment URL that you copied earlier then run the command. 
+8. Replace `<your environment URL>` in the below command with the value of the environment URL that you copied earlier then run the command. 
    ```
    pac auth create --name DevAuth --url <your environment URL>
    ```
@@ -525,13 +525,13 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
    ![](/images/L01/portalsignin-3.png)  
 
-9. Select **Power Platform (1)** tool, you should now have at least one **auth profile (2)**. If you have more than profile, make sure the profile you created is selected
+9. Select **Power Platform (1)** tool, you should now have at least one **auth profile (2)**. If you have more than one profile, make sure the profile you created is selected
    
     ![](images/L01/L01-auth.png)
 
     > **Note** : If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the below steps:
 
-      1. Delete the **Universal Profile** from Visual Studio Code by clicking on delete button.
+      1. Delete the **Universal Profile** from Visual Studio Code by clicking on the delete button.
       2. Copy the correct **Environment URL** value by following **Step 5** of this task. 
       3. Perform the **Step 9** of this task again to create the auth profile.
 
@@ -539,11 +539,11 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
      ![](images/L01/image42.png)
 
-11. Run the command below to see list of solutions.
+11. Run the command below to see a list of solutions.
 
       ```
       pac solution list
       ```
-12. You should see list of solutions installed on your environment.
+12. You should see a list of solutions installed on your environment.
     
     ![](images/L01/sollist.png)

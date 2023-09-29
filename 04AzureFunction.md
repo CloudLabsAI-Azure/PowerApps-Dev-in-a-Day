@@ -42,8 +42,8 @@ Lab Scenario
 Working as part of the PrioritZ fusion team you will be configuring a custom connector for a new API you
 build using Azure Functions. The team has decided to move the logic when a user creates a new “ask” to
 the Azure Function API. This will keep the Power App formula simple and allow more complex logic to be
-added in the future. In this lab you will create the function, use the Dataverse API, secure the API with
-Azure AD, configure a custom connector to use the API, and change the Power App to use the
+added in the future. In this lab, you will create the function, use the Dataverse API, and secure the API with
+Microsoft Entra ID configures a custom connector to use the API and changes the Power App to use the
 connector.
 
 Note: This lab requires an Azure subscription (or trial) in the same tenant as your Dataverse
@@ -51,7 +51,7 @@ environment.
 
 ## Exercise 1 – Create Azure Function
 
-In this exercise, you install Azure tools extension for Visual Studio Code and create the function
+In this exercise, you install the Azure tools extension for Visual Studio Code and create the function
 
 ### Task 1: Install Azure tools extension
 
@@ -77,7 +77,7 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
  
     ![](images/L04/image%20(3).png)
 
-7. Run the below command in the terminal to create new folder.
+7. Run the below command in the terminal to create a new folder.
    ```
    md ContosoFunctions
    ```
@@ -85,9 +85,9 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
 
 
-### Task 2: Create function
+### Task 2: Create a function
 
-1. Select **Azure Tools (1)** from the left navigtion menu and navigate to the **Workspace (2)** section.
+1. Select **Azure Tools (1)** from the left navigation menu and navigate to the **Workspace (2)** section.
 
     ![](images/L04/vscode4.png)
 
@@ -95,7 +95,7 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
     ![](images/L04/function.png)
 
-    >**Note**: If the **+** symbol is not visible, select settings and look if there are any update is required for vscode and update the app.Close the current vscode and open it again and perform the above step.
+    >**Note**: If the **+** symbol is not visible, select settings and see if there are any updates required for vscode and update the app Close the current vscode and open it again and perform the above step.
 
 1. Select the **ContosoFunction (1)** folder you created and click **select Folder (2)**
 
@@ -125,15 +125,15 @@ In this exercise, you install Azure tools extension for Visual Studio Code and c
 
     ![](images/L04/vscode10.png)
 
-1. Select **Anonymous** for AccessRights. Later we will protect the function using Azure AD.
+1. Select **Anonymous** for AccessRights. Later we will protect the function using Microsoft Entra ID.
 
     ![](images/L04/vscode11.png)
 
-9. If you are presented with below window, select **Open in current window.**
+9. If you are presented with the below window, select **Open in the current window.**
   
     ![](images/L04/image%20(8).png)
 
-1. Your function should open in **Visual Studio Code** .
+1. Your function should open in **Visual Studio Code**.
 
 1. Click on **Terminal** from the top menu and select **Run Build Task**.
   
@@ -183,12 +183,12 @@ In this exercise, you will implement the function.
       }
       }
       ```
-   After adding the code your **Model.cs** will look like below screenshot:
+   After adding the code your **Model.cs** will look like the below screenshot:
    
    ![](images/L04/vscode14.png)
    
 4. Open the **CreateTopic.cs** file.
-5. Locate the Run method attributes (line number 24-27) that are present above the **Run method** and replace them with the attributes below. This provides user friendly names when we create a connector to use the API.
+5. Locate the Run method attributes (line numbers 24-27) that are present above the **Run method** and replace them with the attributes below. This provides user-friendly names when we create a connector to use the API.
     
        
       ```
@@ -199,7 +199,7 @@ In this exercise, you will implement the function.
       [OpenApiRequestBody(contentType: "application/json", bodyType: typeof(TopicModel))]
       ```
       
-      After adding the attributes your **Run method** should look like below screenshot:
+      After adding the attributes your **Run method** should look like the below screenshot:
       
       ![](images/L04/image%20(13).png)
 
@@ -217,7 +217,7 @@ In this exercise, you will implement the function.
       ```
     ![](images/L04/image%20(17).png)
 
-9. Wait for the package to be added then run the below command to add **Azure Identity** package.
+9. Wait for the package to be added then run the below command to add the **Azure Identity** package.
 
     ```
     dotnet add package Azure.Identity
@@ -225,7 +225,7 @@ In this exercise, you will implement the function.
 
 10. Wait for the **Azure Identity** package to be added.
 
-11. Open the **CreateTopic** file and add the using statements below after line number 11.
+11. Open the **CreateTopic** file and add the statements below after line number 11.
 
       ```
       using System;
@@ -277,7 +277,7 @@ In this exercise, you will implement the function.
 
     ![](images/L04/vscode16.png)
 
-13. Replace the code inside the **Run** method with code below. This will get an instance of the
+13. Replace the code inside the **Run** method with the code below. This will provide an instance of the
     Dataverse API and use the GetAccessToken function we just defined.
     
       ```    
@@ -307,8 +307,8 @@ In this exercise, you will implement the function.
       ```
     ![](images/L04/vscode18.png)
 
-15. Add the below code that creates the row to the **Run** method after the code you added in previous step to **reserialize the request**. This code creates the rows in
-    Dataverse and is where we might add more logic in the future.
+15. Add the below code that creates the row to the **Run** method after the code you added in the previous step to **reserialize the request**. This code creates the rows in
+    Dataverse is where we might add more logic in the future.
     
        ```
       var ask = new Entity("contoso_prioritztopic");
@@ -341,7 +341,7 @@ In this exercise, you will implement the function.
 
     ![](images/L04/vscode19.png)
 
-16. Add the code below to the **Run** method to return the topic id as JSON (required by Power Apps) after the code you added in previous step to create the row to the **Run** method.
+16. Add the code below to the **Run** method to return the topic ID as JSON (required by Power Apps) after the code you added in the previous step to create the row to the **Run** method.
 
       ```
       return new OkObjectResult(topicId);
@@ -358,7 +358,7 @@ In this exercise, you will implement the function.
      > **Note** :
 
       1. If the build task operation fails with the errors, please make sure that you have followed the previous instructions and added the code correctly in **CreateTopic.cs and Model.cs files.**
-      2. Additionally you can find the **CreateTopic.cs and Model.cs** files in the location **C:\LabFiles**, you can compare your code with these files and fix the issues if there any then try to perform **step 17 again**.
+      2. Additionally you can find the **CreateTopic.cs and Model.cs** files in the location **C:\LabFiles**, you can compare your code with these files and fix the issues if there are any then try to perform **step 17 again**.
 
 ## Exercise 3 – Publish to Azure
 
@@ -366,7 +366,7 @@ In this exercise, you will deploy the function to Azure.
 
 ### Task 1: Publish
 
-1. Select **Azure Tools** from the left hand side menu.
+1. Select **Azure Tools** from the left-hand side menu.
 
     ![](images/L04/vscode22.png)
 
@@ -379,9 +379,9 @@ In this exercise, you will deploy the function to Azure.
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    * Password: <inject key="AzureAdUserPassword"></inject>
 
-4. Close the sign in browser window once the sign in process is completed.
+4. Close the sign-in browser window once the sign-in process is completed.
 
-5. Navigate back to Visual Studio Code and click on **+** that is next to your **Resources tab**  to create new Function App.
+5. Navigate back to Visual Studio Code and click on **+** that is next to your **Resources tab**  to create a new Function App.
   
     ![](images/L04/NewVSazure3.png)
  
@@ -396,11 +396,11 @@ In this exercise, you will deploy the function to Azure.
 8. Select **.NET 6**.
 
     ![](images/L04/vscode26.png)
-9. Select the location: **<inject key="Region" enableCopy="false" />** form the list and wait for the Function App to be deployed.
+9. Select the location: **<inject key="Region" enableCopy="false" />** from the list and wait for the Function App to be deployed.
 
     ![](images/L04/vscode27.png)
     
-10. Once Function App is deployed, Click **Deploy Function App** under **Workspaces** section and choose the Function App just now you created. 
+10. Once the Function App is deployed, Click **Deploy Function App** under the **Workspaces** section and choose the Function App you created. 
     
      ![](images/L04/DeployNew.png)
    
@@ -412,7 +412,7 @@ In this exercise, you will deploy the function to Azure.
     https://portal.azure.com/
     ```
     
-12. Select **All resources** , search for the function app **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** that you have deployed earlier and click to open it.
+12. Select **All resources**, search for the function app **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** that you have deployed earlier and click to open it.
   
      ![](images/L04/vscode27.1.png)
 
@@ -426,11 +426,11 @@ In this exercise, you will deploy the function to Azure.
 
 15. Open the **Portal menu** by clicking on the Portal menu icon.
 
-     ![](images/L04/vscode28.png)
+     ![](images/dev4.png)
 
-16. Select **Azure Active Directory** from the list of resources.
+16. Select **Microsoft Entra ID** from the list of resources.
     
-     ![](images/L04/vscode29.png)
+     ![](images/dev1.png)
 
 17. Select **App registrations** under **Manage**  from the left hand side menu.
 
@@ -441,7 +441,7 @@ In this exercise, you will deploy the function to Azure.
      ![](images/L04/vscode31.png)
 
 19. Copy the **Application (client) ID** of the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** application registration and keep it on a
-    notepad as **PrioritZFL API application ID**. You will need this id in future steps. This ID will be used to configure protection of the API.
+    notepad as **PrioritZFL API application ID**. You will need this ID in future steps. This ID will be used to configure the protection of the API.
     
     ![](images/L04/image%20(33).png)
     
@@ -449,7 +449,7 @@ In this exercise, you will deploy the function to Azure.
     
     >**Note**: Make sure to copy and paste the correct **Application (client) ID** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
-20. Copy the **Directory (tenant) ID** and keep it on a notepad as **Tenant ID**. You will need this id in
+20. Copy the **Directory (tenant) ID** and keep it on a notepad as **Tenant ID**. You will need this ID in
     future steps.
   
     ![](images/L04/image%20(35).png)
@@ -526,7 +526,7 @@ In this exercise, you will deploy the function to Azure.
 
      ![](images/L04/vscode39.png)
      
-37. Start a new browser window or tab and navigate to Power Platform admin center and select
+37. Start a new browser window or tab navigate to the Power Platform admin center and select
     **Environments**.
 
       ```
@@ -535,7 +535,7 @@ In this exercise, you will deploy the function to Azure.
 
 38. Click to open the Dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** you are using for this lab.
 
-39. Copy the **Environment URL** and paste it in the notepad.
+39. Copy the **Environment URL** and paste it into the notepad.
 
      ![](images/L04/image%20(47).png)
 
@@ -556,7 +556,7 @@ In this exercise, you will deploy the function to Azure.
 
 43. Click **Save** and **Continue**.
 
-44. Paste the below URL in notepad and replace `{tenant id}` and `{api app id}` with **tenant id** and **PrioritZFL API application ID** values from your
+44. Paste the below URL in Notepad and replace `{tenant id}` and `{api app id}` with **tenant id** and **PrioritZFL API application ID** values from your
     notepad. 
 
     ```
@@ -565,7 +565,7 @@ In this exercise, you will deploy the function to Azure.
      
      After updating the values, your URL should look like this: `https://login.microsoftonline.com/2140cxxxxxxx/adminconsent?client_id=195b2axxxxxxx`
  
-45. After updating the values, navigate to the URL in a browser tab and sign in with below credentials.
+45. After updating the values, navigate to the URL in a browser tab and sign in with the below credentials.
    
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    * Password: <inject key="AzureAdUserPassword"></inject>
@@ -574,9 +574,9 @@ In this exercise, you will deploy the function to Azure.
 
 ### Task 2: Register Connector Client app
 
-1. Navigate to the Azure portal, then search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
+1. Navigate to the Azure portal, then search for **Microsoft Entra ID** ***(1)*** in the search bar and select **Microsoft Entra ID** ***(2)*** from the suggestions.
 
-   ![](images/L04/diad4l1.png)
+   ![](images/dev3.png)
 
 1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
 
@@ -622,7 +622,7 @@ In this exercise, you will deploy the function to Azure.
 
 In this exercise, you will create a new custom connector.
 
-### Task 1: Create connector
+### Task 1: Create a connector
 
 1. Navigate to Azure Portal using the below URL.
 
@@ -652,11 +652,11 @@ In this exercise, you will create a new custom connector.
     
    >**Note**: If permissions prompt pops up, Click on **Accept** and continue.
    
-1. Right click on the swagger and select **Save as** and Save the file in your local machine-Provide a name to file as swag.json.
+1. Right-click on the swagger select **Save as** and Save the file in your local machine-Provide a name to file as swag.json.
     
    ![](images/L04/diad4l15.png) 
    
-1. Navigate to Power Apps maker portal by using below URL. Make sure the development environment is selected.
+1. Navigate to the Power Apps maker portal by using the below URL. Make sure the development environment is selected.
    ```
    https://make.powerapps.com
    ```
@@ -694,7 +694,7 @@ In this exercise, you will create a new custom connector.
    
 ### Task 2: Test connector
 
-1. Now navigate to the connecter you just created and click on **edit** button. Select the **Test** ***(1)*** tab from the drop down menu and click **+ New connection** ***(2)***.
+1. Now navigate to the connecter you just created and click on the **edit** button. Select the **Test** ***(1)*** tab from the drop down menu and click **+ New connection** ***(2)***.
      
    ![](images/L04/diad4l22.png) 
     
@@ -702,7 +702,7 @@ In this exercise, you will create a new custom connector.
 
    ![](images/L04/diad4l23.png) 
    
-1. If login prompt pops up enter the below credentials and click on **Accept** to accept the terms.
+1. If the login prompt pops up enter the below credentials and click on **Accept** to accept the terms.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
    * Password: <inject key="AzureAdUserPassword"></inject>
@@ -711,7 +711,7 @@ In this exercise, you will create a new custom connector.
      
    ![](images/L04/L04-custom.png)
     
-7. Select the **Test** from the drop down menu tab.
+7. Select the **Test** from the drop-down menu tab.
 
     ![](images/tstcnt.png)
     
@@ -742,12 +742,12 @@ In this exercise, you will create a new custom connector.
 
 ### Exercise 5 – Use Function from Canvas App
 
-In this exercise, you will use then Azure function you created via the custom connector from the PrioritZ
+In this exercise, you will use the Azure function you created via the custom connector from the PrioritZ
 Admin canvas application.
 
-### Task 1: Use function
+### Task 1: Use the function
 
-1. Navigate to Power Apps maker portal and make sure you are in correct environment.
+1. Navigate to the Power Apps maker portal and make sure you are in the correct environment.
 2. Select Apps, select the **PrioritZ Admin** application and click **Edit**.
      
    ![](images/L04/image%20(66).png)
@@ -856,6 +856,6 @@ Admin canvas application.
     
      ![](images/L04/image80.png)
     
-12. You should see the two choices you added to topic.
+12. You should see the two choices you added to the topic.
 
     ![](images/L04/image81.png)

@@ -11,7 +11,7 @@ Lab Scenario
 
    - Task 1: Create app registration 
 
-   - Task 2: Create app user in Dataverse 
+   - Task 2: Create an app user in Dataverse 
 
 2. Exercise 2 – Create GitHub Repo 
 
@@ -32,7 +32,7 @@ Platform Build Tools to automate the team’s deployments.
 
 ## Exercise 1 – Configure a Service Principal
 
-In this exercise, you will create service principal. The service principal will be used by the workflow
+In this exercise, you will create a service principal. The service principal will be used by the workflow
 actions, so they do not execute under your individual user identity.
 
 ### Task 1: Create app registration
@@ -43,9 +43,9 @@ actions, so they do not execute under your individual user identity.
    https://portal.azure.com/
    ```
 
-1. From Azure Portal home page, search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
+1. From Azure Portal home page, search for **Microsoft Entra ID** ***(1)*** in the search bar and select **Microsoft Entra ID** ***(2)*** from the suggestions.
 
-   ![](images/L05/diad5l1.png)
+   ![](images/dev3.png)
    
 1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
 
@@ -77,14 +77,14 @@ actions, so they do not execute under your individual user identity.
     >**Note**: Make sure to copy and paste the correct **Application (client) ID**, **Directory(Tenant) ID** and **Secret** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
  
-### Task 2: Create app user in Dataverse
+### Task 2: Create an app user in Dataverse
 
-In this task, you will be registering the app you created in Azure Active Directory into the dev and test
-Dataverse environments. You will also be assigning a security role that will allow the service principal to
+In this task, you will be registering the app you created in Microsoft Entra ID into the dev and test
+Dataverse environments. You will also be assigned a security role that will allow the service principal to
 deploy solutions.
 
 
-1. Open a new browser window or tab and navigate to Power Platform Admin Center using the below URL.
+1. Open a new browser window or tab and navigate to the Power Platform Admin Center using the below URL.
 
      ```
      https://admin.powerplatform.microsoft.com/environments
@@ -114,7 +114,7 @@ deploy solutions.
 
    ![](images/L05/diad5l13.png)
 
-1. Select your **Business unit** ***(1)*** from the drop down and click on **Create** ***(2)***. There should only be one Business unit unless you created more.
+1. Select your **Business unit** ***(1)*** from the drop down and click on **Create** ***(2)***. There should only be one Business unit unless you create more.
 
    ![](images/L05/diad5l14.png)
 
@@ -150,7 +150,7 @@ deploy solutions.
 
    ![](images/L05/diad5l13.png)
 
-1. Select your **Business unit** ***(1)*** from the drop down and click on **Create** ***(2)***. There should only be one Business unit unless you created more.
+1. Select your **Business unit** ***(1)*** from the drop down and click on **Create** ***(2)***. There should only be one Business unit unless you create more.
 
    ![](images/L05/diad5l14.png)
 
@@ -182,9 +182,9 @@ deploy solutions.
 
 In this exercise, you will create a GitHub repository and add repository secrets.
 
-### Task 1: Create repository
+### Task 1: Create a repository
 
-1. Navigate to the below URL and sign-in using your GitHub credentials.
+1. Navigate to the below URL and sign in using your GitHub credentials.
 
    ```
    https://github.com/
@@ -256,16 +256,15 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 ### Exercise 3 – Export and Branch
 
-In this exercise, you will setup a workflow action, and add steps that will export the solution from dev
+In this exercise, you will set a workflow action, and add steps that will export the solution from the dev
 environment and create a new branch.
 
 ### Task 1: Export and branch
 
-In this task you will create the workflow definition using the YAML provided. The action YAML uses two
-space indentation so follow that carefully as you build the workflow definition. If in doubt, review the
+In this task, you will create the workflow definition using the YAML provided. The action YAML uses two-space indentation so follow that carefully as you build the workflow definition. If in doubt, review the
 indentation shown in the images.
 
-1. Select the **Actions** tab and click on **set up a workflow yourself** to create a new workflow.
+1. Select the **Actions** tab and click on **Set up a workflow yourself** to create a new workflow.
  
    ![](images/L05/Images%20(16).png)
    
@@ -275,7 +274,7 @@ indentation shown in the images.
   
    ![](images/L05/diad5l32.png)
 
-1. Navigate to `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/export-and-branch.yml` URL, Copy the full content of the file and paste it in the **export-and-branch.yml** workflow.
+1. Navigate to `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/export-and-branch.yml` URL, Copy the full content of the file and paste it into the **export-and-branch.yml** workflow.
 
    ![](images/L05/diad5l28.png)
 
@@ -299,7 +298,7 @@ indentation shown in the images.
    
    ![](images/L05/diad5l29.png)
    
-1. Click to open the branch that was created by the workflow action named as Prioritz-XXXXXXX.
+1. Click to open the branch that was created by the workflow action named Prioritz-XXXXXXX.
    
    ![](images/L05/changesbranch.png)
 
@@ -311,7 +310,7 @@ indentation shown in the images.
         
    ![](images/L05/L05-t1-1.png)
    
-23. Add description if you like and then click **Create pull request**.
+23. Add a description if you like and then click **Create pull request**.
 
      ![](images/L05/pr1.png)
    
@@ -359,7 +358,7 @@ exported to the test environment.
   
    ![](images/L05/diad5l32.png)
 
-1. Navigate to `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/release-to-test.yml` URL in the browser and copy the full content of the file and paste it in the **release-to-test.yml** workflow file.
+1. Navigate to `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/release-to-test.yml` URL in the browser and copy the full content of the file and paste it into the **release-to-test.yml** workflow file.
  
    ![](images/L05/cntn.png)
       
@@ -383,11 +382,11 @@ exported to the test environment.
       
      ![](images/L05/Images%20(49).png)
 
-22. The release should complete successfully.
+22. The release should be completed successfully.
     
      ![](images/L05/relecompl.png)
      
-23. Navigate back to powerapps portal and select the solutions tab from the left side and you should see the solution deployed with the name of Prioritz. Make sure that you are in test powerapps environment.
+23. Navigate back to the powerapps portal and select the solutions tab from the left side and you should see the solution deployed with the name of Prioritz. Make sure that you are in the test powerapps environment.
 
       ![](images/L05/last.png)
 
