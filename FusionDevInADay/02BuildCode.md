@@ -476,7 +476,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
  
 5. Select the **Code (1)** tab, select the code component **(2)** you created and click **Import (3)**.
     
-     ![](../images/L02/L02-code.png)
+     ![](../images/L02/L02-code-1.png)
  
 6. Select the **Screens** tab.
 

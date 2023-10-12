@@ -354,9 +354,9 @@ In this exercise, you will deploy the function to Azure.
 
     ![](../images/L04/vscode25.png)
 
-5. Select **.NET 6**.
+5. Select **.NET 6 (LTS)**.
 
-    ![](../images/L04/vscode26.png)
+    ![](../images/L04/L04-dot-net6.png)
 
 6. Select the location: **<inject key="Region" enableCopy="false" />** form the list and wait for the Function App to be deployed.
 
@@ -392,19 +392,19 @@ In this exercise, you will deploy the function to Azure.
 
 13. Open the **Portal menu** by clicking on the Portal menu icon.
 
-     ![](../images/L04/vscode28.png)
+     ![](../images/L04/L04-resource-icon.png)
 
-14. Select **Azure Active Directory** from the list of resources.
+14. Select **Microsoft Entra ID** from the list of resources.
     
-     ![](../images/L04/vscode29.png)
+     ![](../images/L04/L04-entra-id.png)
 
 15. Select **App registrations** under **Manage**  from the left hand side menu.
 
-    ![](../images/L04/vscode30.png)
+    ![](../images/L04/L04-app-reg.png)
     
 16. Click to open the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** to open the app.
      
-     ![](../images/L04/vscode31.png)
+     ![](../images/L04/L04-app-reg.png)
 
 17. Copy the **Application (client) ID** of the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** application registration and keep it on a
     notepad as **PrioritZFL API application ID**. You will need this id in future steps. This ID will be used to configure protection of the API.
@@ -430,9 +430,9 @@ In this exercise, you will deploy the function to Azure.
   
      ![](../images/L04/image%20(36).png)
 
-21. Provide a description as **PrioritZ API secret(1)**, select **3 months(2)** , and click **Add(3)**.
+21. Provide a description as **PrioritZ API secret(1)**, select **90 days (3 months) (2)** , and click **Add(3)**.
     
-    ![](../images/L04/image38.png)
+    ![](../images/L04/L04-secret.png)
 
 22. Copy the **Value** and keep it in a notepad as **PrioritZFL API Secret**. You need this value in future steps.
     
@@ -540,13 +540,13 @@ In this exercise, you will deploy the function to Azure.
 
 ### Task 2: Register Connector Client app
 
-1. Navigate to the Azure portal, then open the **Portal menu** by clicking on the portal menu icon and select **Azure Active Directory** from the list of resources.
+1. Navigate to the Azure portal, then open the **Portal menu** by clicking on the portal menu icon and select **Microsoft Entra ID** from the list of resources.
 
-   ![](../images/L04/vscode29.png)
+   ![](../images/L04/L04-entra-id.png)
 
 2. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
 
-   ![](../images/L04/diad4l2.png)
+   ![](../images/L04/L04-app-new-reg.png)
 
 3. Please provide the following details and click on **Register** ***(5)***.
    
@@ -564,9 +564,9 @@ In this exercise, you will deploy the function to Azure.
    
    ![](../images/L04/diad4l5.png)
     
-6. Provide **PrioritZsecret** ***(1)*** as description, set expiry to **3 months** ***(2)***, and click on **Add** ***(3)***.
+6. Provide **PrioritZsecret** ***(1)*** as description, set expiry to **90 days (3 months)** ***(2)***, and click on **Add** ***(3)***.
 
-   ![](../images/L04/diad4l6.png)
+   ![](../images/L04/L04-con-secret.png)
 
 7. Copy the **Secret value** and save it in a notepad as **PrioritZ Connector secert**.
 
@@ -576,9 +576,10 @@ In this exercise, you will deploy the function to Azure.
       
    ![](../images/L04/diad4l8.png)
 
-9. In the Request API Permissions tab, select the **My APIs** ***(1)*** tab and select **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** ***(2)***.
+9. In the Request API Permissions tab, select the **APIs my organization uses** ***(1)*** tab, search for **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** ***(2)*** and 
+   select **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** ***(3)***.
     
-   ![](../images/L04/diad4l9.png)
+   ![](../images/L04/L04-api.png)
     
 10. Toggle the **user_impersonation** ***(1)*** checkbox and click **Add permission** ***(2)***.
 
@@ -624,27 +625,31 @@ In this exercise, you will create a new custom connector.
    https://make.powerautomate.com
    ```
    
-9. Expand **Data** ***(1)*** and select **Custom Connectors** ***(1)***.
+9. Select **More** ***(1)*** and click **Discover all** ***(1)***.
      
-   ![](../images/L04/customconnector.png) 
+   ![](../images/L04/L04-discover.png)
 
-10. Click on the chevron button next to the New custom connector and select **Import an OpenAPI file**.
+1. Scroll down and select **Custom connectors** to create
      
-    ![](../images/L04/openapi.png) 
+   ![](../images/L04/L04-connector.png) 
+
+11. Click on the chevron button next to the New custom connector and select **Import an OpenAPI file**.
+     
+    ![](../images/L04/L04-import-openapi.png) 
     
-11. Enter **PrioritZ Connector** ***(1)*** for name and click **Import** ***(2)***.
+12. Enter **PrioritZ Connector** ***(1)*** for name and click **Import** ***(2)***.
     
     ![](../images/L04/diad4l20.png) 
     
-12. Select the **swag file (1)** which you saved in step 7 of this task and Click **Continue (2)**.
+13. Select the **swag file (1)** which you saved in step 7 of this task and Click **Continue (2)**.
 
     ![](../images/L04/diad4l18.png) 
  
-13. Provide **PrioritZ<inject key="DeploymentID" enableCopy="false" /> Connector** ***(1)*** as description as and click on **Security** ***(2)***.
+14. Provide **PrioritZ<inject key="DeploymentID" enableCopy="false" /> Connector** ***(1)*** as description as and click on **Security** ***(2)***.
     
     ![](../images/L04/diad4l19.png) 
 
-14. Select **OAuth 2.0** ***(1)*** for Authentication type. Provide the following details and Click on **Create connector** ***(8)***.
+15. Select **OAuth 2.0** ***(1)*** for Authentication type. Provide the following details and Click on **Create connector** ***(8)***.
 
     - Identity Provider: **Azure Active Directory** ***(2)***
     - Client id: Paste **PrioritZFL Connector application ID** ***(3)*** which you copied earlier
