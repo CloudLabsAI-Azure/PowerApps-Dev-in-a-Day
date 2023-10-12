@@ -123,7 +123,7 @@ actions, so they do not execute under your individual user identity.
 
 2. Open the Portal menu by clicking on the Portal menu icon, select **Microsoft Entra ID** from the list of resources.
 
-   ![](../images/L05/L04-entra-id.png)
+   ![](../images/L04/L04-entra-id.png)
    
 3. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the 
    protected API.
