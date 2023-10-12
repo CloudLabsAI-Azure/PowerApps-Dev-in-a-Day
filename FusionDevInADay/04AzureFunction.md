@@ -404,7 +404,7 @@ In this exercise, you will deploy the function to Azure.
     
 16. Click to open the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** to open the app.
      
-     ![](../images/L04/vscode31.png)
+     ![](../images/L04/L04-app-reg.png)
 
 17. Copy the **Application (client) ID** of the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** application registration and keep it on a
     notepad as **PrioritZFL API application ID**. You will need this id in future steps. This ID will be used to configure protection of the API.
