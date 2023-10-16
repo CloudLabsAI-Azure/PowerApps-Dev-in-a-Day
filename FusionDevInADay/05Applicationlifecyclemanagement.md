@@ -121,13 +121,14 @@ actions, so they do not execute under your individual user identity.
    https://portal.azure.com/
    ```
 
-2. From Azure Portal home page, search for **Azure Active Directory** ***(1)*** in the search bar and select **Azure Active Directory** ***(2)*** from the suggestions.
+2. Open the Portal menu by clicking on the Portal menu icon, select **Microsoft Entra ID** from the list of resources.
 
-   ![](../images/L05/diad5l1.png)
+   ![](../images/L04/L04-entra-id.png)
    
-3. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
+3. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the 
+   protected API.
 
-   ![](../images/L05/diad5l2.png)
+   ![](../images/L05/L05-app-new-reg1.png)
 
 4. Please provide the following details and click on **Register** ***(3)***.
    
@@ -144,9 +145,9 @@ actions, so they do not execute under your individual user identity.
 
    ![](../images/L05/diad5l5.png)
 
-7. Enter **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** ***(1)*** as description, set expiry to **3 months** ***(2)***, and click on **Add** ***(3)***.
+7. Enter **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** ***(1)*** as description, set expiry to **90 days (3 months)** ***(2)***, and click on **Add** ***(3)***.
    
-   ![](../images/L05/diad5l6.png)
+   ![](../images/L05/L05-git-secret.png)
    
 8. Copy the **value** and save it in a notepad as you need it for later use.
 
@@ -378,9 +379,9 @@ indentation shown in the images.
 
    ![](../images/L05/diad5l28.png)
 
-5. Click **Start commit** and then click **Commit new file**.
+5. Click **Commit changes** and then again click **Commit changes**
     
-   ![](../images/L05/Images%20(26).png)
+   ![](../images/L05/L05-commit.png)
 
 6. Select the **Actions** **(1)** tab and select the **workflow** ***(2)*** you created.
 
@@ -462,9 +463,9 @@ exported to the test environment.
  
    ![](../images/L05/cntn.png)
       
-7. Click **Start commit** and then click **Commit new file**.
+7. Click **Commit changes** and the again click on **Commit changes**
      
-     ![](../images/L05/Images%20(46).png)
+     ![](../images/L05/L05-commit-1.png)
 
 8. Select the **Code** tab.
    
