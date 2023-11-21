@@ -70,7 +70,7 @@ In this exercise, you will create a Dataverse database in the test environment, 
  
     ![](images/L03/db1.png)
 
-5. Leave the **Currency** and **Lanaguage** field to default and click on **Create database**.
+5. Leave the **Currency** and **Language** field to default and click on **Create database**.
     ![](images/L03/db2.png)
     
     >**Note:** You can leave this browser tab open and continue with the next exercise, as Dataverse database creation will take some time.
@@ -619,4 +619,3 @@ environment and import it to the Test environment.
 13. The test should succeed, and the response should look like the image below.
       
       ![](images/L03/image64.png)
-

@@ -22,12 +22,11 @@ Lab Scenario
 
 3. Exercise 3 – Add Code Component to Solution 
 
-     - Task 1: Add component to solution 
+     - Task 1: Add component to solution
 
 ### Lab Scenario
 
-Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code
- component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
+Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
 a code component using the React JavaScript framework. A code component approach is used to
 address the requirement because there isn’t a similar control already built in.
 
@@ -216,7 +215,7 @@ In this exercise, you will build the code component.
 
       1. Open PowerShell then run this command `choco install -y --force nodejs`.
       2. Once the command execution is done, close the Visual Studio Code and open it again.
-      3. Perform **Step 8** of this task again to insall the **react-beautiful-dnd** package.
+      3. Perform **Step 8** of this task again to install the **react-beautiful-dnd** package.
 
 9. Run the following command for the type definitions.
 
@@ -374,8 +373,7 @@ In this exercise, you will build the code component.
         npm start
         ```
 
-31. The test harness should start, if not then copy the address and paste it in a new browser window. Try dragging the items and see if the behavior functions as
-    expected.
+31. The test harness should start, if not then copy the address and paste it in a new browser window. Try dragging the items and see if the behaviour functions as expected.
 
       ![](images/L02/imagee29.png)
  
@@ -401,7 +399,7 @@ In this exercise, you will build the code component.
         
         Additionally, you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there are any then retry to push the component by running the  **pac push command** again.
 
-     2. If the run fails with a Nuget package error, run the below command in Powershell and try running the above command again.
+     2. If the run fails with a Nuget package error, run the below command in PowerShell and try running the above command again.
     
         ```
         dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
@@ -654,4 +652,3 @@ In this exercise, you will add the code component you created to the PrioritZ so
  5. Click **Publish all customizations** and wait for the publishing to complete.
 
     ![](images/L02/L02-EX3.png)
-
