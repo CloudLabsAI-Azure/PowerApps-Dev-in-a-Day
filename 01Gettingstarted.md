@@ -14,7 +14,7 @@ Duration: 45 mins
 
 2. Exercise 2 – Add a column for My Notes 
 
-   - Task 1: Add a new column 
+   - Task 1: Add a new column
 
    - Task 2: Update admin app 
 
@@ -318,7 +318,7 @@ In this exercise, you will import the current solution into the pre-created dev 
        
        2. **Choice 2**: Enter `Cheese and Wine Tuesday`
 
-15. Click on **Save** button to save th topic.
+15. Click on **Save** button to save the topic.
     
     ![](images/L01/image20.png)
 
