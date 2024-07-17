@@ -386,8 +386,7 @@ exported to the test environment.
     
      ![](images/L05/relecompl.png)
      
-23. Navigate back to the powerapps portal and select the solutions tab from the left side and you should see the solution deployed with the name of Prioritz. Make sure that you are in the test powerapps environment.
+23. Navigate back to the PowerApps portal and select the solutions tab from the left side and you should see the solution deployed with the name of Prioritz. Make sure that you are in the test PowerApps environment.
 
       ![](images/L05/last.png)
-
 
