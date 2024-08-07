@@ -1,11 +1,11 @@
 # Lab 05 - Application lifecycle management
 
-Duration: 95 mins
+## Estimated Duration: 95 mins
 
-## Table of Contents
+Working as part of the PrioritZ fusion team you will be configuring GitHub Actions using the Power
+Platform Build Tools to automate the team’s deployments.
 
-
-Lab Scenario 
+Lab Objectives 
 
 1. Exercise 1 – Configure a Service Principal 
 
@@ -24,11 +24,6 @@ Lab Scenario
 4. Exercise 4 – Release to Test 
 
    - Task 1: Create workflow
-
-### Lab Scenario
-
-Working as part of the PrioritZ fusion team you will be configuring GitHub Actions using the Power
-Platform Build Tools to automate the team’s deployments.
 
 ## Exercise 1 – Configure a Service Principal
 
@@ -390,3 +385,7 @@ exported to the test environment.
 
       ![](images/L05/last.png)
 
+## Summary
+In this lab, you learned to promote a solution to a test environment, configure a service principal, and manage your solution using GitHub for version control and workflow automation.
+
+## You have successfully completed the lab
