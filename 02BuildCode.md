@@ -1,10 +1,26 @@
 # Lab 02 - Build a code component
 
-Duration: 90 mins
+Estimated Duration: 90 mins
 
-## Table of Contents
+Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
+a code component using the React JavaScript framework. A code component approach is used to
+address the requirement because there isn’t a similar control already built in.
 
-Lab Scenario 
+You have collaborated with the app makers to identify the following properties to allow them to
+configure the code component in the app:
+
+- BackgroundColor
+- DragBackgroundColor
+- ItemHeight
+- FontSize
+- FontColor
+
+The PrioritZ Ask app will prepare a collection of the items to rank that will be bound as the dataset for
+the code component. When an item is dragged and dropped the code component will raise an OnSelect
+event that will be handled by the hosting app. The hosting app will update the collection items with
+their new rank. The code component will be stateless.
+
+## Lab Objectives
 
 1. Exercise 1 – Build Code Component 
 
@@ -24,25 +40,6 @@ Lab Scenario
 
      - Task 1: Add component to solution
 
-### Lab Scenario
-
-Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
-a code component using the React JavaScript framework. A code component approach is used to
-address the requirement because there isn’t a similar control already built in.
-
-You have collaborated with the app makers to identify the following properties to allow them to
-configure the code component in the app:
-
-- BackgroundColor
-- DragBackgroundColor
-- ItemHeight
-- FontSize
-- FontColor
-
-The PrioritZ Ask app will prepare a collection of the items to rank that will be bound as the dataset for
-the code component. When an item is dragged and dropped the code component will raise an OnSelect
-event that will be handled by the hosting app. The hosting app will update the collection items with
-their new rank. The code component will be stateless.
 
 ## Exercise 1 – Build Code Component
 
@@ -652,3 +649,10 @@ In this exercise, you will add the code component you created to the PrioritZ so
  5. Click **Publish all customizations** and wait for the publishing to complete.
 
     ![](images/L02/L02-EX3.png)
+
+## Summary
+
+In this lab,you learned to create a code component, implement its logic, integrate it into a canvas app, and add it to a solution within the Power Platform.
+
+## You have successfully completed the lab
+
