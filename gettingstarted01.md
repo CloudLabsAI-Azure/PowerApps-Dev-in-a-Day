@@ -1,3 +1,5 @@
+# Low Code for Pro-Dev in a Day
+
 # Getting Started
 
 ## Overall Estimated Duration: 8 Hours
@@ -7,7 +9,8 @@
 In this series of labs, you will gain hands-on experience with various aspects of the Power Platform, from importing and running starting solutions to building and using custom code components. You will create and modify custom connectors, integrate Azure Functions, and promote solutions across environments. Each lab builds foundational skills, such as creating Power Apps components, setting up custom connectors, implementing Azure Functions, and managing solutions with GitHub. By following detailed instructions and visual aids, you will learn to effectively develop, test, and deploy robust Power Platform solutions, ensuring a comprehensive understanding of the platform's capabilities and best practices.
 
 # Objective
-Understand essential skills in Power Platform . By the end of this lab, you will gain insights on:
+
+learn to import and customize Power Platform solutions, create custom code components, and develop and integrate custom connectors. By the end of this lab, you will gain insights on:
 
  - **Introduction to Power Platform** : Learn to import a starting solution, add a new column, update the admin app, and test the Power Platform CLI.
  - **Build a code component** : Create a code component, implement its logic, integrate it into a canvas app, and add it to a solution.
@@ -32,17 +35,15 @@ Understand essential skills in Power Platform . By the end of this lab, you will
 
  ## Explanation of Components
 
- **Power Platform Environment**: The workspace for importing, managing, and testing solutions.
+ **Power Platform Environment**: The central workspace where you import, manage, and customize solutions within the Power Platform. It provides the necessary tools and interface for developing and testing various applications and components.
  
- **Starting Solution**: A pre-built solution used as a base for customization and enhancement.
+ **Code Component**: Elements created to extend the functionality of Power Apps. These components involve writing and integrating custom logic, which enhances the capabilities and flexibility of canvas apps.
  
- **Code Component**: Custom-built elements used to extend the functionality of Power Apps.
+ **Custom Connector**: Tools that allow Power Platform apps to connect with external data sources via APIs. These connectors enable seamless integration of external data and services into Power Platform applications.
  
- **Custom Connector**: An interface that connects Power Platform apps with external data sources via APIs.
+ **Azure Function**: Serverless compute services that run code on-demand to perform various tasks. Azure Functions are integrated into Power Platform apps to add advanced, scalable capabilities and handle specific operations.
  
- **Azure Function**: A serverless compute service for executing code on-demand, integrated with Power Platform.
- 
- **GitHub Repository**: A version control system for managing and tracking changes to solutions and code.
+ **GitHub**: A version control system for managing and tracking changes to solutions and code.
 
  # **Getting Started with Your Developer in a day Workshop**
  
