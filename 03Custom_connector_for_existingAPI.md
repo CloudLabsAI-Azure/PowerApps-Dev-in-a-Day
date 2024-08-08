@@ -1,10 +1,18 @@
 # Lab 03 - Custom connector for existing API
 
-Duration: 140 mins
+## Estimated Duration: 140 mins
 
-## Table of Contents
+Working as part of the PrioritZ fusion team you will be configuring a custom connector for an existing
+API. The team would like to add badging to the PrioritZ application to give credit to users when they
+have completed ranking an item. The team identified an existing API, but it doesn't have a Power
+Platform connector.
 
-Lab Scenario 
+When you review the API, you see that it has four operations and uses API key authentication.
+
+
+ ![](images/L03/image1.png)
+
+## Lab Objectives
 
 1. Exercise 0 - Create Database in Default Environment 
 
@@ -42,17 +50,6 @@ Lab Scenario
 
     - Task 3: Test connector 
 
-### Lab Scenario
-
-Working as part of the PrioritZ fusion team you will be configuring a custom connector for an existing
-API. The team would like to add badging to the PrioritZ application to give credit to users when they
-have completed ranking an item. The team identified an existing API, but it doesn't have a Power
-Platform connector.
-
-When you review the API, you see that it has four operations and uses API key authentication.
-
-
- ![](images/L03/image1.png)
 
 ## Exercise 0 - Create Database in Default Environment 
 
@@ -619,3 +616,9 @@ environment and import it to the Test environment.
 13. The test should succeed, and the response should look like the image below.
       
       ![](images/L03/image64.png)
+
+## Summary
+
+In this lab, you learned to create and modify a custom connector using an Open API definition, test its functionality, and integrate it with canvas apps and flows within the Power Platform.
+
+## You have successfully completed this Lab!
