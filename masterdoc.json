@@ -6,24 +6,28 @@
     "Language": "English",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/01Gettingstarted.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Jaffer-sadiq/PowerApps-Dev-in-a-Day/main/gettingstarted01.md",
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/02BuildCode.md",
+        "RawFilePath": "https://raw.githubusercontent.com/Jaffer-sadiq/PowerApps-Dev-in-a-Day/main/01gettingstartedwithpowerapp.md",
         "Order": 2
-      },
+      }
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/03Custom_connector_for_existingAPI.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/02BuildCode.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/04AzureFunction.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/03Custom_connector_for_existingAPI.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/05Applicationlifecyclemanagement.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/04AzureFunction.md",
         "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/05Applicationlifecyclemanagement.md",
+        "Order": 6
       }
     ]
   }
