@@ -35,17 +35,23 @@ learn to import and customize Power Platform solutions, create custom code compo
 
  ## Explanation of Components
 
- **Power Platform Environment**: The central workspace where you import, manage, and customize solutions within the Power Platform. It provides the necessary tools and interface for developing and testing various applications and components.
+ **Power Platform Environment**: The central workspace where you import, manage, and customize solutions within the Power Platform. It provides the necessary tools and interface for developing and testing 
+ various applications and components.
+
+ **Visual Studio Code**: A versatile code editor used for developing custom code components and Azure Functions. It offers powerful extensions and integrations to streamline coding and debugging within the 
+ Power Platform ecosystem.
  
  **Code Component**: Elements created to extend the functionality of Power Apps. These components involve writing and integrating custom logic, which enhances the capabilities and flexibility of canvas apps.
  
- **Custom Connector**: Tools that allow Power Platform apps to connect with external data sources via APIs. These connectors enable seamless integration of external data and services into Power Platform applications.
+ **Custom Connector**: Tools that allow Power Platform apps to connect with external data sources via APIs. These connectors enable seamless integration of external data and services into Power Platform 
+ applications.
  
- **Azure Function**: Serverless compute services that run code on-demand to perform various tasks. Azure Functions are integrated into Power Platform apps to add advanced, scalable capabilities and handle specific operations.
+ **Azure Function**: Serverless compute services that run code on-demand to perform various tasks. Azure Functions are integrated into Power Platform apps to add advanced, scalable capabilities and handle 
+ specific operations.
  
  **GitHub**: A version control system for managing and tracking changes to solutions and code.
 
- # **Getting Started with Your Developer in a day Workshop**
+ ## **Getting Started**
  
 Welcome to your Developer in a day workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
