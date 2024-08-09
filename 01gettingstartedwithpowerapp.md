@@ -35,36 +35,18 @@ In this exercise, you will import the current solution into the pre-created dev 
 1. In the JumpVM, click on the **Power Apps** portal shortcut of the Microsoft Edge browser that is available on the desktop.
 
    ![azure portal.](images/L01/PAportal.png)
-   
-1. When you click on the Power Apps portal, the edge browser welcome screen will come up, and select **Start without your data**.
-
-   ![](/images/L01/browser-1.png)
-
-1. On the **We can help you import your browsing data from Google** window, click on **Continue without this data**.
-   
-   ![](/images/L01/browser-1.1.png)
-   
-1. On the next window, click on **Confirm and start browsing**.
-
-   ![](/images/L01/browser-2.png)
-
-1. Now, you will see two tabs in the Edge browser, close the first tab named **Microsoft Edge**.
 
 1. On the **Sign in** window, you will see the login screen, enter the following username **(1)** and click on **Next** **(2)**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-   ![](/images/L01/portalsignin-1.png)
+   ![](/images/L01/signin.png)
 
 1. Now enter the following password **(1)** and click on **Sign in** **(2)**. 
 
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-   ![](/images/L01/portalsignin-2.png)
-
-1. If you are presented with **Help us protect your account**, click on **Skip for now**.
-
-   ![](/images/L01/portalsignin-3.png)
+   ![](/images/L01/signinp.png)
 
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
@@ -74,38 +56,28 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 2. Now, click on **Solutions(1)** from the left hand side menu and click **Import Solution(2)**.
 
-      ![](images/L01/importsolution.png)
+      ![](images/L01/importsolution1.png)
 
 3.  Click **Browse**.
     
-     ![](images/L01/browse.png)
+     ![](images/L01/browse1.png)
      
 1. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` in file explorer , select the **Prioritz_1_0_0_7.zip** file, and click **Open**.
 
 1. Make sure the **Prioritz(1)** file is selected and Click **Next(2)**.
     
-     ![](images/L01/next.png)
+     ![](images/L01/next1.png)
      
 1. Click **Next** again on the import solution blade.
 
-1. Click on the **select a connection** dropdown and then select **+ New connection**.
+1. Under the **Connections** section, click on the three dots **...(1)** next to **Microsoft Dataverse Priority-5e308**.
 
-     ![](images/L01/connection.png) 
-      
-1. Click **Create** in a newly opened browser window and **Sign In** if prompted.
+1. Ensure that  **odl_user(2)** you are using  is selected.
 
-     ![](images/L01/create.png) 
-     
-1. Close the connection browser window or tab.
+1. Click on **Import(3)**.
 
-1. Click **Refresh**.
-
-     ![](images/L01/refresh.png) 
-     
-1. Check the connection and click the **Import** button to import the solution.
-
-     ![](images/L01/import.png)
-     
+    ![](images/L01/connection1.png)
+    
 1. Wait until the solution import to complete.
 
      ![](images/L01/solutionsuccess.png)
@@ -132,60 +104,62 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
  
-    ![](images/L01/L01-cloud.png)
+    ![](images/L01/L01-cloud1.png)
 
 9. Click on **Edit** button to review the flow.
   
-    ![](images/L01/edit2.png)
+    ![](images/L01/edit21.png)
 
 10. Expand the **Parse JSON** step and review the data this flow will create.
 
-    ![](images/L01/L01-parse.png)
-
-11. Expand the **Apply to each topic** step.
+    ![](images/L01/L01-parse1.png)
     
-    ![](images/L01/L01-topic.png)
+    >>**Note**:If you're unable to expand the step, click on the three dots (...), then select Settings, and click Cancel.
+    
+12. Expand the **Apply to each topic** step.
+    
+    ![](images/L01/L01-topic1.png)
 
-12. Expand the **Apply to each topic item** step.
+13. Expand the **Apply to each topic item** step.
    
-     ![](images/L01/L01-eachtopic.png)
+     ![](images/L01/L01-eachtopic1.png)
 
-13. The **Apply to each** step should look like the image below. This is the logic for the automation.
+14. The **Apply to each** step should look like the image below. This is the logic for the automation.
  
-    ![](images/L01/image11.png)
+    ![](images/L01/image111.png)
 
-14. Click on the **<- back** button.
+15. Click on the **<- back** button.
  
-    ![](images/L01/image12.png)
+    ![](images/L01/image121.png)
 
-15. Click on the flow name to open the flow details screen.
+16. Click on the flow name to open the flow details screen.
 
-     ![](images/L01/EX1-T1-14.png)
+     ![](images/L01/EX1-T1-141.png)
 
-16. Click on **Run** to run the flow.
+17. Click on **Run** to run the flow.
    
-     ![](images/L01/image13.png)
+     ![](images/L01/image131.png)
 
-17. Click the **Run flow** button on the Run flow blade.
+18. Click the **Run flow** button on the Run flow blade.
 
-     ![](images/L01/L01-new.png)
+     ![](images/L01/L01-new1.png)
 
-     > **Note**: If you receive this error `Error from the token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** is not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 11-21** of this task again, then try to trigger the flow again.
+     > **Note**: If you receive this error `Error from the token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** is not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 6-14** of this task again, then try to trigger the flow again.
 
-18. Click **Done** and wait for the flow run to complete.
+19. Click **Done** and wait for the flow run to complete.
 
-     ![](images/L01/EX1-T1-18.png)
+     ![](images/L01/EX1-T1-181.png)
 
-19. The flow should run successfully. If you want, you can click on the run row and it will show you
+20. The flow should run successfully. If you want, you can click on the run row and it will show you
     the details of what the flow did.
    
-      ![](images/L01/image14.png)
+      ![](images/L01/image141.png)
 
 ### Task 2: Test the apps
 
 1. Navigate back to **PrioritZ** solution by clicking on **Cloud flows**. Alternatively, you can also open the **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
        
-   ![](images/L01/cloud1.png)
+   ![](images/L01/cloud1u.png)
 
 1. Navigate to **Solutions** blade by clicking on **Back to Solutions** **(<-)** button.
 
@@ -195,21 +169,21 @@ In this exercise, you will import the current solution into the pre-created dev 
 
      >**Info:** **PrioritZ Admin** app is used to manage topics being asked about and **PrioritZ Ask** app allows users to respond.
 
-    ![](images/L01/EX1-T2-2_1_1.png)
+    ![](images/L01/EX1-T2-2_1_1u.png)
 
-3. Launch the **PrioritZ Admin** application.
+3. Launch the **PrioritZ Admin** application by clicking on **play(1)** symbol.
     
-    ![](images/L01/L01-admin.png)
+    ![](images/L01/L01-adminu1.png)
 
 4. You should see the below four topics.
 
-    ![](images/L01/EX1-T2-4-2.png)
+    ![](images/L01/EX1-T2-4-2u.png)
 
 5. Click to open **Event banner** topic.
 
 6. You should see the topic details with some topic items.
 
-    ![](images/L01/EX1-T2-6-1.png)
+    ![](images/L01/EX1-T2-6-1u.png)
 
 7. Click on the **<** back button.
 
@@ -217,7 +191,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 9. Now, click on the **+** button to add a new topic.
     
-    ![](images/L01/image16.png)
+    ![](images/L01/image16u.png)
 
 10. Provide the below information and click **add a picture** that is present below **Respond By** field.
      
@@ -227,19 +201,19 @@ In this exercise, you will import the current solution into the pre-created dev 
      
      1. **Respond By**: Select **today's date**.
      
-     ![](images/L01/image17.png)
+     ![](images/L01/image17u.png)
 
 1. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
 
 12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below the Choice field.
      
-      ![](images/L01/image18.png)
+      ![](images/L01/image18u.png)
 
 11. Navigate to this path `C:\LabFiles` in File Explorer, select **image.png** and click open.
 
 13. Click **+** to add the choice.
      
-      ![](images/L01/image19.png)
+      ![](images/L01/image191.png)
 
 14. Add a couple more choices by repeating **steps 12-14**.
        
@@ -249,33 +223,29 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 15. Click on **Save** button to save the topic.
     
-    ![](images/L01/image20.png)
+    ![](images/L01/image20u.png)
 
 16. The new topic should be saved, and you should be navigated back to the main screen.
 
 17. You should see the topic you added to the list of topics.
 
-     ![](images/L01/L01-taco.png)
+     ![](images/L01/L01-tacou.png)
 
 18. Close the PrioritZ Admin application by closing the browser tab in which the PrioritZ Admin application is open.
 
-19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **PrioritZ Ask (2)** application.
+19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **PrioritZ Ask (2)** application by clicking on play symbol.
      
-     ![](images/L01/L01-prioritzask.png)
+     ![](images/L01/L01-prioritzasku.png)
 
 20. You should see a list of topics. Open the **Change Taco Tuesday to some other food** topic that you created in the previous steps.
 
-     ![](images/L01/L01-list.png)
+     ![](images/L01/L01-listu.png)
 
 21. Click on the **up/down** icons order the items in the order you prefer them and click **Vote**.
      
-      ![](images/L01/L01-choice.png)
+      ![](images/L01/L01-choiceu.png)
 
-22. You should be navigated back to the main screens, and you should see a notification message.
-      
-      ![](images/L01/image23.png)
-
-23. Close the PrioritZ Ask app by closing the browser tab in which the PrioritZ Ask application is open.
+22. Close the PrioritZ Ask app by closing the browser tab in which the PrioritZ Ask application is open.
 
 ## Exercise 2 – Add a column for My Notes
 
@@ -290,13 +260,13 @@ application.
    ```
 2. Select **Solutions (1)** from the left-hand side menu of Power Apps and open the **PrioritZ (2)** solution.
 
-   ![](images/L01/EX2-T1-2-1.png)
+   ![](images/L01/EX2-T1-2-1u.png)
 
-3. Expand **Tables** and select the **PrioritZ Topic** table.
+3. Expand **Tables(1)** and select the **PrioritZ Topic(2)** table.
 
-4. Select the **Columns** tab that is present under **Schema** and click **+ New column**.
+4. Select the **Columns** tab that is present under **+ New(3)** and click **column(4)**.
 
-    ![](images/L01/EX2-T1-4.png)
+    ![](images/L01/EX2-T1-4u.png)
 
 5. Enter the below value in the Display name field.
 
