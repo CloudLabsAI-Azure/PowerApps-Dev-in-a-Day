@@ -7,11 +7,6 @@ API. The team would like to add badging to the PrioritZ application to give cred
 have completed ranking an item. The team identified an existing API, but it doesn't have a Power
 Platform connector.
 
-When you review the API, you see that it has four operations and uses API key authentication.
-
-
- ![](images/L03/image1.png)
-
 ## Lab Objectives
 
 1. Exercise 0 - Create Database in Default Environment 
@@ -54,6 +49,11 @@ When you review the API, you see that it has four operations and uses API key au
 ## Exercise 0 - Create Database in Default Environment 
 
 In this exercise, you will create a Dataverse database in the test environment, which will be used to import the solution in the next exercises.
+
+When you review the API, you see that it has four operations and uses API key authentication.
+
+
+ ![](images/L03/image1.png)
 
 ### Task 1: Create Database 
 
