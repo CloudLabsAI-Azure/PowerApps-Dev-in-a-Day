@@ -1,6 +1,6 @@
 # Low Code for Pro-Dev in a Day
 
-# Getting Started
+## Getting Started
 
 ## Overall Estimated Duration: 8 Hours
 
@@ -8,7 +8,7 @@
 
 In this series of labs, you will gain hands-on experience with various aspects of the Power Platform, from importing and running starting solutions to building and using custom code components. You will create and modify custom connectors, integrate Azure Functions, and promote solutions across environments. Each lab builds foundational skills, such as creating Power Apps components, setting up custom connectors, implementing Azure Functions, and managing solutions with GitHub. By following detailed instructions and visual aids, you will learn to effectively develop, test, and deploy robust Power Platform solutions, ensuring a comprehensive understanding of the platform's capabilities and best practices.
 
-# Objective
+## Objective
 
 learn to import and customize Power Platform solutions, create custom code components, and develop and integrate custom connectors. By the end of this lab, you will gain insights on:
 
