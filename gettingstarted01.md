@@ -49,7 +49,7 @@ Learn to import and customize Power Platform solutions, create custom code compo
  
  **GitHub**: A version control system for managing and tracking changes to solutions and code.
 
- ## **Getting Started with**
+ ## **Getting Started **
  
 Welcome to your Developer in a day workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
