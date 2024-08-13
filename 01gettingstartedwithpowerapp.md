@@ -203,7 +203,7 @@ In this exercise, you will import the current solution into the pre-created dev 
      
      ![](images/L01/image17u.png)
 
-1. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
+11. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
 
 12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below the Choice field.
      
@@ -243,9 +243,12 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 21. Click on the **up/down** icons order the items in the order you prefer them and click **Vote**.
      
-      ![](images/L01/L01-choiceu.png)
+      ![](images/L01/L01-choiceuu.png)
 
-22. Close the PrioritZ Ask app by closing the browser tab in which the PrioritZ Ask application is open.
+22. You should be navigated back to the main screens, and you should see a notification message.   
+      ![](images/L01/TVU.png)
+    
+23. Close the PrioritZ Ask app by closing the browser tab in which the PrioritZ Ask application is open.
 
 ## Exercise 2 – Add a column for My Notes
 
@@ -275,7 +278,7 @@ application.
    ```
 1. Now, search for **Plain text (1)** under Data type then select the one that comes under **Multiline Text (2)** , and click **Save (3)**.
 
-    ![](images/L01/L01-notes.png)
+    ![](images/L01/L01-notesu.png)
    
    > **Note**: Do not navigate away from this page.
 
@@ -283,15 +286,13 @@ application.
 
 1. Make sure you are still in the **PrioritZ** solution. Select **Apps (1)** under **Objects** and select the **PrioritZ Admin (2)** application and click on **Edit (3)**.
     
-    ![](images/L01/L01-adminedit.png)
+    ![](images/L01/L01-admineditu.png)
 
-3. Select the **Add Topic Screen**.
+3. Select the **Add Topic Screen(1)**.
 
-    ![](images/L01/L01-addtopic.png)
-
-4. Click **+ Insert(1)** and select **Text input(2)**.
+4. Click **+ Insert(2)** and select **Text input(3)**.
    
-     ![](images/L01/tinput.png)
+     ![](images/L01/tinputu.png)
 
 5. Double-click on the newly added **Text input** and enter the below value to rename the text input.
 
@@ -299,15 +300,15 @@ application.
     Notes textbox
     ```
     
-     ![](images/L01/image27.png)
+     ![](images/L01/image27u.png)
 
 6. Make the add picture control smaller if needed, and move the **Respond By and label textbox** down and place the **Notes textbox** between the Details control and the Respond by label.
    
-    ![](images/L01/image28.png)
+    ![](images/L01/image28u.png)
 
 7. Select **Notes textbox** and then **HintText** from the properties dropdown.
 
-    ![](images/L01/hintext.png)
+    ![](images/L01/hintextu.png)
 
 8. Change the **HintText** value of the Notes textbox to the below value. 
 
@@ -315,7 +316,7 @@ application.
     My notes
     ```
    
-    ![](images/L01/image29.png)
+    ![](images/L01/image29u.png)
 
 
 9. Select the **Mode** from the properties dropdown and change its value by entering the below text.
@@ -324,25 +325,25 @@ application.
     TextMode.MultiLine
     ```
 
-    ![](images/L01/L01-mode.png)
+    ![](images/L01/L01-modeu.png)
 
 10. Select **Save topic icon** under **Add Topics Screen** section.
      
-     ![](images/L01/image30.png)
+     ![](images/L01/image30u.png)
 
 11. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates
     a new row in the Dataverse table.
      
-     ![](images/L01/image31.png)
+     ![](images/L01/image31u.png)
 
     ```
     Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
     ```
 12. Select the **View Topic Screen (1)** from the **Screens** tab.
 
-1. Click **+ Insert(1)** tab and select **Text label(2)**.
+1. Click **+ Insert(2)** tab and select **Text label(3)**.
 
-    ![](images/L01/tlabel.png)
+    ![](images/L01/tlabelu.png)
 
 13. Double-click on the newly added label and enter the below value to rename the label you just added.
 
@@ -350,29 +351,24 @@ application.
      Notes label
      ```
      
-    ![](images/L01/L01-label.png)
+    ![](images/L01/L01-labelu.png)
 
 14. Change the **Text** value of the Notes label with the below text.
 
      ```
      'Topics gallery'.Selected.'My Notes'
      ```
-  
-      ![](images/L01/image32.png)
 
 15. Rearrange the controls and move the **Notes label** between the details label and the Topic items
     gallery.
-   
-      ![](images/L01/image33.png)
 
-
-16. Select the **Home Screen** and click **Preview the app**.
+16. Select the **Home Screen(1)** and click **Preview the app(2)**.
       
-      ![](images/L01/image34.png)
+      ![](images/L01/image34u.png)
 
 17. Click on the **+** button to add a new topic.
 
-      ![](images/L01/L01-taco-1_1.png)
+      ![](images/L01/L01-taco-1_1u.png)
 
 18. Fill out the form by providing the below information and click **add a picture** that is present below the **Respond By** field.
 
@@ -389,20 +385,20 @@ application.
 
 12. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
      
-      ![](images/L01/image18.png)
+      ![](images/L01/image18uu.png)
 
 11. Navigate to this path `C:\LabFiles` in File Explorer, select **image.png** and click open.
 
 13. Click **+** to add the choice.
      
-      ![](images/L01/image19.png)
+      ![](images/L01/image19u.png)
 
 14. Add one more choice by repeating **steps 20-22** of this task.
        
        1. **Choice 1** : Enter `Test Two`
 1. After adding all the Choices and topic details, your screen should look like the below screenshot.
 
-   ![](images/L01/L01-testnotes.png)
+   ![](images/L01/L01-testnotesu.png)
       
 19. Now, click on the **Save** button. The new topic should be **saved**.
 20. Click to open the **Test Notes** topic that you just created.
@@ -413,11 +409,11 @@ application.
 22. Close the app **preview**.
 1. Click **Publish**.
 
-    ![](images/L01/publish.png)
+    ![](images/L01/publishu.png)
 
 25. Select Publish this version and wait for the publishing to complete.
 
-     ![](images/L01/NewUipublish1.png)
+     ![](images/L01/NewUipublish1u.png)
 
  26. You may close the **app designer**.
 
@@ -432,10 +428,6 @@ In this exercise, you will review and test the Power Platform CLI extension in V
         https://admin.powerplatform.microsoft.com/environments
       ```
 
-1. If you are presented with **Help us protect your account**, click on **Skip for now**.
-
-   ![](/images/L01/portalsignin-3.png)
-
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
 2. Click to open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
@@ -444,7 +436,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
  
     >**Note**: Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
 
-    ![](images/L01/image37.png)
+    ![](images/L01/image37u.png)
 
 4. In the JumpVM, start **Visual Studio Code** using the shortcut available on the desktop.
 
@@ -452,15 +444,16 @@ In this exercise, you will review and test the Power Platform CLI extension in V
    
 6. Click **Terminal** and select **New Terminal**.
 
-    ![](images/L01/image42.png)
+    ![](images/L01/image42u.png)
 
 7. Run the below command in the terminal.
    ```
    pac
    ```
    
-   > **Info:** If u found an error after using the pac command, try uninstalling the Power Platform tool and re-install it, then retry the step.
-   
+   > **Info:** If you encounter an error after using the **pac** command, download the Power Platform CLI from the **https://aka.ms/PowerAppsCLI** link, 
+     open   the installer, and complete the installation. Then, try the step again.
+
 8. Replace `<your environment URL>` in the below command with the value of the environment URL that you copied earlier then run the command. 
    ```
    pac auth create --name DevAuth --url <your environment URL>
@@ -475,13 +468,9 @@ In this exercise, you will review and test the Power Platform CLI extension in V
       * Email/Username: <inject key="AzureAdUserEmail"></inject>
       * Password: <inject key="AzureAdUserPassword"></inject>
 
-1. If you are presented with **Help us protect your account**, click on **Skip for now**.
-
-   ![](/images/L01/portalsignin-3.png)  
-
 9. Select **Power Platform (1)** tool, you should now have at least one **auth profile (2)**. If you have more than one profile, make sure the profile you created is selected
    
-    ![](images/L01/L01-auth.png)
+    ![](images/L01/L01-authu.png)
 
     > **Note** : If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the below steps:
 
@@ -500,7 +489,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
       ```
 12. You should see a list of solutions installed on your environment.
     
-    ![](images/L01/sollist.png)
+    ![](images/L01/sollistu.png)
 
 ## Summary
 In this lab ,In Lab 1, you learned to import and execute a starting solution, customize it by adding a new column and updating the admin app, and verify functionality using the Power Platform CLI.
