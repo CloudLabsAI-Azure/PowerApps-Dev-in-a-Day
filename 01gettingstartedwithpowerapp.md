@@ -409,7 +409,7 @@ application.
 22. Close the app **preview**.
 1. Click **Publish**.
 
-    ![](images/L01/publishu.png)
+    ![](images/L01/publish.png)
 
 25. Select Publish this version and wait for the publishing to complete.
 
