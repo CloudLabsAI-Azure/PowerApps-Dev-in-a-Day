@@ -106,6 +106,8 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 5. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 6. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+
+  By completing these exercises, participants will import and customize Power Platform solutions, create and implement custom code components with Visual Studio Code, develop and integrate custom connectors, create and deploy Azure Functions, and manage solutions using GitHub for source control.
    
 ## Support Contact
 
