@@ -55,11 +55,11 @@ In this exercise, you will build the code component.
     
    >**Note**: The Power Platform tab is already installed.
     
-    ![](images/L02/L01-auth.png)
+    ![](images/L02/L01-authuu.png)
 
 3. Click **Terminal (1)** and select **New Terminal (2).**
      
-     ![](images/L02/L02-terminal.png)
+     ![](images/L02/L02-terminaluu.png)
 
 4. In the Terminal window, make a new directory by running the command below.
 
@@ -240,7 +240,7 @@ In this exercise, you will build the code component.
         ![](images/L02/image19.png)  
    
  
- 15. Locate the **Export** class in **line number 5**.
+ 15. Locate the **Export** class in **line number 7**.
       
      ![](images/L02/image20.png)
  
@@ -372,7 +372,7 @@ In this exercise, you will build the code component.
 
 31. The test harness should start, if not then copy the address and paste it in a new browser window. Try dragging the items and see if the behaviour functions as expected.
 
-      ![](images/L02/imagee29.png)
+      ![](images/L02/imagee29u.png)
  
      > **Note**: If the test harness didn't start as expected you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in the **Manifest and Index** files. 
 
@@ -405,7 +405,7 @@ In this exercise, you will build the code component.
     
 36. Wait for the solution to be imported and published to your environment.
 
-      ![](images/L02/image31.png)
+      ![](images/L02/image31uu.png)
  
 ### Task 3: Confirm the control was added to the environment
 
@@ -417,11 +417,11 @@ In this exercise, you will build the code component.
     
 2. Select **Solutions** and open the **PowerAppsTools** solution.
     
-    ![](images/L02/image32.png)
+    ![](images/L02/image32u.png)
 
  3. Confirm that the custom control is in this solution.
      
-      ![](images/L02/image33.png)
+      ![](images/L02/image33u.png)
  
 ## Exercise 2 – Use Code Component
 
@@ -440,15 +440,17 @@ In this task, you will allow the publishing of canvas apps with code components 
 
 3. Click **Settings** from top menu.
     
-     ![](images/L02/settings.png)
+     ![](images/L02/settingsu.png)
 
 4. Expand **Products(1)** and select **Features(2)**.
     
-     ![](images/L02/feature.png)
+     ![](images/L02/featureu.png)
 
- 5. Turn on **Allow publishing of canvas apps with code components** and click **Save**.
+ 5. Turn on **Allow publishing of canvas apps with code components** and Scroll down click **Save**.
      
-      ![](images/L02/image35.2.png)
+      ![](images/L02/image35.2u.png)
+
+      ![](images/L02/image35.2uu.png)
 
  ### Task 2: Edit canvas app
 
@@ -462,42 +464,42 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     
 3. Select **Apps (1)** , select the **PrioritZ Ask (2)** app and click **Edit (3)**.
 
-     ![](images/L02/L02-edit.png)
+     ![](images/L02/L02-editu.png)
 
-4. Select the **Components** tab, click on the ellipsis button (**...**) and select **Import**
+4. Select the **Components** tab, click on the backward arrow  to **Import**
     **components**.
 
-     ![](images/L02/image38.png)
+     ![](images/L02/image38u.png)
  
 1. Select the **Code (1)** tab, select the code component **(2)** you created and click **Import (3)**.
     
-     ![](images/L02/L02-code.png)
+     ![](images/L02/L02-codeuu.png)
  
 7. Select the **Screens** tab.
 
 8. Expand **votescreen (1)** and Select the **Votes gallery (2)**.
 
-     ![](images/L02/L02-votescreen.png)
+     ![](images/L02/L02-votescreenu.png)
 
 1. Select the **Width** from the properties dropdown.    
 
-     ![](images/L02/L02-votescreen1.png)
+     ![](images/L02/L02-votescreen1u.png)
 
 9. Set the **Width** value of the Votes gallery to **570**.
 
-     ![](images/L02/L02-width.png)
+     ![](images/L02/L02-widthu.png)
     
 10. The screen should now look like the image below.
      
-      ![](images/L02/image40.png)
+      ![](images/L02/image40u.png)
 
 11. Select the **Votes Screen** and click **+ Insert**.
       
-     ![](images/L02/image41.png)
+     ![](images/L02/image41u.png)
  
 12. Select the component **PrioritZDnDRanking** under **Code Components**.
       
-     ![](images/L02/image42.png)
+     ![](images/L02/image42uuu.png)
  
 13. Go to the Tree view tab and select the **PrioritZDnDRanking** you just added.
 
@@ -506,17 +508,17 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     ```
     'Votes gallery'.AllItems
     ```
-     ![](images/L02/L02-voteitem.png)
+     ![](images/L02/L02-voteitemu.png)
     
 15. Select the **PrioritZDnDRanking**, go to the **Properties** pane that is present at the right side of the screen, set **Item Height** 160 and click **Edit Fields**.
 
-      ![](images/L02/image43.png)
+      ![](images/L02/image43u.png)
 
 16. Click on **+ Add field** to add a new field.
     
 17. Select **Rank (1)** and click on **Add (2)**.
      
-      ![](images/L02/image44.1.png)
+      ![](images/L02/image44.1uu.png)
  
 18. The rank should now show on the control, but it is sorted descending.
       
@@ -608,9 +610,9 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 31. Select one of the **topics**.
 
-32. Make your browser window smaller until it is the size of a phone screen.
+32. You can view how it looks on a phone screen by using the emulator.
      
-     ![](images/L02/image48.png)
+     ![](images/L02/image48up.png)
 
 33. Drag one of the topic items and drop it in a different location.
      
