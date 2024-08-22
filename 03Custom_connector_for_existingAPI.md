@@ -430,13 +430,13 @@ In this task, you will use the custom connector you created to show the user’s
 
 11. Select the **Tree view**.
 
-12. Select the **Components (1)** tab, go to the **Insert (2)** tab, click **Media (3)** , and then select **Image (4)**.
+12. Select the **Screens (1)** tab, go to the **Insert (2)** tab, click **Media** , and then select **Image (3)**.
      
-     ![](images/L03/L03-componentu.png)
+     ![](images/L03/L03-componentuu.png)
 
 13. Double-click on the newly added image and change its name to **User badge**.
     
-     ![](images/L03/image44u.png)
+     ![](images/L03/image44.png)
 
 
 14. Set the User badge **Image** value to the formula below.
@@ -540,7 +540,7 @@ In this task, you will use the custom connector you created to show the user’s
   
      ![](images/L03/image53.png)
 
-22. Go back to flow and run it a couple more times.
+22. Go back to flow and run it a two more times.
 
      ![](images/L03/L03-EX4-run1.png)
 
@@ -581,7 +581,7 @@ environment and import it to the Test environment.
 
 ###  Task 2: Import solution
 
-1. Navigate to the Power Apps maker portal if not already open and select your **Test** environment named OTU XXXXXX (default).
+1. Navigate to the Power Apps maker portal if not already open and select your **Test** environment named Azure XXXXXX (default).
 
          https://make.powerapps.com
 
@@ -635,11 +635,11 @@ environment and import it to the Test environment.
 11. Go to the **Operations** section and select the **addcredit** operation.
 12. Provide your email for **recipientid** , provide a **name** , enter **1** for **points** , and click **Test operation**.
      
-     ![](images/L03/image63.png)
+     ![](images/L03/image63u.png)
 
 13. The test should succeed, and the response should look like the image below.
       
-      ![](images/L03/image64.png)
+      ![](images/L03/image64u.png)
 
 ## Summary
 
