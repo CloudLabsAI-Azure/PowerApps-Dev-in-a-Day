@@ -70,7 +70,7 @@ In this exercise, you will import the current solution into the pre-created dev 
      
 1. Click **Next** again on the import solution blade.
 
-1. Under the **Connections** section, click on the three dots **...(1)** next to **Microsoft Dataverse Priority-5e308**.
+1. Under the **Connections** section, click on the ellipsis button **...(1)** next to **Microsoft Dataverse Priority-5e308**.
 
 1. Ensure that  **odl_user(2)** you are using  is selected.
 
@@ -114,7 +114,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
     ![](images/L01/L01-parse1.png)
     
-    >>**Note**:If you're unable to expand the step, click on the three dots (...), then select Settings, and click Cancel.
+    >>**Note**:If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
     
 12. Expand the **Apply to each topic** step.
     
@@ -171,7 +171,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
     ![](images/L01/EX1-T2-2_1_1u.png)
 
-3. Launch the **PrioritZ Admin** application by clicking on **play(1)** symbol.
+3. Launch the **PrioritZ Admin** application by clicking on **play** symbol.
     
     ![](images/L01/L01-adminu1.png)
 
