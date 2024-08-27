@@ -202,7 +202,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 5. Click **Settings** to open the settings tab.
     
-     ![](images/L05/Images%20(13).png)
+     ![](images/L05/Imagessettingu.png)
 
 6. Go to the **Security** section, expand **Secrets (1)** and select **Actions (2)**.
 
@@ -212,23 +212,26 @@ In this exercise, you will create a GitHub repository and add repository secrets
    
 7. Click **New repository secret** to add a secret.
 
-     ![](images/L05/github7.png)
+     ![](images/L05/github7u.png)
 
 8. Enter **PowerPlatformAppID (1)** for Name and paste the **Application (client) ID (2)** of **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** that you noted earlier in **`Exercise 1 -> Task 1 -> Step 5`** from your notepad in the **Value** field and click **Add secret (3)**.
 
      ![](images/L05/github8.png)
 
 9. Click **New repository secret** again.
+
 10. Enter **PowerPlatformClientSecret (1)** for Name and paste the **secret Value (2)** from your notepad that you noted earlier in **`Exercise 1 -> Task 1 -> Step 8`** in the **Value** field and click **Add secret (3)**.
 
      ![](images/L05/github9.png)
 
 11. Click **New repository secret** again.
+
 12. Enter **PowerPlatformTenantID (1)** for Name and paste the secret **Tenant ID (2)** from your notepad that you noted earlier in **`Exercise 1 -> Task 1 -> Step 5`** in the **Value** field and click **Add secret (3)**.
 
      ![](images/L05/github10.png)
 
 13. Click **New repository secret** again.
+
 14. Enter **PowerPlatformDevUrl (1)** for Name and paste the secret **Dev environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 2 -> Step 21`** in the **Value** field and click **Add secret (3)**.
 
     >**Note**: Make sure you are pasting the dev environment URL named **Testodl_user_<inject key="DeploymentID" enableCopy="false" />** that you copied in the **`Exercise 1 -> Task 2 -> Step 21`**
@@ -236,6 +239,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
      ![](images/L05/github11.png) 
   
 15. Click **New repository secret** one more time.
+
 16. Enter **PowerPlatformTestUrl (1)** for Name and paste the **Test Environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 2 -> Step 23`** in the **Value** field and click **Add secret (3)**.
 
      >**Note**: Make sure you are pasting the test environment URL named **OTU XXXXXX (default)** that you copied in the **`Exercise 1 -> Task 2 -> Step 23`**
@@ -245,7 +249,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
  
 17. You should now have **5** repository secrets.
      
-       ![](images/L05/Images%20(15).png)
+    ![](images/L05/Images20uu5.png)
 
 18. Do not navigate away from this page.
 
@@ -273,9 +277,19 @@ indentation shown in the images.
 
    ![](images/L05/diad5l28.png)
 
-1. Click **Start commit** and then click **Commit new file**.
+1. Click **Commit changes** and then click **Commit changes**.
     
-   ![](images/L05/Images%20(26).png)
+   ![](images/L05/Images201uu.png)
+
+   ![](images/L05/Images202uu.png)
+
+1. Go to the **Actions** tab on the left side, then select **General**.
+
+   ![](images/L05/actionpermissionuu.png)
+
+1. In the **Workflow Permission** section, make sure **read and write permission (2)** is selected, then click **save (3)**.  
+
+   ![](images/L05/workflowpermissionuu.png)
 
 1. Select the **Actions** **(1)** tab and select the **workflow** ***(2)*** you created.
 
@@ -357,9 +371,7 @@ exported to the test environment.
  
    ![](images/L05/cntn.png)
       
-16. Click **Start commit** and then click **Commit new file**.
-     
-     ![](images/L05/Images%20(46).png)
+16. Click **Commit changes** and then click **Commit changes**.
 
 17. Select the **Code** tab.
    
