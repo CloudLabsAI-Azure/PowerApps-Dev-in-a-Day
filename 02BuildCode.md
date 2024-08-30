@@ -397,7 +397,7 @@ In this exercise, you will build the code component.
         this.context.parameters.items.setSelectedRecordIds([sourceId, destinationId]);
         };
         }
-          ```
+     ```
 22. Open the **package.json** file.
     
 23. Locate the **dependencies** JSON object.
