@@ -55,11 +55,11 @@ In this exercise, you will build the code component.
     
    >**Note**: The Power Platform tab is already installed.
     
-    ![](images/L02/L01-auth.png)
+    ![](images/L02/L01-authuu.png)
 
 3. Click **Terminal (1)** and select **New Terminal (2).**
      
-     ![](images/L02/L02-terminal.png)
+     ![](images/L02/L02-terminaluu.png)
 
 4. In the Terminal window, make a new directory by running the command below.
 
@@ -240,7 +240,7 @@ In this exercise, you will build the code component.
         ![](images/L02/image19.png)  
    
  
- 15. Locate the **Export** class in **line number 5**.
+ 15. Locate the **Export** class in **line number 7**.
       
      ![](images/L02/image20.png)
  
@@ -250,6 +250,7 @@ In this exercise, you will build the code component.
         ```
          private context: ComponentFramework.Context<IInputs>;
          private items: ComponentFramework.PropertyTypes.DataSet;
+         private state: ComponentFramework.Dictionary;
         ```
         ![](images/L02/image21.png)
  
@@ -313,6 +314,90 @@ In this exercise, you will build the code component.
     ![](images/L02/image25.png)
  
      > **Note** : **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
+
+22. After completing all the steps, your `index.ts` file should contain the following code.
+     ```
+     import { IInputs, IOutputs } from "./generated/ManifestTypes";
+     import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
+     import * as React from "react";
+
+
+    export class PrioritZDnDRanking implements ComponentFramework.ReactControl<IInputs, IOutputs> {
+       private context: ComponentFramework.Context<IInputs>;
+       private items: ComponentFramework.PropertyTypes.DataSet;
+       private state: ComponentFramework.Dictionary;
+       private theComponent: ComponentFramework.ReactControl<IInputs, IOutputs>;
+       private notifyOutputChanged: () => void;
+
+    /**
+     * Empty constructor.
+     */
+    constructor() { }
+
+    /**
+     * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
+     * Data-set values are not initialized here, use updateView.
+     * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer mapped to property names defined in the manifest, as well as utility functions.
+     * @param notifyOutputChanged A callback method to alert the framework that the control has new outputs ready to be retrieved asynchronously.
+     * @param state A piece of data that persists in one session for a single user. Can be set at any point in a controls life cycle by calling 'setControlState' in the Mode interface.
+     */
+    public init(
+        context: ComponentFramework.Context<IInputs>,
+        notifyOutputChanged: () => void,
+        state: ComponentFramework.Dictionary
+    ): void {
+        this.context = context;
+        context.mode.trackContainerResize(true);
+        this.notifyOutputChanged = notifyOutputChanged;
+    }
+
+    /**
+     * Called when any value in the property bag has changed. This includes field values, data-sets, global values such as container height and width, offline status, control metadata values such as label, visible, etc.
+     * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer mapped to names defined in the manifest, as well as utility functions
+     * @returns ReactElement root react element for the control
+     */
+    public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
+        const dataset = context.parameters.items;
+        return React.createElement(PriorityComponent, {
+            width: context.mode.allocatedWidth,
+            height: context.mode.allocatedHeight,
+            itemHeight: context.parameters.ItemHeight.raw,
+            fontSize: context.parameters.FontSize.raw,
+            fontColor: context.parameters.FontColor.raw,
+            dataset: dataset,
+            onReorder: this.onReorder,
+            backgroundColor: this.context.parameters.BackgroundColor.raw,
+            dragBackgroundColor:
+            this.context.parameters.DragBackgroundColor.raw,
+        } as PriorityComponentProps);
+    }
+
+    /**
+     * It is called by the framework prior to a control receiving new data.
+     * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as "bound" or "output"
+     */
+    public getOutputs(): IOutputs {
+        return { };
+    }
+
+    /**
+     * Called when the control is to be removed from the DOM tree. Controls should use this call for cleanup.
+     * i.e. cancelling any pending remote calls, removing listeners, etc.
+     */
+    public destroy(): void {
+        // Add code to cleanup control if necessary
+    }
+    onReorder = (sourceIndex: number, destinationIndex: number): void => {
+        const dataset = this.context.parameters.items;
+        const sourceId = dataset.sortedRecordIds[sourceIndex];
+        const destinationId = dataset.sortedRecordIds[destinationIndex];
+        // raise the OnSelect event
+        this.context.parameters.items.openDatasetItem(dataset.records[sourceId].getNamedReference());
+        // set the SelectedItems property
+        this.context.parameters.items.setSelectedRecordIds([sourceId, destinationId]);
+        };
+        }
+     ```
 22. Open the **package.json** file.
     
 23. Locate the **dependencies** JSON object.
@@ -372,7 +457,7 @@ In this exercise, you will build the code component.
 
 31. The test harness should start, if not then copy the address and paste it in a new browser window. Try dragging the items and see if the behaviour functions as expected.
 
-      ![](images/L02/imagee29.png)
+      ![](images/L02/imagee29u.png)
  
      > **Note**: If the test harness didn't start as expected you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in the **Manifest and Index** files. 
 
@@ -405,7 +490,7 @@ In this exercise, you will build the code component.
     
 36. Wait for the solution to be imported and published to your environment.
 
-      ![](images/L02/image31.png)
+      ![](images/L02/image31uu.png)
  
 ### Task 3: Confirm the control was added to the environment
 
@@ -417,11 +502,11 @@ In this exercise, you will build the code component.
     
 2. Select **Solutions** and open the **PowerAppsTools** solution.
     
-    ![](images/L02/image32.png)
+    ![](images/L02/image32u.png)
 
  3. Confirm that the custom control is in this solution.
      
-      ![](images/L02/image33.png)
+      ![](images/L02/image33u.png)
  
 ## Exercise 2 – Use Code Component
 
@@ -440,15 +525,17 @@ In this task, you will allow the publishing of canvas apps with code components 
 
 3. Click **Settings** from top menu.
     
-     ![](images/L02/settings.png)
+     ![](images/L02/settingsu.png)
 
 4. Expand **Products(1)** and select **Features(2)**.
     
-     ![](images/L02/feature.png)
+     ![](images/L02/featureu.png)
 
- 5. Turn on **Allow publishing of canvas apps with code components** and click **Save**.
+ 5. Turn on **Allow publishing of canvas apps with code components** and Scroll down click **Save**.
      
-      ![](images/L02/image35.2.png)
+      ![](images/L02/image35.2u.png)
+
+      ![](images/L02/image35.2uu.png)
 
  ### Task 2: Edit canvas app
 
@@ -462,42 +549,42 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     
 3. Select **Apps (1)** , select the **PrioritZ Ask (2)** app and click **Edit (3)**.
 
-     ![](images/L02/L02-edit.png)
+     ![](images/L02/L02-editu.png)
 
-4. Select the **Components** tab, click on the ellipsis button (**...**) and select **Import**
+4. Select the **Components** tab, click on the backward arrow  to **Import**
     **components**.
 
-     ![](images/L02/image38.png)
+     ![](images/L02/image38u.png)
  
 1. Select the **Code (1)** tab, select the code component **(2)** you created and click **Import (3)**.
     
-     ![](images/L02/L02-code.png)
+     ![](images/L02/L02-codeuu.png)
  
 7. Select the **Screens** tab.
 
 8. Expand **votescreen (1)** and Select the **Votes gallery (2)**.
 
-     ![](images/L02/L02-votescreen.png)
+     ![](images/L02/L02-votescreenu.png)
 
 1. Select the **Width** from the properties dropdown.    
 
-     ![](images/L02/L02-votescreen1.png)
+     ![](images/L02/L02-votescreen1u.png)
 
 9. Set the **Width** value of the Votes gallery to **570**.
 
-     ![](images/L02/L02-width.png)
+     ![](images/L02/L02-widthu.png)
     
 10. The screen should now look like the image below.
      
-      ![](images/L02/image40.png)
+      ![](images/L02/image40u.png)
 
 11. Select the **Votes Screen** and click **+ Insert**.
       
-     ![](images/L02/image41.png)
+     ![](images/L02/image41u.png)
  
 12. Select the component **PrioritZDnDRanking** under **Code Components**.
       
-     ![](images/L02/image42.png)
+     ![](images/L02/image42uuu.png)
  
 13. Go to the Tree view tab and select the **PrioritZDnDRanking** you just added.
 
@@ -506,30 +593,26 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     ```
     'Votes gallery'.AllItems
     ```
-     ![](images/L02/L02-voteitem.png)
+     ![](images/L02/L02-voteitemu.png)
     
 15. Select the **PrioritZDnDRanking**, go to the **Properties** pane that is present at the right side of the screen, set **Item Height** 160 and click **Edit Fields**.
 
-      ![](images/L02/image43.png)
+      ![](images/L02/image43u.png)
 
 16. Click on **+ Add field** to add a new field.
     
 17. Select **Rank (1)** and click on **Add (2)**.
      
-      ![](images/L02/image44.1.png)
+      ![](images/L02/image44.1uu.png)
  
 18. The rank should now show on the control, but it is sorted descending.
       
-      ![](images/L02/image45.png)
-
 19. Select the **Votes gallery**, then select the **Items** property from the property dropdown and change the sort order to **Ascending**.
      
       ![](images/L02/image46.png)
  
  20. The rank should now get sorted ascending.
-     
-      ![](images/L02/image47.png)
- 
+
 21. Select the **PrioritZDnDRanking** component then **X** property from the property dropdown.
  
       ![](images/L02/image47.1.png)
@@ -608,9 +691,9 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 31. Select one of the **topics**.
 
-32. Make your browser window smaller until it is the size of a phone screen.
+32. You can view how it looks on a phone screen by using the emulator.
      
-     ![](images/L02/image48.png)
+     ![](images/L02/image48up.png)
 
 33. Drag one of the topic items and drop it in a different location.
      

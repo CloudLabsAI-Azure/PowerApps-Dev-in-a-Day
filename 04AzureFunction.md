@@ -68,8 +68,6 @@ In this exercise, you install the Azure tools extension for Visual Studio Code a
     ![](images/L04/image%20(2).png)
 
 6. Click on **Terminal** from the top menu and select **New Terminal**.
- 
-    ![](images/L04/image%20(3).png)
 
 7. Run the below command in the terminal to create a new folder.
    ```
@@ -85,13 +83,13 @@ In this exercise, you install the Azure tools extension for Visual Studio Code a
 
     ![](images/L04/vscode4.png)
 
-1. Click on the shown **symbol(1)** in the image, after the **+** under **Workspace** section, click **Create Function (2)**, and click **Create New Project**.
+1. Click on the shown **symbol(1)** in the image, under **Workspace** section, click **Create Function (2)**, and click **Create New Project**.
 
-    ![](images/L04/function.png)
+    ![](images/L04/functionu.png)
 
     >**Note**: If the **+** symbol is not visible, select settings and see if there are any updates required for vscode and update the app Close the current vscode and open it again and perform the above step.
 
-1. Select the **ContosoFunction (1)** folder you created and click **select Folder (2)**
+1. Select the **ContosoFunctions (1)** folder you created and click **select Folder (2)**
 
     ![](images/L04/L04-contoso.png)
 
@@ -128,6 +126,8 @@ In this exercise, you install the Azure tools extension for Visual Studio Code a
     ![](images/L04/image%20(8).png)
 
 1. Your function should open in **Visual Studio Code**.
+
+1. If you got a pop-up **Do you trust authors of the files in this folder**,Click on **Yes, I trust the author**
 
 1. Click on **Terminal** from the top menu and select **Run Build Task**.
   
@@ -377,28 +377,29 @@ In this exercise, you will deploy the function to Azure.
 
 5. Navigate back to Visual Studio Code and click on **+** that is next to your **Resources tab**  to create a new Function App.
   
-    ![](images/L04/NewVSazure3.png)
+    ![](images/L04/NewVSazure3u.png)
  
 6. Now, search for and select **Create Function App in Azure**.
 
-    ![](images/L04/vscode24.png)
+    ![](images/L04/vscode24u.png)
 
 7. Enter **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** for function app name and hit [ENTER].
 
     ![](images/L04/vscode25.png)
 
-8. Select **.NET 6**.
+8. Select **.NET 6(LTS) In-process**.
 
-    ![](images/L04/vscode26.png)
+    ![](images/L04/vscode26u.png)
+
 9. Select the location: **<inject key="Region" enableCopy="false" />** from the list and wait for the Function App to be deployed.
 
     ![](images/L04/vscode27.png)
     
-10. Once the Function App is deployed, Click **Deploy Function App** under the **Workspaces** section and choose the Function App you created. 
+10. Once the Function App is deployed, Click **Deploy to Azure** under the **Workspaces** section and choose the Function App you created. 
     
-     ![](images/L04/DeployNew.png)
+     ![](images/L04/DeployNewu.png)
    
-     ![](images/L04/DeployNew1.png)
+     ![](images/L04/DeployNew1u.png)
 
 11. Wait for the function app to be deployed then navigate to Azure Portal using the below URL.
 
@@ -481,44 +482,42 @@ In this exercise, you will deploy the function to Azure.
 
 28. Check the **user_impersonation** checkbox and click **Add permission**.
 
-    ![](images/L04/image%20(41).png)
+    ![](images/L04/image%20(41)u.png)
 
 29. Go back to **Home** and open the **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** function app.
    
      ![](images/L04/vscode27.1.png)
 
-30. Select **Configuration** under **Settings** from the left hand side menu..
+30. Select **Environment Variables (1)** under **Settings** from the left hand side menu..
   
-     ![](images/L04/vscode35.png)
-
-31. Click **+ New application setting.**
+31. Click **+ Add (2)**
      
-     ![](images/L04/vscode36.png)
+     ![](images/L04/vscode36u.png)
 
-32. Enter the following details on the **Add/Edit application setting** blade and click **OK (3)**.
+32. Enter the following details on the **Add/Edit application setting** blade and click **Apply (3)**.
       
       - **Name**: **ClientID (1)**
       - **Value**: Paste the **PrioritZFL API application ID (2)** that you have noted earlier in the notepad.
 
-     ![](images/L04/vscode37.png)
+     ![](images/L04/vscode37u.png)
 
-33. Click **+ New application setting** again.
+33. Click **+ Add** again.
 
-34. Enter the following details on the **Add/Edit application setting** blade and click **OK (3)**.
+34. Enter the following details on the **Add/Edit application setting** blade and click **Apply (3)**.
       
       - **Name**: **ClientSecret (1)**
       - **Value**: Paste the **PrioritZFL API Secret (2)** that you have noted earlier in the notepad.
 
-     ![](images/L04/vscode38.png)
+     ![](images/L04/vscode38u.png)
      
-35. Click **+ New application setting** again.
+35. Click **+ Add** again.
 
-36. Enter the following details on the **Add/Edit application setting** blade and click **OK (3)**.
+36. Enter the following details on the **Add/Edit application setting** blade and click **Apply (3)**.
       
       - **Name**: **TenantID (1)**
       - **Value**: Paste the **TenantID (2)** that you have noted earlier in the notepad.
 
-     ![](images/L04/vscode39.png)
+     ![](images/L04/vscode39u.png)
      
 37. Start a new browser window or tab navigate to the Power Platform admin center and select
     **Environments**.
@@ -533,14 +532,14 @@ In this exercise, you will deploy the function to Azure.
 
      ![](images/L04/image%20(47).png)
 
-40. Click **+ New application setting** one more time.
+40. Click **+ Add** one more time.
 
-41. Enter the following details on the **Add/Edit application setting** blade and click **OK**.
+41. Enter the following details on the **Add/Edit application setting** blade and click **Apply**.
       
       - **Name**: **DataverseURL**
       - **Value**: Paste the **Environment URL** that you have noted earlier in the notepad.
       
-    ![](images/L04/vscode40.png)
+    ![](images/L04/vscode40u.png)
 
     >**Note**: Make sure to paste the correct **Environment URL** that you noted earlier in this task. Copying the incorrect value will result in issues in the next steps/tasks.
 
@@ -548,7 +547,7 @@ In this exercise, you will deploy the function to Azure.
   
      ![](images/L04/image%20(46).png)
 
-43. Click **Save** and **Continue**.
+43. Click **Apply** and In **Save changes** pop up click on **Confirm**.
 
 44. Paste the below URL in Notepad and replace `{tenant id}` and `{api app id}` with **tenant id** and **PrioritZFL API application ID** values from your
     notepad. 
