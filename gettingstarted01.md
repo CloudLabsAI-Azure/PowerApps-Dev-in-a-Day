@@ -10,7 +10,7 @@ In this series of labs, you will gain hands-on experience with various aspects o
 
 ## Objective
 
-After completing these Lab, you'll know how to import and customize solutions in Power Platform, build custom code components, and create and integrate custom connectors.
+After completing these Lab, you'll know how to import and customize solutions in Power Platform, build custom code components, and  create and integrate custom connectors.
 
  - **Getting started with Powerapps** : Learn to import a starting solution, add a new column, update the admin app, and test the Power Platform CLI.
  - **Build a code component** : Create a code component, implement its logic, integrate it into a canvas app, and add it to a solution.
@@ -51,7 +51,7 @@ After completing these Lab, you'll know how to import and customize solutions in
  
  **GitHub**: A version control system for managing and tracking changes to solutions and code.
 
- ## Getting Started
+ ##  Getting Started
  
 Welcome to your Developer in a day workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
