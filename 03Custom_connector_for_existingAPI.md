@@ -645,4 +645,6 @@ environment and import it to the Test environment.
 
 In this lab, you learned to create and modify a custom connector using an Open API definition, test its functionality, and integrate it with canvas apps and flows within the Power Platform.
 
-## You have successfully completed this Lab!
+## You have successfully completed this Lab.
+
+## Click on Next >> to procced with next lab.
