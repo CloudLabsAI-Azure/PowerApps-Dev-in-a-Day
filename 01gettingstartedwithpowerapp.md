@@ -8,21 +8,9 @@ Working as part of the Prioritz fusion team you will be setting up your Power Pl
 
 You will be able to complete the following :
 
-1. Exercise 1 - Import and review solution components
-
-   - Task 1: Import, review solution components and run flow
-
-   - Task 2: Test the apps
-
-2. Exercise 2 – Add a column for My Notes
-
-   - Task 1: Add a new column
-
-   - Task 2: Update admin app
-
-3. Exercise 3 – Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension
-
-   - Task 1: Test the Power Platform CLI
+- Exercise 1: Import and review solution components
+- Exercise 2: Add a column for My Notes
+- Exercise 3: Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension
 
 ## Exercise 1 - Import, and review solution components
 
@@ -492,6 +480,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
     ![](images/L01/sollistu.png)
 
 ## Summary
+
 In this lab , you learned to import and execute a starting solution, customize it by adding a new column and updating the admin app, and verify functionality using the Power Platform CLI.
 
 ## You have successfully completed the lab
