@@ -428,3 +428,5 @@ exported to the test environment.
 In this lab, you learned to promote a solution to a test environment, configure a service principal, and manage your solution using GitHub for version control and workflow automation.
 
 ## You have successfully completed the lab
+
+## Click on Next >> to procced with next lab.
