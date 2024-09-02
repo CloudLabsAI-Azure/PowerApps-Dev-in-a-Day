@@ -484,5 +484,3 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 In this lab , you learned to import and execute a starting solution, customize it by adding a new column and updating the admin app, and verify functionality using the Power Platform CLI.
 
 ## You have successfully completed the lab
-
-# Click on Next >> to procced with next lab.
