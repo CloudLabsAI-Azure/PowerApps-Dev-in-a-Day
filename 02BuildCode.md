@@ -740,3 +740,5 @@ In this lab,you learned to create a code component, implement its logic, integra
 
 ## You have successfully completed the lab
 
+## Click on Next >> to procced with next lab.
+
