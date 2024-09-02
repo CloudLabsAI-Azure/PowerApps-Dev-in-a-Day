@@ -22,24 +22,9 @@ their new rank. The code component will be stateless.
 
 ## Lab Objectives
 
-1. Exercise 1 – Build Code Component 
-
-    - Task 1: Create the code component 
-
-    - Task 2: Implement the component logic 
-
-    - Task 3: Confirm the control was added to the environment 
-
-2. Exercise 2 – Use Code Component 
-
-    - Task 1: Allow Power Apps component framework 
-
-    - Task 2: Edit canvas app 
-
-3. Exercise 3 – Add Code Component to Solution 
-
-     - Task 1: Add component to solution
-
+- Exercise 1: Build Code Component 
+- Exercise 2: Use Code Component 
+- Exercise 3: Add Code Component to Solution 
 
 ## Exercise 1 – Build Code Component
 
@@ -739,6 +724,4 @@ In this exercise, you will add the code component you created to the PrioritZ so
 In this lab,you learned to create a code component, implement its logic, integrate it into a canvas app, and add it to a solution within the Power Platform.
 
 ## You have successfully completed the lab
-
-## Click on Next >> to procced with next lab.
 
