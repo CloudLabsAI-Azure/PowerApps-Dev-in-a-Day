@@ -118,20 +118,20 @@ In this exercise, you will create a custom connector from an existing API.
      ![](images/L03/image4.png)
 
 
-6. Navigate to the Power Apps  maker portal and make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
+5. Navigate to the Power Apps  maker portal and make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
          https://make.powerapps.com
 
-7. Select **Solutions (1)** open the **Contoso Badges connector (2)** solution you created.
+6. Select **Solutions (1)** open the **Contoso Badges connector (2)** solution you created.
 
      ![](images/L03/L03-contoso.png)
 
-8. Click **+ New (1) | Automation (2)** and select **Custom connector (3)**.
+7. Click **+ New (1) | Automation (2)** and select **Custom connector (3)**.
      
      ![](images/L03/image5-1.png)
 
 
-9. Enter the following information on the **Create Connector** blade.
+8. Enter the following information on the **Create Connector** blade.
 
      1. Connector name: **Badges connector (1)** 
      2. Description: **Connector for contosobadgestest (2)**
@@ -142,30 +142,30 @@ In this exercise, you will create a custom connector from an existing API.
 
    >**Note**:If prompted to sign in, use the ODL credentials found in the environment tab located to the right of the Lab guide.
 
-1. Select **Custom connectors (1)** from the sitemap. Click on the **... More actions (2)** button of the custom connector you created and select **Update from Open API file (3)** 
+9. Select **Custom connectors (1)** from the sitemap. Click on the **... More actions (2)** button of the custom connector you created and select **Update from Open API file (3)** 
 
       ![](images/L03/L03-custom.png)
 
-12. Click **Import** to select the API file.
+10. Click **Import** to select the API file.
 
       ![](images/L03/L03-import.png)
 
-13. Select the **swagger.json** file you saved to your machine and click **Open**.
+11. Select the **swagger.json** file you saved to your machine and click **Open**.
     
-15. Click **Continue** on the **Import an OpenAPI file** pop-up.
+12. Click **Continue** on the **Import an OpenAPI file** pop-up.
     
     ![](images/L03/image8-1.png)
 
-16. Enter **Connector for contosobadgestest (1)** for Description, **contosobadgestest.azurewebsites.net (2)** for Host,
+13. Enter **Connector for contosobadgestest (1)** for Description, **contosobadgestest.azurewebsites.net (2)** for Host,
     and advance to **Security (3)**.
       
       ![](images/L03/image9-1u.png)
 
-17. Review the **security configuration (1)** and advance to **Definition (2)**.
+14. Review the **security configuration (1)** and advance to **Definition (2)**.
 
       ![](images/L03/L03-security.png)
 
-18. Do not navigate away from this page.
+15. Do not navigate away from this page.
 
 ### Task 2: Modify the definition
 
@@ -283,23 +283,23 @@ You will do this by using the custom code feature to reshape the response from t
    https://make.powerautomate.com
    ```
 
-2. Click On **More (1)** and select **Discover All (2)**.
+1. Click On **More (1)** and select **Discover All (2)**.
 
    ![](images/L03/L03-connectormore.png)
 
-4. Under **Data (1)** and select **Custom connectors (2)**.
+1. Under **Data (1)** and select **Custom connectors (2)**.
 
    ![](images/L03/L03-connectoru.png)
 
-5. Click the **Edit** button of the custom connector you created.
+1. Click the **Edit** button of the custom connector you created.
 
     ![](images/L03/image24u.png)
 
-6. Select the **Definition** tab from the dropdown and click **New action** in the definition tab.
+1. Select the **Definition** tab from the dropdown and click **New action** in the definition tab.
   
     ![](images/L03/L03-EX3.1.png)
 
-7. Enter the following information to add the **Get current badge** action.
+1. Enter the following information to add the **Get current badge** action.
 
      1. Summary: **Get current badge**
      2. Description: **Get current badge (2)** 
@@ -308,61 +308,61 @@ You will do this by using the custom code feature to reshape the response from t
     
     ![](images/L03/image26-1.png)
 
-8. Scroll down to the **Request** section and click **+ Import from sample**.
+1. Scroll down to the **Request** section and click **+ Import from sample**.
     
     ![](images/L03/image27.png)
 
-9. Select **Get (1)** for Verb, enter the below value for **URL (2)**, and click **Import (3)**.
+1. Select **Get (1)** for Verb, enter the below value for **URL (2)**, and click **Import (3)**.
    ```
    https://contosobadgestest.azurewebsites.net/getcurrentbadge?id={id} 
    ```
 
     ![](images/L03/image28-1.png)
 
-10. Click **Update connector** and wait for the connector to be updated.
-11. Select the **Code** tab from the dropdown.
-12. Enable **Code (1)** and click **Upload (2)**.
+1. Click **Update connector** and wait for the connector to be updated.
+1. Select the **Code** tab from the dropdown.
+1. Enable **Code (1)** and click **Upload (2)**.
     
      ![](images/L03/image29-1.png)
 
-13. Select the **CustomConnectorCode.csx** file located in this path `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` and click **Open**.
-14. Select the **getcurrentbadge** action from the dropdown.
+1. Select the **CustomConnectorCode.csx** file located in this path `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` and click **Open**.
+1. Select the **getcurrentbadge** action from the dropdown.
      
      ![](images/L03/image30.png)
 
-15. Review the code you just added.
-16. Click **Update connector** and wait for the connector to be updated.
-17. Advance to **Test** by selecting it in the dropdown.
-18. Select the **getcurrentbadge** action.
-19. Provide your email address as id and click **Test operation**.
+1. Review the code you just added.
+1. Click **Update connector** and wait for the connector to be updated.
+1. Advance to **Test** by selecting it in the dropdown.
+1. Select the **getcurrentbadge** action.
+1. Provide your email address as id and click **Test operation**.
      
      ![](images/L03/image31-1.png)
 
 
-20. The test should succeed, and you should get a current badge for the user you created.
+1. The test should succeed, and you should get a current badge for the user you created.
     
     ![](images/L03/image32.png)
 
      > **Note**: If the test operation fails, try updating the connector then test the connector by performing Steps 15-18 again.
-21. Copy the Response **Body** JSON.
+1. Copy the Response **Body** JSON.
 
-22. Select the Definition tab from the dropdown.
+1. Select the Definition tab from the dropdown.
 
-23. Select the **getcurrentbadge** action.
+1. Select the **getcurrentbadge** action.
      
       ![](images/L03/image33.png)
 
-24. Scroll down to the **Response** section and click **+ Add default response.**
+1. Scroll down to the **Response** section and click **+ Add default response.**
  
       ![](images/L03/image34.png)
 
 
-25. Paste the JSON you copied in the **Body (1)** and click **Import (2)**.
+1. Paste the JSON you copied in the **Body (1)** and click **Import (2)**.
      
      ![](images/L03/image35-1.png)
 
-26. Click **Update connector** and wait for the connector to be updated.
-27. **Do not** navigate away from this page.
+1. Click **Update connector** and wait for the connector to be updated.
+1. **Do not** navigate away from this page.
 
 ### Task 2: Test custom code
 
@@ -645,4 +645,6 @@ environment and import it to the Test environment.
 
 In this lab, you learned to create and modify a custom connector using an Open API definition, test its functionality, and integrate it with canvas apps and flows within the Power Platform.
 
-## You have successfully completed this Lab!
+## You have successfully completed this Lab.
+
+## Click on Next >> to procced with next lab.

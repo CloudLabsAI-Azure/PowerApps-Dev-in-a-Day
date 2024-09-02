@@ -316,6 +316,7 @@ In this exercise, you will build the code component.
      > **Note** : **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
 
 22. After completing all the steps, your `index.ts` file should contain the following code.
+
      ```
      import { IInputs, IOutputs } from "./generated/ManifestTypes";
      import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
@@ -398,13 +399,13 @@ In this exercise, you will build the code component.
         };
         }
      ```
-22. Open the **package.json** file.
+23. Open the **package.json** file.
     
-23. Locate the **dependencies** JSON object.
+24. Locate the **dependencies** JSON object.
 
       ![](images/L02/image26.png)
  
-24. Replace **dependencies** with the JSON below.
+25. Replace **dependencies** with the JSON below.
 
     ```
     "dependencies": {
@@ -738,4 +739,6 @@ In this exercise, you will add the code component you created to the PrioritZ so
 In this lab,you learned to create a code component, implement its logic, integrate it into a canvas app, and add it to a solution within the Power Platform.
 
 ## You have successfully completed the lab
+
+## Click on Next >> to procced with next lab.
 

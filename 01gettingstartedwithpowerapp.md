@@ -70,7 +70,7 @@ In this exercise, you will import the current solution into the pre-created dev 
      
 1. Click **Next** again on the import solution blade.
 
-1. Under the **Connections** section, click on the ellipsis button **...(1)** next to **Microsoft Dataverse Priority-5e308**.
+1. Under the **Connections** section, click on the ellipsis button **...(1)** next to **Microsoft Dataverse Priority**.
 
 1. Ensure that  **odl_user(2)** you are using  is selected.
 
@@ -288,13 +288,13 @@ application.
     
     ![](images/L01/L01-admineditu.png)
 
-3. Select the **Add Topic Screen(1)**.
+1. Select the **Add Topic Screen(1)**.
 
-4. Click **+ Insert(2)** and select **Text input(3)**.
+1. Click **+ Insert(2)** and select **Text input(3)**.
    
      ![](images/L01/tinputu.png)
 
-5. Double-click on the newly added **Text input** and enter the below value to rename the text input.
+1. Double-click on the newly added **Text input** and enter the below value to rename the text input.
 
     ```
     Notes textbox
@@ -302,15 +302,15 @@ application.
     
      ![](images/L01/image27u.png)
 
-6. Make the add picture control smaller if needed, and move the **Respond By and label textbox** down and place the **Notes textbox** between the Details control and the Respond by label.
+1. Make the add picture control smaller if needed, and move the **Respond By and label textbox** down and place the **Notes textbox** between the Details control and the Respond by label.
    
     ![](images/L01/image28u.png)
 
-7. Select **Notes textbox** and then **HintText** from the properties dropdown.
+1. Select **Notes textbox** and then **HintText** from the properties dropdown.
 
     ![](images/L01/hintextu.png)
 
-8. Change the **HintText** value of the Notes textbox to the below value. 
+1. Change the **HintText** value of the Notes textbox to the below value. 
 
     ```
     My notes
@@ -319,7 +319,7 @@ application.
     ![](images/L01/image29u.png)
 
 
-9. Select the **Mode** from the properties dropdown and change its value by entering the below text.
+1. Select the **Mode** from the properties dropdown and change its value by entering the below text.
 
     ```
     TextMode.MultiLine
@@ -327,11 +327,11 @@ application.
 
     ![](images/L01/L01-modeu.png)
 
-10. Select **Save topic icon** under **Add Topics Screen** section.
+1. Select **Save topic icon** under **Add Topics Screen** section.
      
      ![](images/L01/image30u.png)
 
-11. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates
+1. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates
     a new row in the Dataverse table.
      
      ![](images/L01/image31u.png)
@@ -339,13 +339,13 @@ application.
     ```
     Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
     ```
-12. Select the **View Topic Screen (1)** from the **Screens** tab.
+1. Select the **View Topic Screen (1)** from the **Screens** tab.
 
 1. Click **+ Insert(2)** tab and select **Text label(3)**.
 
     ![](images/L01/tlabelu.png)
 
-13. Double-click on the newly added label and enter the below value to rename the label you just added.
+1. Double-click on the newly added label and enter the below value to rename the label you just added.
 
      ```
      Notes label
@@ -353,24 +353,24 @@ application.
      
     ![](images/L01/L01-labelu.png)
 
-14. Change the **Text** value of the Notes label with the below text.
+1. Change the **Text** value of the Notes label with the below text.
 
      ```
      'Topics gallery'.Selected.'My Notes'
      ```
 
-15. Rearrange the controls and move the **Notes label** between the details label and the Topic items
+1. Rearrange the controls and move the **Notes label** between the details label and the Topic items
     gallery.
 
-16. Select the **Home Screen(1)** and click **Preview the app(2)**.
+1. Select the **Home Screen(1)** and click **Preview the app(2)**.
       
       ![](images/L01/image34u.png)
 
-17. Click on the **+** button to add a new topic.
+1. Click on the **+** button to add a new topic.
 
       ![](images/L01/L01-taco-1_1u.png)
 
-18. Fill out the form by providing the below information and click **add a picture** that is present below the **Respond By** field.
+1. Fill out the form by providing the below information and click **add a picture** that is present below the **Respond By** field.
 
        1. Topic: `Test Notes` (1)
        
@@ -383,39 +383,39 @@ application.
       
 1. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
 
-12. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
+1. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
      
       ![](images/L01/image18uu.png)
 
-11. Navigate to this path `C:\LabFiles` in File Explorer, select **image.png** and click open.
+1. Navigate to this path `C:\LabFiles` in File Explorer, select **image.png** and click open.
 
-13. Click **+** to add the choice.
+1. Click **+** to add the choice.
      
       ![](images/L01/image19u.png)
 
-14. Add one more choice by repeating **steps 20-22** of this task.
+1. Add one more choice by repeating **steps 20-22** of this task.
        
        1. **Choice 1** : Enter `Test Two`
 1. After adding all the Choices and topic details, your screen should look like the below screenshot.
 
    ![](images/L01/L01-testnotesu.png)
       
-19. Now, click on the **Save** button. The new topic should be **saved**.
-20. Click to open the **Test Notes** topic that you just created.
-21. The notes **Prioritz Admin topic** that you added earlier should now be visible.
+1. Now, click on the **Save** button. The new topic should be **saved**.
+1. Click to open the **Test Notes** topic that you just created.
+1. The notes **Prioritz Admin topic** that you added earlier should now be visible.
  
      ![](images/L01/image36.1.png)
 
-22. Close the app **preview**.
+1. Close the app **preview**.
 1. Click **Publish**.
 
     ![](images/L01/publish.png)
 
-25. Select Publish this version and wait for the publishing to complete.
+1. Select Publish this version and wait for the publishing to complete.
 
      ![](images/L01/NewUipublish1u.png)
 
- 26. You may close the **app designer**.
+ 1. You may close the **app designer**.
 
 ## Exercise 3 – Test the Power Platform CLI
 
@@ -492,5 +492,8 @@ In this exercise, you will review and test the Power Platform CLI extension in V
     ![](images/L01/sollistu.png)
 
 ## Summary
-In this lab ,In Lab 1, you learned to import and execute a starting solution, customize it by adding a new column and updating the admin app, and verify functionality using the Power Platform CLI.
+In this lab , you learned to import and execute a starting solution, customize it by adding a new column and updating the admin app, and verify functionality using the Power Platform CLI.
+
 ## You have successfully completed the lab
+
+# Click on Next >> to procced with next lab.
