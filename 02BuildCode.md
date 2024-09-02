@@ -316,6 +316,7 @@ In this exercise, you will build the code component.
      > **Note** : **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
 
 22. After completing all the steps, your `index.ts` file should contain the following code.
+
      ```
      import { IInputs, IOutputs } from "./generated/ManifestTypes";
      import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
@@ -398,13 +399,13 @@ In this exercise, you will build the code component.
         };
         }
      ```
-22. Open the **package.json** file.
+23. Open the **package.json** file.
     
-23. Locate the **dependencies** JSON object.
+24. Locate the **dependencies** JSON object.
 
       ![](images/L02/image26.png)
  
-24. Replace **dependencies** with the JSON below.
+25. Replace **dependencies** with the JSON below.
 
     ```
     "dependencies": {
