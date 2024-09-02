@@ -1,7 +1,5 @@
 # Low Code for Pro-Dev in a Day
 
-## Getting Started
-
 ## Overall Estimated Duration: 8 Hours
 
 ## Overview
@@ -10,7 +8,9 @@ In this series of labs, you will gain hands-on experience with various aspects o
 
 ## Objective
 
+
 After completing these Lab, you'll know how to import and customize solutions in Power Platform, build custom code components, and  create and integrate custom connectors.
+Learn to import and customize Power Platform solutions, create custom code components, and develop and integrate custom connectors. By the end of this lab, you will gain insights on:
 
  - **Getting started with Powerapps** : Learn to import a starting solution, add a new column, update the admin app, and test the Power Platform CLI.
  - **Build a code component** : Create a code component, implement its logic, integrate it into a canvas app, and add it to a solution.
@@ -108,11 +108,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 5. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 6. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
-   
-7. Now, click on the **Next** from the lower right corner to move to the next page.
 
-   ![](./images/GS4.png)
- 
+  By completing these exercises, You will import and customize Power Platform solutions, create and implement custom code components with Visual Studio Code, develop and integrate custom connectors, create and deploy Azure Functions, and manage solutions using GitHub for source control.
+   
 ## Support Contact
 
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
@@ -120,7 +118,12 @@ The CloudLabs support team is available 24/7, 365 days a year, via email and liv
 Learner Support Contacts:
 
 Email Support: labs-support@spektrasystems.com
+
 Live Chat Support: https://cloudlabs.ai/labs-support
+
+Now, click on the **Next** from the lower right corner to move to the next page.
+
+   ![](./images/GS4.png)
 
 ## Happy Learning!!
 
