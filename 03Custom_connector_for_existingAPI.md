@@ -283,23 +283,23 @@ You will do this by using the custom code feature to reshape the response from t
    https://make.powerautomate.com
    ```
 
-1. Click On **More (1)** and select **Discover All (2)**.
+2. Click On **More (1)** and select **Discover All (2)**.
 
    ![](images/L03/L03-connectormore.png)
 
-1. Under **Data (1)** and select **Custom connectors (2)**.
+3. Under **Data (1)** and select **Custom connectors (2)**.
 
    ![](images/L03/L03-connectoru.png)
 
-1. Click the **Edit** button of the custom connector you created.
+4. Click the **Edit** button of the custom connector you created.
 
     ![](images/L03/image24u.png)
 
-1. Select the **Definition** tab from the dropdown and click **New action** in the definition tab.
+5. Select the **Definition** tab from the dropdown and click **New action** in the definition tab.
   
     ![](images/L03/L03-EX3.1.png)
 
-1. Enter the following information to add the **Get current badge** action.
+6. Enter the following information to add the **Get current badge** action.
 
      1. Summary: **Get current badge**
      2. Description: **Get current badge (2)** 
@@ -308,61 +308,61 @@ You will do this by using the custom code feature to reshape the response from t
     
     ![](images/L03/image26-1.png)
 
-1. Scroll down to the **Request** section and click **+ Import from sample**.
+7. Scroll down to the **Request** section and click **+ Import from sample**.
     
     ![](images/L03/image27.png)
 
-1. Select **Get (1)** for Verb, enter the below value for **URL (2)**, and click **Import (3)**.
+8. Select **Get (1)** for Verb, enter the below value for **URL (2)**, and click **Import (3)**.
    ```
    https://contosobadgestest.azurewebsites.net/getcurrentbadge?id={id} 
    ```
 
     ![](images/L03/image28-1.png)
 
-1. Click **Update connector** and wait for the connector to be updated.
-1. Select the **Code** tab from the dropdown.
-1. Enable **Code (1)** and click **Upload (2)**.
+9. Click **Update connector** and wait for the connector to be updated.
+10. Select the **Code** tab from the dropdown.
+11. Enable **Code (1)** and click **Upload (2)**.
     
      ![](images/L03/image29-1.png)
 
-1. Select the **CustomConnectorCode.csx** file located in this path `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` and click **Open**.
-1. Select the **getcurrentbadge** action from the dropdown.
+12. Select the **CustomConnectorCode.csx** file located in this path `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` and click **Open**.
+13. Select the **getcurrentbadge** action from the dropdown.
      
      ![](images/L03/image30.png)
 
-1. Review the code you just added.
-1. Click **Update connector** and wait for the connector to be updated.
-1. Advance to **Test** by selecting it in the dropdown.
-1. Select the **getcurrentbadge** action.
-1. Provide your email address as id and click **Test operation**.
+14. Review the code you just added.
+15. Click **Update connector** and wait for the connector to be updated.
+16. Advance to **Test** by selecting it in the dropdown.
+17. Select the **getcurrentbadge** action.
+18. Provide your email address as id and click **Test operation**.
      
      ![](images/L03/image31-1.png)
 
 
-1. The test should succeed, and you should get a current badge for the user you created.
+19. The test should succeed, and you should get a current badge for the user you created.
     
     ![](images/L03/image32.png)
 
      > **Note**: If the test operation fails, try updating the connector then test the connector by performing Steps 15-18 again.
-1. Copy the Response **Body** JSON.
+20. Copy the Response **Body** JSON.
 
-1. Select the Definition tab from the dropdown.
+21. Select the Definition tab from the dropdown.
 
-1. Select the **getcurrentbadge** action.
+22. Select the **getcurrentbadge** action.
      
       ![](images/L03/image33.png)
 
-1. Scroll down to the **Response** section and click **+ Add default response.**
+24. Scroll down to the **Response** section and click **+ Add default response.**
  
       ![](images/L03/image34.png)
 
 
-1. Paste the JSON you copied in the **Body (1)** and click **Import (2)**.
+25. Paste the JSON you copied in the **Body (1)** and click **Import (2)**.
      
      ![](images/L03/image35-1.png)
 
-1. Click **Update connector** and wait for the connector to be updated.
-1. **Do not** navigate away from this page.
+26. Click **Update connector** and wait for the connector to be updated.
+27. **Do not** navigate away from this page.
 
 ### Task 2: Test custom code
 
