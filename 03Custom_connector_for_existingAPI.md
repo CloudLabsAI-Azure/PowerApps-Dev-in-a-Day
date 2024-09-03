@@ -9,44 +9,14 @@ Platform connector.
 
 ## Lab Objectives
 
-1. Exercise 0 - Create Database in Default Environment 
+- Exercise 1: Create Database in Default Environment 
+- Exercise 2: Create Solution 
+- Exercise 3: Create Custom Connector 
+- Exercise 4: Add Custom Code 
+- Exercise 5: Test Custom Connector 
+- Exercise 6: Promote Solution to Test Environment
 
-    - Task 1: Create Database 
-    
-2. Exercise 1 - Create Solution 
-
-    - Task 1: Create solution 
-
-3. Exercise 2 – Create Custom Connector 
-
-    - Task 1: Download the open API definition and create a connector 
-
-    - Task 2: Modify the definition 
-
-    - Task 3: Test connector 
-
-4. Exercise 3 – Add Custom Code 
-
-    - Task 1: Add code from the resource folder 
-
-    - Task 2: Test custom code 
-
-5. Exercise 4 – Test Custom Connector 
-
-    - Task 1: Test connector from canvas app
-
-    - Task 2: Test connector from flow 
-
-6. Exercise 5 – Promote Solution to Test Environment 
-
-    - Task 1: Export solution. 
-
-    - Task 2: Import solution 
-
-    - Task 3: Test connector 
-
-
-## Exercise 0 - Create Database in Default Environment 
+## Exercise 1 - Create Database in Default Environment 
 
 In this exercise, you will create a Dataverse database in the test environment, which will be used to import the solution in the next exercises.
 
@@ -73,7 +43,7 @@ When you review the API, you see that it has four operations and uses API key au
     
     >**Note:** You can leave this browser tab open and continue with the next exercise, as Dataverse database creation will take some time.
 
-## Exercise 1 - Create Solution
+## Exercise 2 - Create Solution
 
 In this exercise, you will create a solution for the Contoso Badges custom connector. Currently, custom
 connectors must be in a separate solution from the apps and flows that use them.
@@ -95,7 +65,7 @@ connectors must be in a separate solution from the apps and flows that use them.
    
    ![](images/L03/image2-1.png)
 
-## Exercise 2 – Create Custom Connector
+## Exercise 3 – Create Custom Connector
 
 In this exercise, you will create a custom connector from an existing API.
 
@@ -270,7 +240,7 @@ In this exercise, you will create a custom connector from an existing API.
      ![](images/L03/image23.png)
 
 
-## Exercise 3 – Add Custom Code
+## Exercise 4 – Add Custom Code
 
 In this exercise, you will add a new operation to only return the current badge name and image URL.
 You will do this by using the custom code feature to reshape the response from the API.
@@ -379,7 +349,7 @@ In this task, you will test your custom code.
     
     ![](images/L03/image37.png)
 
-## Exercise 4 – Test Custom Connector
+## Exercise 5 – Test Custom Connector
 
 In this exercise, you will test the custom connector you created using a flow and a canvas application.
 
@@ -555,7 +525,7 @@ In this task, you will use the custom connector you created to show the user’s
    
      ![](images/L03/image55.png)
 
-## Exercise 5 – Promote Solution to Test Environment
+## Exercise 6 – Promote Solution to Test Environment
 
 In this exercise, you will export the Contoso Badges connector solution from the Dev
 environment and import it to the Test environment.
@@ -646,5 +616,3 @@ environment and import it to the Test environment.
 In this lab, you learned to create and modify a custom connector using an Open API definition, test its functionality, and integrate it with canvas apps and flows within the Power Platform.
 
 ## You have successfully completed this Lab.
-
-## Click on Next >> to procced with next lab.
