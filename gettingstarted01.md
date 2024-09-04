@@ -1,6 +1,6 @@
 # Low Code for Pro-Dev in a Day
 
-## Overall Estimated Duration: 6 Hours
+## Overall Estimated Duration: 8 Hours
 
 ## Overview
 
