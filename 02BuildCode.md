@@ -317,10 +317,10 @@ In this exercise, you will build the code component.
 
 22. After completing all the steps, your `index.ts` file should contain the following code.
 
-     ```
-     import { IInputs, IOutputs } from "./generated/ManifestTypes";
-     import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
-     import * as React from "react";
+```
+import { IInputs, IOutputs } from "./generated/ManifestTypes";
+import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
+import * as React from "react";
 
 
      export class PrioritZDnDRanking implements ComponentFramework.ReactControl<IInputs, IOutputs> {
@@ -403,7 +403,7 @@ In this exercise, you will build the code component.
         this.context.parameters.items.setSelectedRecordIds([sourceId, destinationId]);
         };
         }
-     ```
+        ```
 23. Open the **package.json** file.
     
 24. Locate the **dependencies** JSON object.
