@@ -317,34 +317,34 @@ In this exercise, you will build the code component.
 
 22. After completing all the steps, your `index.ts` file should contain the following code.
 
-```
-import { IInputs, IOutputs } from "./generated/ManifestTypes";
-import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
-import * as React from "react";
+    ```
+    import { IInputs, IOutputs } from "./generated/ManifestTypes";
+    import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
+    import * as React from "react";
 
 
      export class PrioritZDnDRanking implements ComponentFramework.ReactControl<IInputs, IOutputs> {
-       private context: ComponentFramework.Context<IInputs>;
-       private items: ComponentFramework.PropertyTypes.DataSet;
-       private state: ComponentFramework.Dictionary;
-       private theComponent: ComponentFramework.ReactControl<IInputs, IOutputs>;
-       private notifyOutputChanged: () => void;
+         private context: ComponentFramework.Context<IInputs>;
+         private items: ComponentFramework.PropertyTypes.DataSet;
+         private state: ComponentFramework.Dictionary;
+         private theComponent: ComponentFramework.ReactControl<IInputs, IOutputs>;
+         private notifyOutputChanged: () => void;
 
-     /**
-     * Empty constructor.
-     */
-     constructor() { }
+       /**
+       * Empty constructor.
+       */
+       constructor() { }
 
-     /**
-     * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
-     * Data-set values are not initialized here, use updateView.
-     * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer 
-       mapped to property names defined in the manifest, as well as utility functions.
-     * @param notifyOutputChanged A callback method to alert the framework that the control has new outputs ready to be retrieved 
-       asynchronously.
-     * @param state A piece of data that persists in one session for a single user. Can be set at any point in a controls life cycle 
-       by calling 'setControlState' in the Mode interface.
-     */
+       /**
+       * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
+       * Data-set values are not initialized here, use updateView.
+       * @param context The entire property bag available to control via Context Object; It contains values as set up by the 
+         customizer  mapped to property names defined in the manifest, as well as utility functions.
+       * @param notifyOutputChanged A callback method to alert the framework that the control has new outputs ready to be retrieved 
+         asynchronously.
+       * @param state A piece of data that persists in one session for a single user. Can be set at any point in a controls life 
+         cycle  by calling 'setControlState' in the Mode interface.
+       */
         public init(
         context: ComponentFramework.Context<IInputs>,
         notifyOutputChanged: () => void,
