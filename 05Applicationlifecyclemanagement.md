@@ -1,4 +1,4 @@
-# Lab 05 - Application lifecycle management
+# Lab 04 - Application lifecycle management
 
 ## Estimated Duration: 90 minutes
 
