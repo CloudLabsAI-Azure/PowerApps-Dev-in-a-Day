@@ -1,6 +1,6 @@
 # Lab 02 - Build a code component
 
-## Estimated Duration: 90 mins
+## Estimated Duration: 90 minutes
 
 Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
 a code component using the React JavaScript framework. A code component approach is used to
