@@ -1,6 +1,6 @@
 # Lab 05 - Application lifecycle management
 
-## Estimated Duration: 95 mins
+## Estimated Duration: 90 minutes
 
 Working as part of the PrioritZ fusion team you will be configuring GitHub Actions using the Power
 Platform Build Tools to automate the team’s deployments.
