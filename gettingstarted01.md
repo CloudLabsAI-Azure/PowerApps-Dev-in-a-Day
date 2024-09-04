@@ -1,6 +1,6 @@
 # Low Code for Pro-Dev in a Day
 
-## Overall Estimated Duration: 8 Hours
+## Overall Estimated Duration: 6 Hours
 
 ## Overview
 
@@ -31,7 +31,7 @@ Learn to import and customize Power Platform solutions, create custom code compo
 
  ## Architecture Diagram
 
- ![](./images/image1.JPG)
+ ![](./images/low_code_in_a_day_Architecture_diagram.JPG)
 
  ## Explanation of Components
 
