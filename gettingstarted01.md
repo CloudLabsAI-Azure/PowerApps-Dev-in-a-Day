@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this series of labs, you will gain hands-on experience with various aspects of the Power Platform, from importing and running starting solutions to building and using custom code components. You will create and modify custom connectors, integrate Azure Functions, and promote solutions across environments. Each lab builds foundational skills, such as creating Power Apps components, setting up custom connectors, implementing Azure Functions, and managing solutions with GitHub. By following detailed instructions and visual aids, you will learn to effectively develop, test, and deploy robust Power Platform solutions, ensuring a comprehensive understanding of the platform's capabilities and best practices.
+In this series of labs, you will gain hands-on experience with various aspects of the Power Platform, from importing and running starting solutions to building and using custom code components. You will create and modify custom connectors, integrate Azure Functions, and promote solutions across environments. Each lab builds foundational skills, such as creating Power Apps components, setting up custom connectors, and managing solutions with GitHub. By following detailed instructions and visual aids, you will learn to effectively develop, test, and deploy robust Power Platform solutions, ensuring a comprehensive understanding of the platform's capabilities and best practices.
 
 ## Objective
 
@@ -15,7 +15,6 @@ Learn to import and customize Power Platform solutions, create custom code compo
  - **Getting started with Powerapps** : Learn to import a starting solution, add a new column, update the admin app, and test the Power Platform CLI.
  - **Build a code component** : Create a code component, implement its logic, integrate it into a canvas app, and add it to a solution.
  - **Custom connector for existing API** : Create, modify, and test a custom connector using an Open API definition, and integrate it with canvas apps and flows.
- - **Azure Function** : Create, implement, and publish an Azure Function, then create a connector and test it within a canvas app.
  - **Application lifecycle management** : Promote a solution to a test environment, configure a service principal, manage with GitHub, and set up a workflow for release.
 
 ## Prerequisites
