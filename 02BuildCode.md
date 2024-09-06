@@ -303,6 +303,7 @@ In this exercise, you will build the code component.
 22. After completing all the steps, your `index.ts` file should contain the following code.
 
     ```
+    
     import { IInputs, IOutputs } from "./generated/ManifestTypes";
     import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
     import * as React from "react";
