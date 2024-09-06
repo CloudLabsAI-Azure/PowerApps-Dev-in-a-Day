@@ -14,34 +14,11 @@ environment.
 
 ## Lab Objective
 
-1. Exercise 1 – Create Azure Function 
-
-   - Task 1: Install Azure tools extension 
-
-   - Task 2: Create function 
-
-2. Exercise 2 - Function implementation 
-
-   - Task 1: Implement function 
-
-3. Exercise 3 – Publish to Azure 
-
-   - Task 1: Publish 
-
-   - Task 2: Register Connector Client app 
-
-4. Exercise 4 – Create Connector 
-
-   - Task 1: Create connector 
-
-   - Task 2: Test connector 
-
-5. Exercise 5 – Use Function from Canvas App 
-
-   - Task 1: Use function 
-
-   - Task 2: Test application 
-
+- Exercise 1: Create Azure Function 
+- Exercise 2: Function implementation 
+- Exercise 3: Publish to Azure 
+- Exercise 4: Create Connector 
+- Exercise 5: Use Function from Canvas App 
 
 ## Exercise 1 – Create Azure Function
 

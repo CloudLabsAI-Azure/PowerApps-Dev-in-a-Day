@@ -2,30 +2,14 @@
 
 ## Estimated Duration: 90 minutes
 
-Working as part of the PrioritZ fusion team you will be configuring GitHub Actions using the Power
-Platform Build Tools to automate the team’s deployments.
+Working as part of the PrioritZ fusion team, you will be configuring GitHub Actions with the Power Platform Build Tools to automate and streamline the team’s deployments. This involves setting up continuous integration and continuous deployment (CI/CD) pipelines to ensure seamless and efficient delivery of updates to Power Platform applications, while also managing version control, testing, and deployment processes to enhance collaboration and maintain high-quality standards across the team’s projects.
 
 Lab Objectives 
 
-1. Exercise 1 – Configure a Service Principal 
-
-   - Task 1: Create app registration
-
-   - Task 2: Create a new Dataverse
-
-   - Task 3: Create an app user in Dataverse 
-
-3. Exercise 2 – Create GitHub Repo 
-
-   - Task 1: Create repository 
-
-4. Exercise 3 – Export and Branch 
-
-   - Task 1: Export and branch 
-
-5. Exercise 4 – Release to Test 
-
-   - Task 1: Create workflow
+- Exercise 1: Configure a Service Principal 
+- Exercise 2: Create GitHub Repo 
+- Exercise 3: Export and Branch 
+- Exercise 4: Release to Test 
 
 ## Exercise 1 – Configure a Service Principal
 
@@ -428,5 +412,3 @@ exported to the test environment.
 In this lab, you learned to promote a solution to a test environment, configure a service principal, and manage your solution using GitHub for version control and workflow automation.
 
 ## You have successfully completed the lab
-
-## Click on Next >> to procced with next lab.
