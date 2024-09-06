@@ -20,12 +20,8 @@
         "Order": 4
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/04AzureFunction.md",
-        "Order": 5
-      },
-      {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/05Applicationlifecyclemanagement.md",
-        "Order": 6
+        "Order": 5
       }
     ]
   }
