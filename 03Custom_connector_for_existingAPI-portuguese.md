@@ -274,7 +274,7 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
 
     ![](images/L03/L03-EX3.1.png)
 
-6. Introduza as seguintes informações para adicionar a ação **Obter o crachá **.
+6. Introduza as seguintes informações para adicionar a ação **Obter o crachá**.
 
     1. Resumo: **Obter o emblema atual**
     2. Descrição: **Obter o crachá de corrente (2)**
@@ -459,7 +459,7 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 
 1. Certifique-se de que ainda está na solução **PrioritZ**.
 
-2. Clique em **+ Novo ** e seleccione **Automação | Fluxo de nuvens | Instante**.
+2. Clique em **+ Novo** e seleccione **Automação | Fluxo de nuvens | Instante**.
 
     ![](images/L03/image48.png)
 
@@ -471,7 +471,7 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 
     ![](images/L03/L03-EX3-T2.png)
 
-5. Selecione o separador ** Personalizado** e, em seguida, selecione a ação **Adicionar crédito**.
+5. Selecione o separador **Personalizado** e, em seguida, selecione a ação **Adicionar crédito**.
 
     ![](images/L03/edd%20(2).png)
 
