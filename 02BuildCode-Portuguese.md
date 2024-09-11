@@ -473,7 +473,7 @@ Neste exercício, você irá construir o componente de código.
 
     > **Nota**:
 
-    1. Se a operação de push falhar com o erro **`Desculpe, a aplicação encontrou um erro não recuperável e precisará de terminar`**, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente em ** Ficheiros de manifesto e índice**.
+    1. Se a operação de push falhar com o erro **Desculpe, a aplicação encontrou um erro não recuperável e precisará de terminar**, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente em **Ficheiros de manifesto e índice**.
 
        Além disso, pode encontrar os ficheiros **Manifest e Index** na localização `C:\LabFiles`, pode comparar o seu código com estes ficheiros e corrigir os problemas se houver alguma tentativa de empurrar o componente executando o * *pac push comando** novamente.
 
@@ -554,7 +554,7 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
     ![](images/L02/image38u.png)
 
-1. Selecione o separador Código (1)**, selecione o componente de código **(2)** que criou e clique em **Importar (3)**.
+1. Selecione o **separador Código (1)**, selecione o componente de código **(2)** que criou e clique em **Importar (3)**.
 
     ![](images/L02/L02-codeuu.png)
 
@@ -600,7 +600,7 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
 16. Clique em **+ Adicionar campo** para adicionar um novo campo.
 
-17. Selecione ** Classificação (1)** e clique em **Adicionar (2)**.
+17. Selecione **Classificação (1)** e clique em **Adicionar (2)**.
 
     ![](images/L02/image44.1uu.png)
 
@@ -707,8 +707,7 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
     ![](images/L02/publish.png)
 
 38. Selecione **Publique esta versão** e aguarde que a publicação seja concluída.
-39. Pode ** fechar** o estúdio de aplicações em tela.
-
+39. Pode **fechar** o estúdio de aplicações em tela.
 
 ## Exercício 3 – Adicionar Componente de Código à Solução
 
