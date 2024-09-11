@@ -86,7 +86,7 @@ Sinta-se à vontade para iniciar, parar ou reiniciar a sua máquina virtual conf
 
 5. Se vir o pop-up **Tem recomendações gratuitas do Azure Advisor!**, feche a janela para continuar o laboratório.
 
-6. Se aparecer uma janela pop-up **Bem-vindo à Microsoft Azure, clique em **Talvez mais tarde** saltar o tour.
+6. Se aparecer uma janela pop-up **Bem-vindo à Microsoft Azure**, clique em **Talvez mais tarde** saltar o tour.
 
 7. Agora, clique no **Próximo** do canto inferior direito para se deslocar para a página seguinte.
 
@@ -163,7 +163,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    ![](images/L01/connection.png)
 
-1. Clique em **Criar** numa janela de browser recém-aberta e **Inscreva-se se for solicitado.
+1. Clique em **Criar** numa janela de browser recém-aberta e **Inscreva-se se for solicitado**.
 
    ![](images/L01/create.png)
 
@@ -405,7 +405,7 @@ aplicação.
 
     ![](images/L01/image27.png)
 
-6. Deixe o controlo da image adicionar mais pequeno, se necessário, e mova a caixa de texto **Respond By e etiqueta a caixa de texto **e coloque a caixa de texto **Notas **entre o controlo de Detalhes e o Responda pelo rótulo.
+6. Deixe o controlo da image adicionar mais pequeno, se necessário, e mova a caixa de texto **Respond By e etiqueta a caixa de texto** e coloque a caixa de texto **Notas** entre o controlo de Detalhes e o Responda pelo rótulo.
 
     ![](images/L01/image28.png)
 
@@ -545,7 +545,7 @@ Neste exercício, irá rever e testar a extensão CLI da plataforma Power no Vis
 
 2. Clique para abrir o seu ambiente de desenvolvimento chamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
-3. Clique com o botão direito do rato no valor ** URL ** Ambiente e cole o valor no Notepad.
+3. Clique com o botão direito do rato no valor **URL** Ambiente e cole o valor no Notepad.
 
    >**Nota**: Certifique-se de que o valor do URL do ambiente é copiado juntamente com o **https**. O seu valor copiado deve ficar assi `https://orgxxxxxx.crm.dynamics.com/`
 
