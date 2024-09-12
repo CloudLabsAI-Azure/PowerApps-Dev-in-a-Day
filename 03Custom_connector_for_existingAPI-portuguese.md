@@ -301,7 +301,7 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
 
     ![](images/L03/image29-1.png)
 
-12. Selecione o ficheiro **CustomConnectorCode.csx** localizado neste caminho `C:\LabFiles\Developer-in-ay\Student\L03 - Conector personalizado para a API\Resources` existente` e clique em **Open**.
+12. Selecione o ficheiro **CustomConnectorCode.csx** localizado neste caminho `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` existente` e clique em **Open**.
 13. Selecione a ação **getcurrentbadge** no menu suspenso.
 
     ![](images/L03/image30.png)

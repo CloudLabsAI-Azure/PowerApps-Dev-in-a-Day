@@ -59,7 +59,7 @@ Neste exercício, instala a extensão de ferramentas Azure para o Visual Studio 
 
     ![](images/L04/vscode4.png)
 
-1. Clique no **símbolo(1)** na image, na secção **Workspace**, clique em **Criar Função (2)** e clique em **Criar Novo Projeto**.
+1. Clique no **símbolo (1)** na image, na secção **Workspace**, clique em **Criar Função (2)** e clique em **Criar Novo Projeto**.
 
     ![](images/L04/functionu.png)
 
