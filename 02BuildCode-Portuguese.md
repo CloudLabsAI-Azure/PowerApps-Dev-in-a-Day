@@ -69,6 +69,7 @@ Neste exercício, você irá construir o componente de código.
     ![](images/L02/image4.png)
 
 8. Execute o comando abaixo para abrir o projeto.
+    
     ```
     code -a.
     ```
@@ -140,8 +141,8 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image13.png)
 
- 21. Refira o novo ficheiro **PrioritZDnDranking.css**
- 22. Cole o seguinte CSS no ficheiro **PrioritZDnDRAnking.css**.
+21. Refira o novo ficheiro **PrioritZDnDranking.css**
+22. Cole o seguinte CSS no ficheiro **PrioritZDnDRAnking.css**.
 
         ```
         .prioritydnd-scroll-contentor {
@@ -190,7 +191,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image17.png)
 
- 8. Execute o seguinte comando numa janela de terminal para adicionar uma referência a react-beautiful-dnd.
+8. Execute o seguinte comando numa janela de terminal para adicionar uma referência a react-beautiful-dnd.
 
     ```
     npm instalar reage-beautiful-dnd
@@ -221,7 +222,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image18.png)
 
- 13. Adicione o código abaixo ao ficheiro **index.ts** após **linha número 1**. Isto fará referência ao PriorityComponent.
+13. Adicione o código abaixo ao ficheiro **index.ts** após **linha número 1**. Isto fará referência ao PriorityComponent.
 
      ```
      import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
@@ -230,11 +231,11 @@ Neste exercício, você irá construir o componente de código.
      ![](images/L02/image19.png)
 
 
- 15. Localize a classe **Export** na **linha número 7**.
+15. Localize a classe **Export** na **linha número 7**.
 
      ![](images/L02/image20.png)
 
- 16. Adicione o seguinte código abaixo dentro da classe **export**. Isto define algumas variáveis ​​de trabalho que
+16. Adicione o seguinte código abaixo dentro da classe **export**. Isto define algumas variáveis ​​de trabalho que
  estará a utilizar na lógica da classe.
 
      ```
@@ -245,12 +246,11 @@ Neste exercício, você irá construir o componente de código.
             
      ![](images/L02/image21.png)
 
-
- 17. Localize a função **init**.
+17. Localize a função **init**.
 
      ![](images/L02/init.png)
 
- 18. Cole o código abaixo dentro da função **init**. Esta lógica inicializa as nossas variáveis ​​de classe do
+18. Cole o código abaixo dentro da função **init**. Esta lógica inicializa as nossas variáveis ​​de classe do
  valores de tempo de execução e permite a notificação de redimensionamento.
 
      ![](images/L02/init1.png)
@@ -264,8 +264,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/imageUpdateView.png)
 
-20. Substitua a função **updateView** pela função abaixo. Esta lógica cria o Elemento React
- do PriorityComponent e adiciona-o ao DOM virtual.
+20. Substitua a função **updateView** pela função abaixo. Esta lógica cria o Elemento React do PriorityComponent e adiciona-o ao DOM virtual.
 
     ```
     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
@@ -441,11 +440,11 @@ Neste exercício, você irá construir o componente de código.
 
     > **Nota**: Se a operação de compilação falhar com este erro **`Root element está em falta`**, certifique-se de que o **resx path** é comentado no ficheiro Manifest.Xml e tente construir o componente novamente.
 
- 29. A construção deve ter sucesso. Se algum erro, resolva-os antes de prosseguir.
+29. A construção deve ter sucesso. Se algum erro, resolva-os antes de prosseguir.
 
      ![](images/L02/image28.png)
 
- 30. Execute o comando abaixo para iniciar o chicote de teste.
+30. Execute o comando abaixo para iniciar o chicote de teste.
 
         ```
         npm arranque
@@ -499,7 +498,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image32u.png)
 
- 3. Confirme que o controlo personalizado está nesta solução.
+3. Confirme que o controlo personalizado está nesta solução.
 
     ![](images/L02/image33u.png)
 
@@ -527,7 +526,7 @@ Nesta tarefa, permitirá a publicação de aplicações em tela com componentes 
 
     ![](images/L02/featureu.png)
 
- 5. Adicione **Permitir publicação de aplicações de tela com componentes de código** e deslize para baixo clique **Guardar**.
+5. Adicione **Permitir publicação de aplicações de tela com componentes de código** e deslize para baixo clique **Guardar**.
 
     ![](images/L02/image35.2u.png)
 
@@ -610,7 +609,7 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
     ![](images/L02/image46.png)
 
- 20. A classificação deve agora classificar ascendente.
+20. A classificação deve agora classificar ascendente.
 
 21. Selecione o **Pcomponente rioritZDnDRAnking** e depois **X** propriedade do menu suspenso da propriedade.
 
@@ -726,11 +725,11 @@ Neste exercício, irá adicionar o componente de código que criou à solução 
 
     ![](images/L02/image50.1.png)
 
- 4. Selecione **contoso_ContosoCoffee.PrioritZDnDranking (1)** e clique em **Adicionar (2)**.
+4. Selecione **contoso_ContosoCoffee.PrioritZDnDranking (1)** e clique em **Adicionar (2)**.
 
     ![](images/L02/image51.1.png)
 
- 5. Clique em **Publique todas as personalizações** e aguarde que a publicação seja concluída.
+5. Clique em **Publique todas as personalizações** e aguarde que a publicação seja concluída.
 
     ![](images/L02/L02-EX3.png)
 
