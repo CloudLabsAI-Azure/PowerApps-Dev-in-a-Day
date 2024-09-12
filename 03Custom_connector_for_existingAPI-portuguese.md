@@ -78,7 +78,7 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 1. Navegue até ao URL abaixo para abrir a API de crachás de café Contoso.
 
     ```
-    https://contosobadgest.azurewebsites.net/
+    https://contosobadgestest.azurewebsites.net/
     ```
 
 3. Clique no **Abrir ficheiro de definição da API**.
@@ -200,7 +200,7 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 1. Abra um novo aba ou janela do navegador e navegue até ao URL abaixo para abrir a API Contoso Coffee Badges.
 
     ```
-    https://contosobadgest.azurewebsites.net/
+    https://contosobadgestest.azurewebsites.net/
     ```
 
 2. Clique no link **API Key**
@@ -290,7 +290,7 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
 8. Selecione **Obter (1)** para o Verbo, introduza o valor abaixo para **URL (2)** e clique em **Import (3)**.
     
     ```
-    https://contosobadgest.azurewebsites.net/getcurrentbadge?id={id}
+    https://contosobadgestest.azurewebsites.net/getcurrentbadge?id={id} 
     ```
 
     ![](images/L03/image28-1.png)
@@ -313,7 +313,6 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
 18. Forneça o seu endereço de e-mail como id e clique em **Operação de teste**.
 
     ![](images/L03/image31-1.png)
-
 
 19. O teste deve ter sucesso e deve obter um crachá atual para o utilizador que criou.
 
@@ -390,7 +389,7 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 7. Abra um novo separador ou janela do navegador e navegue até ao URL abaixo para abrir a API Contoso Coffee Badge.
 
     ```
-    https://contosobadgest.azurewebsites.net/
+    https://contosobadgestest.azurewebsites.net/
     ```
 
 8. Clique no link **abre a API Key**
@@ -418,7 +417,7 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 14. Defina o crachá do utilizador **image** valor para a fórmula abaixo.
 
     ```
-    ContosoBadges.getcurrentbadge({id:User(). Email}). image
+    ContosoBadges.getcurrentbadge({id:User().Email}).image
     ```
 
     ![](images/L03/image45u.png)
@@ -426,7 +425,7 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 15. Defina o valor da dica de ferramenta do crachá do utilizador na fórmula abaixo.
 
     ```
-    ContosoBadges.getcurrentbadge({id:User(). Email}). nome
+    ContosoBadges.getcurrentbadge({id:User().Email}).name
     ```
 
     ![](images/L03/L03-EX4-T1u.png)
@@ -596,7 +595,7 @@ ambiente e importá-lo para o ambiente de teste.
 6. Inicie uma nova janela ou aba do browser e navegue até ao URL abaixo para abrir a API Contoso Coffee Badges.
 
     ```
-    https://contosobadgest.azurewebsites.net/
+    https://contosobadgestest.azurewebsites.net/
     ```
 
 7. Clique no link **Obter uma chave API**.

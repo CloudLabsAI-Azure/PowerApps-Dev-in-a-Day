@@ -49,7 +49,7 @@ Neste exercício, instala a extensão de ferramentas Azure para o Visual Studio 
 7. Execute o comando abaixo no terminal para criar uma nova pasta.
  
     ```
-    md ContosoFunções
+    md ContosoFunctions
     ```
     ![](images/L04/image%20(4).png)
 
@@ -132,28 +132,29 @@ Neste exercício, irá implementar a função.
  da aplicação de energia.
 
     ```
-    utilizando o sistema;
-    utilizando o Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
-    utilizando o Microsoft.OpenApi.Models;
+    using System;
+    using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
+    using Microsoft.OpenApi.Models;
     namespace Contoso.PrioritZ
     {
-    classe pública TopicItemModel
+    public class TopicItemModel
     {
-    public string Choice { get; conjunto; }
-    public string Foto { get; conjunto; }
+    public string Choice { get; set; }
+    public string Photo { get; set; }
     }
-    classe pública TopicModel
+    public class TopicModel
     {
-    [OpenApiProperty(nulable = false, Descrição = "Este é um tópico")]
-    public string Tópico {get; conjunto; }
-    public string Detalhes { get; conjunto; }
-    public DateTime RespondBy { get; conjunto; }
-    public string MyNotes { get; conjunto; }
-    public string Foto { get; conjunto; }
-    public TopicItemModel[] Escolhas {get;set;}
+    [OpenApiProperty(Nullable = false, Description = "This is a topic")]
+    public string Topic { get; set; }
+    public string Details { get; set; }
+    public DateTime RespondBy { get; set; }
+    public string MyNotes { get; set; }
+    public string Photo { get; set; }
+    public TopicItemModel[] Choices {get;set;}
     }
     }
     ```
+
     Depois de adicionar o código, o seu **Model.cs** parecerá a captura de ecrã abaixo:
 
     ![](images/L04/vscode14.png)
@@ -164,10 +165,10 @@ Neste exercício, irá implementar a função.
 
 
     ```
-    [Nome de Função("CreateTopic")]
-    [OpenApiOperation(operationId: "CreateTopic", tags: new[] { "name" }, Summary = "Create Topic", Descrição = "Criação de Tópico", Visibilidade = OpenApiVisbilityType.Important)]
+    [FunctionName("CreateTopic")]
+    [OpenApiOperation(operationId: "CreateTopic", tags: new[] { "name" }, Summary = "Create Topic", Description = "Create Topic", Visibility = OpenApiVisibilityType.Important)]
     [OpenApiSecurity("function_key", SecuritySchemeType.ApiKey, Name = "code", In = OpenApiSecurityLocationType.Query)]
-    [OpenApiResponseWithBody(statusCode: HttpStatusCode. OK, contentType: "application/json", bodyType: typeof(Guid), Descrição = "The Guid response")]
+    [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(Guid), Description = "The Guid response")]
     [OpenApiRequestBody(contentType: "application/json", bodyType: typeof(TopicModel))]
     ```
 
@@ -184,7 +185,7 @@ Neste exercício, irá implementar a função.
 8. Execute o comando abaixo no terminal para adicionar o pacote **Power Platform Dataverse Client**.
 
     ```
-    dotnet adicionar pacote Microsoft.PowerPlatform.Dataverse.Client
+    dotnet add package Microsoft.PowerPlatform.Dataverse.Client
     ```
 
     ![](images/L04/image%20(17).png)
@@ -192,7 +193,7 @@ Neste exercício, irá implementar a função.
 9. Aguarde que o pacote seja adicionado e execute o comando abaixo para adicionar o pacote **Azure Identity**.
 
     ```
-    dotnet adicionar pacote Azure.Identidade
+    dotnet add package Azure.Identity
     ```
 
 10. Aguarde o pacote **Azure Identity** a adicionar.
@@ -200,13 +201,13 @@ Neste exercício, irá implementar a função.
 11. Abra o ficheiro **CreateTopic** e adicione as instruções abaixo após a linha número 11.
 
     ```
-    utilizando o sistema;
-    utilizando o Microsoft.Identy.Client;
-    usando o Azure.Core;
-    usando o Azure.Identidade;
-    utilizando o Microsoft.PowerPlatform.Dataverse.Client;
-    utilizando o Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums;
-    utilizando o Microsoft.Xrm.Sdk;
+    using System;
+    using Microsoft.Identity.Client;
+    using Azure.Core;
+    using Azure.Identity;
+    using Microsoft.PowerPlatform.Dataverse.Client;
+    using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Enums;
+    using Microsoft.Xrm.Sdk;
     ```
 
     ![](images/L04/vscode15.png)
@@ -214,53 +215,52 @@ Neste exercício, irá implementar a função.
 12. Adicione o método abaixo após o método **Run**. Este método utilizará o token passado do aplicação de chamadas para obter um novo token que permita que a função utilize a API Dataverse em nome de o utilizador chamada.
 
     ```
-    public static async Task<string> GetAccessTokenAsync(HttpRequest req,string recursoUri)
+    public static async Task<string> GetAccessTokenAsync(HttpRequest req,string resourceUri)
     {
-    //Obtenha o token do utilizador de chamada a partir do pedido para utilizar como UserAssertion
+    //Get the calling user token from the request to use as UserAssertion
     var headers = req.Headers;
-    var token = string. Vazio;
-    if (headers.TryGetValue("Autorização", out var authHeader))
+    var token = string.Empty;
+    if (headers.TryGetValue("Authorization", out var authHeader))
     {
-    if (authHeader[0]. StartsWith("Bearer"))
+    if (authHeader[0].StartsWith("Bearer "))
     {
     token = authHeader[0].Substring(7, authHeader[0].Length -
     7);
     }
     }
-    string[] escopos = new[] {$"{resourceUri}/.default" };
-    string clientSecret = Environment. GetEnvironmentVarable("ClientSecret");
-    string clientId = Ambiente. GetEnvironmentVarable("ClientID");
-    string tennantId = Ambiente. GetEnvironmentVarable("TenantID");
-    var app = ConfidencialClientApplicationBuilder. Create(clientId)
+    string[] scopes = new[] {$"{resourceUri}/.default" };
+    string clientSecret = Environment.GetEnvironmentVariable("ClientSecret");
+    string clientId = Environment.GetEnvironmentVariable("ClientID");
+    string tenantId = Environment.GetEnvironmentVariable("TenantID");
+    var app = ConfidentialClientApplicationBuilder.Create(clientId)
     .WithClientSecret(clientSecret)
-    .WithAuthority($"https://login.microsoftonline.com/{tennantId}")
-    .Construir();
-    //Obtenha-se em nome do token para ligar para o utilizador
-    UserAssertion userAssertion = new UserAsertion(token);
-    var result = await app.AcquireTokenOnBehalfOf(scópios,
+    .WithAuthority($"https://login.microsoftonline.com/{tenantId}")
+    .Build();
+    //Get On Behalf Of Token for calling user
+    UserAssertion userAssertion = new UserAssertion(token);
+    var result = await app.AcquireTokenOnBehalfOf(scopes,
     userAssertion).ExecuteAsync();
 
-    resultado de retorno.AccessToken;
+    return result.AccessToken;
     }
-
     ```
 
     ![](images/L04/vscode16.png)
 
 13. Substitua o código dentro do método **Run** pelo código abaixo. Isto fornecerá uma instância do API Dataverse e utilize a função GetAccessToken que acabamos de definir.
 
-    ```
-    _logger.LogInformation("Começar o tópico Criar");
+    ```    
+    _logger.LogInformation("Starting Create Topic");
     var serviceClient = new ServiceClient(
-    instânciaUrl: new Uri(Environment. GetEnvironmentVarable("DataverseUrl")),
+    instanceUrl: new Uri(Environment.GetEnvironmentVariable("DataverseUrl")),
     tokenProviderFunction: async uri => { return await
-    GetAccessTokenAsync(req, Environment. GetEnvironmentVariable("DataverseUrl"));
+    GetAccessTokenAsync(req, Environment.GetEnvironmentVariable("DataverseUrl"));
     },
     useUniqueInstance: true,
     logger: _logger);
     if (!serviceClient.IsReady)
     {
-    lançar novo Exceção("Autenticação Falha!");
+    throw new Exception("Authentication Failed!");
     }
     ```
 
@@ -272,6 +272,7 @@ Neste exercício, irá implementar a função.
     string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
     var data = JsonConvert.DeserializeObject<TopicModel>(requestBody);
     ```
+
     ![](images/L04/vscode18.png)
 
 15. Adicione o código abaixo que cria a linha ao método **Run** após o código que adicionou no passo anterior para **reserializar o pedido**. Este código cria as linhas em Dataverse é onde podemos adicionar mais lógica no futuro.
@@ -279,30 +280,29 @@ Neste exercício, irá implementar a função.
     ```
     var ask = new Entity("contoso_prioritztopic");
     ask["contoso_topic"] = data.Topic;
-    ask["contoso_details"] = data.Detalhes;
-    pergunta["contoso_mynotes"] = data.MyNotes;
+    ask["contoso_details"] = data.Details;
+    ask["contoso_mynotes"] = data.MyNotes;
     ask["contoso_respondby"] = data.RespondBy.Date;
-    if (dados.Foto ! = nulo)
+    if (data.Photo != null)
     {
-    // Remover citações duplas desnecessárias,
-    // Remova tudo antes da primeira vírgula (coisas incorporadas)
-    ask["contoso_photo"] = Convert.FromBase64String(data. Photo.Trim('\"').Split(',')[1]);
+    // Remove unnecessary double quotes,
+    // Remove everything before the first comma (embedded stuff)
+    ask["contoso_photo"] = Convert.FromBase64String(data.Photo.Trim('\"').Split(',')[1]);
     }
-    var tópicoId = await serviceClient.CreateAsync(ask);
-    foreach (escolha var aos dados. Escolhas)
+    var topicId = await serviceClient.CreateAsync(ask);
+    foreach (var choice in data.Choices)
     {
     var item = new Entity("contoso_prioritztopicitem");
-    item["contoso_choice"] = escolha. Escolha;
-    item["contoso_prioritztopic"] = novo
-    EntityReference("contoso_prioritztopic", tópicoId);
-    if (choice.Foto ! = nulo)
+    item["contoso_choice"] = choice.Choice;
+    item["contoso_prioritztopic"] = new
+    EntityReference("contoso_prioritztopic", topicId);
+    if (choice.Photo != null)
     {
     item["contoso_photo"] =
-    Converter.FromBase64String(choice. Photo.Trim('\"').Split(',')[1]);
+    Convert.FromBase64String(choice.Photo.Trim('\"').Split(',')[1]);
     }
-    var escolhaId = await serviceClient. CreateAsync(item);
+    var choiceId = await serviceClient.CreateAsync(item);
     }
-
     ```
 
     ![](images/L04/vscode19.png)
@@ -526,10 +526,10 @@ Neste exercício, irá implementar a função no Azure.
  bloco de notas.
 
     ```
-    https://login.microsoftonline.com/{tennant-id}/adminconsent?client_id={api app id}
+    https://login.microsoftonline.com/{tenant-id}/adminconsent?client_id={api app id}
     ```
 
-    Depois de atualizar os valores, o seu URL deve ficar assim: `https://login.microsoftonline.com/2140cxxxxxxx/adminconsent?client_id=195b2axxxxxx`
+    Depois de atualizar os valores, o seu URL deve ficar assim: `https://login.microsoftonline.com/2140cxxxxxxx/adminconsent?client_id=195b2axxxxxxx`
 
 45. Após atualizar os valores, navegue até ao URL num separador de browser e inscreva-se com as credenciais abaixo.
 
@@ -690,17 +690,18 @@ Neste exercício, criará um novo conector personalizado.
 
     ```
     {
-    "tópico": "Topico de Teste",
-    "detalhes": "Da função Azure",
-    "respondeBy": "2022-11-01",
-    "myNotes": "Fominou",
-    "escolhas": [
+    "topic": "Test Topic",
+    "details": "From Azure Function",
+    "respondBy": "2022-11-01",
+    "myNotes": "It worked",
+    "choices": [
     {
-    "escolha": "Escolha 1"
+    "choice": "Choice 1"
     }
     ]
     }
     ```
+    
     ![](images/L04/diad4l24.png)
 
 11. O teste de operação deve ter sucesso e a resposta deve parecer a image abaixo.
@@ -746,19 +747,19 @@ Aplicação em tela de administrador.
 
     ![](images/L04/image%20(72).png)
 
-    ```
-    Recolher(
+    ```    
+    Collect(
     colAddChoices,
     {
-    escolha: 'Escolha o nome de textbox'. Texto,
+    choice: 'Choice name textbox'.Text,
     photoRaw: UploadedImage1.Image,
-    foto: JSON(
-    UploadedImage1.image,
+    photo: JSON(
+    UploadedImage1.Image,
     JSONFormat.IncludeBinaryData
     )
     }
     );
-    Reset('Escolha na caixa de texto do nome');
+    Reset('Choice name textbox');
     Reset(AddMediaButton2)
     ```
 
@@ -770,17 +771,17 @@ Aplicação em tela de administrador.
 
     ![](images/L04/image%20(74).png)
 
-    ```
-    Set(returnGuid, PrioritZFunction. CreateTopic({
-    tópico: 'Nome do tópico caixa de texto'. Texto,
-    detalhes: 'Caixa de texto de detalhes tópico'. Texto,
-    responder: 'respond by data selecker'.SelectedDate,
-    myNotes: 'Notes textbox'.Texto,
-    foto: JSON(AddTopicImage.Image, JSONFormat.IncludeBinaryData),
-    escolhas: ShowColumns(colAddChoices, "choice", "foto")
+    ```    
+    Set(returnGuid, PrioritZFunction.CreateTopic({
+    topic: 'Topic name textbox'.Text,
+    details: 'Topic details textbox'.Text,
+    respondBy: 'respond by date picker'.SelectedDate,
+    myNotes: 'Notes textbox'.Text,
+    photo: JSON(AddTopicImage.Image, JSONFormat.IncludeBinaryData),
+    choices: ShowColumns(colAddChoices, "choice", "photo")
     }));
-    Notificar("Topic criado!" & returnGuid, NotificationType.Success, 5000);
-    Costas();
+    Notify("Topic created! " & returnGuid, NotificationType.Success, 5000);
+    Back();
     ```
 
 12. Clique em **Guardar**.

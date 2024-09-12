@@ -144,23 +144,23 @@ Neste exercício, você irá construir o componente de código.
 21. Refira o novo ficheiro **PrioritZDnDranking.css**
 22. Cole o seguinte CSS no ficheiro **PrioritZDnDRAnking.css**.
 
-        ```
-        .prioritydnd-scroll-container {
-        box-sizing: border-box;
-        padding: 2px;
-        overflow-y: auto;
-        overflow-x: hidden;
-        position: relative;
-        }
-        .prioritydnd-item-container {
-        user-select: none;
-        display: flex;
-        align-items: center;
-        }
-        .prioritydnd-item-column {
-        margin: 8px;
-        }
-        ```
+    ```
+    .prioritydnd-scroll-container {
+    box-sizing: border-box;
+    padding: 2px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    }
+    .prioritydnd-item-container {
+    user-select: none;
+    display: flex;
+    align-items: center;
+    }
+    .prioritydnd-item-column {
+    margin: 8px;
+    }
+    ```
 23. O ficheiro deve agora parecer-se com o seguinte.
 
     ![](images/L02/image14.png)
@@ -448,9 +448,9 @@ Neste exercício, você irá construir o componente de código.
 
 30. Execute o comando abaixo para iniciar o chicote de teste.
 
-        ```
-        npm start
-        ```
+    ```
+    npm start
+    ```
 
 31. O chicote de teste deve iniciar, se não, copiar o endereço e colar-o numa nova janela do browser. Experimente arrastar os itens e ver se o comportamento funciona como esperado.
 

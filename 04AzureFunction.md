@@ -243,7 +243,6 @@ In this exercise, you will implement the function.
 
       return result.AccessToken;
       }
-
      ```
 
     ![](images/L04/vscode16.png)
@@ -274,8 +273,8 @@ In this exercise, you will implement the function.
       ```
       string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
       var data = JsonConvert.DeserializeObject<TopicModel>(requestBody);
-
       ```
+
     ![](images/L04/vscode18.png)
 
 15. Add the below code that creates the row to the **Run** method after the code you added in the previous step to **reserialize the request**. This code creates the rows in
@@ -307,7 +306,6 @@ In this exercise, you will implement the function.
        }
        var choiceId = await serviceClient.CreateAsync(item);
       }
-
       ```
 
     ![](images/L04/vscode19.png)
