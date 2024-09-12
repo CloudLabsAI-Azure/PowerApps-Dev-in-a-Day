@@ -469,7 +469,7 @@ Neste exercício, irá implementar a função no Azure.
 
     - **Nome**: **ClientID (1)**
     
-    - **Value**: Colar o ** ID da aplicação API **PrioritZFL (2)** que notou anteriormente no bloco de notas.
+    - **Value**: Colar o **ID** da aplicação API **PrioritZFL (2)** que notou anteriormente no bloco de notas.
 
         ![](images/L04/vscode37u.png)
 
@@ -644,7 +644,7 @@ Neste exercício, criará um novo conector personalizado.
 
     ![](images/L04/diad4l18.png)
 
-1. Fornecer **PrioritZ<inject key="DeploymentID" activityCopy="false" /> Conector** ***(1)*** como descrição como e clique em **Segurança** ***(2)* **.
+1. Fornecer **PrioritZ<inject key="DeploymentID" activityCopy="false" /> Conector** ***(1)*** como descrição como e clique em **Segurança** ***(2)***.
 
     ![](images/L04/diad4l19.png)
 
@@ -764,7 +764,7 @@ Aplicação em tela de administrador.
 
 10. Selecione **Guardar ícone do tópico**.
 
-11. Substitua a fórmula **OnSelect** do ** Guardar o ícone do tópico** com a fórmula abaixo. Isto muda para
+11. Substitua a fórmula **OnSelect** do **Guardar o ícone do tópico** com a fórmula abaixo. Isto muda para
  fazer com que a API crie o “pergunte”.
 
 
@@ -805,7 +805,7 @@ Aplicação em tela de administrador.
 
 4. Navegue para este caminho **C:\LabFiles** no ficheiro explorador de ficheiros, seleccione **image.png** e clique em abrir.
 
-5. Introduza **Escolha de teste um ** para Escolha e clique em **adicionar uma image**.
+5. Introduza **Escolha de teste um** para Escolha e clique em **adicionar uma image**.
 6. Navegue para este caminho **C:\LabFiles** no ficheiro explorer, seleccione **image.png** e clique em **+**.
 
     ![](images/L04/image%20(77).png)
