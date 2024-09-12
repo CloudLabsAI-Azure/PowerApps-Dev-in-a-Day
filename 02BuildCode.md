@@ -303,7 +303,6 @@ In this exercise, you will build the code component.
 22. After completing all the steps, your `index.ts` file should contain the following code.
 
     ```
-    
     import { IInputs, IOutputs } from "./generated/ManifestTypes";
     import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
     import * as React from "react";
@@ -389,8 +388,8 @@ In this exercise, you will build the code component.
         this.context.parameters.items.setSelectedRecordIds([sourceId, destinationId]);
         };
         }
-    
     ```
+
 23. Open the **package.json** file.
     
 24. Locate the **dependencies** JSON object.
@@ -677,7 +676,6 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
         );
 
     );
-
     ```
 
 30. Select the **Home Screen** and click **Play**.

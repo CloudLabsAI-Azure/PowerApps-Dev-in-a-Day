@@ -102,11 +102,11 @@ Neste exercício, você irá construir o componente de código.
     > Adicione as seguintes propriedades após **linha número 26** no ficheiro **ControlManifest.Input.xml**.
 
     ```
-    <property name="BackgroundColor" display-name-key="Background cor" usage="input" of type="SingleLine.Text" default-value="#F3F2F1"/>
-    <property name="DragBackgroundColor" display-name-key="Drag background colo" usage="input" of type="SingleLine.Text" value="lightgreen"/>
-    <property name="ItemHeight" display-name-key="Item altura" usege="input" of type="Whole.None" default-value="32"/>
-    <property name="FontSize" display-name-key="Font size" usage="input" of type="Whole.None" default-value="12"/>
-    <property name="FontColor" display-name-key="Font cor" usage="input" of-type="SingleLine.Text" default-value="#333333"/>
+    <property name="BackgroundColor" display-name-key="Background color" usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
+    <property name="DragBackgroundColor" display-name-key="Drag background color" usage="input" of-type="SingleLine.Text" default-value="lightgreen"/>
+    <property name="ItemHeight" display-name-key="Item height" usage="input" of-type="Whole.None" default-value="32"/>
+    <property name="FontSize" display-name-key="Font size" usage="input" of-type="Whole.None" default-value="12"/>
+    <property name="FontColor" display-name-key="Font color" usage="input" of-type="SingleLine.Text" default-value="#333333"/>
     ```
 
     ![](images/L02/image9.png)
@@ -114,7 +114,7 @@ Neste exercício, você irá construir o componente de código.
 15. Localize a secção `<recursos>` e adicione o código abaixo após o **code path** para adicionar o recurso **css**. Isto garantirá que os nossos estilos serão agrupados com o componente de código quando este for implementado.
 
     ```
-    <css path="css/PrioritZDnDnanking.css" order="1" />
+    <css path="css/PrioritZDnDRanking.css" order="1" />
     ```
 
     ![](images/L02/image10.png)
@@ -125,8 +125,8 @@ Neste exercício, você irá construir o componente de código.
  bibliotecas. Isto é o resultado da especificação – framework React na inicialização.
         
      ```
-     <plataform-library name="React" version="16.8.6" />
-     <plataform-library name="Fluent" versão="8.29.0" />
+     <platform-library name="React" version="16.8.6" />
+     <platform-library name="Fluent" version="8.29.0" />
      ```
      
      ![](images/L02/image11.png)
@@ -145,20 +145,20 @@ Neste exercício, você irá construir o componente de código.
 22. Cole o seguinte CSS no ficheiro **PrioritZDnDRAnking.css**.
 
         ```
-        .prioritydnd-scroll-contentor {
-        tamanho de caixa: caixa de fronteira;
-        preenchimento: 2px;
+        .prioritydnd-scroll-container {
+        box-sizing: border-box;
+        padding: 2px;
         overflow-y: auto;
-        overflow-x: oculto;
-        posição: relativo;
+        overflow-x: hidden;
+        position: relative;
         }
-        .prioritydnd-item-contentor {
-        selecionar o utilizador: nenhum;
-        exibição: flex;
-        items de alinhamento: centro;
+        .prioritydnd-item-container {
+        user-select: none;
+        display: flex;
+        align-items: center;
         }
-        .prioritydnd-item-coluna {
-        margem: 8px;
+        .prioritydnd-item-column {
+        margin: 8px;
         }
         ```
 23. O ficheiro deve agora parecer-se com o seguinte.
@@ -194,8 +194,9 @@ Neste exercício, você irá construir o componente de código.
 8. Execute o seguinte comando numa janela de terminal para adicionar uma referência a react-beautiful-dnd.
 
     ```
-    npm instalar reage-beautiful-dnd
+    npm install react-beautiful-dnd
     ```
+
     >**Nota**: Se receber este erro **npm não for reconhecido**, execute os passos abaixo:
 
     1. Abra o PowerShell e execute este comando `choco install -y --force nodejs`.
@@ -217,7 +218,7 @@ Neste exercício, você irá construir o componente de código.
 12. Remova a seguinte linha (linha número 2 no ficheiro Index.ts), pois já não estamos a utilizar o HelloWorld
 
     ```
-    import {HelloWorld, IHelloWorldProps } from "./HelloWorld";
+    import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
     ```
 
     ![](images/L02/image18.png)
@@ -239,9 +240,9 @@ Neste exercício, você irá construir o componente de código.
  estará a utilizar na lógica da classe.
 
      ```
-     contexto privado: ComponentFramework.Context<IInputs>;
-     artigos privados: ComponentFramework.PropertyTypes.DataSet;
-     estado privado: ComponentFramework.Dictionary;
+     private context: ComponentFramework.Context<IInputs>;
+     private items: ComponentFramework.PropertyTypes.DataSet;
+     private state: ComponentFramework.Dictionary;
      ```
             
      ![](images/L02/image21.png)
@@ -256,7 +257,7 @@ Neste exercício, você irá construir o componente de código.
      ![](images/L02/init1.png)
 
      ```
-     this.context = contexto;
+     this.context = context;
      context.mode.trackContainerResize(true);
      ```
 
@@ -266,21 +267,21 @@ Neste exercício, você irá construir o componente de código.
 
 20. Substitua a função **updateView** pela função abaixo. Esta lógica cria o Elemento React do PriorityComponent e adiciona-o ao DOM virtual.
 
-    ```
+    ```   
     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
-    const dataset = context.parameters.items;
-    return React.createElement(PriorityComponent, {
-    largura: context.mode.allocatedWidth,
-    altura: context.mode.allotedHeight,
-    itemHeight: context.parameters.ItemHeight.raw,
-    fontSize: context.parameters.FontSize.raw,
-    fontColor: context.parameters.FontColor.raw,
-    conjunto de dados: conjunto de dados,
-    onReorder: this.onReorder,
-    backgroundColor: this.context.parameters.BackgroundColor.raw,
-    dragBackgroundColor:
-    this.context.parameters.DragBackgroundColor.raw,
-    } como PriorityComponentProps);
+        const dataset = context.parameters.items;
+        return React.createElement(PriorityComponent, {
+            width: context.mode.allocatedWidth,
+            height: context.mode.allocatedHeight,
+            itemHeight: context.parameters.ItemHeight.raw,
+            fontSize: context.parameters.FontSize.raw,
+            fontColor: context.parameters.FontColor.raw,
+            dataset: dataset,
+            onReorder: this.onReorder,
+            backgroundColor: this.context.parameters.BackgroundColor.raw,
+            dragBackgroundColor:
+            this.context.parameters.DragBackgroundColor.raw,
+        } as PriorityComponentProps);
     }
     ```
 
@@ -289,14 +290,14 @@ Neste exercício, você irá construir o componente de código.
 21. Adicione o código abaixo após a função **destroy**. Esta lógica trata do evento onReorder de o PriorityComponent e identifica os itens envolvidos na aplicação de alojamento como itens selecionados.
 
     ```
-    onReorder = (sourceIndex: número, destinoIndex: número): void => {
-    conjunto de dados const = this.context.parameters.items;
+    onReorder = (sourceIndex: number, destinationIndex: number): void => {
+    const dataset = this.context.parameters.items;
     const sourceId = dataset.sortedRecordIds[sourceIndex];
-    const de destinoId = dataset.sortedRecordIds[destinationIndex];
-    // levanta o evento OnSelect
+    const destinationId = dataset.sortedRecordIds[destinationIndex];
+    // raise the OnSelect event
     this.context.parameters.items.openDatasetItem(dataset.records[sourceId].getNamedReference());
-    // define a propriedade SelectedItems
-    this.context.parameters.items.setSelectedRecordIds([sourceId, destinoId]);
+    // set the SelectedItems property
+    this.context.parameters.items.setSelectedRecordIds([sourceId, destinationId]);
     };
     ```
 
@@ -307,90 +308,91 @@ Neste exercício, você irá construir o componente de código.
 22. Após concluir todos os passos, o seu ficheiro `index.ts` deverá conter o seguinte código.
 
     ```
-    import { IInputs, IOutputs } from "./gerated/ManifestTypes";
+    import { IInputs, IOutputs } from "./generated/ManifestTypes";
     import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
-    import * como React from "react";
+    import * as React from "react";
 
 
-    export class PrioritZDnDRAnking implementa ComponentFramework.ReactControl<IInputs, IOutputs> {
-    contexto privado: ComponentFramework.Context<IInputs>;
-    artigos privados: ComponentFramework.PropertyTypes.DataSet;
-    estado privado: ComponentFramework.Dictionary;
-    private theComponent: ComponentFramework.ReactControl<IInputs, IOutputs>;
-    private notifyOutputChanged: () => void;
+     export class PrioritZDnDRanking implements ComponentFramework.ReactControl<IInputs, IOutputs> {
+         private context: ComponentFramework.Context<IInputs>;
+         private items: ComponentFramework.PropertyTypes.DataSet;
+         private state: ComponentFramework.Dictionary;
+         private theComponent: ComponentFramework.ReactControl<IInputs, IOutputs>;
+         private notifyOutputChanged: () => void;
 
-    /**
-    * Construtor vazio.
-    */
-    construtor() { }
+       /**
+       * Empty constructor.
+       */
+       constructor() { }
 
-    /**
-    * Utilizado para inicializar a instância de controlo. Os controlos podem iniciar chamadas de servidor remoto e outras ações de inicialização aqui.
-    * Os valores do conjunto de dados não são inicializados aqui, utilize updateView.
-    * @param context Todo o saco de propriedade disponível para controlar via Context Object; Contém valores conforme configurado pelo
-    personalizador mapeado para nomes de propriedades definidos no manifesto, bem como nas funções de utilidade.
-    * @param notifyOutputChanged Um método de callback para alertar a framework que o controlo tem novas saídas prontas a ser recuperadas
-    assíncrona.
-    * @param State Um pedaço de dados que persiste numa sessão para um único utilizador. Pode ser definido em qualquer ponto de uma vida de controlo
-    ciclo chamando 'setControlState' na interface Modo.
-    */
-    public init(contexto: ComponentFramework.Context<IInputs>,
-    notifyOutputChanged: () => void,
-    estado: ComponentFramework.Dictionary
-    ): vazio {
-    this.context = contexto;
-    context.mode.trackContainerResize(true);
-    this.notifyOutputChanged = notifyOutputChanged;
-    }
+       /**
+       * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
+       * Data-set values are not initialized here, use updateView.
+       * @param context The entire property bag available to control via Context Object; It contains values as set up by the 
+         customizer  mapped to property names defined in the manifest, as well as utility functions.
+       * @param notifyOutputChanged A callback method to alert the framework that the control has new outputs ready to be retrieved 
+         asynchronously.
+       * @param state A piece of data that persists in one session for a single user. Can be set at any point in a controls life 
+         cycle  by calling 'setControlState' in the Mode interface.
+       */
+        public init(
+        context: ComponentFramework.Context<IInputs>,
+        notifyOutputChanged: () => void,
+        state: ComponentFramework.Dictionary
+        ): void {
+        this.context = context;
+        context.mode.trackContainerResize(true);
+        this.notifyOutputChanged = notifyOutputChanged;
+      }
 
-    /**
-    * Chamado quando qualquer valor no saco da propriedade foi alterado. Isto inclui valores de campo, conjuntos de dados, valores globais, como o contentor
-    altura e largura, estado offline, valores de metadados de controlo, como o rótulo, o visível, etc.
-    * @param context Todo o saco de propriedade disponível para controlar via Context Object; Contém valores conforme configurado pelo personalizador
-    mapeados para nomes definidos no manifesto, bem como funções de utilidade
-    * @returns ReactElement raiz react element para o controlo
-    */
-    public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
-    const dataset = context.parameters.items;
-    return React.createElement(PriorityComponent, {
-    largura: context.mode.allocatedWidth,
-    altura: context.mode.allotedHeight,
-    itemHeight: context.parameters.ItemHeight.raw,
-    fontSize: context.parameters.FontSize.raw,
-    fontColor: context.parameters.FontColor.raw,
-    conjunto de dados: conjunto de dados,
-    onReorder: this.onReorder,
-    backgroundColor: this.context.parameters.BackgroundColor.raw,
-    dragBackgroundColor:
-    this.context.parameters.DragBackgroundColor.raw,
-    } como PriorityComponentProps);
-    }
+      /**
+     * Called when any value in the property bag has changed. This includes field values, data-sets, global values such as container 
+      height and width, offline status, control metadata values such as label, visible, etc.
+     * @param context The entire property bag available to control via Context Object; It contains values as set up by the customizer 
+     mapped to names defined in the manifest, as well as utility functions
+     * @returns ReactElement root react element for the control
+     */
+     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
+        const dataset = context.parameters.items;
+        return React.createElement(PriorityComponent, {
+            width: context.mode.allocatedWidth,
+            height: context.mode.allocatedHeight,
+            itemHeight: context.parameters.ItemHeight.raw,
+            fontSize: context.parameters.FontSize.raw,
+            fontColor: context.parameters.FontColor.raw,
+            dataset: dataset,
+            onReorder: this.onReorder,
+            backgroundColor: this.context.parameters.BackgroundColor.raw,
+            dragBackgroundColor:
+            this.context.parameters.DragBackgroundColor.raw,
+        } as PriorityComponentProps);
+       }
 
-    /**
-    * É chamado pela estrutura antes do controlo que recebe novos dados.
-    * @returns um objeto baseado na nomenclatura definida em manifesto, esperando objectos para propriedades marcadas como "ligado" ou "saída"
-    */
-    public getOutputs(): IOutputs {
-    devolver { };
-    }
+       /**
+       * It is called by the framework prior to a control receiving new data.
+       * @returns an object based on nomenclature defined in manifest, expecting object[s] for property marked as "bound" or "output"
+       */
+       public getOutputs(): IOutputs {
+        return { };
+       }
 
-    /**
-    * Chamado quando o controlo será removido da árvore DOM. Os controlos devem utilizar esta chamada para limpeza.
-    * ou seja, cancelar quaisquer chamadas remotas pendentes, remoção de ouvintes, etc.
-    */
-    public destruição(): void {
-    // Adicione o código ao controlo de limpeza, se necessário
-    }
-    onReorder = (sourceIndex: número, destinoIndex: número): void => {
-    conjunto de dados const = this.context.parameters.items;
-    const sourceId = dataset.sortedRecordIds[sourceIndex];
-    const de destinoId = dataset.sortedRecordIds[destinationIndex];
-    // levanta o evento OnSelect
-    this.context.parameters.items.openDatasetItem(dataset.records[sourceId].getNamedReference());
-    // define a propriedade SelectedItems
-    this.context.parameters.items.setSelectedRecordIds([sourceId, destinoId]);
-    };
-    }
+       /**
+       * Called when the control is to be removed from the DOM tree. Controls should use this call for cleanup.
+       * i.e. cancelling any pending remote calls, removing listeners, etc.
+       */
+        public destroy(): void {
+        // Add code to cleanup control if necessary
+        }
+        onReorder = (sourceIndex: number, destinationIndex: number): void => {
+        const dataset = this.context.parameters.items;
+        const sourceId = dataset.sortedRecordIds[sourceIndex];
+        const destinationId = dataset.sortedRecordIds[destinationIndex];
+        // raise the OnSelect event
+        this.context.parameters.items.openDatasetItem(dataset.records[sourceId].getNamedReference());
+        // set the SelectedItems property
+        this.context.parameters.items.setSelectedRecordIds([sourceId, destinationId]);
+        };
+        }
     ```
  
 23. Abra o ficheiro **package. json**.
@@ -402,15 +404,15 @@ Neste exercício, você irá construir o componente de código.
 25. Substitua **dependências** pelo JSON abaixo.
 
     ```
-    "dependências": {
+    "dependencies": {
     "@fluentui/react": "8.29.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-reage": "^7.29.4",
-    "eslint-plugin-reage-gans": "^4.4.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
     "eslint-plugin-sonarjs": "^0.13.0",
-    "preto": "^2.6.1",
-    "reagir": "16.8.6",
+    "prettier": "^2.6.1",
+    "react": "16.8.6",
     "react-beautiful-dnd": "^13.1.0",
     "react-dom": "16.8.6"
     },
@@ -419,8 +421,8 @@ Neste exercício, você irá construir o componente de código.
 25. Navegue até ao ficheiro **.eslintric. json(1)** da navegação esquerda para adicionar a nova regra de flexição. Localize **rules(2)** na **linha número 21** e cole as regras abaixo.
 
     ```
-    "não-inutilizado-vars": ["off"],
-    "no-def": ["off"]
+    "no-unused-vars": ["off"],
+    "no-undef": ["off"]
     ```
 
     ![](images/L02/eslint.png)
@@ -447,7 +449,7 @@ Neste exercício, você irá construir o componente de código.
 30. Execute o comando abaixo para iniciar o chicote de teste.
 
         ```
-        npm arranque
+        npm start
         ```
 
 31. O chicote de teste deve iniciar, se não, copiar o endereço e colar-o numa nova janela do browser. Experimente arrastar os itens e ver se o comportamento funciona como esperado.
@@ -467,7 +469,7 @@ Neste exercício, você irá construir o componente de código.
 35. Execute o comando abaixo para empurrar a compidentificador para o seu ambiente.
     
     ```
-    pac pcf push --publisher-prefix contose
+    pac pcf push --publisher-prefix contoso
     ```
 
     > **Nota**:
@@ -479,7 +481,7 @@ Neste exercício, você irá construir o componente de código.
     2. Se a execução falhar com um erro de pacote Nuget, execute o comando abaixo no PowerShell e tente executar novamente o comando acima.
 
         ```
-        dotnet nuget adicionar fonte https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
+        dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
         ```
 
 36. Aguarde que a solução seja importada e publicada no seu ambiente.
@@ -588,7 +590,7 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 14. Defina o valor **Items** do componente **PrioritZDnDRAnking** para a fórmula abaixo.
 
     ```
-    'Galeria de votos'. Todos os Items
+    'Votes gallery'.AllItems
     ```
 
     ![](images/L02/L02-voteitemu.png)
@@ -618,7 +620,7 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 22. Defina o valor **X** do componente **PrioritZDnDRAnking** na fórmula abaixo.
 
     ```
-    'Galeria de votos'. Largura
+    'Votes gallery'.Width
     ```
 
 23. Selecione a propriedade **Da largura** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor para **60**.
@@ -626,13 +628,13 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 24. Selecione a propriedade **Height** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor com a fórmula abaixo.
 
     ```
-    'Galeria de votos'. Altura
+    'Votes gallery'.Height
     ```
 
 25. Selecione a propriedade **ItemHeight** do componente **PrioritZDnDRAnking** do suspensão da propriedade e defina o seu valor com a fórmula abaixo
 
     ```
-    'Galeria de votos'.TemplateHeight
+    'Votes gallery'.TemplateHeight
     ```
 
 26. Selecione a propriedade **BackgroundColor** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor para **"LightBlue"**
@@ -642,47 +644,47 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 28. Selecione a propriedade **Y** do componente **PrioritZDnDRAnking** do suspensão da propriedade e defina o seu valor com a fórmula abaixo.
 
     ```
-    'Galeria de votos'.Y
+    'Votes gallery'.Y
     ```
 
 29. Selecione a propriedade **OnSelect** do componente **PrioritZDnDRAnking** do suspensão da propriedade e defina o seu valor com a fórmula abaixo.
 
     ```
-    Com(
-    {
-    fonteRank: Primeiro(Self. SelectedItems). Classificação,
-    destino Rank: Last(Self. SelectedItems). Classificação
-    },
-    Se(
-    fonteRank < destino Rank,
-    // Movendo-se para cima
-    AtualizaçãoIf(
-    colVotes,
-    Classificação >= fonte Rank && Classificação <= de destino Classificação,
-    {
-    Classificação: If(
-    Classificação <> fonte Rank,
-    Classificação - 1,
-    destino Rank
-    )
-    }
-    );
-    );
-    Se(
-    fonteRank > destino Rank,
-    // Desci
-    AtualizaçãoIf(
-    colVotes,
-    Classificação >= destino Rank && Classificação <= fonte Rank,
-    {
-    Classificação: If(
-    Classificação <> fonte Rank,
-    Classificação + 1,
-    destino Rank
-    )
-    }
-    );
-    );
+    With(
+        {
+            sourceRank: First(Self.SelectedItems).Rank,
+            destinationRank: Last(Self.SelectedItems).Rank
+        },
+        If(
+            sourceRank < destinationRank,
+     // Moving Up
+            UpdateIf(
+                colVotes,
+                Rank >= sourceRank && Rank <= destinationRank,
+                {
+                    Rank: If(
+                        Rank <> sourceRank,
+                        Rank - 1,
+                        destinationRank
+                    )
+                }
+            );
+        );
+        If(
+            sourceRank > destinationRank,
+     // Moving Down
+            UpdateIf(
+                colVotes,
+                Rank >= destinationRank && Rank <= sourceRank,
+                {
+                    Rank: If(
+                        Rank <> sourceRank,
+                        Rank + 1,
+                        destinationRank
+                    )
+                }
+            );
+        );
 
     );
     ```

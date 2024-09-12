@@ -374,7 +374,7 @@ aplicação.
 5. Introduza o valor abaixo no campo de nomes de visualização.
 
    ```
-   As minhas notas
+   My Notes
    ```
 
 1. Agora, pesquise por **Tisto de toque (1)** em tipo de dados e selecione aquele que está sob **Texto Multilina (2)** e clique em **Guardar (3)**.
@@ -400,7 +400,7 @@ aplicação.
 5. Clique duas vezes na recém-adicionado **Texto entrada** e introduza o valor abaixo para renomear a entrada do texto.
 
    ```
-   Caixa de texto de notas
+   Notes textbox
    ```
 
     ![](images/L01/image27.png)
@@ -416,7 +416,7 @@ aplicação.
 8. Altere o valor **HintText** da caixa de texto Notes para o valor abaixo.
 
    ```
-   As minhas notas
+   My notes
    ```
 
     ![](images/L01/image29.png)
@@ -451,7 +451,7 @@ aplicação.
 13. Clique duas vezes no rótulo recentemente adicionado e introduza o valor abaixo para renomear o rótulo que acabou de adicionar.
 
       ```
-      Etiqueta de notas
+      Notes label
       ```
 
     ![](images/L01/L01-label.png)
@@ -459,7 +459,7 @@ aplicação.
 14. Altere o valor **Texto** do rótulo Notes com o texto abaixo.
 
       ```
-      'galeria de tópicos'. Selecionado. 'As minhas notas'
+      'Topics gallery'.Selected.'My Notes'
       ```
 
       ![](images/L01/image32.png)
@@ -570,7 +570,7 @@ Neste exercício, irá rever e testar a extensão CLI da plataforma Power no Vis
 8. Substitua `<o seu URL do seu ambiente>` no comando abaixo pelo valor do URL do ambiente que copiou anteriormente e depois executa o comando.
 
    ```
-   pac auth create --name DevAuth --url <o seu ambiente URL>
+   pac auth create --name DevAuth --url <your environment URL>
    ```
 
    > **Info:** Depois de adicionar o URL do ambiente, o comando será assim: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
@@ -606,7 +606,7 @@ Neste exercício, irá rever e testar a extensão CLI da plataforma Power no Vis
 11. image Execute o comando abaixo para ver uma lista de soluções.
 
       ```
-      lista de soluções pac
+      pac solution list
       ```
 
 12. image Deve ver uma lista de soluções instaladas no seu ambiente.
