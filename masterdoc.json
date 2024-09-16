@@ -24,5 +24,57 @@
         "Order": 5
       }
     ]
+  },
+   {
+    "Name": "Low-Code for ProDev in a Day",
+    "Language": "Spanish",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Spanish-Content/gettingstarted01.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Spanish-Content/01gettingstartedwithpowerapp.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Spanish-Content/02BuildCode.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Spanish-Content/03Custom_connector_for_existingAPI.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Spanish-Content/05Applicationlifecyclemanagement.md",
+        "Order": 5
+      }
+    ]
+  },
+ {
+    "Name": "Low-Code for ProDev in a Day",
+    "Language": "Portuguese",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/gettingstarted01.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/01gettingstartedwithpowerapp.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/02BuildCode.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/03Custom_connector_for_existingAPI.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/05Applicationlifecyclemanagement.md",
+        "Order": 5
+      }
+    ]
   }
 ]
