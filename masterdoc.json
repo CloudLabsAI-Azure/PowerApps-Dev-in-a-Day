@@ -60,19 +60,19 @@
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/01gettingstartedwithpowerapp.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/01Gettingstarted-Portuguese.md",
         "Order": 2
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/02BuildCode.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/02BuildCode-Portuguese.md",
         "Order": 3
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/03Custom_connector_for_existingAPI.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/03Custom_connector_for_existingAPI-portuguese.md",
         "Order": 4
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/05Applicationlifecyclemanagement.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/05Applicationlifecyclemanagement-Portuguese.md",
         "Order": 5
       }
     ]
