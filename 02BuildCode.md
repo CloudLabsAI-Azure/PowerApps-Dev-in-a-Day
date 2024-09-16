@@ -1,13 +1,11 @@
-# Lab 02 - Build a code component
+# Laboratorio 02 - Construir un componente de código
 
-## Estimated Duration: 90 mins
+## Duración Estimada: 90 minutos
 
-Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
-a code component using the React JavaScript framework. A code component approach is used to
-address the requirement because there isn’t a similar control already built in.
+Como parte del equipo de fusión de PrioritZ, se le ha pedido que cree un componente de código de Power Apps para permitir la clasificación de prioridad de elementos mediante arrastrar y soltar en la Power App PrioritZ Ask. Construirá un componente de código utilizando el framework de JavaScript React. Se utiliza un enfoque de componente de código para abordar el requisito porque no hay un control similar ya integrado.
 
-You have collaborated with the app makers to identify the following properties to allow them to
-configure the code component in the app:
+Ha colaborado con los creadores de la aplicación para identificar las siguientes propiedades que les permitirán
+configurar el componente de código en la aplicación:
 
 - BackgroundColor
 - DragBackgroundColor
@@ -15,48 +13,45 @@ configure the code component in the app:
 - FontSize
 - FontColor
 
-The PrioritZ Ask app will prepare a collection of the items to rank that will be bound as the dataset for
-the code component. When an item is dragged and dropped the code component will raise an OnSelect
-event that will be handled by the hosting app. The hosting app will update the collection items with
-their new rank. The code component will be stateless.
+La aplicación PrioritZ Ask preparará una colección de elementos para clasificar que se vincularán como el conjunto de datos para el componente de código. Cuando se arrastre y suelte un elemento, el componente de código generará un evento OnSelect que será controlado por la aplicación de alojamiento. La aplicación de alojamiento actualizará los elementos de la colección con su nueva clasificación. El componente de código no tendrá estado.
 
-## Lab Objectives
+## Objetivos del Laboratorio
 
-- Exercise 1: Build Code Component 
-- Exercise 2: Use Code Component 
-- Exercise 3: Add Code Component to Solution 
+- Ejercicio 1: Construir Componente de Código 
+- Ejercicio 2: Usar Componente de Código 
+- Ejercicio 3: Agregar Componente de Código a la Solución 
 
-## Exercise 1 – Build Code Component
+## Ejercicio 1: Construir Componente de Código
 
-In this exercise, you will build the code component.
+En este ejercicio, creará el componente de código.
 
-### Task 1: Create the code component
+### Tarea 1: Crear el componente de código
 
-1. Start **Visual Studio Code** if not already open using the shortcut available on the desktop.
+1. Inicie **Visual Studio Code** si aún no está abierto, utilizando el acceso directo disponible en el escritorio.
 
    ![](images/L04/vscode1.png)
    
-2. Select the **Power Platform (1)** tab and make sure your **Dev Auth (2)** profile is selected. 
+2. Seleccione la pestaña **Power Platform (1)** y asegúrese de que su perfil **Dev Auth (2)** esté seleccionado.
     
-   >**Note**: The Power Platform tab is already installed.
+   >**Nota**: La pestaña Power Platform ya está instalada.
     
     ![](images/L02/L01-authuu.png)
 
-3. Click **Terminal (1)** and select **New Terminal (2).**
+3. Haga clic en **Terminal (1)** y seleccione **Nuevo terminal (2).**
      
      ![](images/L02/L02-terminaluu.png)
 
-4. In the Terminal window, make a new directory by running the command below.
+4. En la ventana Terminal, cree un nuevo directorio ejecutando el siguiente comando.
 
     ```
     md PrioritZDnDRanking
     ```
-5. Run the command below to switch to the PrioritZDnRanking directory you created.
+5. Ejecute el siguiente comando para cambiar al directorio PrioritZDnDRanking que creó.
 
     ```
     cd PrioritZDnDRanking
     ```
-6. You should now be in the directory you created. Create a new component project and install dependencies by running the below command.
+6. Ahora debería estar en el directorio que creó. Cree un nuevo proyecto de componente e instale las dependencias ejecutando el siguiente comando.
     
      ```
      pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --framework react --run-npm-install
@@ -64,41 +59,40 @@ In this exercise, you will build the code component.
      
      ![](images/L02/image3.png)
 
-7. The component framework project should be created successfully.
+7. El proyecto del framework de componentes debería crearse correctamente.
 
     ![](images/L02/image4.png)
 
-8. Run the command below to open the project.
+8. Ejecute el siguiente comando para abrir el proyecto.
     ```
     code -a.
     ```
 
-1. If you are presented with the below pop-up, click on **Yes** to trust the authors of the files.
+1. Si aparece la siguiente ventana emergente, haga clic en **Sí** para confiar en los autores de los archivos.
 
     ![](images/L02/image4.1.png)
 
-9. Review the created code component files by selecting the **Explorer** tab.
+9. Revise los archivos de componentes de código creados seleccionando la pestaña **Explorador**.
     
      ![](images/L02/L02-explorer.png)
 
-10. Expand the **PrioritZDnDRanking** folder and then expand the sub-folder **generated**.
+10. Expanda la carpeta **PrioritZDnDRanking** y luego expanda la subcarpeta **generated**.
 
-11. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a
-    component including the properties exposed to the hosting app.
+11. Abra el archivo **ControlManifest.Input.xml**. El manifiesto es el archivo de metadatos que define un componente, incluyendo las propiedades expuestas a la aplicación de alojamiento.
 
       ![](images/L02/image6.png)
 
-12. Locate **data-set** XML element in **line number 21** in the **ControlManifest.Input.xml** file.
+12. Ubique el elemento XML **data-set** en la **línea número 21** del archivo **ControlManifest.Input.xml**.
 
       ![](images/L02/image7.png)
 
-13. Change the **name** to **items** and the **display-name-key** to **items**. This defines the property the app will bind to a collection of items.
+13. Cambie **name** a **items** y **display-name-key** a **items**. Esto define la propiedad que la aplicación vinculará a una colección de elementos.
 
       ![](images/L02/image8.png)
 
-14. Add the following properties in between the closing tag of the data-set element `</data-set>` and the opening tag of the `<resources>` element.
+14. Agregue las siguientes propiedades entre la etiqueta de cierre del elemento del conjunto de datos `</data-set>` y la etiqueta de apertura del elemento `<resources>`.
 
-    > Add the following properties after **line number 26** in the **ControlManifest.Input.xml** file.
+    > Agregue las siguientes propiedades después de la **línea número 26** en el archivo **ControlManifest.Input.xml**.
 
     ```
     <property name="BackgroundColor" display-name-key="Background color" usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
@@ -110,7 +104,7 @@ In this exercise, you will build the code component.
 
      ![](images/L02/image9.png)
 
-15. Locate `<resources>` section and add the below code after **code path** to add **css** resource. This will ensure that our styles will be bundled with the code component when it is deployed.
+15. Ubique la sección `<resources>` y agregue el código mostrado a continuación después de **code path** para agregar el recurso **css**. Esto garantizará que nuestros estilos se incluyan con el componente de código cuando se implemente.
 
     ```
     <css path="css/PrioritZDnDRanking.css" order="1" />
@@ -118,28 +112,27 @@ In this exercise, you will build the code component.
     
      ![](images/L02/image10.png)
  
-      >**Note**: Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
+      >**Nota**: Por favor asegúrese de NO descomentar la **ruta resx** ya que se encontraría con un problema en la próxima tarea mientras construye el componente de código si no está comentada.
       
- 16. Notice the following two resources. This declares the component’s dependency on these two
-    libraries. This is a result of specifying –framework React on initialization.
+16. Observe los siguientes dos recursos. Esto declara la dependencia del componente en estas dos bibliotecas. Este es el resultado de especificar –framework React en la inicialización.
      ```
      <platform-library name="React" version="16.8.6" />
      <platform-library name="Fluent" version="8.29.0" />
      ```
      ![](images/L02/image11.png)
     
-17. Click **File** and select **Save All** to save your changes.
-18. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
+17. Haga clic en **Archivo** y seleccione **Guardar Todo** para guardar los cambios.
+18. Asegúrese de que todavía tiene seleccionado el archivo **ControlManifest.Input.xml** y luego haga clic en **Nueva carpeta**.
 
       ![](images/L02/image12.png)
 
-19. Name the new folder ass **css**.
-20. Select the new **css** folder you created and then click **New File**
+19. Nombre la nueva carpeta como **css**.
+20. Seleccione la nueva carpeta **css** que creó y luego haga clic en **Nuevo archivo**
  
      ![](images/L02/image13.png)
  
- 21. Name the new file **PrioritZDnDRanking.css**
- 22. Paste the following CSS into the **PrioritZDnDRanking.css** file.
+21. Nombre el nuevo archivo **PrioritZDnDRanking.css**
+22. Pegue el siguiente CSS en el archivo **PrioritZDnDRanking.css**.
     
        ```
         .prioritydnd-scroll-container {
@@ -158,58 +151,56 @@ In this exercise, you will build the code component.
         margin: 8px;
         }
         ```
-23. The file should now look like the following.
+23. El archivo ahora debería verse de la siguiente manera:
 
      ![](images/L02/image14.png)
 
-24. Click **File** and select **Save All** to save your changes.
+24. Haga clic en **Archivo** y seleccione **Guardar Todo** para guardar los cambios.
 
-### Task 2: Implement the component logic
+### Tarea 2: Implementar la lógica del componente
 
-1. Select the **HelloWorld.tsx** component file, right-click on it and select **Delete** to remove the component file as it is automatically created and we won’t be using it. 
-     
+1. Seleccione el archivo del componente **HelloWorld.tsx**, haga clic derecho sobre él y seleccione **Eliminar** para eliminar el archivo del componente, ya que se crea automáticamente y no lo usaremos.
+
      ![](images/L02/L02-EX1-T2-1.png)
     
-2. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` in file explorer.
+2. Navegue hasta la ruta `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` en el explorador de archivos.
     
-3. Drag the **PriorityComponent.tsx** file and drop it in the **PrioriZDnDRanking** folder.
+3. Arrastre el archivo **PriorityComponent.tsx** y suéltelo en la carpeta **PrioriZDnDRanking**.
  
-4. The **PriorityComponent.tsx** file should now be in the **PrioriZDnDRanking** folder.
+4. El archivo **PriorityComponent.tsx** ahora debería estar en la carpeta **PrioriZDnDRanking**.
 
      ![](images/L02/image16.png)
 
-5. Click **File** and save your changes.
+5. Haga clic en **Archivo** y guarde los cambios.
     
-6. Open the **PriorityComponent.tsx** and review the contents. This implements the React
-    component that will be rendered to represent our draggable items.
+6. Abra **PriorityComponent.tsx** y revise el contenido. Esto implementa el componente React que se renderizará para representar nuestros elementos arrastrables.
     
-7. Notice line 9 `from react-beautiful-dnd` has a red underline. This is a npm package the
-    component uses that we haven’t referenced.
+7. Observe que la línea 9 `from react-beautiful-dnd` tiene un subrayado rojo. Este es un paquete npm que el componente utiliza y al que no hemos hecho referencia.
 
      ![](images/L02/image17.png)
  
- 8. Run the following command in a terminal window to add a reference to react-beautiful-dnd.
+ 8. Ejecute el siguiente comando en una ventana de terminal para agregar una referencia a react-beautiful-dnd.
 
     ```
     npm install react-beautiful-dnd
     ```
-    >**Note** : If you receive this error **npm is not recognised**, then perform the below steps:
+    >**Nota**: Si recibe el error **npm is not recognised**, realice los pasos siguientes:
 
-      1. Open PowerShell then run this command `choco install -y --force nodejs`.
-      2. Once the command execution is done, close the Visual Studio Code and open it again.
-      3. Perform **Step 8** of this task again to install the **react-beautiful-dnd** package.
+      1. Abra PowerShell y ejecute el comando `choco install -y --force nodejs`.
+      2. Una vez que se haya ejecutado el comando, cierre Visual Studio Code y ábralo nuevamente.
+      3. Realice el **Paso 8** de esta tarea nuevamente para instalar el paquete **react-beautiful-dnd**.
 
-9. Run the following command for the type definitions.
+9. Ejecute el siguiente comando para las definiciones de tipo.
 
     ```
     npm i --save-dev @types/react-beautiful-dnd
     ```
 
-10. Notice the red underline in line 9 has been resolved.
-    
-11. Open the **index.ts** file.
-    
-12. Remove the following line (line number 2 in Index.ts file) as we are no longer using HelloWorld
+10. Observe que el subrayado rojo en la línea 9 se ha resuelto.
+
+11. Abra el archivo **index.ts**.
+
+12. Elimine la siguiente línea (línea número 2 en el archivo Index.ts) ya que ya no usamos HelloWorld
 
     ```
     import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
@@ -217,7 +208,7 @@ In this exercise, you will build the code component.
     
     ![](images/L02/image18.png)
  
- 13. Add the below code to the **index.ts** file after **line number 1**. This will reference the PriorityComponent.
+ 13. Agregue el código mostrado a continuación al archivo **index.ts** después de la **línea número 1**. Esto hará referencia a PriorityComponent.
     
         ```
         import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
@@ -225,12 +216,11 @@ In this exercise, you will build the code component.
         ![](images/L02/image19.png)  
    
  
- 15. Locate the **Export** class in **line number 7**.
+15. Ubique la clase **Export** en la **línea número 7**.
       
      ![](images/L02/image20.png)
  
- 16. Add the following code below inside the **export** class. This defines some working variables you
-    will be using in the class logic.
+16. Agregue el siguiente código dentro de la clase **export**. Esto define algunas variables de trabajo que usará en la lógica de la clase.
    
         ```
          private context: ComponentFramework.Context<IInputs>;
@@ -240,12 +230,11 @@ In this exercise, you will build the code component.
         ![](images/L02/image21.png)
  
 
- 17. Locate the **init** function.
+17. Ubique la función **init**.
  
       ![](images/L02/init.png)
         
- 18. Paste the code below inside the **init** function. This logic initializes our class variables from the
-    runtime values and enables resize notification.    
+18. Pegue el código a continuación dentro de la función **init**. Esta lógica inicializa nuestras variables de clase a partir de los valores de tiempo de ejecución y habilita la notificación de cambio de tamaño.
     
         ![](images/L02/init1.png)
    
@@ -254,12 +243,11 @@ In this exercise, you will build the code component.
         context.mode.trackContainerResize(true);
        ```
  
-19. Locate the **updateView** function.
+19. Localice la función **updateView**.
 
      ![](images/L02/imageUpdateView.png)
  
-20. Replace the **updateView** function with the function below. This logic creates the React Element
-    from the PriorityComponent and adds it to the virtual DOM.
+20. Reemplace la función **updateView** con la función que se muestra a continuación. Esta lógica crea el elemento React a partir de PriorityComponent y lo agrega al DOM virtual.
   
      ```   
     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
@@ -281,8 +269,7 @@ In this exercise, you will build the code component.
 
     ![](images/L02/image24.png)
  
-21. Add the below code after the **destroy** function. This logic handles the onReorder event from
-    the PriorityComponent and identifies the involved items to the hosting app as selected items.
+21. Agregue el código a continuación después de la función **destroy**. Esta lógica maneja el evento onReorder desde PriorityComponent e identifica los elementos involucrados para la aplicación de alojamiento como elementos seleccionados.
        
     ```
     onReorder = (sourceIndex: number, destinationIndex: number): void => {
@@ -298,9 +285,9 @@ In this exercise, you will build the code component.
   
     ![](images/L02/image25.png)
  
-     > **Note** : **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
+     > **Nota**: La función **Destroy** estará presente al final de la clase **PrioritZDnDRanking**.
 
-22. After completing all the steps, your `index.ts` file should contain the following code.
+22. Después de completar todos los pasos, su archivo `index.ts` debe contener el siguiente código.
 
      ```
      import { IInputs, IOutputs } from "./generated/ManifestTypes";
@@ -389,13 +376,13 @@ In this exercise, you will build the code component.
         };
         }
      ```
-23. Open the **package.json** file.
-    
-24. Locate the **dependencies** JSON object.
+23. Abra el archivo **package.json**.
+
+24. Localice el objeto JSON **dependencies**.
 
       ![](images/L02/image26.png)
  
-25. Replace **dependencies** with the JSON below.
+25. Reemplace **dependencies** con el JSON que aparece a continuación.
 
     ```
     "dependencies": {
@@ -412,7 +399,7 @@ In this exercise, you will build the code component.
     },
     ```
     
-25. Navigate to **.eslintric.json(1)** file from left navigation to add the new lint rule. Locate **rules(2)** in **line number 21** and paste the rules below.
+25. Navegue hasta el archivo **.eslintric.json(1)** desde la navegación izquierda para agregar la nueva regla de lint. Ubique **rules(2)** en la **línea número 21** y pegue las reglas a continuación.
    
       ```
       "no-unused-vars": ["off"],
@@ -422,220 +409,220 @@ In this exercise, you will build the code component.
       ![](images/L02/eslint.png)
    
    
-26. Click **File** and save all your changes.
+26. Haga clic en **Archivo** y guarde todos los cambios.
 
-27. Click **Terminal** and select **New Terminal**.
+27. Haga clic en **Terminal** y seleccione **Nuevo terminal**.
      
       ![](images/L02/image27.png)
 
-28. Run the command below. This will build your component and identify any problems.
+28. Ejecute el siguiente comando. Esto compilará su componente e identificará cualquier problema.
 
     ```
     npm run-script build
     ```
 
-      > **Note**: If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
+      > **Nota**: Si la operación de compilación falla con el error **`Root element is missing`**, asegúrese de que la **ruta resx** esté comentada en el archivo Manifest.Xml e intente compilar el componente nuevamente.
  
- 29. The build should succeed. If any errors, resolve them before proceeding.
+29. La compilación debería tener éxito. Si hay algún error, resuélvalo antes de continuar.
       
        ![](images/L02/image28.png)
  
- 30. Run the command below to start the test harness.
+30. Ejecute el siguiente comando para iniciar el arnés de prueba.
     
         ```
         npm start
         ```
 
-31. The test harness should start, if not then copy the address and paste it in a new browser window. Try dragging the items and see if the behaviour functions as expected.
+31. El arnés de prueba debería iniciarse; si no, copie la dirección y péguela en una nueva ventana del navegador. Intente arrastrar los elementos y vea si el comportamiento funciona como se esperaba.
 
       ![](images/L02/imagee29u.png)
  
-     > **Note**: If the test harness didn't start as expected you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in the **Manifest and Index** files. 
+     > **Nota**: Si el arnés de prueba no se inició como se esperaba, no podrá ver el resultado esperado como se mencionó. Verifique que haya seguido las instrucciones anteriores y haya agregado el código correctamente en los archivos **Manifest e Index**.
 
-32. Close the test harness by closing the browser tab.
+32. Cierre el arnés de prueba cerrando la pestaña del navegador.
 
-33. Stop the run by holding the **[CONTROL]** key + **C**.
+33. Detenga la ejecución manteniendo presionada la tecla **[CONTROL]** + **C**.
  
-34. Type **Y** and [ENTER].
+34. Escriba **Y** y presione [ENTER].
      
       ![](images/L02/image30.png)
 
  
-35. Run the command below to push the component to your environment.
+35. Ejecute el siguiente comando para enviar el componente a su entorno.
     ```
     pac pcf push --publisher-prefix contoso
     ```
     
-    > **Note** : 
+    > **Nota** : 
     
-     1. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
+     1. Si la operación de inserción falla con el error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, asegúrese de haber seguido las instrucciones anteriores y de haber agregado el código correctamente en los archivos **Manifest e Index**.
         
-        Additionally, you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there are any then retry to push the component by running the  **pac push command** again.
+        Adicionalmente, puede encontrar los archivos **Manifest e Index** en la ubicación `C:\LabFiles`, puede comparar su código con estos archivos y solucionar los problemas si los hay y luego volver a intentar insertar el componente ejecutando el comando **pac push** nuevamente.
 
-     2. If the run fails with a Nuget package error, run the below command in PowerShell and try running the above command again.
+     2. Si la ejecución falla con un error de paquete Nuget, ejecute el siguiente comando en PowerShell e intente ejecutar el comando anterior nuevamente.
     
         ```
         dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
         ```
 
     
-36. Wait for the solution to be imported and published to your environment.
+36. Espere a que la solución se importe y se publique en su entorno.
 
       ![](images/L02/image31uu.png)
  
-### Task 3: Confirm the control was added to the environment
+### Tarea 3: Confirmar que el control se agregó al entorno
 
-1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navegue hasta el portal de creación de Power Apps utilizando la siguiente URL si aún no está abierta. Asegúrese de que el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** esté seleccionado.
 
    ```
     https://make.powerapps.com/
     ```
     
-2. Select **Solutions** and open the **PowerAppsTools** solution.
+2. Seleccione **Soluciones** y abra la solución **PowerAppsTools**.
     
     ![](images/L02/image32u.png)
 
- 3. Confirm that the custom control is in this solution.
+3. Confirme que el control personalizado se encuentra en esta solución.
      
       ![](images/L02/image33u.png)
  
-## Exercise 2 – Use Code Component
+## Ejercicio 2: Usar Componente de Código
 
-In this exercise, you will use the code component you created in the PrioritZ Ask canvas application.
+En este ejercicio, usará el componente de código que creó en la aplicación de canvas PrioritZ Ask.
 
-### Task 1: Allow Power Apps component framework
+### Tarea 1: Permitir el framework de componentes de Power Apps
 
-In this task, you will allow the publishing of canvas apps with code components for your environment.
+En esta tarea, permitirá la publicación de aplicaciones de canvas con componentes de código para su entorno.
 
-1. Navigate to the Power Platform admin center by using the below URL and select environments.
+1. Navegue hasta el centro de administración de Power Platform utilizando la siguiente URL y seleccione entornos.
+
      ```
         https://admin.powerplatform.microsoft.com/environments
      ```
 
-2. Open the dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** that you are using for this lab.
+2. Abra el entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** que está usando para este laboratorio.
 
-3. Click **Settings** from top menu.
+3. Haga clic en **Configuración** en el menú superior.
     
      ![](images/L02/settingsu.png)
 
-4. Expand **Products(1)** and select **Features(2)**.
+4. Expanda **Productos(1)** y seleccione **Características(2)**.
     
      ![](images/L02/featureu.png)
 
- 5. Turn on **Allow publishing of canvas apps with code components** and Scroll down click **Save**.
+5. Active **Permitir publicación de aplicaciones de canvas con componentes de código**, desplácese hacia abajo y haga clic en **Guardar**.
      
       ![](images/L02/image35.2u.png)
 
       ![](images/L02/image35.2uu.png)
 
- ### Task 2: Edit canvas app
+### Tarea 2: Editar la aplicación de canvas
 
-In this task, you will edit the PrioritZ Ask canvas application to use the code component you created.
+En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el componente de código que creaste.
 
-1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
+1. Navegue al portal de creación de Power Apps usando la siguiente URL si aún no está abierta. Asegúrese de que el entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** esté seleccionado.
    ```   
    https://make.powerapps.com/
    ```
-2. Select **Solutions** and open the **PrioritZ** solution.
-    
-3. Select **Apps (1)** , select the **PrioritZ Ask (2)** app and click **Edit (3)**.
+2. Seleccione **Soluciones** y abra la solución **PrioritZ**.
+
+3. Seleccione **Aplicaciones (1)**, seleccione la aplicación **PrioritZ Ask (2)** y haga clic en **Editar (3)**.
 
      ![](images/L02/L02-editu.png)
 
-4. Select the **Components** tab, click on the backward arrow  to **Import**
-    **components**.
+4. Seleccione la pestaña **Componentes**, haga clic en la flecha hacia atrás para **Importar componentes**.
 
      ![](images/L02/image38u.png)
  
-1. Select the **Code (1)** tab, select the code component **(2)** you created and click **Import (3)**.
+1. Seleccione la pestaña **Código (1)**, seleccione el componente de código **(2)** que creó y haga clic en **Importar (3)**.
     
      ![](images/L02/L02-codeuu.png)
  
-7. Select the **Screens** tab.
+7. Seleccione la pestaña **Pantallas**.
 
-8. Expand **votescreen (1)** and Select the **Votes gallery (2)**.
+8. Expanda **votescreen (1)** y seleccione **Votes gallery (2)**.
 
      ![](images/L02/L02-votescreenu.png)
 
-1. Select the **Width** from the properties dropdown.    
+1. Seleccione **Width** en el menú desplegable de propiedades. 
 
      ![](images/L02/L02-votescreen1u.png)
 
-9. Set the **Width** value of the Votes gallery to **570**.
+9. Establezca el **Width** de Votes gallery en **570**.
 
      ![](images/L02/L02-widthu.png)
     
-10. The screen should now look like the image below.
+10. La pantalla ahora debería verse como la imagen a continuación.
      
       ![](images/L02/image40u.png)
 
-11. Select the **Votes Screen** and click **+ Insert**.
+11. Seleccione **Votes Screen** y haga clic en **+ Insertar**.
       
      ![](images/L02/image41u.png)
  
-12. Select the component **PrioritZDnDRanking** under **Code Components**.
+12. Seleccione el componente **PrioritZDnDRanking** en **Componentes de Código**.
       
      ![](images/L02/image42uuu.png)
  
-13. Go to the Tree view tab and select the **PrioritZDnDRanking** you just added.
+13. Vaya a la pestaña de vista de árbol y seleccione el elemento **PrioritZDnDRanking** que acaba de agregar.
 
-14. Set the **Items** value of the **PrioritZDnDRanking** component to the formula below.
+14. Establezca el valor **Items** del componente **PrioritZDnDRanking** con la fórmula que se muestra a continuación.
 
     ```
     'Votes gallery'.AllItems
     ```
      ![](images/L02/L02-voteitemu.png)
     
-15. Select the **PrioritZDnDRanking**, go to the **Properties** pane that is present at the right side of the screen, set **Item Height** 160 and click **Edit Fields**.
+15. Seleccione **PrioritZDnDRanking**, vaya al panel **Properties** que se encuentra en el lado derecho de la pantalla, configure **Item Height** en 160 y haga clic en **Edit Fields**.
 
       ![](images/L02/image43u.png)
 
-16. Click on **+ Add field** to add a new field.
-    
-17. Select **Rank (1)** and click on **Add (2)**.
+16. Haga clic en **+ Agregar campo** para agregar un nuevo campo.
+
+17. Seleccione **Rango (1)** y haga clic en **Agregar (2)**.
      
       ![](images/L02/image44.1uu.png)
  
-18. The rank should now show on the control, but it is sorted descending.
-      
-19. Select the **Votes gallery**, then select the **Items** property from the property dropdown and change the sort order to **Ascending**.
+18. El rango ahora debería aparecer en el control, pero está ordenado de manera descendente.
+
+19. Seleccione **Votes gallery**, luego seleccione la propiedad **Items** del menú desplegable de propiedades y cambie el orden de clasificación a **Ascendente**.
      
       ![](images/L02/image46.png)
  
- 20. The rank should now get sorted ascending.
+20. Ahora, el rango debería ordenarse de manera ascendente.
 
-21. Select the **PrioritZDnDRanking** component then **X** property from the property dropdown.
- 
+21. Seleccione el componente **PrioritZDnDRanking** y luego la propiedad **X** del menú desplegable de propiedades.
+
       ![](images/L02/image47.1.png)
       
-22. Set the **X** value of the **PrioritZDnDRanking** component to the below formula.
+22. Establezca el valor **X** del componente **PrioritZDnDRanking** con la siguiente fórmula.
 
     ```
     'Votes gallery'.Width
     ```
-23. Select the **Width** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **60**.
+23. Seleccione la propiedad **Width** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **60**.
     
-24. Select the **Height** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
+24. Seleccione la propiedad **Height** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
     ```
     'Votes gallery'.Height
     ```
-25. Select the **ItemHeight** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula
+25. Seleccione la propiedad **ItemHeight** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
     ```
     'Votes gallery'.TemplateHeight
     ```
-26. Select the **BackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"LightBlue"**
+26. Seleccione la propiedad **BackgroundColor** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **"LightBlue"**
     
-27. Select the **DragBackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"#A70202"**
+27. Seleccione la propiedad **DragBackgroundColor** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **"#A70202"**
 
-28. Select the **Y** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
+28. Seleccione la propiedad **Y** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
     ```
     'Votes gallery'.Y
     ```
     
-29. Select the **OnSelect** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
+29. Seleccione la propiedad **OnSelect** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
     ```
     With(
@@ -678,55 +665,54 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
     ```
 
-30. Select the **Home Screen** and click **Play**.
+30. Seleccione **Home Screen** y haga clic en **Iniciar**.
 
-31. Select one of the **topics**.
+31. Seleccione uno de los **temas**.
 
-32. You can view how it looks on a phone screen by using the emulator.
+32. Puede ver cómo se ve en la pantalla de un teléfono usando el emulador.
      
      ![](images/L02/image48up.png)
 
-33. Drag one of the topic items and drop it in a different location.
+33. Arrastre uno de los elementos del tema y suéltelo en una ubicación diferente.
      
      ![](images/L02/image49.png)
  
-34. The drag/drop should work as expected.
-35. Close the preview.
-1. Click **Publish**.
+34. La función de arrastrar y soltar debería funcionar como se espera.
+35. Cierre la vista previa.
+1. Haga clic en **Publicar**.
 
     ![](images/L02/publish.png)
 
-38. Select **Publish this version** and wait for the publish to be completed.
-39. You may **close** the canvas app studio.
+38. Seleccione **Publicar esta versión** y espere a que se complete la publicación.
+39. Puede **cerrar** Canvas App Studio.
 
+## Ejercicio 3: Agregar Componente de Código a la Solución 
 
-## Exercise 3 – Add Code Component to Solution
+En este ejercicio, agregará el componente de código que creó a la solución PrioritZ.
 
-In this exercise, you will add the code component you created to the PrioritZ solution.
+### Tarea 1: Agregar el componente a la solución
 
-### Task 1: Add the component to the solution
-
-1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navegue hasta el portal de creación de Power Apps utilizando la siguiente URL si aún no está abierta. Asegúrese de que el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** esté seleccionado.
 
    ```
     https://make.powerapps.com/
     ```
-2. Select **Solutions** and open the **PrioritZ** solution.
-3. Click **Add existing** and select **More | Developer | Custom control**.
+2. Seleccione **Soluciones** y abra la solución **PrioritZ**.
+3. Haga clic en **Agregar existente** y seleccione **Más | Desarrollador | Control personalizado**.
       
       ![](images/L02/image50.1.png)
  
- 4. Select **contoso_ContosoCoffee.PrioritZDnDRanking (1)** and click **Add (2)**.
+4. Seleccione **contoso_ContosoCoffee.PrioritZDnDRanking (1)** y haga clic en **Agregar (2)**.
      
       ![](images/L02/image51.1.png)
  
- 5. Click **Publish all customizations** and wait for the publishing to complete.
+5. Haga clic en **Publicar todas las personalizaciones** y espere a que se complete la publicación.
 
     ![](images/L02/L02-EX3.png)
 
-## Summary
+## Resumen
 
-In this lab,you learned to create a code component, implement its logic, integrate it into a canvas app, and add it to a solution within the Power Platform.
+En este laboratorio, aprendió a crear un componente de código, implementar su lógica, integrarlo en una aplicación de canvas y agregarlo a una solución dentro de Power Platform.
 
-## You have successfully completed the lab
+## Ha completado el laboratorio con éxito
 

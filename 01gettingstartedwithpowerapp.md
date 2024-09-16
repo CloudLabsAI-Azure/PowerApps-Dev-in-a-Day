@@ -1,288 +1,286 @@
-# Lab 01 - Getting started with Powerapps
+# Laboratorio 01 - Introducción a Power Apps
 
-## Estimated Duration: 45 minutes
+## Duración Estimada: 45 minutos
 
-Working as part of the Prioritz fusion team you will be setting up your Power Platform development environment. You will import and review the current solution and explore the current state of the Prioritz apps, flows and tables. You will be also adding a column to a table and modifying the app to use it.
+Trabajando como parte del equipo de fusión de Prioritz, configurará su entorno de desarrollo de Power Platform. Importará y revisará la solución actual y explorará el estado actual de las aplicaciones, flujos y tablas de Prioritz. También agregará una columna a una tabla y modificará la aplicación para usarla.
 
-## Lab Objectives
+## Objetivos del laboratorio
 
-You will be able to complete the following :
+Podrá completar lo siguiente:
 
-- Exercise 1: Import and review solution components
-- Exercise 2: Add a column for My Notes
-- Exercise 3: Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension
+- Ejercicio 1: Importar y revisar los componentes de la solución
+- Ejercicio 2: Agregar una columna para My Notes
+- Ejercicio 3: Verificar el instalador de Visual Studio Code y la extensión de la CLI de Power Platform preinstalados
 
-## Exercise 1 - Import, and review solution components
+## Ejercicio 1: Importar y revisar los componentes de la solución
 
-In this exercise, you will import the current solution into the pre-created dev environment and review the components of the solution. You will also run a flow that will add sample data to your environment, and test the applications in the solution.
+En este ejercicio, importará la solución actual al entorno de desarrollo creado previamente y revisará los componentes de la solución. También ejecutará un flujo que agregará datos de muestra a su entorno y probará las aplicaciones en la solución.
 
->**Note**: The Dev environment is already pre-created as a part of the prerequisites.
+>**Nota:** El entorno de Desarrollo (Dev) ya está creado como parte de los requisitos previos.
 
-### Task 1: Import, Review solution components and run flow
+### Tarea 1: Importar, Revisar los componentes de la solución y ejecutar el flujo
 
-1. In the JumpVM, click on the **Power Apps** portal shortcut of the Microsoft Edge browser that is available on the desktop.
+1. En JumpVM, haga clic en el acceso directo **Power Apps Portal** del navegador Microsoft Edge que está disponible en el escritorio.
 
    ![azure portal.](images/L01/PAportal.png)
 
-1. On the **Sign in** window, you will see the login screen, enter the following username **(1)** and click on **Next** **(2)**.
+1. En la ventana **Iniciar sesión**, aparecerá la pantalla de inicio de sesión, introduzca el siguiente nombre de usuario **(1)** y pulse en **Siguiente** **(2)**.
 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+   * Correo Electrónico/Nombre de Usuario: <inject key="AzureAdUserEmail"></inject>
 
    ![](/images/L01/signin.png)
 
-1. Now enter the following password **(1)** and click on **Sign in** **(2)**. 
+1. Ahora, ingrese la siguiente contraseña **(1)** y haga clic en **Iniciar sesión** **(2)**. 
 
-   * Password: <inject key="AzureAdUserPassword"></inject>
+   * Contraseña: <inject key="AzureAdUserPassword"></inject>
    
    ![](/images/L01/signinp.png)
 
-1. If you see the pop-up **Stay Signed in?**, click **No**.
+1. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
 
-1. Once logged in, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
+1. Una vez que haya iniciado sesión, haga clic en **Entorno (1)** y seleccione el entorno de desarrollo creado previamente llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
      ![](images/L01/dev11.png)
 
-2. Now, click on **Solutions(1)** from the left hand side menu and click **Import Solution(2)**.
+2. Ahora, haga clic en **Soluciones(1)** en el menú del lado izquierdo y haga clic en **Importar solución(2)**.
 
       ![](images/L01/importsolution1.png)
 
-3.  Click **Browse**.
+3. Haga clic en **Examinar**.
     
      ![](images/L01/browse1.png)
      
-1. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` in file explorer , select the **Prioritz_1_0_0_7.zip** file, and click **Open**.
+1. Navegue hasta la ruta `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` en el explorador de archivos, seleccione el archivo **Prioritz_1_0_0_7.zip** y haga clic en **Abrir**.
 
-1. Make sure the **Prioritz(1)** file is selected and Click **Next(2)**.
+1. Asegúrese de que el archivo **Prioritz(1)** esté seleccionado y haga clic en **Siguiente(2)**.
     
      ![](images/L01/next1.png)
      
-1. Click **Next** again on the import solution blade.
+1. Haga clic en **Siguiente** nuevamente en la hoja de importación de solución.
 
-1. Under the **Connections** section, click on the ellipsis button **...(1)** next to **Microsoft Dataverse Priority**.
+1. En la sección **Conexiones**, haga clic en el botón de puntos suspensivos **...(1)** junto a **Microsoft Dataverse Priority**.
 
-1. Ensure that  **odl_user(2)** you are using  is selected.
+1. Asegúrese de que el **odl_user(2)** que está utilizando esté seleccionado.
 
-1. Click on **Import(3)**.
+1. Haga clic en **Importar(3)**.
 
     ![](images/L01/connection1.png)
     
-1. Wait until the solution import to complete.
+1. Espere hasta que se complete la importación de la solución.
 
      ![](images/L01/solutionsuccess.png)
      
-1. You should now see the solution you imported in the list of solutions.
+1. Ahora debería ver la solución que importó en la lista de soluciones.
 
-1. Open the **Prioritz** solution you imported.
+1. Abra la solución **Prioritz** que importó.
 
-4. Expand **Tables (1)** and select the **PrioritZ Topic (2)** table.
+4. Expanda **Tablas (1)** y seleccione la tabla **PrioritZ Topic (2)**.
    
      ![](images/L01/L01-table1.png)
 
-5. Select the **Columns** under Schema and review the columns of the **PrioritZ Topic** table.
+5. Seleccione **Columnas** en Esquema y revise las columnas de la tabla **PrioritZ Topic**.
 
-   >**Info**: The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
+   >**Información**: Las columnas estándar están integradas y todas las tablas las tienen. El equipo creó las columnas personalizadas para esta aplicación.
  
    ![](images/L01/L01-coulumn.png)
 
-6. Select the **Relationships** tab from the Columns dropdown and review how this table is related to other tables.
+6. Seleccione la pestaña **Relaciones** del menú desplegable Columnas y revise cómo se relaciona esta tabla con otras tablas.
  
     ![](images/L01/L01-relation.png)
  
     ![](images/L01/L01-relation1.png)
 
-1. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
+1. Seleccione **Flujo de nube (1)** y abra el flujo **Importar datos de muestra – Topics (2)**.
  
     ![](images/L01/L01-cloud1.png)
 
-9. Click on **Edit** button to review the flow.
+9. Haga clic en el botón **Editar** para revisar el flujo.
   
     ![](images/L01/edit21.png)
 
-10. Expand the **Parse JSON** step and review the data this flow will create.
+10. Expanda el paso **Parse JSON** y revise los datos que creará este flujo.
 
     ![](images/L01/L01-parse1.png)
     
-    >>**Note**:If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
+    >>**Nota**: Si no puede expandir el paso, haga clic en los puntos suspensivos (...), luego seleccione Configuración y haga clic en Cancelar.
     
-12. Expand the **Apply to each topic** step.
+12. Expanda el paso **Apply to each topic**.
     
     ![](images/L01/L01-topic1.png)
 
-13. Expand the **Apply to each topic item** step.
+13. Expanda el paso **Apply to each topic item**.
    
      ![](images/L01/L01-eachtopic1.png)
 
-14. The **Apply to each** step should look like the image below. This is the logic for the automation.
+14. Los pasos **Apply to each** deben verse como la imagen a continuación. Esta es la lógica para la automatización.
  
     ![](images/L01/image111.png)
 
-15. Click on the **<- back** button.
+15. Haga clic en el botón **<- volver**.
  
     ![](images/L01/image121.png)
 
-16. Click on the flow name to open the flow details screen.
+16. Haga clic en el nombre del flujo para abrir la pantalla de detalles del flujo.
 
      ![](images/L01/EX1-T1-141.png)
 
-17. Click on **Run** to run the flow.
+17. Haga clic en **Ejecutar** para ejecutar el flujo.
    
      ![](images/L01/image131.png)
 
-18. Click the **Run flow** button on the Run flow blade.
+18. Haga clic en el botón **Ejecutar flujo** en la hoja Ejecutar flujo.
 
      ![](images/L01/L01-new1.png)
 
-     > **Note**: If you receive this error `Error from the token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** is not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 6-14** of this task again, then try to trigger the flow again.
+     > **Nota**: Si recibe este error `Error from the token exchange: Permission denied due to missing connection` mientras ejecuta el flujo, esto se debe a que la **conexión de Dataverse** no se está agregando correctamente. Elimine la solución importada e intente volver a importar la solución realizando los **Pasos 6 a 14** de esta tarea nuevamente, luego intente desencadenar el flujo de nuevo.
 
-19. Click **Done** and wait for the flow run to complete.
+19. Haga clic en **Listo** y espere a que se complete la ejecución del flujo.
 
      ![](images/L01/EX1-T1-181.png)
 
-20. The flow should run successfully. If you want, you can click on the run row and it will show you
-    the details of what the flow did.
+20. El flujo debería ejecutarse correctamente. Si lo desea, puede hacer clic en la fila de ejecución y se le mostrarán los detalles de lo que hizo el flujo.
    
       ![](images/L01/image141.png)
 
-### Task 2: Test the apps
+### Tarea 2: Probar las aplicaciones
 
-1. Navigate back to **PrioritZ** solution by clicking on **Cloud flows**. Alternatively, you can also open the **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Vuelva a la solución **PrioritZ** haciendo clic en **Flujos en la nube**. Alternativamente, también puede abrir el portal de creación de **Power Apps** utilizando esta URL `https://make.powerapps.com` si aún no está abierto. Asegúrese de que el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** esté seleccionado.
        
    ![](images/L01/cloud1u.png)
 
-1. Navigate to **Solutions** blade by clicking on **Back to Solutions** **(<-)** button.
+1. Navegue hasta la hoja **Soluciones** haciendo clic en el botón **Volver a Soluciones** (<-)**.
 
    ![](images/L01/solutions.png)
    
-2. Select **Apps (1)** from the left-hand side menu of Power Apps,  you should see two applications named **PrioritZ Ask** and **PrioritZ Admin (2)**. 
+2. Seleccione **Aplicaciones (1)** en el menú del lado izquierdo de Power Apps. Debería ver dos aplicaciones llamadas **PrioritZ Ask** y **PrioritZ Admin (2)**. 
 
-     >**Info:** **PrioritZ Admin** app is used to manage topics being asked about and **PrioritZ Ask** app allows users to respond.
+     >**Información:** La aplicación **PrioritZ Admin** se utiliza para administrar los temas sobre los que se pregunta y la aplicación **PrioritZ Ask** permite que los usuarios respondan.
 
     ![](images/L01/EX1-T2-2_1_1u.png)
 
-3. Launch the **PrioritZ Admin** application by clicking on **play** symbol.
+3. Inicie la aplicación **PrioritZ Admin** haciendo clic en el símbolo **iniciar**.
     
     ![](images/L01/L01-adminu1.png)
 
-4. You should see the below four topics.
+4. Debería ver los cuatro temas siguientes.
 
     ![](images/L01/EX1-T2-4-2u.png)
 
-5. Click to open **Event banner** topic.
+5. Haga clic para abrir el tema **Event banner**.
 
-6. You should see the topic details with some topic items.
+6. Debería ver los detalles del tema con algunos elementos del tema.
 
     ![](images/L01/EX1-T2-6-1u.png)
 
-7. Click on the **<** back button.
+7. Haga clic en el botón **<** regresar.
 
-    > **Note**: You should go back to the home screen.
+    > **Nota**: Debería volver a la pantalla de inicio.
 
-9. Now, click on the **+** button to add a new topic.
+9. Ahora, haga clic en el botón **+** para agregar un nuevo tema.
     
     ![](images/L01/image16u.png)
 
-10. Provide the below information and click **add a picture** that is present below **Respond By** field.
+10. Proporcione la siguiente información y haga clic en **add a picture** que se encuentra debajo del campo **Respond By**.
      
-     1. **Topic**: Enter `Change Taco Tuesday to some other food`
+     1. **Topic**: Escriba `Change Taco Tuesday to some other food`
      
-     1. **Details**: Enter `People are tired of tacos, what should we have instead of tacos?`
+     1. **Details**: Escriba `People are tired of tacos, what should we have instead of tacos?`
      
-     1. **Respond By**: Select **today's date**.
+     1. **Respond By**: Seleccione **la fecha de hoy**.
      
      ![](images/L01/image17u.png)
 
-11. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
+11. Navegue hasta la ruta C:\LabFiles en el explorador de archivos, seleccione **image.png** y haga clic en abrir.
 
-12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below the Choice field.
+12. Escriba **Tamale Tuesday** en el campo Choice y haga clic en **add a picture** que se encuentra debajo del campo Choice.
      
       ![](images/L01/image18u.png)
 
-11. Navigate to this path `C:\LabFiles` in File Explorer, select **image.png** and click open.
+11. Navegue hasta la ruta `C:\LabFiles` en el Explorador de Archivos, seleccione **image.png** y haga clic en Abrir.
 
-13. Click **+** to add the choice.
+13. Haga clic en **+** para agregar la opción.
      
       ![](images/L01/image191.png)
 
-14. Add a couple more choices by repeating **steps 12-14**.
+14. Agregue un par de opciones más repitiendo los **pasos 12 a 14**.
        
-       1. **Choice 1** : Enter `Steak Tuesday`
+       1. **Choice 1** : Escriba `Steak Tuesday`
        
-       2. **Choice 2**: Enter `Cheese and Wine Tuesday`
+       2. **Choice 2**: Escriba `Cheese and Wine Tuesday`
 
-15. Click on **Save** button to save the topic.
+15. Haga clic en el botón **Save** para guardar el tema.
     
     ![](images/L01/image20u.png)
 
-16. The new topic should be saved, and you should be navigated back to the main screen.
+16. El nuevo tema debería estar guardado y debería volver a la pantalla principal.
 
-17. You should see the topic you added to the list of topics.
+17. Debería ver el tema que agregó a la lista de temas.
 
      ![](images/L01/L01-tacou.png)
 
-18. Close the PrioritZ Admin application by closing the browser tab in which the PrioritZ Admin application is open.
+18. Cierre la aplicación PrioritZ Admin cerrando la pestaña del navegador en la que está abierta la aplicación PrioritZ Admin.
 
-19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **PrioritZ Ask (2)** application by clicking on play symbol.
+19. Seleccione **Aplicaciones (1)** en el menú del lado izquierdo de Power Apps e inicie la aplicación **PrioritZ Ask (2)** haciendo clic en el símbolo iniciar.
      
      ![](images/L01/L01-prioritzasku.png)
 
-20. You should see a list of topics. Open the **Change Taco Tuesday to some other food** topic that you created in the previous steps.
+20. Debería ver una lista de temas. Abra el tema **Change Taco Tuesday to some other food** que creó en los pasos anteriores.
 
      ![](images/L01/L01-listu.png)
 
-21. Click on the **up/down** icons order the items in the order you prefer them and click **Vote**.
+21. Haga clic en los íconos **arriba/abajo** para ordenar los elementos en el orden que prefiera y haga clic en **Vote**.
      
       ![](images/L01/L01-choiceuu.png)
 
-22. You should be navigated back to the main screens, and you should see a notification message.   
+22. Debería volver a las pantallas principales y debería ver un mensaje de notificación. 
       ![](images/L01/TVU.png)
     
-23. Close the PrioritZ Ask app by closing the browser tab in which the PrioritZ Ask application is open.
+23. Cierre la aplicación PrioritZ Ask cerrando la pestaña del navegador en la que está abierta la aplicación PrioritZ Ask.
 
-## Exercise 2 – Add a column for My Notes
+## Ejercicio 2: Agregar una columna para My Notes
 
-In this exercise, you will add a new column **My Notes** to the topic table and update the PriortZ Admin
-application.
+En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas y actualizará la aplicación PriortZ Admin.
 
-### Task 1: Add a new column
+### Tarea 1: Agregar una nueva columna
 
-1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navegue hasta el portal de creación de Power Apps utilizando la siguiente URL si aún no está abierta. Asegúrese de que el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** esté seleccionado.
     ```
     https://make.powerapps.com
    ```
-2. Select **Solutions (1)** from the left-hand side menu of Power Apps and open the **PrioritZ (2)** solution.
+2. Seleccione **Soluciones (1)** en el menú del lado izquierdo de Power Apps y abra la solución **PrioritZ (2)**.
 
    ![](images/L01/EX2-T1-2-1u.png)
 
-3. Expand **Tables(1)** and select the **PrioritZ Topic(2)** table.
+3. Expanda **Tablas(1)** y seleccione la tabla **PrioritZ Topic(2)**.
 
-4. Select the **Columns** tab that is present under **+ New(3)** and click **column(4)**.
+4. Seleccione la pestaña **Columnas** que se encuentra debajo de **+ Nuevo(3)** y haga clic en **columna(4)**.
 
     ![](images/L01/EX2-T1-4u.png)
 
-5. Enter the below value in the Display name field.
+5. Ingrese el siguiente valor en el campo Nombre para mostrar.
 
    ```
    My Notes
    ```
-1. Now, search for **Plain text (1)** under Data type then select the one that comes under **Multiline Text (2)** , and click **Save (3)**.
+1. Ahora, busque **plain text (1)** en Tipo de datos, luego seleccione el que se encuentra como **Multiple lines of text (2)** y haga clic en **Guardar (3)**.
 
     ![](images/L01/L01-notesu.png)
    
-   > **Note**: Do not navigate away from this page.
+   > **Nota**: No abandone esta página.
 
-### Task 2: Update the admin app
+### Tarea 2: Actualizar la aplicación de administración
 
-1. Make sure you are still in the **PrioritZ** solution. Select **Apps (1)** under **Objects** and select the **PrioritZ Admin (2)** application and click on **Edit (3)**.
+1. Asegúrese de que todavía se encuentra en la solución **PrioritZ**. Seleccione **Aplicaciones (1)** en **Objetos** y seleccione la aplicación **PrioritZ Admin (2)** y haga clic en **Editar (3)**.
     
     ![](images/L01/L01-admineditu.png)
 
-2. Select the **Add Topic Screen(1)**.
+2. Seleccione **Add Topic Screen(1)**.
 
-3. Click **+ Insert(2)** and select **Text input(3)**.
+3. Haga clic en **+ Insertar(2)** y seleccione **Entrada de texto(3)**.
    
      ![](images/L01/tinputu.png)
 
-4. Double-click on the newly added **Text input** and enter the below value to rename the text input.
+4. Haga doble clic en la **Entrada de texto** recién agregada e ingrese el valor a continuación para cambiar el nombre de la entrada de texto.
 
     ```
     Notes textbox
@@ -290,15 +288,15 @@ application.
     
      ![](images/L01/image27u.png)
 
-5. Make the add picture control smaller if needed, and move the **Respond By and label textbox** down and place the **Notes textbox** between the Details control and the Respond by label.
+5. Si es necesario, reduzca el tamaño del control add picture y mueva el cuadro de texto y la etiqueta **Respond By** hacia abajo y coloque el cuadro de texto **Notes** entre el control Details y la etiqueta Respond by.
    
     ![](images/L01/image28u.png)
 
-6. Select **Notes textbox** and then **HintText** from the properties dropdown.
+6. Seleccione el **Cuadro de texto Notes** y luego **HintText** en el menú desplegable de propiedades.
 
     ![](images/L01/hintextu.png)
 
-7. Change the **HintText** value of the Notes textbox to the below value. 
+7. Cambie el valor **HintText** del cuadro de texto Notes por el siguiente valor.
 
     ```
     My notes
@@ -306,7 +304,7 @@ application.
    
     ![](images/L01/image29u.png)
 
-8. Select the **Mode** from the properties dropdown and change its value by entering the below text.
+8. Seleccione **Mode** en el menú desplegable de propiedades y cambie su valor ingresando el texto que aparece a continuación.
 
     ```
     TextMode.MultiLine
@@ -314,25 +312,24 @@ application.
 
     ![](images/L01/L01-modeu.png)
 
-9. Select **Save topic icon** under **Add Topics Screen** section.
+9. Seleccione **Save topic icon** en la sección **Add Topics Screen**.
      
      ![](images/L01/image30u.png)
 
-10. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates
-    a new row in the Dataverse table.
+10. Reemplace la fórmula **OnSelect** de **Save topic icon** con la fórmula que aparece a continuación. Patch crea una nueva fila en la tabla Dataverse.
      
      ![](images/L01/image31u.png)
 
     ```
     Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
     ```
-11. Select the **View Topic Screen (1)** from the **Screens** tab.
+11. Seleccione **View Topic Screen (1)** en la pestaña **Pantallas**.
 
-12. Click **+ Insert(2)** tab and select **Text label(3)**.
+12. Haga clic en la pestaña **+ Insertar(2)** y seleccione **Etiqueta de texto(3)**.
 
     ![](images/L01/tlabelu.png)
 
-13. Double-click on the newly added label and enter the below value to rename the label you just added.
+13. Haga doble clic en la etiqueta recién agregada e ingrese el valor a continuación para cambiar el nombre de la etiqueta que acaba de agregar.
 
      ```
      Notes label
@@ -340,24 +337,23 @@ application.
      
     ![](images/L01/L01-labelu.png)
 
-14. Change the **Text** value of the Notes label with the below text.
+14. Cambie el valor **Text** de la etiqueta Notes por el texto a continuación.
 
      ```
      'Topics gallery'.Selected.'My Notes'
      ```
 
-15. Rearrange the controls and move the **Notes label** between the details label and the Topic items
-    gallery.
+15. Reorganice los controles y mueva la **etiqueta Notes** entre la etiqueta de detalles y la galería de elementos de Temas.
 
-16. Select the **Home Screen(1)** and click **Preview the app(2)**.
+16. Seleccione **Home Screen(1)** y haga clic en **Previsualizar la app(2)**.
       
       ![](images/L01/image34u.png)
 
-17. Click on the **+** button to add a new topic.
+17. Haga clic en el botón **+** para agregar un nuevo tema.
 
       ![](images/L01/L01-taco-1_1u.png)
 
-18. Fill out the form by providing the below information and click **add a picture** that is present below the **Respond By** field.
+18. Complete el formulario proporcionando la siguiente información y haga clic en **add a picture** que se encuentra debajo del campo **Respond By**.
 
        1. Topic: `Test Notes` (1)
        
@@ -365,124 +361,123 @@ application.
        
        3. Text input: `Prioritz Admin topic` (3)
        
-       4. Respond By: **Today's date** (4)
+       4. Respond By: **La fecha de Hoy** (4)
       
       
-19. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
+19. Navegue hasta esta ruta C:\LabFiles en el explorador de archivos, seleccione **image.png** y haga clic en abrir.
 
-20. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
+20. Escriba **Test One** en el campo Choice y haga clic en **add a picture** que se encuentra debajo del campo Choice.
      
       ![](images/L01/image18uu.png)
 
-21. Navigate to this path `C:\LabFiles` in File Explorer, select **image.png** and click open.
+21. Navegue hasta esta ruta `C:\LabFiles` en el Explorador de Archivos, seleccione **image.png** y haga clic en abrir.
 
-22. Click **+** to add the choice.
+22. Haga clic en **+** para agregar la opción.
      
       ![](images/L01/image19u.png)
 
-23. Add one more choice by repeating **steps 20-22** of this task.
+23. Agregue una opción más repitiendo los **pasos 20 a 22** de esta tarea.
        
-       1. **Choice 1** : Enter `Test Two`
-24. After adding all the Choices and topic details, your screen should look like the below screenshot.
+       1. **Choice 1** : Escriba `Test Two`
+24. Después de agregar todas las opciones y los detalles del tema, su pantalla debería verse como la siguiente captura de pantalla.
 
    ![](images/L01/L01-testnotesu.png)
       
-25. Now, click on the **Save** button. The new topic should be **saved**.
+25. Ahora, haga clic en el botón **Save**. El nuevo tema debería estar **guardado**.
 
-26. Click to open the **Test Notes** topic that you just created.
+26. Haga clic para abrir el tema **Test Notes** que acaba de crear.
 
-27. The notes **Prioritz Admin topic** that you added earlier should now be visible.
+27. Las notas **Prioritz Admin topic** que agregó anteriormente ahora deberían estar visibles.
  
      ![](images/L01/image36.1.png)
 
-28. Close the app **preview**.
+28. Cierre la **vista previa** de la aplicación.
 
-29. Click **Publish**.
+29. Haga clic en **Publicar**.
 
     ![](images/L01/publish.png)
 
-30. Select Publish this version and wait for the publishing to complete.
+30. Seleccione Publicar esta versión y espere a que se complete la publicación.
 
      ![](images/L01/NewUipublish1u.png)
 
- 31. You may close the **app designer**.
+31. Puede cerrar el **diseñador de aplicaciones**.
 
-## Exercise 3 – Test the Power Platform CLI
+## Ejercicio 3: Probar la CLI de Power Platform
 
-In this exercise, you will review and test the Power Platform CLI extension in Visual Studio Code.
+En este ejercicio, revisará y probará la extensión de la CLI de Power Platform en Visual Studio Code.
 
->**Note**: Visual studio code and Power platform CLI installation are already done as a part of the prerequisites.
+>**Nota**: La instalación de Visual Studio Code y la CLI de Power Platform ya se realizó como parte de los requisitos previos.
 
-1. Navigate to the Power Platform admin center by using the below URL and select **Environments**.
+1. Navegue hasta el centro de administración de Power Platform mediante la siguiente URL y seleccione **Ambientes**.
       ```
         https://admin.powerplatform.microsoft.com/environments
       ```
 
-1. If you see the pop-up **Stay Signed in?**, click **No**.
+1. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
 
-2. Click to open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
+2. Haga clic para abrir su entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
-3. Right-click on the **Environment URL** value and paste the value in Notepad.
+3. Haga clic con el botón derecho en el valor **Environment URL** y péguelo en el Bloc de notas.
  
-    >**Note**: Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
+    >**Nota**: Asegúrese de que el valor Environment URL se copie junto con **https**. El valor copiado debería verse parecido a `https://orgxxxxxx.crm.dynamics.com/`
 
     ![](images/L01/image37u.png)
 
-4. In the JumpVM, start **Visual Studio Code** using the shortcut available on the desktop.
+4. En JumpVM, inicie **Visual Studio Code** usando el acceso directo disponible en el escritorio.
 
    ![](images/L04/vscode1.png)
    
-6. Click **Terminal** and select **New Terminal**.
+6. Haga clic en **Terminal** y seleccione **Nuevo terminal**.
 
     ![](images/L01/image42u.png)
 
-7. Run the below command in the terminal.
+7. Ejecute el siguiente comando en la terminal.
    ```
    pac
    ```
    
-   > **Info:** If you encounter an error after using the **pac** command, download the Power Platform CLI from the **https://aka.ms/PowerAppsCLI** link, 
-     open   the installer, and complete the installation. Then, try the step again.
+   > **Información:** Si encuentra un error después de usar el comando **pac**, descargue la CLI de Power Platform desde la URL **https://aka.ms/PowerAppsCLI**, abra el instalador y complete la instalación. Luego, vuelva a intentar el paso.
 
-8. Replace `<your environment URL>` in the below command with the value of the environment URL that you copied earlier then run the command. 
+8. Reemplace `<your environment URL>` en el siguiente comando con el valor de la URL del entorno que copió anteriormente y luego ejecute el comando.
    ```
    pac auth create --name DevAuth --url <your environment URL>
    ```
 
-   > **Info:** After adding the environment URL, the command will look like this: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
+   > **Información:** Después de agregar la URL del entorno, el comando se verá así: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
   
     ![](images/L01/Eeditpac.png)
 
-1.  Complete the **Sign in** process, using the below credentials.
+1. Complete el proceso de **Inicio de sesión**, utilizando las siguientes credenciales.
 
-      * Email/Username: <inject key="AzureAdUserEmail"></inject>
-      * Password: <inject key="AzureAdUserPassword"></inject>
+      * Correo Electrónico/Nombre de Usuario: <inject key="AzureAdUserEmail"></inject>
+      * Contraseña: <inject key="AzureAdUserPassword"></inject>
 
-9. Select **Power Platform (1)** tool, you should now have at least one **auth profile (2)**. If you have more than one profile, make sure the profile you created is selected
+9. Seleccione la herramienta **Power Platform (1)**, ahora debería tener al menos un **perfil de autenticación (2)**. Si tiene más de un perfil, asegúrese de que el perfil que creó esté seleccionado.
    
     ![](images/L01/L01-authu.png)
 
-    > **Note** : If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the below steps:
+    > **Nota**: Si puede ver el **Perfil Universal** en lugar del perfil **DeVAuth**, se debe a que agregó el valor **Environment URL** incorrecto en el comando **pac auth create** en el paso 9. Para solucionar este problema, siga los pasos a continuación:
 
-      1. Delete the **Universal Profile** from Visual Studio Code by clicking on the delete button.
-      2. Copy the correct **Environment URL** value by following **Step 5** of this task. 
-      3. Perform the **Step 9** of this task again to create the auth profile.
+      1. Elimine el **Perfil Universal** de Visual Studio Code haciendo clic en el botón Eliminar.
+      2. Copie el valor **Environment URL** correcto siguiendo el **Paso 4** de esta tarea.
+      3. Realice el **Paso 8** de esta tarea nuevamente para crear el perfil de autenticación.
 
-10. Click **Terminal** and select **New Terminal** if not already open.
+10. Haga clic en **Terminal** y seleccione **Nuevo terminal** si aún no está abierta.
 
      ![](images/L01/image42.png)
 
-11. Run the command below to see a list of solutions.
+11. Ejecute el siguiente comando para ver una lista de soluciones.
 
       ```
       pac solution list
       ```
-12. You should see a list of solutions installed on your environment.
+12. Debería ver una lista de soluciones instaladas en su entorno.
     
     ![](images/L01/sollistu.png)
 
-## Summary
+## Resumen
 
-In this lab , you learned to import and execute a starting solution, customize it by adding a new column and updating the admin app, and verify functionality using the Power Platform CLI.
+En este laboratorio, aprendió a importar y ejecutar una solución de inicio, a personalizarla agregando una nueva columna y actualizando la aplicación de administración, y a verificar la funcionalidad mediante la CLI de Power Platform.
 
-## You have successfully completed the lab
+## Ha completado el laboratorio con éxito
