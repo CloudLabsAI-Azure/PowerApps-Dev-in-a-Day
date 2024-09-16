@@ -2,7 +2,7 @@
 
 ## Duração estimada: 90 minutos
 
-Trabalhando como parte da equipe de fusão do PrioritZ, você foi solicitado a criar um componente de código do Power Apps para permitir a classificação de prioridade de arrastar e soltar itens no PrioritZ Ask Power App. Você criará
+Trabalhando como parte da equipe de PrioritZ fusion, você foi solicitado a criar um componente de código do Power Apps para permitir a classificação de prioridade de arrastar e soltar itens no PrioritZ Ask Power App. Você criará
 um componente de código usando a estrutura React JavaScript. Uma abordagem de componente de código é usada para
 para atender ao requisito porque não existe um controlo semelhante já incorporado.
 
@@ -15,8 +15,7 @@ configurar o componente de código na aplicação:
 - FontSize
 - FontColor
 
-O aplicativo PrioritZ Ask preparará uma coleção dos itens a serem classificados que serão vinculados como o conjunto de dados para o
-o componente de código. Quando um item é arrastado e largado, o componente de código gera um evento OnSelect
+O aplicativo PrioritZ Ask preparará uma coleção dos itens a serem classificados que serão vinculados como o conjunto de dados para o componente de código. Quando um item é arrastado e largado, o componente de código gera um evento OnSelect
 que será tratado pela aplicação de alojamento. A aplicação de alojamento actualizará os itens da coleção com
 a sua nova classificação. O componente de código será stateless.
 
@@ -74,7 +73,7 @@ Neste exercício, você irá construir o componente de código.
     code -a.
     ```
 
-1. Se lhe for apresentado o pop-up abaixo, clique em **Sim** para confiar nos autores dos ficheiros.
+1. Se lhe for apresentado o pop-up abaixo, clique em **Yes** para confiar nos autores dos ficheiros.
 
     ![](images/L02/image4.1.png)
 
@@ -89,7 +88,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image6.png)
 
-12. Localize **data-set** elemento XML no **linha número 21** no ficheiro **ControlManifest.Input.xml**.
+12. Localize o elemento XML **data-set** na **linha número 21** no ficheiro **ControlManifest.Input.xml**.
 
     ![](images/L02/image7.png)
 
@@ -97,7 +96,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image8.png)
 
-14. Adicione as seguintes propriedades entre a etiqueta de fecho do elemento de conjunto de dados `/data-set>` e a etiqueta de abertura do elemento `<resources>`.
+14. Adicione as seguintes propriedades entre a etiqueta de fecho do elemento de conjunto de dados `</data-set>` e a etiqueta de abertura do elemento `<resources>`.
 
     > Adicione as seguintes propriedades após **linha número 26** no ficheiro **ControlManifest.Input.xml**.
 
@@ -111,7 +110,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image9.png)
 
-15. Localize a secção `<recursos>` e adicione o código abaixo após o **code path** para adicionar o recurso **css**. Isto garantirá que os nossos estilos serão agrupados com o componente de código quando este for implementado.
+15. Localize a secção `<resources>` e adicione o código abaixo após o **code path** para adicionar o recurso **css**. Isto garantirá que os nossos estilos serão agrupados com o componente de código quando este for implementado.
 
     ```
     <css path="css/PrioritZDnDRanking.css" order="1" />
@@ -131,13 +130,13 @@ Neste exercício, você irá construir o componente de código.
      
      ![](images/L02/image11.png)
 
-17. Clique em **Ficheiro** e seleccione **Guardar tudo** para guardar as suas alterações.
-18. Certifique-se de que ainda tem o ficheiro **ControlManifest.Input.xml** selecionado e clique em **Nova pasta**.
+17. Clique em **File** e seleccione **Save All** para guardar as suas alterações.
+18. Certifique-se de que ainda tem o ficheiro **ControlManifest.Input.xml** selecionado e clique em **New Folde**.
 
     ![](images/L02/image12.png)
 
 19. Refira o novo bunda da pasta **css**.
-20. Selecione a nova pasta **css** que criou e clique em **Novo ficheiro**
+20. Selecione a nova pasta **css** que criou e clique em **New File**
 
     ![](images/L02/image13.png)
 
@@ -165,15 +164,15 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image14.png)
 
-24. Clique em **Ficheiro** e seleccione **Guardar tudo** para guardar as suas alterações.
+24. Clique em **File** e seleccione **Save All** para guardar as suas alterações.
 
 ### Tarefa 2: Implementar a lógica do componente
 
-1. Selecione o ficheiro do componente **HelloWorld.tsx**, clique com o botão direito do rato no mesmo e selecione **Apagar** para remover o ficheiro de componentes à medida que este é criado automaticamente e não o iremos utilizar.
+1. Selecione o ficheiro do componente **HelloWorld.tsx**, clique com o botão direito do rato no mesmo e selecione **Delete** para remover o ficheiro de componentes à medida que este é criado automaticamente e não o iremos utilizar.
 
     ![](images/L02/L02-EX1-T2-1.png)
 
-2. Navegue para este caminho `C:\LabFiles\Developer-in-ay\Student\L02 - Build a um code componente\Resources` no ficheiro explorador.
+2. Navegue para este caminho `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` no ficheiro explorador.
 
 3. Arraste o ficheiro **PriorityComponent.tsx** e deixe-o largar na pasta **PrioriZDnDranking**.
 
@@ -181,12 +180,12 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image16.png)
 
-5. Clique em **Ficheiro** e guarde as suas alterações.
+5. Clique em **File** e guarde as suas alterações.
 
 6. Abra o **PriorityComponent.tsx** e reveja o conteúdo. Isto implementa o React
  componente que será renderizado para representar os nossos itens dragáveis.
 
-7. A linha de notificação 9 `de react-beautiful-dnd` tem uma sublinhado vermelho. Este é um pacote npm o
+7. A linha de notificação 9 `from react-beautiful-dnd` tem um sublinhado vermelho. Este é um pacote npm o
  componentes utilizamos que não fazemos referenciados.
 
     ![](images/L02/image17.png)
@@ -197,21 +196,21 @@ Neste exercício, você irá construir o componente de código.
     npm install react-beautiful-dnd
     ```
 
-    >**Nota**: Se receber este erro **npm não for reconhecido**, execute os passos abaixo:
+    >**Nota**: Se receber este erro **npm is not recognised**, execute os passos abaixo:
 
     1. Abra o PowerShell e execute este comando `choco install -y --force nodejs`.
     
-    2. Assim que a execução do comando estiver concluída, feche o Código do Estúdio do Visual e abra-o novamente.
+    2. Assim que a execução do comando estiver concluída, feche o Visual Studio Code e abra-o novamente.
     
-    3. Execute **Passo 8** desta tarefa novamente para instalar o pacote **react-beautiful-dnd**.
+    3. Execute o **Passo 8** desta tarefa novamente para instalar o pacote **react-beautiful-dnd**.
 
-9. Execute o seguinte comando para as definições de tipo.
+9. Execute o seguinte comando para as definições tipo.
 
     ```
     npm i --save-dev @types/react-beautiful-dnd
     ```
 
-10. Observe o u vermelhonderline na linha 9 foi resolvido.
+10. Observe que o sublinhado vermelho na linha 9 foi resolvido.
 
 11. Abra o ficheiro **index.ts**.
 
@@ -303,7 +302,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image25.png)
 
-    > **Nota** : **Destruição** função estará presente no final da classe **PrioritZDnDranking**.
+    > **Nota** : A função **Destroy** função estará presente no final da classe **PrioritZDnDranking**.
 
 22. Após concluir todos os passos, o seu ficheiro `index.ts` deverá conter o seguinte código.
 
@@ -395,13 +394,13 @@ Neste exercício, você irá construir o componente de código.
         }
     ```
  
-23. Abra o ficheiro **package. json**.
+23. Abra o ficheiro **package.json**.
 
-24. Localize o objeto **dependências** JSON.
+24. Localize o objeto **dependencies** JSON.
 
     ![](images/L02/image26.png)
 
-25. Substitua **dependências** pelo JSON abaixo.
+25. Substitua **dependencies** pelo JSON abaixo.
 
     ```
     "dependencies": {
@@ -418,7 +417,7 @@ Neste exercício, você irá construir o componente de código.
     },
     ```
 
-25. Navegue até ao ficheiro **.eslintric. json(1)** da navegação esquerda para adicionar a nova regra de flexição. Localize **rules(2)** na **linha número 21** e cole as regras abaixo.
+25. Navegue até ao ficheiro **.eslintric.json(1)** da navegação esquerda para adicionar a nova regra de flexição. Localize **rules(2)** na **linha número 21** e cole as regras abaixo.
 
     ```
     "no-unused-vars": ["off"],
@@ -428,9 +427,9 @@ Neste exercício, você irá construir o componente de código.
     ![](images/L02/eslint.png)
 
 
-26. Clique em **Ficheiro** e guarde todas as suas alterações.
+26. Clique em **File** e guarde todas as suas alterações.
 
-27. Clique em **Terminal** e seleccione **Novo Terminal**.
+27. Clique em **Terminal** e seleccione **New Terminal**.
 
     ![](images/L02/image27.png)
 
@@ -440,25 +439,25 @@ Neste exercício, você irá construir o componente de código.
     npm run-script build
     ```
 
-    > **Nota**: Se a operação de compilação falhar com este erro **`Root element está em falta`**, certifique-se de que o **resx path** é comentado no ficheiro Manifest.Xml e tente construir o componente novamente.
+    > **Nota**: Se a operação de compilação falhar com este erro **`Root element is missing`**, certifique-se de que o **resx path** é comentado no ficheiro Manifest.Xml e tente construir o componente novamente.
 
 29. A construção deve ter sucesso. Se algum erro, resolva-os antes de prosseguir.
 
      ![](images/L02/image28.png)
 
-30. Execute o comando abaixo para iniciar o chicote de teste.
+30. Execute o comando abaixo para iniciar o teste.
 
     ```
     npm start
     ```
 
-31. O chicote de teste deve iniciar, se não, copiar o endereço e colar-o numa nova janela do browser. Experimente arrastar os itens e ver se o comportamento funciona como esperado.
+31. O teste deve iniciar, se não, copiar o endereço e colar-o numa nova janela do browser. Experimente arrastar os itens e ver se o comportamento funciona como esperado.
 
     ![](images/L02/imagee29u.png)
 
-    > **Nota**: Se o chicote de teste não começar como esperado, não poderá ver a saída esperada como mencionado. Verifique se seguiu as instruções anteriores e adicionou o código corretamente nos ficheiros **Manifest e Index**.
+    > **Nota**: Se o teste não começar como esperado, não poderá ver a saída esperada como mencionado. Verifique se seguiu as instruções anteriores e adicionou o código corretamente nos ficheiros **Manifest e Index**.
 
-32. Feche o chicote de teste fechando a aba do navegador.
+32. Feche o teste fechando a aba do navegador.
 
 33. Pare a corrida segurando a tecla **[CONTROL]** + **C**.
 
@@ -474,11 +473,11 @@ Neste exercício, você irá construir o componente de código.
 
     > **Nota**:
 
-    1. Se a operação de push falhar com o erro **Desculpe, a aplicação encontrou um erro não recuperável e precisará de terminar**, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente em **Ficheiros de manifesto e índice**.
+    1. Se a operação de push falhar com o erro **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente em **Manifest and Index**.
 
-       Além disso, pode encontrar os ficheiros **Manifest e Index** na localização `C:\LabFiles`, pode comparar o seu código com estes ficheiros e corrigir os problemas se houver alguma tentativa de empurrar o componente executando o * *pac push comando** novamente.
+       Além disso, pode encontrar os ficheiros **Manifest e Index** na localização `C:\LabFiles`, pode comparar o seu código com estes ficheiros e corrigir os problemas se houver alguma tentativa de empurrar o componente executando o **pac push comando** novamente.
 
-    2. Se a execução falhar com um erro de pacote Nuget, execute o comando abaixo no PowerShell e tente executar novamente o comando acima.
+    2. Se a execução falhar com um erro no pacote Nuget, execute o comando abaixo no PowerShell e tente executar novamente o comando acima.
 
         ```
         dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
@@ -496,7 +495,7 @@ Neste exercício, você irá construir o componente de código.
     https://make.powerapps.com/
     ```
 
-2. Selecione **Soluções** e abra a solução **PowerAppsTools**.
+2. Selecione **Solutions** e abra a solução **PowerAppsTools**.
 
     ![](images/L02/image32u.png)
 
@@ -520,15 +519,15 @@ Nesta tarefa, permitirá a publicação de aplicações em tela com componentes 
 
 2. Abra o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** que está a utilizar para este laboratório.
 
-3. Clique em **Definições** no menu superior.
+3. Clique em **Settings** no menu superior.
 
     ![](images/L02/settingsu.png)
 
-4. Expandir **Produtos (1)** e seleccione **Castas (2)**.
+4. Expandir **Products (1)** e seleccione **Features (2)**.
 
     ![](images/L02/featureu.png)
 
-5. Adicione **Permitir publicação de aplicações de tela com componentes de código** e deslize para baixo clique **Guardar**.
+5. Adicione **Allow publishing of canvas apps with code components** e deslize para baixo clique **Save**.
 
     ![](images/L02/image35.2u.png)
 
@@ -544,32 +543,32 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
     https://make.powerapps.com/
     ```
 
-2. Selecione **Soluções** e abra a solução **PrioritZ**.
+2. Selecione **Solutions** e abra a solução **PrioritZ**.
 
-3. Selecione **Apps (1)** , selecione a aplicação **PrioritZ Ask (2)** e clique em **Editar (3)**.
+3. Selecione **Apps (1)** , selecione a aplicação **PrioritZ Ask (2)** e clique em **Edit (3)**.
 
     ![](images/L02/L02-editu.png)
 
-4. Selecione o separador **Componentes**, clique na seta para trás para **Importar**
- **componentes**.
+4. Selecione o separador **Components**, clique na seta para trás para **Import**
+ **components**.
 
     ![](images/L02/image38u.png)
 
-1. Selecione o **separador Código (1)**, selecione o componente de código **(2)** que criou e clique em **Importar (3)**.
+1. Selecione o separador **Code (1)**, selecione o componente de código **(2)** que criou e clique em **Import (3)**.
 
     ![](images/L02/L02-codeuu.png)
 
-7. Selecione o separador **Screen**.
+7. Selecione o separador **Screens**.
 
-8. Expandir **votescreen (1)** e Selecione a galeria **Votes (2)**.
+8. Expandir **votescreen (1)** e Selecione a **Votes gallery (2)**.
 
     ![](images/L02/L02-votescreenu.png)
 
-1. Selecione a **Diração** do menu suspenso das propriedades.
+1. Selecione a **Width** do menu suspenso das propriedades.
 
     ![](images/L02/L02-votescreen1u.png)
 
-9. Defina o valor de **Da largura** da galeria Votes para **570**.
+9. Defina o valor de **Width** da galeria Votes para **570**.
 
     ![](images/L02/L02-widthu.png)
 
@@ -577,11 +576,11 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
     ![](images/L02/image40u.png)
 
-11. Selecione o **Votes Screen** e clique em **+ Inserir**.
+11. Selecione o **Votes Screen** e clique em **+ Insert**.
 
     ![](images/L02/image41u.png)
 
-12. Selecione o componente **PrioritZDnDranking** em **Componentes do código**.
+12. Selecione o componente **PrioritZDnDranking** em **Code Components**.
 
     ![](images/L02/image42uuu.png)
 
@@ -595,13 +594,13 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
     ![](images/L02/L02-voteitemu.png)
 
-15. Selecione o **PrioritZDnDRAnking**, aceda ao painel **Propriedades** que está presente no lado direito do ecrã, defina **Item Altura** 160 e clique em **Editar campos**.
+15. Selecione o **PrioritZDnDRAnking**, aceda ao painel **Properties** que está presente no lado direito do ecrã, defina **Item Height** 160 e clique em **Edit Fields**.
 
     ![](images/L02/image43u.png)
 
-16. Clique em **+ Adicionar campo** para adicionar um novo campo.
+16. Clique em **+ Add field** para adicionar um novo campo.
 
-17. Selecione **Classificação (1)** e clique em **Adicionar (2)**.
+17. Selecione **Rank (1)** e clique em **Add (2)**.
 
     ![](images/L02/image44.1uu.png)
 
@@ -623,7 +622,7 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
     'Votes gallery'.Width
     ```
 
-23. Selecione a propriedade **Da largura** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor para **60**.
+23. Selecione a propriedade **Width** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor para **60**.
 
 24. Selecione a propriedade **Height** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor com a fórmula abaixo.
 
@@ -689,9 +688,9 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
     );
     ```
 
-30. Selecione o **Ecrã de casa** e clique em **Play**.
+30. Selecione o **Home Screen** e clique em **Play**.
 
-31. Selecione um dos **temas**.
+31. Selecione um dos **topics**.
 
 32. Pode visualizar como está no ecrã de um telefone utilizando o emulador.
 
@@ -703,12 +702,12 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
 34. O arrastar/desembarque deve funcionar como esperado.
 35. Feche a antevisão.
-1. Clique em **Publique**.
+1. Clique em **Publish**.
 
     ![](images/L02/publish.png)
 
-38. Selecione **Publique esta versão** e aguarde que a publicação seja concluída.
-39. Pode **fechar** o estúdio de aplicações em tela.
+38. Selecione **Publish this version** e aguarde que a publicação seja concluída.
+39. Pode **close** o estúdio de aplicações em tela.
 
 ## Exercício 3 – Adicionar Componente de Código à Solução
 
@@ -722,16 +721,16 @@ Neste exercício, irá adicionar o componente de código que criou à solução 
     https://make.powerapps.com/
     ```
 
-2. Selecione **Soluções** e abra a solução **PrioritZ**.
-3. Clique em **Adicionar existente** e seleccione **Mais | Developer | Controlo personalizado**.
+2. Selecione **Solutions** e abra a solução **PrioritZ**.
+3. Clique em **Add existing** e seleccione **More | Developer | Custom control**.
 
     ![](images/L02/image50.1.png)
 
-4. Selecione **contoso_ContosoCoffee.PrioritZDnDranking (1)** e clique em **Adicionar (2)**.
+4. Selecione **contoso_ContosoCoffee.PrioritZDnDranking (1)** e clique em **Add (2)**.
 
     ![](images/L02/image51.1.png)
 
-5. Clique em **Publique todas as personalizações** e aguarde que a publicação seja concluída.
+5. Clique em **Publish all customizations** e aguarde que a publicação seja concluída.
 
     ![](images/L02/L02-EX3.png)
 

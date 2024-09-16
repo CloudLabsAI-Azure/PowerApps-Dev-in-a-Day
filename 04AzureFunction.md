@@ -710,8 +710,7 @@ In this exercise, you will create a new custom connector.
 
 ### Exercise 5 – Use Function from Canvas App
 
-In this exercise, you will use the Azure function you created via the custom connector from the PrioritZ
-Admin canvas application.
+In this exercise, you will use the Azure function you created via the custom connector from the PrioritZ Admin canvas application.
 
 ### Task 1: Use the function
 

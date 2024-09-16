@@ -18,35 +18,34 @@ Duração: 45 minutos
 
    - Tarefa 2: Atualização da aplicação de administrador
 
-3. Exercício 3 – Verifique o instalador de código do estúdio do Visual elétrico pré-instalado e a extensão CLI da plataforma de energia
+3. Exercício 3 – Verifique o instalador do Visual Studio Code pré-instalado e a extensão CLI da Power Platform
 
-   - Tarefa 1: Teste o CLI da plataforma de energia
+   - Tarefa 1: Teste o CLI da Power Platform
 
 
 ### Cenário de laboratório
 
-
-Trabalhando como parte da equipa de fusão Prioritz, estará a configurar o seu desenvolvimento de plataformas de alimentação
+Trabalhando como parte da equipa de Prioritz fusion, estará a configurar o ambiente de desenvolvimento da Power Platform
 ambiente. Irá importar e rever a solução atual e explorar o estado atual das aplicações Prioritz,
-fluxos e tabelas. Também irá adicionar uma coluna a uma tabela e modificar a aplicação para a utilizar.
+fluxos e tabelas. Também irá adicionar uma coluna a uma tabela e modificar a aplicação.
 
-# **Entrar com o seu programador num dia Workshop**
+# **Introdução ao Workshop Programador num dia**
 
-Bem-vindo ao seu programador num workshop de um dia! Preparámos um ambiente contínuo para que possa explorar e aprender sobre os serviços Azure. Comecemos por aproveitar ao máximo esta experiência:
+Bem-vindo ao workshop programador num dia! Preparámos um ambiente contínuo para que possa explorar e aprender sobre os serviços do Azure. Comecemos por aproveitar ao máximo esta experiência:
 
 ## **Aceder ao seu ambiente de laboratório**
 
-Depois de estar pronto para mergulhar, a sua máquina virtual e o **O Guia do laboratório** estarão mesmo ao seu navegador no seu navegador.
+Assim que estiver pronto para iniciar, a sua máquina virtual e o **O Guia do laboratório** estarão no seu navegador.
 
  ![](./images/GS6.png)
 
 ### **Guia de máquinas virtuais e laboratório**
 
-A sua máquina virtual é o seu cavalo de carga durante todo o workshop. O guia de laboratório é o seu roteiro para o sucesso.
+A sua máquina virtual é onde deverá executar todas as tarefas durante o workshop. O guia de laboratório é o seu roteiro para o sucesso.
 
 ## **Explorando os seus recursos de laboratório**
 
-Para compreender melhor os recursos e as credenciais do seu laboratório, navegue até ao separador **Detalhes do ambiente**.
+Para compreender melhor os recursos e as credenciais do seu laboratório, navegue até ao separador **Environment Details**.
 
  ![](./images/GS20.png)
 
@@ -62,9 +61,9 @@ Sinta-se à vontade para iniciar, parar ou reiniciar a sua máquina virtual conf
 
  ![](./images/GS5.png)
 
-## **Vamos começar com o Portal Azure**
+## **Vamos começar com o Portal do Azure**
 
-1. Na sua máquina virtual, clique no ícone do Portal Azure, conforme mostrado abaixo:
+1. Na sua máquina virtual, clique no ícone do Portal do Azure, conforme mostrado abaixo:
 
    ![](./images/GS1.png)
 
@@ -92,7 +91,7 @@ Sinta-se à vontade para iniciar, parar ou reiniciar a sua máquina virtual conf
 
    ![](./images/GS4.png)
 
-Agora está todos prontos para explorar o poderoso mundo da tecnologia. Sinta-se à vontade para contactar se tiver alguma dúvida ao longo do caminho. Desfrute do seu workshop!
+Agora estamos prontos para explorar o poderoso mundo da tecnologia. Sinta-se à vontade para contactar o seu instrutor se tiver alguma dúvida ao longo do caminho. Desfrute do seu workshop!
 
 
 ## Exercício 1 - Importar e rever os componentes da solução
@@ -107,69 +106,69 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
       ![azure portal.](images/L01/PAportal.png)
 
-1. Ao clicar no portal do Power Apps, o ecrã de boas-vindas do navegador de borda surgirá e seleccione **Iniciar sem os seus dados**.
+1. Ao clicar no portal do Power Apps, o ecrã de boas-vindas do navegador de borda surgirá e seleccione **Start without your data**.
 
     ![](/images/L01/browser-1.png)
 
-1. No **Podemos ajudá-lo a importar os seus dados de navegação da janela do Google**, clique em **Continuar sem estes dados**.
+1. Na janel **We can help you import your browsing data from Google**, clique em **Continue without this data**.
 
     ![](/images/L01/browser-1.1.png)
 
-1. Na janela seguinte, clique em **Confirme e comece a navegar**.
+1. Na janela seguinte, clique em **Confirm and start browsing**.
 
     ![](/images/L01/browser-2.png)
 
-1. Agora, verá duas abas no browser Edge, fecha o primeiro separador denominado **Microsoft Edge**.
+1. Agora, verá dois separadores no browser Edge, fecha o primeiro separador denominado **Microsoft Edge**.
 
-1. Na janela **Inscreva-se**, verá o ecrã de login, introduza o seguinte nome de utilizador **(1)** e clique em **Próximo** **(2)**.
+1. Na janela **Sign in**, verá o ecrã de login, introduza o seguinte nome de utilizador **(1)** e clique em **Next** **(2)**.
 
    * E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
 
       ![](/images/L01/portalsignin-1.png)
 
-1. Introduza agora a seguinte palavra-passe **(1)** e clique em **Inscreva-se** **(2)**.
+1. Introduza agora a seguinte palavra-passe **(1)** e clique em **Sign in** **(2)**.
 
    * Palavra-passe: <inject key="AzureAdUserPassword"></inject>
 
       ![](/images/L01/portalsignin-2.png)
 
-1. Se for apresentado com **Ajude-nos a proteger a sua conta**, clique em **Skip por enquanto**.
+1. Se for apresentado com **Help us protect your account**, clique em **Skip for now**.
 
     ![](/images/L01/portalsignin-3.png)
 
-1. Se vir o pop-up **Stay inscrito?**, clique em **Não**.
+1. Se vir o pop-up **Stay Signed in?**, clique em **Não**.
 
-1. Depois de logado, clique em **Ambiente (1)** e seleccione o ambiente de desenvolvimento pré-criado denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
+1. Depois de logado, clique em **Environment (1)** e seleccione o ambiente de desenvolvimento pré-criado denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
 
     ![](images/L01/dev11.png)
 
-2. Agora, clique em **Soluções (1)** do menu do lado esquerdo e clique em **Import Solution (2)**.
+2. Agora, clique em **Solutions (1)** do menu do lado esquerdo e clique em **Import Solution (2)**.
 
    ![](images/L01/importsolution.png)
 
-3. Clique em **Profisar**.
+3. Clique em **Browse**.
 
    ![](images/L01/browse.png)
 
-1. Navegue para este caminho `C:\LabFiles\Developer-in-ay\Student\L01 - Começar\Resources` no ficheiro explorer, seleccione o ficheiro **Prioritz_1_0_0_0_7.zip** e clique em **Aberto**.
+1. Navegue para este caminho `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` no ficheiro explorer, seleccione o ficheiro **Prioritz_1_0_0_0_7.zip** e clique em **Open**.
 
-1. Certifique-se de que o ficheiro **Prioritz (1)** está selecionado e Clique em **Próximo (2)**.
+1. Certifique-se de que o ficheiro **Prioritz (1)** está selecionado e Clique em **Next (2)**.
 
    ![](images/L01/next.png)
 
-1. Clique novamente em **Próximo** na lâmina da solução de importação.
+1. Clique novamente em **Next** no separador da solução de importação.
 
-1. Clique no **selecione uma ligação** suspenso e selecione **+ Nova ligação**.
+1. Clique em **select a connection** e selecione **+ New connection**.
 
    ![](images/L01/connection.png)
 
-1. Clique em **Criar** numa janela de browser recém-aberta e **Inscreva-se se for solicitado**.
+1. Clique em **Create** numa janela de browser recém-aberta e **Sign In**.
 
    ![](images/L01/create.png)
 
 1. Feche a janela do navegador de ligação ou o separador.
 
-1. Clique em **Refrescar**.
+1. Clique em **Refresh**.
 
    ![](images/L01/refresh.png)
 
@@ -185,27 +184,27 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Abra a solução **Prioritz** que importou.
 
-4. Expandir **Tabelas (1)** e seleccione a tabela **PrioritZ Tópico (2)**.
+4. Expandir **Tables (1)** e seleccione a tabela **PrioritZ Topic (2)**.
 
    ![](images/L01/L01-table1.png)
 
-5. Selecione as **Colunas** em Esquema e reveja as colunas da tabela **PrioritZ Topic**.
+5. Selecione as **Columns** em Schema e reveja as colunas da tabela **PrioritZ Topic**.
 
    >**Info**: As colunas padrão estão integradas e todas as tabelas têm-nas. As colunas personalizadas foram criadas pela equipa para esta aplicação.
 
    ![](images/L01/L01-coulumn.png)
 
-6. Selecione o separador **Relações** do menu suspenso das Colunas e reveja como esta tabela está relacionada com outras tabelas.
+6. Selecione o separador **Relationships** do menu suspenso das Colunas e reveja como esta tabela está relacionada com outras tabelas.
 
    ![](images/L01/L01-relation.png)
 
    ![](images/L01/L01-relation1.png)
 
-1. Selecione **Fluxo de cloud (1)** e abra os **Importar dados de amostra – Tópicos (2)** fluxo.
+1. Selecione **Cloud flow (1)** e abra os **Import sample data – Topics (2)** fluxo.
 
    ![](images/L01/L01-cloud.png)
 
-9. Clique no botão **Editar** para rever o fluxo.
+9. Clique no botão **Edit** para rever o fluxo.
 
    ![](images/L01/edit2.png)
 
@@ -213,15 +212,15 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    ![](images/L01/L01-parse.png)
 
-11. Expandir o passo **Aplicar a cada tópico**.
+11. Expandir o passo **Apply to each topic**.
 
    ![](images/L01/L01-topic.png)
 
-12. Expandir o passo **Aplicar a cada item do tópico**.
+12. Expandir o passo **Apply to each topic item**.
 
    ![](images/L01/L01-eachtopic.png)
 
-13. O **Aplicar a cada** deve parecer a image abaixo. Esta é a lógica da automatização.
+13. O **Apply to each** deve parecer a image abaixo. Esta é a lógica da automatização.
 
       ![](images/L01/image11.png)
 
@@ -233,15 +232,15 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
       ![](images/L01/EX1-T1-14.png)
 
-16. Clique em **Entrar** para executar o fluxo.
+16. Clique em **Run** para executar o fluxo.
 
       ![](images/L01/image13.png)
 
-17. Clique no botão **Fugár** Executar a lâmina de fluxo.
+17. Clique no botão **Run flow** Executar a lâmina de fluxo.
 
       ![](images/L01/L01-new.png)
 
-      > **Nota**: Se receber este erro `Erro da troca de tokens: Permissão negada devido à falta de ligação` enquanto executa o fluxo, isto deve-se ao facto de a ligação **Dataverse** não está a ser adicionado correctamente. Apague a solução importada e tente reimportar a solução executando os **Estãos 11-21** desta tarefa novamente e, em seguida, tente desencadear o fluxo novamente.
+      > **Nota**: Se receber este erro `Error from the token exchange: Permission denied due to missing connection` enquanto executa o fluxo, isto deve-se ao facto de a ligação **Dataverse** não está a ser adicionado correctamente. Apague a solução importada e tente reimportar a solução executando os **passos 11-21** desta tarefa novamente e, em seguida, tente desencadear o fluxo novamente.
 
 18. Clique em **Done** e aguarde que o fluxo seja executado.
 
@@ -254,17 +253,17 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 ### Tarefa 2: Teste as aplicações
 
-1. Navegue de volta para a solução **PrioritZ** clicando em **Fluxos de cloud**. Em alternativa, também pode abrir o portal do fabricante **Power Apps** utilizando este URL `https://make.powerapps.com` se ainda não está aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** é selecionado.
+1. Navegue de volta para a solução **PrioritZ** clicando em **Cloud flows**. Em alternativa, também pode abrir o portal do fabricante **Power Apps** utilizando este URL `https://make.powerapps.com` se ainda não está aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** é selecionado.
 
    ![](images/L01/cloud1.png)
 
-1. Navegue até à lâmina **Soluções** clicando em **Regresso às soluções** **(<-)**.
+1. Navegue até ao separador **Solutions** clicando em **Back to Solutions** **(<-)**.
 
    ![](images/L01/solutions.png)
 
 2. Selecione **Apps (1)** do menu do lado esquerdo do Power Apps, deve ver duas aplicações denominadas **PrioritZ Ask** e **PrioritZ Admin (2)**.
 
-   >**Info:** **A aplicação PrioritZ Admin** é utilizada para gerir tópicos que estão a ser solicitados e a aplicação **PrioritZ Ask** permite que os utilizadores respondam.
+   >**Info:** A aplicação **PrioritZ Admin** é utilizada para gerir tópicos que estão a ser solicitados e a aplicação **PrioritZ Ask** permite que os utilizadores respondam.
 
    ![](images/L01/EX1-T2-2_1_1.png)
 
@@ -276,7 +275,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    ![](images/L01/EX1-T2-4-2.png)
 
-5. Clique para abrir o tópico do banner **Evento**.
+5. Clique para abrir o tópico do banner **Event banner**.
 
 6. Deve ver os detalhes do tópico com alguns itens do tópico.
 
@@ -290,19 +289,19 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    ![](images/L01/image16.png)
 
-10. Forneça as informações abaixo e clique em **Adicione uma image** que está presente abaixo **Respond By**.
+10. Forneça as informações abaixo e clique em **add a picture** que está presente abaixo **Respond By**.
 
-    1. **Tópico**: Introduza `Change Taco Terça-feira para algum outro alimento`
+    1. **Topic**: Introduza `Change Taco Tuesday to some other food`
     
-    1. **Detalhes**: Introduza `As pessoas estão cansadas de tacos, o que devemos ter em vez de tacos?`
+    1. **Details**: Introduza `People are tired of tacos, what should we have instead of tacos?`
 
- 1. **Responda By**: Selecione **data de hoje**.
+ 1. **Responda By**: Selecione **today's date**.
 
       ![](images/L01/image17.png)
 
 1. Navegue para este caminho C:\LabFiles no explorador de ficheiros, seleccione **image.png** e clique em abrir.
 
-12. Introduza **Tamale Terça-feira** no campo Choice e clique em **adicionar uma image** que está presente abaixo do campo Choice.
+12. Introduza **Tamale Tuesday** no campo Choice e clique em **add a picture** que está presente abaixo do campo Choice.
 
       ![](images/L01/image18.png)
 
@@ -312,13 +311,13 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
       ![](images/L01/image19.png)
 
-14. Adicione mais algumas opções repetindo **passos 12-14**.
+14. Adicione mais algumas opções repetindo **os passos 12-14**.
 
-    1. **Escolha 1**: Introduza `Fico Terça-feira`
+    1. **Escolha 1**: Introduza `Steak Tuesday`
 
-    2. **Escolha 2**: Introduza `Cheese and Wine Terça-feira`
+    2. **Escolha 2**: Introduza `Cheese and Wine Tuesday`
 
-15. Clique no botão **Guardar** para guardar o tópico.
+15. Clique no botão **Save** para guardar o tópico.
 
     ![](images/L01/image20.png)
 
@@ -334,7 +333,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
     ![](images/L01/L01-prioritzask.png)
 
-20. Deve ver uma lista de tópicos. Abra o **Change Taco Terça-feira a algum outro tópico de comida** que criou nos passos anteriores.
+20. Deve ver uma lista de tópicos. Abra o ***Change Taco Tuesday to some other food** que criou nos passos anteriores.
 
     ![](images/L01/L01-list.png)
 
@@ -350,7 +349,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 ## Exercício 2 – Adicione uma coluna para as minhas notas
 
-Neste exercício, irá adicionar uma nova coluna **As minhas notas** à tabela de tópicos e atualizar o PriortZ Admin
+Neste exercício, irá adicionar uma nova coluna **My Notes** à tabela de tópicos e atualizar o PriortZ Admin
 aplicação.
 
 ### Tarefa 1: Adicione uma nova coluna
@@ -361,13 +360,13 @@ aplicação.
    https://make.powerapps.com
    ```
 
-2. Selecione **Soluções (1)** do menu do lado esquerdo das aplicações de alimentação e abra a solução **PrioritZ (2)**.
+2. Selecione **Solutions (1)** do menu do lado esquerdo das aplicações de alimentação e abra a solução **PrioritZ (2)**.
 
     ![](images/L01/EX2-T1-2-1.png)
 
-3. Expandir **Tabelas** e seleccione a tabela **PrioritZ Topic**.
+3. Expandir **Tables** e seleccione a tabela **PrioritZ Topic**.
 
-4. Selecione o separador **Colunas** que está presente em **Schema** e clique em **+ Nova coluna**.
+4. Selecione o separador **Columns** que está presente em **Schema** e clique em **+ New column**.
 
     ![](images/L01/EX2-T1-4.png)
 
@@ -377,7 +376,7 @@ aplicação.
    My Notes
    ```
 
-1. Agora, pesquise por **Tisto de toque (1)** em tipo de dados e selecione aquele que está sob **Texto Multilina (2)** e clique em **Guardar (3)**.
+1. Agora, pesquise por **Plain text (1)** em tipo de dados e selecione aquele que está sob **Multiline Text (2)** e clique em **Save (3)**.
 
    ![](images/L01/L01-notes.png)
 
@@ -385,19 +384,19 @@ aplicação.
 
 ### Tarefa 2: Atualize a aplicação de administrador
 
-1. Certifique-se de que ainda está na solução **PrioritZ**. Selecione **Apps (1)** em **Objects** e selecione a aplicação **PrioritZ Admin (2)** e clique em **Editar (3)**.
+1. Certifique-se de que ainda está na solução **PrioritZ**. Selecione **Apps (1)** em **Objects** e selecione a aplicação **PrioritZ Admin (2)** e clique em **Edit (3)**.
 
     ![](images/L01/L01-adminedit.png)
 
-3. Selecione o **Adicionar ecrã do tópico**.
+3. Selecione o **Add Topic Screen**.
 
     ![](images/L01/L01-addtopic.png)
 
-4. Clique em **+ Inserir(1)** e seleccione **Texto entrada(2)**.
+4. Clique em **+ Insert(1)** e seleccione **Text input(2)**.
 
     ![](images/L01/tinput.png)
 
-5. Clique duas vezes na recém-adicionado **Texto entrada** e introduza o valor abaixo para renomear a entrada do texto.
+5. Clique duas vezes na recém-adicionado **Text input** e introduza o valor abaixo para renomear a entrada do texto.
 
    ```
    Notes textbox
@@ -405,7 +404,7 @@ aplicação.
 
     ![](images/L01/image27.png)
 
-6. Deixe o controlo da image adicionar mais pequeno, se necessário, e mova a caixa de texto **Respond By e etiqueta a caixa de texto** e coloque a caixa de texto **Notas** entre o controlo de Detalhes e o Responda pelo rótulo.
+6. Deixe o controlo da image adicionar mais pequeno, se necessário, e mova a caixa de texto **Respond By and label textbox** e coloque a caixa de texto **Notas** entre o controlo de Detalhes e o Responda pelo rótulo.
 
     ![](images/L01/image28.png)
 
@@ -430,11 +429,11 @@ aplicação.
 
     ![](images/L01/L01-mode.png)
 
-10. Selecione **Guardar ícone do tópico** na secção **Adicionar tópicos de ecrã**.
+10. Selecione **Save topic icon** na secção **Add Topics Screen**.
 
     ![](images/L01/image30.png)
 
-11. Substitua a fórmula **OnSelect** do **Guardar o ícone do tópico** com a fórmula abaixo. O Patch criauma nova linha na tabela Dataverse.
+11. Substitua a fórmula **OnSelect** do **Save topic icon** com a fórmula abaixo. O Patch criauma nova linha na tabela Dataverse.
 
     ![](images/L01/image31.png)
 
@@ -442,9 +441,9 @@ aplicação.
       Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
       ```
 
-12. Selecione o **Ver parapic Ecrã (1)** do separador **Ecrãs**.
+12. Selecione o **View Topic Screen (1)** do separador **Screens**.
 
-1. Clique em **+ Inserir (1)** separador e seleccione **Texto rótulo (2)**.
+1. Clique em **+ Insert (1)** separador e seleccione **Text label (2)**.
 
    ![](images/L01/tlabel.png)
 
@@ -456,7 +455,7 @@ aplicação.
 
     ![](images/L01/L01-label.png)
 
-14. Altere o valor **Texto** do rótulo Notes com o texto abaixo.
+14. Altere o valor **Text** do rótulo Notes com o texto abaixo.
 
       ```
       'Topics gallery'.Selected.'My Notes'
@@ -464,12 +463,12 @@ aplicação.
 
       ![](images/L01/image32.png)
 
-15. Rearranque os controlos e mova o rótulo **Notas** entre o rótulo de detalhes e os itens do tópico
+15. Rearranque os controlos e mova o rótulo **Notes** entre o rótulo de detalhes e os itens do tópico
  galeria.
 
     ![](images/L01/image33.png)
 
-16. Selecione o **Ecrã de casa** e clique em **Própria a aplicação**.
+16. Selecione o **Home Screen** e clique em **Preview the app**.
 
     ![](images/L01/image34.png)
 
@@ -477,19 +476,19 @@ aplicação.
 
     ![](images/L01/L01-taco-1_1.png)
 
-18. Preencha o formulário fornecendo as informações abaixo e clique em **Adicione uma image** que está presente abaixo do campo **Respond By**.
+18. Preencha o formulário fornecendo as informações abaixo e clique em **add a picture** que está presente abaixo do campo **Respond By**.
 
       1. Tópico: `Test Notes` (1)
 
-      2. Detalhes: `Testando as notas` (2)
+      2. Detalhes: `Testing the notes` (2)
 
-      3. Entrada de texto: `Tópico do Admin Prioritz` (3)
+      3. Entrada de texto: `Prioritz Admin topic` (3)
 
-      4. Responda por: **Data de hoje** (4)
+      4. Responda por: **Today's date** (4)
 
 1. Navegue para este caminho C:\LabFiles no explorador de ficheiros, seleccione **image.png** e clique em abrir.
 
-12. Introduza **Test One** no campo Choice e clique em **Adicione uma image** que esteja presente abaixo do campo Choice.
+12. Introduza **Test One** no campo Choice e clique em **add a picture** que esteja presente abaixo do campo Choice.
 
     ![](images/L01/image18.png)
 
@@ -501,21 +500,21 @@ aplicação.
 
 14. Adicione mais uma escolha repetindo **passos 20-22** desta tarefa.
 
-    1. **Escolha 1**: Introduza `Teste Dois`
+    1. **Choice 1**: Introduza `Test Two`
 
 1. Depois de adicionar todas as opções e detalhes do tópico, o seu ecrã deve parecer a captura de ecrã abaixo.
 
    ![](images/L01/L01-testnotes.png)
 
-19. Agora, clique no botão **Guardar**. O novo tópico deve ser **salvado**.
+19. Agora, clique no botão **Save**. O novo tópico deve ser **saved**.
 20. Clique para abrir o tópico **Test Notes** que acabou de criar.
-21. As notas **Tópico do Admin Prioritz** que adicionou anteriormente devem ser visíveis agora.
+21. As notas **Prioritz Admin topic** que adicionou anteriormente devem ser visíveis agora.
 
     ![](images/L01/image36.1.png)
 
 22. Feche a aplicação **preview**.
 
-1. Clique em **Publique**.
+1. Clique em **Publish**.
 
    ![](images/L01/publish.png)
 
@@ -523,25 +522,25 @@ aplicação.
 
     ![](images/L01/NewUipublish1.png)
 
-26. Pode fechar o designer **app**.
+26. Pode fechar o **app designer**.
 
-## Exercício 3 – Teste o CLI da plataforma de energia
+## Exercício 3 – Teste o CLI da Power Platform
 
-Neste exercício, irá rever e testar a extensão CLI da plataforma Power no Visual Studio Code.
+Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visual Studio Code.
 
->**Nota**: O código de estúdio visual e a instalação da plataforma Power CLI já são feitos como parte dos pré-requisitos.
+>**Nota**: O Visual Studio Code e a instalação da Power Platform CLI já estão instalados como parte dos pré-requisitos.
 
-1.  Navegue até ao centro de administração da plataforma Power utilizando o URL abaixo e selecione **Ambientes**.
+1.  Navegue até ao centro de administração da Power Platform utilizando o URL abaixo e selecione **Ambientes**.
  
       ```
       https://admin.powerplatform.microsoft.com/environments
       ```
 
-1. Se for apresentado com **Ajude-nos a proteger a sua conta**, clique em **Skip por enquanto**.
+1. Se for apresentado com **Help us protect your account**, clique em **Skip for now**.
 
    ![](/images/L01/portalsignin-3.png)
 
-1. Se vir o pop-up **Stay inscrito?**, clique em **Não**.
+1. Se vir o pop-up **Stay Signed in?**, clique em **Não**.
 
 2. Clique para abrir o seu ambiente de desenvolvimento chamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
@@ -551,11 +550,11 @@ Neste exercício, irá rever e testar a extensão CLI da plataforma Power no Vis
 
    ![](images/L01/image37.png)
 
-4. No JumpVM, inicie o **Código do estúdio do Visual** utilizando o atalho disponível na área de trabalho.
+4. No JumpVM, inicie o **Visual Studio Code** utilizando o atalho disponível na área de trabalho.
 
    ![](images/L04/vscode1.png)
 
-6. Clique em **Terminal** e seleccione **Novo Terminal**.
+6. Clique em **Terminal** e seleccione **New Terminal**.
 
    ![](images/L01/image42.png)
 
@@ -565,7 +564,7 @@ Neste exercício, irá rever e testar a extensão CLI da plataforma Power no Vis
    pac
    ```
 
-   > **Informações:** Se encontrar um erro após a utilização do comando pac, tente desinstalar a ferramenta Power Platform e reinstale-a, volte a tentar o passo.
+   > **Info:** Se encontrar um erro após a utilização do comando pac, tente desinstalar a ferramenta Power Platform e reinstale-a, volte a tentar o passo.
 
 8. Substitua `<o seu URL do seu ambiente>` no comando abaixo pelo valor do URL do ambiente que copiou anteriormente e depois executa o comando.
 
@@ -577,38 +576,38 @@ Neste exercício, irá rever e testar a extensão CLI da plataforma Power no Vis
 
    ![](images/L01/Eeditpac.png)
 
-1. Conclua o processo **Inscreva-se**, utilizando as credenciais abaixo.
+1. Conclua o processo **Sign in**, utilizando as credenciais abaixo.
 
    * E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
    
    * Palavra-passe: <inject key="AzureAdUserPassword"></inject>
 
-1. Se for apresentado com **Ajude-nos a proteger a sua conta**, clique em **Skip por enquanto**.
+1. Se for apresentado com **Help us protect your account**, clique em **Skip for now**.
 
    ![](/images/L01/portalsignin-3.png)
 
-9. Selecione **Tratama de Power Platform (1)**, agora deve ter pelo menos um perfil de **aut (2)**. Se tiver mais do que um perfil, certifique-se de que o perfil que criou será selecionado
+9. Selecione **Power Platform (1)**, agora deve ter pelo menos um perfil de **auth profile (2)**. Se tiver mais do que um perfil, certifique-se de que o perfil que criou será selecionado
 
    ![](images/L01/L01-auth.png)
 
-   > **Nota**: Se conseguir ver o perfil **Universal Profile** em vez do perfil de **DeVAuth**, é por adição do valor incorreto de **URL** Ambiente na **pac auth create** comando no Passo 9. Para corrigir istoue, siga os passos abaixo:
+   > **Nota**: Se conseguir ver o perfil **Universal Profile** em vez do perfil de **DeVAuth**, é por adição do valor incorreto  **Environment URL** no comendo **pac auth create** no Passo 9. Para corrigir isto, siga os passos abaixo:
 
-   1. image Apagar o **perfil Universal** do Visual Studio Code clicando no botão de eliminação.
+   1. Apagar o **Universal Profile** do Visual Studio Code clicando no botão de eliminação.
 
-   2. image Copie o valor correto do **URL** Ambiente seguindo **Estão 5** desta tarefa.
+   2. Copie o valor correto do **Environment URL** seguindo o **Passo 5** desta tarefa.
    
-   3. image Execute o **Estão 9** desta tarefa novamente para criar o perfil de autenticação.
+   3. Execute o **Passo 9** desta tarefa novamente para criar o perfil de autenticação.
 
-10. image Clique em **Terminal** e seleccione **Novo Terminal**, se ainda não estiver aberto.
+10. Clique em **Terminal** e seleccione **New Terminal**, se ainda não estiver aberto.
 
     ![](images/L01/image42.png)
 
-11. image Execute o comando abaixo para ver uma lista de soluções.
+11. Execute o comando abaixo para ver uma lista de soluções.
 
       ```
       pac solution list
       ```
 
-12. image Deve ver uma lista de soluções instaladas no seu ambiente.
+12. Deve ver uma lista de soluções instaladas no seu ambiente.
 
     ![](images/L01/sollist.png)
