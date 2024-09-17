@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this series of labs, you will gain hands-on experience with various aspects of the Power Platform, from importing and running starting solutions to building and using custom code components. You will create and modify custom connectors, integrate Azure Functions, and promote solutions across environments. Each lab builds foundational skills, such as creating Power Apps components and setting up custom connectors. By following detailed instructions and visual aids, you will learn to effectively develop, test, and deploy robust Power Platform solutions, ensuring a comprehensive understanding of the platform's capabilities and best practices.
+In this series of labs, you will gain hands-on experience with various aspects of the Power Platform, from importing and running starting solutions to building and using custom code components. You will create and modify custom connectors, and promote solutions across environments. Each lab builds foundational skills, such as creating Power Apps components and setting up custom connectors. By following detailed instructions and visual aids, you will learn to effectively develop, test, and deploy robust Power Platform solutions, ensuring a comprehensive understanding of the platform's capabilities and best practices.
 
 ## Objective
 
@@ -25,10 +25,10 @@ Learn to import and customize Power Platform solutions, create custom code compo
 
 ## Architecture Diagram
 
-In these labs, you'll follow a structured process to master key aspects of Power Platform development and management. You'll start by importing a pre-built solution, running a flow to add sample data, customizing it by adding a new column, and testing the Power Platform CLI using VS Code. Next, you'll build a code component with VS Code, integrate it into a canvas app, and add it to a solution. Then, you'll create a custom connector using an Open API definition, enhance it with custom code, and test it in both flows and canvas apps. After that, you'll create, implement, and publish an Azure Function, create a connector for it, and optionally integrate it into a canvas app. Finally, you'll promote a solution to a test environment, configure a service principal, manage the solution using a GitHub repository, and release it for testing. Each step is detailed with instructions and visual aids to ensure you gain practical experience with Power Platform's features.
+In these labs, you'll follow a structured process to master key aspects of Power Platform development and management. You'll start by importing a pre-built solution, running a flow to add sample data, customizing it by adding a new column, and testing the Power Platform CLI using VS Code. Next, you'll build a code component with VS Code, integrate it into a canvas app, and add it to a solution. Then, you'll create a custom connector using an Open API definition, enhance it with custom code, and test it in both flows and canvas apps. Each step is detailed with instructions and visual aids to ensure you gain practical experience with Power Platform's features.
 
 
- ![](./images/low_code_in_a_day_Architecture_diagram.JPG)
+ ![](./images/lowcode.JPG)
 
 
 ## Explanation of Components
