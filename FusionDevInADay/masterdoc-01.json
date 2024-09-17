@@ -1,0 +1,22 @@
+
+
+[
+  {
+    "Name": "Low Code Development with Power Apps & Power Automate",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/FusionDevInADay/01GettingStarted.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/FusionDevInADay/02BuildCode.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://docs-api.cloudlabs.ai/repos/raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/FusionDevInADay/03Custom_connector_for_existingAPI.md",
+        "Order": 3
+      }
+    ]
+  }
+]
