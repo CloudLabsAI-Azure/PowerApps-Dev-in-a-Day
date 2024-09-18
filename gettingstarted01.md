@@ -8,7 +8,6 @@ In this series of labs, you will gain hands-on experience with various aspects o
 
 ## Objective
 
-
 After completing these Lab, you'll know how to import and customize solutions in Power Platform, build custom code components, and  create and integrate custom connectors.
 Learn to import and customize Power Platform solutions, create custom code components, and develop and integrate custom connectors. By the end of this lab, you will gain insights on:
 
@@ -18,6 +17,8 @@ Learn to import and customize Power Platform solutions, create custom code compo
  - **Application lifecycle management** : Promote a solution to a test environment, configure a service principal, manage with GitHub, and set up a workflow for release.
 
 ## Prerequisites
+
+Participants should have:
 
 - Basic knowledge of Power Platform and Power Apps.
 - Access to Power Platform environment and Azure account.
@@ -34,6 +35,8 @@ In these labs, you'll follow a structured process to master key aspects of Power
 
 
 ## Explanation of Components
+
+The architecture for this lab involves the following key components:
 
 - **Power Platform Environment**: The central workspace where you import, manage, and customize solutions within the Power Platform. It provides the necessary tools and interface for developing and testing 
  various applications and components.
@@ -84,25 +87,31 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
    ![](./images/GS1.png)
  
-2. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
      ![](./images/GS2.png "Enter Email")
  
-3. Next, provide your password:
+1. Next, provide your password:
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
      ![](./images/GS3.png "Enter Password")
+
+1. If you see the pop-up Action Required, click Ask Later.
+
+   ![](media/asklater.png)
+
+   >**NOTE:** Do not enable MFA, select **Ask Later**.
  
-4. If you see the pop-up **Stay Signed in?**, click **No**.
+1. If you see the pop-up **Stay Signed in?**, click **No**.
 
    ![](./images/GS9.png)
 
-5. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-6. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
 
 By completing these exercises, You will import and customize Power Platform solutions, create and implement custom code components with Visual Studio Code, develop and integrate custom connectors, create and deploy Azure Functions, and manage solutions using GitHub for source control.
    
