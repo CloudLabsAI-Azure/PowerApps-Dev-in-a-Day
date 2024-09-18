@@ -1,6 +1,6 @@
 # Low Code for Pro-Dev in a Day
 
-## Overall Estimated Duration: 8 Hours
+### Overall Estimated Duration: 8 Hours
 
 ## Overview
 
@@ -129,7 +129,7 @@ Now, click on the **Next** from the lower right corner to move to the next page.
 
 ![](./images/GS4.png)
 
-## Happy Learning!!
+### Happy Learning!!
 
 
 
