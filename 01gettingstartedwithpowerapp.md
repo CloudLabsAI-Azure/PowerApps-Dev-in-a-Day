@@ -252,9 +252,9 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
 
    ![](images/L01/EX2-T1-2-1u.png)
 
-3. Expanda **Tablas(1)** y seleccione la tabla **PrioritZ Topic(2)**.
+3. Expanda **Tablas (1)** y seleccione la tabla **PrioritZ Topic (2)**.
 
-4. Seleccione la pestaña **Columnas** que se encuentra debajo de **+ Nuevo(3)** y haga clic en **columna(4)**.
+4. Seleccione la pestaña **Columnas** que se encuentra debajo de **+ Nuevo (3)** y haga clic en **columna (4)**.
 
     ![](images/L01/EX2-T1-4u.png)
 
@@ -275,9 +275,9 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
     
     ![](images/L01/L01-admineditu.png)
 
-2. Seleccione **Add Topic Screen(1)**.
+2. Seleccione **Add Topic Screen (1)**.
 
-3. Haga clic en **+ Insertar(2)** y seleccione **Entrada de texto(3)**.
+3. Haga clic en **+ Insertar (2)** y seleccione **Entrada de texto (3)**.
    
      ![](images/L01/tinputu.png)
 
@@ -326,7 +326,7 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
     ```
 11. Seleccione **View Topic Screen (1)** en la pestaña **Pantallas**.
 
-12. Haga clic en la pestaña **+ Insertar(2)** y seleccione **Etiqueta de texto(3)**.
+12. Haga clic en la pestaña **+ Insertar (2)** y seleccione **Etiqueta de texto (3)**.
 
     ![](images/L01/tlabelu.png)
 
@@ -346,7 +346,7 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
 
 15. Reorganice los controles y mueva la **etiqueta Notes** entre la etiqueta de detalles y la galería de elementos de Temas.
 
-16. Seleccione **Home Screen(1)** y haga clic en **Previsualizar la app(2)**.
+16. Seleccione **Home Screen (1)** y haga clic en **Previsualizar la app (2)**.
       
       ![](images/L01/image34u.png)
 
@@ -380,9 +380,10 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
 23. Agregue una opción más repitiendo los **pasos 20 a 22** de esta tarea.
        
        1. **Choice 1** : Escriba `Test Two`
+
 24. Después de agregar todas las opciones y los detalles del tema, su pantalla debería verse como la siguiente captura de pantalla.
 
-   ![](images/L01/L01-testnotesu.png)
+     ![](images/L01/L01-testnotesu.png)
       
 25. Ahora, haga clic en el botón **Save**. El nuevo tema debería estar **guardado**.
 
