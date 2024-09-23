@@ -408,7 +408,6 @@ En este ejercicio, creará el componente de código.
    
       ![](images/L02/eslint.png)
    
-   
 26. Haga clic en **Archivo** y guarde todos los cambios.
 
 27. Haga clic en **Terminal** y seleccione **Nuevo terminal**.
@@ -429,9 +428,9 @@ En este ejercicio, creará el componente de código.
  
 30. Ejecute el siguiente comando para iniciar el arnés de prueba.
     
-        ```
-        npm start
-        ```
+       ```
+       npm start
+       ```
 
 31. El arnés de prueba debería iniciarse; si no, copie la dirección y péguela en una nueva ventana del navegador. Intente arrastrar los elementos y vea si el comportamiento funciona como se esperaba.
 
@@ -447,8 +446,8 @@ En este ejercicio, creará el componente de código.
      
       ![](images/L02/image30.png)
 
- 
 35. Ejecute el siguiente comando para enviar el componente a su entorno.
+
     ```
     pac pcf push --publisher-prefix contoso
     ```
@@ -464,7 +463,6 @@ En este ejercicio, creará el componente de código.
         ```
         dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
         ```
-
     
 36. Espere a que la solución se importe y se publique en su entorno.
 
@@ -475,8 +473,8 @@ En este ejercicio, creará el componente de código.
 1. Navegue hasta el portal de creación de Power Apps utilizando la siguiente URL si aún no está abierta. Asegúrese de que el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** esté seleccionado.
 
    ```
-    https://make.powerapps.com/
-    ```
+   https://make.powerapps.com/
+   ```
     
 2. Seleccione **Soluciones** y abra la solución **PowerAppsTools**.
     
@@ -497,7 +495,7 @@ En esta tarea, permitirá la publicación de aplicaciones de canvas con componen
 1. Navegue hasta el centro de administración de Power Platform utilizando la siguiente URL y seleccione entornos.
 
      ```
-        https://admin.powerplatform.microsoft.com/environments
+     https://admin.powerplatform.microsoft.com/environments
      ```
 
 2. Abra el entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** que está usando para este laboratorio.
@@ -521,6 +519,7 @@ En esta tarea, permitirá la publicación de aplicaciones de canvas con componen
 En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el componente de código que creaste.
 
 1. Navegue al portal de creación de Power Apps usando la siguiente URL si aún no está abierta. Asegúrese de que el entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** esté seleccionado.
+
    ```   
    https://make.powerapps.com/
    ```
@@ -571,6 +570,7 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
     ```
     'Votes gallery'.AllItems
     ```
+
      ![](images/L02/L02-voteitemu.png)
     
 15. Seleccione **PrioritZDnDRanking**, vaya al panel **Properties** que se encuentra en el lado derecho de la pantalla, configure **Item Height** en 160 y haga clic en **Edit Fields**.
@@ -598,19 +598,19 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 22. Establezca el valor **X** del componente **PrioritZDnDRanking** con la siguiente fórmula.
 
     ```
-    'Votes gallery'.Width
+    Votes gallery'.Width
     ```
 23. Seleccione la propiedad **Width** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **60**.
     
 24. Seleccione la propiedad **Height** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
     ```
-    'Votes gallery'.Height
+    Votes gallery'.Height
     ```
 25. Seleccione la propiedad **ItemHeight** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
     ```
-    'Votes gallery'.TemplateHeight
+    Votes gallery'.TemplateHeight
     ```
 26. Seleccione la propiedad **BackgroundColor** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **"LightBlue"**
     
@@ -619,7 +619,7 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 28. Seleccione la propiedad **Y** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
     ```
-    'Votes gallery'.Y
+    Votes gallery'.Y
     ```
     
 29. Seleccione la propiedad **OnSelect** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
@@ -662,7 +662,6 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
         );
 
     );
-
     ```
 
 30. Seleccione **Home Screen** y haga clic en **Iniciar**.
@@ -695,8 +694,9 @@ En este ejercicio, agregará el componente de código que creó a la solución P
 1. Navegue hasta el portal de creación de Power Apps utilizando la siguiente URL si aún no está abierta. Asegúrese de que el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** esté seleccionado.
 
    ```
-    https://make.powerapps.com/
-    ```
+   https://make.powerapps.com/
+   ```
+
 2. Seleccione **Soluciones** y abra la solución **PrioritZ**.
 3. Haga clic en **Agregar existente** y seleccione **Más | Desarrollador | Control personalizado**.
       
