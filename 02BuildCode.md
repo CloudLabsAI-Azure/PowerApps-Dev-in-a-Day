@@ -134,7 +134,7 @@ En este ejercicio, creará el componente de código.
 21. Nombre el nuevo archivo **PrioritZDnDRanking.css**
 22. Pegue el siguiente CSS en el archivo **PrioritZDnDRanking.css**.
     
-        ```
+       ```
         .prioritydnd-scroll-container {
         box-sizing: border-box;
         padding: 2px;
