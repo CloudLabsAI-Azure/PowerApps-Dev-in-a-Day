@@ -115,16 +115,18 @@ En este ejercicio, creará el componente de código.
       >**Nota**: Por favor asegúrese de NO descomentar la **ruta resx** ya que se encontraría con un problema en la próxima tarea mientras construye el componente de código si no está comentada.
       
 16. Observe los siguientes dos recursos. Esto declara la dependencia del componente en estas dos bibliotecas. Este es el resultado de especificar –framework React en la inicialización.
-     ```
-     <platform-library name="React" version="16.8.6" />
-     <platform-library name="Fluent" version="8.29.0" />
-     ```
-     ![](images/L02/image11.png)
+
+    ```
+    <platform-library name="React" version="16.8.6" />
+    <platform-library name="Fluent" version="8.29.0" />
+    ```
+     
+    ![](images/L02/image11.png)
     
 17. Haga clic en **Archivo** y seleccione **Guardar Todo** para guardar los cambios.
 18. Asegúrese de que todavía tiene seleccionado el archivo **ControlManifest.Input.xml** y luego haga clic en **Nueva carpeta**.
 
-      ![](images/L02/image12.png)
+    ![](images/L02/image12.png)
 
 19. Nombre la nueva carpeta como **css**.
 20. Seleccione la nueva carpeta **css** que creó y luego haga clic en **Nuevo archivo**
@@ -223,12 +225,13 @@ En este ejercicio, creará el componente de código.
  
 16. Agregue el siguiente código dentro de la clase **export**. Esto define algunas variables de trabajo que usará en la lógica de la clase.
    
-        ```
-        private context: ComponentFramework.Context<IInputs>;
-        private items: ComponentFramework.PropertyTypes.DataSet;
-        private state: ComponentFramework.Dictionary;
-        ```
-        ![](images/L02/image21.png)
+    ```
+    private context: ComponentFramework.Context<IInputs>;
+    private items: ComponentFramework.PropertyTypes.DataSet;
+    private state: ComponentFramework.Dictionary;
+    ```
+    
+    ![](images/L02/image21.png)
  
 17. Ubique la función **init**.
  
