@@ -313,19 +313,20 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 22. Seleccione la acción **getcurrentbadge**.
      
-      ![](images/L03/image33.png)
+     ![](images/L03/image33.png)
 
-24. Desplácese hacia abajo hasta la sección **Response** y haga clic en **+ Agregar respuesta predeterminada.**
+23. Desplácese hacia abajo hasta la sección **Response** y haga clic en **+ Agregar respuesta predeterminada.**
  
       ![](images/L03/image34.png)
 
 
-25. Pegue el JSON que copió en el **Body (1)** y haga clic en **Importar (2)**.
+24. Pegue el JSON que copió en el **Body (1)** y haga clic en **Importar (2)**.
      
      ![](images/L03/image35-1.png)
 
-26. Haga clic en **Actualizar conector** y espere a que se actualice el conector.
-27. **No** abandone esta página.
+25. Haga clic en **Actualizar conector** y espere a que se actualice el conector.
+
+26. **No** abandone esta página.
 
 ### Tarea 2: Probar código personalizado
 
