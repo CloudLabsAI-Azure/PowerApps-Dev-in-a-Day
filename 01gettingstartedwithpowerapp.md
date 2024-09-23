@@ -232,7 +232,8 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
      
       ![](images/L01/L01-choiceuu.png)
 
-22. Debería volver a las pantallas principales y debería ver un mensaje de notificación. 
+22. Debería volver a las pantallas principales y debería ver un mensaje de notificación.
+
       ![](images/L01/TVU.png)
     
 23. Cierre la aplicación PrioritZ Ask cerrando la pestaña del navegador en la que está abierta la aplicación PrioritZ Ask.
