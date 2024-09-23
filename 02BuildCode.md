@@ -389,6 +389,7 @@ In this exercise, you will build the code component.
     }
     
     ```
+
 23. Open the **package.json** file.
     
 24. Locate the **dependencies** JSON object.
@@ -420,7 +421,6 @@ In this exercise, you will build the code component.
      ```
    
       ![](images/L02/eslint.png)
-   
    
 26. Click **File** and save all your changes.
 
@@ -460,7 +460,6 @@ In this exercise, you will build the code component.
      
       ![](images/L02/image30.png)
 
- 
 35. Run the command below to push the component to your environment.
     ```
     pac pcf push --publisher-prefix contoso
@@ -477,7 +476,6 @@ In this exercise, you will build the code component.
         ```
         dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
         ```
-
     
 36. Wait for the solution to be imported and published to your environment.
 
@@ -487,7 +485,7 @@ In this exercise, you will build the code component.
 
 1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
 
-   ```
+    ```
     https://make.powerapps.com/
     ```
     
@@ -508,21 +506,22 @@ In this exercise, you will use the code component you created in the PrioritZ As
 In this task, you will allow the publishing of canvas apps with code components for your environment.
 
 1. Navigate to the Power Platform admin center by using the below URL and select environments.
+
      ```
-        https://admin.powerplatform.microsoft.com/environments
+     https://admin.powerplatform.microsoft.com/environments
      ```
 
-2. Open the dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** that you are using for this lab.
+3. Open the dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** that you are using for this lab.
 
-3. Click **Settings** from top menu.
+4. Click **Settings** from top menu.
     
      ![](images/L02/settingsu.png)
 
-4. Expand **Products(1)** and select **Features(2)**.
+5. Expand **Products(1)** and select **Features(2)**.
     
      ![](images/L02/featureu.png)
 
- 5. Turn on **Allow publishing of canvas apps with code components** and Scroll down click **Save**.
+ 6. Turn on **Allow publishing of canvas apps with code components** and Scroll down click **Save**.
      
       ![](images/L02/image35.2u.png)
 
