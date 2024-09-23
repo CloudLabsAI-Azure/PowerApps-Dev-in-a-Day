@@ -526,7 +526,9 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
 
 1. Navegue hasta el portal de creación de Power Apps y asegúrese de estar en su entorno de desarrollo.
 
-         https://make.powerapps.com
+     ```
+     https://make.powerapps.com
+     ```
 
 2. Seleccione **Soluciones**.
 3. Seleccione la solución del conector **Contoso Badges** y haga clic en **Exportar solución**.
@@ -545,7 +547,9 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
 
 1. Navegue hasta el portal de creación de Power Apps si aún no está abierto y seleccione su entorno de **Prueba** llamado Azure XXXXXX (predeterminado).
 
-         https://make.powerapps.com
+     ```
+     https://make.powerapps.com
+     ```
 
 3. Haga clic en **Importar Solución**.
     
