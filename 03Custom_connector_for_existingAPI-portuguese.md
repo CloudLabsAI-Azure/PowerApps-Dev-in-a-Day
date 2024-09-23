@@ -220,8 +220,7 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
 7. A ligação que criou deve ser selecionada.
 
-8. Aceda à operação **AddCredit (1)**. Introduza o seu endereço de e-mail para o reciprided, introduza o seu nome para nome, introduza **1** para pontos e clique em
- **Test operation (2)**.
+8. Aceda à operação **AddCredit (1)**. Introduza o seu endereço de e-mail para o reciprided, introduza o seu nome para nome, introduza **1** para pontos e clique em **Test operation (2)**.
 
     ![](images/L03/image20-1u.png)
 
@@ -277,8 +276,7 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
     2. Descrição: **Get current badge (2)**
     3. ID de operação: **getcurrentbadge (3)**
 
-
-        ![](images/L03/image26-1.png)
+       ![](images/L03/image26-1.png)
 
 7. Desça até à secção **Request** e clique em **+ Import from sample**.
 
@@ -481,7 +479,9 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 
 8. Clique no campo **name**, Sob Manualmente acionar um painel de fluxo e selecione ***User name**.
 
-9. Introduza **1** para pontos e clique em **Save**. Aguarde que o fluxo seja guardado.![](images/L03/image50.png)
+9. Introduza **1** para pontos e clique em **Save**. Aguarde que o fluxo seja guardado.
+
+    ![](images/L03/image50.png)
 
 10. Clique em **Test**.
 
@@ -489,7 +489,7 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 
 11. Selecione **Test** e clique novamente **TTesteste**.
 
-    ![](images/L03/L03-EX3-manualmente.png)
+    ![](images/L03/L03-EX3-manually.png)
 
 12. Clique em **Test**.
 

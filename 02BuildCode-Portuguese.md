@@ -547,8 +547,7 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
     ![](images/L02/L02-editu.png)
 
-4. Selecione o separador **Components**, clique na seta para trás para **Import**
- **components**.
+4. Selecione o separador **Components**, clique na seta para trás para **Import components**.
 
     ![](images/L02/image38u.png)
 
