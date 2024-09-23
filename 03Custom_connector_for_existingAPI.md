@@ -317,8 +317,7 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 23. Desplácese hacia abajo hasta la sección **Response** y haga clic en **+ Agregar respuesta predeterminada.**
  
-      ![](images/L03/image34.png)
-
+     ![](images/L03/image34.png)
 
 24. Pegue el JSON que copió en el **Body (1)** y haga clic en **Importar (2)**.
      
