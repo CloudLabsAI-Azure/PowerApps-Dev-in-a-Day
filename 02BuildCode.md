@@ -224,24 +224,23 @@ En este ejercicio, creará el componente de código.
 16. Agregue el siguiente código dentro de la clase **export**. Esto define algunas variables de trabajo que usará en la lógica de la clase.
    
         ```
-         private context: ComponentFramework.Context<IInputs>;
-         private items: ComponentFramework.PropertyTypes.DataSet;
-         private state: ComponentFramework.Dictionary;
+        private context: ComponentFramework.Context<IInputs>;
+        private items: ComponentFramework.PropertyTypes.DataSet;
+        private state: ComponentFramework.Dictionary;
         ```
         ![](images/L02/image21.png)
  
-
 17. Ubique la función **init**.
  
       ![](images/L02/init.png)
         
 18. Pegue el código a continuación dentro de la función **init**. Esta lógica inicializa nuestras variables de clase a partir de los valores de tiempo de ejecución y habilita la notificación de cambio de tamaño.
     
-        ![](images/L02/init1.png)
+       ![](images/L02/init1.png)
    
        ```
-        this.context = context;
-        context.mode.trackContainerResize(true);
+       this.context = context;
+       context.mode.trackContainerResize(true);
        ```
  
 19. Localice la función **updateView**.
