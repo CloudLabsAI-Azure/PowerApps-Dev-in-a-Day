@@ -332,7 +332,6 @@ In this exercise, you will build the code component.
         public init(
             context: ComponentFramework.Context<IInputs>,
             notifyOutputChanged: () => void,
-            state: ComponentFramework.Dictionary
         ): void {
             this.context = context;
             context.mode.trackContainerResize(true);
@@ -545,6 +544,8 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     **components**.
 
      ![](images/L02/image38u.png)
+
+   >**Note:** The arrow may be invisible due to a glitch.
  
 1. Select the **Code (1)** tab, select the code component **(2)** you created and click **Import (3)**.
     
@@ -722,7 +723,8 @@ In this exercise, you will add the code component you created to the PrioritZ so
  5. Click **Publish all customizations** and wait for the publishing to complete.
 
     ![](images/L02/L02-EX3.png)
-
+    
+    >**Note:** If you can't find the Publish all customizations button, click the ellipsis **(...)** next to the Add existing pane.
 ## Summary
 
 In this lab,you learned to create a code component, implement its logic, integrate it into a canvas app, and add it to a solution within the Power Platform.
