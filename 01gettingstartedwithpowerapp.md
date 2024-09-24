@@ -264,7 +264,7 @@ application.
    ```
    My Notes
    ```
-1. Now, search for **Plain text (1)** under Data type then select the one that comes under **Multiline Text (2)** , and click **Save (3)**.
+1. Now, search for **Plain text (1)** under Data type then select the  **Multiple lines of text (2)** , and click **Save (3)**.
 
     ![](images/L01/L01-notesu.png)
    
@@ -276,12 +276,16 @@ application.
     
     ![](images/L01/L01-admineditu.png)
 
+   >**Note**: If you can't find the Edit button, click the ellipsis **(...)** next to the Add existing pane.
+    
 2. Select the **Add Topic Screen(1)**.
 
 3. Click **+ Insert(2)** and select **Text input(3)**.
    
      ![](images/L01/tinputu.png)
 
+   >**Note**: If you can't find the Insert button, click the ellipsis **(...)** in the upper-left corner.
+     
 4. Double-click on the newly added **Text input** and enter the below value to rename the text input.
 
     ```
