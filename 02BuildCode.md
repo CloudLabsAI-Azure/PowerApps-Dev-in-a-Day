@@ -590,52 +590,56 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
       ![](images/L02/image43u.png)
 
-16. Click on **+ Add field** to add a new field.
+    >**Note:** If you can't find the properties on the right side of the screen, click the properties option located next to the edit button in the upper-right corner.
+
+      ![](images/L02/pro.png)
+       
+17. Click on **+ Add field** to add a new field.
     
-17. Select **Rank (1)** and click on **Add (2)**.
+18. Select **Rank (1)** and click on **Add (2)**.
      
       ![](images/L02/image44.1uu.png)
  
-18. The rank should now show on the control, but it is sorted descending.
+19. The rank should now show on the control, but it is sorted descending.
       
-19. Select the **Votes gallery**, then select the **Items** property from the property dropdown and change the sort order to **Ascending**.
+20. Select the **Votes gallery**, then select the **Items** property from the property dropdown and change the sort order to **Ascending**.
      
       ![](images/L02/image46.png)
  
- 20. The rank should now get sorted ascending.
+ 21. The rank should now get sorted ascending.
 
-21. Select the **PrioritZDnDRanking** component then **X** property from the property dropdown.
+22. Select the **PrioritZDnDRanking** component then **X** property from the property dropdown.
  
       ![](images/L02/image47.1.png)
       
-22. Set the **X** value of the **PrioritZDnDRanking** component to the below formula.
+23. Set the **X** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     'Votes gallery'.Width
     ```
-23. Select the **Width** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **60**.
+24. Select the **Width** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **60**.
     
-24. Select the **Height** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
+25. Select the **Height** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
 
     ```
     'Votes gallery'.Height
     ```
-25. Select the **ItemHeight** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula
+26. Select the **ItemHeight** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula
 
     ```
     'Votes gallery'.TemplateHeight
     ```
-26. Select the **BackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"LightBlue"**
+27. Select the **BackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"LightBlue"**
     
-27. Select the **DragBackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"#A70202"**
+28. Select the **DragBackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"#A70202"**
 
-28. Select the **Y** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
+29. Select the **Y** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
 
     ```
     'Votes gallery'.Y
     ```
     
-29. Select the **OnSelect** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
+30. Select the **OnSelect** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
 
     ```
     With(
@@ -678,20 +682,20 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
     ```
 
-30. Select the **Home Screen** and click **Play**.
+31. Select the **Home Screen** and click **Play**.
 
-31. Select one of the **topics**.
+32. Select one of the **topics**.
 
-32. You can view how it looks on a phone screen by using the emulator.
+33. You can view how it looks on a phone screen by using the emulator.
      
      ![](images/L02/image48up.png)
 
-33. Drag one of the topic items and drop it in a different location.
+34. Drag one of the topic items and drop it in a different location.
      
      ![](images/L02/image49.png)
  
-34. The drag/drop should work as expected.
-35. Close the preview.
+35. The drag/drop should work as expected.
+36. Close the preview.
 1. Click **Publish**.
 
     ![](images/L02/publish.png)
