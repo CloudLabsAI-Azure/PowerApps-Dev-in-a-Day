@@ -82,11 +82,12 @@ In this exercise, you will create a custom connector from an existing API.
 
 3. Do a quick review of the Open API definition.
 
-4. Right-click on the page select **Save as** or use **Ctrl + C** and name the file as **swagger.json** in your machine. Now, close the browser tab by 
+4. Right-click on the page select **Save as** or use **Ctrl + S** and name the file as **swagger.json** in your machine. Now, close the browser tab by 
    clicking on **X**.
       
      ![](images/L03/image4.png)
 
+   >**Note:** If you're having trouble saving the file, copy the code and paste it into Notepad, then save the file as **swagger.json**.
 
 5. Navigate to the Power Apps  maker portal and make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
