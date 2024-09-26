@@ -461,6 +461,8 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
       * Email/Username: <inject key="AzureAdUserEmail"></inject>
       * Password: <inject key="AzureAdUserPassword"></inject>
+      
+     **Note**: If a Windows Security Warning pops up, click **Yes** to proceed.
 
 9. Select **Power Platform (1)** tool, you should now have at least one **auth profile (2)**. If you have more than one profile, make sure the profile you created is selected
    
