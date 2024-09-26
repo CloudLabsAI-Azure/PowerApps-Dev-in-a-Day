@@ -64,6 +64,8 @@ In this exercise, you will build the code component.
      
      ![](images/L02/image3.png)
 
+      >**Note:** The above command may take 2-3 minutes to complete.
+    
 7. The component framework project should be created successfully.
 
     ![](images/L02/image4.png)
@@ -300,7 +302,7 @@ In this exercise, you will build the code component.
  
      > **Note** : **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
 
-22. After completing all the steps, your `index.ts` file should contain the following code.
+22. After completing all the steps, ensure that your `index.ts` file contains the following code. Please copy and paste the code into the `index.ts` file.
 
     ```
     import { IInputs, IOutputs } from "./generated/ManifestTypes";
@@ -465,12 +467,19 @@ In this exercise, you will build the code component.
     ```
     
     > **Note** : 
-    
-     1. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
-        
-        Additionally, you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there are any then retry to push the component by running the  **pac push command** again.
+     1. If you encounter the error message **"Error: Missing required tool: MSBuild.exe/dotnet.exe. Please add MSBuild.exe/dotnet.exe in Path environment variable or use 'Developer 
+        Command Prompt for VS'"**, follow these steps:
+        1. Navigate to the `C:\LabFiles` directory and open **dotnet-sdk-8.0.100-win-x64**.
+        2. In the setup window, select **Repair**, then wait for the process to complete.
+        3. After the repair finishes, close Visual Studio Code, reopen it, and run the command again.
 
-     2. If the run fails with a Nuget package error, run the below command in PowerShell and try running the above command again.
+     2. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the 
+        previous instructions and added the code correctly in **Manifest and Index** files. 
+        
+        Additionally, you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there are any then 
+        retry to push the component by running the  **pac push command** again.
+
+     3. If the run fails with a Nuget package error, run the below command in PowerShell and try running the above command again.
     
         ```
         dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
