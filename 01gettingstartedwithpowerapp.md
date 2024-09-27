@@ -238,6 +238,14 @@ In this exercise, you will import the current solution into the pre-created dev 
     
 23. Close the PrioritZ Ask app by closing the browser tab in which the PrioritZ Ask application is open.
 
+   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="43212171-0d6f-44d9-9c69-5061a4bb1b1c" />
+
+
 ## Exercise 2 – Add a column for My Notes
 
 In this exercise, you will add a new column **My Notes** to the topic table and update the PriortZ Admin
@@ -332,6 +340,8 @@ application.
     ```
 11. Select the **View Topic Screen (1)** from the **Screens** tab.
 
+     >**Note**: If you can't find the Insert button, click the ellipsis **(...)** in the upper-left corner.
+     
 12. Click **+ Insert(2)** tab and select **Text label(3)**.
 
     ![](images/L01/tlabelu.png)
@@ -396,8 +406,6 @@ application.
 26. Click to open the **Test Notes** topic that you just created.
 
 27. The notes **Prioritz Admin topic** that you added earlier should now be visible.
- 
-     ![](images/L01/image36.1.png)
 
 28. Close the app **preview**.
 
