@@ -36,6 +36,8 @@ In this exercise, you will import the current solution into the pre-created dev 
    
    ![](/images/L01/signinp.png)
 
+1. Click **Ask Later** if the "Action Required" pop-up appears.
+
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
 1. Once logged in, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
