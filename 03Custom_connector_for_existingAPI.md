@@ -65,6 +65,13 @@ connectors must be in a separate solution from the apps and flows that use them.
    
    ![](images/L03/image2-1.png)
 
+ > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="2be455a2-0037-48b9-83b9-d3efb66743e9" />
+
 ## Exercise 3 – Create Custom Connector
 
 In this exercise, you will create a custom connector from an existing API.
@@ -240,6 +247,12 @@ In this exercise, you will create a custom connector from an existing API.
   
      ![](images/L03/image23.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+ 
+   <validation step="e9892770-5284-40d8-a6a1-28f85d7e051f" />
 
 ## Exercise 4 – Add Custom Code
 
@@ -394,7 +407,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 9. Copy the **API Key** value and paste the value to Notepad as you will be using this value in the next steps. Now, close the browser tab by clicking on **X**.
 
-10. Go back to the app designer, paste the **API Key (1)** you copied in the previous step, and click **Connect (2)**.
+10. Go back to the app designer, paste the **API Key (1)** you copied in the previous step, and click **Connect (2)**.Click **Got it** if any pop-up appears with the title Premium.
      
      ![](images/L03/image42-1u.png)
 
@@ -460,6 +473,10 @@ In this task, you will use the custom connector you created to show the user’s
      
     ![](images/L03/edd%20(1).png)
 
+    >**Note**: If you cannot see the **Create** button, click on the **ellipsis** button located in the top right corner of the webpage and adjust the zoom to **90%**.
+
+     ![](images/L03/notezoom.png)
+     
 4. Click **+ New step**.
 
     ![](images/L03/L03-EX3-T2.png)
