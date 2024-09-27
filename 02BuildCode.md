@@ -227,7 +227,7 @@ In this exercise, you will build the code component.
         ![](images/L02/image19.png)  
    
  
- 15. Locate the **Export** class in **line number 7**.
+ 15. Locate the **Export** class in **line number 4**.
       
      ![](images/L02/image20.png)
  
@@ -242,9 +242,13 @@ In this exercise, you will build the code component.
         ![](images/L02/image21.png)
  
 
- 17. Locate the **init** function.
- 
-      ![](images/L02/init.png)
+ 17. Locate the **init** function and remove the following line of code.
+
+       ```
+        state: ComponentFramework.Dictionary
+        ```
+     
+      ![](images/L02/initu.png)
         
  18. Paste the code below inside the **init** function. This logic initializes our class variables from the
     runtime values and enables resize notification.    
@@ -302,7 +306,7 @@ In this exercise, you will build the code component.
  
      > **Note** : **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
 
-22. After completing all the steps, ensure that your `index.ts` file contains the following code. Please copy and paste the code into the `index.ts` file.
+22. After completing all the steps, make sure to replace the existing code in your `index.ts` file with the following code to avoid any errors:
 
     ```
     import { IInputs, IOutputs } from "./generated/ManifestTypes";
@@ -414,7 +418,8 @@ In this exercise, you will build the code component.
     },
     ```
     
-25. Navigate to **.eslintric.json(1)** file from left navigation to add the new lint rule. Locate **rules(2)** in **line number 21** and paste the rules below.
+25. Navigate to **.eslintric.json(1)** file from left navigation to add the new lint rule. Locate **rules(2)** in **line number 22** and Replace the code by following the specified 
+    rules below.
    
       ```
       "no-unused-vars": ["off"],
@@ -471,7 +476,7 @@ In this exercise, you will build the code component.
         Command Prompt for VS'"**, follow these steps:
         1. Navigate to the `C:\LabFiles` directory and open **dotnet-sdk-8.0.100-win-x64**.
         2. In the setup window, select **Repair**, then wait for the process to complete.
-        3. After the repair finishes, close Visual Studio Code, reopen it, and run the command again.
+        3. After the repair finishes, close Visual Studio Code, reopen it, and First run the build command present in 28 step and again run the above command.
 
      2. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the 
         previous instructions and added the code correctly in **Manifest and Index** files. 
@@ -501,10 +506,16 @@ In this exercise, you will build the code component.
     
     ![](images/L02/image32u.png)
 
- 3. Confirm that the custom control is in this solution.
+ 3. Click on **All** and Confirm that the custom control is in this solution.
      
       ![](images/L02/image33u.png)
+ > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   - If you receive a success message, you can proceed to the next task.
+   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
  
+<validation step="aae02cab-a129-491c-b38b-29c66f2f2547" />
+
 ## Exercise 2 – Use Code Component
 
 In this exercise, you will use the code component you created in the PrioritZ Ask canvas application.
