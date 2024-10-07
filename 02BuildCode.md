@@ -69,6 +69,16 @@ In this exercise, you will build the code component.
 7. The component framework project should be created successfully.
 
     ![](images/L02/image4.png)
+    
+    >**Note:** When installing dependencies, you might see warnings like:
+
+    npm WARN deprecated @babel/plugin-proposal-object-rest-spread
+
+    npm WARN deprecated rimraf@3.0.2
+
+    npm WARN deprecated eslint@8.57.1
+
+    These warnings mean that some packages are outdated or no longer updated. You can safely ignore them as they won't affect how the project works.
 
 8. Run the command below to open the project.
     ```
