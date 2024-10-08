@@ -104,11 +104,13 @@ In this exercise, you will import the current solution into the pre-created dev 
 
     ![](images/L01/L01-parse1.png)
     
-    >>**Note**:If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
+    >**Note**:If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
     
 12. Expand the **Apply to each topic** step.
     
     ![](images/L01/L01-topic1.png)
+
+    >**Note**:If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
 
 13. Expand the **Apply to each topic item** step.
    
