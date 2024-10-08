@@ -40,7 +40,7 @@ In this exercise, you will build the code component.
     
    >**Note**: The Power Platform tab is already installed.
     
-    ![](images/L02/L01-authuu.png)
+    ![](images/L02/L01-authup.png)
 
 3. Click **Terminal (1)** and select **New Terminal (2).**
      

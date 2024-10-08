@@ -478,7 +478,9 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
 9. Select **Power Platform (1)** tool, you should now have at least one **auth profile (2)**. If you have more than one profile, make sure the profile you created is selected
    
-    ![](images/L01/L01-authu.png)
+    ![](images/L01/L01-authupp.png)
+
+    > **Note**: If you're unable to see the **DeVAuth** profile, close Visual Studio Code and reopen it.
 
     > **Note** : If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the below steps:
 
