@@ -36,11 +36,11 @@ In this exercise, you will build the code component.
 
    ![](images/L04/vscode1.png)
    
-2. Select the **Power Platform (1)** tab and make sure your **Dev Auth (2)** profile is selected. 
+2. Select the **Power Platform** tab and make sure your **Dev Auth** profile is selected. 
     
    >**Note**: The Power Platform tab is already installed.
     
-    ![](images/L02/L01-authup.png)
+    ![](images/L02/authup.png)
 
 3. Click **Terminal (1)** and select **New Terminal (2).**
      
