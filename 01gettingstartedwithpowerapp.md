@@ -476,9 +476,9 @@ In this exercise, you will review and test the Power Platform CLI extension in V
       
      **Note**: If a Windows Security Warning pops up, click **Yes** to proceed.
 
-9. Select **Power Platform (1)** tool, you should now have at least one **auth profile (2)**. If you have more than one profile, make sure the profile you created is selected
+9. Select **Power Platform** tool, you should now have at least one **auth profile**. If you have more than one profile, make sure the profile you created is selected
    
-    ![](images/L01/L01-authupp.png)
+    ![](images/L01/authupp.png)
 
     > **Note**: If you're unable to see the **DeVAuth** profile, close Visual Studio Code and reopen it.
 
