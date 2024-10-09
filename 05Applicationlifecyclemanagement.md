@@ -35,10 +35,9 @@ actions, so they do not execute under your individual user identity.
 1. Please provide the following details and click on **Register** ***(3)***.
    
    - Name: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-   - Supported account types: **Accounts in this organizational directory only (Azure HOL-XXXXXX 
-     only - Single tenant)** ***(2)***
+   - Supported account types: **Accounts in this organizational directory only (OTU WA HOL - XXXXXX only - Single tenant)** ***(2)***
 
-   ![](images/L05/diad5l3uu.png).
+   ![](images/L05/diad5l3uup.png).
    
 1. Copy the **Application (client) ID**, **Directory(Tenant) ID**, and save it in a notepad as you need it for later use.
      
@@ -377,26 +376,10 @@ exported to the test environment.
 16. Click **Commit changes** and then click **Commit changes**.
 
     ![](images/L05/commit1.png)
-    
-18. Select the **Code** tab and ensure you select Prioritz-XXXXXXX.
-
-    ![](images/L05/codeu.png)
    
-19. Go to the **Releases** section and click **Create new release**.
-     
-     ![](images/L05/Images2047u.png)    
-   
-20. Click on the **Choose a tag** button, enter **v1.0.0** , and select **+ Create new tag on publish**.
-      
-     ![](images/L05/Images2048.png)  
+17. Select the **Actions** tab and monitor the workflow.
 
-21. Click **Publish release**.
-   
-22. Select the **Actions** tab and monitor the workflow.
-      
-     ![](images/L05/Images2049.png)
-
-23. The release should be completed successfully.
+18. The release should be completed successfully.
     
      ![](images/L05/relecomplu.png)
      
