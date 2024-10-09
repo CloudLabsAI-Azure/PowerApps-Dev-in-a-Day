@@ -27,7 +27,7 @@ When you review the API, you see that it has four operations and uses API key au
 
 ### Task 1: Create Database 
 
-1. Navigate to the Power Apps maker portal and select your **Test** environment named Azure XXXXXX (default).
+1. Navigate to the Power Apps maker portal and select your **Test** environment named OTU WA HOL - XXXXXX (default).
 
          https://make.powerapps.com
 
@@ -37,7 +37,7 @@ When you review the API, you see that it has four operations and uses API key au
  
     ![](images/L03/db1.png)
 
-5. Leave the **Currency** and **Language** field to default and click on **Create database**.
+5. 
    
     ![](images/L03/db2.png)
     
@@ -569,7 +569,7 @@ environment and import it to the Test environment.
 
 ###  Task 2: Import solution
 
-1. Navigate to the Power Apps maker portal if not already open and select your **Test** environment named Azure XXXXXX (default).
+1. Navigate to the Power Apps maker portal if not already open and select your **Test** environment named OTU WA HOL - XXXXXX (default).
 
          https://make.powerapps.com
 
