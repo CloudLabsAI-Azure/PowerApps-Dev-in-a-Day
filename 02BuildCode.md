@@ -36,11 +36,11 @@ In this exercise, you will build the code component.
 
    ![](images/L04/vscode1.png)
    
-2. Select the **Power Platform (1)** tab and make sure your **Dev Auth (2)** profile is selected. 
+2. Select the **Power Platform** tab and make sure your **Dev Auth** profile is selected. 
     
    >**Note**: The Power Platform tab is already installed.
     
-    ![](images/L02/L01-authuu.png)
+    ![](images/L02/authup.png)
 
 3. Click **Terminal (1)** and select **New Terminal (2).**
      
@@ -69,6 +69,16 @@ In this exercise, you will build the code component.
 7. The component framework project should be created successfully.
 
     ![](images/L02/image4.png)
+    
+    >**Note:** When installing dependencies, you might see warnings like:
+
+    npm WARN deprecated @babel/plugin-proposal-object-rest-spread
+
+    npm WARN deprecated rimraf@3.0.2
+
+    npm WARN deprecated eslint@8.57.1
+
+    These warnings mean that some packages are outdated or no longer updated. You can safely ignore them as they won't affect how the project works.
 
 8. Run the command below to open the project.
     ```

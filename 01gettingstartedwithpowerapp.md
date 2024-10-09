@@ -104,11 +104,13 @@ In this exercise, you will import the current solution into the pre-created dev 
 
     ![](images/L01/L01-parse1.png)
     
-    >>**Note**:If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
+    >**Note**:If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
     
 12. Expand the **Apply to each topic** step.
     
     ![](images/L01/L01-topic1.png)
+
+    >**Note**:If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
 
 13. Expand the **Apply to each topic item** step.
    
@@ -474,9 +476,11 @@ In this exercise, you will review and test the Power Platform CLI extension in V
       
      **Note**: If a Windows Security Warning pops up, click **Yes** to proceed.
 
-9. Select **Power Platform (1)** tool, you should now have at least one **auth profile (2)**. If you have more than one profile, make sure the profile you created is selected
+9. Select **Power Platform** tool, you should now have at least one **auth profile**. If you have more than one profile, make sure the profile you created is selected
    
-    ![](images/L01/L01-authu.png)
+    ![](images/L01/authupp.png)
+
+    > **Note**: If you're unable to see the **DeVAuth** profile, close Visual Studio Code and reopen it.
 
     > **Note** : If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the below steps:
 
