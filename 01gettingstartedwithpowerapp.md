@@ -38,7 +38,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. Click **Ask Later** if the "Action Required" pop-up appears.
 
-   >**Note:** If the "Ask later" option is not available, please follow  step 5-
+   >**Note:** If the **Ask later** option is not available, please follow steps 5 to 14.
     
 1. On **Start by getting the app page**, click on **Next**.
 
@@ -46,18 +46,24 @@ In this exercise, you will import the current solution into the pre-created dev 
    
 1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
 
-> Note:For Ios, Open app store and repeat the steps.
+    ![](/images/L01/mobile.jpg)
+
+   > Note:For Ios, Open app store and repeat the steps.
 
    > Note: Skip If already installed.
 
 1. Open the app and tap on **Scan a QR code**.
-1. Scan the QR code visible on the screen and click on **Next**.
 
+1. Scan the QR code visible on the screen and click on **Next**.
+  
+   ![](/images/L01/demo001.png)
   
 1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
 
 1. Once the notification is approved, click on **Next**.
-   ![Approved](/media/demo002.png)
+   
+    ![](/images/L01/demo002.png)
+
 1. Click on **Done**.
 
 1. If prompted to stay signed in, you can click **"No"**.
