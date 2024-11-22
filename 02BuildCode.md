@@ -487,6 +487,7 @@ In this exercise, you will build the code component.
         1. Navigate to the `C:\LabFiles` directory and open **dotnet-sdk-8.0.100-win-x64**.
         2. In the setup window, select **Repair**, then wait for the process to complete.
         3. After the repair finishes, close Visual Studio Code, reopen it, and First run the build command present in 28 step and again run the above command.
+        4. If the issue persists, uninstall **dotnet-sdk-8.0.100-win-x64** and install the latest version from [the .NET download page](https://dotnet.microsoft.com/en-us/download). Close Visual Studio Code, reopen it, run the build command from step 28, and then execute the above command again.
 
      2. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the 
         previous instructions and added the code correctly in **Manifest and Index** files. 
