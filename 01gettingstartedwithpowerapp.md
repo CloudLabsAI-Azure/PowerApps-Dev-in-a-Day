@@ -285,7 +285,6 @@ In this exercise, you will import the current solution into the pre-created dev 
  
    <validation step="43212171-0d6f-44d9-9c69-5061a4bb1b1c" />
 
-
 ## Exercise 2 – Add a column for My Notes
 
 In this exercise, you will add a new column **My Notes** to the topic table and update the PriortZ Admin
