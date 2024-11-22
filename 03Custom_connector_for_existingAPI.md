@@ -285,7 +285,7 @@ You will do this by using the custom code feature to reshape the response from t
 
 6. Enter the following information to add the **Get current badge** action.
 
-     1. Summary: **Get current badge**
+     1. Summary: **Get current badge (1)**
      2. Description: **Get current badge (2)** 
      3. Operation ID: **getcurrentbadge (3)**
     
