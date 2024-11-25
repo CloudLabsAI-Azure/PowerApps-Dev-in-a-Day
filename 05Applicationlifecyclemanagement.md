@@ -129,7 +129,7 @@ deploy solutions.
 
    ![](images/L05/diad5l13u.png)
 
-1. Select your **Business unit** **(1)** from the drop-down and In **Security roles** click on **edit symbol (2)** and select 
+1. Type **org** and select your **Business unit** **(1)** and In **Security roles** click on **edit symbol (2)** and select 
    **System administrator(3)** then click on **Create (4)**.
 
    ![](images/L05/diad5l14u.png)
@@ -158,10 +158,10 @@ deploy solutions.
 
    ![](images/L05/diad5l13uu.png)
 
-1. Select your **Business unit** **(1)** from the drop-down and In **Security roles** click on **edit symbol (2)** and select 
+1.  Type **org** and select your **Business unit** **(1)** and In **Security roles** click on **edit symbol (2)** and select 
    **System administrator(3)** then click on **Create (4)**.
 
-   ![](images/L05/diad5l14uu.png)
+    ![](images/L05/diad5l14u.png)
    
 1. Click on **Environments** ***(1)*** from the side blade and select your **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
 
@@ -283,9 +283,11 @@ indentation shown in the images.
 
    ![](images/L05/diad5l28u.png)
 
-1. Click **Commit changes** and then click **Commit changes**.
+1. Click **Commit changes**.
     
    ![](images/L05/commit1.png)
+
+1. Then click **Commit changes**.
 
    ![](images/L05/Images202uuu.png)
 
@@ -329,8 +331,7 @@ indentation shown in the images.
 
      ![](images/L05/pr1u.png)
    
-24. You should now see the pull request summary. Confirm that the branch has no conflicts with the
-    main branch and that the changes can be merged into the main branch automatically.
+24. You should now see the pull request summary. Confirm that the branch has no conflicts with the main branch and that the changes can be merged into the main branch automatically.
    
 25. Click on the chevron button next to the **Merge pull request** button and select **Squash and**
     **merge**.
