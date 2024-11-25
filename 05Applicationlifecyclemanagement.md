@@ -251,7 +251,6 @@ In this exercise, you will create a GitHub repository and add repository secrets
      >**Note**: Make sure you are pasting the test environment URL named **DEV_ENV_TEST** that you copied in the **`Exercise 1 -> Task 3 -> Step 23`**
  
      ![](images/L05/L05-testurlu.png)
-   
  
 17. You should now have **5** repository secrets.
      
