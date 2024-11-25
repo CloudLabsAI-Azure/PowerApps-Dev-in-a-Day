@@ -436,7 +436,7 @@ application.
        1. **Choice 1** : Enter `Test Two`
 24. After adding all the Choices and topic details, your screen should look like the below screenshot.
 
-   ![](images/L01/L01-testnotesu.png)
+    ![](images/L01/L01-testnotesu.png)
       
 25. Now, click on the **Save** button. The new topic should be **saved**.
 

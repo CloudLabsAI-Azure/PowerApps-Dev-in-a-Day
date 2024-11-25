@@ -660,7 +660,7 @@ In this exercise, you will create a new custom connector.
     - Resource URL: Paste **PrioritZ API application ID** ***(6)*** which you copied earlier
     - Enable on-behalf-of login: **true** ***(7)***
 
-   ![](images/L04/diad4l21.png) 
+    ![](images/L04/diad4l21.png) 
    
 ### Task 2: Test connector
 
