@@ -243,7 +243,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 > - Si no es así, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
 > - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar
 
-<validation step="47c13be5-1c49-40ef-bdc0-8c220afe4414" />
+<validation step="43212171-0d6f-44d9-9c69-5061a4bb1b1c" />
 
 ## Ejercicio 2: Agregar una columna para My Notes
 
