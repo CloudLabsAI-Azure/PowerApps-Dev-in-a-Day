@@ -6,33 +6,33 @@ Al trabajar como parte del equipo de fusión de PrioritZ, configurará GitHub Ac
 
 ## Objetivos del Laboratorio 
 
-- Ejercicio 1: Configure a Service Principal 
-- Ejercicio 2: Create GitHub Repo 
-- Ejercicio 3: Export and Branch 
-- Ejercicio 4: Release to Test 
+- Ejercicio 1: Configuración de una entidad de servicio 
+- Ejercicio 2: Crear repositorio de GitHub 
+- Ejercicio 3: Exportación y Sucursal 
+- Ejercicio 4: Lanzamiento para probar 
 
-## Exercise 1 – Configure a Service Principal
+## Ejercicio 1: Configurar una entidad de servicio
 
-In this exercise, you will create a service principal. The service principal will be used by the workflow
-actions, so they do not execute under your individual user identity.
+En este ejercicio, creará una entidad de servicio. El flujo de trabajo usará la entidad de servicio
+acciones, por lo que no se ejecutan bajo su identidad de usuario individual.
 
-### Task 1: Create app registration
+### Tarea 1: Crear el registro de la aplicación
 
-1. Navigate back to the browser tab in which Azure Portal is open. If not already open, navigate to Azure Portal using the below URL.
+1. Vuelva a la pestaña del explorador en la que está abierto el Portal de Azure. Si aún no está abierto, vaya a Azure Portal mediante la siguiente dirección URL.
 
    ```
    https://portal.azure.com/
    ```
 
-1. From Azure Portal home page, search for **Microsoft Entra ID** ***(1)*** in the search bar and select **Microsoft Entra ID** ***(2)*** from the suggestions.
+1. En la página principal del Portal Azure, busque **Microsoft Entra ID** ***(1)*** en la barra de búsqueda y seleccione **Microsoft Entra ID** ***(2)*** en las sugerencias.
 
    ![](images/dev3.png)
    
-1. Select **App registrations** ***(1)*** from the side blade and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
+1. Seleccione **Registros de aplicaciones** ***(1)*** en la hoja lateral y haga clic en **+ Nuevo registro** ***(2)***. Este registro de aplicación se utilizará para que el conector acceda a la API protegida.
 
    ![](images/L05/diad5l2.png)
 
-1. Please provide the following details and click on **Register** ***(3)***.
+1. Proporcione los siguientes datos y haga clic en **Registrarse** ***(3)***.
    
    - Name: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
    - Supported account types: **Accounts in this organizational directory only (OTU WA AIW [SUFFIX] only - Single tenant)** ***(2)***
