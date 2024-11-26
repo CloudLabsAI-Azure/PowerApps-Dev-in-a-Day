@@ -241,7 +241,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 > **Felicidades** por completar la tarea! Ahora, es el momento de validarlo. Estos son los pasos:
 > - Presione el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, puede continuar con la siguiente tarea. 
 > - Si no es así, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
-> - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar
+> - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar.
 
 <validation step="43212171-0d6f-44d9-9c69-5061a4bb1b1c" />
 
