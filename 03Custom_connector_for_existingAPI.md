@@ -65,7 +65,7 @@ En este ejercicio, creará una solución para el conector personalizado Contoso 
 > - Si no es así, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
 > - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar
 
-<validation step="b3e4834a-1893-4677-aad8-33e1814e5078" />
+<validation step="2be455a2-0037-48b9-83b9-d3efb66743e9" />
 
 ## Ejercicio 3: Crear Conector Personalizado
 
@@ -243,7 +243,7 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 > - Si no es así, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
 > - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar
 
-<validation step="1b485b61-a351-4463-a264-707088402ec1" />
+<validation step="e9892770-5284-40d8-a6a1-28f85d7e051f" />
 
 ## Ejercicio 4: Añadir Código Personalizado
 
