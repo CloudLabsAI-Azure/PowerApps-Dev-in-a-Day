@@ -127,7 +127,8 @@ Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos am
 
     ![](images/L05/diad5l13u.png)
 
-1. Selecione a sua **Business unit** **(1)** na drop-down e em **Security roles** clique em **edit symbol (2)** e seleccione **System administrator(3)** e clique em **Create (4)**.
+1. Digite **org** e selecione sua **unidade de negócios** **(1)** e em **Funções de segurança** clique em **editar símbolo (2)** e selecione 
+   **Administrador do sistema(3)** e clique em **Criar (4)**.
 
     ![](images/L05/diad5l14u.png)
 
@@ -155,7 +156,8 @@ Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos am
 
     ![](images/L05/diad5l13uu.png)
 
-1. Selecione a sua **Business unit** **(1)** do drop-down e In **Security roles** clique em **edit symbol (2)** e seleccione **System administrator(3)** e clique em **Create (4)**.
+1. Digite **org** e selecione sua **unidade de negócios** **(1)** e em **Funções de segurança** clique em **editar símbolo (2)** e selecione 
+   **Administrador do sistema(3)** e clique em **Criar (4)**.
 
     ![](images/L05/diad5l14uu.png)
 
