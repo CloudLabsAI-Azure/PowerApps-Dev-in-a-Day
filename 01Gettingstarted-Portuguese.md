@@ -347,6 +347,13 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 23. Feche a aplicação PrioritZ Ask fechando o separador do navegador no qual a aplicação PrioritZ Ask está aberta.
 
+> **Parabéns** por completar a tarefa! Agora, é hora de validá-lo. Aqui estão os passos:
+> - Pressione o botão Validar para a tarefa correspondente. Se receber uma mensagem de êxito, pode prosseguir para a próxima tarefa. 
+> - Se não, leia atentamente a mensagem de erro e tente novamente a etapa, seguindo as instruções no guia do laboratório.
+> - Se precisar de ajuda, entre em contato conosco pelo cloudlabs-support@spektrasystems.com. Estamos disponíveis 24 horas por dia, 7 dias por semana para ajudar
+
+<validation step="43212171-0d6f-44d9-9c69-5061a4bb1b1c" />
+
 ## Exercício 2 – Adicione uma coluna para as minhas notas
 
 Neste exercício, irá adicionar uma nova coluna **My Notes** à tabela de tópicos e atualizar o PriortZ Admin
