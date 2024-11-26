@@ -34,8 +34,8 @@ acciones, por lo que no se ejecutan bajo su identidad de usuario individual.
 
 1. Proporcione los siguientes datos y haga clic en **Registrarse** ***(3)***.
    
-   - Name: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-   - Supported account types: **Accounts in this organizational directory only (OTU WA AIW [SUFFIX] only - Single tenant)** ***(2)***
+   - Nombre: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
+   - Tipos de cuenta admitidos: **Las cuentas en este directorio organizativo solamente (OTU WA AIW [SUFFIX] solamente - único inquilino)** ***(2)***
 
    ![](images/L05/diad5l3.png).
    
