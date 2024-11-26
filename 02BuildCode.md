@@ -490,9 +490,9 @@ En este ejercicio, creará el componente de código.
 > **Felicidades** por completar la tarea! Ahora, es el momento de validarlo. Estos son los pasos:
 > - Presione el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, puede continuar con la siguiente tarea. 
 > - Si no es así, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
-> - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar
+> - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar.
 
-<validation step="f4dc1afb-14a2-452e-82ee-e865f4610655" />
+<validation step="aae02cab-a129-491c-b38b-29c66f2f2547" />
  
 ## Ejercicio 2: Usar Componente de Código
 
