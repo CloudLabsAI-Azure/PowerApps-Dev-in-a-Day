@@ -63,7 +63,7 @@ En este ejercicio, creará una solución para el conector personalizado Contoso 
 > **Felicidades** por completar la tarea! Ahora, es el momento de validarlo. Estos son los pasos:
 > - Presione el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, puede continuar con la siguiente tarea. 
 > - Si no es así, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
-> - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar
+> - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar.
 
 <validation step="2be455a2-0037-48b9-83b9-d3efb66743e9" />
 
@@ -241,7 +241,7 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 > **Felicidades** por completar la tarea! Ahora, es el momento de validarlo. Estos son los pasos:
 > - Presione el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, puede continuar con la siguiente tarea. 
 > - Si no es así, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
-> - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar
+> - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar.
 
 <validation step="e9892770-5284-40d8-a6a1-28f85d7e051f" />
 
