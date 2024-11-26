@@ -469,18 +469,24 @@ Neste exercício, você irá construir o componente de código.
     pac pcf push --publisher-prefix contoso
     ```
 
-    > **Nota**:
+    > **Nota**: 
+     1. Se você encontrar a mensagem de erro ** "Erro: Ferramenta necessária ausente: MSBuild.exe/dotnet.exe. Adicione MSBuild.exe/dotnet.exe na variável de ambiente Path ou use 'Desenvolvedor 
+        Prompt de comando para VS'"**, siga estas etapas:
+        1. Navegue até o diretório `C:\LabFiles` e abra **dotnet-sdk-8.0.100-win-x64**.
+        2. Na janela de configuração, selecione **Reparar** e aguarde a conclusão do processo.
+        3. Após a conclusão do reparo, feche o Visual Studio Code, reabra-o e primeiro execute o comando build presente na etapa 28 e execute novamente o comando acima.
+        4. Se o problema persistir, desinstale **dotnet-sdk-8.0.100-win-x64** e instale a versão mais recente da [página de download do .NET](https://dotnet.microsoft.com/en-us /download). Feche o Visual Studio Code, abra-o novamente, execute o comando build da etapa 28 e execute o comando acima novamente.
 
-    1. Se a operação de push falhar com o erro **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente em **Manifest and Index**.
-
-       Além disso, pode encontrar os ficheiros **Manifest e Index** na localização `C:\LabFiles`, pode comparar o seu código com estes ficheiros e corrigir os problemas se houver alguma tentativa de empurrar o componente executando o **pac push comando** novamente.
-
-    2. Se a execução falhar com um erro no pacote Nuget, execute o comando abaixo no PowerShell e tente executar novamente o comando acima.
-
+2. Se a operação push falhar com o erro **`Desculpe, o aplicativo encontrou um erro não recuperável e precisará ser encerrado`**, certifique-se de ter seguido o 
+        instruções anteriores e adicionei o código corretamente nos arquivos **Manifest e Index**. 
+        
+        Além disso, você pode encontrar os arquivos **Manifest and Index** no local `C:\LabFiles`, você pode comparar seu código com esses arquivos e corrigir os problemas, se houver algum. 
+        tente enviar o componente novamente executando o comando **pac push** novamente.
+     3. Se a execução falhar com um erro de pacote Nuget, execute o comando abaixo no PowerShell e tente executar o comando acima novamente.
+    
         ```
-        dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
+        dotnet nuget adicionar fonte https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
         ```
-
 36. Aguarde que a solução seja importada e publicada no seu ambiente.
 
     ![](images/L02/image31uu.png)
