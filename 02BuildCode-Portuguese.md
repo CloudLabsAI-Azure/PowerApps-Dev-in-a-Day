@@ -501,6 +501,13 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image33u.png)
 
+> **Parabéns** por completar a tarefa! Agora, é hora de validá-lo. Aqui estão os passos:
+> - Pressione o botão Validar para a tarefa correspondente. Se receber uma mensagem de êxito, pode prosseguir para a próxima tarefa. 
+> - Se não, leia atentamente a mensagem de erro e tente novamente a etapa, seguindo as instruções no guia do laboratório.
+> - Se precisar de ajuda, entre em contato conosco pelo cloudlabs-support@spektrasystems.com. Estamos disponíveis 24 horas por dia, 7 dias por semana para ajudar.
+
+<validation step="aae02cab-a129-491c-b38b-29c66f2f2547" />
+
 ## Exercício 2 – Use Componente de Código
 
 Neste exercício, irá utilizar o componente de código que criou na aplicação de tela PrioritZ Ask.

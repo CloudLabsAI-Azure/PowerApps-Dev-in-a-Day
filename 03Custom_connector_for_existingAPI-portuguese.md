@@ -66,6 +66,13 @@ os conectores devem estar numa solução separada das aplicações e dos fluxos 
 
     ![](images/L03/image2-1.png)
 
+> **Parabéns** por completar a tarefa! Agora, é hora de validá-lo. Aqui estão os passos:
+> - Pressione o botão Validar para a tarefa correspondente. Se receber uma mensagem de êxito, pode prosseguir para a próxima tarefa. 
+> - Se não, leia atentamente a mensagem de erro e tente novamente a etapa, seguindo as instruções no guia do laboratório.
+> - Se precisar de ajuda, entre em contato conosco pelo cloudlabs-support@spektrasystems.com. Estamos disponíveis 24 horas por dia, 7 dias por semana para ajudar.
+
+<validation step="2be455a2-0037-48b9-83b9-d3efb66743e9" />
+
 ## Exercício 3 – Crie Conector Personalizado
 
 Neste exercício, criará um conector personalizado a partir de uma API existente.
@@ -240,6 +247,13 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 15. Todos os testes devem ter sucesso.
 
     ![](images/L03/image23.png)
+
+> **Parabéns** por completar a tarefa! Agora, é hora de validá-lo. Aqui estão os passos:
+> - Pressione o botão Validar para a tarefa correspondente. Se receber uma mensagem de êxito, pode prosseguir para a próxima tarefa. 
+> - Se não, leia atentamente a mensagem de erro e tente novamente a etapa, seguindo as instruções no guia do laboratório.
+> - Se precisar de ajuda, entre em contato conosco pelo cloudlabs-support@spektrasystems.com. Estamos disponíveis 24 horas por dia, 7 dias por semana para ajudar.
+
+<validation step="e9892770-5284-40d8-a6a1-28f85d7e051f" />
 
 ## Exercício 4 – Adicionar código personalizado
 
