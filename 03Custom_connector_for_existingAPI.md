@@ -263,7 +263,7 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 6. Ingrese la siguiente información para agregar la acción **Get current badge**.
 
-     1. Resumen: **Get current badge**
+     1. Resumen: **Get current badge (1)**
      2. Descripción: **Get current badge (2)** 
      3. ID de Operación: **getcurrentbadge (3)**
     
