@@ -129,8 +129,8 @@ deploy solutions.
 
    ![](images/L05/diad5l13u.png)
 
-1. Select your **Business unit** **(1)** from the drop-down and In **Security roles** click on **edit symbol (2)** and select 
-   **System administrator(3)** then click on **Create (4)**.
+1. Escriba **org** y seleccione su **unidad de negocio** **(1)** y en **Roles de seguridad** haga clic en **editar símbolo (2)** y seleccione 
+   **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
    ![](images/L05/diad5l14u.png)
    
@@ -158,8 +158,8 @@ deploy solutions.
 
    ![](images/L05/diad5l13uu.png)
 
-1. Select your **Business unit** **(1)** from the drop-down and In **Security roles** click on **edit symbol (2)** and select 
-   **System administrator(3)** then click on **Create (4)**.
+1. Escriba **org** y seleccione su **unidad de negocio** **(1)** y en **Roles de seguridad** haga clic en **editar símbolo (2)** y seleccione 
+   **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
    ![](images/L05/diad5l14uu.png)
    
