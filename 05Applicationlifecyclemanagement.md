@@ -1,15 +1,15 @@
-# Lab 05 - Application lifecycle management
+# Laboratorio 05 - Gestión del ciclo de vida de las aplicaciones
 
-## Estimated Duration: 95 mins
+## Duración Estimada: 95 mins
 
-Working as part of the PrioritZ fusion team, you will be configuring GitHub Actions with the Power Platform Build Tools to automate and streamline the team’s deployments. This involves setting up continuous integration and continuous deployment (CI/CD) pipelines to ensure seamless and efficient delivery of updates to Power Platform applications, while also managing version control, testing, and deployment processes to enhance collaboration and maintain high-quality standards across the team’s projects.
+Al trabajar como parte del equipo de fusión de PrioritZ, configurará GitHub Actions con Power Platform Build Tools para automatizar y optimizar las implementaciones del equipo. Esto implica configurar canalizaciones de integración continua e implementación continua (CI/CD) para garantizar la entrega fluida y eficiente de actualizaciones a las aplicaciones de Power Platform, al mismo tiempo que administra los procesos de control de versiones, pruebas e implementación para mejorar la colaboración y mantener estándares de alta calidad en todos los proyectos del equipo.
 
-Lab Objectives 
+## Objetivos del Laboratorio 
 
-- Exercise 1: Configure a Service Principal 
-- Exercise 2: Create GitHub Repo 
-- Exercise 3: Export and Branch 
-- Exercise 4: Release to Test 
+- Ejercicio 1: Configure a Service Principal 
+- Ejercicio 2: Create GitHub Repo 
+- Ejercicio 3: Export and Branch 
+- Ejercicio 4: Release to Test 
 
 ## Exercise 1 – Configure a Service Principal
 
