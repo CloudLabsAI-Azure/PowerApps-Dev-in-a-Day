@@ -60,6 +60,13 @@ En este ejercicio, creará una solución para el conector personalizado Contoso 
    
    ![](images/L03/image2-1.png)
 
+> **Felicidades** por completar la tarea! Ahora, es el momento de validarlo. Estos son los pasos:
+> - Presione el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, puede continuar con la siguiente tarea. 
+> - Si no es así, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
+> - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar
+
+<validation step="b3e4834a-1893-4677-aad8-33e1814e5078" />
+
 ## Ejercicio 3: Crear Conector Personalizado
 
 En este ejercicio, creará un conector personalizado a partir de una API existente.
@@ -231,6 +238,12 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
   
      ![](images/L03/image23.png)
 
+> **Felicidades** por completar la tarea! Ahora, es el momento de validarlo. Estos son los pasos:
+> - Presione el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, puede continuar con la siguiente tarea. 
+> - Si no es así, lea atentamente el mensaje de error y vuelva a intentar el paso, siguiendo las instrucciones de la guía de laboratorio.
+> - Si necesita ayuda, póngase en contacto con nosotros en cloudlabs-support@spektrasystems.com. Estamos disponibles las 24 horas del día, los 7 días de la semana para ayudar
+
+<validation step="1b485b61-a351-4463-a264-707088402ec1" />
 
 ## Ejercicio 4: Añadir Código Personalizado
 
@@ -263,7 +276,7 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 6. Ingrese la siguiente información para agregar la acción **Get current badge**.
 
-     1. Resumen: **Get current badge**
+     1. Resumen: **Get current badge (1)**
      2. Descripción: **Get current badge (2)** 
      3. ID de Operación: **getcurrentbadge (3)**
     
