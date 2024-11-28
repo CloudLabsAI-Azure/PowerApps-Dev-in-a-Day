@@ -39,48 +39,48 @@ acciones, por lo que no se ejecutan bajo su identidad de usuario individual.
 
    ![](images/L05/diad5l3.png).
    
-1. Copy the **Application (client) ID**, **Directory(Tenant) ID**, and save it in a notepad as you need it for later use.
+1. Copie el **ID de la aplicación (cliente)**, el **ID del directorio (inquilino)** y guárdelo en un bloc de notas cuando lo necesite para su uso posterior.
      
    ![](images/L05/diad5l4.png)
 
-1. Select **Certificates & secrets** from the side blade and click on **+ New client secret**.
+1. Seleccione **Certificados y secretos** en la hoja lateral y haga clic en **+ Nuevo secreto de cliente**.
 
    ![](images/L05/diad5l5.png)
 
-1. Enter **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** ***(1)*** as description, set expiry to **3 months** ***(2)***, and click on **Add** ***(3)***.
+1. Ingrese **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** ***(1)*** como descripción, establezca el vencimiento en **3 meses** ***(2)* ** y haga clic en **Agregar** ***(3)***.
    
    ![](images/L05/diad5l6.png)
    
-1. Copy the **value** and save it in a notepad as you need it for later use.
+1. Copie el **valor** y guárdelo en un bloc de notas, ya que lo necesitará para usarlo más adelante.
 
    ![](images/L05/diad5l7.png)
 
-    >**Note**: Make sure to copy and paste the correct **Application (client) ID**, **Directory(Tenant) ID** and **Secret** value. Copying the incorrect value will result in issues in the next steps/tasks.
+    >**Nota**: Asegúrese de copiar y pegar el **ID de aplicación (cliente)**, el **ID de directorio (inquilino)** y el valor **Secreto** correctos. Copiar el valor incorrecto provocará problemas en los siguientes pasos/tareas.
+    
+### Tarea 2: crear un nuevo Dataverse
 
-### Task 2: Create a new Dataverse
+En esta tarea, probará nuevos entornos de Dataverse.
 
-In this task, you will  a new test Dataverse environments.
-
-1. Open a new browser window or tab and navigate to the Power Platform Admin Center using the below URL.
+1. Abra una nueva ventana o pestaña del navegador y navegue hasta el Centro de administración de Power Platform utilizando la siguiente URL.
 
      ```
      https://admin.powerplatform.microsoft.com/environments
      ```
-1. Click on **+New** to create a new Dataverse.         
+1. Haga clic en **+Nuevo** para crear un nuevo Dataverse.       
 
    ![](images/L05/newtask1.png)
 
-1. In the **New environment** tab.
+1. En la pestaña **Nuevo entorno**.
    
-   - Name :**DEV_ENV_TEST(1)**.
+   - Nombre:**DEV_ENV_TEST(1)**.
    
-   - Make this a Managed Environment :**Enable Yes(2)**.
+   - Haga de este un entorno gestionado :**Habilitar Sí(2)**.
    
-   - Group :**None(3)**. and scroll down.
+   - Grupo :**Ninguno(3)**. y desplácese hacia abajo.
    
-   - Type :**Developer(4)** and click on **Next(5)**.
+   - Escriba :**Developer(4)** y haga clic en **Siguiente (5)**.
    
-   - Deploy sample apps and data? :**Enable Yes(6)** and click on **Save(7)**.
+   - ¿Implementar aplicaciones y datos de muestra? :**Habilite Sí(6)** y haga clic en **Guardar(7)**.
    
    ![](images/L05/newtask2.png)
 
@@ -88,327 +88,319 @@ In this task, you will  a new test Dataverse environments.
 
    ![](images/L05/newtask4.png)
 
-1. You can now see the new Dataverse, **DEV_ENV_TEST**, that you created.
+1. Ahora puede ver el nuevo Dataverse, **DEV_ENV_TEST**, que creó.
 
    ![](images/L05/newtask5.png)
 
-### Task 3: Create an app user in Dataverse
+### Tarea 3: Crear una usuaria de aplicación en Dataverse
 
-In this task, you will be registering the app you created in Microsoft Entra ID into the dev and test
-Dataverse environments. You will also be assigned a security role that will allow the service principal to
-deploy solutions.
+En esta tarea, registrará la aplicación que creó en Microsoft Entra ID en el programa de desarrollo y prueba.
+Entornos de Dataverse. También se le asignará un rol de seguridad que permitirá a la entidad de servicio
+implementar soluciones.
 
-
-1. Open a new browser window or tab and navigate to the Power Platform Admin Center using the below URL.
+1. Abra una nueva ventana o pestaña del navegador y navegue hasta el Centro de administración de Power Platform utilizando la siguiente URL.
 
      ```
      https://admin.powerplatform.microsoft.com/environments
      ```
 
-1. Click on **Environments** ***(1)*** from the side blade and select your **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
+1. Haga clic en **Entornos** ***(1)*** en la hoja lateral y seleccione su entorno **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** ***(2 )***.
 
    ![](images/L05/env1u.png)
    
-1. From your environment page, click on **Settings**.
+1. Desde la página de su entorno, haga clic en **Configuración**.
 
    ![](images/L05/diad5l9u.png)
    
-1. Expand **Users + permissions** **(1)** and select **Application users** **(2)**.
+1. Expanda **Usuarios + permisos** **(1)** y seleccione **Usuarios de la aplicación** **(2)**.
     
    ![](images/L05/diad5l10u.png)
 
-1. In the Application users page, click on **+ New app user**.
+1. En la página de usuarios de la aplicación, haga clic en **+ Nuevo usuario de la aplicación**.
 
    ![](images/L05/diad5l11u.png)
    
-1. In Create a new app user tab, click on **+ Add an app**.
+1. En la pestaña Crear un nuevo usuario de aplicación, haga clic en **+ Agregar una aplicación**.
       
    ![](images/L05/diad5l12.png)
    
-1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application registration which you created earlier and click on **Add** **(2)**.
+1. Seleccione el registro de la aplicación **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** que creó anteriormente y haga clic en **Agregar** **(2)**.
 
    ![](images/L05/diad5l13u.png)
 
-1. Select your **Business unit** **(1)** from the drop-down and In **Security roles** click on **edit symbol (2)** and select 
-   **System administrator(3)** then click on **Create (4)**.
+1. Escriba **org** y seleccione su **unidad de negocio** **(1)** y en **Roles de seguridad** haga clic en **editar símbolo (2)** y seleccione 
+   **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
    ![](images/L05/diad5l14u.png)
    
-1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environment** ***(2)***.
+1. Vuelva nuevamente a **Entornos** ***(1)*** en la hoja lateral y seleccione su **entorno de prueba** ***(2)***.
 
    ![](images/L05/diad5l17u.png)
    
-1. From your test environment page, click on **Settings**.
+1. Desde la página de su entorno de prueba, haga clic en **Configuración**.
 
    ![](images/L05/diad5l18u.png)
 
-1. Expand **Users + permissions** ***(1)*** and select **Application users** ***(2)***.
+1. Expanda **Usuarios + permisos** ***(1)*** y seleccione **Usuarios de la aplicación** ***(2)***.
     
    ![](images/L05/diad5l19u.png)
    
-1. In the Application users page, click on **+ New app user**.
+1. En la página de usuarios de la aplicación, haga clic en **+ Nuevo usuario de la aplicación**.
 
    ![](images/L05/diad5l11uu.png)
    
-1. On the **Create a new app user** tab, click on **+ Add an app**.
+1. En la pestaña **Crear un nuevo usuario de aplicación**, haga clic en **+ Agregar una aplicación**.
       
    ![](images/L05/diad5l12.png)
    
-1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application registration which you created earlier and click on **Add** ***(2)***.
+1. Seleccione el registro de la aplicación **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** que creó anteriormente y haga clic en **Agregar** ***(2 )***.
 
    ![](images/L05/diad5l13uu.png)
 
-1. Select your **Business unit** **(1)** from the drop-down and In **Security roles** click on **edit symbol (2)** and select 
-   **System administrator(3)** then click on **Create (4)**.
+1. Escriba **org** y seleccione su **unidad de negocio** **(1)** y en **Roles de seguridad** haga clic en **editar símbolo (2)** y seleccione 
+   **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
    ![](images/L05/diad5l14uu.png)
    
-1. Click on **Environments** ***(1)*** from the side blade and select your **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
+1. Haga clic en **Entornos** ***(1)*** en la hoja lateral y seleccione su entorno **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** ***(2 )***.
 
    ![](images/L05/envu.png)
    
-1. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
+1. Copie la **URL del entorno** y guárdela en un bloc de notas; utilizará esta URL en pasos futuros.
     
    ![](images/L05/diad5l211u.png)
    
-1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environment(2)** environment.
+1. Vuelva nuevamente a **Entornos** ***(1)*** en la hoja lateral y seleccione su entorno **de prueba(2)**.
 
    ![](images/L05/diad5l17uu.png)
    
-1. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
+1. Copie la **URL del entorno** y guárdela en un bloc de notas; utilizará esta URL en pasos futuros.
     
    ![](images/L05/diad5l22u.png)
    
-## Exercise 2 – Create GitHub Repo
+## Ejercicio 2: crear un repositorio de GitHub
 
-In this exercise, you will create a GitHub repository and add repository secrets.
+En este ejercicio, creará un repositorio de GitHub y agregará secretos de repositorio.
 
-### Task 1: Create a repository
+### Tarea 1: crear un repositorio
 
-1. Navigate to the below URL and sign in using your GitHub credentials.
+1. Navegue a la siguiente URL e inicie sesión con sus credenciales de GitHub.
 
    ```
    https://github.com/
    ```
-1. Click on your profile icon and select **Your repositories**.
+1. Haz clic en el icono de tu perfil y selecciona **Tus repositorios**.
 
    ![](images/L05/github1u.png)
 
-3. Click **New repository** to create a repository.
+3. Haga clic en **Nuevo repositorio** para crear un repositorio.
 
    ![](images/L05/github2u.png)
 
-4. Enter **PrioritZ (1)** for Repository name, select **Public (2)** , check the **Add a README file (3)**.
+4. Ingrese **PrioritZ (1)** para el nombre del repositorio, seleccione **Público (2)** y marque **Agregar un archivo README (3)**.
 
    ![](images/L05/github3.png)
 
-1. Click **Create repository** to create it.
+1. Haga clic en **Crear repositorio** para crearlo.
 
    ![](images/L05/github4.png)
 
-5. Click **Settings** to open the settings tab.
+5. Haga clic en **Configuración** para abrir la pestaña de configuración.
     
      ![](images/L05/Imagessettinguu.png)
 
-6. Go to the **Security** section, expand **Secrets and variables(1)** and select **Actions (2)**.
-
-    > **Note:** The values you provide will not be visible after you create the item so take your time to get the values correct. 
+6. Vaya a la sección **Seguridad**, expanda **Secretos y variables(1)** y seleccione **Acciones (2)**.
+   
+    > **Nota:** Los valores que proporcione no serán visibles después de crear el elemento, así que tómese su tiempo para obtener los valores correctos.
       
      ![](images/L05/github6u.png)
    
-7. Click **New repository secret** to add a secret.
+8. Haga clic en **Nuevo secreto de repositorio** para agregar un secreto.
 
      ![](images/L05/github7uu.png)
 
-8. Enter **PowerPlatformAppID (1)** for Name and paste the **Application (client) ID (2)** of **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** that you noted earlier in **`Exercise 1 -> Task 1 -> Step 5`** from your notepad in the **Value** field and click **Add secret (3)**.
-
+9. Ingrese **PowerPlatformAppID (1)** para Nombre y pegue el **ID de aplicación (cliente) (2)** de **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** que anotó anteriormente en **`Ejercicio 1 -> Tarea 1 -> Paso 5`** desde su bloc de notas en el campo **Valor** y haga clic en **Agregar secreto (3)**.
+    
      ![](images/L05/github8u.png)
 
-9. Click **New repository secret** again.
+11. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
-10. Enter **PowerPlatformClientSecret (1)** for Name and paste the **secret Value (2)** from your notepad that you noted earlier in **`Exercise 1 -> Task 1 -> Step 8`** in the **Value** field and click **Add secret (3)**.
+12. Ingrese **PowerPlatformClientSecret (1)** para Nombre y pegue el **Valor secreto (2)** de su bloc de notas que anotó anteriormente en **`Ejercicio 1 -> Tarea 1 -> Paso 8`** en el * *Valor** y haga clic en **Agregar secreto (3)**.
 
      ![](images/L05/github9u.png)
 
-11. Click **New repository secret** again.
+13. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
-12. Enter **PowerPlatformTenantID (1)** for Name and paste the secret **Tenant ID (2)** from your notepad that you noted earlier in **`Exercise 1 -> Task 1 -> Step 5`** in the **Value** field and click **Add secret (3)**.
-
+14. Ingrese **PowerPlatformTenantID (1)** para Nombre y pegue el secreto **Tenant ID (2)** de su bloc de notas que anotó anteriormente en **`Ejercicio 1 -> Tarea 1 -> Paso 5`** en el **Valor** y haga clic en **Agregar secreto (3)**.
+    
      ![](images/L05/github10u.png)
 
-13. Click **New repository secret** again.
+16. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
-14. Enter **PowerPlatformDevUrl (1)** for Name and paste the secret **Dev environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 21`** in the **Value** field and click **Add secret (3)**.
+17. Ingrese **PowerPlatformDevUrl (1)** para Nombre y pegue la **URL del entorno de desarrollo (2)** secreta de su bloc de notas que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 21`** en el campo **Valor** y haga clic en **Agregar secreto (3)**.
 
-    >**Note**: Make sure you are pasting the dev environment URL named **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** that you copied in the **`Exercise 1 -> Task 3 -> Step 17`**
+    >**Nota**: asegúrese de pegar la URL del entorno de desarrollo denominada **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** que copió en el **`Ejercicio 1 -> Tarea 3 - > Paso 17`**
    
      ![](images/L05/github11u.png) 
   
-15. Click **New repository secret** one more time.
+18. Haga clic en **Nuevo secreto del repositorio** una vez más.
 
-16. Enter **PowerPlatformTestUrl (1)** for Name and paste the **Test Environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 18`** in the **Value** field and click **Add secret (3)**.
+19. Ingrese **PowerPlatformTestUrl (1)** para Nombre y pegue la **URL del entorno de prueba (2)** de su bloc de notas que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 18`** en el **Valor** y haga clic en **Agregar secreto (3)**.
 
-     >**Note**: Make sure you are pasting the test environment URL named **DEV_ENV_TEST** that you copied in the **`Exercise 1 -> Task 3 -> Step 23`**
+     >**Nota**: Asegúrese de pegar la URL del entorno de prueba denominada **DEV_ENV_TEST** que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 23`**.
  
      ![](images/L05/L05-testurlu.png)
    
- 
-17. You should now have **5** repository secrets.
+20. Ahora deberías tener **5** secretos del repositorio.
      
     ![](images/L05/Images20uu5u.png)
 
-18. Do not navigate away from this page.
+21. No salgas de esta página.
 
-### Exercise 3 – Export and Branch
+### Ejercicio 3: Exportación y sucursal
 
-In this exercise, you will set a workflow action, and add steps that will export the solution from the dev
-environment and create a new branch.
+En este ejercicio, establecerá una acción de flujo de trabajo y agregará pasos que exportarán la solución desde el entorno de desarrollo y crearán una nueva rama.
 
-### Task 1: Export and branch
+### Tarea 1: Exportar y ramificar
 
-In this task, you will create the workflow definition using the YAML provided. The action YAML uses two-space indentation so follow that carefully as you build the workflow definition. If in doubt, review the
-indentation shown in the images.
+En esta tarea, creará la definición del flujo de trabajo utilizando el YAML proporcionado. La acción YAML utiliza sangría de dos espacios, así que sígala cuidadosamente mientras crea la definición del flujo de trabajo. En caso de duda, revise la sangría que se muestra en las imágenes.
 
-1. Select the **Actions** tab and click on **Set up a workflow yourself** to create a new workflow.
+1. Seleccione la pestaña **Acciones** y haga clic en **Configurar un flujo de trabajo usted mismo** para crear un nuevo flujo de trabajo.
  
    ![](images/L05/Imagesworku.png)
    
-1. Change the file name to it **export-and-branch.yml**
+1. Cambie el nombre del archivo **export-and-branch.yml**
        
-1. Remove everything from the workflow file.
+1. Elimine todo del archivo de flujo de trabajo.
   
    ![](images/L05/diad5l32.png)
 
-1. Navigate to `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/export-and-branch.yml` URL, Copy the full content of the file and paste it into the **export-and-branch.yml** workflow.
+1. Navegue a la URL `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/export-and-branch.yml`, copie el contenido completo del archivo y péguelo en el flujo de trabajo **export-and-branch.yml**.
 
    ![](images/L05/diad5l28u.png)
 
-1. Click **Commit changes** and then click **Commit changes**.
+1. Haga clic en **Confirmar cambios** y luego haga clic en **Confirmar cambios**.
     
    ![](images/L05/commit1.png)
 
    ![](images/L05/Images202uuu.png)
 
-1. Go to the **Actions(1)** tab on the left side, then select **General(2)**.
+1. Vaya a la pestaña **Acciones(1)** en el lado izquierdo y luego seleccione **General(2)**.
 
    ![](images/L05/actionpermissionuuu.png)
 
-1. In the **Workflow Permission** section, make sure **read and write permission** is selected, then click **save**.  
+1. En la sección **Permiso de flujo de trabajo**, asegúrese de que esté seleccionado **permiso de lectura y escritura** y luego haga clic en **guardar**.
 
    ![](images/L05/workflowpermissionuuu.png)
 
-1. Select the **Actions** **(1)** tab and select the **workflow** ***(2)*** you created.
+1. Seleccione la pestaña **Acciones** **(1)** y seleccione el **flujo de trabajo** ***(2)*** que creó.
 
    ![](images/L05/diad5l27.png)
    
-1. Click on **Run workflow.**
+1. Haga clic en **Ejecutar flujo de trabajo.**
       
    ![](images/L05/Images2027u.png)
    
-1. Click **Run workflow** again and wait for the workflow run to complete.
+1. Haga clic en **Ejecutar flujo de trabajo** nuevamente y espere a que se complete la ejecución del flujo de trabajo.
       
    ![](images/L05/Images2028u.png)
    
-1. Select the **Code** ***(1)*** tab and click on **Branches** ***(2)***. You should see two branches
+1. Seleccione la pestaña **Código** ***(1)*** y haga clic en **Sucursales** ***(2)***. Deberías ver dos ramas.
    
    ![](images/L05/diad5l29u.png)
    
-1. Click to open the branch that was created by the workflow action named Prioritz-XXXXXXX.
+1. Haga clic para abrir la rama creada por la acción del flujo de trabajo denominada Prioritz-XXXXXXX.
    
    ![](images/L05/changesbranchu.png)
 
-1. On the Prioritz-XXXXXXX. branch, you should be able to see the solution folder.
+1. En la carretera Prioritz-XXXXXXX. rama, debería poder ver la carpeta de la solución.
       
    ![](images/L05/diad5l30u.png)
    
-1. Click on **Contribute** ***(1)*** button and select **Open pull request** ***(2)***.
+1. Haga clic en el botón **Contribuir** ***(1)*** y seleccione **Abrir solicitud de extracción** ***(2)***.
         
    ![](images/L05/L05-t1-1u.png)
    
-23. Add a description if you like and then click **Create pull request**.
+23. Agregue una descripción si lo desea y luego haga clic en **Crear solicitud de extracción**.
 
      ![](images/L05/pr1u.png)
    
-24. You should now see the pull request summary. Confirm that the branch has no conflicts with the
-    main branch and that the changes can be merged into the main branch automatically.
+24. Ahora debería ver el resumen de la solicitud de extracción. Confirme que la rama no tenga conflictos con la rama principal y que los cambios se puedan fusionar en la rama principal automáticamente.
    
-25. Click on the chevron button next to the **Merge pull request** button and select **Squash and**
-    **merge**.
+25. Haga clic en el botón de chevrón al lado del botón **Fusionar solicitud de extracción** y seleccione **Aplastar y fusionar**.
       
     ![](images/L05/Images2032u.png)
 
-26. Click **Squash and merge**.
+26. Haga clic en **Aplastar y fusionar**.
    
-27. Click **Confirm squash and merge**.
+27. Haga clic en **Confirmar aplastamiento y fusión**.
    
-28. The pull request should get merged successfully.
+28. La solicitud de extracción debería fusionarse correctamente.
    
      ![](images/L05/prdoneu.png)
 
+### Ejercicio 4: Lanzamiento para prueba
 
-### Exercise 4 – Release to Test
+En este ejercicio, creará una acción de flujo de trabajo y agregará pasos que lanzarán la solución que
+exportado al entorno de prueba.
 
-In this exercise, you will create a workflow action and add steps that will release the solution you
-exported to the test environment.
+### Tarea 1: crear un flujo de trabajo
 
-### Task 1: Create workflow
-
-1. Now navigate to the **Actions (1)** tab.
+1. Ahora navegue hasta la pestaña **Acciones (1)**.
    
-1. Click **New workflow (2)**.
+1. Haga clic en **Nuevo flujo de trabajo (2)**.
 
     ![](images/L05/nwwfu.png)
    
-1. Now on **Choose a workflow** page, click **set up a workflow yourself**.
+1. Ahora, en la página **Elija un flujo de trabajo**, haga clic en **configurar un flujo de trabajo usted mismo**.
      
     ![](images/L05/Images2033u.png)
    
-1. Change the file name to **release-to-test.yml**
+1. Cambie el nombre del archivo a **release-to-test.yml**
    
     ![](images/L05/fnameu.png)
      
-1. Remove everything from the workflow file.
+1. Eliminar todo del archivo de flujo de trabajo.
 
-1. Navigate to `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/release-to-test.yml` URL in the browser and copy the full content of the file and paste it into the **release-to-test.yml** workflow file.
+1. Navegue a la URL `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/release-to-test.yml` en el navegador y copie el contenido completo del archivo y péguelo en el archivo de flujo de trabajo **release-to-test.yml**.
  
    ![](images/L05/cntnu.png)
       
-16. Click **Commit changes** and then click **Commit changes**.
+16. Haga clic en **Confirmar cambios** y luego haga clic en **Confirmar cambios**.
 
     ![](images/L05/commit1.png)
     
-18. Select the **Code** tab and ensure you select Prioritz-XXXXXXX.
+18. Seleccione la pestaña **Código** y asegúrese de seleccionar Prioritz-XXXXXXX.
 
     ![](images/L05/codeu.png)
    
-19. Go to the **Releases** section and click **Create new release**.
+19. Vaya a la sección **Versiones** y haga clic en **Crear nueva versión**.
      
      ![](images/L05/Images2047u.png)    
    
-20. Click on the **Choose a tag** button, enter **v1.0.0** , and select **+ Create new tag on publish**.
+20. Haga clic en el botón **Elegir una etiqueta**, ingrese **v1.0.0** y seleccione **+ Crear nueva etiqueta al publicar**.
       
      ![](images/L05/Images2048.png)  
 
-21. Click **Publish release**.
+21. Haga clic en **Publicar comunicado**.
    
-22. Select the **Actions** tab and monitor the workflow.
+22. Seleccione la pestaña **Acciones** y supervise el flujo de trabajo.
       
      ![](images/L05/Images2049.png)
 
-23. The release should be completed successfully.
+23. La liberación debería completarse exitosamente.
     
      ![](images/L05/relecomplu.png)
      
-24. Navigate back to the PowerApps portal and  Ensure you are in the test PowerApps environment.
+24. Vuelva al portal de PowerApps y asegúrese de estar en el entorno de prueba de PowerApps.
 
       ![](images/L05/lastu.png)
 
-25. select the **solutions (1)** tab from the left side and click on **Managed (2)** you should see the solution deployed with the 
-    name of  **Prioritz (3)**.
+25. seleccione la pestaña **soluciones (1)** en el lado izquierdo y haga clic en **Administrado (2)**. Debería ver la solución implementada con el nombre de **Prioritz (3)**.
 
     ![](images/L05/lastuu.png)
     
-## Summary
-In this lab, you learned to promote a solution to a test environment, configure a service principal, and manage your solution using GitHub for version control and workflow automation.
+## Resumen
+En esta práctica de laboratorio, aprendió a promover una solución en un entorno de prueba, configurar una entidad de servicio y administrar su solución usando GitHub para el control de versiones y la automatización del flujo de trabajo.
 
-## You have successfully completed the lab
+## Has completado con éxito el laboratorio.

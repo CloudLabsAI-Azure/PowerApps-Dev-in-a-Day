@@ -456,18 +456,25 @@ En este ejercicio, creará el componente de código.
     ```
     
     > **Nota** : 
-    
-     1. Si la operación de inserción falla con el error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, asegúrese de haber seguido las instrucciones anteriores y de haber agregado el código correctamente en los archivos **Manifest e Index**.
-        
-        Adicionalmente, puede encontrar los archivos **Manifest e Index** en la ubicación `C:\LabFiles`, puede comparar su código con estos archivos y solucionar los problemas si los hay y luego volver a intentar insertar el componente ejecutando el comando **pac push** nuevamente.
+     1. Si encuentra el mensaje de error **"Error: Falta la herramienta requerida: MSBuild.exe/dotnet.exe. Agregue MSBuild.exe/dotnet.exe en la variable de entorno Ruta o use 'Desarrollador 
+        Símbolo del sistema para VS'"**, siga estos pasos:
+        1. Navegue hasta el directorio `C:\LabFiles` y abra **dotnet-sdk-8.0.100-win-x64**.
+        2. En la ventana de configuración, seleccione **Reparar**, luego espere a que se complete el proceso.
+        3. Una vez finalizada la reparación, cierre Visual Studio Code, vuelva a abrirlo y primero ejecute el comando de compilación presente en el paso 28 y vuelva a ejecutar el comando anterior.
+        4. Si el problema persiste, desinstale **dotnet-sdk-8.0.100-win-x64** e instale la última versión desde [la página de descarga de .NET](https://dotnet.microsoft.com/en-us /descargar). Cierre Visual Studio Code, vuelva a abrirlo, ejecute el comando de compilación del paso 28 y luego ejecute el comando anterior nuevamente.
 
-     2. Si la ejecución falla con un error de paquete Nuget, ejecute el siguiente comando en PowerShell e intente ejecutar el comando anterior nuevamente.
+2. Si la operación de inserción falla con el error **`Lo sentimos, la aplicación encontró un error no recuperable y deberá finalizar`**, asegúrese de haber seguido las instrucciones. 
+        instrucciones anteriores y agregué el código correctamente en los archivos **Manifiesto e Índice**. 
+        
+        Además, puede encontrar los archivos **Manifiesto e Índice** en la ubicación `C:\LabFiles`, puede comparar su código con estos archivos y solucionar los problemas, si los hay. 
+        Vuelva a intentar enviar el componente ejecutando el **comando pac push** nuevamente.
+     3. Si la ejecución falla con un error del paquete Nuget, ejecute el siguiente comando en PowerShell e intente ejecutar el comando anterior nuevamente.
     
         ```
-        dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
+        dotnet nuget agregar fuente https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
         ```
     
-36. Espere a que la solución se importe y se publique en su entorno.
+36. Espere a que la solución se importe y publique en su entorno.
 
       ![](images/L02/image31uu.png)
  
