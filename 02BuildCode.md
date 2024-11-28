@@ -530,9 +530,9 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 
 1. Navegue al portal de creación de Power Apps usando la siguiente URL si aún no está abierta. Asegúrese de que el entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** esté seleccionado.
 
-   ```   
-   https://make.powerapps.com/
-   ```
+     ```   
+     https://make.powerapps.com/
+     ```
 2. Seleccione **Soluciones** y abra la solución **PrioritZ**.
 
 3. Seleccione **Aplicaciones (1)**, seleccione la aplicación **PrioritZ Ask (2)** y haga clic en **Editar (3)**.
@@ -577,11 +577,11 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 
 14. Establezca el valor **Items** del componente **PrioritZDnDRanking** con la fórmula que se muestra a continuación.
 
-    ```
-    'Votes gallery'.AllItems
-    ```
+      ```
+    ' Votes gallery'.AllItems
+      ```
 
-     ![](images/L02/L02-voteitemu.png)
+      ![](images/L02/L02-voteitemu.png)
     
 15. Seleccione **PrioritZDnDRanking**, vaya al panel **Properties** que se encuentra en el lado derecho de la pantalla, configure **Item Height** en 160 y haga clic en **Edit Fields**.
 
@@ -607,30 +607,30 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
       
 22. Establezca el valor **X** del componente **PrioritZDnDRanking** con la siguiente fórmula.
 
-    ```
-    Votes gallery'.Width
-    ```
+      ```
+      Votes gallery'.Width
+      ```
 23. Seleccione la propiedad **Width** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **60**.
     
 24. Seleccione la propiedad **Height** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
-    ```
-    Votes gallery'.Height
-    ```
+      ```
+      Votes gallery'.Height
+      ```
 25. Seleccione la propiedad **ItemHeight** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
-    ```
-    Votes gallery'.TemplateHeight
-    ```
+      ```
+      Votes gallery'.TemplateHeight
+      ```
 26. Seleccione la propiedad **BackgroundColor** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **"LightBlue"**
     
 27. Seleccione la propiedad **DragBackgroundColor** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **"#A70202"**
 
 28. Seleccione la propiedad **Y** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
-    ```
-    Votes gallery'.Y
-    ```
+     ```
+     Votes gallery'.Y
+     ```
     
 29. Seleccione la propiedad **OnSelect** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
@@ -703,10 +703,9 @@ En este ejercicio, agregará el componente de código que creó a la solución P
 
 1. Navegue hasta el portal de creación de Power Apps utilizando la siguiente URL si aún no está abierta. Asegúrese de que el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** esté seleccionado.
 
-   ```
-   https://make.powerapps.com/
-   ```
-
+      ```
+      https://make.powerapps.com/
+      ```
 2. Seleccione **Soluciones** y abra la solución **PrioritZ**.
 3. Haga clic en **Agregar existente** y seleccione **Más | Desarrollador | Control personalizado**.
       
