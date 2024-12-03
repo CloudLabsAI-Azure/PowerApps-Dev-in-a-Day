@@ -235,8 +235,6 @@ In this exercise, you will import the current solution into the pre-created dev 
      
       ![](images/L01/image18u.png)
 
-11. Navigate to this path `C:\LabFiles` in File Explorer, select **image.png** and click open.
-
 13. Click **+** to add the choice.
      
       ![](images/L01/image191.png)
