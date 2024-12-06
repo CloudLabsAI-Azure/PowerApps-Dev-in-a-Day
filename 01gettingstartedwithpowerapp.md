@@ -395,8 +395,9 @@ application.
      'Topics gallery'.Selected.'My Notes'
      ```
 
-15. Rearrange the controls and move the **Notes label** between the details label and the Topic items
-    gallery.
+15. Rearrange the controls so that the **Notes label** is positioned between the Details label and the Topic items gallery.
+
+    ![](images/L01/noteslabel.png)
 
 16. Select the **Home Screen(1)** and click **Preview the app(2)**.
       
