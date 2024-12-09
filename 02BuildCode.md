@@ -249,7 +249,7 @@ In this exercise, you will build the code component.
          private items: ComponentFramework.PropertyTypes.DataSet;
          private state: ComponentFramework.Dictionary;
         ```
-        ![](images/L02/image21.png)
+        ![](images/L02/L2T2S15.png)
  
 
  17. Locate the **init** function and remove the following line of code.
