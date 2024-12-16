@@ -525,7 +525,7 @@ In this exercise, you will build the code component.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
  
-<validation step="aae02cab-a129-491c-b38b-29c66f2f2547" />
+<validation step="6dad0d67-7574-4e4e-9e54-92991eb9e250" />
 
 ## Exercise 2 – Use Code Component
 
