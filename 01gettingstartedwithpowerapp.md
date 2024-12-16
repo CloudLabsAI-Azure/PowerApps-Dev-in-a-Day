@@ -279,7 +279,7 @@ In this exercise, you will import the current solution into the pre-created dev 
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
  
-   <validation step="43212171-0d6f-44d9-9c69-5061a4bb1b1c" />
+   <validation step="90d2a2f9-9cc6-4098-bd18-0a968fa3fb2a" />
 
 ## Exercise 2 – Add a column for My Notes
 

@@ -70,7 +70,7 @@ connectors must be in a separate solution from the apps and flows that use them.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
  
-   <validation step="2be455a2-0037-48b9-83b9-d3efb66743e9" />
+   <validation step="620a8196-22fe-485e-ba36-b094768f88ce" />
 
 ## Exercise 3 – Create Custom Connector
 
@@ -252,7 +252,7 @@ In this exercise, you will create a custom connector from an existing API.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
  
-   <validation step="e9892770-5284-40d8-a6a1-28f85d7e051f" />
+   <validation step="a50b919d-5b95-4fe2-b9ee-79e36329a639" />
 
 ## Exercise 4 – Add Custom Code
 
