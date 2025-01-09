@@ -325,8 +325,7 @@ Nesta tarefa, criará um workflow the GitHub Actions utilizando o YAML fornecido
 
     ![](images/L05/pr1u.png)
 
-24. Agora deve ver o resumo do pedido de pull. Confirme que o ramo não tem conflitos com o
- ramo principal e que as alterações podem ser fundidas automaticamente no ramo principal.
+24. Agora deve ver o resumo do pedido de pull. Confirme que o ramo não tem conflitos com o ramo principal e que as alterações podem ser fundidas automaticamente no ramo principal.
 
 25. Clique no botão chevron ao lado do botão **Merge pull request** e selecione **Squash and merge**.
 
