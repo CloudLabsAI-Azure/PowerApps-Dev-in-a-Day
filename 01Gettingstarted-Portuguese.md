@@ -1,10 +1,8 @@
-# Laboratório 01 - Introdução
+# Laboratório 01 - Introdução ao Powerapps
 
-Duração: 45 minutos
+### Duração: 45 minutos
 
-## Índice
-
-**Cenário de laboratório**
+## Objetivos do laboratório
 
 1. Exercício 1 - Importar e rever os componentes da solução
 
@@ -22,78 +20,6 @@ Duração: 45 minutos
 
    - Tarefa 1: Teste o CLI da Power Platform
 
-
-### Cenário de laboratório
-
-Trabalhando como parte da equipa de Prioritz fusion, estará a configurar o ambiente de desenvolvimento da Power Platform
-ambiente. Irá importar e rever a solução atual e explorar o estado atual das aplicações Prioritz,
-fluxos e tabelas. Também irá adicionar uma coluna a uma tabela e modificar a aplicação.
-
-# **Introdução ao Workshop Programador num dia**
-
-Bem-vindo ao workshop programador num dia! Preparámos um ambiente contínuo para que possa explorar e aprender sobre os serviços do Azure. Comecemos por aproveitar ao máximo esta experiência:
-
-## **Aceder ao seu ambiente de laboratório**
-
-Assim que estiver pronto para iniciar, a sua máquina virtual e o **O Guia do laboratório** estarão no seu navegador.
-
- ![](./images/GS6.png)
-
-### **Guia de máquinas virtuais e laboratório**
-
-A sua máquina virtual é onde deverá executar todas as tarefas durante o workshop. O guia de laboratório é o seu roteiro para o sucesso.
-
-## **Explorando os seus recursos de laboratório**
-
-Para compreender melhor os recursos e as credenciais do seu laboratório, navegue até ao separador **Environment Details**.
-
- ![](./images/GS20.png)
-
-## **Utilizando a Característica da Janela Split**
-
-Por conveniência, pode abrir o guia de laboratório numa janela separada selecionando o botão **Split Window** do canto superior direito.
-
- ![](./images/GS8.png)
-
-## **Gerir a sua máquina virtual**
-
-Sinta-se à vontade para iniciar, parar ou reiniciar a sua máquina virtual conforme necessário no separador **Recursos**. A sua experiência está nas suas mãos!
-
- ![](./images/GS5.png)
-
-## **Vamos começar com o Portal do Azure**
-
-1. Na sua máquina virtual, clique no ícone do Portal do Azure, conforme mostrado abaixo:
-
-   ![](./images/GS1.png)
-
-2. Verá o separador **Inscreva-se no Microsoft Azure**. Aqui, introduza as suas credenciais:
-
-   - **E-mail/nome de utilizador:** <inject key="AzureAdUserEmail"></inject>
-
-      ![](./images/GS2.png "Enter e-mail")
-
-3. Em seguida, forneça a sua palavra-passe:
-
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
-
-      ![](./images/GS3.png "Enter Password")
-
-4. Se vir o pop-up **Stay inscrito?**, clique em **Não**.
-
-   ![](./images/GS9.png)
-
-5. Se vir o pop-up **Tem recomendações gratuitas do Azure Advisor!**, feche a janela para continuar o laboratório.
-
-6. Se aparecer uma janela pop-up **Bem-vindo à Microsoft Azure**, clique em **Talvez mais tarde** saltar o tour.
-
-7. Agora, clique no **Próximo** do canto inferior direito para se deslocar para a página seguinte.
-
-   ![](./images/GS4.png)
-
-Agora estamos prontos para explorar o poderoso mundo da tecnologia. Sinta-se à vontade para contactar o seu instrutor se tiver alguma dúvida ao longo do caminho. Desfrute do seu workshop!
-
-
 ## Exercício 1 - Importar e rever os componentes da solução
 
 Neste exercício, irá importar a solução atual para o ambiente de desenvolvimento pré-criado e rever os componentes da solução. Também executará um fluxo que adicionará dados de exemplo ao seu ambiente e testará as aplicações na solução.
@@ -105,20 +31,6 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 1. No JumpVM, clique no atalho portal **Power Apps** do navegador do Microsoft Edge que está disponível no ambiente de trabalho.
 
       ![azure portal.](images/L01/PAportal.png)
-
-1. Ao clicar no portal do Power Apps, o ecrã de boas-vindas do navegador de borda surgirá e seleccione **Start without your data**.
-
-    ![](/images/L01/browser-1.png)
-
-1. Na janel **We can help you import your browsing data from Google**, clique em **Continue without this data**.
-
-    ![](/images/L01/browser-1.1.png)
-
-1. Na janela seguinte, clique em **Confirm and start browsing**.
-
-    ![](/images/L01/browser-2.png)
-
-1. Agora, verá dois separadores no browser Edge, fecha o primeiro separador denominado **Microsoft Edge**.
 
 1. Na janela **Sign in**, verá o ecrã de login, introduza o seguinte nome de utilizador **(1)** e clique em **Next** **(2)**.
 
@@ -618,3 +530,5 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 12. Deve ver uma lista de soluções instaladas no seu ambiente.
 
     ![](images/L01/sollist.png)
+
+## Você concluiu o laboratório com sucesso
