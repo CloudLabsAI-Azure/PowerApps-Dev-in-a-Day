@@ -2,23 +2,15 @@
 
 ### Duração: 45 minutos
 
+Trabalhando como parte da equipe de fusão do Prioritz, você configurará seu ambiente de desenvolvimento do Power Platform. Você importará e revisará a solução atual e explorará o estado atual dos aplicativos, fluxos e tabelas do Prioritz. Você também adicionará uma coluna a uma tabela e modificará o aplicativo para usá-la.
+
 ## Objetivos do laboratório
 
-1. Exercício 1 - Importar e rever os componentes da solução
+Você poderá concluir o seguinte:
 
-   - Tarefa 1: Importar, rever os componentes da solução e executar o fluxo
-
-   - Tarefa 2: Teste as aplicações
-
-2. Exercício 2 – Adicione uma coluna para as minhas notas
-
-   - Tarefa 1: Adicione uma nova coluna
-
-   - Tarefa 2: Atualização da aplicação de administrador
-
-3. Exercício 3 – Verifique o instalador do Visual Studio Code pré-instalado e a extensão CLI da Power Platform
-
-   - Tarefa 1: Teste o CLI da Power Platform
+Exercício 1: Importar e revisar componentes da solução
+Exercício 2: Adicionar uma coluna para Minhas Anotações
+Exercício 3: Verificar o Visual Studio Code Installer pré-instalado e a Power Platform CLI Extension
 
 ## Exercício 1 - Importar e rever os componentes da solução
 
