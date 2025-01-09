@@ -28,13 +28,13 @@ In this exercise, you will import the current solution into the pre-created dev 
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-   ![](/images/L01/signin.png)
+     ![](/images/L01/signin.png)
 
 1. Now enter the following password **(1)** and click on **Sign in** **(2)**. 
 
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-   ![](/images/L01/signinp.png)
+     ![](/images/L01/signinp.png)
 
 1. Click **Ask Later** if the "Action Required" pop-up appears.
 
@@ -221,13 +221,13 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 10. Provide the below information and click **add a picture** that is present below **Respond By** field.
      
-     1. **Topic**: Enter `Change Taco Tuesday to some other food`
+     - **Topic**: Enter `Change Taco Tuesday to some other food`
      
-     1. **Details**: Enter `People are tired of tacos, what should we have instead of tacos?`
+     - **Details**: Enter `People are tired of tacos, what should we have instead of tacos?`
      
-     1. **Respond By**: Select **today's date**.
+     - **Respond By**: Select **today's date**.
      
-     ![](images/L01/image17u.png)
+       ![](images/L01/image17u.png)
 
 11. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
 
@@ -241,9 +241,9 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 14. Add a couple more choices by repeating **steps 12-14**.
        
-       1. **Choice 1** : Enter `Steak Tuesday`
+       - **Choice 1** : Enter `Steak Tuesday`
        
-       2. **Choice 2**: Enter `Cheese and Wine Tuesday`
+       - **Choice 2**: Enter `Cheese and Wine Tuesday`
 
 15. Click on **Save** button to save the topic.
     
@@ -416,9 +416,6 @@ application.
        3. Text input: `Prioritz Admin topic` (3)
        
        4. Respond By: **Today's date** (4)
-      
-      
-19. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
 
 20. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
      

@@ -116,9 +116,9 @@ In this exercise, you will create a custom connector from an existing API.
      3. Host: **contosobadgestest.azurewebsites.net (3)** and 
      4. click **Create connector (4)**.
     
-    ![](images/L03/L03-badges1u.png)
+        ![](images/L03/L03-badges1u.png)
 
-   >**Note**:If prompted to sign in, use the ODL credentials found in the environment tab located to the right of the Lab guide.
+        >**Note**:If prompted to sign in, use the ODL credentials found in the environment tab located to the right of the Lab guide.
 
 9. Select **Custom connectors (1)** from the sitemap. Click on the **... More actions (2)** button of the custom connector you created and select **Update from Open API file (3)** 
 
@@ -221,7 +221,6 @@ In this exercise, you will create a custom connector from an existing API.
    
     ![](images/L03/image19.png)
 
-
 7. The connection you created should be selected.
 
 8. Go to the **AddCredit (1)** operation. Enter your email address for recipientid, enter your name for name, enter **1** for points, and click
@@ -289,8 +288,7 @@ You will do this by using the custom code feature to reshape the response from t
      2. Description: **Get current badge (2)** 
      3. Operation ID: **getcurrentbadge (3)**
     
-    
-    ![](images/L03/image26-1.png)
+        ![](images/L03/image26-1.png)
 
 7. Scroll down to the **Request** section and click **+ Import from sample**.
     
