@@ -37,7 +37,7 @@ acciones, por lo que no se ejecutan bajo su identidad de usuario individual.
    - Nombre: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
    - Tipos de cuenta admitidos: **Las cuentas en este directorio organizativo solamente (OTU WA AIW [SUFFIX] solamente - único inquilino)** ***(2)***
 
-   ![](images/L05/diad5l3.png).
+     ![](images/L05/diad5l3.png).
    
 1. Copie el **ID de la aplicación (cliente)**, el **ID del directorio (inquilino)** y guárdelo en un bloc de notas cuando lo necesite para su uso posterior.
      
@@ -82,11 +82,11 @@ En esta tarea, probará nuevos entornos de Dataverse.
    
    - ¿Implementar aplicaciones y datos de muestra? :**Habilite Sí(6)** y haga clic en **Guardar(7)**.
    
-   ![](images/L05/newtask2.png)
+     ![](images/L05/newtask2.png)
 
-   ![](images/L05/newtask3.png)
+     ![](images/L05/newtask3.png)
 
-   ![](images/L05/newtask4.png)
+     ![](images/L05/newtask4.png)
 
 1. Ahora puede ver el nuevo Dataverse, **DEV_ENV_TEST**, que creó.
 
