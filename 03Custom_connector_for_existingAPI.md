@@ -109,9 +109,9 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
      3. Host: **contosobadgestest.azurewebsites.net (3)** 
      4. Haga clic en **Crear conector (4)**.
     
-    ![](images/L03/L03-badges1u.png)
+        ![](images/L03/L03-badges1u.png)
 
-   >**Nota**: Si se le solicita que inicie sesión, use las credenciales de ODL que se encuentran en la pestaña de ambiente ubicada a la derecha de la guía de laboratorio.
+        >**Nota**: Si se le solicita que inicie sesión, use las credenciales de ODL que se encuentran en la pestaña de ambiente ubicada a la derecha de la guía de laboratorio.
 
 9. Seleccione **Conectores personalizados (1)** en el mapa del sitio. Haga clic en el botón **... Más acciones (2)** del conector personalizado que creó y seleccione **Actualizar desde archivo Open API (3)**
 
@@ -213,7 +213,6 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
    
     ![](images/L03/image19.png)
 
-
 7. La conexión que creó debe estar seleccionada.
 
 8. Vaya a la operación **AddCredit (1)**. Ingrese su dirección de correo electrónico para recipientid, ingrese su nombre para name, ingrese **1** para points y haga clic en **Probar operación (2)**.
@@ -223,7 +222,6 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 9. La prueba debería ser exitosa y la respuesta debe verse como la imagen a continuación.
      
      ![](images/L03/image21u.png)
-
 
 11. Seleccione la operación **GetRecipient**.
 
@@ -280,8 +278,7 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
      2. Descripción: **Get current badge (2)** 
      3. ID de Operación: **getcurrentbadge (3)**
     
-    
-    ![](images/L03/image26-1.png)
+        ![](images/L03/image26-1.png)
 
 7. Desplácese hacia abajo hasta la sección **Solicitud** y haga clic en **+ Importar desde muestra**.
     
@@ -312,7 +309,6 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 18. Proporcione su dirección de correo electrónico como ID y haga clic en **Probar operación**.
      
      ![](images/L03/image31-1.png)
-
 
 19. La prueba debería ser exitosa y debería obtener una insignia actual para el usuario que creó.
     
@@ -367,7 +363,7 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
    ```
    https://make.powerapps.com
    ```
-
+   
 2. Expanda **Soluciones** y abra la solución **PrioritZ**.
 3. Seleccione **Aplicaciones (1)**, seleccione la aplicación **PrioritZ Ask (2)** y haga clic en **Editar (3)**.
  
@@ -403,7 +399,6 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
      
      ![](images/L03/image42-1u.png)
 
-
 11. Seleccione la **vista de árbol**.
 
 12. Seleccione la pestaña **Pantallas (1)**, vaya a la pestaña **Insertar (2)**, haga clic en **Medios** y, a continuación, seleccione **Imagen (3)**.
@@ -413,7 +408,6 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 13. Haga doble clic en la imagen recién agregada y cambie su nombre a **User badge**.
     
      ![](images/L03/image44.png)
-
 
 14. Establezca el valor **Image** de User badge con la fórmula que se muestra a continuación.
 

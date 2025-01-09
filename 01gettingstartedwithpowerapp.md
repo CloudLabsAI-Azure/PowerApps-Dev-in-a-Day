@@ -28,13 +28,13 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
    * Correo Electrónico/Nombre de Usuario: <inject key="AzureAdUserEmail"></inject>
 
-   ![](/images/L01/signin.png)
+      ![](/images/L01/signin.png)
 
 1. Ahora, ingrese la siguiente contraseña **(1)** y haga clic en **Iniciar sesión** **(2)**. 
 
    * Contraseña: <inject key="AzureAdUserPassword"></inject>
    
-   ![](/images/L01/signinp.png)
+      ![](/images/L01/signinp.png)
 
 1. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
 
@@ -188,7 +188,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
      
      1. **Respond By**: Seleccione **la fecha de hoy**.
      
-     ![](images/L01/image17u.png)
+        ![](images/L01/image17u.png)
 
 11. Navegue hasta la ruta C:\LabFiles en el explorador de archivos, seleccione **image.png** y haga clic en abrir.
 
@@ -370,8 +370,7 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
        3. Text input: `Prioritz Admin topic` (3)
        
        4. Respond By: **La fecha de Hoy** (4)
-      
-      
+       
 19. Navegue hasta esta ruta C:\LabFiles en el explorador de archivos, seleccione **image.png** y haga clic en abrir.
 
 20. Escriba **Test One** en el campo Choice y haga clic en **add a picture** que se encuentra debajo del campo Choice.

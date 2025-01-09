@@ -463,11 +463,12 @@ En este ejercicio, creará el componente de código.
         3. Una vez finalizada la reparación, cierre Visual Studio Code, vuelva a abrirlo y primero ejecute el comando de compilación presente en el paso 28 y vuelva a ejecutar el comando anterior.
         4. Si el problema persiste, desinstale **dotnet-sdk-8.0.100-win-x64** e instale la última versión desde [la página de descarga de .NET](https://dotnet.microsoft.com/en-us /descargar). Cierre Visual Studio Code, vuelva a abrirlo, ejecute el comando de compilación del paso 28 y luego ejecute el comando anterior nuevamente.
 
-2. Si la operación de inserción falla con el error **`Lo sentimos, la aplicación encontró un error no recuperable y deberá finalizar`**, asegúrese de haber seguido las instrucciones. 
+     2. Si la operación de inserción falla con el error **`Lo sentimos, la aplicación encontró un error no recuperable y deberá finalizar`**, asegúrese de haber seguido las instrucciones. 
         instrucciones anteriores y agregué el código correctamente en los archivos **Manifiesto e Índice**. 
         
         Además, puede encontrar los archivos **Manifiesto e Índice** en la ubicación `C:\LabFiles`, puede comparar su código con estos archivos y solucionar los problemas, si los hay. 
         Vuelva a intentar enviar el componente ejecutando el **comando pac push** nuevamente.
+        
      3. Si la ejecución falla con un error del paquete Nuget, ejecute el siguiente comando en PowerShell e intente ejecutar el comando anterior nuevamente.
     
         ```
