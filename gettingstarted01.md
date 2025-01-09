@@ -55,13 +55,21 @@ Una vez que esté listo para comenzar, su máquina virtual y la **Guía de labor
 
 ### Máquina Virtual y Guía de Laboratorio
  
-Su máquina virtual es su caballo de batalla durante todo el taller. La guía de laboratorio es su hoja de ruta hacia el éxito.
+En el entorno integrado, la máquina virtual del laboratorio funciona como el espacio de trabajo designado, mientras que la guía del laboratorio está accesible en el lado derecho de la pantalla.
+
+**Nota**: Asegúrese de seguir las instrucciones cuidadosamente para garantizar que el laboratorio funcione sin problemas y brinde una experiencia de usuario óptima.
  
 ## Exploración de los Recursos de su Laboratorio
 
 Para comprender mejor los recursos y credenciales de su laboratorio, navegue hasta la pestaña **Detalles del Ambiente**.
 
 ![](./images/GS20.png)
+
+## Guía de laboratorio Acercar/Alejar
+
+Para ajustar el nivel de zoom de la página del entorno, haga clic en el ícono **A↕ : 100%** ubicado junto al temporizador en el entorno del laboratorio.
+
+![](./images/n21.png) 
  
 ## Uso de la Función de Ventana Dividida
 
