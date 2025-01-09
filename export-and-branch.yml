@@ -27,8 +27,10 @@ jobs:
     - uses: actions/checkout@v2
       with:
        lfs: true
+    - name: Install Power Platform Tools
+      uses: microsoft/powerplatform-actions/actions-install@v1
     - name: export-solution action
-      uses: microsoft/powerplatform-actions/export-solution@0.4.0
+      uses: microsoft/powerplatform-actions/export-solution@v1
       with:
        environment-url: ${{secrets.PowerPlatformDevUrl}}
        app-id: ${{secrets.PowerPlatformAppID}}
@@ -37,7 +39,7 @@ jobs:
        solution-name: ${{ github.event.inputs.solution_name }}
        solution-output-file: ${{github.event.inputs.solution_exported_folder}}/${{github.event.inputs.solution_name }}.zip
     - name: export-managed-solution action
-      uses: microsoft/powerplatform-actions/export-solution@0.4.0
+      uses: microsoft/powerplatform-actions/export-solution@v1
       with:
        environment-url: ${{secrets.PowerPlatformDevUrl}}
        app-id: ${{secrets.PowerPlatformAppID}}
@@ -47,13 +49,13 @@ jobs:
        solution-output-file: ${{github.event.inputs.solution_exported_folder}}/${{github.event.inputs.solution_name }}_managed.zip
        managed: true
     - name: unpack-solution action
-      uses: microsoft/powerplatform-actions/unpack-solution@0.4.0
+      uses: microsoft/powerplatform-actions/unpack-solution@v1
       with:
        solution-file: ${{ github.event.inputs.solution_exported_folder}}/${{github.event.inputs.solution_name }}.zip
        solution-folder: ${{ github.event.inputs.solution_folder}}/${{github.event.inputs.solution_name }}
        solution-type: 'Both' 
     - name: branch-solution, prepare it for a PullRequest
-      uses: microsoft/powerplatform-actions/branch-solution@v0
+      uses: microsoft/powerplatform-actions/branch-solution@v1
       with:
        solution-folder: ${{ github.event.inputs.solution_folder}}/${{github.event.inputs.solution_name }}
        solution-target-folder: ${{github.event.inputs.solution_target_folder}}/${{github.event.inputs.solution_name }}
