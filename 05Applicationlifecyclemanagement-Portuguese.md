@@ -223,13 +223,13 @@ Neste exercício, criará um repositório do GitHub e adicionar segredos do repo
 
     ![](images/L05/github7uu.png)
 
-8. Introduza **PowerPlatformAppID (1)** para Nome e cole o **Application (client) ID (2)** de **GitHub Deploy<inject key="DeploymentID" activityCopy="false" />** que observou anteriormente no **`Exercício 1 -> Tarefa 1 -> Passo 5`** do seu bloco de notas no campo **Value** e clique em **Add secret (3)**.
+8. Insira **PowerPlatformAppID (1)** para Nome e cole o nome de usuário odl: <inject key="AzureAdUserEmail"></inject>
 
     ![](images/L05/github8u.png)
 
 9. Clique em **New repository secret** novamente.
 
-10. Introduza **PowerPlatformClientSecret (1)** para Nome e cole o **secret Value (2)** do seu bloco de nota que observou anteriormente em **`Exercício 1 -> Tarefa 1 -> Passo 8`** em o campo **Value** e clique em **Add secret (3)**.
+10. Insira **PowerPlatformClientSecret (1)** para Nome e cole a senha: <inject key="AzureAdUserPassword"></inject>
 
     ![](images/L05/github9u.png)
 
