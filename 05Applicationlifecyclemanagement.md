@@ -1,4 +1,4 @@
-# Laboratorio 05 - Gestión del ciclo de vida de las aplicaciones
+# Laboratorio 04 - Gestión del ciclo de vida de las aplicaciones
 
 ## Duración Estimada: 95 mins
 
@@ -132,6 +132,8 @@ implementar soluciones.
    **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
    ![](images/L05/diad5l14u.png)
+
+   **Nota:** Si el símbolo **#** aún está visible antes de GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, haga clic en él y actualice el panel para eliminarlo.
    
 1. Vuelva nuevamente a **Entornos** ***(1)*** en la hoja lateral y seleccione su **entorno de prueba** ***(2)***.
 
@@ -161,6 +163,8 @@ implementar soluciones.
    **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
    ![](images/L05/diad5l14uu.png)
+
+   **Nota:** Si el símbolo **#** aún está visible antes de GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, haga clic en él y actualice el panel para eliminarlo.
    
 1. Haga clic en **Entornos** ***(1)*** en la hoja lateral y seleccione su entorno **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** ***(2 )***.
 
