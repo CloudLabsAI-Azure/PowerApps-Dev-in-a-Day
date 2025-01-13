@@ -1,4 +1,4 @@
-# Laboratorio 05 - Gestión del ciclo de vida de las aplicaciones
+# Laboratorio 04 - Gestión del ciclo de vida de las aplicaciones
 
 ## Duración Estimada: 95 mins
 
@@ -37,7 +37,7 @@ acciones, por lo que no se ejecutan bajo su identidad de usuario individual.
    - Nombre: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
    - Tipos de cuenta admitidos: **Las cuentas en este directorio organizativo solamente (OTU WA AIW [SUFFIX] solamente - único inquilino)** ***(2)***
 
-   ![](images/L05/diad5l3.png).
+     ![](images/L05/diad5l3.png).
    
 1. Copie el **ID de la aplicación (cliente)**, el **ID del directorio (inquilino)** y guárdelo en un bloc de notas cuando lo necesite para su uso posterior.
      
@@ -82,11 +82,11 @@ En esta tarea, probará nuevos entornos de Dataverse.
    
    - ¿Implementar aplicaciones y datos de muestra? :**Habilite Sí(6)** y haga clic en **Guardar(7)**.
    
-   ![](images/L05/newtask2.png)
+     ![](images/L05/newtask2.png)
 
-   ![](images/L05/newtask3.png)
+     ![](images/L05/newtask3.png)
 
-   ![](images/L05/newtask4.png)
+     ![](images/L05/newtask4.png)
 
 1. Ahora puede ver el nuevo Dataverse, **DEV_ENV_TEST**, que creó.
 
@@ -132,6 +132,8 @@ implementar soluciones.
    **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
    ![](images/L05/diad5l14u.png)
+
+   **Nota:** Si el símbolo **#** aún está visible antes de GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, haga clic en él y actualice el panel para eliminarlo.
    
 1. Vuelva nuevamente a **Entornos** ***(1)*** en la hoja lateral y seleccione su **entorno de prueba** ***(2)***.
 
@@ -161,6 +163,8 @@ implementar soluciones.
    **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
    ![](images/L05/diad5l14uu.png)
+
+   **Nota:** Si el símbolo **#** aún está visible antes de GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, haga clic en él y actualice el panel para eliminarlo.
    
 1. Haga clic en **Entornos** ***(1)*** en la hoja lateral y seleccione su entorno **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** ***(2 )***.
 
@@ -219,13 +223,13 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
      ![](images/L05/github7uu.png)
 
-9. Ingrese **PowerPlatformAppID (1)** para Nombre y pegue el **ID de aplicación (cliente) (2)** de **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** que anotó anteriormente en **`Ejercicio 1 -> Tarea 1 -> Paso 5`** desde su bloc de notas en el campo **Valor** y haga clic en **Agregar secreto (3)**.
+9. Ingrese **PowerPlatformClientSecret (1)** como Nombre y pegue la contraseña: **<inject key="AzureAdUserPassword"></inject> (2)** y **haga clic en Agregar secreto (3)**
     
      ![](images/L05/github8u.png)
 
 11. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
-12. Ingrese **PowerPlatformClientSecret (1)** para Nombre y pegue el **Valor secreto (2)** de su bloc de notas que anotó anteriormente en **`Ejercicio 1 -> Tarea 1 -> Paso 8`** en el * *Valor** y haga clic en **Agregar secreto (3)**.
+12. Ingrese **PowerPlatformClientSecret (1)** como Nombre y pegue la contraseña: **<inject key="AzureAdUserPassword"></inject> (2)** y **haga clic en Agregar secreto (3)**
 
      ![](images/L05/github9u.png)
 
