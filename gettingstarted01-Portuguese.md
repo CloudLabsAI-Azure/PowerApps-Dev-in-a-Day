@@ -29,9 +29,7 @@ Aprenda a importar e personalizar soluções Power Platform, a criar componentes
 
 Nestes laboratórios, seguirá um processo estruturado para dominar os principais aspetos do desenvolvimento e gestão do Power Platform. Começará por importar uma solução pré-criada, executar um fluxo para adicionar dados de exemplo, personalizá-lo adicionando uma nova coluna e testar a CLI do Power Platform utilizando o VS Code. Em seguida, irá criar um componente de código com o VS Code, integrá-lo numa aplicação de ecrã e adicioná-lo a uma solução. Em seguida, irá criar um conector personalizado utilizando uma definição de API aberta, melhorá-lo com código personalizado e testá-lo em fluxos e aplicações de ecrã. Depois disso, irá criar, implementar e publicar uma Função Azure, criar um conector para a mesma e, opcionalmente, integrá-la numa aplicação de ecrã. Por fim, irá promover uma solução para um ambiente de teste, configurar uma entidade de serviço, gerir a solução utilizando um repositório GitHub e libertá-la para teste. Cada passo é detalhado com instruções e recursos visuais para garantir que obtém experiência prática com as funcionalidades do Power Platform.
 
-
  ![](./images/low_code_in_a_day_Architecture_diagram.JPG)
-
 
 ## Explicação dos Componentes
 
@@ -58,7 +56,9 @@ Quando estiver pronto para começar, a sua máquina virtual e o **Guia de labora
 
 ### Máquina Virtual e Guia de Laboratório
 
-A sua máquina virtual é o seu carro-chefe durante todo o workshop. O guia de laboratório é o seu guião para o sucesso.
+No ambiente integrado, a VM do laboratório serve como o espaço de trabalho designado, enquanto o guia do laboratório fica acessível no lado direito da tela.
+
+**Observação**: certifique-se de seguir as instruções cuidadosamente para garantir que o laboratório funcione sem problemas e forneça uma experiência de usuário ideal.
 
 ## Explorar os recursos do seu laboratório
 
@@ -71,6 +71,12 @@ Para melhor compreender os seus recursos e credenciais de laboratório, navegue 
 Por conveniência, pode abrir o guia de laboratório numa janela separada, selecionando o botão **Dividir janela** no canto superior direito.
 
 ![](./images/GS8.png)
+
+## Guia de laboratório Ampliar/Reduzir
+
+Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 100%** localizado ao lado do cronômetro no ambiente do laboratório.
+
+![](./images/n21.png) 
 
 ## Gerir a sua máquina virtual
 

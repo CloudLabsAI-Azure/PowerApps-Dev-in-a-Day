@@ -132,6 +132,8 @@ Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos am
 
     ![](images/L05/diad5l14u.png)
 
+    **Observação:** se o símbolo **#** ainda estiver visível antes do GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, clique nele e atualize o painel para removê-lo.
+
 1. Volte a recuar para **Environments** ***(1)*** na lâmina lateral e seleccione o seu **test environment** ***(2)***.
 
     ![](images/L05/diad5l17u.png)
@@ -160,6 +162,8 @@ Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos am
    **Administrador do sistema(3)** e clique em **Criar (4)**.
 
     ![](images/L05/diad5l14uu.png)
+
+    **Observação:** se o símbolo **#** ainda estiver visível antes do GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, clique nele e atualize o painel para removê-lo.
 
 1. Clique em **Environments** ***(1)*** e seleccione o seu **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
 
@@ -219,13 +223,13 @@ Neste exercício, criará um repositório do GitHub e adicionar segredos do repo
 
     ![](images/L05/github7uu.png)
 
-8. Introduza **PowerPlatformAppID (1)** para Nome e cole o **Application (client) ID (2)** de **GitHub Deploy<inject key="DeploymentID" activityCopy="false" />** que observou anteriormente no **`Exercício 1 -> Tarefa 1 -> Passo 5`** do seu bloco de notas no campo **Value** e clique em **Add secret (3)**.
+8. Insira **PowerPlatformAppID (1)** para Nome e cole o nome de usuário odl: **<inject key="AzureAdUserEmail"></inject> (2)** e **clique em Adicionar segredo (3)**
 
     ![](images/L05/github8u.png)
 
 9. Clique em **New repository secret** novamente.
 
-10. Introduza **PowerPlatformClientSecret (1)** para Nome e cole o **secret Value (2)** do seu bloco de nota que observou anteriormente em **`Exercício 1 -> Tarefa 1 -> Passo 8`** em o campo **Value** e clique em **Add secret (3)**.
+10. Insira **PowerPlatformClientSecret (1)** para Nome e cole a senha: **<inject key="AzureAdUserPassword"></inject> (2)** e **clique em Adicionar segredo (3)**
 
     ![](images/L05/github9u.png)
 
@@ -325,8 +329,7 @@ Nesta tarefa, criará um workflow the GitHub Actions utilizando o YAML fornecido
 
     ![](images/L05/pr1u.png)
 
-24. Agora deve ver o resumo do pedido de pull. Confirme que o ramo não tem conflitos com o
- ramo principal e que as alterações podem ser fundidas automaticamente no ramo principal.
+24. Agora deve ver o resumo do pedido de pull. Confirme que o ramo não tem conflitos com o ramo principal e que as alterações podem ser fundidas automaticamente no ramo principal.
 
 25. Clique no botão chevron ao lado do botão **Merge pull request** e selecione **Squash and merge**.
 
