@@ -132,6 +132,8 @@ Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos am
 
     ![](images/L05/diad5l14u.png)
 
+    **Observação:** se o símbolo **#** ainda estiver visível antes do GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, clique nele e atualize o painel para removê-lo.
+
 1. Volte a recuar para **Environments** ***(1)*** na lâmina lateral e seleccione o seu **test environment** ***(2)***.
 
     ![](images/L05/diad5l17u.png)
@@ -160,6 +162,8 @@ Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos am
    **Administrador do sistema(3)** e clique em **Criar (4)**.
 
     ![](images/L05/diad5l14uu.png)
+
+    **Observação:** se o símbolo **#** ainda estiver visível antes do GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, clique nele e atualize o painel para removê-lo.
 
 1. Clique em **Environments** ***(1)*** e seleccione o seu **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
 
