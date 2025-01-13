@@ -37,7 +37,7 @@ actions, so they do not execute under your individual user identity.
    - Name: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
    - Supported account types: **Accounts in this organizational directory only (OTU WA HOL - XXXXXX only - Single tenant)** ***(2)***
 
-   ![](images/L05/diad5l3uup.png).
+     ![](images/L05/diad5l3uup.png).
    
 1. Copy the **Application (client) ID**, **Directory(Tenant) ID**, and save it in a notepad as you need it for later use.
      
@@ -55,7 +55,7 @@ actions, so they do not execute under your individual user identity.
 
    ![](images/L05/diad5l7uu.png)
 
-    >**Note**: Make sure to copy and paste the correct **Application (client) ID**, **Directory(Tenant) ID** and **Secret** value. Copying the incorrect value will result in issues in the next steps/tasks.
+   >**Note**: Make sure to copy and paste the correct **Application (client) ID**, **Directory(Tenant) ID** and **Secret** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
 ### Task 2: Create a new Dataverse
 
@@ -82,11 +82,11 @@ In this task, you will  a new test Dataverse environments.
    
    - Deploy sample apps and data? :**Enable Yes(6)** and click on **Save(7)**.
    
-   ![](images/L05/newtask2.png)
+     ![](images/L05/newtask2.png)
 
-   ![](images/L05/newtask3.png)
+     ![](images/L05/newtask3.png)
 
-   ![](images/L05/newtask4.png)
+     ![](images/L05/newtask4.png)
 
 1. You can now see the new Dataverse, **DEV_ENV_TEST**, that you created.
 
@@ -97,7 +97,6 @@ In this task, you will  a new test Dataverse environments.
 In this task, you will be registering the app you created in Microsoft Entra ID into the dev and test
 Dataverse environments. You will also be assigned a security role that will allow the service principal to
 deploy solutions.
-
 
 1. Open a new browser window or tab and navigate to the Power Platform Admin Center using the below URL.
 
@@ -133,6 +132,8 @@ deploy solutions.
    **System administrator(3)** then click on **Create (4)**.
 
    ![](images/L05/diad5l14u.png)
+
+   **Note:** If the **#** symbol is still visible before GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, click on it and refresh the pane to remove it.
    
 1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environment** ***(2)***.
 
@@ -158,10 +159,11 @@ deploy solutions.
 
    ![](images/L05/diad5l13uu.png)
 
-1.  Type **org** and select your **Business unit** **(1)** and In **Security roles** click on **edit symbol (2)** and select 
-   **System administrator(3)** then click on **Create (4)**.
+1. Type **org** and select your **Business unit** **(1)** and In **Security roles** click on **edit symbol (2)** and select **System administrator(3)** then click on **Create (4)**.
 
-    ![](images/L05/diad5l14u.png)
+   ![](images/L05/diad5l14u.png)
+
+   **Note:** If the **#** symbol is still visible before GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, click on it and refresh the pane to remove it.
    
 1. Click on **Environments** ***(1)*** from the side blade and select your **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
 
@@ -220,13 +222,13 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
      ![](images/L05/github7uu.png)
 
-8. Enter **PowerPlatformAppID (1)** for Name and paste the **Application (client) ID (2)** of **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** that you noted earlier in **`Exercise 1 -> Task 1 -> Step 5`** from your notepad in the **Value** field and click **Add secret (3)**.
+8. Enter **PowerPlatformAppID (1)** for Name and paste the odl username : **<inject key="AzureAdUserEmail"></inject> (2)** and **click Add Secret (3)** 
 
      ![](images/L05/github8u.png)
 
 9. Click **New repository secret** again.
 
-10. Enter **PowerPlatformClientSecret (1)** for Name and paste the **secret Value (2)** from your notepad that you noted earlier in **`Exercise 1 -> Task 1 -> Step 8`** in the **Value** field and click **Add secret (3)**.
+10. Enter **PowerPlatformClientSecret (1)** for Name and paste the password : **<inject key="AzureAdUserPassword"></inject> (2)** and **click Add Secret (3)** 
 
      ![](images/L05/github9u.png)
 
@@ -248,9 +250,9 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 16. Enter **PowerPlatformTestUrl (1)** for Name and paste the **Test Environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 18`** in the **Value** field and click **Add secret (3)**.
 
-     >**Note**: Make sure you are pasting the test environment URL named **DEV_ENV_TEST** that you copied in the **`Exercise 1 -> Task 3 -> Step 23`**
+    >**Note**: Make sure you are pasting the test environment URL named **DEV_ENV_TEST** that you copied in the **`Exercise 1 -> Task 3 -> Step 23`**
  
-     ![](images/L05/L05-testurlu.png)
+    ![](images/L05/L05-testurlu.png)
  
 17. You should now have **5** repository secrets.
      
