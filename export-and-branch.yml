@@ -1,61 +1,77 @@
-name: export-and-branch
+name: release-to-test
+
 on:
- workflow_dispatch:
-  inputs: 
-  #Change this value
-   solution_name:
-    description: 'name of the solution to worked on from Power Platform'
-    required: true
-    default: Prioritz
-    #Do Not change these values
-   solution_exported_folder:
-    description: 'folder name for staging the exported solution *do not change*'
-    required: true
-    default: out/exported/
-   solution_folder:
-    description: 'staging the unpacked solution folder before check-in *do not change*'
-    required: true
-    default: out/solutions/
-   solution_target_folder: 
-    description: 'folder name to be created and checked in *do not change*'
-    required: true
-    default: solutions/
+  # Trigger when a release is created or when pushing to the main or develop branches
+  push:
+    branches:
+      - main
+      - develop
+  release:
+    types: [created]
+
+env:
+  solution_name: Prioritz
+  solution_source_folder: solutions
+  solution_outbound_folder: out/solutions
+  solution_release_folder: out/release
+
 jobs:
-  export-from-dev:
+  convert-to-managed:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2
+    # Checkout code from the current branch (main or develop)
+    - name: Checkout Code
+      uses: actions/checkout@v3
       with:
-       lfs: true
-    - name: Install Power Platform Tools
-      uses: microsoft/powerplatform-actions/actions-install@v1
-    - name: export-solution action
-      uses: microsoft/powerplatform-actions/export-solution@v1
+        lfs: true
+
+    # Pack the managed solution from the source folder
+    - name: Pack Managed Solution
+      uses: microsoft/powerplatform-actions/pack-solution@0.4.0
       with:
-       environment-url: ${{secrets.PowerPlatformDevUrl}}
+        solution-folder: ${{ env.solution_source_folder}}/${{ env.solution_name }}
+        solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name }}_managed.zip
+        solution-type: Managed
+
+    # Pack the unmanaged solution from the source folder
+    - name: Pack Unmanaged Solution
+      uses: microsoft/powerplatform-actions/pack-solution@0.4.0
+      with:
+        solution-folder: ${{ env.solution_source_folder}}/${{ env.solution_name }}
+        solution-file: ${{ env.solution_outbound_folder}}/${{ env.solution_name }}_unmanaged.zip
+        solution-type: Unmanaged
+
+    # Upload the managed solution to GitHub artifact store for later use
+    - name: Upload Managed Solution as Artifact
+      uses: actions/upload-artifact@v3  # Updated to latest version
+      with:
+        name: managedSolutions
+        path: ${{ env.solution_outbound_folder}}/${{ env.solution_name }}_managed.zip
+
+  release-to-staging:
+    needs: [convert-to-managed]
+    runs-on: windows-latest
+
+    steps:
+    # Checkout the code from the current branch (main or develop)
+    - name: Checkout Code
+      uses: actions/checkout@v3
+      with:
+        lfs: true
+
+    # Download the ready-to-release managed solution from GitHub artifact store
+    - name: Download Managed Solution Artifact
+      uses: actions/download-artifact@v3  # Updated to latest version
+      with:
+        name: managedSolutions
+        path: ${{ env.solution_release_folder }}
+
+    # Import the managed solution into the target test environment
+    - name: Import Solution to Test Environment
+      uses: microsoft/powerplatform-actions/import-solution@0.4.0
+      with:
+       environment-url: ${{secrets.PowerPlatformTestUrl}}
        user-name: ${{secrets.PowerPlatformAppID}}
        password-secret: ${{ secrets.PowerPlatformClientSecret }}
-       solution-name: ${{ github.event.inputs.solution_name }}
-       solution-output-file: ${{github.event.inputs.solution_exported_folder}}/${{github.event.inputs.solution_name }}.zip
-    - name: export-managed-solution action
-      uses: microsoft/powerplatform-actions/export-solution@v1
-      with:
-       environment-url: ${{secrets.PowerPlatformDevUrl}}
-       user-name: ${{secrets.PowerPlatformAppID}}
-       password-secret: ${{ secrets.PowerPlatformClientSecret }}
-       solution-name: ${{ github.event.inputs.solution_name }}
-       solution-output-file: ${{github.event.inputs.solution_exported_folder}}/${{github.event.inputs.solution_name }}_managed.zip
-       managed: true
-    - name: unpack-solution action
-      uses: microsoft/powerplatform-actions/unpack-solution@v1
-      with:
-       solution-file: ${{ github.event.inputs.solution_exported_folder}}/${{github.event.inputs.solution_name }}.zip
-       solution-folder: ${{ github.event.inputs.solution_folder}}/${{github.event.inputs.solution_name }}
-       solution-type: 'Both' 
-    - name: branch-solution, prepare it for a PullRequest
-      uses: microsoft/powerplatform-actions/branch-solution@v1
-      with:
-       solution-folder: ${{ github.event.inputs.solution_folder}}/${{github.event.inputs.solution_name }}
-       solution-target-folder: ${{github.event.inputs.solution_target_folder}}/${{github.event.inputs.solution_name }}
-       repo-token: ${{ secrets.GITHUB_TOKEN }}
-       allow-empty-commit: true
+       solution-file: ${{ env.solution_release_folder}}/${{ env.solution_name }}_managed.zip
+       run-asynchronously: true
