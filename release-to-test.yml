@@ -70,7 +70,7 @@ jobs:
     - name: Import Solution to Test Environment
       uses: microsoft/powerplatform-actions/import-solution@0.4.0
       with:
-        environment-url: ${{ secrets.PowerPlatformTestUrl }}
+        environment-url: ${{ secrets.PowerPlatformTestUrl}}
         app-id: ${{ secrets.PowerPlatformAppID }}
         client-secret: ${{ secrets.PowerPlatformClientSecret }}
         tenant-id: ${{ secrets.PowerPlatformTenantID }}
