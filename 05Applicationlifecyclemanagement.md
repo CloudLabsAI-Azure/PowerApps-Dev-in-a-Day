@@ -72,21 +72,21 @@ In this task, you will  a new test Dataverse environments.
 
 1. In the **New environment** tab.
    
-   - Name :**DEV_ENV_TEST(1)**.
+   - Name: **DEV_ENV_TEST(1)**.
    
-   - Make this a Managed Environment :**Enable Yes(2)**.
+   - Make this a Managed Environment: **Enable Yes(2)**.
    
-   - Group :**None(3)**. and scroll down.
+   - Group: **None(3)**. and scroll down.
    
-   - Type :**Developer(4)** and click on **Next(5)**.
+   - Type: **Developer(4)** and click on **Next(5)**.
    
-   - Deploy sample apps and data? :**Enable Yes(6)** and click on **Save(7)**.
+   - Deploy sample apps and data?: **Enable Yes(6)** and click on **Save(7)**.
    
-     ![](images/L05/newtask2.png)
+   ![](images/L05/newtask2.png)
 
-     ![](images/L05/newtask3.png)
+   ![](images/L05/newtask3.png)
 
-     ![](images/L05/newtask4.png)
+   ![](images/L05/newtask4.png)
 
 1. You can now see the new Dataverse, **DEV_ENV_TEST**, that you created.
 
@@ -128,8 +128,8 @@ deploy solutions.
 
    ![](images/L05/diad5l13u.png)
 
-1. Type **org** and select your **Business unit** **(1)** and In **Security roles** click on **edit symbol (2)** and select 
-   **System administrator(3)** then click on **Create (4)**.
+1. Type **org** and select your **Business unit** **(1)** and in **Security roles** click on **edit symbol (2)** and select 
+   **System administrator (3)** then click on **Create (4)**.
 
    ![](images/L05/diad5l14u.png)
 
@@ -159,7 +159,7 @@ deploy solutions.
 
    ![](images/L05/diad5l13uu.png)
 
-1. Type **org** and select your **Business unit** **(1)** and In **Security roles** click on **edit symbol (2)** and select **System administrator(3)** then click on **Create (4)**.
+1. Type **org** and select your **Business unit** **(1)** and In **Security roles** click on **edit symbol (2)** and select **System administrator (3)** then click on **Create (4)**.
 
    ![](images/L05/diad5l14u.png)
 
@@ -222,13 +222,13 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
      ![](images/L05/github7uu.png)
 
-8. Enter **PowerPlatformAppID (1)** for Name and paste the odl username : **<inject key="AzureAdUserEmail"></inject> (2)** and **click Add Secret (3)** 
+8. Enter **PowerPlatformAppID (1)** for Name and paste the odl username: **<inject key="AzureAdUserEmail"></inject> (2)** and **click Add Secret (3)** 
 
      ![](images/L05/github8u.png)
 
 9. Click **New repository secret** again.
 
-10. Enter **PowerPlatformClientSecret (1)** for Name and paste the password : **<inject key="AzureAdUserPassword"></inject> (2)** and **click Add Secret (3)** 
+10. Enter **PowerPlatformClientSecret (1)** for Name and paste the password: **<inject key="AzureAdUserPassword"></inject> (2)** and **click Add Secret (3)** 
 
      ![](images/L05/github9u.png)
 
@@ -292,7 +292,7 @@ indentation shown in the images.
 
    ![](images/L05/Images202uuu.png)
 
-1. Click On Settings, Go to the **Actions(1)** tab on the left side, then select **General(2)**.
+1. Click On Settings, Go to the **Actions (1)** tab on the left side, then select **General (2)**.
 
    ![](images/L05/actionpermissionuuu.png)
 

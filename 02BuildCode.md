@@ -482,20 +482,23 @@ In this exercise, you will build the code component.
     ```
     
     > **Note** : 
-     1. If you encounter the error message **"Error: Missing required tool: MSBuild.exe/dotnet.exe. Please add MSBuild.exe/dotnet.exe in Path environment variable or use 'Developer 
-        Command Prompt for VS'"**, follow these steps:
+     1. If you encounter the error message **"Error: Missing required tool: MSBuild.exe/dotnet.exe. Please add MSBuild.exe/dotnet.exe in Path environment variable or use 'Developer Command Prompt for VS'"**, follow these steps:
+        
         1. Navigate to the `C:\LabFiles` directory and open **dotnet-sdk-8.0.100-win-x64**.
+           
         2. In the setup window, select **Repair**, then wait for the process to complete.
-        3. After the repair finishes, close Visual Studio Code, reopen it, and First run the build command present in 28 step and again run the above command.
-        4. If the issue persists, uninstall **dotnet-sdk-8.0.100-win-x64** and install the latest version from [the .NET download page](https://dotnet.microsoft.com/en-us/download). Close Visual Studio Code, reopen it, run the build command from step 28, and then execute the above command again.
 
-     2. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the 
+        3. After the repair finishes, close Visual Studio Code, reopen it, and First run the build command present in 28 step and again run the above command.
+
+        4.  If the issue persists, uninstall **dotnet-sdk-8.0.100-win-x64** and install the latest version from [the .NET download page](https://dotnet.microsoft.com/en-us/download). Close Visual Studio Code, reopen it, run the build command from step 28, and then execute the above command again.
+
+     3. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the 
         previous instructions and added the code correctly in **Manifest and Index** files. 
         
         Additionally, you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there are any then 
         retry to push the component by running the  **pac push command** again.
 
-     3. If the run fails with a Nuget package error, run the below command in PowerShell and try running the above command again.
+     4. If the run fails with a Nuget package error, run the below command in PowerShell and try running the above command again.
     
         ```
         dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
@@ -513,13 +516,14 @@ In this exercise, you will build the code component.
     https://make.powerapps.com/
     ```
     
-2. Select **Solutions** and open the **PowerAppsTools** solution.
+2. Select **Solutions** and open the **PowerAppsTools_contoso** solution.
     
     ![](images/L02/image32u.png)
 
- 3. Click on **All** and Confirm that the custom control is in this solution.
+3. Click on **All** and Confirm that the custom control is in this solution.
      
       ![](images/L02/image33u.png)
+    
  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - If you receive a success message, you can proceed to the next task.
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
@@ -547,11 +551,11 @@ In this task, you will allow the publishing of canvas apps with code components 
     
      ![](images/L02/settingsu.png)
 
-5. Expand **Products(1)** and select **Features(2)**.
+5. Expand **Product(1)** and select **Features(2)**.
     
      ![](images/L02/featureu.png)
 
- 6. Turn on **Allow publishing of canvas apps with code components** and Scroll down click **Save**.
+6. Turn on **Allow publishing of canvas apps with code components** and Scroll down click **Save**.
      
       ![](images/L02/image35.2u.png)
 
@@ -569,7 +573,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     
 3. Select **Apps (1)** , select the **PrioritZ Ask (2)** app and click **Edit (3)**.
 
-     ![](images/L02/L02-editu.png)
+     ![](images/L02/L2T2S3.png)
 
 4. Select the **Components** tab, click on the backward arrow  to **Import**
     **components**.
@@ -584,7 +588,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
  
 7. Select the **Screens** tab.
 
-8. Expand **votescreen (1)** and Select the **Votes gallery (2)**.
+8. Expand **Vote Screen (1)** and Select the **Votes gallery (2)**.
 
      ![](images/L02/L02-votescreenu.png)
 
@@ -633,11 +637,11 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
  
 19. The rank should now show on the control, but it is sorted descending.
       
-20. Select the **Votes gallery**, then select the **Items** property from the property dropdown and change the sort order to **Ascending**.
+20. Go to tree view, select the **Vote Screen** then **Votes gallery**, then select the **Items** property from the property dropdown and change the sort order to **Ascending**.
      
       ![](images/L02/image46.png)
  
- 21. The rank should now get sorted ascending.
+21. The rank should now get sorted ascending.
 
 22. Select the **PrioritZDnDRanking** component then **X** property from the property dropdown.
  
@@ -726,12 +730,15 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
      ![](images/L02/image49.png)
  
 35. The drag/drop should work as expected.
+
 36. Close the preview.
-1. Click **Publish**.
+
+37. Click **Publish**.
 
     ![](images/L02/publish.png)
 
 38. Select **Publish this version** and wait for the publish to be completed.
+
 39. You may **close** the canvas app studio.
 
 
@@ -747,22 +754,24 @@ In this exercise, you will add the code component you created to the PrioritZ so
     https://make.powerapps.com/
     ```
 2. Select **Solutions** and open the **PrioritZ** solution.
+   
 3. Click **Add existing** and select **More | Developer | Custom control**.
       
       ![](images/L02/image50.1.png)
  
- 4. Select **contoso_ContosoCoffee.PrioritZDnDRanking (1)** and click **Add (2)**.
+4. Select **contoso_ContosoCoffee.PrioritZDnDRanking (1)** and click **Add (2)**.
      
       ![](images/L02/image51.1.png)
  
- 5. Click **Publish all customizations** and wait for the publishing to complete.
+5. Click **Publish all customizations** and wait for the publishing to complete.
 
     ![](images/L02/L02-EX3.png)
     
     >**Note:** If you can't find the Publish all customizations button, click the ellipsis **(...)** next to the Add existing pane.
+    
 ## Summary
 
-In this lab,you learned to create a code component, implement its logic, integrate it into a canvas app, and add it to a solution within the Power Platform.
+In this lab, you learned to create a code component, implement its logic, integrate it into a canvas app, and add it to a solution within the Power Platform.
 
 ## You have successfully completed the lab
 
