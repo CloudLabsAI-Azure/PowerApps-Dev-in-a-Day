@@ -197,11 +197,11 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
    ![](images/L05/github1u.png)
 
-3. Haga clic en **Nuevo repositorio** para crear un repositorio.
+1. Haga clic en **Nuevo repositorio** para crear un repositorio.
 
    ![](images/L05/github2u.png)
 
-4. Ingrese **PrioritZ (1)** para el nombre del repositorio, seleccione **Público (2)** y marque **Agregar un archivo README (3)**.
+1. Ingrese **PrioritZ (1)** para el nombre del repositorio, seleccione **Público (2)** y marque **Agregar un archivo README (3)**.
 
    ![](images/L05/github3.png)
 
@@ -209,57 +209,57 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
    ![](images/L05/github4.png)
 
-5. Haga clic en **Configuración** para abrir la pestaña de configuración.
+1. Haga clic en **Configuración** para abrir la pestaña de configuración.
     
      ![](images/L05/Imagessettinguu.png)
 
-6. Vaya a la sección **Seguridad**, expanda **Secretos y variables(1)** y seleccione **Acciones (2)**.
+1. Vaya a la sección **Seguridad**, expanda **Secretos y variables(1)** y seleccione **Acciones (2)**.
    
     > **Nota:** Los valores que proporcione no serán visibles después de crear el elemento, así que tómese su tiempo para obtener los valores correctos.
       
      ![](images/L05/github6u.png)
    
-8. Haga clic en **Nuevo secreto de repositorio** para agregar un secreto.
+1. Haga clic en **Nuevo secreto de repositorio** para agregar un secreto.
 
      ![](images/L05/github7uu.png)
 
-9. Ingrese **PowerPlatformAppID (1)** como Nombre y pegue la contraseña: **<inject key="AzureAdUserEmail"></inject> (2)** y **haga clic en Agregar secreto (3)**
+1. Ingrese **PowerPlatformAppID (1)** como Nombre y pegue la contraseña: **<inject key="AzureAdUserEmail"></inject> (2)** y **haga clic en Agregar secreto (3)**
     
      ![](images/L05/github8u.png)
 
-11. Haga clic en **Nuevo secreto del repositorio** nuevamente.
+1. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
-12. Ingrese **PowerPlatformClientSecret (1)** como Nombre y pegue la contraseña: **<inject key="AzureAdUserPassword"></inject> (2)** y **haga clic en Agregar secreto (3)**
+1. Ingrese **PowerPlatformClientSecret (1)** como Nombre y pegue la contraseña: **<inject key="AzureAdUserPassword"></inject> (2)** y **haga clic en Agregar secreto (3)**
 
      ![](images/L05/github9u.png)
 
-13. Haga clic en **Nuevo secreto del repositorio** nuevamente.
+1. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
-14. Ingrese **PowerPlatformTenantID (1)** para Nombre y pegue el secreto **Tenant ID (2)** de su bloc de notas que anotó anteriormente en **`Ejercicio 1 -> Tarea 1 -> Paso 5`** en el **Valor** y haga clic en **Agregar secreto (3)**.
+1. Ingrese **PowerPlatformTenantID (1)** para Nombre y pegue el secreto **Tenant ID (2)** de su bloc de notas que anotó anteriormente en **`Ejercicio 1 -> Tarea 1 -> Paso 5`** en el **Valor** y haga clic en **Agregar secreto (3)**.
     
      ![](images/L05/github10u.png)
 
-16. Haga clic en **Nuevo secreto del repositorio** nuevamente.
+1. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
-17. Ingrese **PowerPlatformDevUrl (1)** para Nombre y pegue la **URL del entorno de desarrollo (2)** secreta de su bloc de notas que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 21`** en el campo **Valor** y haga clic en **Agregar secreto (3)**.
+1. Ingrese **PowerPlatformDevUrl (1)** para Nombre y pegue la **URL del entorno de desarrollo (2)** secreta de su bloc de notas que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 21`** en el campo **Valor** y haga clic en **Agregar secreto (3)**.
 
     >**Nota**: asegúrese de pegar la URL del entorno de desarrollo denominada **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** que copió en el **`Ejercicio 1 -> Tarea 3 - > Paso 17`**
    
      ![](images/L05/github11u.png) 
   
-18. Haga clic en **Nuevo secreto del repositorio** una vez más.
+1. Haga clic en **Nuevo secreto del repositorio** una vez más.
 
-19. Ingrese **PowerPlatformTestUrl (1)** para Nombre y pegue la **URL del entorno de prueba (2)** de su bloc de notas que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 18`** en el **Valor** y haga clic en **Agregar secreto (3)**.
+1. Ingrese **PowerPlatformTestUrl (1)** para Nombre y pegue la **URL del entorno de prueba (2)** de su bloc de notas que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 18`** en el **Valor** y haga clic en **Agregar secreto (3)**.
 
      >**Nota**: Asegúrese de pegar la URL del entorno de prueba denominada **DEV_ENV_TEST** que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 23`**.
  
      ![](images/L05/L05-testurlu.png)
    
-20. Ahora deberías tener **5** secretos del repositorio.
+1. Ahora deberías tener **5** secretos del repositorio.
      
     ![](images/L05/Images20uu5u.png)
 
-21. No salgas de esta página.
+1. No salgas de esta página.
 
 ### Ejercicio 3: Exportación y sucursal
 
@@ -325,21 +325,21 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
         
    ![](images/L05/L05-t1-1u.png)
    
-23. Agregue una descripción si lo desea y luego haga clic en **Crear solicitud de extracción**.
+1. Agregue una descripción si lo desea y luego haga clic en **Crear solicitud de extracción**.
 
      ![](images/L05/pr1u.png)
    
-24. Ahora debería ver el resumen de la solicitud de extracción. Confirme que la rama no tenga conflictos con la rama principal y que los cambios se puedan fusionar en la rama principal automáticamente.
+1. Ahora debería ver el resumen de la solicitud de extracción. Confirme que la rama no tenga conflictos con la rama principal y que los cambios se puedan fusionar en la rama principal automáticamente.
    
-25. Haga clic en el botón de chevrón al lado del botón **Fusionar solicitud de extracción** y seleccione **Aplastar y fusionar**.
+1. Haga clic en el botón de chevrón al lado del botón **Fusionar solicitud de extracción** y seleccione **Aplastar y fusionar**.
       
     ![](images/L05/Images2032u.png)
 
-26. Haga clic en **Aplastar y fusionar**.
+1. Haga clic en **Aplastar y fusionar**.
    
-27. Haga clic en **Confirmar aplastamiento y fusión**.
+1. Haga clic en **Confirmar aplastamiento y fusión**.
    
-28. La solicitud de extracción debería fusionarse correctamente.
+1. La solicitud de extracción debería fusionarse correctamente.
    
      ![](images/L05/prdoneu.png)
 
@@ -370,37 +370,37 @@ exportado al entorno de prueba.
  
    ![](images/L05/cntnu.png)
       
-16. Haga clic en **Confirmar cambios** y luego haga clic en **Confirmar cambios**.
+1. Haga clic en **Confirmar cambios** y luego haga clic en **Confirmar cambios**.
 
     ![](images/L05/commit1.png)
     
-18. Seleccione la pestaña **Código** y asegúrese de seleccionar Prioritz-XXXXXXX.
+1. Seleccione la pestaña **Código** y asegúrese de seleccionar Prioritz-XXXXXXX.
 
     ![](images/L05/codeu.png)
    
-19. Vaya a la sección **Versiones** y haga clic en **Crear nueva versión**.
+1. Vaya a la sección **Versiones** y haga clic en **Crear nueva versión**.
      
      ![](images/L05/Images2047u.png)    
    
-20. Haga clic en el botón **Elegir una etiqueta**, ingrese **v1.0.0** y seleccione **+ Crear nueva etiqueta al publicar**.
+1. Haga clic en el botón **Elegir una etiqueta**, ingrese **v1.0.0** y seleccione **+ Crear nueva etiqueta al publicar**.
       
      ![](images/L05/Images2048.png)  
 
-21. Haga clic en **Publicar comunicado**.
+1. Haga clic en **Publicar comunicado**.
    
-22. Seleccione la pestaña **Acciones** y supervise el flujo de trabajo.
+1. Seleccione la pestaña **Acciones** y supervise el flujo de trabajo.
       
      ![](images/L05/Images2049.png)
 
-23. La liberación debería completarse exitosamente.
+1. La liberación debería completarse exitosamente.
     
      ![](images/L05/relecomplu.png)
      
-24. Vuelva al portal de PowerApps y asegúrese de estar en el entorno de prueba de PowerApps.
+1. Vuelva al portal de PowerApps y asegúrese de estar en el entorno de prueba de PowerApps.
 
       ![](images/L05/lastu.png)
 
-25. seleccione la pestaña **soluciones (1)** en el lado izquierdo y haga clic en **Administrado (2)**. Debería ver la solución implementada con el nombre de **Prioritz (3)**.
+1. seleccione la pestaña **soluciones (1)** en el lado izquierdo y haga clic en **Administrado (2)**. Debería ver la solución implementada con el nombre de **Prioritz (3)**.
 
     ![](images/L05/lastuu.png)
     

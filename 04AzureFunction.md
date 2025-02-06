@@ -30,23 +30,23 @@ En este ejercicio, instalará la extensión de herramientas de Azure para Visual
 
    ![](images/L04/vscode1.png)
     
-2. Seleccione la pestaña **Extensiones**.
+1. Seleccione la pestaña **Extensiones**.
 
    ![](images/L04/vscode2.png)
 
-3. Busque **Azure tools (1)** y haga clic en **Instalar (2)** para instalar la extensión de Azure Tools.
+1. Busque **Azure tools (1)** y haga clic en **Instalar (2)** para instalar la extensión de Azure Tools.
   
     ![](images/L04/vscode3.png)
 
-4. Espere a que se complete la instalación.
+1. Espere a que se complete la instalación.
 
-5. Ahora debería ver la nueva extensión de Azure Tools que agregó.
+1. Ahora debería ver la nueva extensión de Azure Tools que agregó.
     
     ![](images/L04/image%20(2).png)
 
-6. Haga clic en **Terminal** en el menú superior y seleccione **Nueva Terminal**.
+1. Haga clic en **Terminal** en el menú superior y seleccione **Nueva Terminal**.
 
-7. Ejecute el siguiente comando en la terminal para crear una nueva carpeta.
+1. Ejecute el siguiente comando en la terminal para crear una nueva carpeta.
    
    ```
    md ContosoFunctions
@@ -123,11 +123,11 @@ En este ejercicio, implementará la función.
     
    ![](images/L04/image%20(10).png)
 
-2. Nombra el nuevo archivo **Model.cs**
+1. Nombra el nuevo archivo **Model.cs**
   
    ![](images/L04/vscode13.png)
 
-3. Abra el nuevo archivo **Model.cs** y pegue el código siguiente. Esto definirá los datos que se enviarán.
+1. Abra el nuevo archivo **Model.cs** y pegue el código siguiente. Esto definirá los datos que se enviarán.
     desde la aplicación Power.
    
       ```
@@ -157,8 +157,9 @@ En este ejercicio, implementará la función.
    
    ![](images/L04/vscode14.png)
    
-5. Abra el archivo **CreateTopic.cs**.
-6. Localice los atributos del método Ejecutar (números de línea 24 a 27) que están presentes encima del **método Ejecutar** y reemplácelos con los atributos siguientes. Esto proporciona nombres fáciles de usar cuando creamos un conector para usar la API.
+1. Abra el archivo **CreateTopic.cs**.
+
+1. Localice los atributos del método Ejecutar (números de línea 24 a 27) que están presentes encima del **método Ejecutar** y reemplácelos con los atributos siguientes. Esto proporciona nombres fáciles de usar cuando creamos un conector para usar la API.
     
        
       ```
@@ -173,27 +174,27 @@ En este ejercicio, implementará la función.
       
       ![](images/L04/image%20(13).png)
 
-7. Elimine **get** del método Ejecutar, ya que solo debería tener **post**.
+1. Elimine **get** del método Ejecutar, ya que solo debería tener **post**.
   
     ![](images/L04/image%20(14).png)
 
-8. Haga clic en **Terminal** en el menú superior y seleccione **Nueva Terminal**.
+1. Haga clic en **Terminal** en el menú superior y seleccione **Nueva Terminal**.
 
-9. Ejecute el siguiente comando en la terminal para agregar el paquete **Power Platform Dataverse Client**.
+1. Ejecute el siguiente comando en la terminal para agregar el paquete **Power Platform Dataverse Client**.
 
       ```
       dotnet add package Microsoft.PowerPlatform.Dataverse.Client
       ```
     ![](images/L04/image%20(17).png)
 
-10. Espere a que se agregue el paquete y luego ejecute el siguiente comando para agregar el paquete **Azure Identity**.
+1. Espere a que se agregue el paquete y luego ejecute el siguiente comando para agregar el paquete **Azure Identity**.
     
     ```
     dotnet add package Azure.Identity
     ```
-12. Espere a que se agregue el paquete **Azure Identity**.
+1. Espere a que se agregue el paquete **Azure Identity**.
 
-13. Abra el archivo **CreateTopic** y agregue las siguientes declaraciones después de la línea número 11.
+1. Abra el archivo **CreateTopic** y agregue las siguientes declaraciones después de la línea número 11.
 
       ```
       using System;
@@ -207,7 +208,7 @@ En este ejercicio, implementará la función.
       
      ![](images/L04/vscode15.png)
   
-14. Agregue el siguiente método después del método **Ejecutar**. Este método utilizará el token pasado desde el
+1. Agregue el siguiente método después del método **Ejecutar**. Este método utilizará el token pasado desde el
     llamar a la aplicación para obtener un nuevo token que permitirá que la función use la API de Dataverse en nombre de
     el usuario que llama.
     
@@ -245,7 +246,7 @@ En este ejercicio, implementará la función.
 
     ![](images/L04/vscode16.png)
 
-15. Reemplace el código dentro del método **Ejecutar** con el código siguiente. Esto proporcionará una instancia de la
+1. Reemplace el código dentro del método **Ejecutar** con el código siguiente. Esto proporcionará una instancia de la
     API de Dataverse y utilice la función GetAccessToken que acabamos de definir.
     
       ```    
@@ -265,7 +266,7 @@ En este ejercicio, implementará la función.
 
     ![](images/L04/vscode17.png)
 
-16. Agregue el siguiente código después de la declaración if del método **Ejecutar** para volver a serializar la solicitud. Este
+1. Agregue el siguiente código después de la declaración if del método **Ejecutar** para volver a serializar la solicitud. Este
     nos proporcionará los datos pasados ​​por la persona que llama.
     
       ```
@@ -275,7 +276,7 @@ En este ejercicio, implementará la función.
       ```
     ![](images/L04/vscode18.png)
 
-17. Agregue el siguiente código que crea la fila al método **Ejecutar** después del código que agregó en el paso anterior para **volver a serializar la solicitud**. Este código crea las filas en
+1. Agregue el siguiente código que crea la fila al método **Ejecutar** después del código que agregó en el paso anterior para **volver a serializar la solicitud**. Este código crea las filas en
     Dataverse es donde podríamos agregar más lógica en el futuro.
     
        ```
@@ -309,7 +310,7 @@ En este ejercicio, implementará la función.
 
     ![](images/L04/vscode19.png)
 
-18. Agregue el siguiente código al método **Ejecutar** para devolver el ID del tema como JSON (requerido por Power Apps) después del código que agregó en el paso anterior para crear la fila para el método **Ejecutar**.
+1. Agregue el siguiente código al método **Ejecutar** para devolver el ID del tema como JSON (requerido por Power Apps) después del código que agregó en el paso anterior para crear la fila para el método **Ejecutar**.
 
       ```
       return new OkObjectResult(topicId);
@@ -317,11 +318,11 @@ En este ejercicio, implementará la función.
    
     ![](images/L04/vscode20.png)
 
-19. Haga clic en **Terminal (1)** y seleccione **Ejecutar tarea de compilación (2)**.
+1. Haga clic en **Terminal (1)** y seleccione **Ejecutar tarea de compilación (2)**.
 
     ![](images/L04/vscode21.png)
 
-20. La carrera debería tener éxito. Presione cualquier tecla para detener.
+1. La carrera debería tener éxito. Presione cualquier tecla para detener.
     
      > **Nota** :
 
@@ -338,78 +339,78 @@ En este ejercicio, implementará la función en Azure.
 
     ![](images/L04/vscode22.png)
 
-2. Haga clic en **Iniciar sesión en Azure** en la sección **Recursos**.
+1. Haga clic en **Iniciar sesión en Azure** en la sección **Recursos**.
    
    ![](images/L04/vscode23.png)
     
-3. Complete el proceso de **Iniciar sesión** utilizando las siguientes credenciales.
+1. Complete el proceso de **Iniciar sesión** utilizando las siguientes credenciales.
 
    * Correo electrónico/nombre de usuario: <inject key="AzureAdUserEmail"></inject>
    * Contraseña: <inject key="AzureAdUserPassword"></inject>
 
-4. Cierre la ventana del navegador de inicio de sesión una vez que se complete el proceso de inicio de sesión.
+1. Cierre la ventana del navegador de inicio de sesión una vez que se complete el proceso de inicio de sesión.
 
-5. Vuelva a Visual Studio Code y haga clic en **+** que está al lado de la **pestaña Recursos** para crear una nueva aplicación de funciones.
+1. Vuelva a Visual Studio Code y haga clic en **+** que está al lado de la **pestaña Recursos** para crear una nueva aplicación de funciones.
   
     ![](images/L04/NewVSazure3u.png)
  
-6. Ahora, busque y seleccione **Crear aplicación de funciones en Azure**.
+1. Ahora, busque y seleccione **Crear aplicación de funciones en Azure**.
 
     ![](images/L04/vscode24u.png)
 
-7. Ingrese **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** para el nombre de la aplicación de función y presione [ENTER].
+1. Ingrese **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** para el nombre de la aplicación de función y presione [ENTER].
 
     ![](images/L04/vscode25.png)
 
-8. Seleccione **.NET 6(LTS) en proceso**.
+1. Seleccione **.NET 6(LTS) en proceso**.
 
     ![](images/L04/vscode26u.png)
 
-9. Seleccione la ubicación: **<inject key="Region" enableCopy="false" />** de la lista y espere a que se implemente la aplicación de función.
+1. Seleccione la ubicación: **<inject key="Region" enableCopy="false" />** de la lista y espere a que se implemente la aplicación de función.
 
     ![](images/L04/vscode27.png)
     
-10. Una vez implementada la aplicación de funciones, haga clic en **Implementar en Azure** en la sección **Espacios de trabajo** y elija la aplicación de funciones que creó.
+1. Una vez implementada la aplicación de funciones, haga clic en **Implementar en Azure** en la sección **Espacios de trabajo** y elija la aplicación de funciones que creó.
     
      ![](images/L04/DeployNewu.png)
    
      ![](images/L04/DeployNew1u.png)
 
-11. Espere a que se implemente la aplicación de funciones y luego navegue hasta Azure Portal utilizando la siguiente URL.
+1. Espere a que se implemente la aplicación de funciones y luego navegue hasta Azure Portal utilizando la siguiente URL.
 
     ```
     https://portal.azure.com/
     ```
     
-12. Seleccione **Todos los recursos**, busque la aplicación de funciones **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** que implementó anteriormente y haga clic para abrirla.
+1. Seleccione **Todos los recursos**, busque la aplicación de funciones **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** que implementó anteriormente y haga clic para abrirla.
   
      ![](images/L04/vscode27.1.png)
 
-13. Seleccione **Autenticación (1)** en el menú del lado izquierdo y haga clic en **Agregar proveedor de identidad (2)**.
+1. Seleccione **Autenticación (1)** en el menú del lado izquierdo y haga clic en **Agregar proveedor de identidad (2)**.
   
      ![](images/L04/L04-auth.1.png)
 
-14. Seleccione **Microsoft** para Proveedor de identidad e **Inquilino actual - Inquilino único** para **Tipos de cuenta admitidos** y luego haga clic en **Agregar**.
+1. Seleccione **Microsoft** para Proveedor de identidad e **Inquilino actual - Inquilino único** para **Tipos de cuenta admitidos** y luego haga clic en **Agregar**.
    
      ![](images/L04/L04-auth.2.png)
 
-15. Abra el **menú Portal** haciendo clic en el icono del menú Portal.
+1. Abra el **menú Portal** haciendo clic en el icono del menú Portal.
 
      ![](images/dev4.png)
 
-16. Seleccione **Microsoft Entra ID** de la lista de recursos.
+1. Seleccione **Microsoft Entra ID** de la lista de recursos.
     
      ![](images/dev1.png)
 
-17. Seleccione **Registros de aplicaciones** en **Administrar** en el menú del lado izquierdo.
+1. Seleccione **Registros de aplicaciones** en **Administrar** en el menú del lado izquierdo.
 
     ![](images/L04/vscode30.png)
     
-18. Haga clic para abrir **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** para abrir la aplicación.
+1. Haga clic para abrir **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** para abrir la aplicación.
      
      ![](images/L04/vscode31.png)
 
-19. Copie el **ID de aplicación (cliente)** del registro de la aplicación **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** y guárdelo en un
+1. Copie el **ID de aplicación (cliente)** del registro de la aplicación **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** y guárdelo en un
     bloc de notas como **ID de aplicación API PrioritZFL**. Necesitará esta identificación en pasos futuros. Este ID se utilizará para configurar la protección de la API.
     
     ![](images/L04/image%20(33).png)
@@ -418,94 +419,94 @@ En este ejercicio, implementará la función en Azure.
     
     >**Nota**: Asegúrese de copiar y pegar el valor correcto de **ID de aplicación (cliente)**. Copiar el valor incorrecto provocará problemas en los siguientes pasos/tareas.
 
-20. Copie el **ID del directorio (inquilino)** y guárdelo en un bloc de notas como **ID del inquilino**. Necesitará esta identificación en pasos futuros.
+1. Copie el **ID del directorio (inquilino)** y guárdelo en un bloc de notas como **ID del inquilino**. Necesitará esta identificación en pasos futuros.
   
     ![](images/L04/image%20(35).png)
     
     >**Nota**: Asegúrese de copiar y pegar el valor correcto de **ID de directorio (inquilino)**. Copiar el valor incorrecto provocará problemas en los siguientes pasos/tareas.
 
-21. Seleccione **Certificados y secretos** en **Administrar** en el menú del lado izquierdo.
+1. Seleccione **Certificados y secretos** en **Administrar** en el menú del lado izquierdo.
 
     ![](images/L04/vscode32.png)
 
-22. Haga clic en **+ Nuevo secreto de cliente**.
+1. Haga clic en **+ Nuevo secreto de cliente**.
   
      ![](images/L04/image%20(36).png)
 
-23. Proporcione una descripción como **PrioritZ API secret(1)**, seleccione **3 meses(2)** y haga clic en **Agregar(3)**.
+1. Proporcione una descripción como **PrioritZ API secret(1)**, seleccione **3 meses(2)** y haga clic en **Agregar(3)**.
     
     ![](images/L04/image38.png)
 
-24. Copie el **Valor** y guárdelo en un bloc de notas como **PrioritZFL API Secret**. Necesita este valor en pasos futuros.
+1. Copie el **Valor** y guárdelo en un bloc de notas como **PrioritZFL API Secret**. Necesita este valor en pasos futuros.
     
     >**Nota**: Asegúrese de copiar y pegar el valor **Secreto** correcto. Copiar el valor incorrecto provocará problemas en los siguientes pasos/tareas.
 
-25. Seleccione **Permisos de API** en **Administrar** en el menú del lado izquierdo.
+1. Seleccione **Permisos de API** en **Administrar** en el menú del lado izquierdo.
 
     ![](images/L04/vscode33.png)
     
-26. Haga clic en **+ Agregar un permiso**.
+1. Haga clic en **+ Agregar un permiso**.
   
      ![](images/L04/image%20(39).png)
 
-27. Seleccione **Dynamics CRM** de la lista de permisos de API. Dynamics CRM es Dataverse, el portal de Azure simplemente no se ha actualizado al momento de escribir estos pasos.
+1. Seleccione **Dynamics CRM** de la lista de permisos de API. Dynamics CRM es Dataverse, el portal de Azure simplemente no se ha actualizado al momento de escribir estos pasos.
      
      ![](images/L04/vscode34.png)
 
-28. Marque la casilla de verificación **user_impersonation** y haga clic en **Agregar permiso**.
+1. Marque la casilla de verificación **user_impersonation** y haga clic en **Agregar permiso**.
 
     ![](images/L04/image%20(41)u.png)
 
-29. Vuelva a **Inicio** y abra la aplicación de función **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />**.
+1. Vuelva a **Inicio** y abra la aplicación de función **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />**.
    
      ![](images/L04/vscode27.1.png)
 
-30. Seleccione **Variables de entorno (1)** en **Configuración** en el menú del lado izquierdo.
+1. Seleccione **Variables de entorno (1)** en **Configuración** en el menú del lado izquierdo.
   
-31. lamer **+ Agregar (2)**.
+1. lamer **+ Agregar (2)**.
      
      ![](images/L04/vscode36u.png)
 
-32. Ingrese los siguientes detalles en la hoja **Agregar/Editar configuración de la aplicación** y haga clic en **Aplicar (3)**.
+1. Ingrese los siguientes detalles en la hoja **Agregar/Editar configuración de la aplicación** y haga clic en **Aplicar (3)**.
       
       - **Nombre**: **ID de cliente (1)**
       - **Valor**: Pegue el **ID de aplicación API PrioritZFL (2)** que anotó anteriormente en el bloc de notas.
 
      ![](images/L04/vscode37u.png)
 
-33. Haga clic en **+ Agregar** nuevamente.
+1. Haga clic en **+ Agregar** nuevamente.
 
-34. Ingrese los siguientes detalles en la hoja **Agregar/Editar configuración de la aplicación** y haga clic en **Aplicar (3)**.
+1. Ingrese los siguientes detalles en la hoja **Agregar/Editar configuración de la aplicación** y haga clic en **Aplicar (3)**.
       
       - **Nombre**: **ClienteSecreto (1)**
       - **Valor**: Pegue el **PrioritZFL API Secret (2)** que anotó anteriormente en el bloc de notas.
 
      ![](images/L04/vscode38u.png)
      
-35. Haga clic en **+ Agregar** nuevamente.
+1. Haga clic en **+ Agregar** nuevamente.
 
-36. Ingrese los siguientes detalles en la hoja **Agregar/Editar configuración de la aplicación** y haga clic en **Aplicar (3)**.
+1. Ingrese los siguientes detalles en la hoja **Agregar/Editar configuración de la aplicación** y haga clic en **Aplicar (3)**.
       
       - **Nombre**: **ID de inquilino (1)**
       - **Valor**: pegue el **TenantID (2)** que anotó anteriormente en el bloc de notas.
 
      ![](images/L04/vscode39u.png)
      
-37. Inicie una nueva ventana o pestaña del navegador, navegue hasta el centro de administración de Power Platform y seleccione **Entornos**.
+1. Inicie una nueva ventana o pestaña del navegador, navegue hasta el centro de administración de Power Platform y seleccione **Entornos**.
 
       ```
         https://admin.powerplatform.microsoft.com/environments
       ```
 
-38. Haga clic para abrir el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** que está utilizando para esta práctica de laboratorio.
+1. Haga clic para abrir el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** que está utilizando para esta práctica de laboratorio.
 
-39. Copie la **URL del entorno** y péguela en el bloc de notas.
+1. Copie la **URL del entorno** y péguela en el bloc de notas.
 
      ![](images/L04/image%20(47).png)
 
-40. Haga clic en **+ Agregar** una vez más.
+1. Haga clic en **+ Agregar** una vez más.
 
-41. Ingrese los siguientes detalles en la hoja **Agregar/Editar configuración de la aplicación** y haga clic en **Aplicar**.
+1. Ingrese los siguientes detalles en la hoja **Agregar/Editar configuración de la aplicación** y haga clic en **Aplicar**.
       
       - **Nombre**: **DataverseURL**
       - **Valor**: pegue la **URL del entorno** que anotó anteriormente en el bloc de notas.
@@ -514,13 +515,13 @@ En este ejercicio, implementará la función en Azure.
 
     >**Nota**: asegúrese de pegar la **URL del entorno** correcta que anotó anteriormente en esta tarea. Copiar el valor incorrecto provocará problemas en los siguientes pasos/tareas.
 
-42. Debería ver las cuatro configuraciones de la aplicación que agregó.
+1. Debería ver las cuatro configuraciones de la aplicación que agregó.
   
      ![](images/L04/image%20(46).png)
 
-43. Haga clic en **Aplicar** y en la ventana emergente **Guardar cambios**, haga clic en **Confirmar**.
+1. Haga clic en **Aplicar** y en la ventana emergente **Guardar cambios**, haga clic en **Confirmar**.
 
-44. Pegue la siguiente URL en el Bloc de notas y reemplace `{tenant id}` y `{api app id}` con los valores **tenant id** y **PrioritZFL API application ID** de su
+1. Pegue la siguiente URL en el Bloc de notas y reemplace `{tenant id}` y `{api app id}` con los valores **tenant id** y **PrioritZFL API application ID** de su
     bloc.
 
     ```
@@ -529,12 +530,12 @@ En este ejercicio, implementará la función en Azure.
      
      Después de actualizar los valores, su URL debería verse así: `https://login.microsoftonline.com/2140cxxxxxxx/adminconsent?client_id=195b2axxxxxxx`
  
-45. Después de actualizar los valores, navegue hasta la URL en una pestaña del navegador e inicie sesión con las siguientes credenciales.
+1. Después de actualizar los valores, navegue hasta la URL en una pestaña del navegador e inicie sesión con las siguientes credenciales.
    
    * Correo electrónico/nombre de usuario: <inject key="AzureAdUserEmail"></inject>
    * Contraseña: <inject key="AzureAdUserPassword"></inject>
    
-53. Haga clic en **Aceptar**.
+1. Haga clic en **Aceptar**.
 
 ### Tarea 2: Registrar la aplicación Connector Client
 
@@ -645,7 +646,7 @@ En este ejercicio, creará un nuevo conector personalizado.
     
    ![](images/L04/diad4l19.png) 
 
-16. Seleccione **OAuth 2.0** ***(1)*** para Tipo de autenticación. Proporcione los siguientes detalles y haga clic en **Crear conector** ***(8)***.
+1. Seleccione **OAuth 2.0** ***(1)*** para Tipo de autenticación. Proporcione los siguientes detalles y haga clic en **Crear conector** ***(8)***.
 
     - Proveedor de identidad: **Azure Active Directory** ***(2)***
     - ID de cliente: Pegue **ID de aplicación de PrioritZ Connector** ***(3)*** que copió anteriormente
@@ -671,19 +672,19 @@ En este ejercicio, creará un nuevo conector personalizado.
    * Correo electrónico/nombre de usuario: <inject key="AzureAdUserEmail"></inject>
    * Contraseña: <inject key="AzureAdUserPassword"></inject>
    
-7. Una vez creado el conector, seleccione **Conectores personalizados (1)** en el menú del lado izquierdo y haga clic en **Editar (2)** en el **conector PrioritZ**.
+1. Una vez creado el conector, seleccione **Conectores personalizados (1)** en el menú del lado izquierdo y haga clic en **Editar (2)** en el **conector PrioritZ**.
      
    ![](images/L04/L04-custom.png)
     
-7. Seleccione **Prueba** en la pestaña del menú desplegable.
+1. Seleccione **Prueba** en la pestaña del menú desplegable.
 
     ![](images/tstcnt.png)
     
-9. Asegúrese de que la conexión que creó esté seleccionada.
+1. Asegúrese de que la conexión que creó esté seleccionada.
 
     ![](images/cntcr.png)
     
-11. Active **Raw Body**, proporcione el JSON a continuación y haga clic en **Probar operación**.
+1. Active **Raw Body**, proporcione el JSON a continuación y haga clic en **Probar operación**.
     
     ```
           {
@@ -700,7 +701,7 @@ En este ejercicio, creará un nuevo conector personalizado.
       ```
      ![](images/L04/diad4l24.png) 
         
- 11. La prueba de funcionamiento debería tener éxito y la respuesta debería verse como la imagen a continuación.
+ 1. La prueba de funcionamiento debería tener éxito y la respuesta debería verse como la imagen a continuación.
 
      ![](images/L04/image%20(65).png)
 
@@ -712,32 +713,34 @@ Aplicación de lienzo de administración.
 ### Tarea 1: usar la función
 
 1. Navegue hasta el portal del creador de Power Apps y asegúrese de estar en el entorno correcto.
-2. Seleccione Aplicaciones, seleccione la aplicación **PrioritZ Admin** y haga clic en **Editar**.
+
+1. Seleccione Aplicaciones, seleccione la aplicación **PrioritZ Admin** y haga clic en **Editar**.
      
    ![](images/L04/image%20(66).png)
 
-3. Seleccione **Datos**, haga clic en **+ Agregar datos**, busque el conector Prioritz y seleccione el **Conector PrioritZ** que creó.
+1. Seleccione **Datos**, haga clic en **+ Agregar datos**, busque el conector Prioritz y seleccione el **Conector PrioritZ** que creó.
      
     ![](images/L04/image%20(67).png)
        
-4. Agregue el conector haciendo clic en él nuevamente.
-5. Haga clic en el botón **... Más acciones** del conector que acaba de agregar y seleccione **Cambiar nombre**.
+1. Agregue el conector haciendo clic en él nuevamente.
+
+1. Haga clic en el botón **... Más acciones** del conector que acaba de agregar y seleccione **Cambiar nombre**.
     
    ![](images/L04/image%20(68).png)
     
-6. Cambie el nombre del conector **PrioritZFunction**.
+1. Cambie el nombre del conector **PrioritZFunction**.
      
      ![](images/L04/image%20(69).png)
 
-7. Seleccione la **Vista de árbol** y expanda la **Pantalla Agregar tema**.
+1. Seleccione la **Vista de árbol** y expanda la **Pantalla Agregar tema**.
     
     ![](images/tree.png)
 
-9. Seleccione el icono **Agregar opción**.
+1. Seleccione el icono **Agregar opción**.
  
     ![](images/L04/image%20(70).png)
         
-9. Reemplace la fórmula **OnSelect** del **Ícono Agregar opción** con la siguiente fórmula. Esto ajusta los nombres de las columnas para que coincidan con la API y codifica las fotos.
+1. Reemplace la fórmula **OnSelect** del **Ícono Agregar opción** con la siguiente fórmula. Esto ajusta los nombres de las columnas para que coincidan con la API y codifica las fotos.
    
     ![](images/L04/image%20(72).png)
    
@@ -757,9 +760,9 @@ Aplicación de lienzo de administración.
       Reset(AddMediaButton2)
       ```
 
-10. Seleccione **Icono para guardar tema**.
+1. Seleccione **Icono para guardar tema**.
 
-11. Reemplace la fórmula **OnSelect** del **icono Guardar tema** con la siguiente fórmula. Esto cambia para que la API cree la "pregunta".
+1. Reemplace la fórmula **OnSelect** del **icono Guardar tema** con la siguiente fórmula. Esto cambia para que la API cree la "pregunta".
    
      
      ![](images/L04/image%20(74).png)
@@ -777,7 +780,7 @@ Aplicación de lienzo de administración.
       Back();
       ```
     
-12. Haga clic en **Guardar**.
+1. Haga clic en **Guardar**.
 
 1. Haga clic en **Publicar**.
 
@@ -791,30 +794,35 @@ Aplicación de lienzo de administración.
    
     ![](images/L04/image%20(75).png)
 
-2. Haga clic en el botón **+** agregar.
-3. Ingrese **Prueba de función** para Tema, **Probando la función** para Detalles. **Nota para probar la función** para Nota, seleccione una fecha para Responder antes y haga clic en **agregar una imagen**.
+1. Haga clic en el botón **+** agregar.
+
+1. Ingrese **Prueba de función** para Tema, **Probando la función** para Detalles. **Nota para probar la función** para Nota, seleccione una fecha para Responder antes y haga clic en **agregar una imagen**.
 
     ![](images/L04/image%20(76).png)
     
-4. Navegue hasta esta ruta **C:\LabFiles** en el explorador de archivos, seleccione **image.png** y haga clic en abrir.
-5. Ingrese **Pruebe la opción uno** para Elección y haga clic en **agregar una imagen**.
-6. Navegue hasta esta ruta **C:\LabFiles** en el explorador de archivos, seleccione **image.png** y haga clic en **+**.
+1. Navegue hasta esta ruta **C:\LabFiles** en el explorador de archivos, seleccione **image.png** y haga clic en abrir.
+
+1. Ingrese **Pruebe la opción uno** para Elección y haga clic en **agregar una imagen**.
+
+1. Navegue hasta esta ruta **C:\LabFiles** en el explorador de archivos, seleccione **image.png** y haga clic en **+**.
 
      ![](images/L04/image%20(77).png) 
     
-7. Ingrese **Opción de prueba dos** para Elección y haga clic en **agregar una imagen**.
+1. Ingrese **Opción de prueba dos** para Elección y haga clic en **agregar una imagen**.
 
-8. Navegue hasta esta ruta **C:\LabFiles** en el explorador de archivos, seleccione **image.png** y haga clic en **+**.
-9. Haga clic en **Guardar**.
+1. Navegue hasta esta ruta **C:\LabFiles** en el explorador de archivos, seleccione **image.png** y haga clic en **+**.
+
+1. Haga clic en **Guardar**.
   
      ![](images/L04/image%20(78).png)
 
-10. El nuevo tema debería guardarse y volver a la pantalla principal.
-11. Localiza el nuevo tema que creaste y ábrelo.
+1. El nuevo tema debería guardarse y volver a la pantalla principal.
+
+1. Localiza el nuevo tema que creaste y ábrelo.
     
      ![](images/L04/image80.png)
     
-12. Deberías ver las dos opciones que agregaste al tema.
+1. Deberías ver las dos opciones que agregaste al tema.
 
     ![](images/L04/image81.png)
 

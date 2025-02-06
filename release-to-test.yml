@@ -43,7 +43,7 @@ jobs:
 
     # Upload the managed solution to GitHub artifact store for later use
     - name: Upload Managed Solution as Artifact
-      uses: actions/upload-artifact@v3  # Updated to latest version
+      uses: actions/upload-artifact@v4  # Updated to latest version
       with:
         name: managedSolutions
         path: ${{ env.solution_outbound_folder}}/${{ env.solution_name }}_managed.zip
@@ -61,7 +61,7 @@ jobs:
 
     # Download the ready-to-release managed solution from GitHub artifact store
     - name: Download Managed Solution Artifact
-      uses: actions/download-artifact@v3  # Updated to latest version
+      uses: actions/download-artifact@v4  # Updated to latest version
       with:
         name: managedSolutions
         path: ${{ env.solution_release_folder }}
