@@ -472,7 +472,7 @@ En este ejercicio, creará el componente de código.
      3. Si la ejecución falla con un error del paquete Nuget, ejecute el siguiente comando en PowerShell e intente ejecutar el comando anterior nuevamente.
     
         ```
-        dotnet nuget agregar fuente https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
+        dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
         ```
     
 36. Espere a que la solución se importe y publique en su entorno.
@@ -487,7 +487,7 @@ En este ejercicio, creará el componente de código.
    https://make.powerapps.com/
    ```
     
-2. Seleccione **Soluciones** y abra la solución **PowerAppsTools**.
+2. Seleccione **Soluciones** y abra la solución **PowerAppsTools_contoso**.
     
     ![](images/L02/image32u.png)
 
@@ -557,7 +557,7 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
  
 7. Seleccione la pestaña **Pantallas**.
 
-8. Expanda **votescreen (1)** y seleccione **Votes gallery (2)**.
+8. Expanda **Vote Screen (1)** y seleccione **Votes gallery (2)**.
 
      ![](images/L02/L02-votescreenu.png)
 
@@ -603,7 +603,7 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
  
 18. El rango ahora debería aparecer en el control, pero está ordenado de manera descendente.
 
-19. Seleccione **Votes gallery**, luego seleccione la propiedad **Items** del menú desplegable de propiedades y cambie el orden de clasificación a **Ascendente**.
+19. Vaya a la vista de árbol, seleccione la **Pantalla de votación**, luego la **Galería de votos**, luego seleccione la propiedad **Elementos** en el menú desplegable de propiedades y cambie el orden de clasificación a **Ascendente**.
      
       ![](images/L02/image46.png)
  

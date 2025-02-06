@@ -141,7 +141,7 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 1. Seleccione la acción **AddCredit (1)** y luego **Important (2)** para Visibility.
     
-     ![](images/L03/image10-1.png)
+     ![](images/L03/L3T3S8.png)
 
 3. Desplácese hacia abajo hasta la sección **Solicitud**, haga clic en el botón **body** y seleccione **Editar**.
 
@@ -217,7 +217,7 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 8. Vaya a la operación **AddCredit (1)**. Ingrese su dirección de correo electrónico para recipientid, ingrese su nombre para name, ingrese **1** para points y haga clic en **Probar operación (2)**.
 
-    ![](images/L03/image20-1u.png)
+    ![](images/L03/L3T3S8.png)
 
 9. La prueba debería ser exitosa y la respuesta debe verse como la imagen a continuación.
      
