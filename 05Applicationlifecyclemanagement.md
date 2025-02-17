@@ -35,7 +35,7 @@ actions, so they do not execute under your individual user identity.
 1. Please provide the following details and click on **Register** ***(3)***.
    
    - Name: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-   - Supported account types: **Accounts in this organizational directory only (OTU WA HOL - XXXXXX only - Single tenant)** ***(2)***
+   - Supported account types: **Accounts in this organizational directory only (OTU WA HOL - <inject key="Deployment ID" enableCopy="false" /> only - Single tenant)** ***(2)***
 
      ![](images/L05/diad5l3uup.png).
    
@@ -135,7 +135,7 @@ deploy solutions.
 
    **Note:** If the **#** symbol is still visible before GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, click on it and refresh the pane to remove it.
    
-1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environment** ***(2)***.
+1. Again go back to **Environments** ***(1)*** in the side blade and select your **DEV_ENV_TEST** ***(2)***.
 
    ![](images/L05/diad5l17u.png)
    
@@ -173,7 +173,7 @@ deploy solutions.
     
    ![](images/L05/diad5l211u.png)
    
-1. Again go back to **Environments** ***(1)*** in the side blade and select your **test environment(2)** environment.
+1. Again go back to **Environments** ***(1)*** in the side blade and select  **DEV_ENV_TEST(2)** environment.
 
    ![](images/L05/diad5l17uu.png)
    
@@ -252,7 +252,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
     >**Note**: Make sure you are pasting the test environment URL named **DEV_ENV_TEST** that you copied in the **`Exercise 1 -> Task 3 -> Step 23`**
  
-    ![](images/L05/L05-testurlu.png)
+    ![](images/L05/L05-testurla.png)
  
 17. You should now have **5** repository secrets.
      
@@ -389,7 +389,7 @@ exported to the test environment.
 
       ![](images/L05/lastu.png)
 
-25. select the **solutions (1)** tab from the left side and click on **Managed (2)** you should see the solution deployed with the 
+25. Select the **solutions (1)** tab from the left side and click on **Managed (2)** you should see the solution deployed with the 
     name of  **Prioritz (3)**.
 
     ![](images/L05/lastuu.png)

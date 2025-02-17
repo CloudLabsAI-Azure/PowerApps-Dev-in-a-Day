@@ -2,12 +2,9 @@
 
 ## Estimated Duration: 90 minutes
 
-Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build
-a code component using the React JavaScript framework. A code component approach is used to
-address the requirement because there isn’t a similar control already built in.
+Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build a code component using the React JavaScript framework. A code component approach is used to address the requirement because there isn’t a similar control already built in.
 
-You have collaborated with the app makers to identify the following properties to allow them to
-configure the code component in the app:
+You have collaborated with the app makers to identify the following properties to allow them to configure the code component in the app:
 
 - BackgroundColor
 - DragBackgroundColor
@@ -15,10 +12,7 @@ configure the code component in the app:
 - FontSize
 - FontColor
 
-The PrioritZ Ask app will prepare a collection of the items to rank that will be bound as the dataset for
-the code component. When an item is dragged and dropped the code component will raise an OnSelect
-event that will be handled by the hosting app. The hosting app will update the collection items with
-their new rank. The code component will be stateless.
+The PrioritZ Ask app will prepare a collection of the items to rank that will be bound as the dataset for the code component. When an item is dragged and dropped the code component will raise an OnSelect event that will be handled by the hosting app. The hosting app will update the collection items with their new rank. The code component will be stateless.
 
 ## Lab Objectives
 
@@ -42,20 +36,22 @@ In this exercise, you will build the code component.
     
     ![](images/L02/authup.png)
 
-3. Click **Terminal (1)** and select **New Terminal (2).**
+3. Click on the three-dot menu (**...**) to expand additional options. Then, select **Terminal (1)** from the dropdown menu and click on **New Terminal (2)** to open a terminal session.
      
-     ![](images/L02/L02-terminaluu.png)
+     ![](images/L02/L02-terminaluua.png)
 
 4. In the Terminal window, make a new directory by running the command below.
 
     ```
     md PrioritZDnDRanking
     ```
+
 5. Run the command below to switch to the PrioritZDnRanking directory you created.
 
     ```
     cd PrioritZDnDRanking
     ```
+
 6. You should now be in the directory you created. Create a new component project and install dependencies by running the below command.
     
      ```
@@ -81,6 +77,7 @@ In this exercise, you will build the code component.
     These warnings mean that some packages are outdated or no longer updated. You can safely ignore them as they won't affect how the project works.
 
 8. Run the command below to open the project.
+
     ```
     code -a.
     ```
@@ -95,8 +92,7 @@ In this exercise, you will build the code component.
 
 10. Expand the **PrioritZDnDRanking** folder and then expand the sub-folder **generated**.
 
-11. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a
-    component including the properties exposed to the hosting app.
+11. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a component including the properties exposed to the hosting app.
 
       ![](images/L02/image6.png)
 
@@ -132,8 +128,8 @@ In this exercise, you will build the code component.
  
       >**Note**: Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
       
- 16. Notice the following two resources. This declares the component’s dependency on these two
-    libraries. This is a result of specifying –framework React on initialization.
+ 16. Notice the following two resources. This declares the component’s dependency on these two libraries. This is a result of specifying –framework React on initialization.
+
      ```
      <platform-library name="React" version="16.8.6" />
      <platform-library name="Fluent" version="8.29.0" />
@@ -141,16 +137,19 @@ In this exercise, you will build the code component.
      ![](images/L02/image11.png)
     
 17. Click **File** and select **Save All** to save your changes.
+
 18. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
 
       ![](images/L02/image12.png)
 
 19. Name the new folder ass **css**.
+
 20. Select the new **css** folder you created and then click **New File**
  
      ![](images/L02/image13.png)
  
- 21. Name the new file **PrioritZDnDRanking.css**
+ 21. Name the new file **PrioritZDnDRanking.css**.
+
  22. Paste the following CSS into the **PrioritZDnDRanking.css** file.
     
        ```
@@ -192,8 +191,7 @@ In this exercise, you will build the code component.
 
 5. Click **File** and save your changes.
     
-6. Open the **PriorityComponent.tsx** and review the contents. This implements the React
-    component that will be rendered to represent our draggable items.
+6. Open the **PriorityComponent.tsx** and review the contents. This implements the React component that will be rendered to represent our draggable items.
     
 7. Notice line 9 `from react-beautiful-dnd` has a red underline. This is a npm package the
     component uses that we haven’t referenced.
@@ -237,12 +235,11 @@ In this exercise, you will build the code component.
         ![](images/L02/image19.png)  
    
  
- 15. Locate the **Export** class in **line number 4**.
+ 15. Locate the **Export** class in **line number 5**.
       
      ![](images/L02/image20.png)
  
- 16. Add the following code below inside the **export** class. This defines some working variables you
-    will be using in the class logic.
+ 16. Add the following code below inside the **export** class. This defines some working variables you will be using in the class logic.
    
         ```
          private context: ComponentFramework.Context<IInputs>;
@@ -260,8 +257,7 @@ In this exercise, you will build the code component.
      
       ![](images/L02/initu.png)
         
- 18. Paste the code below inside the **init** function. This logic initializes our class variables from the
-    runtime values and enables resize notification.    
+ 18. Paste the code below inside the **init** function. This logic initializes our class variables from the runtime values and enables resize notification.    
     
         ![](images/L02/init1.png)
    
@@ -274,8 +270,7 @@ In this exercise, you will build the code component.
 
      ![](images/L02/imageUpdateView.png)
  
-20. Replace the **updateView** function with the function below. This logic creates the React Element
-    from the PriorityComponent and adds it to the virtual DOM.
+20. Replace the **updateView** function with the function below. This logic creates the React Element from the PriorityComponent and adds it to the virtual DOM.
   
      ```   
     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
@@ -297,8 +292,7 @@ In this exercise, you will build the code component.
 
     ![](images/L02/image24.png)
  
-21. Add the below code after the **destroy** function. This logic handles the onReorder event from
-    the PriorityComponent and identifies the involved items to the hosting app as selected items.
+21. Add the below code after the **destroy** function. This logic handles the onReorder event from the PriorityComponent and identifies the involved items to the hosting app as selected items.
        
     ```
     onReorder = (sourceIndex: number, destinationIndex: number): void => {
@@ -428,8 +422,7 @@ In this exercise, you will build the code component.
     },
     ```
     
-25. Navigate to **.eslintric.json(1)** file from left navigation to add the new lint rule. Locate **rules(2)** in **line number 22** and Replace the code by following the specified 
-    rules below.
+25. Navigate to **.eslintric.json(1)** file from left navigation to add the new lint rule. Locate **rules(2)** in **line number 22** and Replace the code by following the specified rules below.
    
       ```
       "no-unused-vars": ["off"],
@@ -462,9 +455,11 @@ In this exercise, you will build the code component.
         npm start
         ```
 
-31. The test harness should start, if not then copy the address and paste it in a new browser window. Try dragging the items and see if the behaviour functions as expected.
+31. The test harness should start, if not then copy the address and paste it in a new browser window  of edge. Try dragging the items and see if the behaviour functions as expected.
 
       ![](images/L02/imagee29u.png)
+
+    > **Note**: If you receive a pop-up for Internet Explorer, close it, then copy the localhost URL and paste it into a new tab in Edge.
  
      > **Note**: If the test harness didn't start as expected you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in the **Manifest and Index** files. 
 
@@ -477,6 +472,7 @@ In this exercise, you will build the code component.
       ![](images/L02/image30.png)
 
 35. Run the command below to push the component to your environment.
+
     ```
     pac pcf push --publisher-prefix contoso
     ```
@@ -566,9 +562,11 @@ In this task, you will allow the publishing of canvas apps with code components 
 In this task, you will edit the PrioritZ Ask canvas application to use the code component you created.
 
 1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
+
    ```   
    https://make.powerapps.com/
    ```
+
 2. Select **Solutions** and open the **PrioritZ** solution.
     
 3. Select **Apps (1)** , select the **PrioritZ Ask (2)** app and click **Edit (3)**.
@@ -582,17 +580,17 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
    >**Note:** The arrow may be invisible due to a glitch.
  
-1. Select the **Code (1)** tab, select the code component **(2)** you created and click **Import (3)**.
+5. Select the **Code (1)** tab, select the code component **(2)** you created and click **Import (3)**.
     
      ![](images/L02/L02-codeuu.png)
  
-7. Select the **Screens** tab.
+6. Select the **Screens** tab.
 
-8. Expand **Vote Screen (1)** and Select the **Votes gallery (2)**.
+7. Expand **Vote Screen (1)** and Select the **Votes gallery (2)**.
 
      ![](images/L02/L02-votescreenu.png)
 
-1. Select the **Width** from the properties dropdown.    
+8. Select the **Width** from the properties dropdown.    
 
      ![](images/L02/L02-votescreen1u.png)
 
@@ -611,19 +609,26 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 12. Select the component **PrioritZDnDRanking** under **Code Components**.
       
      ![](images/L02/image42uuu.png)
+    
+    **Note:** If you receive a pop-up for "Select a data source," simply click **Close**.
+
+     ![](images/L02/popups.png)    
  
-13. Go to the Tree view tab and select the **PrioritZDnDRanking** you just added.
+13. Go to the **Tree view(1)** tab and select the **PrioritZDnDRanking (2)** you just added.
+
+    ![](images/L02/popupsa.png) 
 
 14. Set the **Items** value of the **PrioritZDnDRanking** component to the formula below.
 
     ```
     'Votes gallery'.AllItems
     ```
+
      ![](images/L02/L02-voteitemu.png)
     
-15. Select the **PrioritZDnDRanking**, go to the **Properties** pane that is present at the right side of the screen, set **Item Height** 160 and click **Edit Fields**.
+15. On the **PrioritZDnDRanking**, go to the **Properties** pane that is present at the right side of the screen, set **Item Height** 160 and click **Edit Fields**.
 
-      ![](images/L02/image43u.png)
+      ![](images/L02/image43ua.png)
 
     >**Note:** If you can't find the properties on the right side of the screen, click the properties option located next to the edit button in the upper-right corner.
 
@@ -652,6 +657,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     ```
     'Votes gallery'.Width
     ```
+
 24. Select the **Width** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **60**.
     
 25. Select the **Height** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
@@ -659,14 +665,16 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     ```
     'Votes gallery'.Height
     ```
+
 26. Select the **ItemHeight** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula
 
     ```
     'Votes gallery'.TemplateHeight
     ```
-27. Select the **BackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"LightBlue"**
+
+27. Select the **BackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"#A70202"**
     
-28. Select the **DragBackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"#A70202"**
+28. Select the **DragBackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"LightBlue"**
 
 29. Select the **Y** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
 
@@ -741,7 +749,6 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
 39. You may **close** the canvas app studio.
 
-
 ## Exercise 3 – Add Code Component to Solution
 
 In this exercise, you will add the code component you created to the PrioritZ solution.
@@ -753,9 +760,10 @@ In this exercise, you will add the code component you created to the PrioritZ so
    ```
     https://make.powerapps.com/
     ```
+
 2. Select **Solutions** and open the **PrioritZ** solution.
    
-3. Click **Add existing** and select **More | Developer | Custom control**.
+3. Click **Add existing** and select **More (1) | Developer (2) | Custom control (3)**.
       
       ![](images/L02/image50.1.png)
  
@@ -773,5 +781,5 @@ In this exercise, you will add the code component you created to the PrioritZ so
 
 In this lab, you learned to create a code component, implement its logic, integrate it into a canvas app, and add it to a solution within the Power Platform.
 
-## You have successfully completed the lab
+## You have successfully completed this lab. Proceed to the next page.
 

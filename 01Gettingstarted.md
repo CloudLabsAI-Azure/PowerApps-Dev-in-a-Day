@@ -38,7 +38,7 @@ Welcome to your Developer in a day workshop! We've prepared a seamless environme
  
 Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
 
-   ![](./images/GS6.png)
+   ![](./images/GS6a.png)
 
 ### **Virtual Machine & Lab Guide**
  
