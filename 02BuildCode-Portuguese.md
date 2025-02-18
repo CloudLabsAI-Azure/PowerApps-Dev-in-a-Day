@@ -469,7 +469,7 @@ Neste exercício, você irá construir o componente de código.
         1. Navegue até o diretório `C:\LabFiles` e abra **dotnet-sdk-8.0.100-win-x64**.
         2. Na janela de configuração, selecione **Reparar** e aguarde a conclusão do processo.
         3. Após a conclusão do reparo, feche o Visual Studio Code, reabra-o e primeiro execute o comando build presente na etapa 28 e execute novamente o comando acima.
-        4. Se o problema persistir, desinstale **dotnet-sdk-8.0.100-win-x64** e instale a versão mais recente da [página de download do .NET](https://dotnet.microsoft.com/en-us /download). Feche o Visual Studio Code, abra-o novamente, execute o comando build da etapa 28 e execute o comando acima novamente.
+        4. Se o problema persistir, desinstale **dotnet-sdk-8.0.100-win-x64** e instale a versão mais recente da [página de download do .NET](https://dotnet.microsoft.com/en-us/download). Feche o Visual Studio Code, abra-o novamente, execute o comando build da etapa 28 e execute o comando acima novamente.
 
      2. Se a operação push falhar com o erro **`Desculpe, o aplicativo encontrou um erro não recuperável e precisará ser encerrado`**, certifique-se de ter seguido o 
         instruções anteriores e adicionei o código corretamente nos arquivos **Manifest e Index**. 
