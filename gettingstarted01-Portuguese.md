@@ -52,7 +52,7 @@ Bem-vindo ao seu programador num workshop de um dia! Preparámos um ambiente per
 
 Quando estiver pronto para começar, a sua máquina virtual e o **Guia de laboratório** estarão ao seu alcance no navegador Web.
 
-![](./images/GS6.png)
+![](./images/GS6a1.png)
 
 ### Máquina Virtual e Guia de Laboratório
 
@@ -64,13 +64,13 @@ No ambiente integrado, a VM do laboratório serve como o espaço de trabalho des
 
 Para melhor compreender os seus recursos e credenciais de laboratório, navegue até ao separador **Detalhes do ambiente**.
 
-![](./images/GS20.png)
+![](./images/GS20a.png)
 
 ## Utilizando o recurso de janela dividida
 
 Por conveniência, pode abrir o guia de laboratório numa janela separada, selecionando o botão **Dividir janela** no canto superior direito.
 
-![](./images/GS8.png)
+![](./images/GS8a.png)
 
 ## Guia de laboratório Ampliar/Reduzir
 
@@ -82,7 +82,7 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 
 
 Sinta-se à vontade para iniciar, parar ou reiniciar a sua máquina virtual conforme necessário no separador **Recursos**. A sua experiência está nas suas mãos!
 
-![](./images/GS5.png)
+![](./images/GS5a.png)
 
 ## Vamos começar pelo Portal Azure
 
@@ -124,6 +124,6 @@ Contactos de apoio ao aluno:
 
 Agora, clique em **Seguinte** no canto inferior direito para passar para a página seguinte.
 
-![](./images/GS4.png)
+![](./images/GS4a.png)
 
 ## Boa aprendizagem!!

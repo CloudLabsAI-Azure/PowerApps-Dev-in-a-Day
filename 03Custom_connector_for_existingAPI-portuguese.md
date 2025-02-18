@@ -24,11 +24,15 @@ Ao analisar a API, verifica-se que tem quatro operações e utiliza uma API Key 
 
 ### Tarefa 1: Criar base de dados
 
-1. Navegue até ao portal do fabricante do Power Apps e selecione o seu ambiente **Test** chamado Azure XXXXXX (padrão).
+1. Navegue até o portal do criador do Power Apps.
 
     ```
     https://make.powerapps.com
     ```
+
+1. Clique em **Ambiente (1)** e selecione o ambiente de desenvolvimento pré-criado chamado **OTU WA HOL -<inject key="Deployment ID" enableCopy="false" /> (padrão) (2).**
+
+    ![](images/L03/db1a.png)
 
 2. Selecione **Solutions** do menu do lado esquerdo das aplicações de alimentação.
 
@@ -61,7 +65,7 @@ os conectores devem estar numa solução separada das aplicações e dos fluxos 
 
     ![](images/L03/L03-solution.png)
 
-3. Introduza **Contoso Badges connector (1)** para o nome de visualização, seleccione **Contoso Coffee (2)** para Publisher e
+3. Introduza **Contoso Badges connector (1)** para o nome de visualização, seleccione **Contoso Coffee (ContosoCoffee) (2)** para Publisher e
  clique em **Create (3)**.
 
     ![](images/L03/image2-1.png)
@@ -243,7 +247,10 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
 13. O teste deve ter sucesso e deve obter a resposta esperada.
 
-14. Vá em frente e teste as operações ListBadges and ListRecipients.
+14. Vá em frente e teste as operações **ListBadges** e **ListRecipients**. Deixe as opções em branco e clique em **Test operation**.
+
+     ![](images/L03/image13c.png)
+
 15. Todos os testes devem ter sucesso.
 
     ![](images/L03/image23.png)
@@ -331,7 +338,7 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
 
 20. Copie a resposta **Body** JSON.
 
-21. Selecione o separador Definição no menu suspenso.
+21. Selecione o separador **Definição** no menu suspenso.
 
 22. Selecione a ação **getcurrentbadge**.
 
@@ -379,6 +386,7 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
     ```
 
 2. Expanda **Solutions** e abra a solução **PrioritZ**.
+
 3. Selecione **Apps (1)** , selecione a aplicação **PrioritZ Ask (2)** e clique em **Edit (3)**.
 
     ![](images/L03/image38-1u.png)
@@ -520,8 +528,11 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
     ![](images/L03/image52.png)
 
 18. Inicie uma nova janela do browser e navegue até ao portal do fabricante de aplicações Power.
+
 19. Certifique-se de que está no ambiente correto.
+
 20. Selecione **Apps** e inicie a aplicação **PrioritZ Ask**.
+
 21. A aplicação deve agora mostrar **Cloud flows**.
 
     ![](images/L03/image53.png)
@@ -531,12 +542,15 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
     ![](images/L03/L03-EX4-run1.png)
 
 23. Volte à aplicação **PrioritZ Ask** e atualize a página.
+
 24. Agora deve ver o crachá de **Team Player**.
 
     ![](images/L03/image54.png)
 
 25. Vá para o fluxo e execute-o mais duas vezes.
+
 26. Volte à aplicação **PrioritZ Ask** e atualize a página.
+
 27. Agora deve ver o crachá **Champ**
 
     ![](images/L03/image55.png)
@@ -554,10 +568,9 @@ ambiente e importá-lo para o ambiente de teste.
     https://make.powerapps.com
     ```
 
-2. Selecione **Solutions**.
-3. Selecione a solução **Contoso Badges connector** e clique em **Export Solution**.
+2. Vá para **Soluções (1)**, selecione **Conector Contoso Badges (2)** e clique em **Exportar solução (3)**.
 
-    ![](images/L03/L03-EX4-export.png)
+    ![](images/L03/L03-EX4-exporta.png)
 
 4. Na **Before you export** lâmina, clique em **Publish** e aguarde que a publicação seja concluída.
 5. Depois de publicar, clique em **Next**.
@@ -569,11 +582,13 @@ ambiente e importá-lo para o ambiente de teste.
 
 ### Tarefa 2: Solução de importação
 
-1. Navegue até ao portal do fabricante de aplicações Power, caso ainda não abra e selecione o seu ambiente **Test** chamado Azure XXXXXX (padrão).
+1. Navegue até o portal do criador do Power Apps, se ainda não estiver aberto, e selecione seu ambiente de **Teste**, clique em **Environment (1)** e selecione o ambiente de desenvolvimento pré-criado chamado **DEV_ENV_TEST(2)**.
 
     ```
     https://make.powerapps.com
     ```
+
+    ![](images/L03/L03-EX5a.png)
 
 3. Clique em **Import Solution**.
 
@@ -582,9 +597,13 @@ ambiente e importá-lo para o ambiente de teste.
     >**Nota:** Experimente atualizar o navegador se as soluções não forem abertas.
 
 4. Clique em **Browse**.
+
 5. Selecione a solução que exportou no ambiente Dev e clique em **Open**.
+
 6. Clique em **Next**.
+
 7. Clique em **Import** e aguarde que a importação seja concluída.
+
 8. A solução deve ser importada com sucesso. **Não** navegue por esta página.
 
 ### Tarefa 3: Conector de teste
@@ -598,11 +617,13 @@ ambiente e importá-lo para o ambiente de teste.
     >**Nota**: Se receber a mensagem de erro, pois **could not retrieve the connector data**, aguarde alguns minutos (5 a 10 minutos) para atualizar os dados do conector. Se isto não funcionar, pode apagar o conector importado e executar a tarefa **passos 5-10** na tarefa **Tarefa 2: Importar a solução** novamente e tente abrir o conector.
 
 3. Clique em **Edit**.
+
 4. Selecione o separador **Test** do menu suspenso.
 
     ![](images/L03/L03-EX5-default.png)
 
 5. Clique em **+ New connection**. Será aberto um novo separador do browser para criar uma ligação.
+
 6. Inicie uma nova janela ou aba do browser e navegue até ao URL abaixo para abrir a API Contoso Coffee Badges.
 
     ```
@@ -614,6 +635,7 @@ ambiente e importá-lo para o ambiente de teste.
     ![](images/L03/image60.png)
 
 8. Copie o valor **API Key**.
+
 9. Volte ao editor do conector, cole a chave da API que copiou no passo anterior e clique em **Create connection**. Agora, feche o separador do browser clicando em **X**.
 
     ![](images/L03/image61.png)
@@ -622,10 +644,13 @@ ambiente e importá-lo para o ambiente de teste.
 
     ![](images/L03/image62.png)
 
-11. Aceda à secção **Operations** e seleccione a operação **addcrédito**.
+11. Vá para a seção **Operations (1)** e selecione a operação **AddCredit (2)**.
+
+    ![](images/L03/image62a.png)
+
 12. Forneça o seu e-mail para **recipitívido** , forneça um **name** , introduza **1** para **points** e clique em **Test operation**.
 
-    ![](images/L03/image63u.png)
+    ![](images/L03/L3T3S8a.png)
 
 13. O teste deve ter sucesso e a resposta deve parecer a image abaixo.
 
@@ -635,4 +660,4 @@ ambiente e importá-lo para o ambiente de teste.
 
 Neste laboratório, aprendeu a criar e a modificar um conector personalizado utilizando uma definição Open API, a testar a sua funcionalidade e a integrá-la com aplicações de lona e fluxos dentro da Power Platform.
 
-## Concluiu este laboratório com sucesso.
+## Concluiu este laboratório com sucesso. Prossiga para a próxima página.

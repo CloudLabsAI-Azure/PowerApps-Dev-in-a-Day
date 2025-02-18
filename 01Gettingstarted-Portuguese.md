@@ -36,6 +36,8 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
       ![](/images/L01/portalsignin-2.png)
 
+1. Clique em **Perguntar mais tarde** se o pop-up "Ação necessária" aparecer.
+
 1. Se for apresentado com **Help us protect your account**, clique em **Skip for now**.
 
     ![](/images/L01/portalsignin-3.png)
@@ -160,6 +162,8 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 1. Navegue de volta para a solução **PrioritZ** clicando em **Cloud flows**. Em alternativa, também pode abrir o portal do fabricante **Power Apps** utilizando este URL `https://make.powerapps.com` se ainda não está aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** é selecionado.
 
    ![](images/L01/cloud1.png)
+
+   >**Observação:** se um pop-up **Bem-vindo ao Power Apps Studio** aparecer, basta clicar em **Ignorar** para prosseguir.
 
 1. Navegue até ao separador **Solutions** clicando em **Back to Solutions** **(<-)**.
 
@@ -523,4 +527,4 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 
     ![](images/L01/sollist.png)
 
-## Você concluiu o laboratório com sucesso
+## Você concluiu o laboratório com sucesso. Prossiga para a próxima página.
