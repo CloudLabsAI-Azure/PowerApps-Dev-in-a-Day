@@ -38,7 +38,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. Click **Ask Later** if the "Action Required" pop-up appears.
 
-   >**Note:** If the **Ask later** option is not available, please follow steps 5 to 14.
+   >**Note:** If the **Ask later** option is **not** available, please follow Steps 5 to 14. Otherwise, proceed to **Step 15**.
     
 1. On **Start by getting the app page**, click on **Next**.
 
@@ -187,6 +187,8 @@ In this exercise, you will import the current solution into the pre-created dev 
        
    ![](images/L01/cloud1u.png)
 
+   >**Note:** If a **Welcome to Power Apps Studio** pop-up appears, simply click **Skip** to proceed.
+
 1. Navigate to **Solutions** blade by clicking on **Back to Solutions** **(<-)** button.
 
    ![](images/L01/solutions.png)
@@ -307,6 +309,7 @@ application.
    ```
    My Notes
    ```
+
 1. Now, search for **Plain text (1)** under Data type then select the  **Multiple lines of text (2)** , and click **Save (3)**.
 
     ![](images/L01/L01-notesu.png)
@@ -341,9 +344,9 @@ application.
    
     ![](images/L01/image28u.png)
 
-6. Select **Notes textbox** and then **HintText** from the properties dropdown.
+6. Select **Notes textbox**, then search for **HintText(1)** and choose **HintText(2)** from the dropdown.
 
-    ![](images/L01/hintextu.png)
+    ![](images/hintextua.png)
 
 7. Change the **HintText** value of the Notes textbox to the below value. 
 
@@ -446,7 +449,7 @@ application.
 
     ![](images/L01/publish.png)
 
-30. Select Publish this version and wait for the publishing to complete.
+30. Select **Publish this version** and wait for the publishing to complete.
 
      ![](images/L01/NewUipublish1u.png)
 
@@ -482,6 +485,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
     ![](images/L01/image42u.png)
 
 7. Run the below command in the terminal.
+
    ```
    pac
    ```
@@ -489,7 +493,8 @@ In this exercise, you will review and test the Power Platform CLI extension in V
    > **Info:** If you encounter an error after using the **pac** command, download the Power Platform CLI from the **https://aka.ms/PowerAppsCLI** link, 
      open   the installer, and complete the installation. Then, try the step again.
 
-8. Replace `<your environment URL>` in the below command with the value of the environment URL that you copied earlier then run the command. 
+8. Replace `<your environment URL>` in the below command with the value of the environment URL that you copied earlier then run the command.
+
    ```
    pac auth create --name DevAuth --url <your environment URL>
    ```
@@ -526,6 +531,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
       ```
       pac solution list
       ```
+      
 12. You should see a list of solutions installed on your environment.
     
     ![](images/L01/sollistu.png)
@@ -534,4 +540,4 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
 In this lab , you learned to import and execute a starting solution, customize it by adding a new column and updating the admin app, and verify functionality using the Power Platform CLI.
 
-## You have successfully completed the lab
+## You have successfully completed this lab. Proceed to the next page.

@@ -21,7 +21,7 @@ jobs:
     steps:
     # Checkout code from the current branch (main or develop)
     - name: Checkout Code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         lfs: true
 
@@ -55,7 +55,7 @@ jobs:
     steps:
     # Checkout the code from the current branch (main or develop)
     - name: Checkout Code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         lfs: true
 

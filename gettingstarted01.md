@@ -29,7 +29,6 @@ Participants should have:
 
 In these labs, you'll follow a structured process to master key aspects of Power Platform development and management. You'll start by importing a pre-built solution, running a flow to add sample data, customizing it by adding a new column, and testing the Power Platform CLI using VS Code. Next, you'll build a code component with VS Code, integrate it into a canvas app, and add it to a solution. Then, you'll create a custom connector using an Open API definition, enhance it with custom code, and test it in both flows and canvas apps. After that, you'll create, implement, and publish an Azure Function, create a connector for it, and optionally integrate it into a canvas app. Finally, you'll promote a solution to a test environment, configure a service principal, manage the solution using a GitHub repository, and release it for testing. Each step is detailed with instructions and visual aids to ensure you gain practical experience with Power Platform's features.
 
-
 ## Architecture Diagram
 
 ![](./images/low_code_in_a_day_Architecture_diagram.JPG)
@@ -57,7 +56,7 @@ Welcome to your Developer in a day workshop! We've prepared a seamless environme
  
 Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
 
-![](./images/GS6.png)
+![](./images/GS6a.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -87,7 +86,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![](./images/GS5.png)
+![](./images/resoursesa.png)
  
 ## Let's Get Started with Azure Portal
  
@@ -134,7 +133,7 @@ Learner Support Contacts:
 
 Now, click on the **Next** from the lower right corner to move to the next page.
 
-![](./images/GS4.png)
+![](./images/GS4a.png)
 
 ### Happy Learning!!
 
