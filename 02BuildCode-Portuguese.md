@@ -2,12 +2,9 @@
 
 ## Duração estimada: 90 minutos
 
-Trabalhando como parte da equipe de PrioritZ fusion, você foi solicitado a criar um componente de código do Power Apps para permitir a classificação de prioridade de arrastar e soltar itens no PrioritZ Ask Power App. Você criará
-um componente de código usando a estrutura React JavaScript. Uma abordagem de componente de código é usada para
-para atender ao requisito porque não existe um controlo semelhante já incorporado.
+Trabalhando como parte da equipe de PrioritZ fusion, você foi solicitado a criar um componente de código do Power Apps para permitir a classificação de prioridade de arrastar e soltar itens no PrioritZ Ask Power App. Você criará um componente de código usando a estrutura React JavaScript. Uma abordagem de componente de código é usada para para atender ao requisito porque não existe um controlo semelhante já incorporado.
 
-Você colaborou com os criadores de aplicativos para identificar as seguintes propriedades para permitir que eles
-configurar o componente de código na aplicação:
+Você colaborou com os criadores de aplicativos para identificar as seguintes propriedades para permitir que eles configurar o componente de código na aplicação:
 
 - BackgroundColor
 - DragBackgroundColor
@@ -15,9 +12,7 @@ configurar o componente de código na aplicação:
 - FontSize
 - FontColor
 
-O aplicativo PrioritZ Ask preparará uma coleção dos itens a serem classificados que serão vinculados como o conjunto de dados para o componente de código. Quando um item é arrastado e largado, o componente de código gera um evento OnSelect
-que será tratado pela aplicação de alojamento. A aplicação de alojamento actualizará os itens da coleção com
-a sua nova classificação. O componente de código será stateless.
+O aplicativo PrioritZ Ask preparará uma coleção dos itens a serem classificados que serão vinculados como o conjunto de dados para o componente de código. Quando um item é arrastado e largado, o componente de código gera um evento OnSelect que será tratado pela aplicação de alojamento. A aplicação de alojamento actualizará os itens da coleção com a sua nova classificação. O componente de código será stateless.
 
 ## Objectivos do laboratório
 
@@ -41,9 +36,9 @@ Neste exercício, você irá construir o componente de código.
     
     ![](images/L02/L01-authuu.png)
 
-3. Clique em **Terminal (1)** e selecione **New Terminal (2)**.
+3. Clique no menu de três pontos (**...**) para expandir opções adicionais. Em seguida, selecione **Terminal (1)** no menu suspenso e clique em **Novo Terminal (2)** para abrir uma sessão de terminal.
      
-     ![](images/L02/L02-terminaluu.png)
+     ![](images/L02/L02-terminaluua.png)
 
 4. Na janela Terminal, crie um novo diretório executando o comando abaixo.
 
@@ -73,30 +68,29 @@ Neste exercício, você irá construir o componente de código.
     code -a.
     ```
 
-1. Se lhe for apresentado o pop-up abaixo, clique em **Yes** para confiar nos autores dos ficheiros.
+9. Se lhe for apresentado o pop-up abaixo, clique em **Yes** para confiar nos autores dos ficheiros.
 
     ![](images/L02/image4.1.png)
 
-9. Reveja os ficheiros de componentes de código criados selecionando o separador **Explorer**.
+10. Reveja os ficheiros de componentes de código criados selecionando o separador **Explorer**.
     
      ![](images/L02/L02-explorer.png)
 
-10. Expanda a pasta **PrioritZDnDRanking** e, em seguida, expanda a subpasta **generated**.
+11. Expanda a pasta **PrioritZDnDRanking** e, em seguida, expanda a subpasta **generated**.
 
-11. Abra o ficheiro **ControlManifest.Input.xml**. O manifesto é o ficheiro de metadados que define um
- componente, incluindo as propriedades expostas à aplicação de alojamento.
+12. Abra o ficheiro **ControlManifest.Input.xml**. O manifesto é o ficheiro de metadados que define um componente, incluindo as propriedades expostas à aplicação de alojamento.
 
     ![](images/L02/image6.png)
 
-12. Localize o elemento XML **data-set** na **linha número 21** no ficheiro **ControlManifest.Input.xml**.
+13. Localize o elemento XML **data-set** na **linha número 21** no ficheiro **ControlManifest.Input.xml**.
 
     ![](images/L02/image7.png)
 
-13. Altere o **name** para **items** e o **display-name-key** para **items**. Isto define a propriedade que a aplicação se liga a uma coleção de itens.
+14. Altere o **name** para **items** e o **display-name-key** para **items**. Isto define a propriedade que a aplicação se liga a uma coleção de itens.
 
     ![](images/L02/image8.png)
 
-14. Adicione as seguintes propriedades entre a etiqueta de fecho do elemento de conjunto de dados `</data-set>` e a etiqueta de abertura do elemento `<resources>`.
+15. Adicione as seguintes propriedades entre a etiqueta de fecho do elemento de conjunto de dados `</data-set>` e a etiqueta de abertura do elemento `<resources>`.
 
     > Adicione as seguintes propriedades após **linha número 26** no ficheiro **ControlManifest.Input.xml**.
 
@@ -110,7 +104,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image9.png)
 
-15. Localize a secção `<resources>` e adicione o código abaixo após o **code path** para adicionar o recurso **css**. Isto garantirá que os nossos estilos serão agrupados com o componente de código quando este for implementado.
+16. Localize a secção `<resources>` e adicione o código abaixo após o **code path** para adicionar o recurso **css**. Isto garantirá que os nossos estilos serão agrupados com o componente de código quando este for implementado.
 
     ```
     <css path="css/PrioritZDnDRanking.css" order="1" />
@@ -120,8 +114,7 @@ Neste exercício, você irá construir o componente de código.
 
     >**Nota**: Certifique-se de que não descolhe o caminho **resx**, pois estará a enfrentar um problema na próxima tarefa ao construir o componente de código se este não for comentado.
 
- 16. Observe os dois recursos seguintes. Isto declara a dependência do componente destes dois
- bibliotecas. Isto é o resultado da especificação – framework React na inicialização.
+17. Observe os dois recursos seguintes. Isto declara a dependência do componente destes dois bibliotecas. Isto é o resultado da especificação – framework React na inicialização.
         
      ```
      <platform-library name="React" version="16.8.6" />
@@ -130,18 +123,21 @@ Neste exercício, você irá construir o componente de código.
      
      ![](images/L02/image11.png)
 
-17. Clique em **File** e seleccione **Save All** para guardar as suas alterações.
-18. Certifique-se de que ainda tem o ficheiro **ControlManifest.Input.xml** selecionado e clique em **New Folde**.
+18. Clique em **File** e seleccione **Save All** para guardar as suas alterações.
+
+19. Certifique-se de que ainda tem o ficheiro **ControlManifest.Input.xml** selecionado e clique em **New Folde**.
 
     ![](images/L02/image12.png)
 
-19. Refira o novo bunda da pasta **css**.
-20. Selecione a nova pasta **css** que criou e clique em **New File**
+20. Refira o novo bunda da pasta **css**.
+
+21. Selecione a nova pasta **css** que criou e clique em **New File**
 
     ![](images/L02/image13.png)
 
-21. Refira o novo ficheiro **PrioritZDnDranking.css**
-22. Cole o seguinte CSS no ficheiro **PrioritZDnDRAnking.css**.
+22. Refira o novo ficheiro **PrioritZDnDranking.css**.
+
+23. Cole o seguinte CSS no ficheiro **PrioritZDnDRAnking.css**.
 
     ```
     .prioritydnd-scroll-container {
@@ -160,11 +156,11 @@ Neste exercício, você irá construir o componente de código.
     margin: 8px;
     }
     ```
-23. O ficheiro deve agora parecer-se com o seguinte.
+24. O ficheiro deve agora parecer-se com o seguinte.
 
     ![](images/L02/image14.png)
 
-24. Clique em **File** e seleccione **Save All** para guardar as suas alterações.
+25. Clique em **File** e seleccione **Save All** para guardar as suas alterações.
 
 ### Tarefa 2: Implementar a lógica do componente
 
@@ -182,11 +178,9 @@ Neste exercício, você irá construir o componente de código.
 
 5. Clique em **File** e guarde as suas alterações.
 
-6. Abra o **PriorityComponent.tsx** e reveja o conteúdo. Isto implementa o React
- componente que será renderizado para representar os nossos itens dragáveis.
+6. Abra o **PriorityComponent.tsx** e reveja o conteúdo. Isto implementa o React componente que será renderizado para representar os nossos itens dragáveis.
 
-7. A linha de notificação 9 `from react-beautiful-dnd` tem um sublinhado vermelho. Este é um pacote npm o
- componentes utilizamos que não fazemos referenciados.
+7. A linha de notificação 9 `from react-beautiful-dnd` tem um sublinhado vermelho. Este é um pacote npm o componentes utilizamos que não fazemos referenciados.
 
     ![](images/L02/image17.png)
 
@@ -235,8 +229,7 @@ Neste exercício, você irá construir o componente de código.
 
      ![](images/L02/image20.png)
 
-16. Adicione o seguinte código abaixo dentro da classe **export**. Isto define algumas variáveis ​​de trabalho que
- estará a utilizar na lógica da classe.
+16. Adicione o seguinte código abaixo dentro da classe **export**. Isto define algumas variáveis ​​de trabalho que estará a utilizar na lógica da classe.
 
      ```
      private context: ComponentFramework.Context<IInputs>;
@@ -250,8 +243,7 @@ Neste exercício, você irá construir o componente de código.
 
      ![](images/L02/init.png)
 
-18. Cole o código abaixo dentro da função **init**. Esta lógica inicializa as nossas variáveis ​​de classe do
- valores de tempo de execução e permite a notificação de redimensionamento.
+18. Cole o código abaixo dentro da função **init**. Esta lógica inicializa as nossas variáveis ​​de classe do valores de tempo de execução e permite a notificação de redimensionamento.
 
      ![](images/L02/init1.png)
 
@@ -449,6 +441,8 @@ Neste exercício, você irá construir o componente de código.
     npm start
     ```
 
+    > **Observação**: se você receber um pop-up do Internet Explorer, feche-o, copie o URL do host local e cole-o em uma nova guia no Edge.
+
 31. O teste deve iniciar, se não, copiar o endereço e colar-o numa nova janela do browser. Experimente arrastar os itens e ver se o comportamento funciona como esperado.
 
     ![](images/L02/imagee29u.png)
@@ -470,12 +464,12 @@ Neste exercício, você irá construir o componente de código.
     ```
 
     > **Nota**: 
-     1. Se você encontrar a mensagem de erro ** "Erro: Ferramenta necessária ausente: MSBuild.exe/dotnet.exe. Adicione MSBuild.exe/dotnet.exe na variável de ambiente Path ou use 'Desenvolvedor 
+     1. Se você encontrar a mensagem de erro **"Erro: Ferramenta necessária ausente: MSBuild.exe/dotnet.exe. Adicione MSBuild.exe/dotnet.exe na variável de ambiente Path ou use 'Desenvolvedor 
         Prompt de comando para VS'"**, siga estas etapas:
         1. Navegue até o diretório `C:\LabFiles` e abra **dotnet-sdk-8.0.100-win-x64**.
         2. Na janela de configuração, selecione **Reparar** e aguarde a conclusão do processo.
         3. Após a conclusão do reparo, feche o Visual Studio Code, reabra-o e primeiro execute o comando build presente na etapa 28 e execute novamente o comando acima.
-        4. Se o problema persistir, desinstale **dotnet-sdk-8.0.100-win-x64** e instale a versão mais recente da [página de download do .NET](https://dotnet.microsoft.com/en-us /download). Feche o Visual Studio Code, abra-o novamente, execute o comando build da etapa 28 e execute o comando acima novamente.
+        4. Se o problema persistir, desinstale **dotnet-sdk-8.0.100-win-x64** e instale a versão mais recente da [página de download do .NET](https://dotnet.microsoft.com/en-us/download). Feche o Visual Studio Code, abra-o novamente, execute o comando build da etapa 28 e execute o comando acima novamente.
 
      2. Se a operação push falhar com o erro **`Desculpe, o aplicativo encontrou um erro não recuperável e precisará ser encerrado`**, certifique-se de ter seguido o 
         instruções anteriores e adicionei o código corretamente nos arquivos **Manifest e Index**. 
@@ -646,9 +640,9 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
     'Votes gallery'.TemplateHeight
     ```
 
-26. Selecione a propriedade **BackgroundColor** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor para **"LightBlue"**
+26. Selecione a propriedade **BackgroundColor** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor para **"#A70202"**
 
-27. Selecione a propriedade **DragBackgroundColor** do componente **PrioritZDnDranking** do menu suspenso da propriedade e defina o seu valor para **"#A70202"**
+27. Selecione a propriedade **DragBackgroundColor** do componente **PrioritZDnDranking** do menu suspenso da propriedade e defina o seu valor para **"LightBlue"**
 
 28. Selecione a propriedade **Y** do componente **PrioritZDnDRAnking** do suspensão da propriedade e defina o seu valor com a fórmula abaixo.
 
@@ -712,12 +706,14 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
 34. O arrastar/desembarque deve funcionar como esperado.
 35. Feche a antevisão.
-1. Clique em **Publish**.
+
+36. Clique em **Publish**.
 
     ![](images/L02/publish.png)
 
-38. Selecione **Publish this version** e aguarde que a publicação seja concluída.
-39. Pode **close** o estúdio de aplicações em tela.
+37. Selecione **Publish this version** e aguarde que a publicação seja concluída.
+
+38. Pode **close** o estúdio de aplicações em tela.
 
 ## Exercício 3 – Adicionar Componente de Código à Solução
 
@@ -732,7 +728,8 @@ Neste exercício, irá adicionar o componente de código que criou à solução 
     ```
 
 2. Selecione **Solutions** e abra a solução **PrioritZ**.
-3. Clique em **Add existing** e seleccione **More | Developer | Custom control**.
+
+3. Clique em **Add existing** e seleccione **More (1) | Developer (2) | Custom (3)control**.
 
     ![](images/L02/image50.1.png)
 
@@ -748,4 +745,4 @@ Neste exercício, irá adicionar o componente de código que criou à solução 
 
 Neste laboratório, aprendeu a criar um componente de código, a implementar a sua lógica, a integrá-lo numa aplicação de lona e a adicioná-la a uma solução dentro da Power Platform.
 
-## Concluiu o laboratório com sucesso
+## Concluiu o laboratório com sucesso.Prossiga para a próxima página.
