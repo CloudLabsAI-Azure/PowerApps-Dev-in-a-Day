@@ -28,13 +28,13 @@ In this exercise, you will import the current solution into the pre-created dev 
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-     ![](/images/L01/signin.png)
+     ![](images/L01/signin.png)
 
 1. Now enter the following password **(1)** and click on **Sign in** **(2)**. 
 
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-     ![](/images/L01/signinp.png)
+     ![](images/L01/signinp.png)
 
 1. Click **Ask Later** if the "Action Required" pop-up appears.
 
@@ -46,23 +46,23 @@ In this exercise, you will import the current solution into the pre-created dev 
    
 1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
 
-    ![](/images/L01/mobile.jpg)
+    ![](images/L01/mobile.jpg)
 
-   > Note:For Ios, Open app store and repeat the steps.
+   > **Note:** For Ios, Open app store and repeat the steps.
 
-   > Note: Skip If already installed.
+   > **Note:** Skip If already installed.
 
 1. Open the app and tap on **Scan a QR code**.
 
 1. Scan the QR code visible on the screen and click on **Next**.
   
-   ![](/images/L01/demo001.png)
+   ![](images/L01/demo001.png)
   
 1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
 
 1. Once the notification is approved, click on **Next**.
    
-    ![](/images/L01/demo002.png)
+    ![](images/L01/demo002.png)
 
 1. Click on **Done**.
 
@@ -70,7 +70,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. Tap on **Finish** in the Mobile Device.
 
-   > NOTE: While logging in again , enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
+   > **NOTE:** While logging in again , enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
    
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
@@ -110,11 +110,11 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. Open the **Prioritz** solution you imported.
 
-4. Expand **Tables (1)** and select the **PrioritZ Topic (2)** table.
+4. Expand **Tables (1)** and select the **Prioritz Topic (2)** table.
    
      ![](images/L01/L01-table1.png)
 
-5. Select the **Columns** under Schema and review the columns of the **PrioritZ Topic** table.
+5. Select the **Columns** under Schema and review the columns of the **Prioritz Topic** table.
 
    >**Info**: The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
  
@@ -183,7 +183,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 ### Task 2: Test the apps
 
-1. Navigate back to **PrioritZ** solution by clicking on **Cloud flows**. Alternatively, you can also open the **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate back to **Prioritz** solution by clicking on **Cloud flows**. Alternatively, you can also open the **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
        
    ![](images/L01/cloud1u.png)
 
@@ -193,13 +193,13 @@ In this exercise, you will import the current solution into the pre-created dev 
 
    ![](images/L01/solutions.png)
    
-2. Select **Apps (1)** from the left-hand side menu of Power Apps,  you should see two applications named **PrioritZ Ask** and **PrioritZ Admin (2)**. 
+2. Select **Apps (1)** from the left-hand side menu of Power Apps,  you should see two applications named **Prioritz Ask** and **Prioritz Admin (2)**. 
 
-     >**Info:** **PrioritZ Admin** app is used to manage topics being asked about and **PrioritZ Ask** app allows users to respond.
+     >**Info:** **Prioritz Admin** app is used to manage topics being asked about and **Prioritz Ask** app allows users to respond.
 
     ![](images/L01/EX1-T2-2_1_1u.png)
 
-3. Launch the **PrioritZ Admin** application by clicking on **play** symbol.
+3. Launch the **Prioritz Admin** application by clicking on **play** symbol.
     
     ![](images/L01/L01-adminu1.png)
 
@@ -233,7 +233,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 11. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
 
-12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below the Choice field.
+12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below the Choice field. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
      
       ![](images/L01/image18u.png)
 
@@ -257,11 +257,11 @@ In this exercise, you will import the current solution into the pre-created dev 
 
      ![](images/L01/L01-tacou.png)
 
-18. Close the PrioritZ Admin application by closing the browser tab in which the PrioritZ Admin application is open.
+18. Close the Prioritz Admin application by closing the browser tab in which the Prioritz Admin application is open.
 
-19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **PrioritZ Ask (2)** application by clicking on play symbol.
+19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **Prioritz Ask (2)** application by clicking on play symbol.
      
-     ![](images/L01/L01-prioritzasku.png)
+     ![](images/L01/L01-Prioritzasku.png)
 
 20. You should see a list of topics. Open the **Change Taco Tuesday to some other food** topic that you created in the previous steps.
 
@@ -274,7 +274,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 22. You should be navigated back to the main screens, and you should see a notification message.   
       ![](images/L01/TVU.png)
     
-23. Close the PrioritZ Ask app by closing the browser tab in which the PrioritZ Ask application is open.
+23. Close the Prioritz Ask app by closing the browser tab in which the Prioritz Ask application is open.
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - If you receive a success message, you can proceed to the next task.
@@ -294,11 +294,11 @@ application.
     ```
     https://make.powerapps.com
    ```
-2. Select **Solutions (1)** from the left-hand side menu of Power Apps and open the **PrioritZ (2)** solution.
+2. Select **Solutions (1)** from the left-hand side menu of Power Apps and open the **Prioritz (2)** solution.
 
    ![](images/L01/EX2-T1-2-1u.png)
 
-3. Expand **Tables(1)** and select the **PrioritZ Topic(2)** table.
+3. Expand **Tables(1)** and select the **Prioritz Topic(2)** table.
 
 4. Select the **Columns** tab that is present under **+ New(3)** and click **column(4)**.
 
@@ -318,7 +318,7 @@ application.
 
 ### Task 2: Update the admin app
 
-1. Make sure you are still in the **PrioritZ** solution. Select **Apps (1)** under **Objects** and select the **PrioritZ Admin (2)** application and click on **Edit (3)**.
+1. Make sure you are still in the **Prioritz** solution. Select **Apps (1)** under **Objects** and select the **Prioritz Admin (2)** application and click on **Edit (3)**.
     
     ![](images/L01/L01-admineditu.png)
 
@@ -374,7 +374,7 @@ application.
      ![](images/L01/image31u.png)
 
     ```
-    Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
+    Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'Prioritz Topic':newTopic,Photo:ThisRecord.photo}));Back()
     ```
 11. Select the **View Topic Screen (1)** from the **Screens** tab.
 
@@ -470,7 +470,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
 2. Click to open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
-3. Right-click on the **Environment URL** value and paste the value in Notepad.
+3. Right-click on the **Environment URL**, copy the value, and paste it into Notepad.
  
     >**Note**: Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
 
@@ -508,7 +508,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
       * Email/Username: <inject key="AzureAdUserEmail"></inject>
       * Password: <inject key="AzureAdUserPassword"></inject>
       
-     **Note**: If a Windows Security Warning pops up, click **Yes** to proceed.
+        > **Note**: If a Windows Security Warning pops up, click **Yes** to proceed.
 
 9. Select **Power Platform** tool, you should now have at least one **auth profile**. If you have more than one profile, make sure the profile you created is selected
    
@@ -518,9 +518,9 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
     > **Note** : If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the below steps:
 
-      1. Delete the **Universal Profile** from Visual Studio Code by clicking on the delete button.
-      2. Copy the correct **Environment URL** value by following **Step 5** of this task. 
-      3. Perform the **Step 9** of this task again to create the auth profile.
+    > 1. Delete the **Universal Profile** from Visual Studio Code by clicking on the delete button.
+    > 2. Copy the correct **Environment URL** value by following **Step 5** of this task. 
+    > 3. Perform the **Step 9** of this task again to create the auth profile.
 
 10. Click **Terminal** and select **New Terminal** if not already open.
 
