@@ -28,7 +28,7 @@ In this exercise, you will build the code component.
 
 1. Start **Visual Studio Code** if not already open using the shortcut available on the desktop.
 
-   ![](images/L04/vscode1.png)
+   ![](images/visual-studio-code-1.png)
    
 2. Select the **Power Platform** tab and make sure your **Dev Auth** profile is selected. 
     
@@ -68,13 +68,13 @@ In this exercise, you will build the code component.
     
     >**Note:** When installing dependencies, you might see warnings like:
 
-    npm WARN deprecated @babel/plugin-proposal-object-rest-spread
+    >- npm WARN deprecated @babel/plugin-proposal-object-rest-spread
 
-    npm WARN deprecated rimraf@3.0.2
+    >- npm WARN deprecated rimraf@3.0.2
 
-    npm WARN deprecated eslint@8.57.1
+    >- npm WARN deprecated eslint@8.57.1
 
-    These warnings mean that some packages are outdated or no longer updated. You can safely ignore them as they won't affect how the project works.
+    >- These warnings mean that some packages are outdated or no longer updated. You can safely ignore them as they won't affect how the project works.
 
 8. Run the command below to open the project.
 
@@ -116,7 +116,7 @@ In this exercise, you will build the code component.
     <property name="FontColor" display-name-key="Font color" usage="input" of-type="SingleLine.Text" default-value="#333333"/>
     ```
 
-     ![](images/L02/image9.png)
+     ![](images/dataset-09.png)
 
 15. Locate `<resources>` section and add the below code after **code path** to add **css** resource. This will ensure that our styles will be bundled with the code component when it is deployed.
 
@@ -134,7 +134,7 @@ In this exercise, you will build the code component.
      <platform-library name="React" version="16.8.6" />
      <platform-library name="Fluent" version="8.29.0" />
      ```
-     ![](images/L02/image11.png)
+     ![](images/platformcss0980.png)
     
 17. Click **File** and select **Save All** to save your changes.
 
@@ -142,7 +142,7 @@ In this exercise, you will build the code component.
 
       ![](images/L02/image12.png)
 
-19. Name the new folder ass **css**.
+19. Name the new folder as **css**.
 
 20. Select the new **css** folder you created and then click **New File**
  
@@ -310,7 +310,7 @@ In this exercise, you will build the code component.
  
      > **Note** : **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
 
-22. After completing all the steps, make sure to replace the existing code in your `index.ts` file with the following code to avoid any errors:
+22. After completing all the steps, replace the existing code in your `index.ts` file with the following code to avoid errors. Then, press **CTRL + S** to save the file.:
 
     ```
     import { IInputs, IOutputs } from "./generated/ManifestTypes";
@@ -405,7 +405,7 @@ In this exercise, you will build the code component.
 
       ![](images/L02/image26.png)
  
-25. Replace **dependencies** with the JSON below.
+25. Replace **dependencies** with the JSON below. Then, press **CTRL + S** to save the file.
 
     ```
     "dependencies": {
@@ -467,7 +467,7 @@ In this exercise, you will build the code component.
 
 33. Stop the run by holding the **[CONTROL]** key + **C**.
  
-34. Type **Y** and [ENTER].
+34. Type **Y** and hit [ENTER].
      
       ![](images/L02/image30.png)
 
@@ -477,24 +477,23 @@ In this exercise, you will build the code component.
     pac pcf push --publisher-prefix contoso
     ```
     
-    > **Note** : 
-     1. If you encounter the error message **"Error: Missing required tool: MSBuild.exe/dotnet.exe. Please add MSBuild.exe/dotnet.exe in Path environment variable or use 'Developer Command Prompt for VS'"**, follow these steps:
+    > **Note**: 
+    
+    > 1. If you encounter the error message **"Error: Missing required tool: MSBuild.exe/dotnet.exe. Please add MSBuild.exe/dotnet.exe in Path environment variable or use 'Developer Command Prompt for VS'"**, follow these steps:
         
-        1. Navigate to the `C:\LabFiles` directory and open **dotnet-sdk-8.0.100-win-x64**.
+    > - Navigate to the `C:\LabFiles` directory and open **dotnet-sdk-8.0.100-win-x64**.
            
-        2. In the setup window, select **Repair**, then wait for the process to complete.
+    > - In the setup window, select **Repair**, then wait for the process to complete.
 
-        3. After the repair finishes, close Visual Studio Code, reopen it, and First run the build command present in 28 step and again run the above command.
+    > - After the repair finishes, close Visual Studio Code, reopen it, and First run the build command present in 28 step and again run the above command.
 
-        4.  If the issue persists, uninstall **dotnet-sdk-8.0.100-win-x64** and install the latest version from [the .NET download page](https://dotnet.microsoft.com/en-us/download). Close Visual Studio Code, reopen it, run the build command from step 28, and then execute the above command again.
+    > - If the issue persists, uninstall **dotnet-sdk-8.0.100-win-x64** and install the latest version from [the .NET download page](https://dotnet.microsoft.com/en-us/download). Close Visual Studio Code, reopen it, run the build command from step 28, and then execute the above command again.
 
-     3. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the 
-        previous instructions and added the code correctly in **Manifest and Index** files. 
+    > 2. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
         
-        Additionally, you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there are any then 
-        retry to push the component by running the  **pac push command** again.
+    > - Additionally, you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there are any then retry to push the component by running the  **pac push command** again.
 
-     4. If the run fails with a Nuget package error, run the below command in PowerShell and try running the above command again.
+    > 3. If the run fails with a Nuget package error, run the below command in PowerShell and try running the above command again.
     
         ```
         dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
@@ -610,7 +609,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
       
      ![](images/L02/image42uuu.png)
     
-    **Note:** If you receive a pop-up for "Select a data source," simply click **Close**.
+    >**Note:** If you receive a pop-up for "Select a data source," simply click **Close**.
 
      ![](images/L02/popups.png)    
  
