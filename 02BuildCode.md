@@ -216,6 +216,9 @@ In this exercise, you will build the code component.
     ```
 
 10. Notice the red underline in line 9 has been resolved.
+
+    
+    ![](images/L02/ep1.png)
     
 11. Open the **index.ts** file.
     
@@ -459,9 +462,11 @@ In this exercise, you will build the code component.
 
       ![](images/L02/imagee29u.png)
 
-    > **Note**: If you receive a pop-up for Internet Explorer, close it, then copy the localhost URL and paste it into a new tab in Edge.
- 
-     > **Note**: If the test harness didn't start as expected you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in the **Manifest and Index** files. 
+    > **Note**: **If you receive a pop-up for Internet Explorer, close it, then copy the localhost URL and paste it into a new tab in Edge**.
+
+      ![](images/L02/ep2.png) 
+
+       > **Note**: If the test harness didn't start as expected you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in the **Manifest and Index** files. 
 
 32. Close the test harness by closing the browser tab.
 
@@ -625,7 +630,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
      ![](images/L02/L02-voteitemu.png)
     
-15. On the **PrioritZDnDRanking**, go to the **Properties** pane that is present at the right side of the screen, set **Item Height** 160 and click **Edit Fields**.
+15. On the **PrioritZDnDRanking**, go to the **Properties** pane that is present at the right side of the screen, set **Item Height** 160 and click **Edit** next.
 
       ![](images/L02/image43ua.png)
 
