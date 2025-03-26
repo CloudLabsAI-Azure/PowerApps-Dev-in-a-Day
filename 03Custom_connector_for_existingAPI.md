@@ -487,7 +487,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 3. Enter **Test add credit (1)** for flow name, select **Manually trigger a flow (2)** , and click **Create (3)**.
      
-    ![](images/L03/edd%20(1)a.png)
+    ![](images/L02/ep4.png)
 
     >**Note**: If you cannot see the **Create** button, click on the **ellipsis** button located in the top right corner of the webpage and adjust the zoom to **90%**.
 
@@ -499,7 +499,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 5. Select the **Custom (1)** tab and then select the **Add credit (2)** action.
    
-    ![](images/L03/edd%202a.png)
+    ![](images/L03/ep5.png)
     
 6. Enter **Test connection** , paste the **API Key** you copied earlier in **step 9** of task1 in this exercise, and click **Create**.
   
@@ -620,7 +620,7 @@ environment and import it to the Test environment.
 
 ### Task 3: Test connector
 
-1. Click to open the solution you just imported.
+1. Click on **Solution** then **All** and then select **Contoso Badge Connector** to open the solution you just imported.
 
 2. Click to open the **Badges connector**.
   
