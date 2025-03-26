@@ -420,6 +420,8 @@ In this task, you will use the custom connector you created to show the user’s
      
      ![](images/L03/image42-1u.png)
 
+      >**Note**: If your not prompted to enter API key, please ignore.
+
 11. Select the **Tree view**.
 
 12. Select the **Screens (1)** tab, go to the **Insert (2)** tab, click **Media** , and then select **Image (3)**.
