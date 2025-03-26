@@ -391,6 +391,8 @@ In this task, you will use the custom connector you created to show the user’s
  
      ![](images/L03/image38-1u.png)
 
+      >**Note**: Click on **Open app** if prompted.
+
 4. Select **Data (1)** from the left and click **+ Add data (2).**
 
      ![](images/image38-1ua.png)
