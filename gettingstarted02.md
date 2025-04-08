@@ -8,14 +8,16 @@ In this series of labs, you will gain hands-on experience with various aspects o
 
 ## Objective
 
-
 After completing these Lab, you'll know how to import and customize solutions in Power Platform, build custom code components, and  create and integrate custom connectors.
 Learn to import and customize Power Platform solutions, create custom code components, and develop and integrate custom connectors. By the end of this lab, you will gain insights on:
 
  - **Getting started with Powerapps** : Learn to import a starting solution, add a new column, update the admin app, and test the Power Platform CLI.
  - **Build a code component** : Create a code component, implement its logic, integrate it into a canvas app, and add it to a solution.
  - **Custom connector for existing API** : Create, modify, and test a custom connector using an Open API definition, and integrate it with canvas apps and flows.
+
 ## Prerequisites
+
+Participants should have:
 
 - Basic knowledge of Power Platform and Power Apps.
 - Access to Power Platform environment and Azure account.
@@ -40,9 +42,9 @@ In these labs, you'll follow a structured process to master key aspects of Power
 - **Code Component**: Elements created to extend the functionality of Power Apps. These components involve writing and integrating custom logic, which enhances the capabilities and flexibility of canvas apps.
 - **Custom Connector**: Tools that allow Power Platform apps to connect with external data sources via APIs. These connectors enable seamless integration of external data and services into Power Platform applications.
 
-##  Getting Started
+##  Getting Started with the Lab
  
-Welcome to your Developer in a day workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+Welcome to your Low Code Development with Power Apps & Power Automate workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  

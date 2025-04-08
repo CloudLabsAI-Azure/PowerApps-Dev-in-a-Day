@@ -1,6 +1,6 @@
 # Lab 01 - Getting started with Powerapps
 
-## Estimated Duration: 45 minutes
+## Estimated Duration: 40 minutes
 
 Working as part of the Prioritz fusion team you will be setting up your Power Platform development environment. You will import and review the current solution and explore the current state of the Prioritz apps, flows and tables. You will be also adding a column to a table and modifying the app to use it.
 
