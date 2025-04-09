@@ -1,6 +1,6 @@
 # Lab 03 - Custom connector for existing API
 
-## Estimated Duration: 130 minutes
+## Estimated Duration: 110 minutes
 
 Working as part of the PrioritZ fusion team you will be configuring a custom connector for an existing API. The team would like to add badging to the PrioritZ application to give credit to users when they have completed ranking an item. The team identified an existing API, but it doesn't have a Power Platform connector.
 
