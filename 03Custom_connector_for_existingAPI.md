@@ -11,7 +11,6 @@ Working as part of the PrioritZ fusion team you will be configuring a custom con
 - Exercise 3: Create Custom Connector 
 - Exercise 4: Add Custom Code 
 - Exercise 5: Test Custom Connector 
-- Exercise 6: Promote Solution to Test Environment
 
 ## Exercise 1 - Create Database in Default Environment 
 
@@ -27,16 +26,18 @@ When you review the API, you see that it has four operations and uses API key au
 
          https://make.powerapps.com
 
-1. Click on **Environment (1)** and select the pre-created development environment named **OTU WA HOL -<inject key="Deployment ID" enableCopy="false" /> (default) (2).**
+1. Click on **Environment (1)** and select the pre-created development environment named **OTU WA HOL - xxxxxx (default) (2)**
 
     ![](images/L03/db1a.png)
 
-2. Select **Solutions** from the left-hand side menu of Power Apps.
+2. Select **Solutions (1)** from the left-hand side menu of Power Apps.
 
-3. Click on **Create a database** to create a Dataverse database.
+3. Click on **Create a database (2)** to create a Dataverse database.
  
     ![](images/L03/db1.png)
-   
+
+4. Select **Currecny -> TND and Language -> English(1)** and click on **Create my database (2)**.
+
     ![](images/L03/db2.png)
     
     >**Note:** You can leave this browser tab open and continue with the next exercise, as Dataverse database creation will take some time.
@@ -566,107 +567,6 @@ In this task, you will use the custom connector you created to show the user’s
 26. You should now see the **Champ** badge
    
      ![](images/L03/image55.png)
-
-## Exercise 6 – Promote Solution to Test Environment
-
-In this exercise, you will export the Contoso Badges connector solution from the Dev
-environment and import it to the Test environment.
-
-###  Task 1: Export solution.
-
-1. Navigate to the Power Apps  maker portal and make sure you are in your dev environment.
-
-         https://make.powerapps.com
-
-2. Go to **Solutions (1)**, select **Contoso Badges connector (2)**, and click **Export Solution (3)**.
-   
-     ![](images/L03/L03-EX4-exporta.png)
-
-4. On the **Before you export** blade, click **Publish** and wait for the publishing to complete.
-
-5. Once published, click on **Next**.
-
-6. Select **Managed** and click **Export**.
-
-7. Wait for the solution to be exported.
-
-8. Click the Download button Right side top of the screen, Click Download Solution.
- 
-    ![](images/L03/SolutionDown1.png)
-
-###  Task 2: Import solution
-
-1. Navigate to the Power Apps maker portal if not already open and select your **Test** environment, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_TEST(2)**. 
-
-         https://make.powerapps.com
-
-      ![](images/L03/L03-EX5a.png)
-
-3. Click **Import Solution**.
-    
-     ![](images/L03/L03-EX5.png)
-     
-     >**Note:** Try refreshing the browser if solutions are not opened.
-
-4. Click **Browse**.
-
-5. Select the solution you exported from the Dev environment and click **Open**.
-
-6. Click **Next**.
-
-7. Click **Import** and wait for the import to complete.
-
-8. The solution should be imported successfully. **Do not** navigate away from this page.
-
-### Task 3: Test connector
-
-1. Click on **Solution** then **All** and then select **Contoso Badge Connector** to open the solution you just imported.
-
-2. Click to open the **Badges connector**.
-  
-    ![](images/L03/image58.png)
-
-    >**Note**: If you receive the error message as **could not retrieve the connector data**, wait for a few mins (5-10 mins) to get the connector data updated. If that doesn't work, you can delete the imported connector and perform the **steps 5-10** in the **Task 2: Import solution** task again then try to open the connector.
-
-3. Click **Edit**.
-
-4. Select the **Test** tab from the dropdown.
-   
-     ![](images/L03/L03-EX5-default.png)
-
-5. Click **+ New connection**. A new browser tab will be opened to create a connection.
-
-6. Start a new browser window or tab and navigate to the below URL to open Contoso Coffee Badges API.
-
-   ```
-   https://contosobadgestest.azurewebsites.net/
-   ```
-
-7. Click on the **Get an API Key** link.
-  
-     ![](images/L03/image60.png)
-
-8. Copy the **API Key** value.
-
-9. Go back to the connector editor, paste the API Key you copied in the previous step and click **Create connection**. Now, close the browser tab by clicking on **X**.
-   
-     ![](images/L03/image61.png)
-
-10. Click **Refresh** connections.
-     
-      ![](images/L03/image62.png)
-
-11. Go to the **Operations (1)** section and select the **AddCredit (2)** operation.
-
-      ![](images/L03/image62a.png)
-
-12. Provide your email for **recipientid** , provide a **name** , enter **1** for **points** , and click **Test operation**.
-     
-     ![](images/L03/L3T3S8a.png)
-
-13. The test should succeed, and the response should look like the image below.
-      
-      ![](images/L03/image64u.png)
 
 ## Summary
 

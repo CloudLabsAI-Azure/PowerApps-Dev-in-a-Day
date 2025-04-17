@@ -88,7 +88,7 @@ In this exercise, you will import the current solution into the pre-created dev 
      
 1. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` in file explorer , select the **Prioritz_1_0_0_7.zip** file, and click **Open**.
 
-1. Make sure the **Prioritz(1)** file is selected and Click **Next(2)**.
+1. Make sure the **Prioritz_1_0_0_7.zip(1)** file is selected and Click **Next(2)**.
     
      ![](images/L01/next1.png)
      
@@ -96,7 +96,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. Under the **Connections** section, click on the ellipsis button **...(1)** next to **Microsoft Dataverse Priority**.
 
-1. Ensure that  **odl_user(2)** you are using  is selected.
+1. Ensure that user mail **<inject key="AzureAdUserEmail"></inject> (2)** you are using is selected.
 
 1. Click on **Import(3)**.
 
@@ -183,7 +183,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 ### Task 2: Test the apps
 
-1. Navigate back to **Prioritz** solution by clicking on **Cloud flows**. Alternatively, you can also open the **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate back to **Prioritz** solution by clicking on **Cloud flows**. Alternatively, you can also open the **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
        
    ![](images/L01/cloud1u.png)
 
@@ -231,7 +231,7 @@ In this exercise, you will import the current solution into the pre-created dev 
      
        ![](images/L01/image17u.png)
 
-11. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
+11. Navigate to this path **C:\LabFiles** in file explorer, select **image.png** and click open.
 
 12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below the Choice field. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
      
@@ -261,7 +261,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **Prioritz Ask (2)** application by clicking on play symbol.
      
-     ![](images/L01/L01-Prioritzasku.png)
+     ![](images/L01/L01-Prioritzasku-1.png)
 
 20. You should see a list of topics. Open the **Change Taco Tuesday to some other food** topic that you created in the previous steps.
 
@@ -374,7 +374,7 @@ application.
      ![](images/L01/image31u.png)
 
     ```
-    Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'Prioritz Topic':newTopic,Photo:ThisRecord.photo}));Back()
+    Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
     ```
 11. Select the **View Topic Screen (1)** from the **Screens** tab.
 
