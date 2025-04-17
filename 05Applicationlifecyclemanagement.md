@@ -414,9 +414,9 @@ indentation shown in the images.
       
    ![](images/L05/Images2028u.png)
    
-1. Select the **Code** ***(1)*** tab and click on **Branches** ***(2)***. You should see two branches
+1. Select the **Code** ***(1)*** tab and click on **Branches** ***(2)***. You should see two branches.
    
-   ![](images/L05/diad5l29u.png)
+   ![](images/L05/diad5l29u-1.png)
    
 1. Click to open the branch that was created by the workflow action named Prioritz-XXXXXXXX-XXXX.
    
