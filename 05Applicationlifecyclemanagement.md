@@ -314,11 +314,11 @@ In this exercise, you will create a GitHub repository and add repository secrets
     
      ![](images/L05/Imagessettinguu.png)
 
-6. Go to the **Security** section, expand **Secrets and variables(1)** and select **Actions (2)**.
+6. Go to the **Security (1)** section, expand **Secrets and variables(2)** and select **Actions (3)**.
 
     > **Note:** The values you provide will not be visible after you create the item so take your time to get the values correct. 
       
-     ![](images/L05/github6u.png)
+     ![](images/L05/actionpermissionuuu-1.png)
    
 7. Click **New repository secret** to add a secret.
 
@@ -394,9 +394,9 @@ indentation shown in the images.
 
    ![](images/L05/Images202uuu.png)
 
-1. Click On Settings, Go to the **Actions (1)** tab on the left side, then select **General (2)**.
+1. Click On **Settings (1)**, Go to the **Actions (2)** tab on the left side, then select **General (3)**.
 
-   ![](images/L05/actionpermissionuuu.png)
+   ![](images/L05/github6u-1.png)
 
 1. In the **Workflow Permission** section, make sure **read and write permission** is selected, then click **save**.  
 
