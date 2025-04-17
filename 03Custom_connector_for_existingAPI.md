@@ -11,7 +11,6 @@ Working as part of the PrioritZ fusion team you will be configuring a custom con
 - Exercise 3: Create Custom Connector 
 - Exercise 4: Add Custom Code 
 - Exercise 5: Test Custom Connector 
-- Exercise 6: Promote Solution to Test Environment
 
 ## Exercise 1 - Create Database in Default Environment 
 
