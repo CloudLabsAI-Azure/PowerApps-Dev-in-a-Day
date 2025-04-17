@@ -6,10 +6,11 @@ Working as part of the PrioritZ fusion team, you will be configuring GitHub Acti
 
 Lab Objectives 
 
-- Exercise 1: Configure a Service Principal 
-- Exercise 2: Create GitHub Repo 
-- Exercise 3: Export and Branch 
-- Exercise 4: Release to Test 
+- Exercise 1: Configure a Service Principal
+- Exercise 2: Promote Solution to Test Environment 
+- Exercise 3: Create GitHub Repo 
+- Exercise 4: Export and Branch 
+- Exercise 5: Release to Test 
 
 ## Exercise 1 – Configure a Service Principal
 
@@ -35,7 +36,7 @@ actions, so they do not execute under your individual user identity.
 1. Please provide the following details and click on **Register** ***(3)***.
    
    - Name: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-   - Supported account types: **Accounts in this organizational directory only (OTU WA HOL - <inject key="Deployment ID" enableCopy="false" /> only - Single tenant)** ***(2)***
+   - Supported account types: **Accounts in this organizational directory only (OTU WA HOL - xxxxxx only - Single tenant)** ***(2)***
 
      ![](images/L05/diad5l3uup.png).
    
@@ -180,8 +181,109 @@ deploy solutions.
 1. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
     
    ![](images/L05/diad5l22u.png)
+
+## Exercise 2 – Promote Solution to Test Environment
+
+In this exercise, you will export the Contoso Badges connector solution from the Dev
+environment and import it to the Test environment.
+
+###  Task 1: Export solution
+
+1. Navigate to the Power Apps  maker portal and make sure you are in your dev environment **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**
+
+         https://make.powerapps.com
+
+2. Go to **Solutions (1)**, select **Contoso Badges connector (2)**, and click **Export Solution (3)**.
    
-## Exercise 2 – Create GitHub Repo
+     ![](images/L03/L03-EX4-exporta.png)
+
+4. On the **Before you export** blade, click **Publish** and wait for the publishing to complete.
+
+5. Once published, click on **Next**.
+
+6. Select **Managed** and click **Export**.
+
+7. Wait for the solution to be exported.
+
+8. Click the Download button Right side top of the screen, Click Download Solution.
+ 
+    ![](images/L03/SolutionDown1.png)
+
+###  Task 2: Import solution
+
+1. Navigate to the Power Apps maker portal if not already open and select your **Test** environment, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_TEST(2)**. 
+
+         https://make.powerapps.com
+
+      ![](images/L03/L03-EX5a.png)
+
+3. Click **Import Solution**.
+    
+     ![](images/L03/L03-EX5.png)
+     
+     >**Note:** Try refreshing the browser if solutions are not opened.
+
+4. Click **Browse**.
+
+5. Select the solution you exported from the Dev environment and click **Open**.
+
+6. Click **Next**.
+
+7. Click **Import** and wait for the import to complete.
+
+8. The solution should be imported successfully. **Do not** navigate away from this page.
+
+### Task 3: Test connector
+
+1. Click on **Solution** then **All** and then select **Contoso Badge Connector** to open the solution you just imported.
+
+2. Click to open the **Badges connector**.
+  
+    ![](images/L03/image58.png)
+
+    >**Note**: If you receive the error message as **could not retrieve the connector data**, wait for a few mins (5-10 mins) to get the connector data updated. If that doesn't work, you can delete the imported connector and perform the **steps 1-7** in the **Task 2: Import solution** task again then try to open the connector.
+
+3. Click **Edit**.
+
+4. Select the **Test** tab from the dropdown.
+   
+     ![](images/L03/L03-EX5-default.png)
+
+5. Click **+ New connection**. A new browser tab will be opened to create a connection.
+
+6. Start a new browser window or tab and navigate to the below URL to open Contoso Coffee Badges API.
+
+   ```
+   https://contosobadgestest.azurewebsites.net/
+   ```
+
+7. Click on the **Get an API Key** link.
+  
+     ![](images/L03/image60.png)
+
+8. Copy the **API Key** value.
+
+9. Go back to the connector editor, paste the API Key you copied in the previous step and click **Create connection**. Now, close the browser tab by clicking on **X**.
+   
+     ![](images/L03/image61.png)
+
+10. Click **Refresh** connections.
+     
+      ![](images/L03/image62.png)
+
+11. Go to the **Operations (1)** section and select the **AddCredit (2)** operation.
+
+      ![](images/L03/image62a.png)
+
+12. Provide your email for **recipientid** , provide a **name** , enter **1** for **points** , and click **Test operation**.
+     
+     ![](images/L03/L3T3S8a.png)
+
+13. The test should succeed, and the response should look like the image below.
+      
+      ![](images/L03/image64u.png)
+
+## Exercise 3 – Create GitHub Repo
 
 In this exercise, you will create a GitHub repository and add repository secrets.
 
@@ -228,7 +330,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 9. Click **New repository secret** again.
 
-10. Enter **PowerPlatformClientSecret (1)** for Name and paste the password: **<inject key="AzureAdUserPassword"></inject> (2)** and **click Add Secret (3)** 
+10. Enter **PowerPlatformClientSecret (1)** for Name and paste the password: **<inject key="AzureAdUserPassword"></inject> (2)** and click **Add Secret (3)** 
 
      ![](images/L05/github9u.png)
 
@@ -240,7 +342,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 13. Click **New repository secret** again.
 
-14. Enter **PowerPlatformDevUrl (1)** for Name and paste the secret **Dev environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 21`** in the **Value** field and click **Add secret (3)**.
+14. Enter **PowerPlatformDevUrl (1)** for Name and paste the secret **Dev environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 17`** in the **Value** field and click **Add secret (3)**.
 
     >**Note**: Make sure you are pasting the dev environment URL named **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** that you copied in the **`Exercise 1 -> Task 3 -> Step 17`**
    
@@ -248,9 +350,9 @@ In this exercise, you will create a GitHub repository and add repository secrets
   
 15. Click **New repository secret** one more time.
 
-16. Enter **PowerPlatformTestUrl (1)** for Name and paste the **Test Environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 18`** in the **Value** field and click **Add secret (3)**.
+16. Enter **PowerPlatformTestUrl (1)** for Name and paste the **Test Environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 19`** in the **Value** field and click **Add secret (3)**.
 
-    >**Note**: Make sure you are pasting the test environment URL named **DEV_ENV_TEST** that you copied in the **`Exercise 1 -> Task 3 -> Step 23`**
+    >**Note**: Make sure you are pasting the test environment URL named **DEV_ENV_TEST** that you copied in the **`Exercise 1 -> Task 3 -> Step 19`**
  
     ![](images/L05/L05-testurla.png)
  
@@ -260,7 +362,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 18. Do not navigate away from this page.
 
-### Exercise 3 – Export and Branch
+## Exercise 4 – Export and Branch
 
 In this exercise, you will set a workflow action, and add steps that will export the solution from the dev
 environment and create a new branch.
@@ -316,11 +418,11 @@ indentation shown in the images.
    
    ![](images/L05/diad5l29u.png)
    
-1. Click to open the branch that was created by the workflow action named Prioritz-XXXXXXX.
+1. Click to open the branch that was created by the workflow action named Prioritz-XXXXXXXX-XXXX.
    
    ![](images/L05/changesbranchu.png)
 
-1. On the Prioritz-XXXXXXX. branch, you should be able to see the solution folder.
+1. On the Prioritz-XXXXXXXX-XXXX branch, you should be able to see the solution folder.
       
    ![](images/L05/diad5l30u.png)
    
@@ -348,7 +450,7 @@ indentation shown in the images.
      ![](images/L05/prdoneu.png)
 
 
-### Exercise 4 – Release to Test
+### Exercise 5 – Release to Test
 
 In this exercise, you will create a workflow action and add steps that will release the solution you
 exported to the test environment.
