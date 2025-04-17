@@ -27,16 +27,18 @@ When you review the API, you see that it has four operations and uses API key au
 
          https://make.powerapps.com
 
-1. Click on **Environment (1)** and select the pre-created development environment named **OTU WA HOL -<inject key="Deployment ID" enableCopy="false" /> (default) (2).**
+1. Click on **Environment (1)** and select the pre-created development environment named **OTU WA HOL - xxxxxx (default) (2)**
 
     ![](images/L03/db1a.png)
 
-2. Select **Solutions** from the left-hand side menu of Power Apps.
+2. Select **Solutions (1)** from the left-hand side menu of Power Apps.
 
-3. Click on **Create a database** to create a Dataverse database.
+3. Click on **Create a database (2)** to create a Dataverse database.
  
     ![](images/L03/db1.png)
-   
+
+4. Select **Currecny -> TND and Language -> English(1)** and click on **Create my database (2)**.
+
     ![](images/L03/db2.png)
     
     >**Note:** You can leave this browser tab open and continue with the next exercise, as Dataverse database creation will take some time.
@@ -596,13 +598,13 @@ environment and import it to the Test environment.
 
 ###  Task 2: Import solution
 
-1. Navigate to the Power Apps maker portal if not already open and select your **Test** environment, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_TEST(2)**. 
+1. Navigate to the Power Apps maker portal if not already open and select your environment, click on **Environment (1)** and select the pre-created dev environment named **OTU WA HOl - xxxxxx (2)**. 
 
          https://make.powerapps.com
 
-      ![](images/L03/L03-EX5a.png)
+      ![](images/L03/L03-EX5a-1.png)
 
-3. Click **Import Solution**.
+3. Naviagate to **Solutions** from the left pane, Click on **Import Solution**.
     
      ![](images/L03/L03-EX5.png)
      
