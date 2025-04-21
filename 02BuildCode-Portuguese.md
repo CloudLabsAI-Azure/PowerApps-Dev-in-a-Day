@@ -125,11 +125,11 @@ Neste exercício, você irá construir o componente de código.
 
 18. Clique em **File** e seleccione **Save All** para guardar as suas alterações.
 
-19. Certifique-se de que ainda tem o ficheiro **ControlManifest.Input.xml** selecionado e clique em **New Folde**.
+19. Certifique-se de que o ficheiro **ControlManifest.Input.xml** ainda está selecionado e clique em **New Folder**.
 
     ![](images/L02/image12.png)
 
-20. Refira o novo bunda da pasta **css**.
+20. Nomeie a nova pasta como **css**.
 
 21. Selecione a nova pasta **css** que criou e clique em **New File**
 
@@ -471,8 +471,7 @@ Neste exercício, você irá construir o componente de código.
         3. Após a conclusão do reparo, feche o Visual Studio Code, reabra-o e primeiro execute o comando build presente na etapa 28 e execute novamente o comando acima.
         4. Se o problema persistir, desinstale **dotnet-sdk-8.0.100-win-x64** e instale a versão mais recente da [página de download do .NET](https://dotnet.microsoft.com/en-us/download). Feche o Visual Studio Code, abra-o novamente, execute o comando build da etapa 28 e execute o comando acima novamente.
 
-     2. Se a operação push falhar com o erro **`Desculpe, o aplicativo encontrou um erro não recuperável e precisará ser encerrado`**, certifique-se de ter seguido o 
-        instruções anteriores e adicionei o código corretamente nos arquivos **Manifest e Index**. 
+     2. Se a operação de push falhar com o erro **`Desculpe, a aplicação encontrou um erro      irrecuperável e terá de ser encerrada`**, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente nos ficheiros **Manifest e Index**. 
         
         Além disso, você pode encontrar os arquivos **Manifest and Index** no local `C:\LabFiles`, você pode comparar seu código com esses arquivos e corrigir os problemas, se houver algum. 
         tente enviar o componente novamente executando o comando **pac push** novamente.

@@ -7,9 +7,10 @@ Trabalhando como parte da equipa de PrioritZ fusion, estará a configurar GitHub
 Objectivos de laboratório
 
 - Exercício 1: Configure um Service Principal
-- Exercício 2: Criar o GitHub Repo
-- Exercício 3: Exportação e Branching
-- Exercício 4: Lançar para Testes
+- Exercício 2: Promover Solução para Teste Ambiente
+- Exercício 3: Criar o GitHub Repo
+- Exercício 4: Exportação e Branching
+- Exercício 5: Lançar para Testes
 
 ## Exercício 1 – Configure um Service Principal
 
@@ -34,9 +35,9 @@ Neste exercício, criará um service Principal. O service Principal será utiliz
 1. Forneça os seguintes detalhes e clique em **Register** ***(3)***.
 
     - Nome: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-    - Tipos de conta suportados: **Accounts in this organizational directory only (OTU WA AIW [SUFFIX] only - Single tenant)** ***(2)***
+    - Tipos de conta suportados: **Accounts in this organizational directory only (OTU WA HOL - xxxxxx only - Single tenant)** ***(2)***
 
-        ![](images/L05/diad5l3.png)
+        ![](images/diad5l3uup.png)
 
 1. Copie o **Application (client) ID**, **Directory(Tenant) ID** e guarde-o num bloco de notas, pois precisa deles para utilização posterior.
 
@@ -180,7 +181,109 @@ Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos am
 
     ![](images/L05/diad5l22u.png)
 
-## Exercício 2 – Crie o GitHub Repo
+## Exercício 2 – Promover Solução para Teste Ambiente
+
+Neste exercício, irá exportar a solução de conector Contose Badges do Dev
+ambiente e importá-lo para o ambiente de teste.
+
+### Tarefa 1: Solução de exportação.
+
+1. Navegue até ao portal do fabricante do Power Apps e certifique-se de que está no seu ambiente de desenvolvimento.
+
+    ```
+    https://make.powerapps.com
+    ```
+
+2. Vá para **Soluções (1)**, selecione **Conector Contoso Badges (2)** e clique em **Exportar solução (3)**.
+
+    ![](images/L03/L03-EX4-exporta.png)
+
+4. Na **Before you export** lâmina, clique em **Publish** e aguarde que a publicação seja concluída.
+5. Depois de publicar, clique em **Next**.
+6. Selecione **Managed** e clique em **Export**.
+7. Aguarde que a solução seja exportada.
+8. Clique no botão Download direito superior direito do ecrã, Clique em Descarregue a solução.
+
+    ![](images/L03/SolutionDown1.png)
+
+### Tarefa 2: Solução de importação
+
+1. Navegue até o portal do criador do Power Apps, se ainda não estiver aberto, e selecione seu ambiente de **Teste**, clique em **Environment (1)** e selecione o ambiente de desenvolvimento pré-criado chamado **DEV_ENV_TEST(2)**.
+
+    ```
+    https://make.powerapps.com
+    ```
+
+    ![](images/L03/L03-EX5a.png)
+
+3. Clique em **Import Solution**.
+
+    ![](images/L03/L03-EX5.png)
+
+    >**Nota:** Experimente atualizar o navegador se as soluções não forem abertas.
+
+4. Clique em **Browse**.
+
+5. Selecione a solução que exportou no ambiente Dev e clique em **Open**.
+
+6. Clique em **Next**.
+
+7. Clique em **Import** e aguarde que a importação seja concluída.
+
+8. A solução deve ser importada com sucesso. **Não** navegue por esta página.
+
+### Tarefa 3: Conector de teste
+
+1. Clique para abrir a solução que acabou de importar.
+
+2. Clique para abrir o conector **Badges**.
+
+    ![](images/L03/image58.png)
+
+    >**Nota**: Se receber a mensagem de erro, pois **could not retrieve the connector data**, aguarde alguns minutos (5 a 10 minutos) para atualizar os dados do conector. Se isto não funcionar, pode apagar o conector importado e executar a tarefa **passos 5-10** na tarefa **Tarefa 2: Importar a solução** novamente e tente abrir o conector.
+
+3. Clique em **Edit**.
+
+4. Selecione o separador **Test** do menu suspenso.
+
+    ![](images/L03/L03-EX5-default.png)
+
+5. Clique em **+ New connection**. Será aberto um novo separador do browser para criar uma ligação.
+
+6. Inicie uma nova janela ou aba do browser e navegue até ao URL abaixo para abrir a API Contoso Coffee Badges.
+
+    ```
+    https://contosobadgestest.azurewebsites.net/
+    ```
+
+7. Clique no link **Get an API Key**.
+
+    ![](images/L03/image60.png)
+
+8. Copie o valor **API Key**.
+
+9. Volte ao editor do conector, cole a chave da API que copiou no passo anterior e clique em **Create connection**. Agora, feche o separador do browser clicando em **X**.
+
+    ![](images/L03/image61.png)
+
+10. Clique em **Refresh Connections**.
+
+    ![](images/L03/image62.png)
+
+11. Vá para a seção **Operations (1)** e selecione a operação **AddCredit (2)**.
+
+    ![](images/L03/image62a.png)
+
+12. Forneça o seu e-mail para **recipitívido** , forneça um **name** , introduza **1** para **points** e clique em **Test operation**.
+
+    ![](images/L03/L3T3S8a.png)
+
+13. O teste deve ter sucesso e a resposta deve parecer a image abaixo.
+
+    ![](images/L03/image64u.png)
+
+
+## Exercício 3 – Crie o GitHub Repo
 
 Neste exercício, criará um repositório do GitHub e adicionar segredos do repositório.
 
@@ -212,23 +315,23 @@ Neste exercício, criará um repositório do GitHub e adicionar segredos do repo
 
     ![](images/L05/Imagessettinguu.png)
 
-6. Aceda à secção **Security**, expanda **Secrets and variables (1)** e seleccione **Actions (2)**.
+6. Aceda à secção **Security (1)**, expanda **Secrets and variables(2)** e selecione **Actions (3)**.
 
-    > **Nota:** Os valores que fornece não serão visíveis depois de criar o item, por isso tenha pressa para acertar os valores.
+    > **Nota:** Os valores fornecidos não ficarão visíveis depois de criar o item, por isso, dedique algum tempo para obter os valores corretos.
 
-    ![](images/L05/github6u.png)
+    ![](images/L05/actionpermissionuuu-1.png)
 
 7. Clique em **New repository secret** para adicionar um segredo.
 
     ![](images/L05/github7uu.png)
 
-8. Insira **PowerPlatformAppID (1)** para Nome e cole o nome de usuário odl: **<inject key="AzureAdUserEmail"></inject> (2)** e **clique em Adicionar segredo (3)**
+8. Insira **PowerPlatformAppID (1)** para Nome e cole o nome de usuário odl: **<inject key="AzureAdUserEmail"></inject> (2)** e clique em **Add Secret (3)**
 
     ![](images/L05/github8u.png)
 
 9. Clique em **New repository secret** novamente.
 
-10. Insira **PowerPlatformClientSecret (1)** para Nome e cole a senha: **<inject key="AzureAdUserPassword"></inject> (2)** e **clique em Adicionar segredo (3)**
+10. Insira **PowerPlatformClientSecret (1)** para Nome e cole a senha: **<inject key="AzureAdUserPassword"></inject> (2)** e clique em **Add Secret (3)**
 
     ![](images/L05/github9u.png)
 
@@ -240,7 +343,7 @@ Neste exercício, criará um repositório do GitHub e adicionar segredos do repo
 
 13. Clique novamente em **New repository secret**.
 
-14. Introduza **PowerPlatformDevUrl (1)** para o nome e cole o **Dev environment URL (2)** do seu bloco de nota que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 21`** no campo **Valor** e clique em **Add secret (3)**.
+14. Introduza **PowerPlatformDevUrl (1)** para o nome e cole o **Dev environment URL (2)** do seu bloco de nota que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 17`** no campo **Valor** e clique em **Add secret (3)**.
 
     >**Nota**: Certifique-se de que está a colar o URL do ambiente de desenvolvimento denominado **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 17`**
 
@@ -248,11 +351,11 @@ Neste exercício, criará um repositório do GitHub e adicionar segredos do repo
 
 15. Clique em **New repository secret** mais uma vez.
 
-16. Introduza **PowerPlatformTestUrl (1)** para o nome e cole o **Test Environment URL (2)** do seu bloco de nota que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 18`** no campo **Value** e clique em **Add secret (3)**.
+16. Introduza **PowerPlatformTestUrl (1)** para o nome e cole o **Test Environment URL (2)** do seu bloco de nota que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 19`** no campo **Value** e clique em **Add secret (3)**.
 
-    >**Nota**: Certifique-se de que está a colar o URL do ambiente de teste denominado **DEV_ENV_TEST** que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 23`**
+    >**Nota**: Certifique-se de que está a colar o URL do ambiente de teste denominado **DEV_ENV_TEST** que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 19`**
 
-    ![](images/L05/L05-testurlu.png)
+    ![](images/L05/L05-testurla.png)
 
 17. Agora deve ter **5** segredos do repositório.
 
@@ -260,7 +363,7 @@ Neste exercício, criará um repositório do GitHub e adicionar segredos do repo
 
 18. Fique nesta página.
 
-### Exercício 3 – Exportação e Branching
+### Exercício 4 – Exportação e Branching
 
 Neste exercício, irá definir um workflow the GitHub Actions e adicionar passos para exportar a solução do ambiente dev e criar um novo branch.
 
@@ -282,15 +385,15 @@ Nesta tarefa, criará um workflow the GitHub Actions utilizando o YAML fornecido
 
     ![](images/L05/diad5l28u.png)
 
-1. Clique em **Commit changes** e clique em ***Commit changes**.
+1. Clique em **Commit changes** e clique em **Commit changes**.
 
     ![](images/L05/commit1.png)
 
     ![](images/L05/Images202uuu.png)
 
-1. Aceda ao separador **Actions(1)** no lado esquerdo e selecione **General(2)**.
+1. Clique em **Settings (1)**, aceda ao separador **Actions (2)** do lado esquerdo e selecione **General (3)**.
 
-    ![](images/L05/actionpermissionuuu.png)
+    ![](images/L05/github6u-1.png)
 
 1. Na secção **Workflow Permission**, certifique-se de que **read and write permission** é seleccionado e clique em **save**.
 
@@ -308,9 +411,9 @@ Nesta tarefa, criará um workflow the GitHub Actions utilizando o YAML fornecido
 
     ![](images/L05/Images2028u.png)
 
-1. Selecione o separador **Code** ***(1)*** e clique em **Branches** ***(2)***. Deverá ver dois branches
+1. Selecione o separador **Code** ***(1)*** e clique em **Branches** ***(2)***. Deverá ver dois ramos.
 
-    ![](images/L05/diad5l29u.png)
+    ![](images/L05/diad5l29u-1.png)
 
 1. Clique para abrir a branch que foi criada pela ação de workflow denominada Prioritz-XXXXXXXX.
 
@@ -343,7 +446,7 @@ Nesta tarefa, criará um workflow the GitHub Actions utilizando o YAML fornecido
     ![](images/L05/prdoneu.png)
 
 
-### Exercício 4 – Lançamento para teste
+### Exercício 5 – Lançamento para teste
 
 Neste exercício, criará uma ação de workflow e adicionará passos que libertarão a solução que exportou para o ambiente de teste.
 
