@@ -1,6 +1,6 @@
 # Laboratório 03 - Conector personalizado para a API existente
 
-## Duração estimada: 130 minutos
+## Duração estimada: 110 minutos
 
 Trabalhando como parte da equipa de PrioritZ fusion, estará a configurar um conector personalizado para uma API existente. A equipa gostaria de adicionar um crachá à aplicação PrioritZ para dar crédito aos utilizadores quando estes concluíram a classificação de um item. A equipa identificou uma API existente, mas não tem um Power Platform Conector.
 
@@ -11,7 +11,6 @@ Trabalhando como parte da equipa de PrioritZ fusion, estará a configurar um con
 - Exercício 3: Crie um conector personalizado
 - Exercício 4: Adicionar código personalizado
 - Exercício 5: Testar o Conector Personalizado
-- Exercício 6: Promover solução para o ambiente de teste
 
 ## Exercício 1 - Criar base de dados no ambiente padrão
 
@@ -30,17 +29,17 @@ Ao analisar a API, verifica-se que tem quatro operações e utiliza uma API Key 
     https://make.powerapps.com
     ```
 
-1. Clique em **Ambiente (1)** e selecione o ambiente de desenvolvimento pré-criado chamado **OTU WA HOL -<inject key="Deployment ID" enableCopy="false" /> (padrão) (2).**
+1. Clique em **Environment (1)** e seleccione o ambiente de desenvolvimento pré-criado denominado **OTU WA HOL - xxxxxx (default) (2)**
 
     ![](images/L03/db1a.png)
 
-2. Selecione **Solutions** do menu do lado esquerdo das aplicações de alimentação.
+2. Selecione **Solutions (1)** no menu do lado esquerdo do Power Apps.
 
-3. Clique em **Create database** para criar uma base de dados Dataverse.
+3. Clique em **Create a database (2)** para criar uma base de dados Dataverse.
 
     ![](images/L03/db1.png)
 
-5. Deixe o campo **Currency** e **Language** para padrão e clique em **Create database**.
+5. Selecione **Currecny -> TND e Language -> English(1)** e clique em **Create my database (2)**.
 
     ![](images/L03/db2.png)
 
@@ -554,107 +553,6 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 27. Agora deve ver o crachá **Champ**
 
     ![](images/L03/image55.png)
-
-## Exercício 6 – Promover Solução para Teste Ambiente
-
-Neste exercício, irá exportar a solução de conector Contose Badges do Dev
-ambiente e importá-lo para o ambiente de teste.
-
-### Tarefa 1: Solução de exportação.
-
-1. Navegue até ao portal do fabricante do Power Apps e certifique-se de que está no seu ambiente de desenvolvimento.
-
-    ```
-    https://make.powerapps.com
-    ```
-
-2. Vá para **Soluções (1)**, selecione **Conector Contoso Badges (2)** e clique em **Exportar solução (3)**.
-
-    ![](images/L03/L03-EX4-exporta.png)
-
-4. Na **Before you export** lâmina, clique em **Publish** e aguarde que a publicação seja concluída.
-5. Depois de publicar, clique em **Next**.
-6. Selecione **Managed** e clique em **Export**.
-7. Aguarde que a solução seja exportada.
-8. Clique no botão Download direito superior direito do ecrã, Clique em Descarregue a solução.
-
-    ![](images/L03/SolutionDown1.png)
-
-### Tarefa 2: Solução de importação
-
-1. Navegue até o portal do criador do Power Apps, se ainda não estiver aberto, e selecione seu ambiente de **Teste**, clique em **Environment (1)** e selecione o ambiente de desenvolvimento pré-criado chamado **DEV_ENV_TEST(2)**.
-
-    ```
-    https://make.powerapps.com
-    ```
-
-    ![](images/L03/L03-EX5a.png)
-
-3. Clique em **Import Solution**.
-
-    ![](images/L03/L03-EX5.png)
-
-    >**Nota:** Experimente atualizar o navegador se as soluções não forem abertas.
-
-4. Clique em **Browse**.
-
-5. Selecione a solução que exportou no ambiente Dev e clique em **Open**.
-
-6. Clique em **Next**.
-
-7. Clique em **Import** e aguarde que a importação seja concluída.
-
-8. A solução deve ser importada com sucesso. **Não** navegue por esta página.
-
-### Tarefa 3: Conector de teste
-
-1. Clique para abrir a solução que acabou de importar.
-
-2. Clique para abrir o conector **Badges**.
-
-    ![](images/L03/image58.png)
-
-    >**Nota**: Se receber a mensagem de erro, pois **could not retrieve the connector data**, aguarde alguns minutos (5 a 10 minutos) para atualizar os dados do conector. Se isto não funcionar, pode apagar o conector importado e executar a tarefa **passos 5-10** na tarefa **Tarefa 2: Importar a solução** novamente e tente abrir o conector.
-
-3. Clique em **Edit**.
-
-4. Selecione o separador **Test** do menu suspenso.
-
-    ![](images/L03/L03-EX5-default.png)
-
-5. Clique em **+ New connection**. Será aberto um novo separador do browser para criar uma ligação.
-
-6. Inicie uma nova janela ou aba do browser e navegue até ao URL abaixo para abrir a API Contoso Coffee Badges.
-
-    ```
-    https://contosobadgestest.azurewebsites.net/
-    ```
-
-7. Clique no link **Get an API Key**.
-
-    ![](images/L03/image60.png)
-
-8. Copie o valor **API Key**.
-
-9. Volte ao editor do conector, cole a chave da API que copiou no passo anterior e clique em **Create connection**. Agora, feche o separador do browser clicando em **X**.
-
-    ![](images/L03/image61.png)
-
-10. Clique em **Refresh Connections**.
-
-    ![](images/L03/image62.png)
-
-11. Vá para a seção **Operations (1)** e selecione a operação **AddCredit (2)**.
-
-    ![](images/L03/image62a.png)
-
-12. Forneça o seu e-mail para **recipitívido** , forneça um **name** , introduza **1** para **points** e clique em **Test operation**.
-
-    ![](images/L03/L3T3S8a.png)
-
-13. O teste deve ter sucesso e a resposta deve parecer a image abaixo.
-
-    ![](images/L03/image64u.png)
 
 ## Resumo
 

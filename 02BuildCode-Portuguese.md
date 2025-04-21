@@ -125,11 +125,11 @@ Neste exercício, você irá construir o componente de código.
 
 18. Clique em **File** e seleccione **Save All** para guardar as suas alterações.
 
-19. Certifique-se de que ainda tem o ficheiro **ControlManifest.Input.xml** selecionado e clique em **New Folde**.
+19. Certifique-se de que o ficheiro **ControlManifest.Input.xml** ainda está selecionado e clique em **New Folder**.
 
     ![](images/L02/image12.png)
 
-20. Refira o novo bunda da pasta **css**.
+20. Nomeie a nova pasta como **css**.
 
 21. Selecione a nova pasta **css** que criou e clique em **New File**
 
