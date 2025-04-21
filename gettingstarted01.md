@@ -51,7 +51,7 @@ En estos laboratorios, seguirá un proceso estructurado para dominar los aspecto
  
 Una vez que esté listo para comenzar, su máquina virtual y la **Guía de laboratorio** estarán a su alcance en su navegador web.
 
-![](./images/GS6.png)
+![](./images/GS6a.png)
 
 ### Máquina Virtual y Guía de Laboratorio
  
@@ -81,7 +81,7 @@ Para mayor comodidad, puede abrir la guía de laboratorio en una ventana separad
 
 Siéntase libre de iniciar, detener o reiniciar su máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Su experiencia está en sus manos!
  
-![](./images/GS5.png)
+![](./images/resources-vm-manage.png)
  
 ## Comencemos con el Portal de Azure
 

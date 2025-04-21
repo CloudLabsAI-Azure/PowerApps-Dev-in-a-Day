@@ -1,15 +1,16 @@
 # Laboratorio 04 - Gestión del ciclo de vida de las aplicaciones
 
-## Duración Estimada: 95 mins
+## Duración Estimada: 110 mins
 
 Al trabajar como parte del equipo de fusión de PrioritZ, configurará GitHub Actions con Power Platform Build Tools para automatizar y optimizar las implementaciones del equipo. Esto implica configurar canalizaciones de integración continua e implementación continua (CI/CD) para garantizar la entrega fluida y eficiente de actualizaciones a las aplicaciones de Power Platform, al mismo tiempo que administra los procesos de control de versiones, pruebas e implementación para mejorar la colaboración y mantener estándares de alta calidad en todos los proyectos del equipo.
 
 ## Objetivos del Laboratorio 
 
-- Ejercicio 1: Configuración de una entidad de servicio 
-- Ejercicio 2: Crear repositorio de GitHub 
-- Ejercicio 3: Exportación y Sucursal 
-- Ejercicio 4: Lanzamiento para probar 
+- Ejercicio 1: Configuración de una entidad de servicio
+- Ejercicio 2: Promover la Solución al Entorno de Pruebas
+- Ejercicio 3: Crear repositorio de GitHub 
+- Ejercicio 4: Exportación y Sucursal 
+- Ejercicio 5: Lanzamiento para probar 
 
 ## Ejercicio 1: Configurar una entidad de servicio
 
@@ -35,9 +36,9 @@ acciones, por lo que no se ejecutan bajo su identidad de usuario individual.
 1. Proporcione los siguientes datos y haga clic en **Registrarse** ***(3)***.
    
    - Nombre: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-   - Tipos de cuenta admitidos: **Las cuentas en este directorio organizativo solamente (OTU WA AIW [SUFFIX] solamente - único inquilino)** ***(2)***
+   - Tipos de cuenta admitidos: **Cuentas solo en este directorio organizacional (OTU WA HOL - xxxxxx only - Single tenant)** ***(2)***.
 
-     ![](images/L05/diad5l3.png).
+     ![](images/L05/diad5l3uup.png)
    
 1. Copie el **ID de la aplicación (cliente)**, el **ID del directorio (inquilino)** y guárdelo en un bloc de notas cuando lo necesite para su uso posterior.
      
@@ -181,8 +182,108 @@ implementar soluciones.
 1. Copie la **URL del entorno** y guárdela en un bloc de notas; utilizará esta URL en pasos futuros.
     
    ![](images/L05/diad5l22u.png)
+
+## Ejercicio 2: Promover la Solución al Entorno de Pruebas
+
+En este ejercicio, exportará la solución del conector Contoso Badges desde el entorno de desarrollo y la importará al entorno de prueba.
+
+### Tarea 1: Exportar la solución.
+
+1. Navegue hasta el portal de creación de Power Apps y asegúrese de estar en su entorno de desarrollo.
+
+     ```
+     https://make.powerapps.com
+     ```
+
+1. Seleccione **Soluciones**.
+
+1. Seleccione la solución del conector **Contoso Badges** y haga clic en **Exportar solución**.
    
-## Ejercicio 2: crear un repositorio de GitHub
+     ![](images/L03/L03-EX4-export.png)
+
+1. En la hoja **Antes de exportar**, haga clic en **Publicar** y espere a que se complete la publicación.
+
+1. Una vez publicada, haga clic en **Siguiente**.
+
+1. Seleccione **Administrado** y haga clic en 
+**Exportar**.
+1. Espere a que se exporte la solución.
+
+1. Haga clic en el botón Descargar en la parte superior derecha de la pantalla. Haga clic en Descargar Solución.
+ 
+    ![](images/L03/SolutionDown1.png)
+
+### Tarea 2: Importar la solución
+
+1. Navegue hasta el portal de creación de Power Apps si aún no está abierto y seleccione su entorno de **Prueba** llamado Azure XXXXXX (predeterminado).
+
+     ```
+     https://make.powerapps.com
+     ```
+
+1. Haga clic en **Importar Solución**.
+    
+     ![](images/L03/L03-EX5.png)
+     
+     >**Nota:** Intente actualizar el navegador si las soluciones no están abiertas.
+
+1. Haga clic en **Explorar**.
+
+1. Seleccione la solución que exportó desde el entorno de desarrollo y haga clic en **Abrir**.
+
+1. Haga clic en **Siguiente**.
+
+1. Haga clic en **Importar** y espere a que se complete la importación.
+
+1. La solución debería importarse correctamente. **No** salga de esta página.
+
+### Tarea 3: Probar el conector
+
+1. Haga clic para abrir la solución que acaba de importar.
+
+1. Haga clic para abrir **Badges connector**.
+  
+    ![](images/L03/image58.png)
+
+    >**Nota**: Si recibe el mensaje de error **could not retrieve the connector data**, espere unos minutos (5 a 10 minutos) para que se actualicen los datos del conector. Si eso no funciona, puede eliminar el conector importado y realizar los **pasos 5 a 10** de la tarea **Tarea 2: Importar solución** nuevamente y luego intente abrir el conector.
+
+1. Haga clic en **Editar**.
+1. Seleccione la pestaña **Probar** en el menú desplegable.
+
+     ![](images/L03/L03-EX5-default.png)
+
+1. Haga clic en **+ Nueva conexión**. Se abrirá una nueva pestaña del navegador para crear una conexión.
+1. Abra una nueva ventana o pestaña del navegador y navegue hasta la siguiente URL para abrir la API Contoso Coffee Badges.
+
+   ```
+   https://contosobadgestest.azurewebsites.net/
+   ```
+
+1. Haga clic en el enlace **Get an API Key**.
+  
+     ![](images/L03/image60.png)
+
+1. Copie el valor de la **API Key**.
+
+1. Vuelva al editor de conectores, pegue la API Key que copió en el paso anterior y haga clic en **Crear conexión**. Ahora, cierre la pestaña del navegador haciendo clic en **X**.
+   
+     ![](images/L03/image61.png)
+
+1. Haga clic en **Actualizar** conexiones.
+     
+      ![](images/L03/image62.png)
+
+1. Vaya a la sección **Operaciones** y seleccione la operación **addcredit**.
+
+1. Proporcione su correo electrónico para **recipientid**, proporcione el **name**, ingrese **1** para **points** y haga clic en **Probar operación**.
+     
+     ![](images/L03/image63u.png)
+
+1. La prueba debería tener éxito y la respuesta debería verse como la imagen a continuación.
+      
+      ![](images/L03/image64u.png)
+
+## Ejercicio 3: crear un repositorio de GitHub
 
 En este ejercicio, creará un repositorio de GitHub y agregará secretos de repositorio.
 
@@ -213,11 +314,11 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
     
      ![](images/L05/Imagessettinguu.png)
 
-1. Vaya a la sección **Seguridad**, expanda **Secretos y variables(1)** y seleccione **Acciones (2)**.
+1. Vaya a la sección **Security (1)**, expanda **Secrets and variables (2)** y seleccione **Actions (3)**.
    
     > **Nota:** Los valores que proporcione no serán visibles después de crear el elemento, así que tómese su tiempo para obtener los valores correctos.
       
-     ![](images/L05/github6u.png)
+     ![](images/L05/actionpermissionuuu-1.png)
    
 1. Haga clic en **Nuevo secreto de repositorio** para agregar un secreto.
 
@@ -241,19 +342,19 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
 1. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
-1. Ingrese **PowerPlatformDevUrl (1)** para Nombre y pegue la **URL del entorno de desarrollo (2)** secreta de su bloc de notas que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 21`** en el campo **Valor** y haga clic en **Agregar secreto (3)**.
+1. Ingrese **PowerPlatformDevUrl (1)** como Nombre y pegue la URL secreta del entorno de desarrollo (2)** de su bloc de notas que copió en **`Ejercicio 1 -> Tarea 3 -> Paso 17`** en el campo **Valor** y haga clic en **Agregar secreto (3)**.
 
-    >**Nota**: asegúrese de pegar la URL del entorno de desarrollo denominada **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** que copió en el **`Ejercicio 1 -> Tarea 3 - > Paso 17`**
+    >**Nota**: Asegúrate de pegar la URL del entorno de desarrollo denominada **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** que copiaste en el **`Ejercicio 1 -> Tarea 3 -> Paso 17`**
    
      ![](images/L05/github11u.png) 
   
 1. Haga clic en **Nuevo secreto del repositorio** una vez más.
 
-1. Ingrese **PowerPlatformTestUrl (1)** para Nombre y pegue la **URL del entorno de prueba (2)** de su bloc de notas que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 18`** en el **Valor** y haga clic en **Agregar secreto (3)**.
+1. Ingrese **PowerPlatformTestUrl (1)** para Nombre y pegue la **URL del entorno de prueba (2)** de su bloc de notas que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 19`** en el **Valor** y haga clic en **Agregar secreto (3)**.
 
-     >**Nota**: Asegúrese de pegar la URL del entorno de prueba denominada **DEV_ENV_TEST** que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 23`**.
+     >**Nota**: Asegúrese de pegar la URL del entorno de prueba denominada **DEV_ENV_TEST** que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 19`**.
  
-     ![](images/L05/L05-testurlu.png)
+     ![](images/L05/L05-testurla.png)
    
 1. Ahora deberías tener **5** secretos del repositorio.
      
@@ -261,7 +362,7 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
 1. No salgas de esta página.
 
-### Ejercicio 3: Exportación y sucursal
+### Ejercicio 4: Exportación y sucursal
 
 En este ejercicio, establecerá una acción de flujo de trabajo y agregará pasos que exportarán la solución desde el entorno de desarrollo y crearán una nueva rama.
 
@@ -289,9 +390,9 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
 
    ![](images/L05/Images202uuu.png)
 
-1. Vaya a la pestaña **Acciones(1)** en el lado izquierdo y luego seleccione **General(2)**.
+1. Haga clic en **Settings (1)**, vaya a la pestaña **Actions (2)** en el lado izquierdo, luego seleccione **General (3)**.
 
-   ![](images/L05/actionpermissionuuu.png)
+   ![](images/L05/github6u-1.png)
 
 1. En la sección **Permiso de flujo de trabajo**, asegúrese de que esté seleccionado **permiso de lectura y escritura** y luego haga clic en **guardar**.
 
@@ -309,11 +410,11 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
       
    ![](images/L05/Images2028u.png)
    
-1. Seleccione la pestaña **Código** ***(1)*** y haga clic en **Sucursales** ***(2)***. Deberías ver dos ramas.
+1. Seleccione la pestaña **Code** ***(1)*** y haga clic en **Branches** ***(2)***. Debería ver dos ramas.
    
-   ![](images/L05/diad5l29u.png)
+   ![](images/L05/diad5l29u-1.png)
    
-1. Haga clic para abrir la rama creada por la acción del flujo de trabajo denominada Prioritz-XXXXXXX.
+1. Haga clic para abrir la rama que se creó mediante la acción de flujo de trabajo denominada Prioritz-XXXXXXXX-XXXX.
    
    ![](images/L05/changesbranchu.png)
 
@@ -343,7 +444,7 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
    
      ![](images/L05/prdoneu.png)
 
-### Ejercicio 4: Lanzamiento para prueba
+### Ejercicio 5: Lanzamiento para prueba
 
 En este ejercicio, creará una acción de flujo de trabajo y agregará pasos que lanzarán la solución que
 exportado al entorno de prueba.

@@ -1,6 +1,6 @@
 # Laboratorio 01 - Introducción a Power Apps
 
-## Duración Estimada: 45 minutos
+## Duración Estimada: 40 minutos
 
 Trabajando como parte del equipo de fusión de Prioritz, configurará su entorno de desarrollo de Power Platform. Importará y revisará la solución actual y explorará el estado actual de las aplicaciones, flujos y tablas de Prioritz. También agregará una columna a una tabla y modificará la aplicación para usarla.
 
@@ -52,7 +52,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
      
 1. Navegue hasta la ruta `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` en el explorador de archivos, seleccione el archivo **Prioritz_1_0_0_7.zip** y haga clic en **Abrir**.
 
-1. Asegúrese de que el archivo **Prioritz(1)** esté seleccionado y haga clic en **Siguiente(2)**.
+1. Asegúrese de que el archivo **Prioritz_1_0_0_7.zip(1)** esté seleccionado y haga clic en **Siguiente(2)**.
     
      ![](images/L01/next1.png)
      
@@ -60,7 +60,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. En la sección **Conexiones**, haga clic en el botón de puntos suspensivos **...(1)** junto a **Microsoft Dataverse Priority**.
 
-1. Asegúrese de que el **odl_user(2)** que está utilizando esté seleccionado.
+1. Asegúrese de que el correo electrónico de usuario **<inject key="AzureAdUserEmail"></inject> (2)** que está utilizando esté seleccionado.
 
 1. Haga clic en **Importar(3)**.
 
@@ -144,7 +144,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 ### Tarea 2: Probar las aplicaciones
 
-1. Vuelva a la solución **PrioritZ** haciendo clic en **Flujos en la nube**. Alternativamente, también puede abrir el portal de creación de **Power Apps** utilizando esta URL `https://make.powerapps.com` si aún no está abierto. Asegúrese de que el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** esté seleccionado.
+1. Vuelva a la solución **PrioritZ** haciendo clic en **Flujos en la nube**. Alternativamente, también puede abrir el portal de creación de **Power Apps** utilizando esta URL `https://make.powerapps.com` si aún no está abierto. Asegúrese de que el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> ** esté seleccionado.
        
    ![](images/L01/cloud1u.png)
 
@@ -190,7 +190,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
      
         ![](images/L01/image17u.png)
 
-1. Navegue hasta la ruta C:\LabFiles en el explorador de archivos, seleccione **image.png** y haga clic en abrir.
+1. Navegue hasta la ruta `C:\LabFiles` en el explorador de archivos, seleccione **image.png** y haga clic en abrir.
 
 1. Escriba **Tamale Tuesday** en el campo Choice y haga clic en **add a picture** que se encuentra debajo del campo Choice.
      
@@ -222,7 +222,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. Seleccione **Aplicaciones (1)** en el menú del lado izquierdo de Power Apps e inicie la aplicación **PrioritZ Ask (2)** haciendo clic en el símbolo iniciar.
      
-     ![](images/L01/L01-prioritzasku.png)
+     ![](images/L01/L01-Prioritzasku-1.png)
 
 1. Debería ver una lista de temas. Abra el tema **Change Taco Tuesday to some other food** que creó en los pasos anteriores.
 

@@ -1,6 +1,6 @@
 # Laboratorio 03 - Conector personalizado para API existente
 
-## Duración Estimada: 140 minutos
+## Duración Estimada: 110 minutos
 
 Como parte del equipo de fusión de PrioritZ, configurará un conector personalizado para una API existente. El equipo desea agregar una insignia a la aplicación PrioritZ para dar crédito a los usuarios cuando hayan terminado de clasificar un elemento. El equipo identificó una API existente, pero no tiene un conector de Power Platform.
 
@@ -11,7 +11,6 @@ Como parte del equipo de fusión de PrioritZ, configurará un conector personali
 - Ejercicio 3: Crear Conector Personalizado 
 - Ejercicio 4: Añadir Código Personalizado 
 - Ejercicio 5: Probar Conector Personalizado 
-- Ejercicio 6: Promover la Solución al Entorno de Pruebas
 
 ## Ejercicio 1: Crear Base de Datos en el Entorno Predeterminado
 
@@ -24,17 +23,21 @@ Cuando revise la API, verá que tiene cuatro operaciones y utiliza autenticació
 
 ### Tarea 1: Crear Base de Datos
 
-1. Navegue hasta el portal de creación de Power Apps y seleccione su entorno de **Prueba** llamado Azure XXXXXX (predeterminado).
+1. Navegue al portal de creadores de Power Apps.
 
          https://make.powerapps.com
 
-1. Seleccione **Soluciones** en el menú del lado izquierdo de Power Apps.
+1. Haga clic en **Environment (1)** y seleccione el entorno de desarrollo creado previamente llamado **OTU WA HOL - xxxxxx (default) (2)**.
 
-1. Haga clic en **Crear base de datos** para crear una base de datos de Dataverse.
+     ![](images/L03/db1a.png)
+
+1. Seleccione **Solutions (1)** en el menú del lado izquierdo de Power Apps.
+
+1. Haga clic en **Create a database (2)** para crear una base de datos de Dataverse.
  
     ![](images/L03/db1.png)
 
-1. Deje los campos **Moneda** e **Idioma** en los valores predeterminados y haga clic en **Crear base de datos**.
+1. Seleccione **Currency -> TNDTND** e **Language -> English(1)** y haga clic en **Create my database (2)**.
    
     ![](images/L03/db2.png)
     
@@ -540,106 +543,6 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 1. Ahora debería ver la insignia **Champ**
    
      ![](images/L03/image55.png)
-
-## Ejercicio 6: Promover la Solución al Entorno de Pruebas
-
-En este ejercicio, exportará la solución del conector Contoso Badges desde el entorno de desarrollo y la importará al entorno de prueba.
-
-### Tarea 1: Exportar la solución.
-
-1. Navegue hasta el portal de creación de Power Apps y asegúrese de estar en su entorno de desarrollo.
-
-     ```
-     https://make.powerapps.com
-     ```
-
-1. Seleccione **Soluciones**.
-
-1. Seleccione la solución del conector **Contoso Badges** y haga clic en **Exportar solución**.
-   
-     ![](images/L03/L03-EX4-export.png)
-
-1. En la hoja **Antes de exportar**, haga clic en **Publicar** y espere a que se complete la publicación.
-
-1. Una vez publicada, haga clic en **Siguiente**.
-
-1. Seleccione **Administrado** y haga clic en 
-**Exportar**.
-1. Espere a que se exporte la solución.
-
-1. Haga clic en el botón Descargar en la parte superior derecha de la pantalla. Haga clic en Descargar Solución.
- 
-    ![](images/L03/SolutionDown1.png)
-
-### Tarea 2: Importar la solución
-
-1. Navegue hasta el portal de creación de Power Apps si aún no está abierto y seleccione su entorno de **Prueba** llamado Azure XXXXXX (predeterminado).
-
-     ```
-     https://make.powerapps.com
-     ```
-
-1. Haga clic en **Importar Solución**.
-    
-     ![](images/L03/L03-EX5.png)
-     
-     >**Nota:** Intente actualizar el navegador si las soluciones no están abiertas.
-
-1. Haga clic en **Explorar**.
-
-1. Seleccione la solución que exportó desde el entorno de desarrollo y haga clic en **Abrir**.
-
-1. Haga clic en **Siguiente**.
-
-1. Haga clic en **Importar** y espere a que se complete la importación.
-
-1. La solución debería importarse correctamente. **No** salga de esta página.
-
-### Tarea 3: Probar el conector
-
-1. Haga clic para abrir la solución que acaba de importar.
-
-1. Haga clic para abrir **Badges connector**.
-  
-    ![](images/L03/image58.png)
-
-    >**Nota**: Si recibe el mensaje de error **could not retrieve the connector data**, espere unos minutos (5 a 10 minutos) para que se actualicen los datos del conector. Si eso no funciona, puede eliminar el conector importado y realizar los **pasos 5 a 10** de la tarea **Tarea 2: Importar solución** nuevamente y luego intente abrir el conector.
-
-1. Haga clic en **Editar**.
-1. Seleccione la pestaña **Probar** en el menú desplegable.
-
-     ![](images/L03/L03-EX5-default.png)
-
-1. Haga clic en **+ Nueva conexión**. Se abrirá una nueva pestaña del navegador para crear una conexión.
-1. Abra una nueva ventana o pestaña del navegador y navegue hasta la siguiente URL para abrir la API Contoso Coffee Badges.
-
-   ```
-   https://contosobadgestest.azurewebsites.net/
-   ```
-
-1. Haga clic en el enlace **Get an API Key**.
-  
-     ![](images/L03/image60.png)
-
-1. Copie el valor de la **API Key**.
-
-1. Vuelva al editor de conectores, pegue la API Key que copió en el paso anterior y haga clic en **Crear conexión**. Ahora, cierre la pestaña del navegador haciendo clic en **X**.
-   
-     ![](images/L03/image61.png)
-
-1. Haga clic en **Actualizar** conexiones.
-     
-      ![](images/L03/image62.png)
-
-1. Vaya a la sección **Operaciones** y seleccione la operación **addcredit**.
-
-1. Proporcione su correo electrónico para **recipientid**, proporcione el **name**, ingrese **1** para **points** y haga clic en **Probar operación**.
-     
-     ![](images/L03/image63u.png)
-
-1. La prueba debería tener éxito y la respuesta debería verse como la imagen a continuación.
-      
-      ![](images/L03/image64u.png)
 
 ## Resumen
 
