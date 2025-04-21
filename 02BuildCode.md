@@ -676,7 +676,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     'Votes gallery'.TemplateHeight
     ```
 
-27. Select the **BackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"#A70202"**
+27. Select the **BackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"#35A393"**
     
 28. Select the **DragBackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"LightBlue"**
 
