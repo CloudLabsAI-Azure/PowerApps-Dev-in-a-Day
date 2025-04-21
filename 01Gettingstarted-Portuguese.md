@@ -1,6 +1,6 @@
 # Laboratório 01 - Introdução ao Powerapps
 
-### Duração: 45 minutos
+### Duração: 40 minutos
 
 Trabalhando como parte da equipe de fusão do Prioritz, você configurará seu ambiente de desenvolvimento do Power Platform. Você importará e revisará a solução atual e explorará o estado atual dos aplicativos, fluxos e tabelas do Prioritz. Você também adicionará uma coluna a uma tabela e modificará o aplicativo para usá-la.
 
@@ -36,7 +36,41 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
       ![](/images/L01/portalsignin-2.png)
 
-1. Clique em **Perguntar mais tarde** se o pop-up "Ação necessária" aparecer.
+1. Clique em **Perguntar Depois** se a janela pop-up "Ação Necessária" aparecer.
+
+   >**Observação:** Se a opção **Perguntar Depois** **não** estiver disponível, siga os Passos 5 a 14. Caso contrário, prossiga para o **Passo 15**.
+
+1. Na página **Comece por obter a aplicação**, clique em **Seguinte**.
+
+1. Clique em **Seguinte** duas vezes.
+
+1. No **Android**, aceda à Play Store e pesquise por **Microsoft Authenticator** e toque em **Instalar**.
+
+    ![](images/L01/mobile.jpg)
+
+   > **Nota:** Para iOS, abra a loja de aplicações e repita os passos.
+
+   > **Nota:** Ignore se já estiver instalado.
+
+1. Abra a aplicação e toque em **Escanear um código QR**.
+
+1. Digitalize o código QR visível no ecrã e clique em **Seguinte**.
+
+   ![](images/L01/demo001.png)
+
+1. Introduza o dígito apresentado no ecrã do aplicativo Autenticador no telemóvel e toque em **Sim**.
+
+1. Após a notificação ser aprovada, clique em **Seguinte**.
+
+    ![](images/L01/demo002.png)
+
+1. Clique em **Concluído**.
+
+1. Se lhe for pedido para permanecer ligado, pode clicar em **"Não"**.
+
+1. Toque em **Concluir** no dispositivo móvel.
+
+   > **NOTA:** Quando voltar a iniciar sessão, insira os dígitos apresentados no ecrã na **aplicação Autenticador** e clique em Sim.
 
 1. Se for apresentado com **Help us protect your account**, clique em **Skip for now**.
 
@@ -58,29 +92,19 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Navegue para este caminho `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` no ficheiro explorer, seleccione o ficheiro **Prioritz_1_0_0_0_7.zip** e clique em **Open**.
 
-1. Certifique-se de que o ficheiro **Prioritz (1)** está selecionado e Clique em **Next (2)**.
+1. Certifique-se de que o ficheiro **Prioritz_1_0_0_7. zip(1)** está selecionado e clique em **Next (2)**.
 
    ![](images/L01/next.png)
 
-1. Clique novamente em **Next** no separador da solução de importação.
+1. Clique novamente em **Next** na lâmina da solução de importação.
 
-1. Clique em **select a connection** e selecione **+ New connection**.
+1. Na secção **Connections**, clique no botão de reticências **...(1)** junto a **Microsoft Dataverse Priority**.
+
+1. Certifique-se de que o e-mail do utilizador **<inject key="AzureAdUserEmail"></inject> (2)** que está a utilizar está seleccionado.
+
+1. Clique em **Import (3)**.
 
    ![](images/L01/connection.png)
-
-1. Clique em **Create** numa janela de browser recém-aberta e **Sign In**.
-
-   ![](images/L01/create.png)
-
-1. Feche a janela do navegador de ligação ou o separador.
-
-1. Clique em **Refresh**.
-
-   ![](images/L01/refresh.png)
-
-1. Verifique a ligação e clique no botão **Import** para importar a solução.
-
-   ![](images/L01/import.png)
 
 1. Aguarde até que a importação da solução seja concluída.
 
@@ -159,7 +183,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 ### Tarefa 2: Teste as aplicações
 
-1. Navegue de volta para a solução **PrioritZ** clicando em **Cloud flows**. Em alternativa, também pode abrir o portal do fabricante **Power Apps** utilizando este URL `https://make.powerapps.com` se ainda não está aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** é selecionado.
+1. Navegue de volta para a solução **PrioritZ** clicando em **Cloud flows**. Em alternativa, também pode abrir o portal do fabricante **Power Apps** utilizando este URL `https://make.powerapps.com` se ainda não está aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** é selecionado.
 
    ![](images/L01/cloud1.png)
 
@@ -207,7 +231,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
       ![](images/L01/image17.png)
 
-1. Navegue para este caminho C:\LabFiles no explorador de ficheiros, seleccione **image.png** e clique em abrir.
+1. Navegue para este caminho `C:\LabFiles` no explorador de ficheiros, seleccione **image.png** e clique em abrir.
 
 12. Introduza **Tamale Tuesday** no campo Choice e clique em **add a picture** que está presente abaixo do campo Choice.
 
@@ -237,9 +261,9 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 18. Feche a aplicação PrioritZ Admin fechando o separador do navegador no qual a aplicação PrioritZ Admin está aberta.
 
-19. Selecione **Apps (1)** do menu do lado esquerdo do Power Apps e inicie a aplicação **PrioritZ Ask (2)**.
+19. Selecione **Apps (1)** no menu do lado esquerdo do Power Apps e inicie a aplicação **Prioritz Ask (2)** clicando no símbolo de reprodução.
 
-    ![](images/L01/L01-prioritzask.png)
+    ![](images/L01/L01-Prioritzasku-1.png)
 
 20. Deve ver uma lista de tópicos. Abra o ***Change Taco Tuesday to some other food** que criou nos passos anteriores.
 
