@@ -1,0 +1,76 @@
+name: release-to-test-env
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  release:
+    types: [created]
+
+env:
+  solution_name: Prioritz
+  solution_source_folder: solutions
+  solution_outbound_folder: out/solutions
+  solution_release_folder: out/release
+
+jobs:
+  convert-to-managed:
+    runs-on: windows-latest
+    timeout-minutes: 30  # ⏱️ Increase job timeout to 30 minutes
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Install Power Platform Tools
+        uses: microsoft/powerplatform-actions/actions-install@v1
+
+      - name: Pack Managed Solution
+        uses: microsoft/powerplatform-actions/pack-solution@v1
+        with:
+          solution-folder: ${{ env.solution_source_folder }}/${{ env.solution_name }}
+          solution-file: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}_managed.zip
+          solution-type: Managed
+
+      - name: Pack Unmanaged Solution
+        uses: microsoft/powerplatform-actions/pack-solution@v1
+        with:
+          solution-folder: ${{ env.solution_source_folder }}/${{ env.solution_name }}
+          solution-file: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}_unmanaged.zip
+          solution-type: Unmanaged
+
+      - name: Upload Managed Solution as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: managedSolutions
+          path: ${{ env.solution_outbound_folder }}/${{ env.solution_name }}_managed.zip
+
+  release-to-staging:
+    needs: [convert-to-managed]
+    runs-on: windows-latest
+    timeout-minutes: 30  # ⏱️ Increase job timeout to 30 minutes
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Install Power Platform Tools
+        uses: microsoft/powerplatform-actions/actions-install@v1
+
+      - name: Download Managed Solution Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: managedSolutions
+          path: ${{ env.solution_release_folder }}
+
+      - name: Import Solution to Test Environment
+        uses: microsoft/powerplatform-actions/import-solution@v1
+        with:
+          environment-url: ${{ secrets.PowerPlatformTestUrl }}
+          user-name: ${{ secrets.PowerPlatformAppID }}
+          password-secret: ${{ secrets.PowerPlatformClientSecret }}
+          solution-file: ${{ env.solution_release_folder }}/${{ env.solution_name }}_managed.zip
+          run-asynchronously: true
