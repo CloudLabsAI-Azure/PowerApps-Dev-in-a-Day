@@ -2,7 +2,7 @@
 
 ## Estimated Duration: 110 minutes
 
-Working as part of the PrioritZ fusion team you will be configuring a custom connector for an existing API. The team would like to add badging to the PrioritZ application to give credit to users when they have completed ranking an item. The team identified an existing API, but it doesn't have a Power Platform connector.
+In this lab, you will configure a custom connector for an existing API to add a badging feature to the PrioritZ application, allowing users to receive credit when they complete ranking an item. You will begin by creating a Dataverse database and a new solution, then build a custom connector using an Open API definition. After modifying and testing the connector, you will add custom code to enhance its functionality and test it again. Finally, you will integrate the connector with both a canvas app and a flow, enabling the PrioritZ app to display user badges and update them based on user actions. Through these exercises, you will gain hands-on experience in creating, customizing, and using custom connectors within the Power Platform.
 
 ## Lab Objectives
 
