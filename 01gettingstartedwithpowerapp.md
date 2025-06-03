@@ -86,13 +86,17 @@ In this exercise, you will import the current solution into the pre-created dev 
     
      ![](images/L01/browse1.png)
      
-1. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` in file explorer , select the **Prioritz_1_0_0_7.zip** file, and click **Open**.
+1. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` **(1)** in file explorer , select the **Prioritz_1_0_0_7.zip** **(2)** file, and click **Open (3)**.
+
+    ![](images/L01/next1-2.png)
 
 1. Make sure the **Prioritz_1_0_0_7.zip(1)** file is selected and Click **Next(2)**.
     
-     ![](images/L01/next1.png)
+    ![](images/L01/next1-1.png)
      
 1. Click **Next** again on the import solution blade.
+
+    ![](images/L01/next1-3.png)
 
 1. Under the **Connections** section, click on the ellipsis button **...(1)** next to **Microsoft Dataverse Priority**.
 
@@ -120,9 +124,9 @@ In this exercise, you will import the current solution into the pre-created dev 
  
    ![](images/L01/L01-coulumn.png)
 
-6. Select the **Relationships** tab from the Columns dropdown and review how this table is related to other tables.
+6. From the **Columns (1)** dropdown, select the **Relationships (2)** tab  and review how this table is related to other tables.
  
-    ![](images/L01/L01-relation.png)
+    ![](images/L01/L01-relation-1.png)
  
     ![](images/L01/L01-relation1.png)
 
@@ -132,11 +136,11 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 9. Click on **Edit** button to review the flow.
   
-    ![](images/L01/edit21.png)
+    ![](images/L01/edit21-1.png)
 
 10. Expand the **Parse JSON** step and review the data this flow will create.
 
-    ![](images/L01/L01-parse1.png)
+    ![](images/L01/L01-parse1-1.png)
     
     >**Note**:If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
     
@@ -164,7 +168,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 17. Click on **Run** to run the flow.
    
-     ![](images/L01/image131.png)
+     ![](images/L01/image131-1.png)
 
 18. Click the **Run flow** button on the Run flow blade.
 
@@ -185,7 +189,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. Navigate back to **Prioritz** solution by clicking on **Cloud flows**. Alternatively, you can also open the **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
        
-   ![](images/L01/cloud1u.png)
+   ![](images/L01/cloud1u-1.png)
 
    >**Note:** If a **Welcome to Power Apps Studio** pop-up appears, simply click **Skip** to proceed.
 
@@ -231,7 +235,9 @@ In this exercise, you will import the current solution into the pre-created dev 
      
        ![](images/L01/image17u.png)
 
-11. Navigate to this path **C:\LabFiles** in file explorer, select **image.png** and click open.
+11. Navigate to this path **C:\LabFiles (1)** in file explorer, select **image.png (2)** and click **Open (3)**.
+
+    ![](images/L01/image17u-1n.png)
 
 12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below the Choice field. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
      
@@ -296,7 +302,7 @@ application.
    ```
 2. Select **Solutions (1)** from the left-hand side menu of Power Apps and open the **Prioritz (2)** solution.
 
-   ![](images/L01/EX2-T1-2-1u.png)
+   ![](images/L01/EX2-T1-2-1u-1.png)
 
 3. Expand **Tables(1)** and select the **Prioritz Topic(2)** table.
 
@@ -328,7 +334,7 @@ application.
 
 3. Click **+ Insert(2)** and select **Text input(3)**.
    
-     ![](images/L01/tinputu.png)
+     ![](images/L01/tinputu-1.png)
 
    >**Note**: If you can't find the Insert button, click the ellipsis **(...)** in the upper-left corner.
      
@@ -348,7 +354,7 @@ application.
 
     ![](images/hintextua.png)
 
-7. Change the **HintText** value of the Notes textbox to the below value. 
+7. Change the **HintText** value of the Notes textbox to the below value. The value should be inside double quotes. 
 
     ```
     My notes
@@ -380,9 +386,9 @@ application.
 
      >**Note**: If you can't find the Insert button, click the ellipsis **(...)** in the upper-left corner.
      
-12. Click **+ Insert(2)** tab and select **Text label(3)**.
+12. Click **+ Insert (2)** tab and select **Text label (3)**.
 
-    ![](images/L01/tlabelu.png)
+    ![](images/L01/tlabelu-1.png)
 
 13. Double-click on the newly added label and enter the below value to rename the label you just added.
 
@@ -400,7 +406,7 @@ application.
 
 15. Rearrange the controls so that the **Notes label** is positioned between the Details label and the Topic items gallery.
 
-    ![](images/L01/noteslabel.png)
+    ![](images/L01/noteslabel-1.png)
 
 16. Select the **Home Screen(1)** and click **Preview the app(2)**.
       
@@ -424,7 +430,9 @@ application.
      
       ![](images/L01/image18uu.png)
 
-21. Navigate to this path `C:\LabFiles` in File Explorer, select **image.png** and click open.
+21. Navigate to this path `C:\LabFiles` **(1)** in File Explorer, select **image.png (2)** and click **Open (3)**.
+
+    ![](images/L01/image17u-1n.png)
 
 22. Click **+** to add the choice.
      
@@ -470,11 +478,13 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
 2. Click to open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
+    ![](images/L01/image37u-2.png)
+
 3. Right-click on the **Environment URL**, copy the value, and paste it into Notepad.
  
     >**Note**: Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
 
-    ![](images/L01/image37u.png)
+    ![](images/L01/image37u-1.png)
 
 4. In the JumpVM, start **Visual Studio Code** using the shortcut available on the desktop.
 
