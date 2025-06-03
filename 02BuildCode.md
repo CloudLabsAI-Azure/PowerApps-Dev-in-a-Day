@@ -2,17 +2,7 @@
 
 ## Estimated Duration: 90 minutes
 
-Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build a code component using the React JavaScript framework. A code component approach is used to address the requirement because there isn’t a similar control already built in.
-
-You have collaborated with the app makers to identify the following properties to allow them to configure the code component in the app:
-
-- BackgroundColor
-- DragBackgroundColor
-- ItemHeight
-- FontSize
-- FontColor
-
-The PrioritZ Ask app will prepare a collection of the items to rank that will be bound as the dataset for the code component. When an item is dragged and dropped the code component will raise an OnSelect event that will be handled by the hosting app. The hosting app will update the collection items with their new rank. The code component will be stateless.
+In this lab, you will build a custom code component using the React JavaScript framework to enable drag-and-drop priority ranking of items in the PrioritZ Ask Power App. You will start by creating and configuring the code component, then implement its logic and test it locally. Next, you will integrate the component into the PrioritZ Ask canvas app, allowing users to reorder items visually. Finally, you will add the completed code component to the PrioritZ solution, ensuring it is available for use within your Power Platform environment. By completing these exercises, you will gain practical experience in developing, deploying, and using custom code components in Power Apps.
 
 ## Lab Objectives
 
