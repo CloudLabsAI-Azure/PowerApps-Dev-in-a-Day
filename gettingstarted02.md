@@ -51,7 +51,7 @@ Welcome to your Low Code Development with Power Apps & Power Automate workshop! 
  
 Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
 
-![](./images/GS6.png)
+![](./images/GS6-1.png)
 
 ### Virtual Machine & Lab Guide
  
@@ -61,7 +61,7 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
-![](./images/GS20.png)
+![](./images/GS20-1.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
@@ -73,13 +73,13 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![](./images/GS8.png)
+![](./images/GS8-1.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![](./images/GS5.png)
+![](./images/GS5-1.png)
 
 ## Let's Get Started with Azure Portal
  
@@ -99,7 +99,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
      ![](./images/GS3.png "Enter Password")
 
-1. If you see the pop-up Action Required, click Ask Later.
+1. If you see the pop-up Action Required, click **Ask Later**.
 
    ![](./images/asklater.png)
 
@@ -127,13 +127,6 @@ Learner Support Contacts:
 
 Now, click on the **Next** from the lower right corner to move to the next page.
 
-![](./images/GS4.png)
+![](./images/GS4-1.png)
 
 ## Happy Learning!!
-
-
-
-
-
-
- 

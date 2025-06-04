@@ -2,17 +2,7 @@
 
 ## Estimated Duration: 90 minutes
 
-Working as part of the PrioritZ fusion team you have been asked to create a Power Apps code component to allow drag and drop priority ranking of items in the PrioritZ Ask Power App. You will build a code component using the React JavaScript framework. A code component approach is used to address the requirement because there isn’t a similar control already built in.
-
-You have collaborated with the app makers to identify the following properties to allow them to configure the code component in the app:
-
-- BackgroundColor
-- DragBackgroundColor
-- ItemHeight
-- FontSize
-- FontColor
-
-The PrioritZ Ask app will prepare a collection of the items to rank that will be bound as the dataset for the code component. When an item is dragged and dropped the code component will raise an OnSelect event that will be handled by the hosting app. The hosting app will update the collection items with their new rank. The code component will be stateless.
+In this lab, you will build a custom code component using the React JavaScript framework to enable drag-and-drop priority ranking of items in the PrioritZ Ask Power App. You will start by creating and configuring the code component, then implement its logic and test it locally. Next, you will integrate the component into the PrioritZ Ask canvas app, allowing users to reorder items visually. Finally, you will add the completed code component to the PrioritZ solution, ensuring it is available for use within your Power Platform environment. By completing these exercises, you will gain practical experience in developing, deploying, and using custom code components in Power Apps.
 
 ## Lab Objectives
 
@@ -177,9 +167,9 @@ In this exercise, you will build the code component.
 
 ### Task 2: Implement the component logic
 
-1. Select the **HelloWorld.tsx** component file, right-click on it and select **Delete** to remove the component file as it is automatically created and we won’t be using it. 
+1. Select the **HelloWorld.tsx (1)** component file, right-click on it and select **Delete (2)** to remove the component file as it is automatically created and we won’t be using it. 
      
-     ![](images/L02/L02-EX1-T2-1.png)
+     ![](images/L02/L02-EX1-T2-1n.png)
     
 2. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` in file explorer.
     
@@ -262,7 +252,7 @@ In this exercise, you will build the code component.
         
  18. Paste the code below inside the **init** function. This logic initializes our class variables from the runtime values and enables resize notification.    
     
-        ![](images/L02/init1.png)
+        ![](images/L02/init1-1.png)
    
        ```
         this.context = context;
@@ -500,9 +490,9 @@ In this exercise, you will build the code component.
 
     > 3. If the run fails with a Nuget package error, run the below command in PowerShell and try running the above command again.
     
-        ```
-        dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
-        ```
+    ```
+     dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
+    ```
     
 36. Wait for the solution to be imported and published to your environment.
 
@@ -510,24 +500,24 @@ In this exercise, you will build the code component.
  
 ### Task 3: Confirm the control was added to the environment
 
-1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
 
     ```
     https://make.powerapps.com/
     ```
     
-2. Select **Solutions** and open the **PowerAppsTools_contoso** solution.
+2. Select **Solutions (1)** and open the **PowerAppsTools_contoso (2)** solution.
     
-    ![](images/L02/image32u.png)
+    ![](images/L02/image32u-1.png)
 
 3. Click on **All** and Confirm that the custom control is in this solution.
      
-      ![](images/L02/image33u.png)
+    ![](images/L02/image33u.png)
     
- > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
  
 <validation step="aae02cab-a129-491c-b38b-29c66f2f2547" />
 
@@ -547,6 +537,8 @@ In this task, you will allow the publishing of canvas apps with code components 
 
 3. Open the dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** that you are using for this lab.
 
+    ![](images/L02/image37u-2.png)
+
 4. Click **Settings** from top menu.
     
      ![](images/L02/settingsu.png)
@@ -555,7 +547,7 @@ In this task, you will allow the publishing of canvas apps with code components 
     
      ![](images/L02/featureu.png)
 
-6. Turn on **Allow publishing of canvas apps with code components** and Scroll down click **Save**.
+6. Turn on **Allow publishing of canvas apps with code components** which should be under **Power Apps component framework for canvas apps**, Scroll down and click on **Save**.
      
       ![](images/L02/image35.2u.png)
 
@@ -575,18 +567,17 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     
 3. Select **Apps (1)** , select the **PrioritZ Ask (2)** app and click **Edit (3)**.
 
-     ![](images/L02/L2T2S3.png)
+     ![](images/L02/L2T2S3-1.png)
 
-4. Select the **Components** tab, click on the backward arrow  to **Import**
-    **components**.
+4. Select the **Components (1)** tab, click on the backward arrow  to **Import components (2)**.
 
-     ![](images/L02/image38u.png)
+     ![](images/L02/image38u-1.png)
 
    >**Note:** The arrow may be invisible due to a glitch.
  
 5. Select the **Code (1)** tab, select the code component **(2)** you created and click **Import (3)**.
     
-     ![](images/L02/L02-codeuu.png)
+     ![](images/L02/L02-codeuu-1.png)
  
 6. Select the **Screens** tab.
 
@@ -618,7 +609,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
      ![](images/L02/popups.png)    
  
-13. Go to the **Tree view(1)** tab and select the **PrioritZDnDRanking (2)** you just added.
+13. Go to the **Tree view (1)** tab and select the **PrioritZDnDRanking (2)** you just added.
 
     ![](images/L02/popupsa.png) 
 
@@ -630,25 +621,27 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
      ![](images/L02/L02-voteitemu.png)
     
-15. On the **PrioritZDnDRanking**, go to the **Properties** pane that is present at the right side of the screen, set **Item Height** 160 and click **Edit** next.
+15. On the **PrioritZDnDRanking**, go to the **Properties** pane that is present at the right side of the screen, set **Item Height** to **160** **(1)** and click **Edit (2)** next.
 
-      ![](images/L02/image43ua.png)
+      ![](images/L02/image43ua-1.png)
 
     >**Note:** If you can't find the properties on the right side of the screen, click the properties option located next to the edit button in the upper-right corner.
 
       ![](images/L02/pro.png)
        
 17. Click on **+ Add field** to add a new field.
-    
+
+    ![](images/L02/addfield.png)
+
 18. Select **Rank (1)** and click on **Add (2)**.
      
       ![](images/L02/image44.1uu.png)
  
 19. The rank should now show on the control, but it is sorted descending.
       
-20. Go to tree view, select the **Vote Screen** then **Votes gallery**, then select the **Items** property from the property dropdown and change the sort order to **Ascending**.
+20. Go to **Tree view**, select the **Vote Screen** then **Votes gallery (1)**, then select the **Items (2)** property from the property dropdown and change the sort order to **Ascending (3)**.
      
-      ![](images/L02/image46.png)
+      ![](images/L02/image46-1.png)
  
 21. The rank should now get sorted ascending.
 
@@ -759,14 +752,16 @@ In this exercise, you will add the code component you created to the PrioritZ so
 
 ### Task 1: Add the component to the solution
 
-1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
 
    ```
     https://make.powerapps.com/
     ```
 
-2. Select **Solutions** and open the **PrioritZ** solution.
-   
+2. Select **Solutions (1)** and open the **PrioritZ (2)** solution.
+
+    ![](images/L02/Prioritz-select.png)
+
 3. Click **Add existing** and select **More (1) | Developer (2) | Custom control (3)**.
       
       ![](images/L02/image50.1.png)
