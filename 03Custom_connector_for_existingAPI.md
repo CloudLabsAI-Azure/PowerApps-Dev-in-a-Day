@@ -26,9 +26,9 @@ When you review the API, you see that it has four operations and uses API key au
 
          https://make.powerapps.com
 
-1. Click on **Environment (1)** and select the pre-created development environment named **OTU WA HOL - xxxxxx (default) (2)**
+1. Click on **Environment (1)** and select the pre-created development environment named **Azure HOL xxxx (default) (2)**
 
-    ![](images/L03/db1a.png)
+    ![](images/L03/db1a-1.png)
 
 2. Select **Solutions (1)** from the left-hand side menu of Power Apps.
 
@@ -63,12 +63,12 @@ In this exercise, you will create a solution for the Contoso Badges custom conne
    
    ![](images/L03/image2-1.png)
 
- > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
  
-   <validation step="2be455a2-0037-48b9-83b9-d3efb66743e9" />
+<validation step="2be455a2-0037-48b9-83b9-d3efb66743e9" />
 
 ## Exercise 3 – Create Custom Connector
 
@@ -94,17 +94,19 @@ In this exercise, you will create a custom connector from an existing API.
 
    >**Note:** If you're having trouble saving the file, copy the code and paste it into Notepad, then save the file as **swagger.json**.
 
-5. Navigate to the Power Apps  maker portal and make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
+5. Navigate to the Power Apps maker portal and select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
 
          https://make.powerapps.com
 
+    ![](images/L03/dev11.png)
+
 6. Select **Solutions (1)** open the **Contoso Badges connector (2)** solution you created.
 
-     ![](images/L03/L03-contoso.png)
+     ![](images/L03/L03-contoso-1.png)
 
 7. Click **+ New (1) | Automation (2)** and select **Custom connector (3)**.
      
-     ![](images/L03/image5-1.png)
+     ![](images/L03/image5-1n.png)
 
 8. Enter the following information on the **Create Connector** blade.
 
@@ -172,11 +174,11 @@ In this exercise, you will create a custom connector from an existing API.
 
      ![](images/L03/L03-name.png)
 
-9. Select **Yes** for Is required and click on the  **Back** button.
+9. Select **Yes** for Is required and click on the **Back** button.
 
      ![](images/L03/image13.png)
 
-10. Click on the **Back** button again.
+10. Verify that all 3 payload are displaying `*` on them and Click on the **Back** button again.
 
       ![](images/L03/image14.png)
 
@@ -249,11 +251,11 @@ In this exercise, you will create a custom connector from an existing API.
      ![](images/L03/image23.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
  
-   <validation step="e9892770-5284-40d8-a6a1-28f85d7e051f" />
+<validation step="e9892770-5284-40d8-a6a1-28f85d7e051f" />
 
 ## Exercise 4 – Add Custom Code
 
@@ -262,11 +264,13 @@ You will do this by using the custom code feature to reshape the response from t
 
 ### Task 1: Add code from the resource folder
 
-1. Navigate to Power Automate using the below URL.
+1. Open a new browser tab and navigate to the Power Automate using the below URL. Select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
           
    ```
    https://make.powerautomate.com
    ```
+
+     ![](images/L03/L03-select-dev-env.png)
 
 2. Click on **More (1)** and select **Discover All (2)**.
 
@@ -312,7 +316,9 @@ You will do this by using the custom code feature to reshape the response from t
     
      ![](images/L03/image29-1.png)
 
-13. Select the **CustomConnectorCode.csx** file located in this path `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` and click **Open**.
+13. Navigate to `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` **(1)**, Select the **CustomConnectorCode.csx (2)** file located in this path and click **Open (3)**.
+
+     ![](images/L03/L03-customconnectorcode.png)
 
 14. Select the **getcurrentbadge** action from the dropdown.
      
@@ -380,13 +386,17 @@ In this exercise, you will test the custom connector you created using a flow an
 
 In this task, you will use the custom connector you created to show the user’s current badge on the PrioritZ Ask canvas application.
 
-1. Navigate to the **Power Apps** maker portal using the below URL if not already open and make sure you are in your dev environment.
+1. Open a new browser tab and navigate to the **Power Apps** maker portal using the below URL if not already open and select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
 
    ```
    https://make.powerapps.com
    ```
 
-2. Expand **Solutions** and open the **PrioritZ** solution.
+    ![](images/L03/dev11.png)
+
+2. Expand **Solutions (1)** and open the **PrioritZ (2)** solution.
+
+     ![](images/L03/Prioritz-select.png)
 
 3. Select **Apps (1)** , select the **PrioritZ Ask (2)** application, and click **Edit (3)**.
  
@@ -409,8 +419,7 @@ In this task, you will use the custom connector you created to show the user’s
 7. Open a new browser tab or window and navigate to the below URL to open the Contoso Coffee Badge API.
     
     ```
-    https://contosobadgestest.azurewebsites.net/
- 
+    https://contosobadgestest.azurewebsites.net/ 
     ```
     
 8. Click on the **open the API Key** link
@@ -470,7 +479,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 23. Select **Publish this version**.
 
-24. Go back to the solution by clicking on the  **Back** button.
+24. Go back to the solution by clicking on the **Back** button.
      
       ![](images/L03/imagee47.png)
 
@@ -488,7 +497,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 3. Enter **Test add credit (1)** for flow name, select **Manually trigger a flow (2)** , and click **Create (3)**.
      
-    ![](images/L02/ep4.png)
+    ![](images/L03/ep4-1.png)
 
     >**Note**: If you cannot see the **Create** button, click on the **ellipsis** button located in the top right corner of the webpage and adjust the zoom to **90%**.
 
@@ -502,7 +511,7 @@ In this task, you will use the custom connector you created to show the user’s
    
     ![](images/L03/ep5.png)
     
-6. Enter **Test connection** , paste the **API Key** you copied earlier in **step 9** of task1 in this exercise, and click **Create**.
+6. Enter **Test connection** , paste the **API Key** you copied earlier in **step 9** of **task 1** in this exercise, and click **Create**.
   
     ![](images/L03/edd%20(3).png)
 
