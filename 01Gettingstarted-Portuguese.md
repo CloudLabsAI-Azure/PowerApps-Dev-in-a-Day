@@ -28,7 +28,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    - E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
 
-      ![](/images/L01/Email2.png)
+![](/images/L01/Email2.png)
 
 1. Introduza agora a seguinte palavra-passe **(1)** e clique em **Sign in** **(2)**.
 
