@@ -26,15 +26,15 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Na janela **Sign in**, verá o ecrã de login, introduza o seguinte nome de utilizador **(1)** e clique em **Next** **(2)**.
 
-   * E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
+   - E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
 
-      ![](/images/L01/portalsignin-1.png)
+      ![](/images/L01/Email2.png)
 
 1. Introduza agora a seguinte palavra-passe **(1)** e clique em **Sign in** **(2)**.
 
-   * Palavra-passe: <inject key="AzureAdUserPassword"></inject>
+   - Palavra-passe: <inject key="AzureAdUserPassword"></inject>
 
-      ![](/images/L01/portalsignin-2.png)
+      ![](/images/L01/Password2.png)
 
 1. Clique em **Perguntar Depois** se a janela pop-up "Ação Necessária" aparecer.
 
