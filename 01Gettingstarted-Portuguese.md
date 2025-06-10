@@ -28,7 +28,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    - E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
 
-![](/images/L01/Email2.png)
+      ![](/images/L01/Email2.png)
 
 1. Introduza agora a seguinte palavra-passe **(1)** e clique em **Sign in** **(2)**.
 
@@ -74,27 +74,27 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Se for apresentado com **Help us protect your account**, clique em **Skip for now**.
 
-   ![](/images/L01/portalsignin-3.png)
+   ![](/images/L01/HelpProtect.png)
 
 1. Se vir o pop-up **Stay Signed in?**, clique em **Não**.
 
 1. Depois de logado, clique em **Environment (1)** e seleccione o ambiente de desenvolvimento pré-criado denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
 
-    ![](images/L01/dev11.png)
+    ![](images/L01/DevEnv.png)
 
 2. Agora, clique em **Solutions (1)** do menu do lado esquerdo e clique em **Import Solution (2)**.
 
-   ![](images/L01/importsolution.png)
+   ![](images/L01/L1-T1-S16.png)
 
 3. Clique em **Browse**.
 
-   ![](images/L01/browse.png)
+   ![](images/L01/L1-T1-S17.png)
 
 1. Navegue para este caminho `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` no ficheiro explorer, seleccione o ficheiro **Prioritz_1_0_0_0_7.zip** e clique em **Open**.
 
 1. Certifique-se de que o ficheiro **Prioritz_1_0_0_7. zip(1)** está selecionado e clique em **Next (2)**.
 
-   ![](images/L01/next.png)
+   ![](images/L01/L1-T1-S18.png)
 
 1. Clique novamente em **Next** na lâmina da solução de importação.
 
@@ -104,11 +104,11 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Clique em **Import (3)**.
 
-   ![](images/L01/connection.png)
+   ![](images/L01/L1-T1-S19.png)
 
 1. Aguarde até que a importação da solução seja concluída.
 
-   ![](images/L01/solutionsuccess.png)
+   ![](images/L01/L1-T1-S20.png)
 
 1. Agora deve ver a solução que importa na lista de soluções.
 
@@ -116,51 +116,51 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 4. Expandir **Tables (1)** e seleccione a tabela **PrioritZ Topic (2)**.
 
-   ![](images/L01/L01-table1.png)
+   ![](images/L01/L1-T1-S21.png)
 
 5. Selecione as **Columns** em Schema e reveja as colunas da tabela **PrioritZ Topic**.
 
    >**Info**: As colunas padrão estão integradas e todas as tabelas têm-nas. As colunas personalizadas foram criadas pela equipa para esta aplicação.
 
-   ![](images/L01/L01-coulumn.png)
+   ![](images/L01/L1-T1-S22.png)
 
 6. Selecione o separador **Relationships** do menu suspenso das Colunas e reveja como esta tabela está relacionada com outras tabelas.
 
-   ![](images/L01/L01-relation.png)
+   ![](images/L01/L1-T1-S23.png)
 
-   ![](images/L01/L01-relation1.png)
+   ![](images/L01/L1-T1-S24.png)
 
 1. Selecione **Cloud flow (1)** e abra os **Import sample data – Topics (2)** fluxo.
 
-   ![](images/L01/L01-cloud.png)
+   ![](images/L01/L1-T1-S25.png)
 
 9. Clique no botão **Edit** para rever o fluxo.
 
-   ![](images/L01/edit2.png)
+   ![](images/L01/L1-T1-S26.png)
 
 10. Expandir o passo **Parse JSON** e reveja os dados que este fluxo criará.
 
-   ![](images/L01/L01-parse.png)
+    ![](images/L01/L1-T1-S27.png)
 
 11. Expandir o passo **Apply to each topic**.
 
-   ![](images/L01/L01-topic.png)
+    ![](images/L01/L1-T1-S28.png)
 
 12. Expandir o passo **Apply to each topic item**.
 
-   ![](images/L01/L01-eachtopic.png)
+    ![](images/L01/L1-T1-S29.png)
 
 13. O **Apply to each** deve parecer a image abaixo. Esta é a lógica da automatização.
 
-      ![](images/L01/image11.png)
+    ![](images/L01/L1-T1-S30.png)
 
 14. Clique no botão **<- back**.
 
-      ![](images/L01/image12.png)
+    ![](images/L01/L1-T1-S31.png)
 
 15. Clique no nome do fluxo para abrir o ecrã de detalhes do fluxo.
 
-      ![](images/L01/EX1-T1-14.png)
+    ![](images/L01/EX1-T1-32.png)
 
 16. Clique em **Run** para executar o fluxo.
 
