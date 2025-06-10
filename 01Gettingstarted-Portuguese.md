@@ -28,13 +28,13 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    - E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
 
-     ![](/images/L01/Email2.png) Changessss
+      ![](/images/L01/Email2.png)
 
 1. Introduza agora a seguinte palavra-passe **(1)** e clique em **Sign in** **(2)**.
 
    - Palavra-passe: <inject key="AzureAdUserPassword"></inject>
 
-     ![](/images/L01/Password2.png)
+      ![](/images/L01/Password2.png)
 
 1. Clique em **Perguntar Depois** se a janela pop-up "Ação Necessária" aparecer.
 
@@ -74,7 +74,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Se for apresentado com **Help us protect your account**, clique em **Skip for now**.
 
-    ![](/images/L01/portalsignin-3.png)
+   ![](/images/L01/portalsignin-3.png)
 
 1. Se vir o pop-up **Stay Signed in?**, clique em **Não**.
 
