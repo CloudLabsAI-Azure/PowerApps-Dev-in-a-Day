@@ -52,7 +52,7 @@ Bem-vindo ao seu programador num workshop de um dia! Preparámos um ambiente per
 
 Quando estiver pronto para começar, a sua máquina virtual e o **Guia de laboratório** estarão ao seu alcance no navegador Web.
 
-![](./images/GS6a1.png)
+![](./images/LabVM.png)
 
 ### Máquina Virtual e Guia de Laboratório
 
@@ -64,13 +64,13 @@ No ambiente integrado, a VM do laboratório serve como o espaço de trabalho des
 
 Para melhor compreender os seus recursos e credenciais de laboratório, navegue até ao separador **Detalhes do ambiente**.
 
-![](./images/GS20a.png)
+![](./images/EnvDetails.png)
 
 ## Utilizando o recurso de janela dividida
 
 Por conveniência, pode abrir o guia de laboratório numa janela separada, selecionando o botão **Dividir janela** no canto superior direito.
 
-![](./images/GS8a.png)
+![](./images/SplitWindow.png)
 
 ## Guia de laboratório Ampliar/Reduzir
 
@@ -82,7 +82,7 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 
 
 Sinta-se à vontade para iniciar, parar ou reiniciar a sua máquina virtual conforme necessário no separador **Recursos**. A sua experiência está nas suas mãos!
 
-![](./images/GS5a.png)
+![](./images/Resources.png)
 
 ## Vamos começar pelo Portal Azure
 
@@ -94,17 +94,17 @@ Sinta-se à vontade para iniciar, parar ou reiniciar a sua máquina virtual conf
 
     - **E-mail/Nome de utilizador:** <inject key="AzureAdUserEmail"></inject>
 
-      ![](./images/GS2.png "Introduza o e-mail")
+      ![](./images/Email.png)
 
 3. De seguida, forneça a sua palavra-passe:
 
     - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-      ![](./images/GS3.png "Introduza a palavra-passe")
+      ![](./images/Password.png)
 
 4. Se vir o pop-up **Permanecer ligado?**, clique em **Não**.
 
-   ![](./images/GS9.png)
+   ![](./images/StaySigned.png)
 
 5. Se vir o pop-up **Tem recomendações gratuitas do Azure Advisor!**, feche a janela para continuar o laboratório.
 
@@ -124,6 +124,6 @@ Contactos de apoio ao aluno:
 
 Agora, clique em **Seguinte** no canto inferior direito para passar para a página seguinte.
 
-![](./images/GS4a.png)
+![](./images/NextPage.png)
 
 ## Boa aprendizagem!!
