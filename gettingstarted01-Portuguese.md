@@ -94,7 +94,7 @@ Sinta-se à vontade para iniciar, parar ou reiniciar a sua máquina virtual conf
 
     - **E-mail/Nome de utilizador:** <inject key="AzureAdUserEmail"></inject>
 
-      ![](./images/Email.png)
+      ![](./images/EmailID.png)
 
 3. De seguida, forneça a sua palavra-passe:
 
