@@ -160,7 +160,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 15. Clique no nome do fluxo para abrir o ecrã de detalhes do fluxo.
 
-    ![](images/L01/EX1-T1-32.png)
+    ![](images/L01/L1-T1-S32.png)
 
 16. Clique em **Run** para executar o fluxo.
 
