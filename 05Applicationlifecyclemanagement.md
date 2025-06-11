@@ -1,6 +1,6 @@
 # Laboratorio 04 - Gestión del ciclo de vida de las aplicaciones
 
-## Duración Estimada: 110 mins
+## Duración Estimada: 90 mins
 
 Al trabajar como parte del equipo de fusión de PrioritZ, configurará GitHub Actions con Power Platform Build Tools para automatizar y optimizar las implementaciones del equipo. Esto implica configurar canalizaciones de integración continua e implementación continua (CI/CD) para garantizar la entrega fluida y eficiente de actualizaciones a las aplicaciones de Power Platform, al mismo tiempo que administra los procesos de control de versiones, pruebas e implementación para mejorar la colaboración y mantener estándares de alta calidad en todos los proyectos del equipo.
 
@@ -9,7 +9,7 @@ Al trabajar como parte del equipo de fusión de PrioritZ, configurará GitHub Ac
 - Ejercicio 1: Configuración de una entidad de servicio
 - Ejercicio 2: Promover la Solución al Entorno de Pruebas
 - Ejercicio 3: Crear repositorio de GitHub 
-- Ejercicio 4: Exportación y Sucursal 
+- Ejercicio 4: Exportación y Ramas 
 - Ejercicio 5: Lanzamiento para probar 
 
 ## Ejercicio 1: Configurar una entidad de servicio
@@ -195,9 +195,7 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
      https://make.powerapps.com
      ```
 
-1. Seleccione **Soluciones**.
-
-1. Seleccione la solución del conector **Contoso Badges** y haga clic en **Exportar solución**.
+1. Seleccione **Soluciones (1)**. Seleccione la solución del conector **Contoso Badges (2)** y haga clic en **Exportar solución (3)**.
    
      ![](images/lab04-ex02-01.png)
 
@@ -240,7 +238,7 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
 
 ### Tarea 3: Probar el conector
 
-1. Haga clic para abrir la solución que acaba de importar.
+1. Haga clic en **Solución**, luego en **Todos** y luego seleccione **Contoso Badge Connector** para abrir la solución que acaba de importar.
 
 1. Haga clic para abrir **Badges connector**.
   
@@ -365,7 +363,7 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
 1. No salgas de esta página.
 
-### Ejercicio 4: Exportación y sucursal
+### Ejercicio 4: Exportación y ramas
 
 En este ejercicio, establecerá una acción de flujo de trabajo y agregará pasos que exportarán la solución desde el entorno de desarrollo y crearán una nueva rama.
 
@@ -426,25 +424,25 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
       
    ![](images/L05/diad5l30u.png)
    
-1. Haga clic en el botón **Contribuir** ***(1)*** y seleccione **Abrir solicitud de extracción** ***(2)***.
+1. Haga clic en el botón **Contribuir** ***(1)*** y seleccione **Abrir solicitud de incorporación de cambios (pull request)** ***(2)***.
         
    ![](images/lab04-ex04-10.png)
    
-1. Agregue una descripción si lo desea y luego haga clic en **Crear solicitud de extracción**.
+1. Agregue una descripción si lo desea y luego haga clic en **Crear solicitud de incorporación de cambios (pull request)**.
 
      ![](images/lab04-ex04-11.png)
    
-1. Ahora debería ver el resumen de la solicitud de extracción. Confirme que la rama no tenga conflictos con la rama principal y que los cambios se puedan fusionar en la rama principal automáticamente.
+1. Ahora debería ver el resumen de la solicitud de incorporación de cambios. Confirme que la rama no tenga conflictos con la rama principal y que los cambios se puedan fusionar en la rama principal automáticamente.
    
-1. Haga clic en el botón de chevrón al lado del botón **Fusionar solicitud de extracción** y seleccione **Aplastar y fusionar**.
+1. Haga clic en el botón de chevrón al lado del botón **Fusionar solicitud de incorporación de cambios (merge pull request)** y seleccione **Aplastar y fusionar (Squash and merge)**.
       
     ![](images/lab04-ex04-12.png)
 
-1. Haga clic en **Aplastar y fusionar**.
+1. Haga clic en **Aplastar y fusionar (Squash and merge)**.
    
-1. Haga clic en **Confirmar aplastamiento y fusión**.
+1. Haga clic en **Confirmar aplastamiento y fusión (squash and merge)**.
    
-1. La solicitud de extracción debería fusionarse correctamente.
+1. La solicitud de incorporación de cambios debería fusionarse correctamente.
    
      ![](images/L05/prdoneu.png)
 
@@ -479,25 +477,11 @@ exportado al entorno de prueba.
 
     ![](images/lab04-ex05-03.png)
     
-1. Seleccione la pestaña **Código** y asegúrese de seleccionar Prioritz-XXXXXXX.
-
-    ![](images/L05/codeu.png)
-   
-1. Vaya a la sección **Versiones** y haga clic en **Crear nueva versión**.
-     
-     ![](images/L05/Images2047u.png)    
-   
-1. Haga clic en el botón **Elegir una etiqueta**, ingrese **v1.0.0** y seleccione **+ Crear nueva etiqueta al publicar**.
-      
-     ![](images/L05/Images2048.png)  
-
-1. Haga clic en **Publicar comunicado**.
-   
 1. Seleccione la pestaña **Acciones** y supervise el flujo de trabajo.
       
      ![](images/L05/Images2049.png)
 
-1. La liberación debería completarse exitosamente.
+1. La versión de release debería completarse exitosamente.
     
      ![](images/L05/relecomplu.png)
      
