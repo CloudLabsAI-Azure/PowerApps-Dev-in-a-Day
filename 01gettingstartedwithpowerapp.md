@@ -2,7 +2,7 @@
 
 ## Duración Estimada: 40 minutos
 
-Trabajando como parte del equipo de fusión de Prioritz, configurará su entorno de desarrollo de Power Platform. Importará y revisará la solución actual y explorará el estado actual de las aplicaciones, flujos y tablas de Prioritz. También agregará una columna a una tabla y modificará la aplicación para usarla.
+En este laboratorio, configurará su entorno de desarrollo de Power Platform como parte del equipo de fusión de Prioritz. Comenzará importando y revisando los componentes de la solución, incluyendo aplicaciones, flujos y tablas, para comprender el estado actual de la solución de Prioritz. A continuación, mejorará la solución añadiendo una nueva columna "My Notes" a una tabla y actualizando la aplicación de administración de Prioritz para que use este nuevo campo. Finalmente, verificará que Visual Studio Code y la extensión Power Platform CLI estén instalados y usará la CLI para conectarse a su entorno y mostrar las soluciones. Al completar estos ejercicios, adquirirá experiencia práctica con la administración de soluciones, la personalización de aplicaciones y las herramientas para desarrolladores en el ecosistema de Power Platform.
 
 ## Objetivos del laboratorio
 
@@ -36,6 +36,42 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
    
       
      ![](/images/lab01ex10-03.png)
+
+1. Haga clic en **Preguntar más tarde** si aparece la ventana emergente "Acción requerida".
+
+   >**Nota:** Si la opción **Preguntar más tarde** no está disponible, siga los pasos del 5 al 14. De lo contrario, continúe con el **Paso 15**.
+
+1. En **Start by getting the app page**, haga clic en **Siguiente**.
+
+1. Haga clic en **Siguiente** dos veces.
+
+1. En **Android**, vaya a Play Store, busque **Microsoft Authenticator** y pulse **Install**.
+
+   ![](images/L01/mobile.jpg)
+
+   > **Nota:** Para iOS, abre la App Store y repita los pasos.
+
+   > **Nota:** Omitir si ya está instalada.
+
+1. Abra la aplicación y pulse **Scan a QR code**.
+
+1. Escanee el código QR visible en la pantalla y haga clic en **Siguiente**.
+
+   ![](images/L01/demo001.png)
+
+1. Ingrese los dígitos que se muestran en la pantalla de la app Authenticator en el móvil y toque **Yes**.
+
+1. Una vez aprobada la notificación, haga clic en **Next**.
+
+   ![](images/L01/demo002.png)
+
+1. Haga clic en **Done**.
+
+1. Si se le solicita que mantenga la sesión iniciada, puede hacer clic en **No**.
+
+1. Toque **Finish** en el dispositivo móvil.
+
+   > **NOTA:** Al volver a iniciar sesión, ingrese los dígitos que se muestran en la pantalla de la **applicación Authenticator** y haga clic en Yes.
 
 1. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
 
@@ -117,6 +153,8 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
    
      ![](images/lab01ex10-20.png)
 
+    >>**Nota**: Si no puede expandir el paso, haga clic en los puntos suspensivos (...), luego seleccione Configuración y haga clic en Cancelar.
+
 1. Los pasos **Apply to each** deben verse como la imagen a continuación. Esta es la lógica para la automatización.
  
     ![](images/lab01ex10-21.png)
@@ -152,6 +190,8 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 1. Vuelva a la solución **PrioritZ** haciendo clic en **Flujos en la nube**. Alternativamente, también puede abrir el portal de creación de **Power Apps** utilizando esta URL `https://make.powerapps.com` si aún no está abierto. Asegúrese de que el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> ** esté seleccionado.
        
    ![](images/lab01ex10-28.png)
+
+   > Nota: Si aparece la ventana emergente **Bienvenido a Power Apps Studio**, simplemente haga clic en Omitir para continuar.
 
 1. Navegue hasta la hoja **Soluciones** haciendo clic en el botón **Volver a Soluciones** (<-)**.
 
@@ -195,7 +235,9 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
      
         ![](images/L01/image17u.png)
 
-1. Navegue hasta la ruta `C:\LabFiles` en el explorador de archivos, seleccione **image.png** y haga clic en abrir.
+1. Navegue hasta la ruta `C:\LabFiles` **(1)** en el Explorador de Archivos, seleccione **image.png (2)** y haga clic en **Abrir (3)**.
+
+      ![](images/L01/image17u-1n.png)
 
 1. Escriba **Tamale Tuesday** en el campo Choice y haga clic en **add a picture** que se encuentra debajo del campo Choice.
      
@@ -287,11 +329,15 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
     
     ![](images/lab01ex02-04.png)
 
+   > Nota: Si no puede encontrar el botón Editar, haga clic en los puntos suspensivos **(...)** al lado del panel Agregar existente.
+
 1. Seleccione **Add Topic Screen (1)**.
 
 1. Haga clic en **+ Insertar (2)** y seleccione **Entrada de texto (3)**.
    
      ![](images/lab01ex02-05.png)
+
+   > Nota: Si no puede encontrar el botón Insertar, haga clic en los puntos suspensivos **(...)** en la esquina superior izquierda.
 
 1. Haga doble clic en la **Entrada de texto** recién agregada e ingrese el valor a continuación para cambiar el nombre de la entrada de texto.
 
@@ -338,7 +384,7 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
     ```
 1. Seleccione **View Topic Screen (1)** en la pestaña **Pantallas**.
 
-1. Haga clic en la pestaña **+ Insertar (2)** y seleccione **Etiqueta de texto (3)**.
+1. Haga clic en la pestaña **+ Insertar (2)** y seleccione **Text label (3)**.
 
     ![](images/L01/tlabelu.png)
 
@@ -358,6 +404,8 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
 
 1. Reorganice los controles y mueva la **etiqueta Notes** entre la etiqueta de detalles y la galería de elementos de Temas.
 
+      ![](images/L01/noteslabel-1.png)
+
 1. Seleccione **Home Screen (1)** y haga clic en **Previsualizar la app (2)**.
       
       ![](images/L01/image34u.png)
@@ -376,13 +424,13 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
        
        4. Respond By: **La fecha de Hoy** (4)
        
-1. Navegue hasta esta ruta C:\LabFiles en el explorador de archivos, seleccione **image.png** y haga clic en abrir.
-
 1. Escriba **Test One** en el campo Choice y haga clic en **add a picture** que se encuentra debajo del campo Choice.
      
       ![](images/L01/image18uu.png)
 
 1. Navegue hasta esta ruta `C:\LabFiles` en el Explorador de Archivos, seleccione **image.png** y haga clic en abrir.
+
+      ![](images/L01/image17u.png)
 
 1. Haga clic en **+** para agregar la opción.
      
@@ -473,6 +521,7 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
    
     ![](images/lab01ex03-05.png)
 
+    > Nota: Si no puede ver el perfil **DeVAuth**, cierre Visual Studio Code y vuélvalo a abrir.
     > **Nota**: Si puede ver el **Perfil Universal** en lugar del perfil **DeVAuth**, se debe a que agregó el valor **Environment URL** incorrecto en el comando **pac auth create** en el paso 9. Para solucionar este problema, siga los pasos a continuación:
 
       1. Elimine el **Perfil Universal** de Visual Studio Code haciendo clic en el botón Eliminar.
