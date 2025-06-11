@@ -28,13 +28,13 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
    * Correo Electrónico/Nombre de Usuario: <inject key="AzureAdUserEmail"></inject>
 
-      ![](/images/L01/GSlogin2.png)
+      ![](/images/L01/GS3-11.png)
 
 1. Ahora, ingrese la siguiente contraseña **(1)** y haga clic en **Iniciar sesión** **(2)**. 
 
    * Contraseña: <inject key="AzureAdUserPassword"></inject>
    
-      ![](/images/L01/GS3-11.png)
+      ![](/images/L01/GSlogin2.png)
 
 1. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
 
