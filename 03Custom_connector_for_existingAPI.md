@@ -285,9 +285,8 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
      1. Resumen: **Get current badge (1)**
      2. Descripción: **Get current badge (2)** 
-     3. ID de Operación: **getcurrentbadge (3)**
-    
-        ![](images/lab03-ex04-05.png)
+     3. ID de Operación: **getcurrentbadge (3)**<br/>
+     ![](images/lab03-ex04-05.png)
 
 1. Desplácese hacia abajo hasta la sección **Solicitud** y haga clic en **+ Importar desde muestra**.
     

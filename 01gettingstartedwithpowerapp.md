@@ -26,15 +26,14 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. En la ventana **Iniciar sesión**, aparecerá la pantalla de inicio de sesión, introduzca el siguiente nombre de usuario **(1)** y pulse en **Siguiente** **(2)**.
 
-   * Correo Electrónico/Nombre de Usuario: <inject key="AzureAdUserEmail"></inject>
+   - Correo Electrónico/Nombre de Usuario: <inject key="AzureAdUserEmail"></inject>
 
      ![](/images/lab01ex10-02.png)
 
 1. Ahora, ingrese la siguiente contraseña **(1)** y haga clic en **Iniciar sesión** **(2)**. 
 
-   * Contraseña: <inject key="AzureAdUserPassword"></inject>
-   
-      
+   - Contraseña: <inject key="AzureAdUserPassword"></inject>
+    
      ![](/images/lab01ex10-03.png)
 
 1. Haga clic en **Preguntar más tarde** si aparece la ventana emergente "Acción requerida".
@@ -231,8 +230,8 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
      
      1. **Details**: Escriba `People are tired of tacos, what should we have instead of tacos?`
      
-     1. **Respond By**: Seleccione **la fecha de hoy**.
-     
+     1. **Respond By**: Seleccione **la fecha de hoy**. <br/>
+
         ![](images/L01/image17u.png)
 
 1. Navegue hasta la ruta `C:\LabFiles` **(1)** en el Explorador de Archivos, seleccione **image.png (2)** y haga clic en **Abrir (3)**.

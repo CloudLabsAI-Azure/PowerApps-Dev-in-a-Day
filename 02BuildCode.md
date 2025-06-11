@@ -228,12 +228,11 @@ En este ejercicio, creará el componente de código.
  
  1. Agregue el código mostrado a continuación al archivo **index.ts** después de la **línea número 1**. Esto hará referencia a PriorityComponent.
     
-        ```
-        import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
-        ```
-        ![](images/L02/image19.png)  
+    ```
+    import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
+    ```
+    ![](images/L02/image19.png)  
    
- 
 1. Ubique la clase **Export** en la **línea número 7**.
       
      ![](images/L02/image20.png)
@@ -261,14 +260,14 @@ En este ejercicio, creará el componente de código.
     
    ![](images/L02/init1.png)
    
-       ```
-       this.context = context;
-       context.mode.trackContainerResize(true);
-       ```
+   ```
+   this.context = context;
+   context.mode.trackContainerResize(true);
+   ```
  
 1. Localice la función **updateView**.
 
-     ![](images/L02/imageUpdateView.png)
+   ![](images/L02/imageUpdateView.png)
  
 1. Reemplace la función **updateView** con la función que se muestra a continuación. Esta lógica crea el elemento React a partir de PriorityComponent y lo agrega al DOM virtual.
   
@@ -451,9 +450,9 @@ En este ejercicio, creará el componente de código.
  
 1. Ejecute el siguiente comando para iniciar el arnés de prueba.
     
-       ```
-       npm start
-       ```
+      ```
+      npm start
+      ```
 
 1. El arnés de prueba debería iniciarse; si no, copie la dirección y péguela en una nueva ventana del navegador. Intente arrastrar los elementos y vea si el comportamiento funciona como se esperaba.
 
