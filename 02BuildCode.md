@@ -219,9 +219,8 @@ En este ejercicio, creará el componente de código.
         ```
         import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
         ```
-        ![](images/L02/image19.png)  
+    ![](images/L02/image19.png)  
    
- 
 1. Ubique la clase **Export** en la **línea número 7**.
       
      ![](images/L02/image20.png)
@@ -234,7 +233,7 @@ En este ejercicio, creará el componente de código.
     private state: ComponentFramework.Dictionary;
     ```
     
-    ![](images/L02/image21.png)
+    ![](images/L02/L2T2S15.png)
  
 1. Ubique la función **init**.
  
