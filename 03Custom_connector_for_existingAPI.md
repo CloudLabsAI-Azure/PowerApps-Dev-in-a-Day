@@ -91,6 +91,8 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
      ![](images/L03/image4.png)
 
+   >**Nota:** Si tiene problemas para guardar el archivo, copie el código y péguelo en el Bloc de notas, luego guarde el archivo como **swagger.json**.
+
 
 1. Navegue hasta el portal de creación de Power Apps y asegúrese de estar en su entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
@@ -146,7 +148,7 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
     
      ![](images/lab03-ex03-09.png)
 
-1. Desplácese hacia abajo hasta la sección **Solicitud**, haga clic en el botón **body** y seleccione **Editar**.
+1. Desplácese hacia abajo hasta la sección **Solicitud (Request)**, haga clic en el botón **body** y seleccione **Editar**.
 
      ![](images/lab03-ex03-10.png)
 
@@ -174,7 +176,7 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
      ![](images/lab03-ex03-16.png)
 
-1. Haga clic en el botón **Atrás** nuevamente.
+1. Verifique que los 3 elementos del payload muestran `*` en ellos y Haga clic en el botón **Atrás** nuevamente.
 
       ![](images/lab03-ex03-17.png)
 
@@ -237,7 +239,7 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 1. La prueba debería tener éxito y debería obtener la respuesta esperada.
 
-1. Continúe y pruebe las operaciones ListBadges y ListRecipients.
+1. Continúe y pruebe las operaciones ListBadges y ListRecipients. Deje las opciones en blanco y haga clic en **Probar operación**.
 
      ![](images/lab03-ex03-26.png)
 
@@ -259,7 +261,7 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 ### Tarea 1: Agregar código desde la carpeta de recursos
 
-1. Navegue hasta Power Automate utilizando la siguiente URL.
+1. Navegue hasta Power Automate utilizando la siguiente URL. Seleccione **Environments (1)**, asegúrese de estar en su entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
           
    ```
    https://make.powerautomate.com
@@ -288,7 +290,7 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
      3. ID de Operación: **getcurrentbadge (3)**<br/>
      ![](images/lab03-ex04-05.png)
 
-1. Desplácese hacia abajo hasta la sección **Solicitud** y haga clic en **+ Importar desde muestra**.
+1. Desplácese hacia abajo hasta la sección **Solicitud (Request)** y haga clic en **+ Importar desde muestra**.
     
     ![](images/lab03-ex04-06.png)
 
@@ -388,6 +390,8 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
  
      ![](images/lab03-ex05-02.png)
 
+   >**Nota**: Haga click en **Abrir app** si se le indica.
+
 1. Seleccione **Datos** desde la izquierda y haga clic en **+ Agregar datos.**
      
      ![](images/L03/image39.png)
@@ -414,9 +418,11 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
 1. Copie el valor **API Key** y péguelo en el Bloc de notas, ya que utilizará este valor en los próximos pasos. Ahora, cierre la pestaña del navegador haciendo clic en **X**.
 
-1. Regrese al diseñador de aplicaciones, pegue la **API Key (1)** que copió en el paso anterior y haga clic en **Conectar (2)**.
+1. Regrese al diseñador de aplicaciones, pegue la **API Key (1)** que copió en el paso anterior y haga clic en **Conectar (2)**. Haga clic en **Entendido** si aparece alguna ventana emergente con el título Premium.
      
      ![](images/L03/image42-1u.png)
+
+  >**Nota**: Si no se le solicita que ingrese la clave API, ignórelo.
 
 1. Seleccione la **vista de árbol**.
 
@@ -480,6 +486,8 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
      
     ![](images/lab03-ex05-05.png)
 
+  >**Nota**: Si no puede ver el botón **Crear**, haga clic en el botón de **puntos suspensivos** ubicado en la esquina superior derecha de la página web y ajuste el zoom al **90%**.
+
 1. Haga clic en **+ Nuevo paso**.
 
     ![](images/lab03-ex05-06.png)
@@ -524,9 +532,11 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
      
      ![](images/lab03-ex05-14.png)
 
-1. Abra una nueva ventana del navegador y navegue hasta el portal de creación de Power Apps.
+1. Abra una nueva ventana del navegador y navegue hasta el portal de creación de Power Apps usando la siguiente URL. Asegúrese de que está en el entorno correcto.
 
-1. Asegúrese de que está en el entorno correcto.
+     ```
+     https://make.powerapps.com
+     ```
 
 1. Seleccion **Aplicaciones** e inicie la aplicación **PrioritZ Ask**.
 
