@@ -241,7 +241,7 @@ En este ejercicio, creará el componente de código.
         
 1. Pegue el código a continuación dentro de la función **init**. Esta lógica inicializa nuestras variables de clase a partir de los valores de tiempo de ejecución y habilita la notificación de cambio de tamaño.
     
-       ![](images/L02/init1.png)
+   ![](images/L02/init1.png)
    
        ```
        this.context = context;
