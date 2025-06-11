@@ -4,7 +4,7 @@
 
 ## Descripción general
 
-En esta serie de laboratorios, obtendrá experiencia práctica con diversos aspectos de Power Platform, desde la importación y ejecución de soluciones iniciales hasta la creación y el uso de componentes de código personalizados. Creará y modificará conectores personalizados, integrará Azure Functions y promoverá soluciones en todos los entornos. Cada laboratorio desarrolla habilidades fundamentales, como la creación de componentes de Power Apps, la configuración de conectores personalizados, la implementación de Azure Functions y la administración de soluciones con GitHub. Siguiendo instrucciones detalladas y ayudas visuales, aprenderá a desarrollar, probar e implementar soluciones sólidas de Power Platform de manera eficaz, garantizando una comprensión integral de las capacidades y las mejores prácticas de la plataforma.
+En esta serie de laboratorios, obtendrá experiencia práctica con diversos aspectos de Power Platform, desde la importación y ejecución de soluciones iniciales hasta la creación y el uso de componentes de código personalizados. Creará y modificará conectores personalizados, integrará Azure Functions y promoverá soluciones en todos los entornos. Cada laboratorio desarrolla habilidades fundamentales, como la creación de componentes de Power Apps, la configuración de conectores personalizados y la administración de soluciones con GitHub. Siguiendo instrucciones detalladas y ayudas visuales, aprenderá a desarrollar, probar e implementar soluciones sólidas de Power Platform de manera eficaz, garantizando una comprensión integral de las capacidades y las mejores prácticas de la plataforma.
 
 ## Objetivo
 
@@ -15,7 +15,6 @@ Aprenda a importar y personalizar soluciones en Power Platform, crear componente
  - **Introducción a Power Apps**: Aprenda a importar una solución inicial, agregar una nueva columna, actualizar la aplicación de administración y probar la CLI de Power Platform.
  - **Crear un componente de código**: Cree un componente de código, implemente su lógica, intégrelo en una aplicación de canvas y agréguelo a una solución.
  - **Conector personalizado para API existente**: Cree, modifique y pruebe un conector personalizado mediante una definición de Open API e intégrelo con aplicaciones y flujos de canvas.
- - **Azure Functions**: Cree, implemente y publique una Azure Functions, luego cree un conector y pruébelo dentro de una aplicación de canvas.
  - **Administración del ciclo de vida de la aplicación**: Promueva una solución a un entorno de prueba, configure una entidad de servicio, administre con GitHub y configure un flujo de trabajo para el lanzamiento.
 
 ## Requisitos previos
@@ -32,7 +31,7 @@ En estos laboratorios, seguirá un proceso estructurado para dominar los aspecto
 
 ## Diagrama de Arquitectura
 
-![](./images/image1.JPG)
+![](./images/low_code_in_a_day_Architecture_diagram.JPG)
 
 ## Explicación de los Componentes
 
@@ -45,7 +44,7 @@ En estos laboratorios, seguirá un proceso estructurado para dominar los aspecto
 
 ## Primeros pasos
  
-¡Bienvenido a su Taller de Desarrollador en un Día! Hemos preparado un ambiente perfecto para que explore y aprenda sobre los servicios de Azure. Comencemos por aprovechar al máximo esta experiencia:
+¡Bienvenido a su Taller de Código Bajo para Desarrolladores en un Día! Hemos preparado un ambiente perfecto para que explore y aprenda sobre los servicios de Azure. Comencemos por aprovechar al máximo esta experiencia:
  
 ## Acceso a su Ambiente de Laboratorio
  
@@ -101,13 +100,19 @@ Siéntase libre de iniciar, detener o reiniciar su máquina virtual según sea n
  
      ![](./images/GS3-11.png "Ingrese Contraseña")
  
-4. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
+4. Si ve la ventana emergente Acción Requerida, haga clic en Preguntar después.
+
+![](./images/asklater.png)
+
+> **NOTA:** No active MFA, seleccione **Preguntar después**.
+
+5. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
 
    ![](./images/GS9-11.png)
 
-5. Si ve la ventana emergente **¡Tiene recomendaciones gratuitas de Azure Advisor!**, cierre la ventana para continuar con el laboratorio.
+6. Si ve la ventana emergente **¡Tiene recomendaciones gratuitas de Azure Advisor!**, cierre la ventana para continuar con el laboratorio.
 
-6. Si aparece una ventana emergente **Bienvenido a Microsoft Azure**, haga clic en **Quizás más adelante** para omitir la visita guiada.
+7. Si aparece una ventana emergente **Bienvenido a Microsoft Azure**, haga clic en **Cancelar** para omitir la visita guiada.
 
 Al completar estos ejercicios, importará y personalizará soluciones de Power Platform, creará e implementará componentes de código personalizados con Visual Studio Code, desarrollará e integrará conectores personalizados, creará e implementará Azure Functions y administrará soluciones con GitHub para el control de código fuente.
    
