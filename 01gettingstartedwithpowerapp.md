@@ -270,7 +270,7 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
    ```
    My Notes
    ```
-1. Ahora, busque **plain text (1)** en Tipo de datos, luego seleccione el que se encuentra como **Multiple lines of text (2)** y haga clic en **Guardar (3)**.
+1. Ahora, busque **texto sin formato (1)** en Tipo de datos, luego seleccione el que se encuentra como **Multiple lines of text (2)** y haga clic en **Guardar (3)**.
 
     ![](images/L01/L01-notesu.png)
    
