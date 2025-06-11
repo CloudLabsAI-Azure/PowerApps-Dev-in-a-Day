@@ -27,19 +27,19 @@ Cuando revise la API, verá que tiene cuatro operaciones y utiliza autenticació
 
          https://make.powerapps.com
 
-1. Haga clic en **Environment (1)** y seleccione el entorno de desarrollo creado previamente llamado **OTU WA HOL - xxxxxx (default) (2)**.
+1. Haga clic en **Environment (1)** y seleccione el entorno de desarrollo creado previamente llamado **Azure HOL - xxxxxx (default) (2)**.
 
-     ![](images/L03/db1a.png)
+     ![](images/lab03-ex01-01.png)
 
 1. Seleccione **Solutions (1)** en el menú del lado izquierdo de Power Apps.
 
 1. Haga clic en **Create a database (2)** para crear una base de datos de Dataverse.
  
-    ![](images/L03/db1.png)
+    ![](images/lab03-ex01-02.png)
 
-1. Seleccione **Currency -> TNDTND** e **Language -> English(1)** y haga clic en **Create my database (2)**.
+1. Seleccione **Currency -> TND** e **Language -> English(1)** y haga clic en **Create my database (2)**.
    
-    ![](images/L03/db2.png)
+    ![](images/lab03-ex01-03.png)
     
     >**Nota:** Puede dejar abierta esta pestaña del navegador y continuar con el próximo ejercicio, ya que la creación de la base de datos de Dataverse tomará algún tiempo.
 
@@ -53,15 +53,15 @@ En este ejercicio, creará una solución para el conector personalizado Contoso 
 
          https://make.powerapps.com 
 
-    ![](images/L03/dev11.png)
+    ![](images/lab03-ex02-01.png)
 
 1. Seleccione **Soluciones** y haga clic en **+ Nueva solución**.
 
-    ![](images/L03/L03-solution.png)
+    ![](images/lab03-ex02-02.png)
 
 1. Escriba **Contoso Badges connector (1)** como Nombre para mostrar, seleccione **Contoso Coffee (2)** como Editor y haga clic en **Crear (3)**.
    
-   ![](images/L03/image2-1.png)
+   ![](images/lab03-ex02-03.png)
 
 > **Felicidades** por completar la tarea! Ahora, es el momento de validarlo. Estos son los pasos:
 > - Presione el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, puede continuar con la siguiente tarea. 
@@ -98,11 +98,11 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 1. Seleccione **Soluciones (1)** y abra la solución **Contoso Badges connector (2)** que creó.
 
-     ![](images/L03/L03-contoso.png)
+     ![](images/lab03-ex03-01.png)
 
 1. Haga clic en **+ Nuevo (1) | Automatización (2)** y seleccione **Conector personalizado (3)**.
      
-     ![](images/L03/image5-1.png)
+     ![](images/lab03-ex03-02.png)
 
 
 1. Ingrese la siguiente información en la hoja **Crear conector**.
@@ -112,31 +112,31 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
      3. Host: **contosobadgestest.azurewebsites.net (3)** 
      4. Haga clic en **Crear conector (4)**.
     
-        ![](images/L03/L03-badges1u.png)
+        ![](images/lab03-ex03-03.png)
 
         >**Nota**: Si se le solicita que inicie sesión, use las credenciales de ODL que se encuentran en la pestaña de ambiente ubicada a la derecha de la guía de laboratorio.
 
 1. Seleccione **Conectores personalizados (1)** en el mapa del sitio. Haga clic en el botón **... Más acciones (2)** del conector personalizado que creó y seleccione **Actualizar desde archivo Open API (3)**
 
-      ![](images/L03/L03-custom.png)
+      ![](images/lab03-ex03-04.png)
 
 1. Haga clic en **Importar** para seleccionar el archivo API.
 
-      ![](images/L03/L03-import.png)
+      ![](images/lab03-ex03-05.png)
 
 1. Seleccione el archivo **swagger.json** que guardó en su máquina y haga clic en **Abrir**.
     
 1. Haga clic en **Continuar** en la ventana emergente **Importar un archivo OpenAPI**.
     
-    ![](images/L03/image8-1.png)
+    ![](images/lab03-ex03-06.png)
 
 1. Ingrese **Connector for contosobadgestest (1)** para Descripción, **contosobadgestest.azurewebsites.net (2)** para Host, y avance a **Seguridad (3)**.
       
-      ![](images/L03/image9-1u.png)
+      ![](images/lab03-ex03-07.png)
 
 1. Revise la **configuración de seguridad (1)** y avance a **Definición (2)**.
 
-      ![](images/L03/L03-security.png)
+      ![](images/lab03-ex03-08.png)
 
 1. No salga de esta página.
 
@@ -144,41 +144,44 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 1. Seleccione la acción **AddCredit (1)** y luego **Important (2)** para Visibility.
     
-     ![](images/L03/L3T3S8.png)
+     ![](images/lab03-ex03-09.png)
 
 1. Desplácese hacia abajo hasta la sección **Solicitud**, haga clic en el botón **body** y seleccione **Editar**.
 
-     ![](images/L03/image11.png)
+     ![](images/lab03-ex03-10.png)
 
 1. Desplácese hacia abajo y haga clic en el botón **points** y seleccione **Editar**.
     
-    ![](images/L03/image12.png)
+    ![](images/lab03-ex03-11.png)
 
 1. Seleccione **Sí** para Is required? y haga clic en el botón **Atrás**.
      
-     ![](images/L03/image13.png)
+     ![](images/lab03-ex03-12.png)
 
 1. Haga clic en el botón **recipientid** y seleccione **Editar**.
 
-     ![](images/L03/L03-recepient.png)
+     ![](images/lab03-ex03-13.png)
 
 1. Seleccione **Sí** para Is required? y haga clic en el botón **Atrás**.
 
-     ![](images/L03/image13.png)
+     ![](images/lab03-ex03-14.png)
 
 1. Haga clic en el botón **name** y seleccione **Editar**.
 
-     ![](images/L03/L03-name.png)
+     ![](images/lab03-ex03-15.png)
 
 1. Seleccione **Sí** para Is required? y haga clic en el botón **Atrás**.
 
-     ![](images/L03/image13.png)
+     ![](images/lab03-ex03-16.png)
 
 1. Haga clic en el botón **Atrás** nuevamente.
 
-      ![](images/L03/image14.png)
+      ![](images/lab03-ex03-17.png)
 
 1. Avance a **Complemento de IA (vista preliminar)**.
+
+     ![](images/lab03-ex03-18.png)
+
 1. Avance a **Código**
  
 1. Revise el código y avance a **Probar**.
@@ -187,7 +190,7 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 1. Haga clic en **Actualizar conector** y espere a que se actualice el conector
 
-     ![](images/L03/image15.png)
+     ![](images/lab03-ex03-19.png)
 
 1. No salga de esta página.
 
@@ -206,39 +209,41 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 1. Vuelva a la página de prueba del conector y haga clic en **+ Nueva conexión**.
     
-     ![](images/L03/image17.png)
+     ![](images/lab03-ex03-20.png)
 
 1. Pegue la **API Key (1)** que copió en el **paso 3** de esta tarea y haga clic en **Crear conexión (2)**.
    
-    ![](images/L03/image18-1.png)
+    ![](images/lab03-ex03-21.png)
 
 1. Haga clic en el botón **Actualizar** conexiones.
    
-    ![](images/L03/image19.png)
+    ![](images/lab03-ex03-22.png)
 
 1. La conexión que creó debe estar seleccionada.
 
 1. Vaya a la operación **AddCredit (1)**. Ingrese su dirección de correo electrónico para recipientid, ingrese su nombre para name, ingrese **1** para points y haga clic en **Probar operación (2)**.
 
-    ![](images/L03/L3T3S8.png)
+    ![](images/lab03-ex03-23.png)
 
 1. La prueba debería ser exitosa y la respuesta debe verse como la imagen a continuación.
      
-     ![](images/L03/image21u.png)
+     ![](images/lab03-ex03-24.png)
 
 1. Seleccione la operación **GetRecipient**.
 
 1. Proporcione su dirección de correo electrónico como ID y haga clic en **Probar operación**.
       
-     ![](images/L03/image22-1u.png)
+     ![](images/lab03-ex03-25.png)
 
 1. La prueba debería tener éxito y debería obtener la respuesta esperada.
 
 1. Continúe y pruebe las operaciones ListBadges y ListRecipients.
 
+     ![](images/lab03-ex03-26.png)
+
 1. Todas las pruebas deberían tener éxito.
   
-     ![](images/L03/image23.png)
+     ![](images/lab03-ex03-27.png)
 
 > **Felicidades** por completar la tarea! Ahora, es el momento de validarlo. Estos son los pasos:
 > - Presione el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, puede continuar con la siguiente tarea. 
@@ -262,19 +267,19 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 1. Haga clic en **Más (1)** y seleccione **Descubrir Todo (2)**.
 
-   ![](images/L03/L03-connectormore.png)
+   ![](images/lab03-ex04-01.png)
 
 1. En **Datos (1)**, seleccione **Conectores personalizados (2)**.
 
-   ![](images/L03/L03-connectoru.png)
+   ![](images/lab03-ex04-02.png)
 
 1. Haga clic en el botón **Editar** del conector personalizado que creó.
 
-    ![](images/L03/image24u.png)
+    ![](images/lab03-ex04-03.png)
 
 1. Seleccione la pestaña **Definición** del menú desplegable y haga clic en **Nueva acción** en la pestaña de definición.
   
-    ![](images/L03/L03-EX3.1.png)
+    ![](images/lab03-ex04-04.png)
 
 1. Ingrese la siguiente información para agregar la acción **Get current badge**.
 
@@ -282,18 +287,18 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
      2. Descripción: **Get current badge (2)** 
      3. ID de Operación: **getcurrentbadge (3)**
     
-        ![](images/L03/image26-1.png)
+        ![](images/lab03-ex04-05.png)
 
 1. Desplácese hacia abajo hasta la sección **Solicitud** y haga clic en **+ Importar desde muestra**.
     
-    ![](images/L03/image27.png)
+    ![](images/lab03-ex04-06.png)
 
 1. Seleccione **Get (1)** para Verbo, ingrese el valor a continuación para **URL (2)** y haga clic en **Importar (3)**.
    ```
    https://contosobadgestest.azurewebsites.net/getcurrentbadge?id={id} 
    ```
 
-    ![](images/L03/image28-1.png)
+    ![](images/lab03-ex04-07.png)
 
 1. Haga clic en **Actualizar conector** y espere a que se actualice el conector.
 
@@ -301,13 +306,13 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 1. Habilite **Código (1)** y haga clic en **Cargar (2)**.
     
-     ![](images/L03/image29-1.png)
+     ![](images/lab03-ex04-08.png)
 
 1. Seleccione el archivo **CustomConnectorCode.csx** ubicado en esta ruta `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` y haga clic en **Abrir**.
 
 1. Seleccione la acción **getcurrentbadge** del menú desplegable.
      
-     ![](images/L03/image30.png)
+     ![](images/lab03-ex04-09.png)
 
 1. Revise el código que acaba de agregar.
 
@@ -319,11 +324,11 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 1. Proporcione su dirección de correo electrónico como ID y haga clic en **Probar operación**.
      
-     ![](images/L03/image31-1.png)
+     ![](images/lab03-ex04-10.png)
 
 1. La prueba debería ser exitosa y debería obtener una insignia actual para el usuario que creó.
     
-    ![](images/L03/image32.png)
+    ![](images/lab03-ex04-11.png)
 
      > **Nota**: Si la operación de prueba falla, intente actualizar el conector y luego vuelva a probarlo realizando los pasos 15 a 18.
 
@@ -337,11 +342,11 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 1. Desplácese hacia abajo hasta la sección **Response** y haga clic en **+ Agregar respuesta predeterminada.**
  
-     ![](images/L03/image34.png)
+     ![](images/lab03-ex04-12.png)
 
 1. Pegue el JSON que copió en el **Body (1)** y haga clic en **Importar (2)**.
      
-     ![](images/L03/image35-1.png)
+     ![](images/lab03-ex04-13.png)
 
 1. Haga clic en **Actualizar conector** y espere a que se actualice el conector.
 
@@ -357,11 +362,11 @@ En esta tarea, probará su código personalizado.
 
 1. Vaya a la sección **Operaciones** y seleccione la operación **getcurrentbadge (1)**. Proporcione su correo electrónico como **id (2)** y haga clic en **Probar operación (3)**.
    
-     ![](images/L03/image36-1u.png)
+     ![](images/lab03-ex04-14.png)
 
 1. La operación debería tener éxito y el **Cuerpo** de la respuesta debería verse como la imagen a continuación.
     
-    ![](images/L03/image37.png)
+    ![](images/lab03-ex04-15.png)
 
 ## Ejercicio 5: Probar Conector Personalizado
 
@@ -378,9 +383,11 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
    
 1. Expanda **Soluciones** y abra la solución **PrioritZ**.
 
+     ![](images/lab03-ex05-01.png)
+
 1. Seleccione **Aplicaciones (1)**, seleccione la aplicación **PrioritZ Ask (2)** y haga clic en **Editar (3)**.
  
-     ![](images/L03/image38-1u.png)
+     ![](images/lab03-ex05-02.png)
 
 1. Seleccione **Datos** desde la izquierda y haga clic en **+ Agregar datos.**
      
@@ -464,43 +471,45 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
 1. Asegúrese de que todavía se encuentra en la solución **PrioritZ**.
 
+     ![](images/lab03-ex05-03.png)
+
 1. Haga clic en **+ Nuevo** y seleccione **Automatización | Flujo de nube | Instantáneo**.
 
-    ![](images/L03/image48.png)
+    ![](images/lab03-ex05-04.png)
 
 1. Ingrese **Test add credit** como nombre del flujo, seleccione **Activar manualmente un flujo** y haga clic en **Crear**.
      
-    ![](images/L03/edd%20(1).png)
+    ![](images/lab03-ex05-05.png)
 
 1. Haga clic en **+ Nuevo paso**.
 
-    ![](images/L03/L03-EX3-T2.png)
+    ![](images/lab03-ex05-06.png)
 
 1. Seleccione la pestaña **Personalizado** y luego seleccione la acción **Add credit**.
    
-    ![](images/L03/edd%20(2).png)
+    ![](images/lab03-ex05-07.png)
     
 1. Ingrese **Test connection**, pegue la **API Key** que copió anteriormente en el **paso 9** de la tarea 1 de este ejercicio y haga clic en **Crear**.
   
-    ![](images/L03/edd%20(3).png)
+    ![](images/lab03-ex05-08.png)
 
 1. Haga clic en el campo **recipientId**. En Activar manualmente un panel de flujo, seleccione **User email**.
     
-     ![](images/L03/image49u.png)
+     ![](images/lab03-ex05-09.png)
 
 1. Haga clic en el campo **name**. En Activar manualmente un panel de flujo, y seleccione **User name**.
 
 1. Ingrese **1** para points y haga clic en **Guardar**. Espere a que se guarde el flujo.
    
-     ![](images/L03/image50.png)
+     ![](images/lab03-ex05-10.png)
 
 1. Haga clic en **Probar**.
 
-     ![](images/L03/L03-EX4-test.png)
+     ![](images/lab03-ex05-11.png)
 
 1. Seleccione **Manualmente** y haga clic en **Probar** nuevamente.
 
-     ![](images/L03/L03-EX3-manually.png)
+     ![](images/lab03-ex05-12.png)
 
 1. Haga clic en **Continuar**.
 
@@ -510,11 +519,11 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
 1. La ejecución del flujo debería ser exitosa. Una vez que se haya realizado correctamente, haga clic en el botón **Atrás**.
     
-     ![](images/L03/image51.png)
+     ![](images/lab03-ex05-13.png)
 
 1. Seleccione **Flujos en la nube** y abra el flujo que creó.
      
-     ![](images/L03/image52.png)
+     ![](images/lab03-ex05-14.png)
 
 1. Abra una nueva ventana del navegador y navegue hasta el portal de creación de Power Apps.
 
@@ -528,7 +537,7 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
 1. Vuelve al flujo y ejecútelo dos veces más.
 
-     ![](images/L03/L03-EX4-run1.png)
+     ![](images/lab03-ex05-15.png)
 
 1. Vuelva a la aplicación **PrioritZ Ask** y actualice la página.
 
