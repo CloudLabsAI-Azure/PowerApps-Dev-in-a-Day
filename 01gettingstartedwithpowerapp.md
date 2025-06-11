@@ -28,35 +28,40 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
    * Correo Electrónico/Nombre de Usuario: <inject key="AzureAdUserEmail"></inject>
 
-      ![](/images/L01/signin.png)
+     ![](/images/lab01ex10-02.png)
 
 1. Ahora, ingrese la siguiente contraseña **(1)** y haga clic en **Iniciar sesión** **(2)**. 
 
    * Contraseña: <inject key="AzureAdUserPassword"></inject>
    
-      ![](/images/L01/signinp.png)
+      
+     ![](/images/lab01ex10-03.png)
 
 1. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
 
 1. Una vez que haya iniciado sesión, haga clic en **Entorno (1)** y seleccione el entorno de desarrollo creado previamente llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
-     ![](images/L01/dev11.png)
+     ![](images/lab01ex10-04.png)
 
 1. Ahora, haga clic en **Soluciones(1)** en el menú del lado izquierdo y haga clic en **Importar solución(2)**.
 
-      ![](images/L01/importsolution1.png)
+      ![](images/lab01ex10-05.png)
 
 1. Haga clic en **Examinar**.
     
-     ![](images/L01/browse1.png)
+     ![](images/lab01ex10-06.png)
      
 1. Navegue hasta la ruta `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` en el explorador de archivos, seleccione el archivo **Prioritz_1_0_0_7.zip** y haga clic en **Abrir**.
 
+    ![](images/lab01ex10-07.png)
+
 1. Asegúrese de que el archivo **Prioritz_1_0_0_7.zip(1)** esté seleccionado y haga clic en **Siguiente(2)**.
     
-     ![](images/L01/next1.png)
+     ![](images/lab01ex10-08.png)
      
 1. Haga clic en **Siguiente** nuevamente en la hoja de importación de solución.
+
+     ![](images/lab01ex10-09.png)
 
 1. En la sección **Conexiones**, haga clic en el botón de puntos suspensivos **...(1)** junto a **Microsoft Dataverse Priority**.
 
@@ -64,11 +69,11 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. Haga clic en **Importar(3)**.
 
-    ![](images/L01/connection1.png)
+    ![](images/lab01ex10-10.png)
     
 1. Espere hasta que se complete la importación de la solución.
 
-     ![](images/L01/solutionsuccess.png)
+     ![](images/lab01ex10-11.png)
      
 1. Ahora debería ver la solución que importó en la lista de soluciones.
 
@@ -76,101 +81,101 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. Expanda **Tablas (1)** y seleccione la tabla **PrioritZ Topic (2)**.
    
-     ![](images/L01/L01-table1.png)
+     ![](images/lab01ex10-12.png)
 
 1. Seleccione **Columnas** en Esquema y revise las columnas de la tabla **PrioritZ Topic**.
 
    >**Información**: Las columnas estándar están integradas y todas las tablas las tienen. El equipo creó las columnas personalizadas para esta aplicación.
  
-   ![](images/L01/L01-coulumn.png)
+   ![](images/lab01ex10-13.png)
 
 1. Seleccione la pestaña **Relaciones** del menú desplegable Columnas y revise cómo se relaciona esta tabla con otras tablas.
  
-    ![](images/L01/L01-relation.png)
+    ![](images/lab01ex10-14.png)
  
-    ![](images/L01/L01-relation1.png)
+    ![](images/lab01ex10-15.png)
 
 1. Seleccione **Flujo de nube (1)** y abra el flujo **Importar datos de muestra – Topics (2)**.
  
-    ![](images/L01/L01-cloud1.png)
+    ![](images/lab01ex10-16.png)
 
 1. Haga clic en el botón **Editar** para revisar el flujo.
   
-    ![](images/L01/edit21.png)
+    ![](images/lab01ex10-17.png)
 
 1. Expanda el paso **Parse JSON** y revise los datos que creará este flujo.
 
-    ![](images/L01/L01-parse1.png)
+    ![](images/lab01ex10-18.png)
     
     >>**Nota**: Si no puede expandir el paso, haga clic en los puntos suspensivos (...), luego seleccione Configuración y haga clic en Cancelar.
     
 1. Expanda el paso **Apply to each topic**.
     
-    ![](images/L01/L01-topic1.png)
+    ![](images/lab01ex10-19.png)
 
 1. Expanda el paso **Apply to each topic item**.
    
-     ![](images/L01/L01-eachtopic1.png)
+     ![](images/lab01ex10-20.png)
 
 1. Los pasos **Apply to each** deben verse como la imagen a continuación. Esta es la lógica para la automatización.
  
-    ![](images/L01/image111.png)
+    ![](images/lab01ex10-21.png)
 
 1. Haga clic en el botón **<- volver**.
  
-    ![](images/L01/image121.png)
+    ![](images/lab01ex10-22.png)
 
 1. Haga clic en el nombre del flujo para abrir la pantalla de detalles del flujo.
 
-     ![](images/L01/EX1-T1-141.png)
+     ![](images/lab01ex10-23.png)
 
 1. Haga clic en **Ejecutar** para ejecutar el flujo.
    
-     ![](images/L01/image131.png)
+     ![](images/lab01ex10-24.png)
 
 1. Haga clic en el botón **Ejecutar flujo** en la hoja Ejecutar flujo.
 
-     ![](images/L01/L01-new1.png)
+     ![](images/lab01ex10-25.png)
 
      > **Nota**: Si recibe este error `Error from the token exchange: Permission denied due to missing connection` mientras ejecuta el flujo, esto se debe a que la **conexión de Dataverse** no se está agregando correctamente. Elimine la solución importada e intente volver a importar la solución realizando los **Pasos 6 a 14** de esta tarea nuevamente, luego intente desencadenar el flujo de nuevo.
 
 1. Haga clic en **Listo** y espere a que se complete la ejecución del flujo.
 
-     ![](images/L01/EX1-T1-181.png)
+    ![](images/lab01ex10-26.png)
 
 1. El flujo debería ejecutarse correctamente. Si lo desea, puede hacer clic en la fila de ejecución y se le mostrarán los detalles de lo que hizo el flujo.
    
-      ![](images/L01/image141.png)
+      ![](images/lab01ex10-27.png)
 
 ### Tarea 2: Probar las aplicaciones
 
 1. Vuelva a la solución **PrioritZ** haciendo clic en **Flujos en la nube**. Alternativamente, también puede abrir el portal de creación de **Power Apps** utilizando esta URL `https://make.powerapps.com` si aún no está abierto. Asegúrese de que el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> ** esté seleccionado.
        
-   ![](images/L01/cloud1u.png)
+   ![](images/lab01ex10-28.png)
 
 1. Navegue hasta la hoja **Soluciones** haciendo clic en el botón **Volver a Soluciones** (<-)**.
 
-   ![](images/L01/solutions.png)
+   ![](images/lab01ex10-29.png)
    
 1. Seleccione **Aplicaciones (1)** en el menú del lado izquierdo de Power Apps. Debería ver dos aplicaciones llamadas **PrioritZ Ask** y **PrioritZ Admin (2)**. 
 
      >**Información:** La aplicación **PrioritZ Admin** se utiliza para administrar los temas sobre los que se pregunta y la aplicación **PrioritZ Ask** permite que los usuarios respondan.
 
-    ![](images/L01/EX1-T2-2_1_1u.png)
+    ![](images/lab01ex10-30.png)
 
 1. Inicie la aplicación **PrioritZ Admin** haciendo clic en el símbolo **iniciar**.
     
-    ![](images/L01/L01-adminu1.png)
+    ![](images/lab01ex10-31.png)
 
 1. Debería ver los cuatro temas siguientes.
 
-    ![](images/L01/EX1-T2-4-2u.png)
+    ![](images/lab01ex10-32.png)
 
 1. Haga clic para abrir el tema **Event banner**.
 
 1. Debería ver los detalles del tema con algunos elementos del tema.
 
-    ![](images/L01/EX1-T2-6-1u.png)
+    ![](images/lab01ex10-33.png)
 
 1. Haga clic en el botón **<** regresar.
 
@@ -222,7 +227,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. Seleccione **Aplicaciones (1)** en el menú del lado izquierdo de Power Apps e inicie la aplicación **PrioritZ Ask (2)** haciendo clic en el símbolo iniciar.
      
-     ![](images/L01/L01-Prioritzasku-1.png)
+     ![](images/lab01ex10-34.png)
 
 1. Debería ver una lista de temas. Abra el tema **Change Taco Tuesday to some other food** que creó en los pasos anteriores.
 
@@ -257,22 +262,22 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
    ```
 1. Seleccione **Soluciones (1)** en el menú del lado izquierdo de Power Apps y abra la solución **PrioritZ (2)**.
 
-   ![](images/L01/EX2-T1-2-1u.png)
+   ![](images/lab01ex02-01.png)
 
 1. Expanda **Tablas (1)** y seleccione la tabla **PrioritZ Topic (2)**.
 
 1. Seleccione la pestaña **Columnas** que se encuentra debajo de **+ Nuevo (3)** y haga clic en **columna (4)**.
 
-    ![](images/L01/EX2-T1-4u.png)
+    ![](images/lab01ex02-02.png)
 
 1. Ingrese el siguiente valor en el campo Nombre para mostrar.
 
    ```
    My Notes
    ```
-1. Ahora, busque **plain text (1)** en Tipo de datos, luego seleccione el que se encuentra como **Multiple lines of text (2)** y haga clic en **Guardar (3)**.
+1. Ahora, busque **texto sin formato (1)** en Tipo de datos, luego seleccione el que se encuentra como **Multiple lines of text (2)** y haga clic en **Guardar (3)**.
 
-    ![](images/L01/L01-notesu.png)
+    ![](images/lab01ex02-03.png)
    
    > **Nota**: No abandone esta página.
 
@@ -280,13 +285,13 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
 
 1. Asegúrese de que todavía se encuentra en la solución **PrioritZ**. Seleccione **Aplicaciones (1)** en **Objetos** y seleccione la aplicación **PrioritZ Admin (2)** y haga clic en **Editar (3)**.
     
-    ![](images/L01/L01-admineditu.png)
+    ![](images/lab01ex02-04.png)
 
 1. Seleccione **Add Topic Screen (1)**.
 
 1. Haga clic en **+ Insertar (2)** y seleccione **Entrada de texto (3)**.
    
-     ![](images/L01/tinputu.png)
+     ![](images/lab01ex02-05.png)
 
 1. Haga doble clic en la **Entrada de texto** recién agregada e ingrese el valor a continuación para cambiar el nombre de la entrada de texto.
 
@@ -426,11 +431,14 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
 
 1. Haga clic para abrir su entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
+    ![](images/lab01ex03-01.png)
+
+
 1. Haga clic con el botón derecho en el valor **Environment URL** y péguelo en el Bloc de notas.
  
     >**Nota**: Asegúrese de que el valor Environment URL se copie junto con **https**. El valor copiado debería verse parecido a `https://orgxxxxxx.crm.dynamics.com/`
 
-    ![](images/L01/image37u.png)
+    ![](images/lab01ex03-02.png)
 
 1. En JumpVM, inicie **Visual Studio Code** usando el acceso directo disponible en el escritorio.
 
@@ -438,7 +446,7 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
    
 1. Haga clic en **Terminal** y seleccione **Nuevo terminal**.
 
-    ![](images/L01/image42u.png)
+    ![](images/lab01ex03-03.png)
 
 1. Ejecute el siguiente comando en la terminal.
    ```
@@ -454,7 +462,7 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
 
    > **Información:** Después de agregar la URL del entorno, el comando se verá así: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
   
-    ![](images/L01/Eeditpac.png)
+    ![](images/lab01ex03-04.png)
 
 1. Complete el proceso de **Inicio de sesión**, utilizando las siguientes credenciales.
 
@@ -463,7 +471,7 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
 
 1. Seleccione la herramienta **Power Platform (1)**, ahora debería tener al menos un **perfil de autenticación (2)**. Si tiene más de un perfil, asegúrese de que el perfil que creó esté seleccionado.
    
-    ![](images/L01/L01-authu.png)
+    ![](images/lab01ex03-05.png)
 
     > **Nota**: Si puede ver el **Perfil Universal** en lugar del perfil **DeVAuth**, se debe a que agregó el valor **Environment URL** incorrecto en el comando **pac auth create** en el paso 9. Para solucionar este problema, siga los pasos a continuación:
 
@@ -473,7 +481,7 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
 
 1. Haga clic en **Terminal** y seleccione **Nuevo terminal** si aún no está abierta.
 
-     ![](images/L01/image42.png)
+     ![](images/lab01ex03-06.png)
 
 1. Ejecute el siguiente comando para ver una lista de soluciones.
 
@@ -482,7 +490,7 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
       ```
 1. Debería ver una lista de soluciones instaladas en su entorno.
     
-    ![](images/L01/sollistu.png)
+    ![](images/lab01ex03-07.png)
 
 ## Resumen
 

@@ -27,34 +27,34 @@ acciones, por lo que no se ejecutan bajo su identidad de usuario individual.
 
 1. En la página principal del Portal Azure, busque **Microsoft Entra ID** ***(1)*** en la barra de búsqueda y seleccione **Microsoft Entra ID** ***(2)*** en las sugerencias.
 
-   ![](images/dev3.png)
+   ![](images/lab04-ex01-01.png)
    
 1. Seleccione **Registros de aplicaciones** ***(1)*** en la hoja lateral y haga clic en **+ Nuevo registro** ***(2)***. Este registro de aplicación se utilizará para que el conector acceda a la API protegida.
 
-   ![](images/L05/diad5l2.png)
+   ![](images/lab04-ex01-02.png)
 
 1. Proporcione los siguientes datos y haga clic en **Registrarse** ***(3)***.
    
    - Nombre: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-   - Tipos de cuenta admitidos: **Cuentas solo en este directorio organizacional (OTU WA HOL - xxxxxx only - Single tenant)** ***(2)***.
+   - Tipos de cuenta admitidos: **Cuentas solo en este directorio organizacional (Azure HOL - xxxxxx only - Single tenant)** ***(2)***.
 
-     ![](images/L05/diad5l3uup.png)
+     ![](images/lab04-ex01-03.png)
    
 1. Copie el **ID de la aplicación (cliente)**, el **ID del directorio (inquilino)** y guárdelo en un bloc de notas cuando lo necesite para su uso posterior.
      
-   ![](images/L05/diad5l4.png)
+   ![](images/lab04-ex01-04.png)
 
 1. Seleccione **Certificados y secretos** en la hoja lateral y haga clic en **+ Nuevo secreto de cliente**.
 
-   ![](images/L05/diad5l5.png)
+   ![](images/lab04-ex01-05.png)
 
 1. Ingrese **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** ***(1)*** como descripción, establezca el vencimiento en **3 meses** ***(2)* ** y haga clic en **Agregar** ***(3)***.
    
-   ![](images/L05/diad5l6.png)
+   ![](images/lab04-ex01-06.png)
    
 1. Copie el **valor** y guárdelo en un bloc de notas, ya que lo necesitará para usarlo más adelante.
 
-   ![](images/L05/diad5l7.png)
+   ![](images/lab04-ex01-07.png)
 
     >**Nota**: Asegúrese de copiar y pegar el **ID de aplicación (cliente)**, el **ID de directorio (inquilino)** y el valor **Secreto** correctos. Copiar el valor incorrecto provocará problemas en los siguientes pasos/tareas.
     
@@ -69,7 +69,7 @@ En esta tarea, probará nuevos entornos de Dataverse.
      ```
 1. Haga clic en **+Nuevo** para crear un nuevo Dataverse.       
 
-   ![](images/L05/newtask1.png)
+   ![](images/lab04-ex01-08.png)
 
 1. En la pestaña **Nuevo entorno**.
    
@@ -83,15 +83,15 @@ En esta tarea, probará nuevos entornos de Dataverse.
    
    - ¿Implementar aplicaciones y datos de muestra? :**Habilite Sí(6)** y haga clic en **Guardar(7)**.
    
-     ![](images/L05/newtask2.png)
+     ![](images/lab04-ex01-09.png)
 
-     ![](images/L05/newtask3.png)
+     ![](images/lab04-ex01-10.png)
 
-     ![](images/L05/newtask4.png)
+     ![](images/lab04-ex01-11.png)
 
 1. Ahora puede ver el nuevo Dataverse, **DEV_ENV_TEST**, que creó.
 
-   ![](images/L05/newtask5.png)
+   ![](images/lab04-ex01-12.png)
 
 ### Tarea 3: Crear una usuaria de aplicación en Dataverse
 
@@ -107,81 +107,81 @@ implementar soluciones.
 
 1. Haga clic en **Entornos** ***(1)*** en la hoja lateral y seleccione su entorno **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** ***(2 )***.
 
-   ![](images/L05/env1u.png)
+   ![](images/lab04-ex01-13.png)
    
 1. Desde la página de su entorno, haga clic en **Configuración**.
 
-   ![](images/L05/diad5l9u.png)
+   ![](images/lab04-ex01-14.png)
    
 1. Expanda **Usuarios + permisos** **(1)** y seleccione **Usuarios de la aplicación** **(2)**.
     
-   ![](images/L05/diad5l10u.png)
+   ![](images/lab04-ex01-15.png)
 
 1. En la página de usuarios de la aplicación, haga clic en **+ Nuevo usuario de la aplicación**.
 
-   ![](images/L05/diad5l11u.png)
+   ![](images/lab04-ex01-16.png)
    
 1. En la pestaña Crear un nuevo usuario de aplicación, haga clic en **+ Agregar una aplicación**.
       
-   ![](images/L05/diad5l12.png)
+   ![](images/lab04-ex01-17.png)
    
 1. Seleccione el registro de la aplicación **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** que creó anteriormente y haga clic en **Agregar** **(2)**.
 
-   ![](images/L05/diad5l13u.png)
+   ![](images/lab04-ex01-18.png)
 
 1. Escriba **org** y seleccione su **unidad de negocio** **(1)** y en **Roles de seguridad** haga clic en **editar símbolo (2)** y seleccione 
    **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
-   ![](images/L05/diad5l14u.png)
+   ![](images/lab04-ex01-19.png)
 
    **Nota:** Si el símbolo **#** aún está visible antes de GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, haga clic en él y actualice el panel para eliminarlo.
    
 1. Vuelva nuevamente a **Entornos** ***(1)*** en la hoja lateral y seleccione su **entorno de prueba** ***(2)***.
 
-   ![](images/L05/diad5l17u.png)
+   ![](images/lab04-ex01-20.png)
    
 1. Desde la página de su entorno de prueba, haga clic en **Configuración**.
 
-   ![](images/L05/diad5l18u.png)
+   ![](images/lab04-ex01-21.png)
 
 1. Expanda **Usuarios + permisos** ***(1)*** y seleccione **Usuarios de la aplicación** ***(2)***.
     
-   ![](images/L05/diad5l19u.png)
+   ![](images/lab04-ex01-22.png)
    
 1. En la página de usuarios de la aplicación, haga clic en **+ Nuevo usuario de la aplicación**.
 
-   ![](images/L05/diad5l11uu.png)
+   ![](images/lab04-ex01-23.png)
    
 1. En la pestaña **Crear un nuevo usuario de aplicación**, haga clic en **+ Agregar una aplicación**.
       
-   ![](images/L05/diad5l12.png)
+   ![](images/lab04-ex01-24.png)
    
 1. Seleccione el registro de la aplicación **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** que creó anteriormente y haga clic en **Agregar** ***(2 )***.
 
-   ![](images/L05/diad5l13uu.png)
+   ![](images/lab04-ex01-25.png)
 
 1. Escriba **org** y seleccione su **unidad de negocio** **(1)** y en **Roles de seguridad** haga clic en **editar símbolo (2)** y seleccione 
    **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
-   ![](images/L05/diad5l14uu.png)
+   ![](images/lab04-ex01-26.png)
 
    **Nota:** Si el símbolo **#** aún está visible antes de GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, haga clic en él y actualice el panel para eliminarlo.
    
 1. Haga clic en **Entornos** ***(1)*** en la hoja lateral y seleccione su entorno **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** ***(2 )***.
 
-   ![](images/L05/envu.png)
+   ![](images/lab04-ex01-27.png)
    
 1. Copie la **URL del entorno** y guárdela en un bloc de notas; utilizará esta URL en pasos futuros.
     
-   ![](images/L05/diad5l211u.png)
+   ![](images/lab04-ex01-28.png)
    
 1. Vuelva nuevamente a **Entornos** ***(1)*** en la hoja lateral y seleccione su entorno **de prueba(2)**.
 
-   ![](images/L05/diad5l17uu.png)
+   ![](images/lab04-ex01-29.png)
    
 1. Copie la **URL del entorno** y guárdela en un bloc de notas; utilizará esta URL en pasos futuros.
     
-   ![](images/L05/diad5l22u.png)
+   ![](images/lab04-ex01-30.png)
 
 ## Ejercicio 2: Promover la Solución al Entorno de Pruebas
 
@@ -199,7 +199,7 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
 
 1. Seleccione la solución del conector **Contoso Badges** y haga clic en **Exportar solución**.
    
-     ![](images/L03/L03-EX4-export.png)
+     ![](images/lab04-ex02-01.png)
 
 1. En la hoja **Antes de exportar**, haga clic en **Publicar** y espere a que se complete la publicación.
 
@@ -211,7 +211,7 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
 
 1. Haga clic en el botón Descargar en la parte superior derecha de la pantalla. Haga clic en Descargar Solución.
  
-    ![](images/L03/SolutionDown1.png)
+    ![](images/lab04-ex02-02.png)
 
 ### Tarea 2: Importar la solución
 
@@ -220,10 +220,11 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
      ```
      https://make.powerapps.com
      ```
+     ![](images/lab04-ex02-03.png)
 
 1. Haga clic en **Importar Solución**.
     
-     ![](images/L03/L03-EX5.png)
+     ![](images/lab04-ex02-04.png)
      
      >**Nota:** Intente actualizar el navegador si las soluciones no están abiertas.
 
@@ -243,14 +244,14 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
 
 1. Haga clic para abrir **Badges connector**.
   
-    ![](images/L03/image58.png)
+    ![](images/lab04-ex02-05.png)
 
     >**Nota**: Si recibe el mensaje de error **could not retrieve the connector data**, espere unos minutos (5 a 10 minutos) para que se actualicen los datos del conector. Si eso no funciona, puede eliminar el conector importado y realizar los **pasos 5 a 10** de la tarea **Tarea 2: Importar solución** nuevamente y luego intente abrir el conector.
 
 1. Haga clic en **Editar**.
 1. Seleccione la pestaña **Probar** en el menú desplegable.
 
-     ![](images/L03/L03-EX5-default.png)
+     
 
 1. Haga clic en **+ Nueva conexión**. Se abrirá una nueva pestaña del navegador para crear una conexión.
 1. Abra una nueva ventana o pestaña del navegador y navegue hasta la siguiente URL para abrir la API Contoso Coffee Badges.
@@ -267,21 +268,23 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
 
 1. Vuelva al editor de conectores, pegue la API Key que copió en el paso anterior y haga clic en **Crear conexión**. Ahora, cierre la pestaña del navegador haciendo clic en **X**.
    
-     ![](images/L03/image61.png)
+     ![](images/lab04-ex02-06.png)
 
 1. Haga clic en **Actualizar** conexiones.
      
-      ![](images/L03/image62.png)
+      ![](images/lab04-ex02-07.png)
 
 1. Vaya a la sección **Operaciones** y seleccione la operación **addcredit**.
 
+      ![](images/lab04-ex02-08.png)
+
 1. Proporcione su correo electrónico para **recipientid**, proporcione el **name**, ingrese **1** para **points** y haga clic en **Probar operación**.
      
-     ![](images/L03/image63u.png)
+     ![](images/lab04-ex02-09.png)
 
 1. La prueba debería tener éxito y la respuesta debería verse como la imagen a continuación.
       
-      ![](images/L03/image64u.png)
+      ![](images/lab04-ex02-10.png)
 
 ## Ejercicio 3: crear un repositorio de GitHub
 
@@ -296,49 +299,49 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
    ```
 1. Haz clic en el icono de tu perfil y selecciona **Tus repositorios**.
 
-   ![](images/L05/github1u.png)
+   ![](images/lab04-ex03-01.png)
 
 1. Haga clic en **Nuevo repositorio** para crear un repositorio.
 
-   ![](images/L05/github2u.png)
+   ![](images/lab04-ex03-02.png)
 
 1. Ingrese **PrioritZ (1)** para el nombre del repositorio, seleccione **Público (2)** y marque **Agregar un archivo README (3)**.
 
-   ![](images/L05/github3.png)
+   ![](images/lab04-ex03-03.png)
 
 1. Haga clic en **Crear repositorio** para crearlo.
 
-   ![](images/L05/github4.png)
+   ![](images/lab04-ex03-04.png)
 
 1. Haga clic en **Configuración** para abrir la pestaña de configuración.
     
-     ![](images/L05/Imagessettinguu.png)
+     ![](images/lab04-ex03-05.png)
 
 1. Vaya a la sección **Security (1)**, expanda **Secrets and variables (2)** y seleccione **Actions (3)**.
    
     > **Nota:** Los valores que proporcione no serán visibles después de crear el elemento, así que tómese su tiempo para obtener los valores correctos.
       
-     ![](images/L05/actionpermissionuuu-1.png)
+     ![](images/lab04-ex03-06.png)
    
 1. Haga clic en **Nuevo secreto de repositorio** para agregar un secreto.
 
-     ![](images/L05/github7uu.png)
+     ![](images/lab04-ex03-07.png)
 
 1. Ingrese **PowerPlatformAppID (1)** como Nombre y pegue la contraseña: **<inject key="AzureAdUserEmail"></inject> (2)** y **haga clic en Agregar secreto (3)**
     
-     ![](images/L05/github8u.png)
+     ![](images/lab04-ex03-08.png)
 
 1. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
 1. Ingrese **PowerPlatformClientSecret (1)** como Nombre y pegue la contraseña: **<inject key="AzureAdUserPassword"></inject> (2)** y **haga clic en Agregar secreto (3)**
 
-     ![](images/L05/github9u.png)
+     ![](images/lab04-ex03-09.png)
 
 1. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
 1. Ingrese **PowerPlatformTenantID (1)** para Nombre y pegue el secreto **Tenant ID (2)** de su bloc de notas que anotó anteriormente en **`Ejercicio 1 -> Tarea 1 -> Paso 5`** en el **Valor** y haga clic en **Agregar secreto (3)**.
     
-     ![](images/L05/github10u.png)
+     ![](images/lab04-ex03-10.png)
 
 1. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
@@ -346,7 +349,7 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
     >**Nota**: Asegúrate de pegar la URL del entorno de desarrollo denominada **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** que copiaste en el **`Ejercicio 1 -> Tarea 3 -> Paso 17`**
    
-     ![](images/L05/github11u.png) 
+     ![](images/lab04-ex03-11.png) 
   
 1. Haga clic en **Nuevo secreto del repositorio** una vez más.
 
@@ -354,11 +357,11 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
      >**Nota**: Asegúrese de pegar la URL del entorno de prueba denominada **DEV_ENV_TEST** que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 19`**.
  
-     ![](images/L05/L05-testurla.png)
+     ![](images/lab04-ex03-12.png)
    
 1. Ahora deberías tener **5** secretos del repositorio.
      
-    ![](images/L05/Images20uu5u.png)
+    ![](images/lab04-ex03-13.png)
 
 1. No salgas de esta página.
 
@@ -372,7 +375,8 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
 
 1. Seleccione la pestaña **Acciones** y haga clic en **Configurar un flujo de trabajo usted mismo** para crear un nuevo flujo de trabajo.
  
-   ![](images/L05/Imagesworku.png)
+   ![](images/lab04-ex04-01.png)
+   
    
 1. Cambie el nombre del archivo **export-and-branch.yml**
        
@@ -386,25 +390,25 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
 
 1. Haga clic en **Confirmar cambios** y luego haga clic en **Confirmar cambios**.
     
-   ![](images/L05/commit1.png)
+   ![](images/lab04-ex04-02.png)
 
-   ![](images/L05/Images202uuu.png)
+   ![](images/lab04-ex04-03.png)
 
 1. Haga clic en **Settings (1)**, vaya a la pestaña **Actions (2)** en el lado izquierdo, luego seleccione **General (3)**.
 
-   ![](images/L05/github6u-1.png)
+   ![](images/lab04-ex04-04.png)
 
 1. En la sección **Permiso de flujo de trabajo**, asegúrese de que esté seleccionado **permiso de lectura y escritura** y luego haga clic en **guardar**.
 
-   ![](images/L05/workflowpermissionuuu.png)
+   ![](images/lab04-ex04-05.png)
 
 1. Seleccione la pestaña **Acciones** **(1)** y seleccione el **flujo de trabajo** ***(2)*** que creó.
 
-   ![](images/L05/diad5l27.png)
+   ![](images/lab04-ex04-06.png)
    
 1. Haga clic en **Ejecutar flujo de trabajo.**
       
-   ![](images/L05/Images2027u.png)
+   ![](images/lab04-ex04-07.png)
    
 1. Haga clic en **Ejecutar flujo de trabajo** nuevamente y espere a que se complete la ejecución del flujo de trabajo.
       
@@ -412,11 +416,11 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
    
 1. Seleccione la pestaña **Code** ***(1)*** y haga clic en **Branches** ***(2)***. Debería ver dos ramas.
    
-   ![](images/L05/diad5l29u-1.png)
+   ![](images/lab04-ex04-08.png)
    
 1. Haga clic para abrir la rama que se creó mediante la acción de flujo de trabajo denominada Prioritz-XXXXXXXX-XXXX.
    
-   ![](images/L05/changesbranchu.png)
+   ![](images/lab04-ex04-09.png)
 
 1. En la carretera Prioritz-XXXXXXX. rama, debería poder ver la carpeta de la solución.
       
@@ -424,17 +428,17 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
    
 1. Haga clic en el botón **Contribuir** ***(1)*** y seleccione **Abrir solicitud de extracción** ***(2)***.
         
-   ![](images/L05/L05-t1-1u.png)
+   ![](images/lab04-ex04-10.png)
    
 1. Agregue una descripción si lo desea y luego haga clic en **Crear solicitud de extracción**.
 
-     ![](images/L05/pr1u.png)
+     ![](images/lab04-ex04-11.png)
    
 1. Ahora debería ver el resumen de la solicitud de extracción. Confirme que la rama no tenga conflictos con la rama principal y que los cambios se puedan fusionar en la rama principal automáticamente.
    
 1. Haga clic en el botón de chevrón al lado del botón **Fusionar solicitud de extracción** y seleccione **Aplastar y fusionar**.
       
-    ![](images/L05/Images2032u.png)
+    ![](images/lab04-ex04-12.png)
 
 1. Haga clic en **Aplastar y fusionar**.
    
@@ -455,11 +459,11 @@ exportado al entorno de prueba.
    
 1. Haga clic en **Nuevo flujo de trabajo (2)**.
 
-    ![](images/L05/nwwfu.png)
+    ![](images/lab04-ex05-01.png)
    
 1. Ahora, en la página **Elija un flujo de trabajo**, haga clic en **configurar un flujo de trabajo usted mismo**.
      
-    ![](images/L05/Images2033u.png)
+    ![](images/lab04-ex05-02.png)
    
 1. Cambie el nombre del archivo a **release-to-test.yml**
    
@@ -473,7 +477,7 @@ exportado al entorno de prueba.
       
 1. Haga clic en **Confirmar cambios** y luego haga clic en **Confirmar cambios**.
 
-    ![](images/L05/commit1.png)
+    ![](images/lab04-ex05-03.png)
     
 1. Seleccione la pestaña **Código** y asegúrese de seleccionar Prioritz-XXXXXXX.
 
@@ -499,11 +503,11 @@ exportado al entorno de prueba.
      
 1. Vuelva al portal de PowerApps y asegúrese de estar en el entorno de prueba de PowerApps.
 
-      ![](images/L05/lastu.png)
+      ![](images/lab04-ex05-04.png)
 
 1. seleccione la pestaña **soluciones (1)** en el lado izquierdo y haga clic en **Administrado (2)**. Debería ver la solución implementada con el nombre de **Prioritz (3)**.
 
-    ![](images/L05/lastuu.png)
+    ![](images/lab04-ex05-05.png)
     
 ## Resumen
 En esta práctica de laboratorio, aprendió a promover una solución en un entorno de prueba, configurar una entidad de servicio y administrar su solución usando GitHub para el control de versiones y la automatización del flujo de trabajo.

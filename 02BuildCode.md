@@ -35,11 +35,11 @@ En este ejercicio, creará el componente de código.
     
    >**Nota**: La pestaña Power Platform ya está instalada.
     
-    ![](images/L02/L01-authuu.png)
+    ![](images/lab02-ex01-01.png)
 
 1. Haga clic en **Terminal (1)** y seleccione **Nuevo terminal (2).**
      
-     ![](images/L02/L02-terminaluu.png)
+     ![](images/lab02-ex01-02.png)
 
 1. En la ventana Terminal, cree un nuevo directorio ejecutando el siguiente comando.
 
@@ -57,11 +57,11 @@ En este ejercicio, creará el componente de código.
      pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --framework react --run-npm-install
      ```
      
-     ![](images/L02/image3.png)
+     ![](images/lab02-ex01-03.png)
 
 1. El proyecto del framework de componentes debería crearse correctamente.
 
-    ![](images/L02/image4.png)
+    ![](images/lab02-ex01-04.png)
 
 1. Ejecute el siguiente comando para abrir el proyecto.
     ```
@@ -70,17 +70,17 @@ En este ejercicio, creará el componente de código.
 
 1. Si aparece la siguiente ventana emergente, haga clic en **Sí** para confiar en los autores de los archivos.
 
-    ![](images/L02/image4.1.png)
+    ![](images/lab02-ex01-05.png)
 
 1. Revise los archivos de componentes de código creados seleccionando la pestaña **Explorador**.
     
-     ![](images/L02/L02-explorer.png)
+     ![](images/lab02-ex01-06.png)
 
 1. Expanda la carpeta **PrioritZDnDRanking** y luego expanda la subcarpeta **generated**.
 
 1. Abra el archivo **ControlManifest.Input.xml**. El manifiesto es el archivo de metadatos que define un componente, incluyendo las propiedades expuestas a la aplicación de alojamiento.
 
-      ![](images/L02/image6.png)
+      ![](images/lab02-ex01-07.png)
 
 1. Ubique el elemento XML **data-set** en la **línea número 21** del archivo **ControlManifest.Input.xml**.
 
@@ -167,7 +167,7 @@ En este ejercicio, creará el componente de código.
 
 1. Seleccione el archivo del componente **HelloWorld.tsx**, haga clic derecho sobre él y seleccione **Eliminar** para eliminar el archivo del componente, ya que se crea automáticamente y no lo usaremos.
 
-     ![](images/L02/L02-EX1-T2-1.png)
+     ![](images/lab02-ex01-08.png)
     
 1. Navegue hasta la ruta `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` en el explorador de archivos.
     
@@ -183,7 +183,7 @@ En este ejercicio, creará el componente de código.
     
 1. Observe que la línea 9 `from react-beautiful-dnd` tiene un subrayado rojo. Este es un paquete npm que el componente utiliza y al que no hemos hecho referencia.
 
-     ![](images/L02/image17.png)
+     ![](images/lab02-ex01-09.png)
  
  1. Ejecute el siguiente comando en una ventana de terminal para agregar una referencia a react-beautiful-dnd.
 
@@ -418,7 +418,7 @@ En este ejercicio, creará el componente de código.
 
 1. Haga clic en **Terminal** y seleccione **Nuevo terminal**.
      
-      ![](images/L02/image27.png)
+      ![](images/lab02-ex01-02.png)
 
 1. Ejecute el siguiente comando. Esto compilará su componente e identificará cualquier problema.
 
@@ -430,7 +430,7 @@ En este ejercicio, creará el componente de código.
  
 1. La compilación debería tener éxito. Si hay algún error, resuélvalo antes de continuar.
       
-       ![](images/L02/image28.png)
+    ![](images/L02/image28.png)
  
 1. Ejecute el siguiente comando para iniciar el arnés de prueba.
     
@@ -492,11 +492,11 @@ En este ejercicio, creará el componente de código.
     
 1. Seleccione **Soluciones** y abra la solución **PowerAppsTools_contoso**.
     
-    ![](images/L02/image32u.png)
+    ![](images/lab02-ex01-10.png)
 
 1. Confirme que el control personalizado se encuentra en esta solución.
      
-      ![](images/L02/image33u.png)
+      ![](images/lab02-ex01-11.png)
 
 > **Felicidades** por completar la tarea! Ahora, es el momento de validarlo. Estos son los pasos:
 > - Presione el botón Validar para la tarea correspondiente. Si recibe un mensaje de éxito, puede continuar con la siguiente tarea. 
@@ -521,19 +521,21 @@ En esta tarea, permitirá la publicación de aplicaciones de canvas con componen
 
 1. Abra el entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** que está usando para este laboratorio.
 
+    ![](images/lab02-ex02-01.png)
+
 1. Haga clic en **Configuración** en el menú superior.
     
-     ![](images/L02/settingsu.png)
+     ![](images/lab02-ex02-02.png)
 
 1. Expanda **Productos(1)** y seleccione **Características(2)**.
     
-     ![](images/L02/featureu.png)
+     ![](images/lab02-ex02-03.png)
 
 1. Active **Permitir publicación de aplicaciones de canvas con componentes de código**, desplácese hacia abajo y haga clic en **Guardar**.
      
-      ![](images/L02/image35.2u.png)
+      ![](images/lab02-ex02-04.png)
 
-      ![](images/L02/image35.2uu.png)
+      ![](images/lab02-ex02-05.png)
 
 ### Tarea 2: Editar la aplicación de canvas
 
@@ -548,7 +550,7 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 
 1. Seleccione **Aplicaciones (1)**, seleccione la aplicación **PrioritZ Ask (2)** y haga clic en **Editar (3)**.
 
-     ![](images/L02/L02-editu.png)
+     ![](images/lab02-ex02-06.png)
 
 1. Seleccione la pestaña **Componentes**, haga clic en la flecha hacia atrás para **Importar componentes**.
 
@@ -722,17 +724,19 @@ En este ejercicio, agregará el componente de código que creó a la solución P
       ```
 1. Seleccione **Soluciones** y abra la solución **PrioritZ**.
 
+    ![](images/lab02-ex03-01.png)
+
 1. Haga clic en **Agregar existente** y seleccione **Más | Desarrollador | Control personalizado**.
       
-      ![](images/L02/image50.1.png)
+      ![](images/lab02-ex03-02.png)
  
 1. Seleccione **contoso_ContosoCoffee.PrioritZDnDRanking (1)** y haga clic en **Agregar (2)**.
      
-      ![](images/L02/image51.1.png)
+      ![](images/lab02-ex03-03.png)
  
 1. Haga clic en **Publicar todas las personalizaciones** y espere a que se complete la publicación.
 
-    ![](images/L02/L02-EX3.png)
+    ![](images/lab02-ex03-04.png)
 
 ## Resumen
 
