@@ -59,9 +59,21 @@ En este ejercicio, creará el componente de código.
      
      ![](images/lab02-ex01-03.png)
 
+   > Nota: El comando anterior podría tomar de 2 a 3 minutos en ejecutarse.
+
 1. El proyecto del framework de componentes debería crearse correctamente.
 
     ![](images/lab02-ex01-04.png)
+
+    >**Nota:** Al instalar las dependencias, podría ver advertencias como:
+
+    >- npm WARN deprecated @babel/plugin-proposal-object-rest-spread
+
+    >- npm WARN deprecated rimraf@3.0.2
+
+    >- npm WARN deprecated eslint@8.57.1
+
+    > Estas advertencias indican que algunos paquetes están desactualizados o ya no se actualizan. Puede ignorarlas, ya que no afectarán el funcionamiento del proyecto.
 
 1. Ejecute el siguiente comando para abrir el proyecto.
     ```
@@ -234,15 +246,20 @@ En este ejercicio, creará el componente de código.
     private state: ComponentFramework.Dictionary;
     ```
     
-    ![](images/L02/image21.png)
+    ![](images/L02/L2T2S15.png)
  
-1. Ubique la función **init**.
+1. Ubique la función **init** y remueva la siguiente línea de código
  
-      ![](images/L02/init.png)
-        
+    ```
+     state: ComponentFramework.Dictionary
+     ```
+     
+   ![](images/L02/initu.png)
+
+
 1. Pegue el código a continuación dentro de la función **init**. Esta lógica inicializa nuestras variables de clase a partir de los valores de tiempo de ejecución y habilita la notificación de cambio de tamaño.
     
-       ![](images/L02/init1.png)
+   ![](images/L02/init1.png)
    
        ```
        this.context = context;
@@ -441,6 +458,10 @@ En este ejercicio, creará el componente de código.
 1. El arnés de prueba debería iniciarse; si no, copie la dirección y péguela en una nueva ventana del navegador. Intente arrastrar los elementos y vea si el comportamiento funciona como se esperaba.
 
       ![](images/L02/imagee29u.png)
+
+    > **Nota**: **Si recibe una ventana emergente de Internet Explorer, ciérrela, luego copie la URL del host local y péguela en una nueva pestaña en Edge**.
+
+      ![](images/L02/ep2.png) 
  
      > **Nota**: Si el arnés de prueba no se inició como se esperaba, no podrá ver el resultado esperado como se mencionó. Verifique que haya seguido las instrucciones anteriores y haya agregado el código correctamente en los archivos **Manifest e Index**.
 
@@ -464,10 +485,9 @@ En este ejercicio, creará el componente de código.
         1. Navegue hasta el directorio `C:\LabFiles` y abra **dotnet-sdk-8.0.100-win-x64**.
         2. En la ventana de configuración, seleccione **Reparar**, luego espere a que se complete el proceso.
         3. Una vez finalizada la reparación, cierre Visual Studio Code, vuelva a abrirlo y primero ejecute el comando de compilación presente en el paso 28 y vuelva a ejecutar el comando anterior.
-        4. Si el problema persiste, desinstale **dotnet-sdk-8.0.100-win-x64** e instale la última versión desde [la página de descarga de .NET](https://dotnet.microsoft.com/en-us /descargar). Cierre Visual Studio Code, vuelva a abrirlo, ejecute el comando de compilación del paso 28 y luego ejecute el comando anterior nuevamente.
+        4. Si el problema persiste, desinstale **dotnet-sdk-8.0.100-win-x64** e instale la última versión desde [la página de descarga de .NET](https://dotnet.microsoft.com/en-us/download). Cierre Visual Studio Code, vuelva a abrirlo, ejecute el comando de compilación del paso 28 y luego ejecute el comando anterior nuevamente.
 
-     2. Si la operación de inserción falla con el error **`Lo sentimos, la aplicación encontró un error no recuperable y deberá finalizar`**, asegúrese de haber seguido las instrucciones. 
-        instrucciones anteriores y agregué el código correctamente en los archivos **Manifiesto e Índice**. 
+     2. Si la operación de inserción falla con el error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, asegúrese de haber seguido las instrucciones anteriores y agregué el código correctamente en los archivos **Manifiesto e Índice**. 
         
         Además, puede encontrar los archivos **Manifiesto e Índice** en la ubicación `C:\LabFiles`, puede comparar su código con estos archivos y solucionar los problemas, si los hay. 
         Vuelva a intentar enviar el componente ejecutando el **comando pac push** nuevamente.
@@ -494,7 +514,7 @@ En este ejercicio, creará el componente de código.
     
     ![](images/lab02-ex01-10.png)
 
-1. Confirme que el control personalizado se encuentra en esta solución.
+1. Haga clic en **All** y confirme que el control personalizado se encuentra en esta solución.
      
       ![](images/lab02-ex01-11.png)
 
@@ -585,8 +605,12 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 1. Seleccione el componente **PrioritZDnDRanking** en **Componentes de Código**.
       
      ![](images/L02/image42uuu.png)
+
+   >**Nota:** Si recibe una ventana emergente para "Select a data source," simplemente haga clic en **Close**.
  
 1. Vaya a la pestaña de vista de árbol y seleccione el elemento **PrioritZDnDRanking** que acaba de agregar.
+
+      ![](images/L02/popupsa.png)
 
 1. Establezca el valor **Items** del componente **PrioritZDnDRanking** con la fórmula que se muestra a continuación.
 
@@ -599,6 +623,10 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 1. Seleccione **PrioritZDnDRanking**, vaya al panel **Properties** que se encuentra en el lado derecho de la pantalla, configure **Item Height** en 160 y haga clic en **Edit Fields**.
 
       ![](images/L02/image43u.png)
+
+    >**Note:** Si no puede encontrar las propiedades en el lado derecho de la pantalla, haga clic en la opción de propiedades ubicada junto al botón editar en la esquina superior derecha.
+
+      ![](images/L02/pro.png)
 
 1. Haga clic en **+ Agregar campo** para agregar un nuevo campo.
 
