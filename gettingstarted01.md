@@ -51,7 +51,7 @@ En estos laboratorios, seguirá un proceso estructurado para dominar los aspecto
  
 Una vez que esté listo para comenzar, su máquina virtual y la **Guía de laboratorio** estarán a su alcance en su navegador web.
 
-![](./images/GS6a.png)
+![](./images/GS6a-1.png)
 
 ### Máquina Virtual y Guía de Laboratorio
  
@@ -63,7 +63,7 @@ En el entorno integrado, la máquina virtual del laboratorio funciona como el es
 
 Para comprender mejor los recursos y credenciales de su laboratorio, navegue hasta la pestaña **Detalles del Ambiente**.
 
-![](./images/GS20.png)
+![](./images/GS20-1.png)
 
 ## Guía de laboratorio Acercar/Alejar
 
@@ -75,35 +75,35 @@ Para ajustar el nivel de zoom de la página del entorno, haga clic en el ícono 
 
 Para mayor comodidad, puede abrir la guía de laboratorio en una ventana separada seleccionando el botón **Ventana Dividida** en la esquina superior derecha.
  
-![](./images/GS8.png)
+![](./images/GS8-1.png)
  
 ## Administración de su Máquina Virtual
 
 Siéntase libre de iniciar, detener o reiniciar su máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Su experiencia está en sus manos!
  
-![](./images/resources-vm-manage.png)
+![](./images/resources-vm-manage-1.png)
  
 ## Comencemos con el Portal de Azure
 
 1. En su máquina virtual, haga clic en el ícono del Portal de Azure como se muestra a continuación:
  
-   ![](./images/GS1.png)
+   ![](./images/GS1-1.png)
  
 2. Verá la pestaña **Iniciar sesión en Microsoft Azure**. Aquí, ingrese sus credenciales:
  
    - **Correo Electrónico/Nombre de Usuario:** <inject key="AzureAdUserEmail"></inject>
  
-     ![](./images/GS2.png "Ingrese Correo Electrónico")
+     ![](./images/GSlogin2.png "Ingrese Correo Electrónico")
  
 3. A continuación, proporcione su contraseña:
  
    - **Contraseña:** <inject key="AzureAdUserPassword"></inject>
  
-     ![](./images/GS3.png "Ingrese Contraseña")
+     ![](./images/GS3-11.png "Ingrese Contraseña")
  
 4. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
 
-   ![](./images/GS9.png)
+   ![](./images/GS9-11.png)
 
 5. Si ve la ventana emergente **¡Tiene recomendaciones gratuitas de Azure Advisor!**, cierre la ventana para continuar con el laboratorio.
 
@@ -123,7 +123,7 @@ Contactos de Soporte para Estudiantes:
 
 Ahora, haga clic en Siguiente en la esquina inferior derecha para pasar a la página siguiente.
 
-![](./images/GS4.png)
+![](./images/GS4-122.png)
 
 ## ¡¡Feliz aprendizaje!!
 
