@@ -86,7 +86,7 @@ To adjust the zoom level for the environment page, click the **A↕** icon locat
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-![](./images/2144.png)
+![](./images/2145.png)
  
 ## Let's Get Started with Azure Portal
  
