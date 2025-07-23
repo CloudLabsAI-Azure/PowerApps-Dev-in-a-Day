@@ -114,11 +114,13 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
  
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
-   ![](./images/GS9.png)
+   ![](./images/2101.png)
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+
+   ![](./images/2102.png)
 
 By completing these exercises, You will import and customize Power Platform solutions, create and implement custom code components with Visual Studio Code, develop and integrate custom connectors, create and deploy Azure Functions, and manage solutions using GitHub for source control.
    

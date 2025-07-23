@@ -104,7 +104,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. Click on **Import(3)**.
 
-    ![](images/L01/connection1.png)
+    ![](images/2103.png)
     
 1. Wait until the solution import to complete.
 
@@ -112,13 +112,15 @@ In this exercise, you will import the current solution into the pre-created dev 
      
 1. You should now see the solution you imported in the list of solutions.
 
+     ![](images/2104.png)
+
 1. Open the **Prioritz** solution you imported.
 
 4. Expand **Tables (1)** and select the **Prioritz Topic (2)** table.
    
      ![](images/L01/L01-table1.png)
 
-5. Select the **Columns** under Schema and review the columns of the **Prioritz Topic** table.
+5. Select the **Columns** under Schema the columns of the **Prioritz Topic** table.
 
    >**Info**: The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
  
@@ -126,7 +128,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 6. From the **Columns (1)** dropdown, select the **Relationships (2)** tab  and review how this table is related to other tables.
  
-    ![](images/L01/L01-relation-1.png)
+    ![](images/2105.png)
  
     ![](images/L01/L01-relation1.png)
 
@@ -136,7 +138,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 9. Click on **Edit** button to review the flow.
   
-    ![](images/L01/edit21-1.png)
+    ![](images/2106.png)
 
 10. Expand the **Parse JSON** step and review the data this flow will create.
 
@@ -185,11 +187,13 @@ In this exercise, you will import the current solution into the pre-created dev 
    
       ![](images/L01/image141.png)
 
+      ![](images/2107.png)
+
 ### Task 2: Test the apps
 
 1. Navigate back to **Prioritz** solution by clicking on **Cloud flows**. Alternatively, you can also open the **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
        
-   ![](images/L01/cloud1u-1.png)
+   ![](images/2108.png)
 
    >**Note:** If a **Welcome to Power Apps Studio** pop-up appears, simply click **Skip** to proceed.
 
@@ -203,21 +207,21 @@ In this exercise, you will import the current solution into the pre-created dev 
 
     ![](images/L01/EX1-T2-2_1_1u.png)
 
-3. Launch the **Prioritz Admin** application by clicking on **play** symbol.
+3. Navigate to **Prioritz Admin** Launch the **Prioritz Admin** application by clicking on **play** symbol.
     
     ![](images/L01/L01-adminu1.png)
 
-4. You should see the below four topics.
+4. You should see the below four topics, Click to open **Event banner**
 
-    ![](images/L01/EX1-T2-4-2u.png)
-
-5. Click to open **Event banner** topic.
+    ![](images/2109.png)
 
 6. You should see the topic details with some topic items.
 
     ![](images/L01/EX1-T2-6-1u.png)
 
 7. Click on the **<** back button.
+
+    ![](images/2110.png)
 
     > **Note**: You should go back to the home screen.
 
@@ -302,7 +306,7 @@ application.
    ```
 2. Select **Solutions (1)** from the left-hand side menu of Power Apps and open the **Prioritz (2)** solution.
 
-   ![](images/L01/EX2-T1-2-1u-1.png)
+   ![](images/2112.png)
 
 3. Expand **Tables(1)** and select the **Prioritz Topic(2)** table.
 
@@ -326,9 +330,13 @@ application.
 
 1. Make sure you are still in the **Prioritz** solution. Select **Apps (1)** under **Objects** and select the **Prioritz Admin (2)** application and click on **Edit (3)**.
     
-    ![](images/L01/L01-admineditu.png)
+    ![](images/2114.png)
 
-   >**Note**: If you can't find the Edit button, click the ellipsis **(...)** next to the Add existing pane.
+   >**Note 1**: If you can't find the Edit button, click the ellipsis **(...)** next to the Add existing pane.
+   >**Note 2**: If you get a promt **Welcome to Power Apps Studio** click on **Skip**.
+
+    ![](images/2115.png)
+
     
 2. Select the **Add Topic Screen(1)**.
 
