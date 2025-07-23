@@ -127,7 +127,7 @@ deploy solutions.
    
 1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application registration which you created earlier and click on **Add** **(2)**.
 
-   ![](images/L05/diad5l13u.png)
+   ![](images/2137.png)
 
 1. Type **org** and select your **Business unit** **(1)** and in **Security roles** click on **edit symbol (2)** and select 
    **System administrator (3)** then click on **Create (4)**.
@@ -198,6 +198,8 @@ environment and import it to the Test environment.
      ![](images/L03/L03-EX4-exporta.png)
 
 4. On the **Before you export** blade, click **Publish** and wait for the publishing to complete.
+
+    ![](images/2138.png)
 
 5. Once published, click on **Next**.
 

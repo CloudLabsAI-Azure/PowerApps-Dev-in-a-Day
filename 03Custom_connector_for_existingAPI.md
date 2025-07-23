@@ -28,12 +28,10 @@ When you review the API, you see that it has four operations and uses API key au
 
 1. Click on **Environment (1)** and select the pre-created development environment named **Azure HOL xxxx (default) (2)**
 
-    ![](images/L03/db1a-1.png)
+    ![](images/2126.png)
 
-2. Select **Solutions (1)** from the left-hand side menu of Power Apps.
+2. Select **Solutions (1)** from the left-hand side menu of Power Apps, click on **Create a database (2)**
 
-3. Click on **Create a database (2)** to create a Dataverse database.
- 
     ![](images/L03/db1.png)
 
 4. Select **Currecny -> TND and Language -> English(1)** and click on **Create my database (2)**.
@@ -52,7 +50,7 @@ In this exercise, you will create a solution for the Contoso Badges custom conne
 
          https://make.powerapps.com 
 
-    ![](images/L03/dev11.png)
+    ![](images/2127.png)
 
 2. Select **Solutions** and click **+ New solution**.
 
@@ -61,7 +59,7 @@ In this exercise, you will create a solution for the Contoso Badges custom conne
 3. Enter **Contoso Badges connector (1)** for Display name, select **Contoso Coffee (ContosoCoffee) (2)** for Publisher, and
     click **Create (3)**.
    
-   ![](images/L03/image2-1.png)
+   ![](images/2128.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -127,7 +125,9 @@ In this exercise, you will create a custom connector from an existing API.
 
       ![](images/L03/L03-import.png)
 
-11. Select the **swagger.json** file you saved to your machine and click **Open**.
+11. Select the **swagger.json (2)** file you saved to your machine **(1)** and click **Open (3)**.
+
+    ![](images/2129.png)
     
 12. Click **Continue** on the **Import an OpenAPI file** pop-up.
     
@@ -226,9 +226,9 @@ In this exercise, you will create a custom connector from an existing API.
 
 7. The connection you created should be selected.
 
-8. Go to the **AddCredit (1)** operation. Enter your email address for recipientid, enter your name for name, enter **1** for points, and click **Test operation (2)**.
+8. Go to the **AddCredit ** operation. **Enter your email address for recipientid (1)**, **enter your name for name (2)**, **enter **1** for points (3)**, and click **Test operation (4)**.
     
-    ![](images/L03/L3T3S8.png)
+    ![](images/2130.png)
 
 9. The test should succeed, and the response should look like the image below.
      
@@ -284,7 +284,7 @@ You will do this by using the custom code feature to reshape the response from t
 
     ![](images/L03/image24u.png)
 
-5. Select the **Definition** tab from the dropdown and click **New action** in the definition tab.
+5. Select the **Definition (1)** tab from the dropdown and click **New action (2)** in the definition tab.
   
     ![](images/L03/L03-EX3.1.png)
 
@@ -310,7 +310,11 @@ You will do this by using the custom code feature to reshape the response from t
 
 10. Click **Update connector** and wait for the connector to be updated.
 
+     ![](images/2131.png)
+
 11. Select the **Code** tab from the dropdown.
+  
+     ![](images/2132.png)
 
 12. Enable **Code (1)** and click **Upload (2)**.
     
@@ -322,13 +326,15 @@ You will do this by using the custom code feature to reshape the response from t
 
 14. Select the **getcurrentbadge** action from the dropdown.
      
-     ![](images/L03/image30.png)
+     ![](images/2133.png)
 
 15. Review the code you just added.
 
 16. Click **Update connector** and wait for the connector to be updated.
 
 17. Advance to **Test** by selecting it in the dropdown.
+
+     ![](images/2134.png)
 
 18. Select the **getcurrentbadge** action.
 
@@ -428,6 +434,8 @@ In this task, you will use the custom connector you created to show the user’s
 
 9. Copy the **API Key** value and paste the value to Notepad as you will be using this value in the next steps. Now, close the browser tab by clicking on **X**.
 
+     ![](images/2135.png) 
+
 10. Go back to the app designer, paste the **API Key (1)** you copied in the previous step, and click **Connect (2)**.Click **Got it** if any pop-up appears with the title Premium.
      
      ![](images/L03/image42-1u.png)
@@ -513,7 +521,7 @@ In this task, you will use the custom connector you created to show the user’s
     
 6. Enter **Test connection** , paste the **API Key** you copied earlier in **step 9** of **task 1** in this exercise, and click **Create**.
   
-    ![](images/L03/edd%20(3).png)
+    ![](images/2136.png)
 
 7. Click on the **recipientId** field, Under Manually trigger a flow pane, and select **User email**.
     

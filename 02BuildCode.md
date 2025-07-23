@@ -26,7 +26,7 @@ In this exercise, you will build the code component.
     
     ![](images/L02/authup.png)
 
-3. Click on the three-dot menu (**...**) to expand additional options. Then, select **Terminal (1)** from the dropdown menu and click on **New Terminal (2)** to open a terminal session.
+3. Click on the three-dot menu **... (1)** to expand additional options. Then, select **Terminal (2)** from the dropdown menu and click on **New Terminal (3)** to open a terminal session.
      
      ![](images/L02/L02-terminaluua.png)
 
@@ -35,6 +35,8 @@ In this exercise, you will build the code component.
     ```
     md PrioritZDnDRanking
     ```
+
+     ![](images/2119.png)
 
 5. Run the command below to switch to the PrioritZDnRanking directory you created.
 
@@ -508,11 +510,11 @@ In this exercise, you will build the code component.
     
 2. Select **Solutions (1)** and open the **PowerAppsTools_contoso (2)** solution.
     
-    ![](images/L02/image32u-1.png)
+    ![](images/2120.png)
 
 3. Click on **All** and Confirm that the custom control is in this solution.
      
-    ![](images/L02/image33u.png)
+    ![](images/2121.png)
     
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -537,7 +539,7 @@ In this task, you will allow the publishing of canvas apps with code components 
 
 3. Open the dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** that you are using for this lab.
 
-    ![](images/L02/image37u-2.png)
+    ![](images/2122.png)
 
 4. Click **Settings** from top menu.
     
@@ -722,13 +724,14 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
     ```
 
-31. Select the **Home Screen** and click **Play**.
+31. Select the **Home Screen (1)** and click **Play (2)**.
 
-32. Select one of the **topics**.
+    ![](images/2123.png)
+
 
 33. You can view how it looks on a phone screen by using the emulator.
      
-     ![](images/L02/image48up.png)
+     ![](images/2124.png)
 
 34. Drag one of the topic items and drop it in a different location.
      
@@ -743,6 +746,8 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     ![](images/L02/publish.png)
 
 38. Select **Publish this version** and wait for the publish to be completed.
+
+    ![](images/2125.png)
 
 39. You may **close** the canvas app studio.
 
