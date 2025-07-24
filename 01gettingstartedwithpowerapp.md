@@ -229,7 +229,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 18. Close the Prioritz Admin application by closing the browser tab in which the Prioritz Admin application is open.
 
-19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **Prioritz Ask (2)** application by clicking on play symbol.
+19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **Prioritz Ask** application by clicking on **play (2)** symbol.
      
      ![](images/L01/L01-Prioritzasku-1.png)
 
@@ -268,9 +268,9 @@ application.
 
    ![](images/2112.png)
 
-3. Expand **Tables(1)** and select the **Prioritz Topic(2)** table.
+3. Expand **Tables (1)** and select the **Prioritz Topic (2)** table.
 
-4. Select the **Columns** tab that is present under **+ New(3)** and click **column(4)**.
+4. Select the **Columns** tab that is present under **+ New (3)** and click **column (4)**.
 
     ![](images/L01/EX2-T1-4u.png)
 
@@ -293,14 +293,12 @@ application.
     ![](images/2114.png)
 
    >**Note 1**: If you can't find the Edit button, click the ellipsis **(...)** next to the Add existing pane.
-   >**Note 2**: If you get a promt **Welcome to Power Apps Studio** click on **Skip**.
+
+   >**Note 2**: If you get a prompt **Welcome to Power Apps Studio** click on **Skip**.
 
     ![](images/2115.png)
 
-    
-2. Select the **Add Topic Screen(1)**.
-
-3. Click **+ Insert(2)** and select **Text input(3)**.
+2. Select the **Add Topic Screen** **(1)** from the left panel, then click **+ Insert** **(2)** and choose **Text input** **(3)**.
    
      ![](images/L01/tinputu-1.png)
 
@@ -318,7 +316,7 @@ application.
    
     ![](images/L01/image28u.png)
 
-6. Select **Notes textbox**, then search for **HintText(1)** and choose **HintText(2)** from the dropdown.
+6. Select **Notes textbox**, then search for **HintText (1)** and choose **HintText (2)** from the dropdown.
 
     ![](images/hintextua.png)
 
@@ -376,7 +374,7 @@ application.
 
     ![](images/L01/noteslabel-1.png)
 
-16. Select the **Home Screen(1)** and click **Preview the app(2)**.
+16. Select the **Home Screen (1)** and click **Preview the app (2)**.
       
       ![](images/L01/image34u.png)
 
@@ -386,13 +384,13 @@ application.
 
 18. Fill out the form by providing the below information and click **add a picture** that is present below the **Respond By** field.
 
-       1. Topic: `Test Notes` (1)
+       1. Topic: `Test Notes` **(1)**
        
-       2. Details: `Testing the notes` (2)
+       2. Details: `Testing the notes` **(2)**
        
-       3. Text input: `Prioritz Admin topic` (3)
+       3. Text input: `Prioritz Admin topic` **(3)**
        
-       4. Respond By: **Today's date** (4)
+       4. Respond By: **Today's date** **(4)**
 
 20. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
      
@@ -438,9 +436,10 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 >**Note**: Visual studio code and Power platform CLI installation are already done as a part of the prerequisites.
 
 1. Navigate to the Power Platform admin center by using the below URL and select **Environments**.
-      ```
-        https://admin.powerplatform.microsoft.com/environments
-      ```
+    
+    ```
+    https://admin.powerplatform.microsoft.com/environments
+    ```
 
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
@@ -454,7 +453,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
     ![](images/L01/image37u-1.png)
 
-4. In the JumpVM, start **Visual Studio Code** using the shortcut available on the desktop.
+4. In the LabVM, start **Visual Studio Code** using the shortcut available on the desktop.
 
    ![](images/L04/vscode1.png)
    
@@ -518,4 +517,4 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
 In this lab , you learned to import and execute a starting solution, customize it by adding a new column and updating the admin app, and verify functionality using the Power Platform CLI.
 
-## You have successfully completed this lab. Proceed to the next page.
+### You have successfully completed this lab. Click the **Next** button to proceed to the next lab.
