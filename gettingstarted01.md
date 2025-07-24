@@ -60,8 +60,6 @@ Once you're ready to dive in, your virtual machine and **Guide** will be right a
 ## Virtual Machine & Guide
  
 In the integrated environment, the lab VM serves as the designated workspace, while the lab guide is accessible on the right side of the screen.
-
-**Note:** Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
  
 ## Exploring Your Lab Resources
  
@@ -118,6 +116,8 @@ To adjust the zoom level for the environment page, click the **A↕** icon locat
    ![](./images/2102.png)
 
 By completing these exercises, you will import and customize Power Platform solutions, create and implement custom code components with Visual Studio Code, develop and integrate custom connectors, create and deploy Azure Functions, and manage solutions using GitHub for source control.
+
+**Note:** Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
    
 ## Support Contact
 
