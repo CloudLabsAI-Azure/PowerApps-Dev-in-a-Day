@@ -14,33 +14,33 @@ Lab Objectives
 
 ## Exercise 1 – Configure a Service Principal
 
-In this exercise, you will create a service principal. The service principal will be used by the workflow
-actions, so they do not execute under your individual user identity.
+In this exercise, you will create a service principal. The service principal will be used by the workflow actions, so they do not execute under your individual user identity.
 
 ### Task 1: Create app registration
 
-1. Navigate back to the browser tab in which Azure Portal is open. If not already open, navigate to Azure Portal using the below URL.
+1. Navigate back to the browser tab in which the Azure Portal is open. If not already open, navigate to the Azure Portal using the URL below.
 
    ```
    https://portal.azure.com/
    ```
 
-1. From Azure Portal home page, search for **Microsoft Entra ID** ***(1)*** in the search bar and select **Microsoft Entra ID** ***(2)*** from the suggestions.
+1. From Azure Portal home page, search for **Microsoft Entra ID** **(1)** in the search bar and select **Microsoft Entra ID** **(2)** from the suggestions.
 
    ![](images/dev3.png)
    
-1. Select **App registrations** ***(1)*** from the side blade under Manage and click on **+ New registration** ***(2)***. This application registration will be used for the connector to access the protected API.
+1. Select **App registrations** **(1)** from the side blade under Manage and click on **+ New registration** **(2)**. This application registration will be used for the connector to access the protected API.
 
    ![](images/L05/diad5l2uu.png)
 
-1. Please provide the following details and click on **Register** ***(3)***.
+1. Please provide the following details and click on **Register** **(3)**.
    
-   - Name: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-   - Supported account types: **Accounts in this organizational directory only (OTU WA HOL - xxxxxx only - Single tenant)** ***(2)***
+   - Name: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** **(1)**
+
+   - Supported account types: **Accounts in this organizational directory only (OTU WA HOL - xxxxxx only - Single tenant)** **(2)**
 
      ![](images/L05/diad5l3uup.png).
    
-1. Copy the **Application (client) ID**, **Directory(Tenant) ID**, and save it in a notepad as you need it for later use.
+1. Copy the **Application (client) ID**, **Directory (Tenant) ID**, and save it in a notepad as you need it for later use.
      
    ![](images/L05/diad5l4uu.png)
 
@@ -48,7 +48,7 @@ actions, so they do not execute under your individual user identity.
 
    ![](images/L05/diad5l5uu.png)
 
-1. Enter **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** ***(1)*** as description, set expiry to **3 months** ***(2)***, and click on **Add** ***(3)***.
+1. Enter **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** **(1)** as description, set expiry to **3 months** **(2)**, and click on **Add** **(3)**.
    
    ![](images/L05/diad5l6uu.png)
    
@@ -56,32 +56,33 @@ actions, so they do not execute under your individual user identity.
 
    ![](images/L05/diad5l7uu.png)
 
-   >**Note**: Make sure to copy and paste the correct **Application (client) ID**, **Directory(Tenant) ID** and **Secret** value. Copying the incorrect value will result in issues in the next steps/tasks.
+   >**Note:** Make sure to copy and paste the correct **Application (client) ID**, **Directory (Tenant) ID** and **Secret** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
 ### Task 2: Create a new Dataverse
 
-In this task, you will  a new test Dataverse environments.
+In this task, you will create a new test Dataverse environment.
 
-1. Open a new browser window or tab and navigate to the Power Platform Admin Center using the below URL.
+1. Open a new browser window or tab and navigate to the Power Platform Admin Center using the URL below.
 
      ```
      https://admin.powerplatform.microsoft.com/environments
      ```
-1. Click on **+New** to create a new Dataverse.         
+
+1. Click on **+ New** to create a new Dataverse.         
 
    ![](images/L05/newtask1.png)
 
 1. In the **New environment** tab.
    
-   - Name: **DEV_ENV_TEST(1)**.
+   - Name: **DEV_ENV_TEST (1)**.
    
-   - Make this a Managed Environment: **Enable Yes(2)**.
+   - Make this a Managed Environment: **Enable Yes (2)**.
    
-   - Group: **None(3)**. and scroll down.
+   - Group: **None (3)**. and scroll down.
    
-   - Type: **Developer(4)** and click on **Next(5)**.
+   - Type: **Developer (4)** and click on **Next (5)**.
    
-   - Deploy sample apps and data?: **Enable Yes(6)** and click on **Save(7)**.
+   - Deploy sample apps and data?: **Enable Yes (6)** and click on **Save (7)**.
    
    ![](images/L05/newtask2.png)
 
@@ -99,13 +100,13 @@ In this task, you will be registering the app you created in Microsoft Entra ID 
 Dataverse environments. You will also be assigned a security role that will allow the service principal to
 deploy solutions.
 
-1. Open a new browser window or tab and navigate to the Power Platform Admin Center using the below URL.
+1. Open a new browser window or tab and navigate to the Power Platform Admin Center using the URL below.
 
      ```
      https://admin.powerplatform.microsoft.com/environments
      ```
 
-1. Click on **Environments** ***(1)*** from the side blade and select your **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
+1. Click on **Environments** **(1)** from the side blade and select your **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** **(2)**.
 
    ![](images/L05/env1u.png)
    
@@ -125,18 +126,17 @@ deploy solutions.
       
    ![](images/L05/diad5l12.png)
    
-1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application registration which you created earlier and click on **Add** **(2)**.
+1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** **(1)** application registration which you created earlier and click on **Add** **(2)**.
 
    ![](images/2137.png)
 
-1. Type **org** and select your **Business unit** **(1)** and in **Security roles** click on **edit symbol (2)** and select 
-   **System administrator (3)** then click on **Create (4)**.
+1. Type **org** and select your **Business unit** **(1)** and in **Security roles** click on **edit symbol (2)** and select **System administrator (3)** then click on **Create (4)**.
 
    ![](images/L05/diad5l14u.png)
 
    **Note:** If the **#** symbol is still visible before GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, click on it and refresh the pane to remove it.
    
-1. Again go back to **Environments** ***(1)*** in the side blade and select your **DEV_ENV_TEST** ***(2)***.
+1. Again go back to **Environments** **(1)** in the side blade and select your **DEV_ENV_TEST** **(2)**.
 
    ![](images/L05/diad5l17u.png)
    
@@ -144,7 +144,7 @@ deploy solutions.
 
    ![](images/L05/diad5l18u.png)
 
-1. Expand **Users + permissions** ***(1)*** and select **Application users** ***(2)***.
+1. Expand **Users + permissions** **(1)** and select **Application users** **(2)**.
     
    ![](images/L05/diad5l19u.png)
    
@@ -156,7 +156,7 @@ deploy solutions.
       
    ![](images/L05/diad5l12.png)
    
-1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** application registration which you created earlier and click on **Add** ***(2)***.
+1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** **(1)** application registration which you created earlier and click on **Add** **(2)**.
 
    ![](images/L05/diad5l13uu.png)
 
@@ -166,7 +166,7 @@ deploy solutions.
 
    **Note:** If the **#** symbol is still visible before GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, click on it and refresh the pane to remove it.
    
-1. Click on **Environments** ***(1)*** from the side blade and select your **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
+1. Click on **Environments** **(1)** from the side blade and select your **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** **(2)**.
 
    ![](images/L05/envu.png)
    
@@ -174,7 +174,7 @@ deploy solutions.
     
    ![](images/L05/diad5l211u.png)
    
-1. Again go back to **Environments** ***(1)*** in the side blade and select  **DEV_ENV_TEST(2)** environment.
+1. Again go back to **Environments** **(1)** in the side blade and select  **DEV_ENV_TEST (2)** environment.
 
    ![](images/L05/diad5l17uu.png)
    
@@ -184,14 +184,15 @@ deploy solutions.
 
 ## Exercise 2 – Promote Solution to Test Environment
 
-In this exercise, you will export the Contoso Badges connector solution from the Dev
-environment and import it to the Test environment.
+In this exercise, you will export the Contoso Badges connector solution from the Dev environment and import it to the Test environment.
 
-###  Task 1: Export solution
+### Task 1: Export solution
 
 1. Navigate to the Power Apps  maker portal and make sure you are in your dev environment **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**
 
-         https://make.powerapps.com
+   ```
+   https://make.powerapps.com
+   ```
 
 2. Go to **Solutions (1)**, select **Contoso Badges connector (2)**, and click **Export Solution (3)**.
    
@@ -207,17 +208,19 @@ environment and import it to the Test environment.
 
 7. Wait for the solution to be exported.
 
-8. Click the Download button Right side top of the screen, Click Download Solution.
+8. Click the **Download** button at the top-right corner of the screen, then select **Download Solution**
  
     ![](images/L03/SolutionDown1.png)
 
-###  Task 2: Import solution
+### Task 2: Import solution
 
-1. Navigate to the Power Apps maker portal if not already open and select your **Test** environment, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_TEST(2)**. 
+1. Navigate to the Power Apps maker portal if not already open and select your **Test** environment, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_TEST (2)**. 
 
-         https://make.powerapps.com
+    ```
+    https://make.powerapps.com
+    ```
 
-      ![](images/L03/L03-EX5a.png)
+    ![](images/L03/L03-EX5a.png)
 
 3. Click **Import Solution**.
     
@@ -243,7 +246,7 @@ environment and import it to the Test environment.
   
     ![](images/L03/image58.png)
 
-    >**Note**: If you receive the error message as **could not retrieve the connector data**, wait for a few mins (5-10 mins) to get the connector data updated. If that doesn't work, you can delete the imported connector and perform the **steps 1-7** in the **Task 2: Import solution** task again then try to open the connector.
+    >**Note:** If you receive the error message as **could not retrieve the connector data**, wait for a few mins (5-10 mins) to get the connector data updated. If that doesn't work, you can delete the imported connector and perform the **steps 1-7** in the **Task 2: Import solution** task again, then try to open the connector.
 
 3. Click **Edit**.
 
@@ -253,7 +256,7 @@ environment and import it to the Test environment.
 
 5. Click **+ New connection**. A new browser tab will be opened to create a connection.
 
-6. Start a new browser window or tab and navigate to the below URL to open Contoso Coffee Badges API.
+6. Start a new browser window or tab and navigate to the URL below to open the Contoso Coffee Badges API.
 
    ```
    https://contosobadgestest.azurewebsites.net/
@@ -291,11 +294,12 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 ### Task 1: Create a repository
 
-1. Navigate to the below URL and sign in using your GitHub credentials.
+1. Navigate to the URL below and sign in using your GitHub credentials.
 
    ```
    https://github.com/
    ```
+
 1. Click on your profile icon and select **Your repositories**.
 
    ![](images/L05/github1u.png)
@@ -318,7 +322,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 6. Go to the **Security (1)** section, expand **Secrets and variables(2)** and select **Actions (3)**.
 
-    > **Note:** The values you provide will not be visible after you create the item so take your time to get the values correct. 
+    > **Note:** The values you provide will not be visible after you create the item, so take your time to get the values correct. 
       
      ![](images/L05/actionpermissionuuu-1.png)
    
@@ -346,7 +350,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 14. Enter **PowerPlatformDevUrl (1)** for Name and paste the secret **Dev environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 17`** in the **Value** field and click **Add secret (3)**.
 
-    >**Note**: Make sure you are pasting the dev environment URL named **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** that you copied in the **`Exercise 1 -> Task 3 -> Step 17`**
+    >**Note:** Make sure you are pasting the dev environment URL named **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** that you copied in the **`Exercise 1 -> Task 3 -> Step 17`**
    
      ![](images/L05/github11u.png) 
   
@@ -354,7 +358,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 16. Enter **PowerPlatformTestUrl (1)** for Name and paste the **Test Environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 19`** in the **Value** field and click **Add secret (3)**.
 
-    >**Note**: Make sure you are pasting the test environment URL named **DEV_ENV_TEST** that you copied in the **`Exercise 1 -> Task 3 -> Step 19`**
+    >**Note:** Make sure you are pasting the test environment URL named **DEV_ENV_TEST** that you copied in the **`Exercise 1 -> Task 3 -> Step 19`**
  
     ![](images/L05/L05-testurla.png)
  
@@ -366,12 +370,11 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 ## Exercise 4 – Export and Branch
 
-In this exercise, you will set a workflow action, and add steps that will export the solution from the dev
-environment and create a new branch.
+In this exercise, you will set a workflow action and add steps that will export the solution from the dev environment and create a new branch.
 
 ### Task 1: Export and branch
 
-In this task, you will create the workflow definition using the YAML provided. The action YAML uses two-space indentation so follow that carefully as you build the workflow definition. If in doubt, review the
+In this task, you will create the workflow definition using the YAML provided. The action YAML uses two-space indentation, so follow that carefully as you build the workflow definition. If in doubt, review the
 indentation shown in the images.
 
 1. Select the **Actions** tab and click on **Set up a workflow yourself** to create a new workflow.
@@ -384,7 +387,7 @@ indentation shown in the images.
   
    ![](images/L05/diad5l32.png)
 
-1. Navigate to `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/export-and-branch.yml` URL, Copy the full content of the file and paste it into the **export-and-branch.yml** workflow.
+1. Navigate to `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/export-and-branch.yml` URL, copy the full content of the file and paste it into the **export-and-branch.yml** workflow.
 
    ![](images/L05/diad5l28u.png)
 
@@ -404,11 +407,11 @@ indentation shown in the images.
 
    ![](images/L05/workflowpermissionuuu.png)
 
-1. Select the **Actions** **(1)** tab and select the **workflow** ***(2)*** you created.
+1. Select the **Actions** **(1)** tab and select the **workflow** **(2)** you created.
 
    ![](images/L05/diad5l27.png)
    
-1. Click on **Run workflow.**
+1. Click on **Run workflow**.
       
    ![](images/L05/Images2027u.png)
    
@@ -416,7 +419,7 @@ indentation shown in the images.
       
    ![](images/L05/Images2028u.png)
    
-1. Select the **Code** ***(1)*** tab and click on **Branches** ***(2)***. You should see two branches.
+1. Select the **Code** **(1)** tab and click on **Branches** **(2)**. You should see two branches.
    
    ![](images/L05/diad5l29u-1.png)
    
@@ -428,18 +431,17 @@ indentation shown in the images.
       
    ![](images/L05/diad5l30u.png)
    
-1. Click on **Contribute** ***(1)*** button and select **Open pull request** ***(2)***.
+1. Click on **Contribute** **(1)** button and select **Open pull request** **(2)**.
         
    ![](images/L05/L05-t1-1u.png)
    
-23. Add a description if you like and then click **Create pull request**.
+23. Add a description if you like, and then click **Create pull request**.
 
      ![](images/L05/pr1u.png)
    
 24. You should now see the pull request summary. Confirm that the branch has no conflicts with the main branch and that the changes can be merged into the main branch automatically.
    
-25. Click on the chevron button next to the **Merge pull request** button and select **Squash and**
-    **merge**.
+25. Click on the chevron button next to the **Merge pull request** button and select **Squash and** **merge**.
       
     ![](images/L05/Images2032u.png)
 
@@ -451,11 +453,9 @@ indentation shown in the images.
    
      ![](images/L05/prdoneu.png)
 
-
 ### Exercise 5 – Release to Test
 
-In this exercise, you will create a workflow action and add steps that will release the solution you
-exported to the test environment.
+In this exercise, you will create a workflow action and add steps that will release the solution you exported to the test environment.
 
 ### Task 1: Create workflow
 
@@ -489,16 +489,15 @@ exported to the test environment.
     
      ![](images/L05/relecomplu.png)
      
-24. Navigate back to the PowerApps portal and  Ensure you are in the test PowerApps environment.
+24. Navigate back to the PowerApps portal and ensure you are in the test PowerApps environment.
 
       ![](images/L05/lastu.png)
 
-25. Select the **solutions (1)** tab from the left side and click on **Managed (2)** you should see the solution deployed with the 
-    name of  **Prioritz (3)**.
+25. Select the **solutions (1)** tab from the left side and click on **Managed (2)**. You should see the solution deployed with the name of **Prioritz (3)**.
 
     ![](images/L05/lastuu.png)
     
 ## Summary
 In this lab, you learned to promote a solution to a test environment, configure a service principal, and manage your solution using GitHub for version control and workflow automation.
 
-## You have successfully completed the lab
+## You have successfully completed the Hands-on lab!
