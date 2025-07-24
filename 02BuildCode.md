@@ -783,4 +783,4 @@ In this exercise, you will add the code component you created to the PrioritZ so
 
 In this lab, you learned to create a code component, implement its logic, integrate it into a canvas app, and add it to a solution within the Power Platform.
 
-## You have successfully completed this lab. Click on the Next button to proceed to the next lab.
+### You have successfully completed this lab. Click the Next button to proceed to the next lab.
