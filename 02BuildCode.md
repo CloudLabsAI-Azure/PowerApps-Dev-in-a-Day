@@ -22,7 +22,7 @@ In this exercise, you will build the code component.
    
 2. Select the **Power Platform** tab and make sure your **Dev Auth** profile is selected. 
     
-   >**Note**: The Power Platform tab is already installed.
+   >**Note:** The Power Platform tab is already installed.
     
     ![](images/L02/authup.png)
 
@@ -84,7 +84,7 @@ In this exercise, you will build the code component.
 
 10. Expand the **PrioritZDnDRanking** folder and then expand the sub-folder **generated**.
 
-11. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a component including the properties exposed to the hosting app.
+11. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a component, including the properties exposed to the hosting app.
 
       ![](images/L02/image6.png)
 
@@ -92,7 +92,7 @@ In this exercise, you will build the code component.
 
       ![](images/L02/image7.png)
 
-13. Change the **name** to **items** and the **display-name-key** to **items**. This defines the property the app will bind to a collection of items.
+13. Change the **name** to **items** and the **display-name-key** to **items**. This defines the property that the app will bind to a collection of items.
 
       ![](images/L02/image8.png)
 
@@ -118,7 +118,7 @@ In this exercise, you will build the code component.
     
      ![](images/L02/image10.png)
  
-      >**Note**: Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
+      >**Note:** Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
       
  16. Notice the following two resources. This declares the component’s dependency on these two libraries. This is a result of specifying –framework React on initialization.
 
@@ -126,6 +126,7 @@ In this exercise, you will build the code component.
      <platform-library name="React" version="16.8.6" />
      <platform-library name="Fluent" version="8.29.0" />
      ```
+
      ![](images/platformcss0980.png)
     
 17. Click **File** and select **Save All** to save your changes.
@@ -161,6 +162,7 @@ In this exercise, you will build the code component.
         margin: 8px;
         }
         ```
+
 23. The file should now look like the following.
 
      ![](images/L02/image14.png)
@@ -185,8 +187,7 @@ In this exercise, you will build the code component.
     
 6. Open the **PriorityComponent.tsx** and review the contents. This implements the React component that will be rendered to represent our draggable items.
     
-7. Notice line 9 `from react-beautiful-dnd` has a red underline. This is a npm package the
-    component uses that we haven’t referenced.
+7. Notice line 9 `from react-beautiful-dnd` has a red underline. This is an npm package the component uses that we haven’t referenced.
 
      ![](images/L02/image17.png)
  
@@ -195,10 +196,11 @@ In this exercise, you will build the code component.
     ```
     npm install react-beautiful-dnd
     ```
+
     >**Note** : If you receive this error **npm is not recognised**, then perform the below steps:
 
-      1. Open PowerShell then run this command `choco install -y --force nodejs`.
-      2. Once the command execution is done, close the Visual Studio Code and open it again.
+      1. Open PowerShell, then run this command `choco install -y --force nodejs`.
+      2. Once the command execution is done, close Visual Studio Code and open it again.
       3. Perform **Step 8** of this task again to install the **react-beautiful-dnd** package.
 
 9. Run the following command for the type definitions.
@@ -209,12 +211,11 @@ In this exercise, you will build the code component.
 
 10. Notice the red underline in line 9 has been resolved.
 
-    
     ![](images/L02/ep1.png)
     
 11. Open the **index.ts** file.
     
-12. Remove the following line (line number 2 in Index.ts file) as we are no longer using HelloWorld
+12. Remove the following line (line number 2 in the Index.ts file) as we are no longer using HelloWorld
 
     ```
     import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
@@ -224,12 +225,12 @@ In this exercise, you will build the code component.
  
  13. Add the below code to the **index.ts** file after **line number 1**. This will reference the PriorityComponent.
     
-        ```
-        import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
-        ```
-        ![](images/L02/image19.png)  
-   
- 
+     ```
+     import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
+     ```
+
+     ![](images/L02/image19.png)  
+    
  15. Locate the **Export** class in **line number 5**.
       
      ![](images/L02/image20.png)
@@ -237,29 +238,29 @@ In this exercise, you will build the code component.
  16. Add the following code below inside the **export** class. This defines some working variables you will be using in the class logic.
    
         ```
-         private context: ComponentFramework.Context<IInputs>;
-         private items: ComponentFramework.PropertyTypes.DataSet;
-         private state: ComponentFramework.Dictionary;
+        private context: ComponentFramework.Context<IInputs>;
+        private items: ComponentFramework.PropertyTypes.DataSet;
+        private state: ComponentFramework.Dictionary;
         ```
+
         ![](images/L02/L2T2S15.png)
  
-
  17. Locate the **init** function and remove the following line of code.
 
        ```
-        state: ComponentFramework.Dictionary
-        ```
+       state: ComponentFramework.Dictionary
+       ```
      
       ![](images/L02/initu.png)
         
  18. Paste the code below inside the **init** function. This logic initializes our class variables from the runtime values and enables resize notification.    
     
-        ![](images/L02/init1-1.png)
+     ![](images/L02/init1-1.png)
    
-       ```
-        this.context = context;
-        context.mode.trackContainerResize(true);
-       ```
+     ```
+     this.context = context;
+     context.mode.trackContainerResize(true);
+     ```
  
 19. Locate the **updateView** function.
 
@@ -391,7 +392,6 @@ In this exercise, you will build the code component.
             this.context.parameters.items.setSelectedRecordIds([sourceId, destinationId]);
         };
     }
-    
     ```
 
 23. Open the **package.json** file.
@@ -417,7 +417,7 @@ In this exercise, you will build the code component.
     },
     ```
     
-25. Navigate to **.eslintric.json(1)** file from left navigation to add the new lint rule. Locate **rules(2)** in **line number 22** and Replace the code by following the specified rules below.
+25. Navigate to **.eslintric.json(1)** file from the left navigation to add the new lint rule. Locate **rules(2)** in **line number 22** and replace the code by following the specified rules below.
    
       ```
       "no-unused-vars": ["off"],
@@ -438,7 +438,7 @@ In this exercise, you will build the code component.
     npm run-script build
     ```
 
-      > **Note**: If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
+      > **Note:** If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
  
  29. The build should succeed. If any errors, resolve them before proceeding.
       
@@ -450,15 +450,15 @@ In this exercise, you will build the code component.
         npm start
         ```
 
-31. The test harness should start, if not then copy the address and paste it in a new browser window  of edge. Try dragging the items and see if the behaviour functions as expected.
+31. The test harness should start; if not, then copy the address and paste it in a new browser window  of Edge. Try dragging the items and see if the behaviour functions as expected.
 
       ![](images/L02/imagee29u.png)
 
-    > **Note**: **If you receive a pop-up for Internet Explorer, close it, then copy the localhost URL and paste it into a new tab in Edge**.
+    > **Note:** **If you receive a pop-up for Internet Explorer, close it, then copy the localhost URL and paste it into a new tab in Edge**.
 
       ![](images/L02/ep2.png) 
 
-       > **Note**: If the test harness didn't start as expected you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in the **Manifest and Index** files. 
+       > **Note:** If the test harness didn't start as expected, you are not able to see the expected output as mentioned. Please verify that you have followed the previous instructions and added the code correctly in the **Manifest and Index** files. 
 
 32. Close the test harness by closing the browser tab.
 
@@ -474,7 +474,7 @@ In this exercise, you will build the code component.
     pac pcf push --publisher-prefix contoso
     ```
     
-    > **Note**: 
+    > **Note:** 
     
     > 1. If you encounter the error message **"Error: Missing required tool: MSBuild.exe/dotnet.exe. Please add MSBuild.exe/dotnet.exe in Path environment variable or use 'Developer Command Prompt for VS'"**, follow these steps:
         
@@ -502,7 +502,7 @@ In this exercise, you will build the code component.
  
 ### Task 3: Confirm the control was added to the environment
 
-1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
+1. Navigate to the Power Apps maker portal by using the URL below if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
 
     ```
     https://make.powerapps.com/
@@ -512,7 +512,7 @@ In this exercise, you will build the code component.
     
     ![](images/2120.png)
 
-3. Click on **All** and Confirm that the custom control is in this solution.
+3. Click on **All** and confirm that the custom control is in this solution.
      
     ![](images/2121.png)
     
@@ -531,7 +531,7 @@ In this exercise, you will use the code component you created in the PrioritZ As
 
 In this task, you will allow the publishing of canvas apps with code components for your environment.
 
-1. Navigate to the Power Platform admin center by using the below URL and select environments.
+1. Navigate to the Power Platform admin center by using the URL below and select environments.
 
      ```
      https://admin.powerplatform.microsoft.com/environments
@@ -549,7 +549,7 @@ In this task, you will allow the publishing of canvas apps with code components 
     
      ![](images/L02/featureu.png)
 
-6. Turn on **Allow publishing of canvas apps with code components** which should be under **Power Apps component framework for canvas apps**, Scroll down and click on **Save**.
+6. Turn on **Allow publishing of canvas apps with code components**, which should be under **Power Apps component framework for canvas apps**. Scroll down and click on **Save**.
      
       ![](images/L02/image35.2u.png)
 
@@ -559,7 +559,7 @@ In this task, you will allow the publishing of canvas apps with code components 
 
 In this task, you will edit the PrioritZ Ask canvas application to use the code component you created.
 
-1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
+1. Navigate to the Power Apps maker portal by using the URL below if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
 
    ```   
    https://make.powerapps.com/
@@ -639,13 +639,13 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
      
       ![](images/L02/image44.1uu.png)
  
-19. The rank should now show on the control, but it is sorted descending.
+19. The rank should now show on the control, but it is sorted in descending order.
       
-20. Go to **Tree view**, select the **Vote Screen** then **Votes gallery (1)**, then select the **Items (2)** property from the property dropdown and change the sort order to **Ascending (3)**.
+20. Go to **Tree view**, select the **Vote Screen**, then **Votes gallery (1)**, then select the **Items (2)** property from the property dropdown and change the sort order to **Ascending (3)**.
      
       ![](images/L02/image46-1.png)
  
-21. The rank should now get sorted ascending.
+21. The rank should now be sorted in ascending order.
 
 22. Select the **PrioritZDnDRanking** component then **X** property from the property dropdown.
  
@@ -721,13 +721,11 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
         );
 
     );
-
     ```
 
 31. Select the **Home Screen (1)** and click **Play (2)**.
 
     ![](images/2123.png)
-
 
 33. You can view how it looks on a phone screen by using the emulator.
      
@@ -757,11 +755,11 @@ In this exercise, you will add the code component you created to the PrioritZ so
 
 ### Task 1: Add the component to the solution
 
-1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
+1. Navigate to the Power Apps maker portal by using the URL below if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
 
    ```
-    https://make.powerapps.com/
-    ```
+   https://make.powerapps.com/
+   ```
 
 2. Select **Solutions (1)** and open the **PrioritZ (2)** solution.
 
@@ -785,5 +783,4 @@ In this exercise, you will add the code component you created to the PrioritZ so
 
 In this lab, you learned to create a code component, implement its logic, integrate it into a canvas app, and add it to a solution within the Power Platform.
 
-## You have successfully completed this lab. Proceed to the next page.
-
+## You have successfully completed this lab. Click on the Next button to proceed to the next lab.
