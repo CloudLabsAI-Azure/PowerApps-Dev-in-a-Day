@@ -20,7 +20,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 ### Task 1: Import, Review solution components and run flow
 
-1. In the JumpVM, click on the **Power Apps** portal shortcut of the Microsoft Edge browser that is available on the desktop.
+1. In the JumpVM, click on the **Power Apps portal** shortcut of the Microsoft Edge browser that is available on the desktop.
 
    ![azure portal.](images/L01/PAportal.png)
 
@@ -36,53 +36,15 @@ In this exercise, you will import the current solution into the pre-created dev 
    
      ![](images/L01/signinp.png)
 
-1. Click **Ask Later** if the "Action Required" pop-up appears.
-
-   >**Note:** If the **Ask later** option is **not** available, please follow Steps 5 to 14. Otherwise, proceed to **Step 15**.
-    
-1. On **Start by getting the app page**, click on **Next**.
-
-1. Click on **Next** twice.
-   
-1. In **android**, go to the play store and Search for **Microsoft Authenticator** and Tap on **Install**.
-
-    ![](images/L01/mobile.jpg)
-
-   > **Note:** For Ios, Open app store and repeat the steps.
-
-   > **Note:** Skip If already installed.
-
-1. Open the app and tap on **Scan a QR code**.
-
-1. Scan the QR code visible on the screen and click on **Next**.
-  
-   ![](images/L01/demo001.png)
-  
-1. Enter the digit displayed on the Screen in the Authenticator app on mobile and tap on **Yes**.
-
-1. Once the notification is approved, click on **Next**.
-   
-    ![](images/L01/demo002.png)
-
-1. Click on **Done**.
-
-1. If prompted to stay signed in, you can click **"No"**.
-
-1. Tap on **Finish** in the Mobile Device.
-
-   > **NOTE:** While logging in again , enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
-   
-1. If you see the pop-up **Stay Signed in?**, click **No**.
-
-1. Once logged in, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
+1. On the top right corner,  click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
      ![](images/L01/dev11.png)
 
-2. Now, click on **Solutions(1)** from the left hand side menu and click **Import Solution(2)**.
+2. Now, click on **Solutions (1)** from the left hand side menu and click **Import solution (2)**.
 
       ![](images/L01/importsolution1.png)
 
-3.  Click **Browse**.
+1. On the **Import a Solution** pane, click **Browse** to select the solution file.
     
      ![](images/L01/browse1.png)
      
@@ -90,7 +52,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
     ![](images/L01/next1-2.png)
 
-1. Make sure the **Prioritz_1_0_0_7.zip(1)** file is selected and Click **Next(2)**.
+1. Make sure the **Prioritz_1_0_0_7.zip (1)** file is selected and Click **Next (2)**.
     
     ![](images/L01/next1-1.png)
      
@@ -98,41 +60,39 @@ In this exercise, you will import the current solution into the pre-created dev 
 
     ![](images/L01/next1-3.png)
 
-1. Under the **Connections** section, click on the ellipsis button **...(1)** next to **Microsoft Dataverse Priority**.
+1. Under the **Connections** section, click on the ellipsis button **(...) (1)** next to **Microsoft Dataverse Prioritz**.
 
 1. Ensure that user mail **<inject key="AzureAdUserEmail"></inject> (2)** you are using is selected.
 
-1. Click on **Import(3)**.
+1. Click on **Import (3)**.
 
     ![](images/2103.png)
     
-1. Wait until the solution import to complete.
+1. Once the import is successful, a confirmation message will appear **Solution "Prioritz" imported successfully**.
 
      ![](images/L01/solutionsuccess.png)
      
-1. You should now see the solution you imported in the list of solutions.
+1. You should now see the solution you imported in the list of solutions. Open the **Prioritz** solution you imported.
 
      ![](images/2104.png)
-
-1. Open the **Prioritz** solution you imported.
 
 4. Expand **Tables (1)** and select the **Prioritz Topic (2)** table.
    
      ![](images/L01/L01-table1.png)
 
-5. Select the **Columns** under Schema the columns of the **Prioritz Topic** table.
+5. Under the **Schema** section, select the **Columns** of the **Prioritz Topic** table.
 
    >**Info**: The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
  
    ![](images/L01/L01-coulumn.png)
 
-6. From the **Columns (1)** dropdown, select the **Relationships (2)** tab  and review how this table is related to other tables.
+6. From the **Columns (1)** dropdown, select the **Relationships (2)** Schema  and review how this table is related to other tables.
  
     ![](images/2105.png)
  
     ![](images/L01/L01-relation1.png)
 
-1. Select **Cloud flow (1)** and open the **Import sample data – Topics (2)** flow.
+1. From the left-hand side under **Objects**, select **Cloud flows (1)**. Then, open the **Import sample data – Topics (2)** flow.
  
     ![](images/L01/L01-cloud1.png)
 
@@ -144,13 +104,13 @@ In this exercise, you will import the current solution into the pre-created dev 
 
     ![](images/L01/L01-parse1-1.png)
     
-    >**Note**:If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
+    >**Note**: If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
     
 12. Expand the **Apply to each topic** step.
     
     ![](images/L01/L01-topic1.png)
 
-    >**Note**:If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
+    >**Note**: If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
 
 13. Expand the **Apply to each topic item** step.
    
@@ -197,11 +157,11 @@ In this exercise, you will import the current solution into the pre-created dev 
 
    >**Note:** If a **Welcome to Power Apps Studio** pop-up appears, simply click **Skip** to proceed.
 
-1. Navigate to **Solutions** blade by clicking on **Back to Solutions** **(<-)** button.
+1. Navigate to **Solutions** blade by clicking on **Back to solutions** **(←)** button.
 
    ![](images/L01/solutions.png)
    
-2. Select **Apps (1)** from the left-hand side menu of Power Apps,  you should see two applications named **Prioritz Ask** and **Prioritz Admin (2)**. 
+2. Select **Apps (1)** from the left-hand side menu of Power Apps, you should see two applications named **Prioritz Ask** and **Prioritz Admin (2)**. 
 
      >**Info:** **Prioritz Admin** app is used to manage topics being asked about and **Prioritz Ask** app allows users to respond.
 
@@ -211,7 +171,7 @@ In this exercise, you will import the current solution into the pre-created dev 
     
     ![](images/L01/L01-adminu1.png)
 
-4. You should see the below four topics, Click to open **Event banner**
+4. You should see the below four topics, Click to open **Event banner**.
 
     ![](images/2109.png)
 
@@ -219,13 +179,13 @@ In this exercise, you will import the current solution into the pre-created dev 
 
     ![](images/L01/EX1-T2-6-1u.png)
 
-7. Click on the **<** back button.
+7. Click on the **(<)** back button.
 
     ![](images/2110.png)
 
     > **Note**: You should go back to the home screen.
 
-9. Now, click on the **+** button to add a new topic.
+9. Now, on the top right corner, click on the **+** button to add a new topic.
     
     ![](images/L01/image16u.png)
 
