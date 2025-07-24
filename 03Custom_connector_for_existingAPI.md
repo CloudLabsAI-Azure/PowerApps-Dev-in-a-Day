@@ -24,7 +24,9 @@ When you review the API, you see that it has four operations and uses API key au
 
 1. Navigate to the Power Apps maker portal.
 
-         https://make.powerapps.com
+   ```
+   https://make.powerapps.com
+   ```
 
 1. Click on **Environment (1)** and select the pre-created development environment named **Azure HOL xxxx (default) (2)**
 
@@ -48,16 +50,17 @@ In this exercise, you will create a solution for the Contoso Badges custom conne
 
 1. Open a new browser tab and navigate to the Power Apps maker portal and select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
 
-         https://make.powerapps.com 
+   ```
+   https://make.powerapps.com
+   ```
 
-    ![](images/2127.png)
+   ![](images/2127.png)
 
 2. Select **Solutions** and click **+ New solution**.
 
     ![](images/L03/L03-solution.png)
 
-3. Enter **Contoso Badges connector (1)** for Display name, select **Contoso Coffee (ContosoCoffee) (2)** for Publisher, and
-    click **Create (3)**.
+3. Enter **Contoso Badges connector (1)** for Display name, select **Contoso Coffee (ContosoCoffee) (2)** for Publisher, and click **Create (3)**.
    
    ![](images/2128.png)
 
@@ -74,19 +77,19 @@ In this exercise, you will create a custom connector from an existing API.
 
 ### Task 1: Download the open API definition and create a connector
 
-1. Navigate to the below URL to open the Contoso Coffee Badges API.
+1. Navigate to the URL below to open the Contoso Coffee Badges API.
 
    ```
    https://contosobadgestest.azurewebsites.net/
    ```
-3. Click on the **Open API definition file** link.
+
+1. Click on the **Open API definition file** link.
    
     ![](images/L03/image3.png)
 
 3. Do a quick review of the Open API definition.
 
-4. Right-click on the page select **Save as** or use **Ctrl + S** and name the file as **swagger.json** in your machine. Now, close the browser tab by 
-   clicking on **X**.
+4. Right-click on the page select **Save as** or use **Ctrl + S** and name the file as **swagger.json** in your machine. Now, close the browser tab by clicking on **X**.
       
      ![](images/L03/image4.png)
 
@@ -94,7 +97,9 @@ In this exercise, you will create a custom connector from an existing API.
 
 5. Navigate to the Power Apps maker portal and select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
 
-         https://make.powerapps.com
+   ```
+   https://make.powerapps.com
+   ```
 
     ![](images/L03/dev11.png)
 
@@ -115,7 +120,7 @@ In this exercise, you will create a custom connector from an existing API.
     
     ![](images/L03/L03-badges1ua.png)
 
-    >**Note**: If prompted to sign in, use the ODL credentials found in the environment tab located to the right of the Lab guide.
+    >**Note:** If prompted to sign in, use the ODL credentials found in the environment tab located to the right of the Lab guide.
 
 9. Select **Custom connectors (1)** from the sitemap. Click on the **... More actions (2)** button of the custom connector you created and select **Update from Open API file (3)** 
 
@@ -133,8 +138,7 @@ In this exercise, you will create a custom connector from an existing API.
     
     ![](images/L03/image8-1a.png)
 
-13. Enter **Connector for contosobadgestest (1)** for Description, **contosobadgestest.azurewebsites.net (2)** for Host,
-    and advance to **Security (3)**.
+13. Enter **Connector for contosobadgestest (1)** for Description, **contosobadgestest.azurewebsites.net (2)** for Host, and advance to **Security (3)**.
       
       ![](images/L03/image9-1ua.png)
 
@@ -154,7 +158,7 @@ In this exercise, you will create a custom connector from an existing API.
      
      ![](images/L03/image11a.png)
 
-4. Scroll down and Click on the chevron button of **points** and select **Edit**.
+4. Scroll down and click on the chevron button of **points** and select **Edit**.
     
     ![](images/L03/image12a.png)
 
@@ -178,7 +182,7 @@ In this exercise, you will create a custom connector from an existing API.
 
      ![](images/L03/image13.png)
 
-10. Verify that all 3 payload are displaying `*` on them and Click on the **Back** button again.
+10. Verify that all 3 payloads are displaying `*` on them and click on the **Back** button again.
 
       ![](images/L03/image14.png)
 
@@ -200,17 +204,17 @@ In this exercise, you will create a custom connector from an existing API.
 
 ### Task 3: Test connector
 
-1. Open a new browser tab or window and navigate to the below URL to open Contoso Coffee Badges API.
+1. Open a new browser tab or window and navigate to the URL below to open the Contoso Coffee Badges API.
 
     ```
     https://contosobadgestest.azurewebsites.net/
     ```
 
-2. Click on open the **API Key** link.
+2. Click on the **API Key** link.
     
    ![](images/L03/image16.png)
 
-3. Copy the **API Key** value and save it to Notepad as you will be using this value in the next steps. Now, close the browser tab by clicking on **X**.
+3. Copy the **API Key** value and save it to Notepad, as you will be using this value in the next steps. Now, close the browser tab by clicking on **X**.
 
 4. Go back to the connector test page and click **+ New connection**.
     
@@ -236,7 +240,7 @@ In this exercise, you will create a custom connector from an existing API.
 
 11. Select the **GetRecipient** operation.
 
-12. Provide your email address as the id and click **Test operation**.
+12. Provide your email address as the ID and click **Test operation**.
       
      ![](images/L03/image22-1u.png)
 
@@ -264,7 +268,7 @@ You will do this by using the custom code feature to reshape the response from t
 
 ### Task 1: Add code from the resource folder
 
-1. Open a new browser tab and navigate to the Power Automate using the below URL. Select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
+1. Open a new browser tab and navigate to the Power Automate using the URL below. Select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
           
    ```
    https://make.powerautomate.com
@@ -338,16 +342,16 @@ You will do this by using the custom code feature to reshape the response from t
 
 18. Select the **getcurrentbadge** action.
 
-19. Provide your email address as id and click **Test operation**.
+19. Provide your email address as ID and click **Test operation**.
      
      ![](images/L03/image31-1.png)
-
 
 20. The test should succeed, and you should get a current badge for the user you created.
     
     ![](images/L03/image32.png)
 
-     > **Note**: If the test operation fails, try updating the connector then test the connector by performing Steps 15-18 again.
+     > **Note:** If the test operation fails, try updating the connector, then test the connector by performing Steps 15-18 again.
+
 21. Copy the Response **Body** JSON.
 
 22. Select the **Definition** tab from the dropdown.
@@ -356,7 +360,7 @@ You will do this by using the custom code feature to reshape the response from t
      
       ![](images/L03/image33.png)
 
-24. Scroll down to the **Response** section and click **+ Add default response.**
+24. Scroll down to the **Response** section and click **+ Add default response**.
  
       ![](images/L03/image34.png)
 
@@ -408,9 +412,9 @@ In this task, you will use the custom connector you created to show the user’s
  
      ![](images/L03/image38-1u.png)
 
-      >**Note**: Click on **Open app** if prompted.
+      >**Note:** Click on **Open app** if prompted.
 
-4. Select **Data (1)** from the left and click **+ Add data (2).**
+4. Select **Data (1)** from the left and click **+ Add data (2)**.
 
      ![](images/image38-1ua.png)
 
@@ -422,7 +426,7 @@ In this task, you will use the custom connector you created to show the user’s
 
     ![](images/L03/L03-EX4.png)
 
-7. Open a new browser tab or window and navigate to the below URL to open the Contoso Coffee Badge API.
+7. Open a new browser tab or window and navigate to the URL below to open the Contoso Coffee Badge API.
     
     ```
     https://contosobadgestest.azurewebsites.net/ 
@@ -432,15 +436,15 @@ In this task, you will use the custom connector you created to show the user’s
      
     ![](images/L03/image41.png)
 
-9. Copy the **API Key** value and paste the value to Notepad as you will be using this value in the next steps. Now, close the browser tab by clicking on **X**.
+9. Copy the **API Key** value and paste the value into Notepad, as you will be using this value in the next steps. Now, close the browser tab by clicking on **X**.
 
      ![](images/2135.png) 
 
-10. Go back to the app designer, paste the **API Key (1)** you copied in the previous step, and click **Connect (2)**.Click **Got it** if any pop-up appears with the title Premium.
+10. Go back to the app designer, paste the **API Key (1)** you copied in the previous step, and click **Connect (2)**. Click **Got it** if any pop-up appears with the title Premium.
      
      ![](images/L03/image42-1u.png)
 
-      >**Note**: If your not prompted to enter API key, please ignore.
+      >**Note:** If you're not prompted to enter an API key, please ignore.
 
 11. Select the **Tree view**.
 
@@ -452,12 +456,12 @@ In this task, you will use the custom connector you created to show the user’s
     
      ![](images/L03/image44.png)
 
-
 14. Set the User badge **Image** value to the formula below.
 
     ```
     ContosoBadges.getcurrentbadge({id:User().Email}).image
     ```
+    
     ![](images/L03/image45u.png)
 
 15. Set the **Tooltip** value of the User badge to the formula below.
@@ -465,6 +469,7 @@ In this task, you will use the custom connector you created to show the user’s
     ```
     ContosoBadges.getcurrentbadge({id:User().Email}).name
     ```
+    
     ![](images/L03/L03-EX4-T1ua.png)
 
 16. Make the image smaller and move it to the top right corner of the screen.
@@ -507,7 +512,7 @@ In this task, you will use the custom connector you created to show the user’s
      
     ![](images/L03/ep4-1.png)
 
-    >**Note**: If you cannot see the **Create** button, click on the **ellipsis** button located in the top right corner of the webpage and adjust the zoom to **90%**.
+    >**Note:** If you cannot see the **Create** button, click on the **ellipsis** button located in the top right corner of the webpage and adjust the zoom to **90%**.
 
      ![](images/L03/notezoom.png)
      
@@ -523,11 +528,11 @@ In this task, you will use the custom connector you created to show the user’s
   
     ![](images/2136.png)
 
-7. Click on the **recipientId** field, Under Manually trigger a flow pane, and select **User email**.
+7. Click on the **recipientId** field, under Manually trigger a flow pane, and select **User email**.
     
      ![](images/L03/image49u.png)
 
-8. Click on the **name** field, Under Manually trigger a flow pane, and select **User name**.
+8. Click on the **name** field, under Manually trigger a flow pane, and select **User name**.
 
 9. Enter **1** for points and click **Save**. Wait for the flow to be saved.
    
@@ -555,7 +560,7 @@ In this task, you will use the custom connector you created to show the user’s
      
      ![](images/L03/image52.png)
 
-18. Navigate to the **Power Apps** maker portal using the below URL if not already open and make sure you are in your dev environment.
+18. Navigate to the **Power Apps** maker portal using the URL below if not already open, and make sure you are in your dev environment.
 
      ```
      https://make.powerapps.com
@@ -567,7 +572,7 @@ In this task, you will use the custom connector you created to show the user’s
   
      ![](images/L03/image53.png)
 
-21. Go back to flow and run it a two more times.
+21. Go back to the flow and run it two more times.
 
      ![](images/L03/L03-EX4-run1.png)
 
@@ -589,4 +594,4 @@ In this task, you will use the custom connector you created to show the user’s
 
 In this lab, you learned to create and modify a custom connector using an Open API definition, test its functionality, and integrate it with canvas apps and flows within the Power Platform.
 
-## You have successfully completed this lab. Proceed to the next page.
+### You have successfully completed this lab. Click the Next button to proceed to the next lab.
