@@ -20,7 +20,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 ### Task 1: Import, Review solution components and run flow
 
-1. In the JumpVM, click on the **Power Apps** portal shortcut of the Microsoft Edge browser that is available on the desktop.
+1. In the VM, click on the **Power Apps** portal shortcut of the Microsoft Edge browser that is available on the desktop, The power apps link `https://make.powerapps.com`, you can open open edge browser.
 
    ![azure portal.](images/L01/PAportal.png)
 
@@ -148,7 +148,7 @@ In this exercise, you will import the current solution into the pre-created dev 
     
 12. Expand the **Apply to each topic** step.
     
-    ![](images/L01/L01-topic1.png)
+    ![](images/2146.png)
 
     >**Note**:If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
 
@@ -229,23 +229,23 @@ In this exercise, you will import the current solution into the pre-created dev 
     
     ![](images/L01/image16u.png)
 
-10. Provide the below information and click **add a picture** that is present below **Respond By** field.
+10. Provide the below information and click **add a picture (4)** that is present below **Respond By** field.
      
-     - **Topic**: Enter `Change Taco Tuesday to some other food`
+     - **Topic**: Enter **Change Taco Tuesday to some other food (**1**)**
      
-     - **Details**: Enter `People are tired of tacos, what should we have instead of tacos?`
+     - **Details**: Enter **People are tired of tacos, what should we have instead of tacos?** **(2)**
      
-     - **Respond By**: Select **today's date**.
+     - **Respond By**: Select **today's date** **(3)**.
      
-       ![](images/L01/image17u.png)
+       ![](images/2147.png)
 
 11. Navigate to this path **C:\LabFiles (1)** in file explorer, select **image.png (2)** and click **Open (3)**.
 
     ![](images/L01/image17u-1n.png)
 
-12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below the Choice field. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
+12. Type **Tamale Tuesday (1)** on the Choice field and click **add a picture (2)** that is present below the Choice field. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
      
-      ![](images/L01/image18u.png)
+      ![](images/2148.png)
 
 13. Click **+** to add the choice.
      
@@ -498,9 +498,9 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
    ![](images/L04/vscode1.png)
    
-6. Click **Terminal** and select **New Terminal**.
+6. Click **(...) (1)** **Terminal (2)** and select **New Terminal (3)**.
 
-    ![](images/L01/image42u.png)
+    ![](images/2149.png)
 
 7. Run the below command in the terminal.
 
