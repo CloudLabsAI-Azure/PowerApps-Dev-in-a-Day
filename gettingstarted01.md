@@ -77,7 +77,7 @@ Para mayor comodidad, puede abrir la guía de laboratorio en una ventana separad
  
 ## Administración de su Máquina Virtual
 
-Siéntase libre de iniciar, detener o reiniciar su máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Su experiencia está en sus manos!
+Siéntase libre de **iniciar**, **detener** o **reiniciar** su máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Su experiencia está en sus manos!
  
 ![](./images/5.png)
  
