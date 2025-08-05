@@ -67,7 +67,7 @@ Para comprender mejor los recursos y credenciales de su laboratorio, navegue has
 
 Para ajustar el nivel de zoom de la página del entorno, haga clic en el ícono **A↕ : 100%** ubicado junto al temporizador en el entorno del laboratorio.
 
-![](./images/n21.png) 
+![](./images/9.png) 
  
 ## Uso de la Función de Ventana Dividida
 
