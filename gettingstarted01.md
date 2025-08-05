@@ -49,7 +49,7 @@ En estos laboratorios, seguirá un proceso estructurado para dominar los aspecto
  
 Una vez que esté listo para comenzar, su máquina virtual y la **Guía de laboratorio** estarán a su alcance en su navegador web.
 
-![](./images/GS6a-1.png)
+![](./images/2.png)
 
 ### Máquina Virtual y Guía de Laboratorio
  
@@ -61,7 +61,7 @@ En el entorno integrado, la máquina virtual del laboratorio funciona como el es
 
 Para comprender mejor los recursos y credenciales de su laboratorio, navegue hasta la pestaña **Detalles del Ambiente**.
 
-![](./images/GS20-1.png)
+![](./images/3.png)
 
 ## Guía de laboratorio Acercar/Alejar
 
@@ -73,31 +73,31 @@ Para ajustar el nivel de zoom de la página del entorno, haga clic en el ícono 
 
 Para mayor comodidad, puede abrir la guía de laboratorio en una ventana separada seleccionando el botón **Ventana Dividida** en la esquina superior derecha.
  
-![](./images/GS8-1.png)
+![](./images/4.png)
  
 ## Administración de su Máquina Virtual
 
 Siéntase libre de iniciar, detener o reiniciar su máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Su experiencia está en sus manos!
  
-![](./images/resources-vm-manage-1.png)
+![](./images/5.png)
  
 ## Comencemos con el Portal de Azure
 
 1. En su máquina virtual, haga clic en el ícono del Portal de Azure como se muestra a continuación:
  
-   ![](./images/GS1-1.png)
+   ![](./images/6.png)
  
 2. Verá la pestaña **Iniciar sesión en Microsoft Azure**. Aquí, ingrese sus credenciales:
  
    - **Correo Electrónico/Nombre de Usuario:** <inject key="AzureAdUserEmail"></inject>
  
-     ![](./images/GSlogin2.png "Ingrese Correo Electrónico")
+     ![](./images/7.png "Ingrese Correo Electrónico")
  
 3. A continuación, proporcione su contraseña:
  
    - **Contraseña:** <inject key="AzureAdUserPassword"></inject>
  
-     ![](./images/GS3-11.png "Ingrese Contraseña")
+     ![](./images/8.png "Ingrese Contraseña")
  
 4. Si ve la ventana emergente Acción Requerida, haga clic en Preguntar después.
 
