@@ -830,4 +830,6 @@ Aplicación de lienzo de administración.
 
 En esta práctica de laboratorio, aprendió a crear, implementar y publicar una función de Azure, crear un conector para ella y probar su integración dentro de las aplicaciones de Power Platform.
 
-## Has completado con éxito el laboratorio.
+## Has completado este laboratorio con éxito. Haz clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
+
+![](images/1.png)

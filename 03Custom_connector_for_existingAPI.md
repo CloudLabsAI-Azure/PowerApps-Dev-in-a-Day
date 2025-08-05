@@ -566,4 +566,6 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
 En este laboratorio, aprendió a crear y modificar un conector personalizado utilizando una definición de Open API, probar su funcionalidad e integrarlo con aplicaciones de canvas y flujos dentro de Power Platform.
 
-## Ha completado el laboratorio con éxito
+## Has completado este laboratorio con éxito. Haz clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
+
+![](images/1.png)

@@ -769,5 +769,7 @@ En este ejercicio, agregará el componente de código que creó a la solución P
 
 En este laboratorio, aprendió a crear un componente de código, implementar su lógica, integrarlo en una aplicación de canvas y agregarlo a una solución dentro de Power Platform.
 
-## Ha completado el laboratorio con éxito
+## Has completado este laboratorio con éxito. Haz clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
+
+![](images/1.png)
 

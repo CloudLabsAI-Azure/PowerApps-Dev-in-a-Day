@@ -544,4 +544,6 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
 
 En este laboratorio, aprendió a importar y ejecutar una solución de inicio, a personalizarla agregando una nueva columna y actualizando la aplicación de administración, y a verificar la funcionalidad mediante la CLI de Power Platform.
 
-## Ha completado el laboratorio con éxito
+## Has completado este laboratorio con éxito. Haz clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
+
+![](images/1.png)

@@ -8,7 +8,6 @@ En esta serie de laboratorios, obtendrá experiencia práctica con diversos aspe
 
 ## Objetivo
 
-
 Después de completar estos Laboratorios, sabrá cómo importar y personalizar soluciones en Power Platform, crear componentes de código personalizados y crear e integrar conectores personalizados.
 Aprenda a importar y personalizar soluciones en Power Platform, crear componentes de código personalizados, y desarrollar e integrar conectores personalizados. Al final de este laboratorio, obtendrá conocimientos sobre:
 
@@ -31,7 +30,7 @@ En estos laboratorios, seguirá un proceso estructurado para dominar los aspecto
 
 ## Diagrama de Arquitectura
 
-![](./images/low_code_in_a_day_Architecture_diagram.JPG)
+   ![](./images/low_code_in_a_day_Architecture_diagram.jpeg)
 
 ## Explicación de los Componentes
 
@@ -102,9 +101,9 @@ Siéntase libre de iniciar, detener o reiniciar su máquina virtual según sea n
  
 4. Si ve la ventana emergente Acción Requerida, haga clic en Preguntar después.
 
-![](./images/asklater.png)
+   ![](./images/asklater.png)
 
-> **NOTA:** No active MFA, seleccione **Preguntar después**.
+   > **NOTA:** No active MFA, seleccione **Preguntar después**.
 
 5. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
 
@@ -126,9 +125,9 @@ Contactos de Soporte para Estudiantes:
 
 - Soporte por Chat en Vivo: https://cloudlabs.ai/labs-support
 
-Ahora, haga clic en Siguiente en la esquina inferior derecha para pasar a la página siguiente.
+Ahora, haga clic en **Siguiente >>** en la esquina inferior derecha para pasar a la página siguiente.
 
-![](./images/GS4-122.png)
+![](./images/1.png)
 
 ## ¡¡Feliz aprendizaje!!
 
