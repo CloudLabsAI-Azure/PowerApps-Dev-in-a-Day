@@ -31,15 +31,13 @@ Cuando revise la API, verá que tiene cuatro operaciones y utiliza autenticació
 
      ![](images/lab03-ex01-01.png)
 
-1. Seleccione **Solutions (1)** en el menú del lado izquierdo de Power Apps.
-
-1. Haga clic en **Create a database (2)** para crear una base de datos de Dataverse.
+1. Seleccione **Soluciones (1)** en el menú del lado izquierdo de Power Apps. Haga clic en **Creae una base de datos (2)** para crear una base de datos de Dataverse.
  
     ![](images/lab03-ex01-02.png)
 
-1. Seleccione **Currency -> TND** e **Language -> English(1)** y haga clic en **Create my database (2)**.
+1. Seleccione **Moneda -> TND** y haga clic en **Creae una base de datos (2)**.
    
-    ![](images/lab03-ex01-03.png)
+    ![](images/300.png)
     
     >**Nota:** Puede dejar abierta esta pestaña del navegador y continuar con el próximo ejercicio, ya que la creación de la base de datos de Dataverse tomará algún tiempo.
 
@@ -55,9 +53,9 @@ En este ejercicio, creará una solución para el conector personalizado Contoso 
 
     ![](images/lab03-ex02-01.png)
 
-1. Seleccione **Soluciones** y haga clic en **+ Nueva solución**.
+1. Seleccione **Soluciones (1)** y haga clic en **+ Nueva solución (2)**.
 
-    ![](images/lab03-ex02-02.png)
+    ![](images/301.png)
 
 1. Escriba **Contoso Badges connector (1)** como Nombre para mostrar, seleccione **Contoso Coffee (2)** como Editor y haga clic en **Crear (3)**.
    
@@ -83,13 +81,13 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
    ```
 1. Haga clic en el enlace **Open API definition file**.
    
-    ![](images/L03/image3.png)
+    ![](images/302.png)
 
 1. Haga una revisión rápida de la definición de Open API.
 
 1. Haga clic derecho en la página y seleccione **Guardar como** o use **Ctrl + C** y nombre el archivo como **swagger.json** en su equipo. Ahora, cierre la pestaña del navegador haciendo clic en **X**.
 
-     ![](images/L03/image4.png)
+     ![](images/303.png)
 
    >**Nota:** Si tiene problemas para guardar el archivo, copie el código y péguelo en el Bloc de notas, luego guarde el archivo como **swagger.json**.
 
@@ -109,10 +107,10 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 1. Ingrese la siguiente información en la hoja **Crear conector**.
 
-     1. Nombre del conector: **Badges connector (1)** 
-     2. Descripción: **Connector for contosobadgestest (2)**
-     3. Host: **contosobadgestest.azurewebsites.net (3)** 
-     4. Haga clic en **Crear conector (4)**.
+     - Nombre del conector: **Badges connector (1)** 
+     - Descripción: **Connector for contosobadgestest (2)**
+     - Host: **contosobadgestest.azurewebsites.net (3)** 
+     - Haga clic en **Crear conector (4)**.
     
         ![](images/lab03-ex03-03.png)
 
@@ -144,25 +142,25 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 ### Tarea 2: Modificar la definición
 
-1. Seleccione la acción **AddCredit (1)** y luego **Important (2)** para Visibility.
+1. Seleccione la acción **AddCredit (1)** y luego **important (2)** para Visibility.
     
-     ![](images/lab03-ex03-09.png)
+     ![](images/304.png)
 
 1. Desplácese hacia abajo hasta la sección **Solicitud (Request)**, haga clic en el botón **body** y seleccione **Editar**.
 
-     ![](images/lab03-ex03-10.png)
+     ![](images/305.png)
 
 1. Desplácese hacia abajo y haga clic en el botón **points** y seleccione **Editar**.
     
-    ![](images/lab03-ex03-11.png)
+    ![](images/306.png)
 
-1. Seleccione **Sí** para Is required? y haga clic en el botón **Atrás**.
+1. Seleccione **Sí (1)** para Is required? y haga clic en el botón **Atrás (2)**.
      
      ![](images/lab03-ex03-12.png)
 
 1. Haga clic en el botón **recipientid** y seleccione **Editar**.
 
-     ![](images/lab03-ex03-13.png)
+     ![](images/307.png)
 
 1. Seleccione **Sí** para Is required? y haga clic en el botón **Atrás**.
 
@@ -170,7 +168,7 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 1. Haga clic en el botón **name** y seleccione **Editar**.
 
-     ![](images/lab03-ex03-15.png)
+     ![](images/308.png)
 
 1. Seleccione **Sí** para Is required? y haga clic en el botón **Atrás**.
 
@@ -178,21 +176,17 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 1. Verifique que los 3 elementos del payload muestran `*` en ellos y Haga clic en el botón **Atrás** nuevamente.
 
-      ![](images/lab03-ex03-17.png)
-
-1. Avance a **Complemento de IA (vista preliminar)**.
-
-     ![](images/lab03-ex03-18.png)
+      ![](images/image.png)
 
 1. Avance a **Código**
  
 1. Revise el código y avance a **Probar**.
 
-      ![](images/L03/L03-test.png)
+      ![](images/311.png)
 
 1. Haga clic en **Actualizar conector** y espere a que se actualice el conector
 
-     ![](images/lab03-ex03-19.png)
+     ![](images/312.png)
 
 1. No salga de esta página.
 
@@ -205,13 +199,13 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 1. Haga clic en el enlace para obtener la **API Key**
     
-   ![](images/L03/image16.png)
+   ![](images/313.png)
 
 1. Copie el valor de la **API Key** y guárdelo en el Bloc de notas, ya que utilizará este valor en los próximos pasos. Ahora, cierre la pestaña del navegador haciendo clic en **X**.
 
 1. Vuelva a la página de prueba del conector y haga clic en **+ Nueva conexión**.
     
-     ![](images/lab03-ex03-20.png)
+     ![](images/314.png)
 
 1. Pegue la **API Key (1)** que copió en el **paso 3** de esta tarea y haga clic en **Crear conexión (2)**.
    
@@ -223,19 +217,24 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
 1. La conexión que creó debe estar seleccionada.
 
-1. Vaya a la operación **AddCredit (1)**. Ingrese su dirección de correo electrónico para recipientid, ingrese su nombre para name, ingrese **1** para points y haga clic en **Probar operación (2)**.
+1. Vaya a la operación **AddCredit (1)**. Ingrese los siguientes detalles:
 
-    ![](images/lab03-ex03-23.png)
+     - **recipientId:** **<inject key="AzureAdUserEmail"></inject> (2)**
+     - **name:** **odl_user (3)**
+     - **points:** **1 (4)**
+     - Luego haga clic en **Operación de preueba (5)**
+
+    ![](images/316.png)
 
 1. La prueba debería ser exitosa y la respuesta debe verse como la imagen a continuación.
      
      ![](images/lab03-ex03-24.png)
 
-1. Seleccione la operación **GetRecipient**.
+1. Seleccione la operación **GetRecipient (1)**. Proporcione su dirección de correo electrónico como ID y haga clic en **Operación de prueba (3)**.
 
-1. Proporcione su dirección de correo electrónico como ID y haga clic en **Probar operación**.
-      
-     ![](images/lab03-ex03-25.png)
+     - **id:** **<inject key="AzureAdUserEmail"></inject>** **(2)** 
+
+     ![](images/318.png)
 
 1. La prueba debería tener éxito y debería obtener la respuesta esperada.
 
@@ -277,7 +276,7 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 1. Haga clic en el botón **Editar** del conector personalizado que creó.
 
-    ![](images/lab03-ex04-03.png)
+    ![](images/319.png)
 
 1. Seleccione la pestaña **Definición** del menú desplegable y haga clic en **Nueva acción** en la pestaña de definición.
   
@@ -285,9 +284,10 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 1. Ingrese la siguiente información para agregar la acción **Get current badge**.
 
-     1. Resumen: **Get current badge (1)**
-     2. Descripción: **Get current badge (2)** 
-     3. ID de Operación: **getcurrentbadge (3)**<br/>
+     - Resumen: **Get current badge (1)**
+     - Descripción: **Get current badge (2)** 
+     - Id. de Operación: **getcurrentbadge (3)**<br/>
+
      ![](images/lab03-ex04-05.png)
 
 1. Desplácese hacia abajo hasta la sección **Solicitud (Request)** y haga clic en **+ Importar desde muestra**.
@@ -303,7 +303,11 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 1. Haga clic en **Actualizar conector** y espere a que se actualice el conector.
 
-1. Seleccione la pestaña **Código** en el menú desplegable.
+     ![](images/321.png)
+
+1. Seleccione la pestaña **Código**
+
+     ![](images/322.png)
 
 1. Habilite **Código (1)** y haga clic en **Cargar (2)**.
     
@@ -319,12 +323,16 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 1. Haga clic en **Actualizar conector** y espere a que se actualice el conector.
 
+     ![](images/312.png)
+
 1. Avance a **Probar** seleccionándolo en el menú desplegable.
 
 1. Seleccione la acción **getcurrentbadge**.
 
-1. Proporcione su dirección de correo electrónico como ID y haga clic en **Probar operación**.
+1. Proporcione su dirección de correo electrónico como ID y haga clic en **Operación de prueba**.
      
+     - **id:** **<inject key="AzureAdUserEmail"></inject>**
+
      ![](images/lab03-ex04-10.png)
 
 1. La prueba debería ser exitosa y debería obtener una insignia actual para el usuario que creó.
@@ -335,21 +343,27 @@ Para ello, utilizará la función de código personalizado para cambiar la forma
 
 1. Copie el JSON del **Cuerpo de respuesta**.
 
+    ![](images/323.png)
+
 1. Seleccione la pestaña Definición en el menú desplegable.
+
+    ![](images/324.png)
 
 1. Seleccione la acción **getcurrentbadge**.
      
      ![](images/L03/image33.png)
 
-1. Desplácese hacia abajo hasta la sección **Response** y haga clic en **+ Agregar respuesta predeterminada.**
+1. Desplácese hacia abajo hasta la sección **Respuesta** y haga clic en **+ Agregar respuesta predeterminada.**
  
      ![](images/lab03-ex04-12.png)
 
-1. Pegue el JSON que copió en el **Body (1)** y haga clic en **Importar (2)**.
+1. Pegue el JSON que copió en el **Cuerpo (1)** y haga clic en **Importar (2)**.
      
      ![](images/lab03-ex04-13.png)
 
 1. Haga clic en **Actualizar conector** y espere a que se actualice el conector.
+
+     ![](images/312.png)
 
 1. **No** abandone esta página.
 
@@ -359,10 +373,14 @@ En esta tarea, probará su código personalizado.
 
 1. Seleccione la pestaña **Probar**.
 
+     ![](images/325.png)
+
 1. Seleccione la conexión que creó anteriormente.
 
-1. Vaya a la sección **Operaciones** y seleccione la operación **getcurrentbadge (1)**. Proporcione su correo electrónico como **id (2)** y haga clic en **Probar operación (3)**.
-   
+1. Vaya a la sección **Operaciones** y seleccione la operación **getcurrentbadge (1)**. Proporcione su correo electrónico como **id** y haga clic en **Operación de prueba(3)**.
+
+     - **id:** **<inject key="AzureAdUserEmail"></inject>** **(2)**
+
      ![](images/lab03-ex04-14.png)
 
 1. La operación debería tener éxito y el **Cuerpo** de la respuesta debería verse como la imagen a continuación.
@@ -392,18 +410,18 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
    >**Nota**: Haga click en **Abrir app** si se le indica.
 
-1. Seleccione **Datos** desde la izquierda y haga clic en **+ Agregar datos.**
+1. Seleccione **Datos (1)** desde la izquierda y haga clic en **+ Agregar datos (2)**
      
-     ![](images/L03/image39.png)
+     ![](images/400.png)
 
 1. Expanda **Conectores** y seleccione el elemento **Badges connector** que creó.
     
-    ![](images/L03/image40uu.png)
+    ![](images/401.png)
 
 
 1. Haga clic en **+ Agregar una conexión**.
 
-    ![](images/L03/L03-EX4.png)
+    ![](images/402.png)
 
 1. Abra una nueva pestaña o ventana del navegador y navegue hasta la siguiente URL para abrir la API Contoso Coffee Badge.
     
@@ -414,21 +432,21 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
     
 1. Haga clic en el enlace para abrir la **API Key**
      
-    ![](images/L03/image41.png)
+    ![](images/403.png)
 
 1. Copie el valor **API Key** y péguelo en el Bloc de notas, ya que utilizará este valor en los próximos pasos. Ahora, cierre la pestaña del navegador haciendo clic en **X**.
 
 1. Regrese al diseñador de aplicaciones, pegue la **API Key (1)** que copió en el paso anterior y haga clic en **Conectar (2)**. Haga clic en **Entendido** si aparece alguna ventana emergente con el título Premium.
      
-     ![](images/L03/image42-1u.png)
+     ![](images/405.png)
 
-  >**Nota**: Si no se le solicita que ingrese la clave API, ignórelo.
+     >**Nota**: Si no se le solicita que ingrese la clave API, ignórelo.
 
 1. Seleccione la **vista de árbol**.
 
-1. Seleccione la pestaña **Pantallas (1)**, vaya a la pestaña **Insertar (2)**, haga clic en **Medios** y, a continuación, seleccione **Imagen (3)**.
+1. Seleccione la pestaña **Pantallas (1)**, vaya a la pestaña **Insertar (2)**, haga clic en **Multimedia (3)** y, a continuación, seleccione **Imagen (4)**.
      
-     ![](images/L03/L03-componentuu.png)
+     ![](images/406.png)
 
 1. Haga doble clic en la imagen recién agregada y cambie su nombre a **User badge**.
     
