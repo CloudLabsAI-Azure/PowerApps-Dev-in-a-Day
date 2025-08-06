@@ -47,9 +47,9 @@ En estos laboratorios, seguirá un proceso estructurado para dominar los aspecto
  
 ## Acceso a su Ambiente de Laboratorio
  
-Una vez que esté listo para comenzar, su máquina virtual y la **Guía de laboratorio** estarán a su alcance en su navegador web.
+Una vez que esté listo para comenzar, su máquina virtual y la **Guía** de laboratorio estarán a su alcance en su navegador web.
 
-![](./images/2.png)
+![](./images/100.png)
 
 ### Máquina Virtual y Guía de Laboratorio
  
@@ -83,9 +83,9 @@ Siéntase libre de **iniciar**, **detener** o **reiniciar** su máquina virtual 
  
 ## Comencemos con el Portal de Azure
 
-1. En su máquina virtual, haga clic en el ícono del Portal de Azure como se muestra a continuación:
+1. En su máquina virtual, haga clic en el ícono del **Portal de Azure** como se muestra a continuación:
  
-   ![](./images/6.png)
+   ![](./images/101.png)
  
 2. Verá la pestaña **Iniciar sesión en Microsoft Azure**. Aquí, ingrese sus credenciales:
  

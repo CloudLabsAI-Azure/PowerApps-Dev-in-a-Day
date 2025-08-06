@@ -22,7 +22,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. En Lab VM, haga clic en el acceso directo **Power Apps Portal** del navegador Microsoft Edge que está disponible en el escritorio.
 
-   ![azure portal.](images/L01/1.png)
+   ![azure portal.](images/103.png)
 
 1. En la ventana **Iniciar sesión**, aparecerá la pantalla de inicio de sesión, introduzca el siguiente nombre de usuario **(1)** y pulse en **Siguiente** **(2)**.
 
@@ -483,7 +483,7 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
 
 1. En Lab VM, inicie **Visual Studio Code** usando el acceso directo disponible en el escritorio.
 
-   ![](images/L04/vscode1.png)
+   ![](images/102.png)
    
 1. Haga clic en **Terminal** y seleccione **Nuevo terminal**.
 
