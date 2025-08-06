@@ -457,22 +457,20 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
     ```
     ContosoBadges.getcurrentbadge({id:User().Email}).image
     ```
-    ![](images/L03/image45u.png)
+    ![](images/z1.png)
 
 1. Establezca el valor Tooltip de User badge con la fórmula que se muestra a continuación.
 
     ```
     ContosoBadges.getcurrentbadge({id:User().Email}).name
     ```
-    ![](images/L03/L03-EX4-T1u.png)
+    ![](images/z2.png)
 
 1. Achique la imagen y muévala a la esquina superior derecha de la pantalla.
 
-1. El elemento User badge ahora debería verse como la imagen que se muestra a continuación.
+1. El elemento User badge ahora debería verse como la imagen que se muestra a continuación. Haga clic en el botón **Iniciar**.
       
-     ![](images/L03/image46.png)
-
-1. Seleccione la pestaña **Pantallas** en la vista de árbol. Haga clic en el botón **Iniciar**.
+     ![](images/z3.png)
 
 1. Pase el cursor sobre la insignia para ver el nombre de la insignia.
 
@@ -482,11 +480,15 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
 1. Seleccione **Publicar**.
 
+     ![](images/z4.png)
+
 1. Seleccione **Publicar esta versión**.
 
-1. Vuelva a la solución haciendo clic en el botón  **Atrás**.
+     ![](images/124.png)
+
+1. Vuelva a la solución haciendo clic en el botón **Atrás**.
      
-      ![](images/L03/imagee47.png)
+      ![](images/z5.png)
 
 1. No salga de esta página.
 
@@ -496,31 +498,31 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
      ![](images/lab03-ex05-03.png)
 
-1. Haga clic en **+ Nuevo** y seleccione **Automatización | Flujo de nube | Instantáneo**.
+1. Haga clic en **+ Nuevo (1)** y seleccione **Automatización (2) | Flujo de nube (3) | Instantáneo (4)**.
 
     ![](images/lab03-ex05-04.png)
 
-1. Ingrese **Test add credit** como nombre del flujo, seleccione **Activar manualmente un flujo** y haga clic en **Crear**.
+1. Ingrese **Test add credit (1)** como nombre del flujo, seleccione **Activar manualmente un flujo (2)** y haga clic en **Crear (3)**.
      
     ![](images/lab03-ex05-05.png)
 
-  >**Nota**: Si no puede ver el botón **Crear**, haga clic en el botón de **puntos suspensivos** ubicado en la esquina superior derecha de la página web y ajuste el zoom al **90%**.
+     >**Nota**: Si no puede ver el botón **Crear**, haga clic en el botón de **puntos suspensivos** ubicado en la esquina superior derecha de la página web y ajuste el zoom al **90%**.
 
 1. Haga clic en **+ Nuevo paso**.
 
     ![](images/lab03-ex05-06.png)
 
-1. Seleccione la pestaña **Personalizado** y luego seleccione la acción **Add credit**.
+1. Seleccione la pestaña **Personalizado (1)** y luego seleccione la acción **Add credit (2)**.
    
     ![](images/lab03-ex05-07.png)
     
-1. Ingrese **Test connection**, pegue la **API Key** que copió anteriormente en el **paso 9** de la tarea 1 de este ejercicio y haga clic en **Crear**.
+1. Ingrese **Test connection (1)**, pegue la **API Key (2)** que copió anteriormente en el **paso 9** de la tarea 1 de este ejercicio y haga clic en **Crear (3)**.
   
-    ![](images/lab03-ex05-08.png)
+    ![](images/z6.png)
 
-1. Haga clic en el campo **recipientId**. En Activar manualmente un panel de flujo, seleccione **User email**.
+1. Haga clic en el campo **recipientId (1)**. En Activar manualmente un panel de flujo, seleccione **User email (2)**.
     
-     ![](images/lab03-ex05-09.png)
+     ![](images/z7.png)
 
 1. Haga clic en el campo **name**. En Activar manualmente un panel de flujo, y seleccione **User name**.
 
@@ -532,9 +534,9 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
      ![](images/lab03-ex05-11.png)
 
-1. Seleccione **Manualmente** y haga clic en **Probar** nuevamente.
+1. Seleccione **Manualmente (1)** y haga clic en **Probar (2)** nuevamente.
 
-     ![](images/lab03-ex05-12.png)
+     ![](images/z8.png)
 
 1. Haga clic en **Continuar**.
 
@@ -544,7 +546,7 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
 1. La ejecución del flujo debería ser exitosa. Una vez que se haya realizado correctamente, haga clic en el botón **Atrás**.
     
-     ![](images/lab03-ex05-13.png)
+     ![](images/z9.png)
 
 1. Seleccione **Flujos en la nube** y abra el flujo que creó.
      
