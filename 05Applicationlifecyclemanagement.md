@@ -44,13 +44,13 @@ acciones, por lo que no se ejecutan bajo su identidad de usuario individual.
      
    ![](images/lab04-ex01-04.png)
 
-1. Seleccione **Certificados y secretos** en la hoja lateral y haga clic en **+ Nuevo secreto de cliente**.
+1. Seleccione **Certificados y secretos (1)** en la hoja lateral y haga clic en **+ Nuevo secreto de cliente (2)**.
 
-   ![](images/lab04-ex01-05.png)
+   ![](images/500.png)
 
 1. Ingrese **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** ***(1)*** como descripción, establezca el vencimiento en **3 meses** ***(2)* ** y haga clic en **Agregar** ***(3)***.
    
-   ![](images/lab04-ex01-06.png)
+   ![](images/503.png)
    
 1. Copie el **valor** y guárdelo en un bloc de notas, ya que lo necesitará para usarlo más adelante.
 
@@ -81,17 +81,17 @@ En esta tarea, probará nuevos entornos de Dataverse.
    
    - Escriba :**Developer(4)** y haga clic en **Siguiente (5)**.
    
-   - ¿Implementar aplicaciones y datos de muestra? :**Habilite Sí(6)** y haga clic en **Guardar(7)**.
+   - ¿Desea implementar aplicaciones y datos de ejemplo? :**Habilite Sí(6)** y haga clic en **Guardar(7)**.
    
-     ![](images/lab04-ex01-09.png)
+     ![](images/506.png)
 
-     ![](images/lab04-ex01-10.png)
+     ![](images/504.png)
 
-     ![](images/lab04-ex01-11.png)
+     ![](images/507.png)
 
 1. Ahora puede ver el nuevo Dataverse, **DEV_ENV_TEST**, que creó.
 
-   ![](images/lab04-ex01-12.png)
+   ![](images/508.png)
 
 ### Tarea 3: Crear una usuaria de aplicación en Dataverse
 
@@ -127,12 +127,12 @@ implementar soluciones.
    
 1. Seleccione el registro de la aplicación **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** que creó anteriormente y haga clic en **Agregar** **(2)**.
 
-   ![](images/lab04-ex01-18.png)
+   ![](images/509.png)
 
 1. Escriba **org** y seleccione su **unidad de negocio** **(1)** y en **Roles de seguridad** haga clic en **editar símbolo (2)** y seleccione 
    **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
-   ![](images/lab04-ex01-19.png)
+   ![](images/510.png)
 
    **Nota:** Si el símbolo **#** aún está visible antes de GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, haga clic en él y actualice el panel para eliminarlo.
    
@@ -158,12 +158,12 @@ implementar soluciones.
    
 1. Seleccione el registro de la aplicación **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)*** que creó anteriormente y haga clic en **Agregar** ***(2 )***.
 
-   ![](images/lab04-ex01-25.png)
+   ![](images/509.png)
 
 1. Escriba **org** y seleccione su **unidad de negocio** **(1)** y en **Roles de seguridad** haga clic en **editar símbolo (2)** y seleccione 
    **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
-   ![](images/lab04-ex01-26.png)
+   ![](images/511.png)
 
    **Nota:** Si el símbolo **#** aún está visible antes de GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, haga clic en él y actualice el panel para eliminarlo.
    
@@ -201,10 +201,16 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
 
 1. En la hoja **Antes de exportar**, haga clic en **Publicar** y espere a que se complete la publicación.
 
+   ![](images/512.png)
+
 1. Una vez publicada, haga clic en **Siguiente**.
 
-1. Seleccione **Administrado** y haga clic en 
-**Exportar**.
+   ![](images/513.png)
+
+1. Seleccione **Administrada (1)** y haga clic en **Exportar (2)**.
+
+   ![](images/514.png)
+
 1. Espere a que se exporte la solución.
 
 1. Haga clic en el botón Descargar en la parte superior derecha de la pantalla. Haga clic en Descargar Solución.
@@ -213,7 +219,7 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
 
 ### Tarea 2: Importar la solución
 
-1. Navegue hasta el portal de creación de Power Apps si aún no está abierto y seleccione su entorno de **Prueba** llamado Azure XXXXXX (predeterminado).
+1. Navegue al portal de creadores de Power Apps si aún no está abierto y seleccione su entorno de prueba, haga clic en **Entorno (1)** y seleccione el entorno de desarrollo creado previamente llamado **DEV_ENV_TEST (2)**.
 
      ```
      https://make.powerapps.com
@@ -226,19 +232,27 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
      
      >**Nota:** Intente actualizar el navegador si las soluciones no están abiertas.
 
-1. Haga clic en **Explorar**.
+1. Haga clic en **Examinar**.
+
+     ![](images/515.png)
 
 1. Seleccione la solución que exportó desde el entorno de desarrollo y haga clic en **Abrir**.
 
 1. Haga clic en **Siguiente**.
 
+     ![](images/516.png)
+
 1. Haga clic en **Importar** y espere a que se complete la importación.
+
+     ![](images/517.png)
 
 1. La solución debería importarse correctamente. **No** salga de esta página.
 
 ### Tarea 3: Probar el conector
 
-1. Haga clic en **Solución**, luego en **Todos** y luego seleccione **Contoso Badge Connector** para abrir la solución que acaba de importar.
+1. Haga clic en **Soluciónes (1)**, luego en **Todos (2)** y luego seleccione **Contoso Badge Connector (3)** para abrir la solución que acaba de importar.
+
+     ![](images/600.png)
 
 1. Haga clic para abrir **Badges connector**.
   
@@ -247,11 +261,17 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
     >**Nota**: Si recibe el mensaje de error **could not retrieve the connector data**, espere unos minutos (5 a 10 minutos) para que se actualicen los datos del conector. Si eso no funciona, puede eliminar el conector importado y realizar los **pasos 5 a 10** de la tarea **Tarea 2: Importar solución** nuevamente y luego intente abrir el conector.
 
 1. Haga clic en **Editar**.
+
+     ![](images/601.png)
+
 1. Seleccione la pestaña **Probar** en el menú desplegable.
 
-     
+      ![](images/602.png)  
 
 1. Haga clic en **+ Nueva conexión**. Se abrirá una nueva pestaña del navegador para crear una conexión.
+
+      ![](images/603.png)  
+
 1. Abra una nueva ventana o pestaña del navegador y navegue hasta la siguiente URL para abrir la API Contoso Coffee Badges.
 
    ```
@@ -260,7 +280,7 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
 
 1. Haga clic en el enlace **Get an API Key**.
   
-     ![](images/L03/image60.png)
+     ![](images/604.png)
 
 1. Copie el valor de la **API Key**.
 
@@ -276,9 +296,14 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
 
       ![](images/lab04-ex02-08.png)
 
-1. Proporcione su correo electrónico para **recipientid**, proporcione el **name**, ingrese **1** para **points** y haga clic en **Probar operación**.
-     
-     ![](images/lab04-ex02-09.png)
+1. Vaya a la operación **AddCredit (1)**. Ingrese los siguientes detalles:
+
+     - **recipientId:** **<inject key="AzureAdUserEmail"></inject> (2)**
+     - **name:** **odl_user (3)**
+     - **points:** **1 (4)**
+     - Luego haga clic en **Operación de preueba (5)**
+
+    ![](images/316.png)
 
 1. La prueba debería tener éxito y la respuesta debería verse como la imagen a continuación.
       
@@ -299,7 +324,7 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
    ![](images/lab04-ex03-01.png)
 
-1. Haga clic en **Nuevo repositorio** para crear un repositorio.
+1. Haga clic en **Nuevo** repositorio para crear un repositorio.
 
    ![](images/lab04-ex03-02.png)
 
@@ -315,7 +340,7 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
     
      ![](images/lab04-ex03-05.png)
 
-1. Vaya a la sección **Security (1)**, expanda **Secrets and variables (2)** y seleccione **Actions (3)**.
+1. Vaya a la sección **Configuración (1)**, expanda **Secretos y variables (2)** y seleccione **Acciónes (3)**.
    
     > **Nota:** Los valores que proporcione no serán visibles después de crear el elemento, así que tómese su tiempo para obtener los valores correctos.
       
@@ -325,7 +350,7 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
      ![](images/lab04-ex03-07.png)
 
-1. Ingrese **PowerPlatformAppID (1)** como Nombre y pegue la contraseña: **<inject key="AzureAdUserEmail"></inject> (2)** y **haga clic en Agregar secreto (3)**
+1. Ingrese **PowerPlatformAppID (1)** como Nombre y pegue el ID odl: **<inject key="AzureAdUserEmail"></inject> (2)** y **haga clic en Agregar secreto (3)**
     
      ![](images/lab04-ex03-08.png)
 
@@ -363,7 +388,7 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
 1. No salgas de esta página.
 
-### Ejercicio 4: Exportación y ramas
+## Ejercicio 4: Exportación y ramas
 
 En este ejercicio, establecerá una acción de flujo de trabajo y agregará pasos que exportarán la solución desde el entorno de desarrollo y crearán una nueva rama.
 
@@ -392,13 +417,13 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
 
    ![](images/lab04-ex04-03.png)
 
-1. Haga clic en **Settings (1)**, vaya a la pestaña **Actions (2)** en el lado izquierdo, luego seleccione **General (3)**.
+1. Haga clic en **Configuración (1)**, vaya a la pestaña **Acciónes (2)** en el lado izquierdo, luego seleccione **General (3)**.
 
    ![](images/lab04-ex04-04.png)
 
-1. En la sección **Permiso de flujo de trabajo**, asegúrese de que esté seleccionado **permiso de lectura y escritura** y luego haga clic en **guardar**.
+1. En la sección **Permiso de flujo de trabajo**, asegúrese de que esté seleccionado **permiso de lectura y escritura (1)** y luego haga clic en **Salvar (2)**.
 
-   ![](images/lab04-ex04-05.png)
+   ![](images/605.png)
 
 1. Seleccione la pestaña **Acciones** **(1)** y seleccione el **flujo de trabajo** ***(2)*** que creó.
 
@@ -412,7 +437,7 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
       
    ![](images/L05/Images2028u.png)
    
-1. Seleccione la pestaña **Code** ***(1)*** y haga clic en **Branches** ***(2)***. Debería ver dos ramas.
+1. Seleccione la pestaña **Código (1)*** y haga clic en **Sucursales (2)**. Debería ver dos ramas.
    
    ![](images/lab04-ex04-08.png)
    
@@ -434,7 +459,7 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
    
 1. Ahora debería ver el resumen de la solicitud de incorporación de cambios. Confirme que la rama no tenga conflictos con la rama principal y que los cambios se puedan fusionar en la rama principal automáticamente.
    
-1. Haga clic en el botón de chevrón al lado del botón **Fusionar solicitud de incorporación de cambios (merge pull request)** y seleccione **Aplastar y fusionar (Squash and merge)**.
+1. Haga clic en el botón de chevrón al lado del botón **Solicitud de incorporación de cambios de fusión (merge pull request)** y seleccione **Aplastar y fusionar (Squash and merge)**.
       
     ![](images/lab04-ex04-12.png)
 
@@ -446,16 +471,14 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
    
      ![](images/L05/prdoneu.png)
 
-### Ejercicio 5: Lanzamiento para prueba
+## Ejercicio 5: Lanzamiento para prueba
 
 En este ejercicio, creará una acción de flujo de trabajo y agregará pasos que lanzarán la solución que
 exportado al entorno de prueba.
 
 ### Tarea 1: crear un flujo de trabajo
 
-1. Ahora navegue hasta la pestaña **Acciones (1)**.
-   
-1. Haga clic en **Nuevo flujo de trabajo (2)**.
+1. Ahora navegue hasta la pestaña **Acciones (1)**, haga clic en **Nuevo flujo de trabajo (2)**.
 
     ![](images/lab04-ex05-01.png)
    
@@ -477,13 +500,11 @@ exportado al entorno de prueba.
 
     ![](images/lab04-ex05-03.png)
     
-1. Seleccione la pestaña **Acciones** y supervise el flujo de trabajo.
-      
-     ![](images/L05/Images2049.png)
+1. Seleccione la pestaña **Acciones**, haga clic en **Todos los flujos de trabajo (2)** y supervise el flujo de trabajo.
+
+     ![](images/606.png)
 
 1. La versión de release debería completarse exitosamente.
-    
-     ![](images/L05/relecomplu.png)
      
 1. Vuelva al portal de PowerApps y asegúrese de estar en el entorno de prueba de PowerApps.
 
