@@ -86,9 +86,9 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
     
      ![](images/lab01ex10-06.png)
      
-1. Navegue hasta la ruta `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` en el explorador de archivos, seleccione el archivo **Prioritz_1_0_0_7.zip** y haga clic en **Abrir**.
+1. Navegue hasta la ruta `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` **(1)** en el explorador de archivos, seleccione el archivo **Prioritz_1_0_0_7.zip (2)** y haga clic en **Abrir (3)**.
 
-    ![](images/lab01ex10-07.png)
+    ![](images/122.png)
 
 1. Asegúrese de que el archivo **Prioritz_1_0_0_7.zip(1)** esté seleccionado y haga clic en **Siguiente(2)**.
     
@@ -234,7 +234,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. Navegue hasta la ruta `C:\LabFiles` **(1)** en el Explorador de Archivos, seleccione **image.png (2)** y haga clic en **Abrir (3)**.
 
-      ![](images/L01/image17u-1n.png)
+      ![](images/123.png)
 
 1. Escriba **Tamale Tuesday** en el campo Choice y haga clic en **add a picture** que se encuentra debajo del campo Choice.
      
