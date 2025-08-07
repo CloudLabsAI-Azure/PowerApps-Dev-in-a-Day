@@ -28,13 +28,13 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    - E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
 
-      ![](/images/L01/Email2.png)
+       ![](/images/L01/Email2.png)
 
 1. Introduza agora a seguinte palavra-passe **(1)** e clique em **Sign in** **(2)**.
 
    - Palavra-passe: <inject key="AzureAdUserPassword"></inject>
 
-      ![](/images/L01/Password2.png)
+       ![](/images/L01/Password2.png)
 
 1. Clique em **Perguntar Depois** se a janela pop-up "Ação Necessária" aparecer.
 
@@ -90,7 +90,9 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    ![](images/L01/L1-T1-S17.png)
 
-1. Navegue para este caminho `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` no ficheiro explorer, seleccione o ficheiro **Prioritz_1_0_0_0_7.zip** e clique em **Open**.
+1. No explorador de ficheiros, navegue até à pasta `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` **(1)**, selecione o ficheiro comprimido **Prioritz_1_0_0_7.zip** **(2)** e clique no botão **Abrir** **(3)**.
+
+   ![](images/L01/dv_p2_e1_g_6.png)
 
 1. Certifique-se de que o ficheiro **Prioritz_1_0_0_7. zip(1)** está selecionado e clique em **Next (2)**.
 
