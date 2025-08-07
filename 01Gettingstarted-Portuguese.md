@@ -116,6 +116,8 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Abra a solução **Prioritz** que importou.
 
+   ![](images/L01/dv_p2_e1_g_11.png)
+
 4. Expandir **Tables (1)** e seleccione a tabela **PrioritZ Topic (2)**.
 
    ![](images/L01/L1-T1-S21.png)
@@ -164,52 +166,55 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
     ![](images/L01/L1-T1-S32.png)
 
-16. Clique em **Run** para executar o fluxo.
+16. Na página do fluxo **Import sample data - Topics**, clique no botão **Executar** **(1)** para iniciar a execução do fluxo.
 
-      ![](images/L01/image13.png)
+      ![](images/L01/dv_p2_e1_g_15.png)
 
-17. Clique no botão **Run flow** Executar a lâmina de fluxo.
+17. Na lâmina **Executar fluxo**, clique no botão **Executar fluxo** para confirmar e iniciar a execução.
 
-      ![](images/L01/L01-new.png)
+      ![](images/L01/dv_p2_e1_g_16.png)
 
       > **Nota**: Se receber este erro `Error from the token exchange: Permission denied due to missing connection` enquanto executa o fluxo, isto deve-se ao facto de a ligação **Dataverse** não está a ser adicionado correctamente. Apague a solução importada e tente reimportar a solução executando os **passos 11-21** desta tarefa novamente e, em seguida, tente desencadear o fluxo novamente.
 
-18. Clique em **Done** e aguarde que o fluxo seja executado.
+18. Após a confirmação de execução bem-sucedida, clique no botão **Concluído** para fechar a janela.
 
-      ![](images/L01/EX1-T1-18.png)
+      ![](images/L01/dv_p2_e1_g_17.png)
 
-19. O fluxo deve ser executado com sucesso. Se quiser, pode clicar na linha de execução e ele mostrará
- os detalhes do que o fluxo fez.
+19. O fluxo deve ser executado com sucesso; para verificar os detalhes da execução, clique em **Todas as execuções** e selecione a linha correspondente para visualizar as ações realizadas.
 
-      ![](images/L01/image14.png)
+      ![](images/L01/dv_p2_e1_g_18.png)
+
+      ![](images/L01/dv_p2_e1_g_19.png)
 
 ### Tarefa 2: Teste as aplicações
 
-1. Navegue de volta para a solução **PrioritZ** clicando em **Cloud flows**. Em alternativa, também pode abrir o portal do fabricante **Power Apps** utilizando este URL `https://make.powerapps.com` se ainda não está aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** é selecionado.
+1. Navegue de volta para a solução **PrioritZ** clicando em **Fluxos de cloud**. Em alternativa, também pode abrir o portal do fabricante **Power Apps** utilizando este URL `https://make.powerapps.com` se ainda não está aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** é selecionado.
 
-   ![](images/L01/cloud1.png)
+   ![](images/L01/dv_p2_e1_g_20.png)
 
    >**Observação:** se um pop-up **Bem-vindo ao Power Apps Studio** aparecer, basta clicar em **Ignorar** para prosseguir.
 
-1. Navegue até ao separador **Solutions** clicando em **Back to Solutions** **(<-)**.
+1. Para regressar ao separador **Soluções**, clique no botão **Voltar às soluções** na barra lateral esquerda.
 
-   ![](images/L01/solutions.png)
+   ![](images/L01/dv_p2_e1_g_21.png)
 
-2. Selecione **Apps (1)** do menu do lado esquerdo do Power Apps, deve ver duas aplicações denominadas **PrioritZ Ask** e **PrioritZ Admin (2)**.
+2. No menu de navegação à esquerda, selecione **Aplicações** **(1)** e verifique se as aplicações **Prioritz Ask** e **Prioritz Admin** estão listadas **(2)**.
 
    >**Info:** A aplicação **PrioritZ Admin** é utilizada para gerir tópicos que estão a ser solicitados e a aplicação **PrioritZ Ask** permite que os utilizadores respondam.
 
-   ![](images/L01/EX1-T2-2_1_1.png)
+   ![](images/L01/dv_p2_e1_g_23.png)
 
-3. Inicie a aplicação **PrioritZ Admin**.
+3. Para iniciar a aplicação **Prioritz Admin**, clique no ícone de execução localizado ao lado do nome da aplicação.
 
-   ![](images/L01/L01-admin.png)
+   ![](images/L01/dv_p2_e1_g_24.png)
 
 4. Deve ver os quatro tópicos abaixo.
 
    ![](images/L01/EX1-T2-4-2.png)
 
 5. Clique para abrir o tópico do banner **Event banner**.
+
+   ![](images/L01/dv_p2_e1_g_25.png)
 
 6. Deve ver os detalhes do tópico com alguns itens do tópico.
 
@@ -239,7 +244,9 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
       ![](images/L01/image18.png)
 
-11. Navegue neste caminho `C:\LabFiles` no File Explorer, seleccione **image.png** e clique em abrir.
+11. No explorador de ficheiros, navegue até `C:\LabFiles` **(1)**, selecione o ficheiro **image.png** **(2)** e clique no botão **Abrir** **(3)**.
+
+      ![](images/L01/dv_p2_e1_g_28.png)
 
 13. Clique em **+** para adicionar a escolha.
 
@@ -263,9 +270,9 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 18. Feche a aplicação PrioritZ Admin fechando o separador do navegador no qual a aplicação PrioritZ Admin está aberta.
 
-19. Selecione **Apps (1)** no menu do lado esquerdo do Power Apps e inicie a aplicação **Prioritz Ask (2)** clicando no símbolo de reprodução.
+19. No menu de navegação à esquerda, selecione **Aplicações** e clique no ícone de execução ao lado de **Prioritz Ask** para iniciar a aplicação.
 
-    ![](images/L01/L01-Prioritzasku-1.png)
+    ![](images/L01/dv_p2_e1_g_31.png)
 
 20. Deve ver uma lista de tópicos. Abra o ***Change Taco Tuesday to some other food** que criou nos passos anteriores.
 
@@ -277,7 +284,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 22. Deve ser navegado de volta para os ecrãs principais e ver uma mensagem de notificação.
 
-    ![](images/L01/image23.png)
+    ![](images/L01/dv_p2_e1_g_34.png)
 
 23. Feche a aplicação PrioritZ Ask fechando o separador do navegador no qual a aplicação PrioritZ Ask está aberta.
 
@@ -305,11 +312,9 @@ aplicação.
 
     ![](images/L01/EX2-T1-2-1.png)
 
-3. Expandir **Tables** e seleccione a tabela **PrioritZ Topic**.
+4. No painel **Objetos**, expanda **Tabelas** **(1)**, selecione a tabela **PrioritZ Topic** **(2)**, clique no botão **Criar** **(3)** e depois selecione **Coluna** em **Esquema** **(4)**.
 
-4. Selecione o separador **Columns** que está presente em **Schema** e clique em **+ New column**.
-
-    ![](images/L01/EX2-T1-4.png)
+    ![](images/L01/dv_p2_e1_g_35.png)
 
 5. Introduza o valor abaixo no campo de nomes de visualização.
 
@@ -317,17 +322,17 @@ aplicação.
    My Notes
    ```
 
-1. Agora, pesquise por **Plain text (1)** em tipo de dados e selecione aquele que está sob **Multiline Text (2)** e clique em **Save (3)**.
+1. No painel **Nova coluna**, defina o campo **Nome a apresentar** como **My Notes** **(1)**, pesquise por **Texto simples** **(2)**, selecione a opção **Várias linhas de texto** **(3)** e clique em **Guardar** **(4)**.
 
-   ![](images/L01/L01-notes.png)
+   ![](images/L01/dv_p2_e1_g_37.png)
 
    > **Nota**: Não navegue por esta página.
 
 ### Tarefa 2: Atualize a aplicação de administrador
 
-1. Certifique-se de que ainda está na solução **PrioritZ**. Selecione **Apps (1)** em **Objects** e selecione a aplicação **PrioritZ Admin (2)** e clique em **Edit (3)**.
+1. Certifique-se de que continua na solução **PrioritZ**, selecione **Aplicações** **(1)** no painel **Objetos**, clique em **Prioritz Admin** **(2)** e depois clique em **Editar** **(3)** na barra superior.
 
-    ![](images/L01/L01-adminedit.png)
+    ![](images/L01/dv_p2_e1_g_38.png)
 
 3. Selecione o **Add Topic Screen**.
 
