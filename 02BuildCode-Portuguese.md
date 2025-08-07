@@ -490,13 +490,13 @@ Neste exercício, você irá construir o componente de código.
     https://make.powerapps.com/
     ```
 
-2. Selecione **Solutions** e abra a solução **PowerAppsTools**.
+2. No painel de navegação à esquerda, selecione **Soluções** **(1)** e clique na solução **PowerAppsTools_contoso** **(2)** para abri-la.
 
-    ![](images/L02/image32u.png)
+    ![](images/L02/dv_p3_e2_g_17.png)
 
 3. Confirme que o controlo personalizado está nesta solução.
 
-    ![](images/L02/image33u.png)
+    ![](images/L02/cor_g_6.png)
 
 > **Parabéns** por completar a tarefa! Agora, é hora de validá-lo. Aqui estão os passos:
 > - Pressione o botão Validar para a tarefa correspondente. Se receber uma mensagem de êxito, pode prosseguir para a próxima tarefa. 
