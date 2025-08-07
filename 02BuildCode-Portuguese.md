@@ -587,7 +587,7 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
     ![](images/L02/dv_p3_e2_g_27.png)
 
-13. Aceda ao separador visualização da Árvore e seleccione o **PrioritZDnDRAnking** que acabou de adicionar.
+13. Vá até à aba de **Vista de árvore** e selecione o item **PrioritZDnDRanking** que acabou de adicionar.
 
 14. Defina o valor **Items** do componente **PrioritZDnDRAnking** para a fórmula abaixo.
 
@@ -597,21 +597,19 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
     ![](images/L02/dv_p3_e2_g_28.png)
 
-15. Selecione o **PrioritZDnDRAnking**, aceda ao painel **Properties** que está presente no lado direito do ecrã, defina **Item Height** 160 e clique em **Edit Fields**.
+15. Selecione o **PrioritZDnDRanking**, no painel **Propriedades** à direita, vá ao separador **Apresentar (1)**, defina o valor de **Item height** como **160 (2)** e clique em **Editar (3)**.
 
-    ![](images/L02/image43u.png)
+    ![](images/L02/cor_g_7.png)
 
 16. Clique em **+ Add field** para adicionar um novo campo.
 
 17. Selecione **Rank (1)** e clique em **Add (2)**.
 
-    ![](images/L02/image44.1uu.png)
+    ![](images/L02/cor_g_8.png)
 
 18. A classificação deve agora mostrar-se no controlo, mas está resolvido descendente.
 
 19. Selecione a galeria **Votes**, selecione a propriedade **Items** do menu suspenso da propriedade e altere a ordem de classificação para **Ascending**.
-
-    ![](images/L02/image46.png)
 
 20. A classificação deve agora classificar ascendente.
 
@@ -626,6 +624,8 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
     ```
 
 23. Selecione a propriedade **Width** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor para **60**.
+
+    ![](images/L02/a_g_u_1.png)
 
 24. Selecione a propriedade **Height** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor com a fórmula abaixo.
 
