@@ -36,9 +36,9 @@ Neste exercício, você irá construir o componente de código.
     
     ![](images/L02/dv_port2_e1_g_16.png)
 
-3. Clique no menu de três pontos (**...**) para expandir opções adicionais. Em seguida, selecione **Terminal (1)** no menu suspenso e clique em **Novo Terminal (2)** para abrir uma sessão de terminal.
-     
-     ![](images/L02/L02-terminaluua.png)
+6. Clique no menu de opções **(1)** no canto superior direito, selecione **Terminal** **(2)** e depois clique em **Novo Terminal** **(3)** para abrir um novo terminal no VS Code.
+
+   ![](images/L01/dv_port2_e1_g_14.png)
 
 4. Na janela Terminal, crie um novo diretório executando o comando abaixo.
 
@@ -56,11 +56,11 @@ Neste exercício, você irá construir o componente de código.
      pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --framework react --run-npm-install
      ```
      
-     ![](images/L02/image3.png)
+     ![](images/L02/a_g_d_1.png)
 
 7. O projeto do componente framework deve ser criado com sucesso.
 
-    ![](images/L02/image4.png)
+    ![](images/L02/a_g_d_2.png)
 
 8. Execute o comando abaixo para abrir o projeto.
     
@@ -70,17 +70,15 @@ Neste exercício, você irá construir o componente de código.
 
 9. Se lhe for apresentado o pop-up abaixo, clique em **Yes** para confiar nos autores dos ficheiros.
 
-    ![](images/L02/image4.1.png)
-
 10. Reveja os ficheiros de componentes de código criados selecionando o separador **Explorer**.
     
-     ![](images/L02/L02-explorer.png)
+     ![](images/L02/dv_p3_e2_g_7.png)
 
-11. Expanda a pasta **PrioritZDnDRanking** e, em seguida, expanda a subpasta **generated**.
+11. Expanda a pasta **PrioritZDnDRanking (1)** e, em seguida, expanda a subpasta **generated**.
 
-12. Abra o ficheiro **ControlManifest.Input.xml**. O manifesto é o ficheiro de metadados que define um componente, incluindo as propriedades expostas à aplicação de alojamento.
+12. Abra o ficheiro **ControlManifest.Input.xml (2)**. O manifesto é o ficheiro de metadados que define um componente, incluindo as propriedades expostas à aplicação de alojamento.
 
-    ![](images/L02/image6.png)
+    ![](images/L02/dv_p3_e2_g_8.png)
 
 13. Localize o elemento XML **data-set** na **linha número 21** no ficheiro **ControlManifest.Input.xml**.
 
@@ -166,7 +164,7 @@ Neste exercício, você irá construir o componente de código.
 
 1. Selecione o ficheiro do componente **HelloWorld.tsx**, clique com o botão direito do rato no mesmo e selecione **Delete** para remover o ficheiro de componentes à medida que este é criado automaticamente e não o iremos utilizar.
 
-    ![](images/L02/L02-EX1-T2-1.png)
+    ![](images/L02/dv_p3_e2_g_13.png)
 
 2. Navegue para este caminho `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` no ficheiro explorador.
 
