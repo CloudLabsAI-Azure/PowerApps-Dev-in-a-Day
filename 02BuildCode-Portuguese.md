@@ -633,15 +633,23 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
     'Votes gallery'.Height
     ```
 
+    ![](images/L02/a_g_u_2.png)
+
 25. Selecione a propriedade **ItemHeight** do componente **PrioritZDnDRAnking** do suspensão da propriedade e defina o seu valor com a fórmula abaixo
 
     ```
     'Votes gallery'.TemplateHeight
     ```
 
+    ![](images/L02/a_g_u_3.png)
+
 26. Selecione a propriedade **BackgroundColor** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor para **"#A70202"**
 
+    ![](images/L02/a_g_u_5.png)
+
 27. Selecione a propriedade **DragBackgroundColor** do componente **PrioritZDnDranking** do menu suspenso da propriedade e defina o seu valor para **"LightBlue"**
+
+    ![](images/L02/a_g_u_4.png)
 
 28. Selecione a propriedade **Y** do componente **PrioritZDnDRAnking** do suspensão da propriedade e defina o seu valor com a fórmula abaixo.
 
@@ -697,7 +705,7 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
 32. Pode visualizar como está no ecrã de um telefone utilizando o emulador.
 
-    ![](images/L02/image48up.png)
+    ![](images/L02/dv_p3_e2_g_36.png)
 
 33. Arraste um dos itens do tópico e deixe-o ativá-lo num local diferente.
 
@@ -728,17 +736,17 @@ Neste exercício, irá adicionar o componente de código que criou à solução 
 
 2. Selecione **Solutions** e abra a solução **PrioritZ**.
 
-3. Clique em **Add existing** e seleccione **More (1) | Developer (2) | Custom (3)control**.
+3. Clique em **Adicionar existente (1)**, selecione **Mais (2)** → **Programador (3)** → **Controlo personalizado (4)**.
 
-    ![](images/L02/image50.1.png)
+    ![](images/L02/dv_p3_e2_g_37.png)
 
-4. Selecione **contoso_ContosoCoffee.PrioritZDnDranking (1)** e clique em **Add (2)**.
+4. Selecione **contoso_ContosoCoffee.PrioritZDnDRanking** e clique em **Adicionar**.
 
-    ![](images/L02/image51.1.png)
+    ![](images/L02/dv_p3_e2_g_38.png)
 
-5. Clique em **Publish all customizations** e aguarde que a publicação seja concluída.
+5. Clique em **Publicar todas as personalizações**.
 
-    ![](images/L02/L02-EX3.png)
+    ![](images/L02/dv_p3_e2_g_39.png)
 
 ## Resumo
 
