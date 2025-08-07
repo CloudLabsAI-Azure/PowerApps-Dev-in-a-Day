@@ -34,7 +34,7 @@ Neste exercício, você irá construir o componente de código.
     
    >**Nota**: O separador Power Platform já está instalado.
     
-    ![](images/L02/L01-authuu.png)
+    ![](images/L02/dv_port2_e1_g_16.png)
 
 3. Clique no menu de três pontos (**...**) para expandir opções adicionais. Em seguida, selecione **Terminal (1)** no menu suspenso e clique em **Novo Terminal (2)** para abrir uma sessão de terminal.
      
