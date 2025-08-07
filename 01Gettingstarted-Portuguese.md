@@ -110,7 +110,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Aguarde até que a importação da solução seja concluída.
 
-   ![](images/L01/L1-T1-S20.png)
+   ![](images/L01/dv_p2_e1_g_10.png)
 
 1. Agora deve ver a solução que importa na lista de soluções.
 
