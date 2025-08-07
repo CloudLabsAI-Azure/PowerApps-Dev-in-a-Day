@@ -447,7 +447,7 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
 
 1. En la carretera Prioritz-XXXXXXX. rama, debería poder ver la carpeta de la solución.
       
-   ![](images/L05/diad5l30u.png)
+   ![](images/1222.png)
    
 1. Haga clic en el botón **Contribuir** ***(1)*** y seleccione **Abrir solicitud de incorporación de cambios (pull request)** ***(2)***.
         
