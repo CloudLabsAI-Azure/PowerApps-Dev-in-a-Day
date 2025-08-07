@@ -330,17 +330,13 @@ aplicação.
 
 ### Tarefa 2: Atualize a aplicação de administrador
 
-1. Certifique-se de que continua na solução **PrioritZ**, selecione **Aplicações** **(1)** no painel **Objetos**, clique em **Prioritz Admin** **(2)** e depois clique em **Editar** **(3)** na barra superior.
+1. Certifique-se de que ainda está na solução **PrioritZ**. Selecione **Apps (1)** em **Objects** e selecione a aplicação **PrioritZ Admin (2)** e clique em **Edit (3)**.
 
     ![](images/L01/dv_p2_e1_g_38.png)
 
-3. Selecione o **Add Topic Screen (1)** clique em **+ Insert(2)** e seleccione **Text input(3)**.
+3. Na árvore de ecrãs, selecione **Add Topic Screen** **(1)**, clique em **+ Inserir** **(2)** no menu superior e depois selecione **Entrada de texto** **(3)** na lista de componentes.
 
     ![](images/L01/cor_g_1.png)
-
-4. Clique em **+ Insert(1)** e seleccione **Text input(2)**.
-
-    ![](images/L01/tinput.png)
 
 5. Clique duas vezes na recém-adicionado **Text input** e introduza o valor abaixo para renomear a entrada do texto.
 
@@ -348,15 +344,15 @@ aplicação.
    Notes textbox
    ```
 
-    ![](images/L01/image27.png)
+    ![](images/L01/dv_port2_e1_g_5.png)
 
 6. Deixe o controlo da image adicionar mais pequeno, se necessário, e mova a caixa de texto **Respond By and label textbox** e coloque a caixa de texto **Notas** entre o controlo de Detalhes e o Responda pelo rótulo.
 
     ![](images/L01/image28.png)
 
-7. Selecione **Notes textbox** e depois **HintText** no menu suspenso das propriedades.
+7. Selecione o controle **Notes textbox**, abra o menu suspenso de propriedades **(1)** e escolha **HintText** **(2)** para editar o texto de sugestão.
 
-    ![](images/L01/hintext.png)
+    ![](images/L01/cor_g_2.png)
 
 8. Altere o valor **HintText** da caixa de texto Notes para o valor abaixo.
 
