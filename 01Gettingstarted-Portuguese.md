@@ -334,9 +334,9 @@ aplicação.
 
     ![](images/L01/dv_p2_e1_g_38.png)
 
-3. Selecione o **Add Topic Screen**.
+3. Selecione o **Add Topic Screen (1)** clique em **+ Insert(2)** e seleccione **Text input(3)**.
 
-    ![](images/L01/L01-addtopic.png)
+    ![](images/L01/cor_g_1.png)
 
 4. Clique em **+ Insert(1)** e seleccione **Text input(2)**.
 
