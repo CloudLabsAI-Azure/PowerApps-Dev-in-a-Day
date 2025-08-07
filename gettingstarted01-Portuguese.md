@@ -52,7 +52,7 @@ Bem-vindo ao seu programador num workshop de um dia! Preparámos um ambiente per
 
 Quando estiver pronto para começar, a sua máquina virtual e o **Guia de laboratório** estarão ao seu alcance no navegador Web.
 
-![](./images/LabVM.png)
+![](./images/p1_gs_g_1.png)
 
 ### Máquina Virtual e Guia de Laboratório
 
@@ -74,9 +74,9 @@ Por conveniência, pode abrir o guia de laboratório numa janela separada, selec
 
 ## Guia de laboratório Ampliar/Reduzir
 
-Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕ : 100%** localizado ao lado do cronômetro no ambiente do laboratório.
+Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕** localizado ao lado do cronômetro no ambiente do laboratório.
 
-![](./images/n21.png) 
+![](./images/p1_gs_g_2.png) 
 
 ## Gerir a sua máquina virtual
 
