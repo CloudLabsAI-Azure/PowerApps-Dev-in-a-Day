@@ -521,19 +521,19 @@ Nesta tarefa, permitirá a publicação de aplicações em tela com componentes 
 
 2. Abra o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** que está a utilizar para este laboratório.
 
-3. Clique em **Settings** no menu superior.
+    ![](images/L02/dv_p3_e2_g_18.png)
 
-    ![](images/L02/settingsu.png)
+3. Clique em **Definições** para aceder às opções de configuração.
 
-4. Expandir **Products (1)** e seleccione **Features (2)**.
+    ![](images/L02/dv_p3_e2_g_19.png)
 
-    ![](images/L02/featureu.png)
+4. Na página **Definições**, expanda a seção **Produto** **(1)** e clique em **Funcionalidades** **(2)** para visualizar as opções disponíveis.
 
-5. Adicione **Allow publishing of canvas apps with code components** e deslize para baixo clique **Save**.
+    ![](images/L02/dv_p3_e2_g_20.png)
 
-    ![](images/L02/image35.2u.png)
+5. Ative a opção **Permitir a publicação de aplicações de tela com componentes de código** deslizando o botão para **Ativado** **(1)** e clique em **Guardar** **(2)** para aplicar as alterações.
 
-    ![](images/L02/image35.2uu.png)
+    ![](images/L02/dv_p3_e2_g_21.png)
 
  ### Tarefa 2: Editar aplicação em tela
 
@@ -545,25 +545,27 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
     https://make.powerapps.com/
     ```
 
-2. Selecione **Solutions** e abra a solução **PrioritZ**.
+2. No menu de navegação à esquerda, clique em **Soluções** **(1)** e selecione a solução **Prioritz** **(2)** para abri-la.
 
-3. Selecione **Apps (1)** , selecione a aplicação **PrioritZ Ask (2)** e clique em **Edit (3)**.
+    ![](images/L02/dv_p3_e2_g_22.png)
 
-    ![](images/L02/L02-editu.png)
+1. No painel **Objetos**, selecione **Aplicações (1)**. Em seguida, clique na aplicação **Prioritz Ask (2)** e selecione o botão **Editar (3)** na parte superior.
 
-4. Selecione o separador **Components**, clique na seta para trás para **Import components**.
+    ![](images/L02/dv_p3_e2_g_23.png)
 
-    ![](images/L02/image38u.png)
+4. No separador **Componentes (1)**, clique no ícone de seta para trás **(2)** para importar componentes.
 
-1. Selecione o separador **Code (1)**, selecione o componente de código **(2)** que criou e clique em **Import (3)**.
+    ![](images/L02/dv_p3_e2_g_24.png)
 
-    ![](images/L02/L02-codeuu.png)
+4. No separador **Código (1)**, selecione o componente **PrioritZDnDRanking (2)** e clique em **Importar (3)**.
 
-7. Selecione o separador **Screens**.
+    ![](images/L02/dv_p3_e2_g_25_cor.png)
 
-8. Expandir **votescreen (1)** e Selecione a **Votes gallery (2)**.
+7. Selecione o separador **Ecras**.
 
-    ![](images/L02/L02-votescreenu.png)
+8. Expanda **Vote Screen (1)** e selecione **Votes gallery (2)**.
+
+    ![](images/L02/dv_p3_e2_g_26.png)
 
 1. Selecione a **Width** do menu suspenso das propriedades.
 
@@ -581,9 +583,9 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
     ![](images/L02/image41u.png)
 
-12. Selecione o componente **PrioritZDnDranking** em **Code Components**.
+12. Selecione o componente **PrioritZDnDranking** em **Componentes de codigo**.
 
-    ![](images/L02/image42uuu.png)
+    ![](images/L02/dv_p3_e2_g_27.png)
 
 13. Aceda ao separador visualização da Árvore e seleccione o **PrioritZDnDRAnking** que acabou de adicionar.
 
@@ -593,7 +595,7 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
     'Votes gallery'.AllItems
     ```
 
-    ![](images/L02/L02-voteitemu.png)
+    ![](images/L02/dv_p3_e2_g_28.png)
 
 15. Selecione o **PrioritZDnDRAnking**, aceda ao painel **Properties** que está presente no lado direito do ecrã, defina **Item Height** 160 e clique em **Edit Fields**.
 
