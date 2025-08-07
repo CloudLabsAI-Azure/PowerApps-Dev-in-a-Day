@@ -29,15 +29,15 @@ En este ejercicio, creará el componente de código.
 
 1. Inicie **Visual Studio Code** si aún no está abierto, utilizando el acceso directo disponible en el escritorio.
 
-   ![](images/L04/vscode1.png)
+   ![](images/102.png)
    
 1. Seleccione la pestaña **Power Platform (1)** y asegúrese de que su perfil **Dev Auth (2)** esté seleccionado.
     
    >**Nota**: La pestaña Power Platform ya está instalada.
     
-    ![](images/lab02-ex01-01.png)
+    ![](images/202.png)
 
-1. Haga clic en **Terminal (1)** y seleccione **Nuevo terminal (2).**
+1. Haga clic en los **tres puntos (1)**, vaya a **Terminal (2)** y seleccione **Nueva terminal (3)**.
      
      ![](images/lab02-ex01-02.png)
 
@@ -46,6 +46,8 @@ En este ejercicio, creará el componente de código.
     ```
     md PrioritZDnDRanking
     ```
+     ![](images/203.png)
+
 1. Ejecute el siguiente comando para cambiar al directorio PrioritZDnDRanking que creó.
 
     ```
@@ -63,7 +65,7 @@ En este ejercicio, creará el componente de código.
 
 1. El proyecto del framework de componentes debería crearse correctamente.
 
-    ![](images/lab02-ex01-04.png)
+    ![](images/205.png)
 
     >**Nota:** Al instalar las dependencias, podría ver advertencias como:
 
@@ -79,6 +81,7 @@ En este ejercicio, creará el componente de código.
     ```
     code -a.
     ```
+    ![](images/206.png)
 
 1. Si aparece la siguiente ventana emergente, haga clic en **Sí** para confiar en los autores de los archivos.
 
@@ -89,6 +92,8 @@ En este ejercicio, creará el componente de código.
      ![](images/lab02-ex01-06.png)
 
 1. Expanda la carpeta **PrioritZDnDRanking** y luego expanda la subcarpeta **generated**.
+
+    ![](images/a1.png)
 
 1. Abra el archivo **ControlManifest.Input.xml**. El manifiesto es el archivo de metadatos que define un componente, incluyendo las propiedades expuestas a la aplicación de alojamiento.
 
@@ -114,7 +119,7 @@ En este ejercicio, creará el componente de código.
     <property name="FontColor" display-name-key="Font color" usage="input" of-type="SingleLine.Text" default-value="#333333"/>
     ```
 
-     ![](images/L02/image9.png)
+     ![](images/a2.png)
 
 1. Ubique la sección `<resources>` y agregue el código mostrado a continuación después de **code path** para agregar el recurso **css**. Esto garantizará que nuestros estilos se incluyan con el componente de código cuando se implemente.
 
@@ -122,7 +127,7 @@ En este ejercicio, creará el componente de código.
     <css path="css/PrioritZDnDRanking.css" order="1" />
     ```
     
-     ![](images/L02/image10.png)
+     ![](images/a3.png)
  
       >**Nota**: Por favor asegúrese de NO descomentar la **ruta resx** ya que se encontraría con un problema en la próxima tarea mientras construye el componente de código si no está comentada.
       
@@ -133,21 +138,27 @@ En este ejercicio, creará el componente de código.
     <platform-library name="Fluent" version="8.29.0" />
     ```
      
-    ![](images/L02/image11.png)
+    ![](images/a4.png)
     
-1. Haga clic en **Archivo** y seleccione **Guardar Todo** para guardar los cambios.
+1. Haga clic en **Archivo (1)** y seleccione **Guardar Todo (2)** para guardar los cambios.
 
-1. Asegúrese de que todavía tiene seleccionado el archivo **ControlManifest.Input.xml** y luego haga clic en **Nueva carpeta**.
+    ![](images/a5.png)
 
-    ![](images/L02/image12.png)
+1. Asegúrese de que todavía tiene seleccionado el archivo **ControlManifest.Input.xml (1)** y luego haga clic en **Nueva carpeta (2)**.
+
+    ![](images/a6.png)
 
 1. Nombre la nueva carpeta como **css**.
 
-1. Seleccione la nueva carpeta **css** que creó y luego haga clic en **Nuevo archivo**
+    ![](images/a7.png)
+
+1. Seleccione la nueva carpeta **css (1)** que creó y luego haga clic en **Nuevo archivo (2)**
  
-     ![](images/L02/image13.png)
+     ![](images/a8.png)
  
 1. Nombre el nuevo archivo **PrioritZDnDRanking.css**
+
+     ![](images/a9.png)
 
 1. Pegue el siguiente CSS en el archivo **PrioritZDnDRanking.css**.
     
@@ -171,23 +182,29 @@ En este ejercicio, creará el componente de código.
 
 1. El archivo ahora debería verse de la siguiente manera:
 
-     ![](images/L02/image14.png)
+     ![](images/b1.png)
 
-1. Haga clic en **Archivo** y seleccione **Guardar Todo** para guardar los cambios.
+1. Haga clic en **Archivo (1)** y seleccione **Guardar Todo (2)** para guardar los cambios.
+
+     ![](images/a5.png)
 
 ### Tarea 2: Implementar la lógica del componente
 
-1. Seleccione el archivo del componente **HelloWorld.tsx**, haga clic derecho sobre él y seleccione **Eliminar** para eliminar el archivo del componente, ya que se crea automáticamente y no lo usaremos.
+1. Seleccione el archivo del componente **HelloWorld.tsx (1)**, haga clic derecho sobre él y seleccione **Eliminar (2)** para eliminar el archivo del componente, ya que se crea automáticamente y no lo usaremos.
 
-     ![](images/lab02-ex01-08.png)
+     ![](images/b2.png)
     
 1. Navegue hasta la ruta `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` en el explorador de archivos.
-    
-1. Arrastre el archivo **PriorityComponent.tsx** y suéltelo en la carpeta **PrioriZDnDRanking**.
- 
+
+     ![](images/b3.png)    
+
+1. Copie el archivo **PriorityComponent.tsx** y péguelo en la carpeta **PrioriZDnDRanking** para duplicarlo dentro del proyecto.
+
+     ![](images/b6.png) 
+
 1. El archivo **PriorityComponent.tsx** ahora debería estar en la carpeta **PrioriZDnDRanking**.
 
-     ![](images/L02/image16.png)
+     ![](images/b5.png)
 
 1. Haga clic en **Archivo** y guarde los cambios.
     
@@ -195,13 +212,15 @@ En este ejercicio, creará el componente de código.
     
 1. Observe que la línea 9 `from react-beautiful-dnd` tiene un subrayado rojo. Este es un paquete npm que el componente utiliza y al que no hemos hecho referencia.
 
-     ![](images/lab02-ex01-09.png)
+     ![](images/b7.png)
  
  1. Ejecute el siguiente comando en una ventana de terminal para agregar una referencia a react-beautiful-dnd.
 
     ```
     npm install react-beautiful-dnd
     ```
+     ![](images/b8.png)
+
     >**Nota**: Si recibe el error **npm is not recognised**, realice los pasos siguientes:
 
       1. Abra PowerShell y ejecute el comando `choco install -y --force nodejs`.
@@ -213,8 +232,11 @@ En este ejercicio, creará el componente de código.
     ```
     npm i --save-dev @types/react-beautiful-dnd
     ```
+     ![](images/b9.png)
 
 1. Observe que el subrayado rojo en la línea 9 se ha resuelto.
+
+     ![](images/b10.png)
 
 1. Abra el archivo **index.ts**.
 
@@ -224,7 +246,7 @@ En este ejercicio, creará el componente de código.
     import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
     ```
     
-    ![](images/L02/image18.png)
+    ![](images/c1.png)
  
  1. Agregue el código mostrado a continuación al archivo **index.ts** después de la **línea número 1**. Esto hará referencia a PriorityComponent.
     
@@ -233,7 +255,7 @@ En este ejercicio, creará el componente de código.
     ```
     ![](images/L02/image19.png)  
    
-1. Ubique la clase **Export** en la **línea número 7**.
+1. Ubique la clase **Export** en la **línea número 5**.
       
      ![](images/L02/image20.png)
  
@@ -245,7 +267,7 @@ En este ejercicio, creará el componente de código.
     private state: ComponentFramework.Dictionary;
     ```
     
-    ![](images/L02/L2T2S15.png)
+    ![](images/c3.png)
  
 1. Ubique la función **init** y remueva la siguiente línea de código
  
@@ -253,18 +275,17 @@ En este ejercicio, creará el componente de código.
      state: ComponentFramework.Dictionary
      ```
      
-   ![](images/L02/initu.png)
+   ![](images/c2.png)
 
 
 1. Pegue el código a continuación dentro de la función **init**. Esta lógica inicializa nuestras variables de clase a partir de los valores de tiempo de ejecución y habilita la notificación de cambio de tamaño.
     
-   ![](images/L02/init1.png)
-   
    ```
    this.context = context;
    context.mode.trackContainerResize(true);
    ```
- 
+   ![](images/c4.png) 
+
 1. Localice la función **updateView**.
 
    ![](images/L02/imageUpdateView.png)
@@ -289,7 +310,7 @@ En este ejercicio, creará el componente de código.
     }
     ```
 
-    ![](images/L02/image24.png)
+    ![](images/c5.png)
  
 1. Agregue el código a continuación después de la función **destroy**. Esta lógica maneja el evento onReorder desde PriorityComponent e identifica los elementos involucrados para la aplicación de alojamiento como elementos seleccionados.
        
@@ -305,7 +326,7 @@ En este ejercicio, creará el componente de código.
     };
     ```
   
-    ![](images/L02/image25.png)
+    ![](images/c6.png)
  
      > **Nota**: La función **Destroy** estará presente al final de la clase **PrioritZDnDRanking**.
 
@@ -341,7 +362,7 @@ En este ejercicio, creará el componente de código.
         public init(
             context: ComponentFramework.Context<IInputs>,
             notifyOutputChanged: () => void,
-            state: ComponentFramework.Dictionary
+            
         ): void {
             this.context = context;
             context.mode.trackContainerResize(true);
@@ -420,19 +441,22 @@ En este ejercicio, creará el componente de código.
     "react-dom": "16.8.6"
     },
     ```
-    
-1. Navegue hasta el archivo **.eslintric.json(1)** desde la navegación izquierda para agregar la nueva regla de lint. Ubique **rules(2)** en la **línea número 21** y pegue las reglas a continuación.
+      ![](images/c7.png)
+
+1. Navegue hasta el archivo **.eslintric.json(1)** desde la navegación izquierda para agregar la nueva regla de lint. Ubique **rules(2)** en la **línea número 22** y pegue las reglas a continuación.
    
       ```
       "no-unused-vars": ["off"],
       "no-undef": ["off"]
       ```
    
-      ![](images/L02/eslint.png)
+      ![](images/c8.png)
    
-1. Haga clic en **Archivo** y guarde todos los cambios.
+1. Haga clic en **Archivo (1)** y seleccione **Guardar Todo (2)** para guardar los cambios.
 
-1. Haga clic en **Terminal** y seleccione **Nuevo terminal**.
+      ![](images/a5.png)
+
+1. Haga clic en los **tres puntos (...) (1)**, vaya a **Terminal (2)** y seleccione **Nueva terminal (3)**.
      
       ![](images/lab02-ex01-02.png)
 
@@ -446,31 +470,32 @@ En este ejercicio, creará el componente de código.
  
 1. La compilación debería tener éxito. Si hay algún error, resuélvalo antes de continuar.
       
-    ![](images/L02/image28.png)
+    ![](images/c9.png)
  
 1. Ejecute el siguiente comando para iniciar el arnés de prueba.
     
       ```
       npm start
       ```
+      ![](images/c10.png)
 
 1. El arnés de prueba debería iniciarse; si no, copie la dirección y péguela en una nueva ventana del navegador. Intente arrastrar los elementos y vea si el comportamiento funciona como se esperaba.
 
-      ![](images/L02/imagee29u.png)
+      ![](images/d1.png)
 
     > **Nota**: **Si recibe una ventana emergente de Internet Explorer, ciérrela, luego copie la URL del host local y péguela en una nueva pestaña en Edge**.
 
-      ![](images/L02/ep2.png) 
+      ![](images/d2.png) 
  
      > **Nota**: Si el arnés de prueba no se inició como se esperaba, no podrá ver el resultado esperado como se mencionó. Verifique que haya seguido las instrucciones anteriores y haya agregado el código correctamente en los archivos **Manifest e Index**.
 
 1. Cierre el arnés de prueba cerrando la pestaña del navegador.
 
-1. Detenga la ejecución manteniendo presionada la tecla **[CONTROL]** + **C**.
+1. Detenga la ejecución manteniendo presionada la tecla **[Ctrl]** + **C**.
  
-1. Escriba **Y** y presione [ENTER].
+1. Escriba **S** y presione [ENTER].
      
-      ![](images/L02/image30.png)
+      ![](images/d3.png)
 
 1. Ejecute el siguiente comando para enviar el componente a su entorno.
 
@@ -499,7 +524,7 @@ En este ejercicio, creará el componente de código.
     
 1. Espere a que la solución se importe y publique en su entorno.
 
-      ![](images/L02/image31uu.png)
+      ![](images/d4.png)
  
 ### Tarea 3: Confirmar que el control se agregó al entorno
 
@@ -513,7 +538,7 @@ En este ejercicio, creará el componente de código.
     
     ![](images/lab02-ex01-10.png)
 
-1. Haga clic en **All** y confirme que el control personalizado se encuentra en esta solución.
+1. Confirme que el control personalizado se encuentra en esta solución.
      
       ![](images/lab02-ex01-11.png)
 
@@ -540,7 +565,7 @@ En esta tarea, permitirá la publicación de aplicaciones de canvas con componen
 
 1. Abra el entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** que está usando para este laboratorio.
 
-    ![](images/lab02-ex02-01.png)
+    ![](images/d5.png)
 
 1. Haga clic en **Configuración** en el menú superior.
     
@@ -548,13 +573,11 @@ En esta tarea, permitirá la publicación de aplicaciones de canvas con componen
 
 1. Expanda **Productos(1)** y seleccione **Características(2)**.
     
-     ![](images/lab02-ex02-03.png)
+     ![](images/d6.png)
 
-1. Active **Permitir publicación de aplicaciones de canvas con componentes de código**, desplácese hacia abajo y haga clic en **Guardar**.
-     
-      ![](images/lab02-ex02-04.png)
-
-      ![](images/lab02-ex02-05.png)
+1. Active **Permitir publicación de aplicaciones de lienzo con componentes de código (1)** en **Power Apps component framework para aplicaciones de lienzo**, desplácese hacia abajo y haga clic en **Guardar (2)**. 
+ 
+      ![](images/d7.png)
 
 ### Tarea 2: Editar la aplicación de canvas
 
@@ -565,33 +588,35 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
      ```   
      https://make.powerapps.com/
      ```
-1. Seleccione **Soluciones** y abra la solución **PrioritZ**.
+1. Seleccione **Soluciones (1)** y abra la solución **PrioritZ (2)**.
+
+     ![](images/d8.png)
 
 1. Seleccione **Aplicaciones (1)**, seleccione la aplicación **PrioritZ Ask (2)** y haga clic en **Editar (3)**.
 
      ![](images/lab02-ex02-06.png)
 
-1. Seleccione la pestaña **Componentes**, haga clic en la flecha hacia atrás para **Importar componentes**.
+1. Seleccione la pestaña **Componentes (1)**, haga clic en la flecha hacia atrás para **Importar componentes (2)**.
 
-     ![](images/L02/image38u.png)
+     ![](images/d9.png)
  
 1. Seleccione la pestaña **Código (1)**, seleccione el componente de código **(2)** que creó y haga clic en **Importar (3)**.
     
-     ![](images/L02/L02-codeuu.png)
+     ![](images/q1.png)
  
 1. Seleccione la pestaña **Pantallas**.
 
-1. Expanda **Vote Screen (1)** y seleccione **Votes gallery (2)**.
+1. En la Vista de árbol, expanda **Vote Screen (1)** y seleccione **Votes gallery (2)**.
 
-     ![](images/L02/L02-votescreenu.png)
+     ![](images/q2.png)
 
 1. Seleccione **Width** en el menú desplegable de propiedades. 
 
-     ![](images/L02/L02-votescreen1u.png)
+     ![](images/q3.png)
 
 1. Establezca el **Width** de Votes gallery en **570**.
 
-     ![](images/L02/L02-widthu.png)
+     ![](images/q4.png)
     
 1. La pantalla ahora debería verse como la imagen a continuación.
      
@@ -599,17 +624,17 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 
 1. Seleccione **Votes Screen** y haga clic en **+ Insertar**.
       
-     ![](images/L02/image41u.png)
+     ![](images/q5.png)
  
 1. Seleccione el componente **PrioritZDnDRanking** en **Componentes de Código**.
       
-     ![](images/L02/image42uuu.png)
+     ![](images/q6.png)
 
    >**Nota:** Si recibe una ventana emergente para "Select a data source," simplemente haga clic en **Close**.
  
 1. Vaya a la pestaña de vista de árbol y seleccione el elemento **PrioritZDnDRanking** que acaba de agregar.
 
-      ![](images/L02/popupsa.png)
+      ![](images/q7.png)
 
 1. Establezca el valor **Items** del componente **PrioritZDnDRanking** con la fórmula que se muestra a continuación.
 
@@ -617,11 +642,11 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
     ' Votes gallery'.AllItems
       ```
 
-      ![](images/L02/L02-voteitemu.png)
+      ![](images/w1.png)
     
-1. Seleccione **PrioritZDnDRanking**, vaya al panel **Properties** que se encuentra en el lado derecho de la pantalla, configure **Item Height** en 160 y haga clic en **Edit Fields**.
+1. Seleccione **PrioritZDnDRanking**, vaya al panel **Properties** que se encuentra en el lado derecho de la pantalla, configure **Item Height (1)** en 160 y haga clic en **Editar (2)**.
 
-      ![](images/L02/image43u.png)
+      ![](images/w2.png)
 
     >**Note:** Si no puede encontrar las propiedades en el lado derecho de la pantalla, haga clic en la opción de propiedades ubicada junto al botón editar en la esquina superior derecha.
 
@@ -629,49 +654,62 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 
 1. Haga clic en **+ Agregar campo** para agregar un nuevo campo.
 
-1. Seleccione **Rango (1)** y haga clic en **Agregar (2)**.
+1. Haga clic en **+ Agregar campo (1)** para agregar un nuevo campo, buscar **rank (2)** Seleccione **Rango (3)** y haga clic en **Agregar (4)**.
      
-      ![](images/L02/image44.1uu.png)
+      ![](images/w3.png)
  
 1. El rango ahora debería aparecer en el control, pero está ordenado de manera descendente.
 
 1. Vaya a la vista de árbol, seleccione la **Pantalla de votación**, luego la **Galería de votos**, luego seleccione la propiedad **Elementos** en el menú desplegable de propiedades y cambie el orden de clasificación a **Ascendente**.
      
-      ![](images/L02/image46.png)
+      ![](images/w4.png)
  
 1. Ahora, el rango debería ordenarse de manera ascendente.
 
 1. Seleccione el componente **PrioritZDnDRanking** y luego la propiedad **X** del menú desplegable de propiedades.
 
-      ![](images/L02/image47.1.png)
+      ![](images/w5.png)
       
 1. Establezca el valor **X** del componente **PrioritZDnDRanking** con la siguiente fórmula.
 
       ```
-      Votes gallery'.Width
+      'Votes gallery'.Width
       ```
+
+
 1. Seleccione la propiedad **Width** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **60**.
     
+      ![](images/w6.png)
+
 1. Seleccione la propiedad **Height** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
       ```
-      Votes gallery'.Height
+      'Votes gallery'.Height
       ```
+      ![](images/w7.png)
+
 1. Seleccione la propiedad **ItemHeight** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
       ```
-      Votes gallery'.TemplateHeight
+      'Votes gallery'.TemplateHeight
       ```
+      ![](images/w8.png)
+
 1. Seleccione la propiedad **BackgroundColor** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **"LightBlue"**
     
+      ![](images/w9.png)
+
 1. Seleccione la propiedad **DragBackgroundColor** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **"#A70202"**
+
+      ![](images/e1.png)
 
 1. Seleccione la propiedad **Y** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
      ```
-     Votes gallery'.Y
+     'Votes gallery'.Y
      ```
-    
+      ![](images/e2.png)
+
 1. Seleccione la propiedad **OnSelect** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
     ```
@@ -716,15 +754,17 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 
 1. Seleccione **Home Screen** y haga clic en **Iniciar**.
 
+     ![](images/e3.png)
+
 1. Seleccione uno de los **temas**.
 
 1. Puede ver cómo se ve en la pantalla de un teléfono usando el emulador.
      
-     ![](images/L02/image48up.png)
+     ![](images/e4.png)
 
 1. Arrastre uno de los elementos del tema y suéltelo en una ubicación diferente.
      
-     ![](images/L02/image49.png)
+     ![](images/e5.png)
  
 1. La función de arrastrar y soltar debería funcionar como se espera.
 
@@ -732,9 +772,11 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 
 1. Haga clic en **Publicar**.
 
-    ![](images/L02/publish.png)
+    ![](images/e6.png)
 
 1. Seleccione **Publicar esta versión** y espere a que se complete la publicación.
+
+    ![](images/e7.png)
 
 1. Puede **cerrar** Canvas App Studio.
 
@@ -753,13 +795,13 @@ En este ejercicio, agregará el componente de código que creó a la solución P
 
     ![](images/lab02-ex03-01.png)
 
-1. Haga clic en **Agregar existente** y seleccione **Más | Desarrollador | Control personalizado**.
+1. Haga clic en **Agregar existente (1)** y seleccione **Más (2) | Developer (3) | Control personalizado (4)**.
       
-      ![](images/lab02-ex03-02.png)
+      ![](images/e8.png)
  
 1. Seleccione **contoso_ContosoCoffee.PrioritZDnDRanking (1)** y haga clic en **Agregar (2)**.
      
-      ![](images/lab02-ex03-03.png)
+      ![](images/w10.png)
  
 1. Haga clic en **Publicar todas las personalizaciones** y espere a que se complete la publicación.
 
@@ -769,5 +811,7 @@ En este ejercicio, agregará el componente de código que creó a la solución P
 
 En este laboratorio, aprendió a crear un componente de código, implementar su lógica, integrarlo en una aplicación de canvas y agregarlo a una solución dentro de Power Platform.
 
-## Ha completado el laboratorio con éxito
+## Has completado este laboratorio con éxito. Haz clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
+
+![](images/1.png)
 

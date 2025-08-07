@@ -8,7 +8,6 @@ En esta serie de laboratorios, obtendrá experiencia práctica con diversos aspe
 
 ## Objetivo
 
-
 Después de completar estos Laboratorios, sabrá cómo importar y personalizar soluciones en Power Platform, crear componentes de código personalizados y crear e integrar conectores personalizados.
 Aprenda a importar y personalizar soluciones en Power Platform, crear componentes de código personalizados, y desarrollar e integrar conectores personalizados. Al final de este laboratorio, obtendrá conocimientos sobre:
 
@@ -31,7 +30,7 @@ En estos laboratorios, seguirá un proceso estructurado para dominar los aspecto
 
 ## Diagrama de Arquitectura
 
-![](./images/low_code_in_a_day_Architecture_diagram.JPG)
+   ![](./images/low_code_in_a_day_Architecture_diagram.jpeg)
 
 ## Explicación de los Componentes
 
@@ -48,9 +47,9 @@ En estos laboratorios, seguirá un proceso estructurado para dominar los aspecto
  
 ## Acceso a su Ambiente de Laboratorio
  
-Una vez que esté listo para comenzar, su máquina virtual y la **Guía de laboratorio** estarán a su alcance en su navegador web.
+Una vez que esté listo para comenzar, su máquina virtual y la **Guía** de laboratorio estarán a su alcance en su navegador web.
 
-![](./images/GS6a-1.png)
+![](./images/100.png)
 
 ### Máquina Virtual y Guía de Laboratorio
  
@@ -62,49 +61,49 @@ En el entorno integrado, la máquina virtual del laboratorio funciona como el es
 
 Para comprender mejor los recursos y credenciales de su laboratorio, navegue hasta la pestaña **Detalles del Ambiente**.
 
-![](./images/GS20-1.png)
+![](./images/3.png)
 
 ## Guía de laboratorio Acercar/Alejar
 
 Para ajustar el nivel de zoom de la página del entorno, haga clic en el ícono **A↕ : 100%** ubicado junto al temporizador en el entorno del laboratorio.
 
-![](./images/n21.png) 
+![](./images/9.png) 
  
 ## Uso de la Función de Ventana Dividida
 
 Para mayor comodidad, puede abrir la guía de laboratorio en una ventana separada seleccionando el botón **Ventana Dividida** en la esquina superior derecha.
  
-![](./images/GS8-1.png)
+![](./images/4.png)
  
 ## Administración de su Máquina Virtual
 
-Siéntase libre de iniciar, detener o reiniciar su máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Su experiencia está en sus manos!
+Siéntase libre de **iniciar**, **detener** o **reiniciar** su máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Su experiencia está en sus manos!
  
-![](./images/resources-vm-manage-1.png)
+![](./images/5.png)
  
 ## Comencemos con el Portal de Azure
 
-1. En su máquina virtual, haga clic en el ícono del Portal de Azure como se muestra a continuación:
+1. En su máquina virtual, haga clic en el ícono del **Portal de Azure** como se muestra a continuación:
  
-   ![](./images/GS1-1.png)
+   ![](./images/101.png)
  
 2. Verá la pestaña **Iniciar sesión en Microsoft Azure**. Aquí, ingrese sus credenciales:
  
    - **Correo Electrónico/Nombre de Usuario:** <inject key="AzureAdUserEmail"></inject>
  
-     ![](./images/GSlogin2.png "Ingrese Correo Electrónico")
+     ![](./images/7.png "Ingrese Correo Electrónico")
  
 3. A continuación, proporcione su contraseña:
  
    - **Contraseña:** <inject key="AzureAdUserPassword"></inject>
  
-     ![](./images/GS3-11.png "Ingrese Contraseña")
+     ![](./images/8.png "Ingrese Contraseña")
  
 4. Si ve la ventana emergente Acción Requerida, haga clic en Preguntar después.
 
-![](./images/asklater.png)
+   ![](./images/asklater.png)
 
-> **NOTA:** No active MFA, seleccione **Preguntar después**.
+   > **NOTA:** No active MFA, seleccione **Preguntar después**.
 
 5. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
 
@@ -126,9 +125,9 @@ Contactos de Soporte para Estudiantes:
 
 - Soporte por Chat en Vivo: https://cloudlabs.ai/labs-support
 
-Ahora, haga clic en Siguiente en la esquina inferior derecha para pasar a la página siguiente.
+Ahora, haga clic en **Siguiente >>** en la esquina inferior derecha para pasar a la página siguiente.
 
-![](./images/GS4-122.png)
+![](./images/1.png)
 
 ## ¡¡Feliz aprendizaje!!
 

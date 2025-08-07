@@ -20,21 +20,21 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 ### Tarea 1: Importar, Revisar los componentes de la solución y ejecutar el flujo
 
-1. En JumpVM, haga clic en el acceso directo **Power Apps Portal** del navegador Microsoft Edge que está disponible en el escritorio.
+1. En Lab VM, haga clic en el acceso directo **Power Apps Portal** del navegador Microsoft Edge que está disponible en el escritorio.
 
-   ![azure portal.](images/L01/PAportal.png)
+   ![azure portal.](images/103.png)
 
 1. En la ventana **Iniciar sesión**, aparecerá la pantalla de inicio de sesión, introduzca el siguiente nombre de usuario **(1)** y pulse en **Siguiente** **(2)**.
 
    - Correo Electrónico/Nombre de Usuario: <inject key="AzureAdUserEmail"></inject>
 
-     ![](/images/lab01ex10-02.png)
+     ![](images/L01/2.png)
 
 1. Ahora, ingrese la siguiente contraseña **(1)** y haga clic en **Iniciar sesión** **(2)**. 
 
    - Contraseña: <inject key="AzureAdUserPassword"></inject>
     
-     ![](/images/lab01ex10-03.png)
+     ![](images/L01/3.png)
 
 1. Haga clic en **Preguntar más tarde** si aparece la ventana emergente "Acción requerida".
 
@@ -76,7 +76,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. Una vez que haya iniciado sesión, haga clic en **Entorno (1)** y seleccione el entorno de desarrollo creado previamente llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
-     ![](images/lab01ex10-04.png)
+     ![](images/11.png)
 
 1. Ahora, haga clic en **Soluciones(1)** en el menú del lado izquierdo y haga clic en **Importar solución(2)**.
 
@@ -86,9 +86,9 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
     
      ![](images/lab01ex10-06.png)
      
-1. Navegue hasta la ruta `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` en el explorador de archivos, seleccione el archivo **Prioritz_1_0_0_7.zip** y haga clic en **Abrir**.
+1. Navegue hasta la ruta `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` **(1)** en el explorador de archivos, seleccione el archivo **Prioritz_1_0_0_7.zip (2)** y haga clic en **Abrir (3)**.
 
-    ![](images/lab01ex10-07.png)
+    ![](images/122.png)
 
 1. Asegúrese de que el archivo **Prioritz_1_0_0_7.zip(1)** esté seleccionado y haga clic en **Siguiente(2)**.
     
@@ -98,21 +98,17 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
      ![](images/lab01ex10-09.png)
 
-1. En la sección **Conexiones**, haga clic en el botón de puntos suspensivos **...(1)** junto a **Microsoft Dataverse Priority**.
-
-1. Asegúrese de que el correo electrónico de usuario **<inject key="AzureAdUserEmail"></inject> (2)** que está utilizando esté seleccionado.
-
-1. Haga clic en **Importar(3)**.
+1. En la sección **Conexiones**, haga clic en el botón de puntos suspensivos **...(1)** junto a **Microsoft Dataverse Priority**. Asegúrese de que el correo electrónico de usuario **<inject key="AzureAdUserEmail"></inject> (2)** que está utilizando esté seleccionado. Haga clic en **Importar(3)**.
 
     ![](images/lab01ex10-10.png)
-    
+
 1. Espere hasta que se complete la importación de la solución.
 
      ![](images/lab01ex10-11.png)
      
-1. Ahora debería ver la solución que importó en la lista de soluciones.
+1. Ahora debería ver la solución que importó en la lista de soluciones. Abra la solución **Prioritz** que importó.
 
-1. Abra la solución **Prioritz** que importó.
+     ![](images/12.png)
 
 1. Expanda **Tablas (1)** y seleccione la tabla **PrioritZ Topic (2)**.
    
@@ -124,7 +120,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
  
    ![](images/lab01ex10-13.png)
 
-1. Seleccione la pestaña **Relaciones** del menú desplegable Columnas y revise cómo se relaciona esta tabla con otras tablas.
+1. Seleccione la pestaña **Relaciones (2)** del menú desplegable **Columnas (1)** y revise cómo se relaciona esta tabla con otras tablas.
  
     ![](images/lab01ex10-14.png)
  
@@ -136,7 +132,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. Haga clic en el botón **Editar** para revisar el flujo.
   
-    ![](images/lab01ex10-17.png)
+    ![](images/13.png)
 
 1. Expanda el paso **Parse JSON** y revise los datos que creará este flujo.
 
@@ -146,11 +142,11 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
     
 1. Expanda el paso **Apply to each topic**.
     
-    ![](images/lab01ex10-19.png)
+    ![](images/14.png)
 
 1. Expanda el paso **Apply to each topic item**.
    
-     ![](images/lab01ex10-20.png)
+     ![](images/15.png)
 
     >>**Nota**: Si no puede expandir el paso, haga clic en los puntos suspensivos (...), luego seleccione Configuración y haga clic en Cancelar.
 
@@ -164,7 +160,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. Haga clic en el nombre del flujo para abrir la pantalla de detalles del flujo.
 
-     ![](images/lab01ex10-23.png)
+     ![](images/16.png)
 
 1. Haga clic en **Ejecutar** para ejecutar el flujo.
    
@@ -172,29 +168,29 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. Haga clic en el botón **Ejecutar flujo** en la hoja Ejecutar flujo.
 
-     ![](images/lab01ex10-25.png)
+     ![](images/17.png)
 
      > **Nota**: Si recibe este error `Error from the token exchange: Permission denied due to missing connection` mientras ejecuta el flujo, esto se debe a que la **conexión de Dataverse** no se está agregando correctamente. Elimine la solución importada e intente volver a importar la solución realizando los **Pasos 6 a 14** de esta tarea nuevamente, luego intente desencadenar el flujo de nuevo.
 
 1. Haga clic en **Listo** y espere a que se complete la ejecución del flujo.
 
-    ![](images/lab01ex10-26.png)
+    ![](images/18.png)
 
 1. El flujo debería ejecutarse correctamente. Si lo desea, puede hacer clic en la fila de ejecución y se le mostrarán los detalles de lo que hizo el flujo.
    
-      ![](images/lab01ex10-27.png)
+      ![](images/19.png)
 
 ### Tarea 2: Probar las aplicaciones
 
 1. Vuelva a la solución **PrioritZ** haciendo clic en **Flujos en la nube**. Alternativamente, también puede abrir el portal de creación de **Power Apps** utilizando esta URL `https://make.powerapps.com` si aún no está abierto. Asegúrese de que el entorno de desarrollo denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> ** esté seleccionado.
        
-   ![](images/lab01ex10-28.png)
+   ![](images/20.png)
 
    > Nota: Si aparece la ventana emergente **Bienvenido a Power Apps Studio**, simplemente haga clic en Omitir para continuar.
 
 1. Navegue hasta la hoja **Soluciones** haciendo clic en el botón **Volver a Soluciones** (<-)**.
 
-   ![](images/lab01ex10-29.png)
+   ![](images/21.png)
    
 1. Seleccione **Aplicaciones (1)** en el menú del lado izquierdo de Power Apps. Debería ver dos aplicaciones llamadas **PrioritZ Ask** y **PrioritZ Admin (2)**. 
 
@@ -218,6 +214,8 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. Haga clic en el botón **<** regresar.
 
+    ![](images/22.png)
+
     > **Nota**: Debería volver a la pantalla de inicio.
 
 1. Ahora, haga clic en el botón **+** para agregar un nuevo tema.
@@ -232,55 +230,55 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
      
      1. **Respond By**: Seleccione **la fecha de hoy**. <br/>
 
-        ![](images/L01/image17u.png)
+        ![](images/26.png)
 
 1. Navegue hasta la ruta `C:\LabFiles` **(1)** en el Explorador de Archivos, seleccione **image.png (2)** y haga clic en **Abrir (3)**.
 
-      ![](images/L01/image17u-1n.png)
+      ![](images/123.png)
 
 1. Escriba **Tamale Tuesday** en el campo Choice y haga clic en **add a picture** que se encuentra debajo del campo Choice.
      
-      ![](images/L01/image18u.png)
+      ![](images/27.png)
 
 1. Navegue hasta la ruta `C:\LabFiles` en el Explorador de Archivos, seleccione **image.png** y haga clic en Abrir.
 
 1. Haga clic en **+** para agregar la opción.
      
-      ![](images/L01/image191.png)
+      ![](images/25.png)
 
 1. Agregue un par de opciones más repitiendo los **pasos 12 a 14**.
        
-       1. **Choice 1** : Escriba `Steak Tuesday`
+    1. **Choice 1** : Escriba `Steak Tuesday`
        
-       2. **Choice 2**: Escriba `Cheese and Wine Tuesday`
+    2. **Choice 2**: Escriba `Cheese and Wine Tuesday`
 
 1. Haga clic en el botón **Save** para guardar el tema.
     
-    ![](images/L01/image20u.png)
+    ![](images/24.png)
 
 1. El nuevo tema debería estar guardado y debería volver a la pantalla principal.
 
 1. Debería ver el tema que agregó a la lista de temas.
 
-     ![](images/L01/L01-tacou.png)
+     ![](images/28.png)
 
 1. Cierre la aplicación PrioritZ Admin cerrando la pestaña del navegador en la que está abierta la aplicación PrioritZ Admin.
 
 1. Seleccione **Aplicaciones (1)** en el menú del lado izquierdo de Power Apps e inicie la aplicación **PrioritZ Ask (2)** haciendo clic en el símbolo iniciar.
      
-     ![](images/lab01ex10-34.png)
+     ![](images/30.png)
 
 1. Debería ver una lista de temas. Abra el tema **Change Taco Tuesday to some other food** que creó en los pasos anteriores.
 
-     ![](images/L01/L01-listu.png)
+     ![](images/31.png)
 
 1. Haga clic en los íconos **arriba/abajo** para ordenar los elementos en el orden que prefiera y haga clic en **Vote**.
      
-      ![](images/L01/L01-choiceuu.png)
+      ![](images/32.png)
 
 1. Debería volver a las pantallas principales y debería ver un mensaje de notificación.
 
-      ![](images/L01/TVU.png)
+      ![](images/33.png)
     
 1. Cierre la aplicación PrioritZ Ask cerrando la pestaña del navegador en la que está abierta la aplicación PrioritZ Ask.
 
@@ -305,20 +303,13 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
 
    ![](images/lab01ex02-01.png)
 
-1. Expanda **Tablas (1)** y seleccione la tabla **PrioritZ Topic (2)**.
-
-1. Seleccione la pestaña **Columnas** que se encuentra debajo de **+ Nuevo (3)** y haga clic en **columna (4)**.
+1. Expanda **Tablas (1)** y seleccione la tabla **PrioritZ Topic (2)**. Seleccione la pestaña **Columnas** que se encuentra debajo de **+ Nuevo (3)** y haga clic en **columna (4)**.
 
     ![](images/lab01ex02-02.png)
 
-1. Ingrese el siguiente valor en el campo Nombre para mostrar.
+1. Ingrese **My Notes (1)** en el campo Nombre para mostrar. Ahora, busque **texto sin formato (2)** en Tipo de datos, luego seleccione el que se encuentra como **Multiple lines of text (3)** y haga clic en **Guardar (4)**.
 
-   ```
-   My Notes
-   ```
-1. Ahora, busque **texto sin formato (1)** en Tipo de datos, luego seleccione el que se encuentra como **Multiple lines of text (2)** y haga clic en **Guardar (3)**.
-
-    ![](images/lab01ex02-03.png)
+    ![](images/L01/5.png)
    
    > **Nota**: No abandone esta página.
 
@@ -330,11 +321,9 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
 
    > Nota: Si no puede encontrar el botón Editar, haga clic en los puntos suspensivos **(...)** al lado del panel Agregar existente.
 
-1. Seleccione **Add Topic Screen (1)**.
-
-1. Haga clic en **+ Insertar (2)** y seleccione **Entrada de texto (3)**.
+1. Seleccione **Add Topic Screen (1)**. Haga clic en **+ Insertar (2)** y seleccione **Entrada de texto (3)**.
    
-     ![](images/lab01ex02-05.png)
+     ![](images/34.png)
 
    > Nota: Si no puede encontrar el botón Insertar, haga clic en los puntos suspensivos **(...)** en la esquina superior izquierda.
 
@@ -344,15 +333,15 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
     Notes textbox
     ```
     
-     ![](images/L01/image27u.png)
+     ![](images/35.png)
 
 1. Si es necesario, reduzca el tamaño del control add picture y mueva el cuadro de texto y la etiqueta **Respond By** hacia abajo y coloque el cuadro de texto **Notes** entre el control Details y la etiqueta Respond by.
    
-    ![](images/L01/image28u.png)
+    ![](images/36.png)
 
-1. Seleccione el **Cuadro de texto Notes** y luego **HintText** en el menú desplegable de propiedades.
+1. Seleccione el **cuadro de texto (1)** Notas, escriba **HintText (2)** en el cuadro de búsqueda de propiedades y luego seleccione **HintText (3)** de la lista.
 
-    ![](images/L01/hintextu.png)
+    ![](images/37.png)
 
 1. Cambie el valor **HintText** del cuadro de texto Notes por el siguiente valor.
 
@@ -360,7 +349,7 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
     My notes
     ```
    
-    ![](images/L01/image29u.png)
+    ![](images/38.png)
 
 1. Seleccione **Mode** en el menú desplegable de propiedades y cambie su valor ingresando el texto que aparece a continuación.
 
@@ -368,24 +357,22 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
     TextMode.MultiLine
     ```
 
-    ![](images/L01/L01-modeu.png)
+    ![](images/39.png)
 
 1. Seleccione **Save topic icon** en la sección **Add Topics Screen**.
      
-     ![](images/L01/image30u.png)
+     ![](images/40.png)
 
 1. Reemplace la fórmula **OnSelect** de **Save topic icon** con la fórmula que aparece a continuación. Patch crea una nueva fila en la tabla Dataverse.
      
-     ![](images/L01/image31u.png)
+     ![](images/41.png)
 
     ```
     Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
     ```
-1. Seleccione **View Topic Screen (1)** en la pestaña **Pantallas**.
+1. Seleccione **View Topic Screen (1)** en la pestaña **Pantallas**. Haga clic en la pestaña **+ Insertar (2)** y seleccione **Etiqueta de texto (3)**.
 
-1. Haga clic en la pestaña **+ Insertar (2)** y seleccione **Text label (3)**.
-
-    ![](images/L01/tlabelu.png)
+    ![](images/42.png)
 
 1. Haga doble clic en la etiqueta recién agregada e ingrese el valor a continuación para cambiar el nombre de la etiqueta que acaba de agregar.
 
@@ -393,39 +380,42 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
      Notes label
      ```
      
-    ![](images/L01/L01-labelu.png)
+    ![](images/43.png)
 
 1. Cambie el valor **Text** de la etiqueta Notes por el texto a continuación.
 
      ```
      'Topics gallery'.Selected.'My Notes'
      ```
+    ![](images/44.png)
 
 1. Reorganice los controles y mueva la **etiqueta Notes** entre la etiqueta de detalles y la galería de elementos de Temas.
 
-      ![](images/L01/noteslabel-1.png)
+      ![](images/45.png)
 
 1. Seleccione **Home Screen (1)** y haga clic en **Previsualizar la app (2)**.
       
-      ![](images/L01/image34u.png)
+      ![](images/46.png)
 
 1. Haga clic en el botón **+** para agregar un nuevo tema.
 
-      ![](images/L01/L01-taco-1_1u.png)
+      ![](images/47.png)
 
 1. Complete el formulario proporcionando la siguiente información y haga clic en **add a picture** que se encuentra debajo del campo **Respond By**.
 
-       1. Topic: `Test Notes` (1)
+    1. Topic: **Test Notes (1)**
        
-       2. Details: `Testing the notes` (2)
+    2. Details: **Testing the notes (2)**
        
-       3. Text input: `Prioritz Admin topic` (3)
+    3. Text input: **Prioritz Admin topic (3)**
        
-       4. Respond By: **La fecha de Hoy** (4)
+    4. Respond By: **La fecha de Hoy (4)**
        
+      ![](images/51.png)
+
 1. Escriba **Test One** en el campo Choice y haga clic en **add a picture** que se encuentra debajo del campo Choice.
      
-      ![](images/L01/image18uu.png)
+      ![](images/50.png)
 
 1. Navegue hasta esta ruta `C:\LabFiles` en el Explorador de Archivos, seleccione **image.png** y haga clic en abrir.
 
@@ -433,17 +423,21 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
 
 1. Haga clic en **+** para agregar la opción.
      
-      ![](images/L01/image19u.png)
+      ![](images/53.png)
 
 1. Agregue una opción más repitiendo los **pasos 20 a 22** de esta tarea.
        
-       1. **Choice 1** : Escriba `Test Two`
+    - **Choice 1** : Escriba `Test Two`
+
+      ![](images/54.png)
 
 1. Después de agregar todas las opciones y los detalles del tema, su pantalla debería verse como la siguiente captura de pantalla.
 
-     ![](images/L01/L01-testnotesu.png)
+     ![](images/55.png)
       
 1. Ahora, haga clic en el botón **Save**. El nuevo tema debería estar **guardado**.
+
+     ![](images/56.png)
 
 1. Haga clic para abrir el tema **Test Notes** que acaba de crear.
 
@@ -455,11 +449,11 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
 
 1. Haga clic en **Publicar**.
 
-    ![](images/L01/publish.png)
+    ![](images/57.png)
 
-1. Seleccione Publicar esta versión y espere a que se complete la publicación.
+1. Seleccione **Publicar esta versión** y espere a que se complete la publicación.
 
-     ![](images/L01/NewUipublish1u.png)
+     ![](images/58.png)
 
 1. Puede cerrar el **diseñador de aplicaciones**.
 
@@ -478,7 +472,7 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
 
 1. Haga clic para abrir su entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
-    ![](images/lab01ex03-01.png)
+    ![](images/60.png)
 
 
 1. Haga clic con el botón derecho en el valor **Environment URL** y péguelo en el Bloc de notas.
@@ -487,9 +481,9 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
 
     ![](images/lab01ex03-02.png)
 
-1. En JumpVM, inicie **Visual Studio Code** usando el acceso directo disponible en el escritorio.
+1. En Lab VM, inicie **Visual Studio Code** usando el acceso directo disponible en el escritorio.
 
-   ![](images/L04/vscode1.png)
+   ![](images/102.png)
    
 1. Haga clic en **Terminal** y seleccione **Nuevo terminal**.
 
@@ -544,4 +538,6 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
 
 En este laboratorio, aprendió a importar y ejecutar una solución de inicio, a personalizarla agregando una nueva columna y actualizando la aplicación de administración, y a verificar la funcionalidad mediante la CLI de Power Platform.
 
-## Ha completado el laboratorio con éxito
+## Has completado este laboratorio con éxito. Haz clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
+
+![](images/1.png)
