@@ -500,7 +500,7 @@ exportado al entorno de prueba.
 
     ![](images/lab04-ex05-03.png)
     
-1. Seleccione la pestaña **Acciones**, haga clic en **Todos los flujos de trabajo (2)** y supervise el flujo de trabajo.
+1. Seleccione la pestaña **Acciones (1)**, haga clic en **Todos los flujos de trabajo (2)** y supervise el flujo de trabajo.
 
      ![](images/606.png)
 
