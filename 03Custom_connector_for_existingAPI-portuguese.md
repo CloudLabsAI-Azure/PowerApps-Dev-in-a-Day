@@ -29,19 +29,17 @@ Ao analisar a API, verifica-se que tem quatro operações e utiliza uma API Key 
     https://make.powerapps.com
     ```
 
-1. Clique em **Environment (1)** e seleccione o ambiente de desenvolvimento pré-criado denominado **OTU WA HOL - xxxxxx (default) (2)**
+1. Clique em **Ambiente (1)** e selecione o ambiente de desenvolvimento pré-criado denominado **Azure HOL - xxxxxx (default) (2)**.
 
-    ![](images/L03/db1a.png)
+    ![](images/L03/a_g_u_7.png)
 
-2. Selecione **Solutions (1)** no menu do lado esquerdo do Power Apps.
+2. No menu do lado esquerdo do Power Apps, selecione **Soluções (1)** e clique em **Criar uma base de dados (2)** para criar uma base de dados do Dataverse.
 
-3. Clique em **Create a database (2)** para criar uma base de dados Dataverse.
+    ![](images/L03/dv_p4_e3_g_2.png)
 
-    ![](images/L03/db1.png)
+5. Na janela **Nova base de dados**, selecione **Moeda → TND (1)**, **Idioma → English (United States) (2)** e clique em **Criar a minha base de dados (3)**.
 
-5. Selecione **Currecny -> TND e Language -> English(1)** e clique em **Create my database (2)**.
-
-    ![](images/L03/db2.png)
+    ![](images/L03/dv_p4_e3_g_3.png)
 
     >**Nota:** Pode deixar este separador de navegador aberto e continuar com o próximo exercício, uma vez que a criação da base de dados Dataverse levará algum tempo.
 
@@ -58,16 +56,15 @@ os conectores devem estar numa solução separada das aplicações e dos fluxos 
     https://make.powerapps.com
     ```
 
-    ![](images/L03/dev11.png)
+    ![](images/L03/dv_p4_e3_g_5.png)
 
-2. Selecione **Solutions** e clique em **+ New solution**.
+2. No portal Power Apps, selecione **Solutions (1)** no menu lateral esquerdo e clique em **+ New solution (2)** no topo da página.
 
-    ![](images/L03/L03-solution.png)
+    ![](images/L03/dv_p4_e3_g_6.png)
 
-3. Introduza **Contoso Badges connector (1)** para o nome de visualização, seleccione **Contoso Coffee (ContosoCoffee) (2)** para Publisher e
- clique em **Create (3)**.
+3. Introduza **Contoso Badges connector (1)** como nome de apresentação, selecione **Contoso Coffee (ContosoCoffee) (2)** como Publisher e clique em **Create (3)**.
 
-    ![](images/L03/image2-1.png)
+    ![](images/L03/dv_p4_e3_g_7.png)
 
 > **Parabéns** por completar a tarefa! Agora, é hora de validá-lo. Aqui estão os passos:
 > - Pressione o botão Validar para a tarefa correspondente. Se receber uma mensagem de êxito, pode prosseguir para a próxima tarefa. 
@@ -90,7 +87,7 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
 3. Clique no **Open API definition file**.
 
-    ![](images/L03/image3.png)
+    ![](images/L03/dv_p4_e3_g_8.png)
 
 3. Faça uma revisão rápida da definição de API aberta.
 
@@ -106,48 +103,53 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
     https://make.powerapps.com
     ```
 
-6. Selecione **Solutions (1)** abra a solução **Contoso Badges connector(2)** que criou.
+6. Selecione **Solutions (1)** no painel de navegação esquerdo e abra a solução **Contoso Badges connector (2)** que acabou de criar.
 
-    ![](images/L03/L03-contoso.png)
+    ![](images/L03/dv_p4_e3_g_9.png)
 
-7. Clique em **+ New (1) | Automation (2)** e selecione **Custom connector (3)**.
+7. Clique em **+ Criar (1)**, passe o cursor sobre **Automatização (2)** e selecione **Conector personalizado (3)**.
 
-    ![](images/L03/image5-1.png)
+    ![](images/L03/dv_p4_e3_g_10.png)
 
 
-8. Introduza as seguintes informações sobre a lâmina **Create Connector**.
+8. Na lâmina **Create Connector**, introduza as seguintes informações:
 
-    1. Nome do conector: **Badges connector (1)**
-    2. Descrição: **Connector for contosobadgestest (2)**
-    3. Host: **contosobadgestest.azurewebsites.net (3)** e
-    4. clique em **Create Connector (4)**.
+    - Nome do conector: **Badges connector (1)**
+    - Descrição: **Connector for contosobadgestest (2)**
+    - Host: **contosobadgestest.azurewebsites.net (3)**
+    - Clique em **Create Connector (4)** para continuar.
 
-        ![](images/L03/L03-badges1u.png)
+        ![](images/L03/dv_p4_e3_g_11.png)
 
        >**Nota**:Se for pedido a login, utilize as credenciais ODL encontradas no separador ambiente localizados à direita do guia Lab.
 
-9. Selecione **Custom connector (1)** do mapa do site. Clique no botão **... More actions (2)** do conector personalizado que criou e seleccione **Update from Open API file (3)**
+9. No mapa do site, selecione **Custom connector (1)**. Clique no botão **... More actions (2)** junto ao conector personalizado que criou e selecione **Update from OpenAPI file (3)**.
 
-    ![](images/L03/L03-custom.png)
+    ![](images/L03/dv_p4_e3_g_12.png)
 
-10. Clique em **Import** para selecionar o ficheiro API.
+10. Clique em **Importar** para selecionar o ficheiro OpenAPI.
 
-    ![](images/L03/L03-import.png)
+    ![](images/L03/dv_p4_e3_g_13.png)
 
 11. Selecione o ficheiro **swagger. json** que guardou na sua máquina e clique em **Open**.
 
-12. Clique em **Continue** no **Import an OpenAPI file** pop-up.
+12. Clique em **Continue** no pop-up **Importar um ficheiro OpenAPI**.
 
-    ![](images/L03/image8-1.png)
+    ![](images/L03/dv_p4_e3_g_14.png)
 
-13. Introduza **Connector for contosobadgestest (1)** para Descrição, **contosobadgestest.azurewebsites.net (2)** para host,
- e avançar para **Security (3)**.
+13. Introduza **Connector for contosobadgestest (1)** para Descrição, **contosobadgestest.azurewebsites.net (2)** para Anfitrião, e clique em **Segurança (3)** para avançar.
 
-    ![](images/L03/image9-1u.png)
+    ![](images/L03/dv_p4_e3_g_15.png)
 
-14. Reveja a configuração **security configuration (1)** e avance para **Definition (2)**.
+14. Reveja a configuração da **security configuration (1)** com os seguintes campos:
 
-    ![](images/L03/L03-security.png)
+    - **Etiqueta do parâmetro**: Chave de API  
+    - **Nome do parâmetro**: X-API-KEY  
+    - **Localização do parâmetro**: Cabeçalho  
+
+    Clique em **Definição (2)** para continuar.
+
+    ![](images/L03/dv_p4_e3_g_16.png)
 
 15. Não navegue por esta página.
 
@@ -155,19 +157,19 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
 1. Selecione a ação **AddCredit (1)** então **Important (2)** para a Visibilidade.
 
-    ![](images/L03/image10-1.png)
+    ![](images/L03/dv_p4_e3_g_17.png)
 
-3. Desça até à secção **Request**, clique no botão chevron do **body** e selecione **Edit**.
+3. Desça até à secção **Request**, clique no botão de chevron ao lado de **body** e selecione **Editar**.
 
-    ![](images/L03/image11.png)
+    ![](images/L03/dv_p4_e3_g_18.png)
 
-4. Desça e clique no botão chevron de **points** e selecione **Edit**.
+4. Na secção **Corpo** da resposta, clique no botão de chevron ao lado de **points (1)** e selecione **Editar (2)**.
 
-    ![](images/L03/image12.png)
+    ![](images/L03/dv_p4_e3_g_19.png)
 
-5. Selecione **Yes** para é necessário e clique no botão **Back**.
+5. Na janela **Propriedade do Esquema**, selecione **Sim (1)** para marcar o campo como obrigatório e clique em **Anterior (2)** para voltar.
 
-    ![](images/L03/image13.png)
+    ![](images/L03/dv_p4_e3_g_20.png)
 
 6. Clique no botão chevron do **recipientid** e selecione **Edit**.
 
@@ -187,18 +189,21 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
 10. Clique no botão **Back** novamente.
 
-    ![](images/L03/image14.png)
+    ![](images/L03/dv_p4_e3_g_21.png)
 
 11. Avançar para **AI Plugin(preview)**.
+
 12. Avanço para **Code**
+
+    ![](images/L03/dv_p4_e3_g_22.png)
 
 13. Analise o código e avance para **Test**.
 
-    ![](images/L03/L03-test.png)
+    ![](images/L03/dv_p4_e3_g_23.png)
 
 14. Clique em **Update connector** e aguarde que o conector seja atualizado
 
-    ![](images/L03/image15.png)
+    ![](images/L03/dv_p4_e3_g_24.png)
 
 15. Não navegue por esta página.
 
@@ -212,21 +217,23 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
 2. Clique no link **API Key**
 
-    ![](images/L03/image16.png)
+    ![](images/L03/dv_p4_e3_g_25.png)
 
 3. Copie o valor **API Key** e guarde-o no Notepad, pois irá utilizar este valor nos próximos passos. Agora, feche o separador do browser clicando em **X**.
 
-4. Volte à página de teste do conector e clique em **+ New Connection**.
+    ![](images/L03/dv_p4_e3_g_26.png)
 
-    ![](images/L03/image17.png)
+4. Volte para a aba **5. Testar** e clique em **+ Nova ligação** para criar uma nova conexão com o co
 
-5. Colar a chave **API (1)** copiou em **passo 3** desta tarefa e clique em **Create connection (2)**.
+    ![](images/L03/dv_p4_e3_g_27.png)
 
-    ![](images/L03/image18-1.png)
+5. Cole a chave **API (1)** que copiou no **Passo 3** desta tarefa e clique em **Criar ligação (2)** para estabelecer a conexão com o conector.
 
-6. Clique no botão **Refresh**.
+    ![](images/L03/dv_p4_e3_g_28.png)
 
-    ![](images/L03/image19.png)
+6. Clique no botão **Refresh** no canto superior direito para atualizar a lista de ligações disponíveis.
+
+    ![](images/L03/a_g_u_8.png)
 
 7. A ligação que criou deve ser selecionada.
 
