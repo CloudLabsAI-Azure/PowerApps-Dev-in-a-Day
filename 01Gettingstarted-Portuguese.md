@@ -360,7 +360,7 @@ aplicação.
    My notes
    ```
 
-    ![](images/L01/image29.png)
+    ![](images/L01/cor_g_3.png)
 
 
 9. Selecione o **Mode** no menu suspenso das propriedades e altere o seu valor introduzindo o texto abaixo.
@@ -369,25 +369,19 @@ aplicação.
    TextMode.MultiLine
    ```
 
-    ![](images/L01/L01-mode.png)
+    ![](images/L01/cor_g_4.png)
 
-10. Selecione **Save topic icon** na secção **Add Topics Screen**.
+10. Selecione **Save topic icon** na secção **Add Topics Screen**. Substitua a fórmula **OnSelect** do **Save topic icon** com a fórmula abaixo. O Patch criauma nova linha na tabela Dataverse.
 
-    ![](images/L01/image30.png)
-
-11. Substitua a fórmula **OnSelect** do **Save topic icon** com a fórmula abaixo. O Patch criauma nova linha na tabela Dataverse.
-
-    ![](images/L01/image31.png)
+    ![](images/L01/cor_g_5.png)
 
       ```
       Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
       ```
 
-12. Selecione o **View Topic Screen (1)** do separador **Screens**.
+12. No painel **Ecrãs**, selecione **View Topic Screen** **(1)**, clique em **+ Inserir** **(2)** na barra superior e selecione **Etiqueta de texto** **(3)** na lista de componentes populares.
 
-1. Clique em **+ Insert (1)** separador e seleccione **Text label (2)**.
-
-   ![](images/L01/tlabel.png)
+      ![](images/L01/dv_port2_e1_g_6.png)
 
 13. Clique duas vezes no rótulo recentemente adicionado e introduza o valor abaixo para renomear o rótulo que acabou de adicionar.
 
@@ -395,7 +389,7 @@ aplicação.
       Notes label
       ```
 
-    ![](images/L01/L01-label.png)
+    ![](images/L01/dv_port2_e1_g_7.png)
 
 14. Altere o valor **Text** do rótulo Notes com o texto abaixo.
 
@@ -403,7 +397,7 @@ aplicação.
       'Topics gallery'.Selected.'My Notes'
       ```
 
-      ![](images/L01/image32.png)
+      ![](images/L01/dv_port2_e1_g_8.png)
 
 15. Rearranque os controlos e mova o rótulo **Notes** entre o rótulo de detalhes e os itens do tópico
  galeria.
@@ -434,7 +428,9 @@ aplicação.
 
     ![](images/L01/image18.png)
 
-11. Navegue neste caminho `C:\LabFiles` no File Explorer, seleccione **image.png** e clique em abrir.
+11. No explorador de ficheiros, navegue até `C:\LabFiles` **(1)**, selecione o ficheiro **image.png** **(2)** e clique no botão **Abrir** **(3)**.
+
+      ![](images/L01/dv_p2_e1_g_28.png)
 
 13. Clique em **+** para adicionar a escolha.
 
@@ -458,11 +454,11 @@ aplicação.
 
 1. Clique em **Publish**.
 
-   ![](images/L01/publish.png)
+   ![](images/L01/dv_port2_e1_g_10.png)
 
 25. Selecione Publicar esta versão e aguarde que a publicação seja concluída.
 
-    ![](images/L01/NewUipublish1.png)
+    ![](images/L01/dv_port2_e1_g_11.png)
 
 26. Pode fechar o **app designer**.
 
@@ -490,15 +486,15 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 
    >**Nota**: Certifique-se de que o valor do URL do ambiente é copiado juntamente com o **https**. O seu valor copiado deve ficar assi `https://orgxxxxxx.crm.dynamics.com/`
 
-   ![](images/L01/image37.png)
+   ![](images/L01/dv_port2_e1_g_13.png)
 
 4. No JumpVM, inicie o **Visual Studio Code** utilizando o atalho disponível na área de trabalho.
 
    ![](images/L04/vscode1.png)
 
-6. Clique em **Terminal** e seleccione **New Terminal**.
+6. Clique no menu de opções **(1)** no canto superior direito, selecione **Terminal** **(2)** e depois clique em **Novo Terminal** **(3)** para abrir um novo terminal no VS Code.
 
-   ![](images/L01/image42.png)
+   ![](images/L01/dv_port2_e1_g_14.png)
 
 7. Execute o comando abaixo no terminal.
 
@@ -516,7 +512,7 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 
    > **Info:** Depois de adicionar o URL do ambiente, o comando será assim: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
 
-   ![](images/L01/Eeditpac.png)
+   ![](images/L01/dv_port2_e1_g_15.png)
 
 1. Conclua o processo **Sign in**, utilizando as credenciais abaixo.
 
@@ -530,7 +526,7 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 
 9. Selecione **Power Platform (1)**, agora deve ter pelo menos um perfil de **auth profile (2)**. Se tiver mais do que um perfil, certifique-se de que o perfil que criou será selecionado
 
-   ![](images/L01/L01-auth.png)
+   ![](images/L01/dv_port2_e1_g_16.png)
 
    > **Nota**: Se conseguir ver o perfil **Universal Profile** em vez do perfil de **DeVAuth**, é por adição do valor incorreto  **Environment URL** no comendo **pac auth create** no Passo 9. Para corrigir isto, siga os passos abaixo:
 
@@ -552,6 +548,6 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 
 12. Deve ver uma lista de soluções instaladas no seu ambiente.
 
-    ![](images/L01/sollist.png)
+    ![](images/L01/dv_port2_e1_g_17.png)
 
 ## Você concluiu o laboratório com sucesso. Prossiga para a próxima página.
