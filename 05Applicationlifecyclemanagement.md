@@ -502,7 +502,7 @@ exportado al entorno de prueba.
     
 1. Seleccione la pestaña **Acciones (1)**, haga clic en **Todos los flujos de trabajo (2)** y supervise el flujo de trabajo.
 
-     ![](images/606.png)
+     ![](images/133.png)
 
 1. La versión de release debería completarse exitosamente.
      
