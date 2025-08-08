@@ -321,7 +321,7 @@ aplicação.
    ```
    My Notes
    ```
-
+   
 1. No painel **Nova coluna**, defina o campo **Nome a apresentar** como **My Notes** **(1)**, pesquise por **Texto simples** **(2)**, selecione a opção **Várias linhas de texto** **(3)** e clique em **Guardar** **(4)**.
 
    ![](images/L01/dv_p2_e1_g_37.png)
