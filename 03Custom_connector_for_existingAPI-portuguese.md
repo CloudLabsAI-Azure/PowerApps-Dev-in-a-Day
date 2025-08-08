@@ -237,29 +237,37 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
 7. A ligação que criou deve ser selecionada.
 
-8. Aceda à operação **AddCredit (1)**. Introduza o seu endereço de e-mail para o reciprided, introduza o seu nome para nome, introduza **1** para pontos e clique em **Test operation (2)**.
+8. Aceda à operação **AddCredit**. Introduza **1** para o campo **points (1)**, insira o seu endereço de e-mail no campo **recipientId (2)**, o seu nome no campo **name (3)** e clique em **Operação de teste (4)**.
 
-    ![](images/L03/image20-1u.png)
+    ![](images/L03/dv_p4_e3_g_29.png)
 
 9. O teste deve ter sucesso e a resposta deve parecer a image abaixo.
 
-    ![](images/L03/image21u.png)
+    ![](images/L03/dv_p4_e3_g_30.png)
 
-11. Selecione a operação **GetRecipient**.
+11. Clique em **GetRecipient (1)** na lista de operações. Forneça o seu endereço de e-mail no campo **id (2)** e clique em **Operação de teste (3)**
 
-12. Forneça o seu endereço de e-mail como id e clique em **Test operation**.
-
-    ![](images/L03/image22-1u.png)
+    ![](images/L03/dv_p4_e3_g_31.png)
 
 13. O teste deve ter sucesso e deve obter a resposta esperada.
 
-14. Vá em frente e teste as operações **ListBadges** e **ListRecipients**. Deixe as opções em branco e clique em **Test operation**.
+    ![](images/L03/dv_p4_e3_g_32.png)
 
-     ![](images/L03/image13c.png)
+14. Clique em **ListBadges (1)** na lista de operações. Deixe os campos **fromPoints** e **toPoints** em branco e clique em **Operação de teste (2)**.
+
+    ![](images/L03/dv_p4_e3_g_33.png)
 
 15. Todos os testes devem ter sucesso.
 
-    ![](images/L03/image23.png)
+    ![](images/L03/dv_p4_e3_g_34.png)
+
+15. Clique em **ListRecipients (1)** na lista de operações. Deixe os campos **fromPoints** e **toPoints** em branco e clique em **Operação de teste (2)**.
+
+    ![](images/L03/dv_p4_e3_g_35.png)
+
+15. Todos os testes devem ter sucesso.
+
+    ![](images/L03/dv_p4_e3_g_36.png)
 
 > **Parabéns** por completar a tarefa! Agora, é hora de validá-lo. Aqui estão os passos:
 > - Pressione o botão Validar para a tarefa correspondente. Se receber uma mensagem de êxito, pode prosseguir para a próxima tarefa. 
@@ -281,85 +289,82 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
     https://make.powerautomate.com
     ```
 
-2. Clique em **More (1)** e seleccione **Discover All (2)**.
+2. Clique em **Base (1)** no menu lateral esquerdo. Em seguida, selecione **Descobrir tudo (2)** no painel **Mais**.
 
-    ![](images/L03/L03-connectormore.png)
+    ![](images/L03/dv_p4_e3_g_39.png)
 
 3. Sob **Data (1)** e seleccione **Custom connectors (2)**.
 
-    ![](images/L03/L03-connectoru.png)
+    ![](images/L03/dv_p4_e3_g_40.png)
 
 4. Clique no botão **Edit** do conector personalizado que criou.
 
-    ![](images/L03/image24u.png)
+    ![](images/L03/dv_p4_e3_g_41.png)
 
 5. Selecione o separador **Definition** no menu suspenso e clique em **New action** no separador definição.
 
-    ![](images/L03/L03-EX3.1.png)
+    ![](images/L03/dv_p4_e3_g_42.png)
 
-6. Introduza as seguintes informações para adicionar a ação **Get current badge**.
+6. Introduza as seguintes informações para adicionar a ação **Get current badge**:
 
-    1. Resumo: **Get current badge (1)**
-    2. Descrição: **Get current badge (2)**
-    3. ID de operação: **getcurrentbadge (3)**
+    - No campo **Resumo**, digite: `Get current badge` **(1)**
+    - No campo **Descrição**, digite: `Get current badge` **(2)**
+    - No campo **ID da operação**, insira: `getcurrentbadge` **(3)**
 
-       ![](images/L03/image26-1.png)
+       ![](images/L03/dv_p4_e3_g_43.png)
 
-7. Desça até à secção **Request** e clique em **+ Import from sample**.
+7. Desça até à secção **Pedido** e clique em **+ Importar a partir da amostra** para definir os parâmetros da operação a partir de um exemplo.
 
-    ![](images/L03/image27.png)
+    ![](images/L03/dv_p4_e3_g_44.png)
 
-8. Selecione **Get (1)** para o Verbo, introduza o valor abaixo para **URL (2)** e clique em **Import (3)**.
+8. Selecione **GET (1)** como o verbo, introduza o seguinte URL **https://contosobadgetest.azurewebsites.net/getcurrentbadge?id={id} (2)** e clique em **Importar (3)** para carregar os detalhes do pedido.
     
     ```
     https://contosobadgestest.azurewebsites.net/getcurrentbadge?id={id} 
     ```
 
-    ![](images/L03/image28-1.png)
+    ![](images/L03/dv_p4_e3_g_45.png)
 
 9. Clique em **Update connector** e aguarde que o conector seja atualizado.
+
 10. Selecione o separador **Code** do menu suspenso.
-11. Activar **Code (1)** e clique em **Upload (2)**.
 
-    ![](images/L03/image29-1.png)
+11. No separador **4. Código (1)**, ative a opção **Código Ativado (2)** e clique em **Carregar (3)** para aplicar o código à operação.
 
-12. Selecione o ficheiro **CustomConnectorCode.csx** localizado neste caminho `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` existente` e clique em **Open**.
-13. Selecione a ação **getcurrentbadge** no menu suspenso.
+    ![](images/L03/dv_p4_e3_g_47.png)
 
-    ![](images/L03/image30.png)
+12. No caminho `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources (1)`, selecione o ficheiro **CustomConnectorCode (2)** e clique em **Abrir (3)**.
+
+    ![](images/L03/dv_p4_e3_g_48.png)
+
+13. No separador **Código**, selecione a ação **getcurrentbadge (1)** no menu suspenso e clique em **Testar (2)** para avançar.
+
+    ![](images/L03/dv_p4_e3_g_49.png)
 
 14. Reveja o código que acabou de adicionar.
-15. Clique em **Update connector** e aguarde que o conector seja atualizado.
-16. Avanço para **Test** selecionando-o no menu suspenso.
-17. Selecione a ação **getcurrentbadge**.
-18. Forneça o seu endereço de e-mail como id e clique em **Test operation**.
 
-    ![](images/L03/image31-1.png)
+15. Clique em **Update connector** e aguarde que o conector seja atualizado.
+
+16. Avanço para **Test** selecionando-o no menu suspenso.
+
+17. Na secção **Operações**, selecione **getcurrentbadge (1)**, introduza o seu endereço de e-mail como valor de **id (2)** e clique em **Operação de teste (3)** para executar a ação.
+
+    ![](images/L03/dv_p4_e3_g_50.png)
 
 19. O teste deve ter sucesso e deve obter um crachá atual para o utilizador que criou.
 
-    ![](images/L03/image32.png)
+    ![](images/L03/dv_p4_e3_g_51.png)
 
     > **Nota**: Se a operação de teste falhar, tente atualizar o conector, teste o conector executando os Passos 15-18 novamente.
 
 20. Copie a resposta **Body** JSON.
 
-21. Selecione o separador **Definição** no menu suspenso.
+21. No separador **Definição (1)**, desça até à secção **Resposta**, clique em **+ Adicionar resposta predefinida (2)**, cole o JSON fornecido no campo **Corpo (3)** e clique em **Importar (4)**.
 
-22. Selecione a ação **getcurrentbadge**.
-
-    ![](images/L03/image33.png)
-
-24. Desça até à secção **Response** e clique em **+ Add default response.**
-
-    ![](images/L03/image34.png)
-
-
-25. Cole o JSON que copiou no **Body (1)** e clique em **Import (2)**.
-
-    ![](images/L03/image35-1.png)
+    ![](images/L03/dv_p4_e3_g_52.png)
 
 26. Clique em **Update connecto** e aguarde que o conector seja atualizado.
+
 27. **Não** navegue por esta página.
 
 ### Tarefa 2: Teste o código personalizado
@@ -369,9 +374,9 @@ Nesta tarefa, testará o seu código personalizado.
 1. Selecione o separador **Test**.
 2. Selecione a ligação que criou anteriormente.
 
-1. Aceda à secção **Operations** e seleccione a operação **getcurrentbadge (1)**. Forneça o seu e-mail como **id (2)** e clique em **Test operation (3)**.
+1. Na secção **Operações**, selecione a operação **getcurrentbadge (1)**, introduza o seu endereço de e-mail como **id (2)** e clique em **Operação de teste (3)**.
 
-    ![](images/L03/image36-1u.png)
+    ![](images/L03/dv_p4_e3_g_53.png)
 
 5. A operação deve ter sucesso e a resposta **Body** deve parecer a image abaixo.
 
@@ -397,17 +402,17 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 
     ![](images/L03/image38-1u.png)
 
-4. Selecione **Data** a partir da esquerda e clique em **+ Add data.**
+4. No menu lateral esquerdo, selecione **Dados (1)** e clique em **+ Adicionar dados (2)**.
 
-    ![](images/L03/image39.png)
+    ![](images/L03/dv_p4_e3_g_54.png)
 
-5. Expandir **Connectors** e seleccione o conector **Badges** que criou.
+5. Expanda a secção **Conectores (1)** e selecione o conector **Badges connector (2)** que criou anteriormente.
 
-    ![](images/L03/image40uu.png)
+    ![](images/L03/dv_p4_e3_g_55.png)
 
-6. Clique em **+ Add a connection**.
+6. Clique em **+ Adicionar uma ligação** para criar a ligação ao conector **Badges connector**.
 
-    ![](images/L03/L03-EX4.png)
+    ![](images/L03/dv_p4_e3_g_56.png)
 
 7. Abra um novo separador ou janela do navegador e navegue até ao URL abaixo para abrir a API Contoso Coffee Badge.
 
