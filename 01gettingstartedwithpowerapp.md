@@ -26,7 +26,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
 1. En la ventana **Iniciar sesión**, aparecerá la pantalla de inicio de sesión, introduzca el siguiente nombre de usuario **(1)** y pulse en **Siguiente** **(2)**.
 
-   - **Correo Electrónico/Nombre de Usuario**: <inject key="AzureAdUserEmail"></inject>
+   - **Correo Electrónico/Nombre de Usuario:** <inject key="AzureAdUserEmail"></inject>
 
      ![](images/L01/2.png)
 
