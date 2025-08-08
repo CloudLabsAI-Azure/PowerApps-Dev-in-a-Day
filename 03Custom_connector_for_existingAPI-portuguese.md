@@ -181,11 +181,11 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
 8. Clique no botão chevron de **name** e seleccione **Edit**.
 
-    ![](images/L03/L03-name.png)
+    ![](images/L03/a_g_u_17.png)
 
 9. Selecione **Yes** para é necessário e clique no botão  **Back**.
 
-    ![](images/L03/image13.png)
+    ![](images/L03/a_g_u_18.png)
 
 10. Clique no botão **Back** novamente.
 
@@ -449,7 +449,7 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
     ContosoBadges.getcurrentbadge({id:User().Email}).image
     ```
 
-    ![](images/L03/image45u.png)
+    ![](images/L03/a_g_u_9.png)
 
 15. Defina o valor da dica de ferramenta do crachá do utilizador na fórmula abaixo.
 
@@ -457,13 +457,13 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
     ContosoBadges.getcurrentbadge({id:User().Email}).name
     ```
 
-    ![](images/L03/L03-EX4-T1u.png)
+    ![](images/L03/a_g_u_10.png)
 
 16. Faça a image mais pequena e mova-a para o canto superior direito do ecrã.
 
 17. O crachá do utilizador deve agora parecer a image abaixo.
 
-    ![](images/L03/image46.png)
+    ![](images/L03/a_g_u_11.png)
 
 18. Selecione o separador **Screen** na vista da Árvore. Clique no botão **Play**.
 
@@ -475,11 +475,15 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
 
 1. Selecione **Publish**.
 
+    ![](images/L03/a_g_u_12.png)
+
 23. Selecione **Publish this version**.
+
+    ![](images/L03/a_g_u_13.png)
 
 24. Volte à solução clicando no botão  **Back**.
 
-    ![](images/L03/imagee47.png)
+    ![](images/L03/a_g_u_14.png)
 
 25. Não navegue por esta página.
 
@@ -489,19 +493,19 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
 
 2. Clique em **+ New** e seleccione **Automation | Cloud flow | Instant**.
 
-    ![](images/L03/image48.png)
+    ![](images/L03/dv_p4_e3_g_61.png)
 
 3. Introduza **Test add credit** para o nome do fluxo, seleccione **Manually trigger a flow** e clique em **Create**.
 
-    ![](images/L03/edd%20(1).png)
+    ![](images/L03/dv_p4_e3_g_62.png)
 
 4. Clique em **+ New step**.
 
-    ![](images/L03/L03-EX3-T2.png)
+    ![](images/L03/dv_p4_e3_g_63.png)
 
 5. Selecione o separador **Custom** e, em seguida, selecione a ação **Add credit**.
 
-    ![](images/L03/edd%20(2).png)
+    ![](images/L03/dv_p4_e3_g_64.png)
 
 6. Introduza **Test connection**, cole a chave **API** que copiou anteriormente em **passo 9** de task1 neste exercício e clique em **Create**.
 
@@ -509,35 +513,31 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
 
 7. Clique no campo **recipienteId**, Sob Manualmente acionar um painel de fluxo e selecione **User email**.
 
-    ![](images/L03/image49u.png)
+    ![](images/L03/dv_p4_e3_g_65.png)
 
 8. Clique no campo **name**, Sob Manualmente acionar um painel de fluxo e selecione ***User name**.
 
 9. Introduza **1** para pontos e clique em **Save**. Aguarde que o fluxo seja guardado.
 
-    ![](images/L03/image50.png)
-
 10. Clique em **Test**.
 
-    ![](images/L03/L03-EX4-test.png)
+    ![](images/L03/dv_p4_e3_g_66.png)
 
 11. Selecione **Test** e clique novamente **TTesteste**.
 
-    ![](images/L03/L03-EX3-manually.png)
+    ![](images/L03/dv_p4_e3_g_67.png)
 
 12. Clique em **Test**.
-
-13. Clique em **Test**.
 
 14. Clique em **Done**.
 
 15. O fluxo deve ter sucesso. Depois de ter sido bem sucedido, clique no botão **Back**.
 
-    ![](images/L03/image51.png)
+    ![](images/L03/a_g_u_16.png)
 
 17. Selecione **Cloud flows** e abra o fluxo que criou.
 
-    ![](images/L03/image52.png)
+    ![](images/L03/a_g_u_15.png)
 
 18. Inicie uma nova janela do browser e navegue até ao portal do fabricante de aplicações Power.
 
@@ -551,7 +551,7 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
 
 22. Volte a fluir e execute-o mais duas vezes.
 
-    ![](images/L03/L03-EX4-run1.png)
+    ![](images/L03/a_g_u_23.png)
 
 23. Volte à aplicação **PrioritZ Ask** e atualize a página.
 
