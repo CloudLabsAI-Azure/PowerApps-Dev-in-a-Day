@@ -173,11 +173,11 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
 6. Clique no botão chevron do **recipientid** e selecione **Edit**.
 
-    ![](images/L03/L03-recepient.png)
+    ![](images/L03/a_g_u_21.png)
 
 7. Selecione **Yes** para é necessário e clique no botão  **Back**.
 
-    ![](images/L03/image13.png)
+    ![](images/L03/a_g_u_20.png)
 
 8. Clique no botão chevron de **name** e seleccione **Edit**.
 
@@ -433,9 +433,10 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 
 11. Selecione a **Tree view**.
 
-12. Selecione o separador **Screens (1)**, aceda ao separador **Insert (2)**, clique em **Media** e selecione **Image (3)**.
+12. Na **Vista de árvore (1)**, selecione o separador **Ecrãs (2)**.  
+Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)**.
 
-    ![](images/L03/L03-componentuu.png)
+    ![](images/L03/dv_p4_e3_g_58.png)
 
 13. Clique duas vezes na image recém-adicionado e altere o seu nome para **User badge**.
 
