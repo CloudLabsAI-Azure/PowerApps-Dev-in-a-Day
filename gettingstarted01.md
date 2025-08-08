@@ -103,7 +103,7 @@ Siéntase libre de **iniciar**, **detener** o **reiniciar** su máquina virtual 
 
    ![](./images/asklater.png)
 
-   > **NOTA:** No active MFA, seleccione **Preguntar después**.
+   > **NOTA:** Sin MFA activo, seleccione **Preguntar después**.
 
 5. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
 

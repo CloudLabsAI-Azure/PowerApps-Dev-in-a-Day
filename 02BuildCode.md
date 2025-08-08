@@ -275,8 +275,7 @@ En este ejercicio, creará el componente de código.
      state: ComponentFramework.Dictionary
      ```
      
-   ![](images/c2.png)
-
+    ![](images/c2.png)
 
 1. Pegue el código a continuación dentro de la función **init**. Esta lógica inicializa nuestras variables de clase a partir de los valores de tiempo de ejecución y habilita la notificación de cambio de tamaño.
     
@@ -504,12 +503,15 @@ En este ejercicio, creará el componente de código.
     ```
     
     > **Nota** : 
-     1. Si encuentra el mensaje de error **"Error: Falta la herramienta requerida: MSBuild.exe/dotnet.exe. Agregue MSBuild.exe/dotnet.exe en la variable de entorno Ruta o use 'Desarrollador 
-        Símbolo del sistema para VS'"**, siga estos pasos:
-        1. Navegue hasta el directorio `C:\LabFiles` y abra **dotnet-sdk-8.0.100-win-x64**.
-        2. En la ventana de configuración, seleccione **Reparar**, luego espere a que se complete el proceso.
-        3. Una vez finalizada la reparación, cierre Visual Studio Code, vuelva a abrirlo y primero ejecute el comando de compilación presente en el paso 28 y vuelva a ejecutar el comando anterior.
-        4. Si el problema persiste, desinstale **dotnet-sdk-8.0.100-win-x64** e instale la última versión desde [la página de descarga de .NET](https://dotnet.microsoft.com/en-us/download). Cierre Visual Studio Code, vuelva a abrirlo, ejecute el comando de compilación del paso 28 y luego ejecute el comando anterior nuevamente.
+     1. Si encuentra el mensaje de error **"Error: Falta la herramienta requerida: MSBuild.exe/dotnet.exe. Agregue MSBuild.exe/dotnet.exe en la variable de entorno Ruta o use 'Desarrollador Símbolo del sistema para VS'"**, siga estos pasos:
+
+        - Navegue hasta el directorio `C:\LabFiles` y abra **dotnet-sdk-8.0.100-win-x64**.
+
+        - En la ventana de configuración, seleccione **Reparar**, luego espere a que se complete el proceso.
+
+        - Una vez finalizada la reparación, cierre Visual Studio Code, vuelva a abrirlo y primero ejecute el comando de compilación presente en el paso 28 y vuelva a ejecutar el comando anterior.
+
+        - Si el problema persiste, desinstale **dotnet-sdk-8.0.100-win-x64** e instale la última versión desde [la página de descarga de .NET](https://dotnet.microsoft.com/en-us/download). Cierre Visual Studio Code, vuelva a abrirlo, ejecute el comando de compilación del paso 28 y luego ejecute el comando anterior nuevamente.
 
      2. Si la operación de inserción falla con el error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, asegúrese de haber seguido las instrucciones anteriores y agregué el código correctamente en los archivos **Manifiesto e Índice**. 
         
@@ -630,7 +632,7 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
       
      ![](images/q6.png)
 
-   >**Nota:** Si recibe una ventana emergente para "Select a data source," simplemente haga clic en **Close**.
+    >**Nota:** Si recibe una ventana emergente para "Select a data source," simplemente haga clic en **Close**.
  
 1. Vaya a la pestaña de vista de árbol y seleccione el elemento **PrioritZDnDRanking** que acaba de agregar.
 

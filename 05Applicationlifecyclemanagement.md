@@ -368,7 +368,7 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
 1. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
-1. Ingrese **PowerPlatformDevUrl (1)** como Nombre y pegue la URL secreta del entorno de desarrollo (2)** de su bloc de notas que copió en **`Ejercicio 1 -> Tarea 3 -> Paso 17`** en el campo **Valor** y haga clic en **Agregar secreto (3)**.
+1. Ingrese **PowerPlatformDevUrl (1)** como Nombre y pegue la **URL secreta (2)** del entorno de desarrollo de su bloc de notas que copió en **`Ejercicio 1 -> Tarea 3 -> Paso 17`** en el campo **Valor** y haga clic en **Agregar secreto (3)**.
 
     >**Nota**: Asegúrate de pegar la URL del entorno de desarrollo denominada **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** que copiaste en el **`Ejercicio 1 -> Tarea 3 -> Paso 17`**
    
