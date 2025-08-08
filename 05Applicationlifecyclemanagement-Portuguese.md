@@ -26,34 +26,31 @@ Neste exercício, criará um service Principal. O service Principal será utiliz
 
 1. Na página inicial do Portal do Azure, pesquise por **Microsoft Entra ID** ***(1)*** na barra de pesquisa e seleccione **Microsoft Entra ID** ***(2)***.
 
-    ![](images/dev3.png)
+    ![](images/L05/dv_p5_e4_g_1.png)
 
-1. Selecione **App registrations** ***(1)*** da lâmina lateral e clique em **+ New registration** ***(2)***. Este registo de aplicação será utilizado para o conector para aceder à API protegida.
+1. No menu lateral, selecione **App registrations (1)** e clique em **+ New registration (2)** para criar o registo de aplicação que será utilizado pelo conector para aceder à API protegida.
 
-    ![](images/L05/diad5l2.png)
+    ![](images/L05/dv_p5_e4_g_2.png)
 
-1. Forneça os seguintes detalhes e clique em **Register** ***(3)***.
+1. Forneça o nome **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** (1)**, selecione **Contas apenas neste diretório organizacional (Azure HOL — Inquilino único) (2)** e clique em **Registar (3)**.
 
-    - Nome: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-    - Tipos de conta suportados: **Accounts in this organizational directory only (OTU WA HOL - xxxxxx only - Single tenant)** ***(2)***
+    ![](images/L05/dv_p5_e4_g_3.png)
 
-        ![](images/diad5l3uup.png)
+1. Copie o **ID de aplicação (cliente)** e o **ID do diretório (inquilino)** e guarde-os num bloco de notas para utilização posterior.
 
-1. Copie o **Application (client) ID**, **Directory(Tenant) ID** e guarde-o num bloco de notas, pois precisa deles para utilização posterior.
+    ![](images/L05/dv_p5_e4_g_4.png)
 
-    ![](images/L05/diad5l4.png)
+1. Na lâmina lateral, selecione **Certificados e segredos (1)** e clique em **+ Novo segredo do cliente (2)**.
 
-1. Selecione **Certificates & secrets** na lâmina lateral e clique em **+ New client secret**.
+    ![](images/L05/dv_p5_e4_g_5.png)
 
-    ![](images/L05/diad5l5.png)
+1. Introduza **GitHub client secret<inject key="DeploymentID" enableCopy="false" /> (1)** como descrição, defina o prazo de expiração para **90 dias (3 meses) (2)** e clique em **Adicionar (3)**.
 
-1. Introduza **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** ***(1)*** como descrição, define expiro para **3 months** ***(2 )*** e clique em **Add** ***(3)***.
+    ![](images/L05/dv_p5_e4_g_6.png)
 
-    ![](images/L05/diad5l6.png)
+1. Copie o **Valor** do segredo do cliente e guarde-o num bloco de notas para utilização posterior.
 
-1. Copie o **valor** e guarde-o num bloco de notas conforme necessário para utilização posterior.
-
-    ![](images/L05/diad5l7.png)
+    ![](images/L05/dv_p5_e4_g_7.png)
 
     >**Nota**: Certifique-se de que copia os valores corretos de **Application (client) ID**, **Directory(Tenant) ID** and **Secret**. Copiar o valor incorreto resultará em problemas nos próximos passos/tarefas.
 
@@ -67,31 +64,29 @@ Nesta tarefa, irá um novo teste de ambientes Dataverse.
     https://admin.powerplatform.microsoft.com/environments
     ```
 
-1. Clique em **+New** para criar um novo Dataverse.
+1. Clique em **+Novo** para criar um novo Dataverse.
 
-    ![](images/L05/newtask1.png)
+    ![](images/L05/dv_p5_e4_g_8.png)
 
-1. No separador **New environment**.
+1. No separador **Novo ambiente**:  
 
-    - Name:**DEV_ENV_TEST(1)**.
+    - Nome: **DEV_ENV_TEST(1)**.  
 
-    - Make this a Managed Environment:**Ativar Sim(2)**.
+    - Tornar este um Ambiente Gerido: **Ativar Sim(2)**.  
 
-    - Group:**None(3)**. e desça.
+    - Grupo: **Nenhum(3)** e desça. 
 
-    - Type :**Developer(4)** e clique em **Next(5)**.
+    - Tipo: **Programador(4)** e clique em **Seguinte(5)**.  
 
-    - Deploy sample apps and data? :**Ativar Sim(6)** e clique em **Save(7)**.
+    - Implementar aplicações e dados de exemplo?: **Ativar Sim(6)** e clique em **Guardar(7)**.
 
-        ![](images/L05/newtask2.png)
+        ![](images/L05/dv_p5_e4_g_9.png)
 
-        ![](images/L05/newtask3.png)
-
-        ![](images/L05/newtask4.png)
+        ![](images/L05/dv_p5_e4_g_10.png)
 
 1. Agora pode ver o novo Dataverse, **DEV_ENV_TEST**, que criou.
 
-    ![](images/L05/newtask5.png)
+    ![](images/L05/dv_p5_e4_g_11.png)
 
 ### Tarefa 3: Crie um utilizador de aplicação no Dataverse
 
@@ -104,13 +99,13 @@ Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos am
     https://admin.powerplatform.microsoft.com/environments
     ```
 
-1. Clique em **Environments** ***(1)*** da lâmina lateral e seleccione o seu **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
+1. Clique em **Ambientes** **(1)** da lâmina lateral e seleccione o seu **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** **(2)**.
 
-    ![](images/L05/env1u.png)
+    ![](images/L05/dv_p5_e4_g_12.png)
 
-1. Na página do seu ambiente, clique em **Settings**.
+1. Na página do seu ambiente, clique em **Definições**. 
 
-    ![](images/L05/diad5l9u.png)
+    ![](images/L05/dv_p5_e4_g_13.png)
 
 1. Expandir **Users + permissions** **(1)** e seleccione **Application users** **(2)**.
 
