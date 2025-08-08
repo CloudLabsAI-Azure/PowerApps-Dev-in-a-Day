@@ -517,4 +517,4 @@ exportado al entorno de prueba.
 ## Resumen
 En esta práctica de laboratorio, aprendió a promover una solución en un entorno de prueba, configurar una entidad de servicio y administrar su solución usando GitHub para el control de versiones y la automatización del flujo de trabajo.
 
-## Has completado con éxito el laboratorio.
+## Has completado con éxito el laboratorio. Aprendió a crear componentes, integrar API y administrar soluciones de Power Apps a través de escenarios prácticos del mundo real.
