@@ -107,74 +107,73 @@ Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos am
 
     ![](images/L05/dv_p5_e4_g_13.png)
 
-1. Expandir **Users + permissions** **(1)** e seleccione **Application users** **(2)**.
+1. Expanda **Utilizadores + permissões** **(1)** e selecione **Utilizadores da aplicação** **(2)**. 
 
-    ![](images/L05/diad5l10u.png)
+    ![](images/L05/dv_p5_e4_g_14.png)
 
-1. Na página utilizadores da aplicação, clique em **+ New app user**.
+1. Na página **Utilizadores da aplicação**, clique em **+ Novo utilizador da aplicação**.  
 
-    ![](images/L05/diad5l11u.png)
+    ![](images/L05/dv_p5_e4_g_15.png)
 
-1. Na guia do utilizador da aplicação, clique em **+ Add an app**.
+1. Na guia **Criar um novo utilizador da aplicação**, clique em **+ Adicionar uma aplicação**.  
 
-    ![](images/L05/diad5l12.png)
+    ![](images/L05/dv_p5_e4_g_16.png)
 
-1. Selecione o **GitHub Deploy<inject key="DeploymentID" activityCopy="false" />** ***(1)*** registo de aplicação que criou anteriormente e clique em **Add** **( 2)**.
+1. Selecione o **GitHub Deploy<inject key="DeploymentID" activityCopy="false" />** **(1)** que criou anteriormente e clique em **Adicionar** **(2)**.  
 
-    ![](images/L05/diad5l13u.png)
+    ![](images/L05/dv_p5_e4_g_17.png)
 
-1. Digite **org** e selecione sua **unidade de negócios** **(1)** e em **Funções de segurança** clique em **editar símbolo (2)** e selecione 
-   **Administrador do sistema(3)** e clique em **Criar (4)**.
+1. Digite **org** e selecione a sua **unidade de negócio** **(1)**, em **Direitos de acesso** clique no **ícone de edição** **(3)**, selecione **System Administrator** **(2)** e clique em **Criar** **(4)**. 
 
-    ![](images/L05/diad5l14u.png)
-
-    **Observação:** se o símbolo **#** ainda estiver visível antes do GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, clique nele e atualize o painel para removê-lo.
-
-1. Volte a recuar para **Environments** ***(1)*** na lâmina lateral e seleccione o seu **DEV_ENV_TEST** ***(2)***.
-
-    ![](images/L05/diad5l17u.png)
-
-1. Na página de ambiente de teste, clique em **Settings**.
-
-    ![](images/L05/diad5l18u.png)
-
-1. Expandir **Users + permissions** ***(1)*** e seleccione **Application users** ***(2)***.
-
-    ![](images/L05/diad5l19u.png)
-
-1. Na página utilizadores da aplicação, clique em **+ New app user**.
-
-    ![](images/L05/diad5l11uu.png)
-
-1. No separador **Create a new app user**, clique em **+ Add an app**.
-
-    ![](images/L05/diad5l12.png)
-
-1. Selecione o **GitHub Deploy<inject key="DeploymentID" activityCopy="false" />** ***(1)*** registo de aplicação que criou anteriormente e clique em **Add** ***(2)***.
-
-    ![](images/L05/diad5l13uu.png)
-
-1. Digite **org** e selecione sua **unidade de negócios** **(1)** e em **Funções de segurança** clique em **editar símbolo (2)** e selecione **Administrador do sistema(3)** e clique em **Criar (4)**.
-
-    ![](images/L05/diad5l14uu.png)
+    ![](images/L05/dv_p5_e4_g_18.png)
 
     **Observação:** se o símbolo **#** ainda estiver visível antes do GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, clique nele e atualize o painel para removê-lo.
 
-1. Clique em **Environments** ***(1)*** e seleccione o seu **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
+1. Volte para **Ambientes** **(1)** no painel lateral e selecione o seu ambiente **DEV_ENV_TEST** **(2)**. 
 
-    ![](images/L05/envu.png)
+    ![](images/L05/dv_p5_e4_g_20.png)
+
+1. Na página de ambiente de teste, clique em **Definições**. 
+
+    ![](images/L05/dv_p5_e4_g_13.png)
+
+1. Expanda **Utilizadores + permissões** **(1)** e selecione **Utilizadores da aplicação** **(2)**.
+
+    ![](images/L05/dv_p5_e4_g_14.png)
+
+1. Na página **Utilizadores da aplicação**, clique em **+ Novo utilizador da aplicação**.  
+
+    ![](images/L05/dv_p5_e4_g_15.png)
+
+1. No separador **Criar um novo utilizador da aplicação**, clique em **+ Adicionar uma aplicação**. 
+
+    ![](images/L05/dv_p5_e4_g_16.png)
+
+1. Selecione o registo de aplicação **GitHub Deploy <inject key="DeploymentID" activityCopy="false" />** **(1)** que criou anteriormente e clique em **Adicionar** **(2)**.  
+
+    ![](images/L05/dv_p5_e4_g_17.png)
+
+1. Digite **org** e selecione a sua **unidade de negócio** **(1)**, em **Direitos de acesso** clique no **ícone de edição (3)**, selecione **System Administrator (2)** e clique em **Criar (4)**.
+
+    ![](images/L05/dv_p5_e4_g_18.png)
+
+    **Observação:** se o símbolo **#** ainda estiver visível antes do GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, clique nele e atualize o painel para removê-lo.
+
+1. Clique em **Ambientes** **(1)** da lâmina lateral e seleccione o seu **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** **(2)**.
+
+    ![](images/L05/dv_p5_e4_g_12.png)
+
+1. Copie o **Environment URL** e guarde-o num bloco de notas para utilizá-lo em passos futuros.
+
+    ![](images/L05/dv_p5_e4_g_19.png)
+
+1. No menu à esquerda, clique em **Ambientes** **(1)** e, na lista apresentada, selecione o ambiente **DEV_ENV_TEST** **(2)**.  
+
+    ![](images/L05/dv_p5_e4_g_20.png)
 
 1. Copie o **Environment URL** e guarde-o num bloco de notas, estará a utilizar este URL em passos futuros.
 
-    ![](images/L05/diad5l211u.png)
-
-1. Volte para **Environments** ***(1)*** e seleccione **DEV_ENV_TEST(2)**.
-
-    ![](images/L05/diad5l17uu.png)
-
-1. Copie o **Environment URL** e guarde-o num bloco de notas, estará a utilizar este URL em passos futuros.
-
-    ![](images/L05/diad5l22u.png)
+    ![](images/L05/dv_p5_e4_g_21.png)
 
 ## Exercício 2 – Promover Solução para Teste Ambiente
 
