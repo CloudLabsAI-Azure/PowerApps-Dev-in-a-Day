@@ -188,25 +188,25 @@ ambiente e importá-lo para o ambiente de teste.
     https://make.powerapps.com
     ```
 
-2. Vá para **Soluções (1)**, selecione **Contoso Badges conector (2)** e clique em **Exportar solução (3)**.
+1. Vá para **Soluções (1)**, selecione **Contoso Badges conector (2)** e clique em **Exportar solução (3)**.
 
     ![](images/L05/dv_p5_e4_g_22.png)
 
-4. Na página **Antes de exportar**, clique em **Publicar** para publicar todas as alterações realizadas. 
+1. Na página **Antes de exportar**, clique em **Publicar** para publicar todas as alterações realizadas. 
 
     ![](images/L05/dv_p5_e4_g_23.png)
 
-5. Na página **Antes de exportar**, clique em **Seguinte** para continuar após a publicação das alterações.  
+1. Na página **Antes de exportar**, clique em **Seguinte** para continuar após a publicação das alterações.  
 
     ![](images/L05/dv_p5_e4_g_24.png)
 
-6. Na página **Exportar esta solução**, selecione a opção **Gerido (recomendado)** **(1)** e clique em **Exportar** **(2)**. 
+1. Na página **Exportar esta solução**, selecione a opção **Gerido (recomendado)** **(1)** e clique em **Exportar** **(2)**. 
 
     ![](images/L05/dv_p5_e4_g_25.png)
 
-7. Aguarde que a solução seja exportada.
+1. Aguarde que a solução seja exportada.
 
-8. Quando a exportação for concluída, clique em **Transferir** para baixar o ficheiro da solução exportada. 
+1. Quando a exportação for concluída, clique em **Transferir** para baixar o ficheiro da solução exportada. 
 
     ![](images/L05/dv_p5_e4_g_26.png)
 
@@ -220,25 +220,25 @@ ambiente e importá-lo para o ambiente de teste.
 
     ![](images/L05/dv_p5_e4_g_27.png)
 
-3. Clique em **Importar solução**. 
+1. Clique em **Importar solução**. 
 
     ![](images/L05/dv_p5_e4_g_28.png)
 
     >**Nota:** Experimente atualizar o navegador se as soluções não forem abertas.
 
-4. Clique em **Procurar**. 
+1. Clique em **Procurar**. 
 
     ![](images/L05/dv_p5_e4_g_29.png)
 
-5. Na janela **Abrir**, selecione o ficheiro **ContosoBadgesconnector_1_0_0_1_managed.zip (1)** e clique em **Abrir (2)**.
+1. Na janela **Abrir**, selecione o ficheiro **ContosoBadgesconnector_1_0_0_1_managed.zip (1)** e clique em **Abrir (2)**.
 
     ![](images/L05/dv_p5_e4_g_30.png)
 
-6. Clique em **Seguinte** para continuar com a importação da solução. 
+1. Clique em **Seguinte** para continuar com a importação da solução. 
 
     ![](images/L05/dv_p5_e4_g_31.png)
 
-8. A solução deve ser importada com sucesso. **Não** navegue por esta página.
+1. A solução deve ser importada com sucesso. **Não** navegue por esta página.
 
 ### Tarefa 3: Conector de teste
 
@@ -246,49 +246,49 @@ ambiente e importá-lo para o ambiente de teste.
 
     ![](images/L05/dv_p5_e4_g_32.png)
 
-4. Na lista de itens da solução, clique em **Badges connector** para abrir o conector.  
+1. Na lista de itens da solução, clique em **Badges connector** para abrir o conector.  
 
     ![](images/L05/dv_p5_e4_g_33.png)
 
     >**Nota**: Se receber a mensagem de erro **could not retrieve the connector data**, aguarde de 5 a 10 minutos e atualize os dados do conector. Caso o problema persista, elimine o conector importado e repita os **passos 5 a 10** da **Tarefa 2: Importar a solução**, depois tente abrir o conector novamente.
 
-3. Clique em **Editar**.
+1. Clique em **Editar**.
 
     ![](images/L05/dv_p5_e4_g_34.png)
 
-4. Selecione o separador **Testar** do menu superior.
+1. Selecione o separador **Testar** do menu superior.
 
     ![](images/L05/dv_p5_e4_g_35.png)
 
-5. Clique em **+ Nova ligação**. Será aberto um novo separador do browser para criar uma ligação.
+1. Clique em **+ Nova ligação**. Será aberto um novo separador do browser para criar uma ligação.
 
     ![](images/L05/dv_p5_e4_g_36.png)
 
-6. Inicie uma nova janela ou aba do browser e navegue até ao URL abaixo para abrir a API Contoso Coffee Badges.
+1. Inicie uma nova janela ou aba do browser e navegue até ao URL abaixo para abrir a API Contoso Coffee Badges.
 
     ```
     https://contosobadgestest.azurewebsites.net/
     ```
 
-7. Clique no link **Get an API Key**.
+1. Clique no link **Get an API Key**.
 
     ![](images/L05/dv_p5_e4_g_37.png)
 
-8. Copie o valor **API Key**.
+1. Copie o valor **API Key**.
 
-9. Volte ao editor do conector, cole a chave da API que copiou no passo anterior e clique em **Create connection**. Agora, feche o separador do browser clicando em **X**.
+1. Volte ao editor do conector, cole a chave da API que copiou no passo anterior e clique em **Create connection**. Agora, feche o separador do browser clicando em **X**.
 
     ![](images/L03/image61.png)
 
-10. Clique em **Refresh Connections**.
+1. Clique em **Refresh Connections**.
 
     ![](images/L03/image62.png)
 
-11. Vá para a seção **Operações (1)** e selecione a operação **AddCredit (2)**. Forneça o seu e-mail em **recipientId (3)**, insira um **name (4)**, introduza **1** em **points** e clique em **Operação de teste (5)**.
+1. Vá para a seção **Operações (1)** e selecione a operação **AddCredit (2)**. Forneça o seu e-mail em **recipientId (3)**, insira um **name (4)**, introduza **1** em **points** e clique em **Operação de teste (5)**.
 
     ![](images/L05/dv_p5_e4_g_38.png)
 
-13. O teste deve ter sucesso e a resposta deve parecer a image abaixo.
+1. O teste deve ter sucesso e a resposta deve parecer a image abaixo.
 
     ![](images/L05/dv_p5_e4_g_39.png)
 
@@ -309,67 +309,67 @@ Neste exercício, criará um repositório do GitHub e adicionar segredos do repo
 
     ![](images/L05/dv_p5_e4_g_40.png)
 
-3. Clique em **Novo** para criar um repositório.
+1. Clique em **Novo** para criar um repositório.
 
     ![](images/L05/dv_p5_e4_g_41.png)
 
-4. Introduza **PrioritZ (1)** para o nome do repositório, selecione **Público (2)** e ative a opção **Adicionar README (3)**. Em seguida, clique em **Criar repositório (4)**.
+1. Introduza **PrioritZ (1)** para o nome do repositório, selecione **Público (2)** e ative a opção **Adicionar README (3)**. Em seguida, clique em **Criar repositório (4)**.
 
     ![](images/L05/dv_p5_e4_g_42.png)
 
-5. Clique em **Configurações** para abrir o separador de definições.
+1. Clique em **Configurações** para abrir o separador de definições.
 
     ![](images/L05/dv_p5_e4_g_43.png)
 
-6. Aceda à secção **Configurações (1)**, expanda **Segredos e variáveis (2)** e selecione **Ações (3)**.
+1. Aceda à secção **Configurações (1)**, expanda **Segredos e variáveis (2)** e selecione **Ações (3)**.
 
     ![](images/L05/dv_p5_e4_g_44.png)
 
     > **Nota:** Os valores fornecidos não ficarão visíveis depois de criar o item, por isso, dedique algum tempo para obter os valores corretos.
 
-7. Clique em **Novo segredo do repositório** para adicionar um segredo.
+1. Clique em **Novo segredo do repositório** para adicionar um segredo.
 
     ![](images/L05/dv_p5_e4_g_45.png)
 
-8. Insira **PowerPlatformAppID (1)** para Nome e cole o nome de usuário odl: **<inject key="AzureAdUserEmail"></inject> (2)** e clique em **Segredo (3)**
+1. Insira **PowerPlatformAppID (1)** para Nome e cole o nome de usuário odl: **<inject key="AzureAdUserEmail"></inject> (2)** e clique em **Segredo (3)**
 
     ![](images/L05/dv_p5_e4_g_46.png)
 
-9. Clique em **Novo segredo do repositório** novamente.
+1. Clique em **Novo segredo do repositório** novamente.
 
     ![](images/L05/dv_p5_e4_g_47.png)
 
-10. Insira **PowerPlatformClientSecret (1)** para Nome e cole a senha: **<inject key="AzureAdUserPassword"></inject> (2)** e clique em **Adicionar Segredo (3)**
+1. Insira **PowerPlatformClientSecret (1)** para Nome e cole a senha: **<inject key="AzureAdUserPassword"></inject> (2)** e clique em **Adicionar Segredo (3)**
 
     ![](images/L05/dv_p5_e4_g_48.png)
 
-11. Clique em **Novo segredo do repositório** novamente.
+1. Clique em **Novo segredo do repositório** novamente.
 
-12. Introduza **PowerPlatformTenantID (1)** para Nome e colar o secreto **Tenant ID (2)** do seu bloco de notas que observou anteriormente em **`Exercício 1 -> Tarefa 1 -> Passo 5`** no campo **Value** e clique em **Segredo (3)**.
+1. Introduza **PowerPlatformTenantID (1)** para Nome e colar o secreto **Tenant ID (2)** do seu bloco de notas que observou anteriormente em **`Exercício 1 -> Tarefa 1 -> Passo 5`** no campo **Value** e clique em **Segredo (3)**.
 
     ![](images/L05/dv_p5_e4_g_49.png)
 
-13. Clique novamente em **Novo segredo do repositório**.
+1. Clique novamente em **Novo segredo do repositório**.
 
-14. Introduza **PowerPlatformDevUrl (1)** para o nome e cole o **Dev environment URL (2)** do seu bloco de nota que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 17`** no campo **Valor** e clique em **Segredo (3)**.
+1. Introduza **PowerPlatformDevUrl (1)** para o nome e cole o **Dev environment URL (2)** do seu bloco de nota que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 17`** no campo **Valor** e clique em **Segredo (3)**.
 
     >**Nota**: Certifique-se de que está a colar o URL do ambiente de desenvolvimento denominado **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 17`**
 
     ![](images/L05/dv_p5_e4_g_50.png)
 
-15. Clique em **New repository secret** mais uma vez.
+1. Clique em **New repository secret** mais uma vez.
 
-16. Introduza **PowerPlatformTestUrl (1)** para o nome e cole o **Test Environment URL (2)** do seu bloco de nota que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 19`** no campo **Value** e clique em **Segredo (3)**.
+1. Introduza **PowerPlatformTestUrl (1)** para o nome e cole o **Test Environment URL (2)** do seu bloco de nota que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 19`** no campo **Value** e clique em **Segredo (3)**.
 
     >**Nota**: Certifique-se de que está a colar o URL do ambiente de teste denominado **DEV_ENV_TEST** que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 19`**
 
     ![](images/L05/dv_p5_e4_g_51.png)
 
-17. Agora deve ter **5** segredos do repositório.
+1. Agora deve ter **5** segredos do repositório.
 
     ![](images/L05/dv_p5_e4_g_52.png)
 
-18. Fique nesta página.
+1. Fique nesta página.
 
 ### Exercício 4 – Exportação e Branching
 
@@ -429,21 +429,21 @@ Nesta tarefa, criará um workflow the GitHub Actions utilizando o YAML fornecido
 
     ![](images/L05/dv_p5_e4_g_66.png)
 
-23. Adicione uma descrição se desejar e clique em **Criar solicitação de pull**.
+1. Adicione uma descrição se desejar e clique em **Criar solicitação de pull**.
 
     ![](images/L05/dv_p5_e4_g_67.png)
 
-24. Agora deve ver o resumo do pedido de pull. Confirme que o ramo não tem conflitos com o ramo principal e que as alterações podem ser fundidas automaticamente no ramo principal.
+1. Agora deve ver o resumo do pedido de pull. Confirme que o ramo não tem conflitos com o ramo principal e que as alterações podem ser fundidas automaticamente no ramo principal.
 
-25. Clique no ícone de seta ao lado do botão **Solicitação de pull de mesclagem** **(1)** e selecione **Esmagar e mesclar** **(2)**.
+1. Clique no ícone de seta ao lado do botão **Solicitação de pull de mesclagem** **(1)** e selecione **Esmagar e mesclar** **(2)**.
 
     ![](images/L05/dv_p5_e4_g_68.png)
 
-26. Clique em **Confirmar squash e mesclar**.
+1. Clique em **Confirmar squash e mesclar**.
 
     ![](images/L05/dv_p5_e4_g_69.png)
 
-28. O pedido de pull deve ser efetuado com sucesso.
+1. O pedido de pull deve ser efetuado com sucesso.
 
     ![](images/L05/dv_p5_e4_g_70.png)
 
@@ -472,21 +472,21 @@ Neste exercício, criará uma ação de workflow e adicionará passos que libert
 
     ![](images/L05/dv_p5_e4_g_74.png)
 
-16. Clique em **Confirmar alterações** e, em seguida, clique novamente em **Confirmar alterações** para confirmar.
+1. Clique em **Confirmar alterações** e, em seguida, clique novamente em **Confirmar alterações** para confirmar.
 
     ![](images/L05/dv_p5_e4_g_75.png)
 
     ![](images/L05/dv_p5_e4_g_76.png)
 
-22. No campo de nome do ficheiro, introduza **release-to-test.yml**.
+1. No campo de nome do ficheiro, introduza **release-to-test.yml**.
 
     ![](images/L05/dv_p5_e4_g_79.png)
 
-24. Navegue de volta ao portal PowerApps e Certifique-se de que está no ambiente de teste PowerApps.
+1. Navegue de volta ao portal PowerApps e Certifique-se de que está no ambiente de teste PowerApps.
 
     ![](images/L05/dv_p5_e4_g_77.png)
 
-25. Selecione o separador **Soluções (1)** no lado esquerdo e clique em **Gerida (2)**. Deve ver a solução implementada com o nome **Prioritz (3)**.
+1. Selecione o separador **Soluções (1)** no lado esquerdo e clique em **Gerida (2)**. Deve ver a solução implementada com o nome **Prioritz (3)**.
 
     ![](images/L05/dv_p5_e4_g_78.png)
 
