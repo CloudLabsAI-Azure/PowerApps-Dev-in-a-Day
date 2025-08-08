@@ -368,7 +368,7 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
 
 1. Haga clic en **Nuevo secreto del repositorio** nuevamente.
 
-1. Ingrese **PowerPlatformDevUrl (1)** como Nombre y pegue la URL secreta del entorno de desarrollo (2)** de su bloc de notas que copió en **`Ejercicio 1 -> Tarea 3 -> Paso 17`** en el campo **Valor** y haga clic en **Agregar secreto (3)**.
+1. Ingrese **PowerPlatformDevUrl (1)** como Nombre y pegue la **URL secreta (2)** del entorno de desarrollo de su bloc de notas que copió en **`Ejercicio 1 -> Tarea 3 -> Paso 17`** en el campo **Valor** y haga clic en **Agregar secreto (3)**.
 
     >**Nota**: Asegúrate de pegar la URL del entorno de desarrollo denominada **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** que copiaste en el **`Ejercicio 1 -> Tarea 3 -> Paso 17`**
    
@@ -517,4 +517,4 @@ exportado al entorno de prueba.
 ## Resumen
 En esta práctica de laboratorio, aprendió a promover una solución en un entorno de prueba, configurar una entidad de servicio y administrar su solución usando GitHub para el control de versiones y la automatización del flujo de trabajo.
 
-## Has completado con éxito el laboratorio.
+## Has completado con éxito el laboratorio. Aprendió a crear componentes, integrar API y administrar soluciones de Power Apps a través de escenarios prácticos del mundo real.

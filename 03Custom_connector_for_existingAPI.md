@@ -89,8 +89,7 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
      ![](images/303.png)
 
-   >**Nota:** Si tiene problemas para guardar el archivo, copie el código y péguelo en el Bloc de notas, luego guarde el archivo como **swagger.json**.
-
+     >**Nota:** Si tiene problemas para guardar el archivo, copie el código y péguelo en el Bloc de notas, luego guarde el archivo como **swagger.json**.
 
 1. Navegue hasta el portal de creación de Power Apps y asegúrese de estar en su entorno de desarrollo llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
