@@ -26,7 +26,7 @@ In this exercise, you will build the code component.
     
     ![](images/L02/authup.png)
 
-3. Click on the three-dot menu **... (1)** to expand additional options. Then, select **Terminal (2)** from the dropdown menu and click on **New Terminal (3)** to open a terminal session.
+3. Click on the ellipsis menu **... (1)** to expand additional options. Then, select **Terminal (2)** from the dropdown menu and click on **New Terminal (3)** to open a terminal session.
      
      ![](images/L02/L02-terminaluua.png)
 
@@ -74,29 +74,29 @@ In this exercise, you will build the code component.
     code -a.
     ```
 
-1. If you are presented with the below pop-up, click on **Yes** to trust the authors of the files.
+9. If you are presented with the below pop-up, click on **Yes** to trust the authors of the files.
 
-    ![](images/L02/image4.1.png)
+    ![](images/L02/8-8-25-l2-1.png)
 
-9. Review the created code component files by selecting the **Explorer** tab.
+10. Review the created code component files by selecting the **Explorer** tab.
     
      ![](images/L02/L02-explorer.png)
 
-10. Expand the **PrioritZDnDRanking** folder and then expand the sub-folder **generated**.
+11. Expand the **PrioritZDnDRanking** folder and then expand the sub-folder **generated**.
 
-11. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a component, including the properties exposed to the hosting app.
+12. Open the **ControlManifest.Input.xml** file. The manifest is the metadata file that defines a component, including the properties exposed to the hosting app.
 
       ![](images/L02/image6.png)
 
-12. Locate **data-set** XML element in **line number 21** in the **ControlManifest.Input.xml** file.
+13. Locate **data-set** XML element in **line number 21** in the **ControlManifest.Input.xml** file.
 
       ![](images/L02/image7.png)
 
-13. Change the **name** to **items** and the **display-name-key** to **items**. This defines the property that the app will bind to a collection of items.
+14. Change the **name** to **items** and the **display-name-key** to **items**. This defines the property that the app will bind to a collection of items.
 
       ![](images/L02/image8.png)
 
-14. Add the following properties in between the closing tag of the data-set element `</data-set>` and the opening tag of the `<resources>` element.
+15. Add the following properties in between the closing tag of the data-set element `</data-set>` and the opening tag of the `<resources>` element.
 
     > Add the following properties after **line number 26** in the **ControlManifest.Input.xml** file.
 
@@ -110,7 +110,7 @@ In this exercise, you will build the code component.
 
      ![](images/dataset-09.png)
 
-15. Locate `<resources>` section and add the below code after **code path** to add **css** resource. This will ensure that our styles will be bundled with the code component when it is deployed.
+16. Locate `<resources>` section and add the below code after **code path** to add **css** resource. This will ensure that our styles will be bundled with the code component when it is deployed.
 
     ```
     <css path="css/PrioritZDnDRanking.css" order="1" />
@@ -120,7 +120,7 @@ In this exercise, you will build the code component.
  
       >**Note:** Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
       
- 16. Notice the following two resources. This declares the component’s dependency on these two libraries. This is a result of specifying –framework React on initialization.
+ 17. Notice the following two resources. This declares the component’s dependency on these two libraries. This is a result of specifying –framework React on initialization.
 
      ```
      <platform-library name="React" version="16.8.6" />
@@ -129,21 +129,21 @@ In this exercise, you will build the code component.
 
      ![](images/platformcss0980.png)
     
-17. Click **File** and select **Save All** to save your changes.
+18. Click **File** and select **Save All** to save your changes.
 
-18. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
+19. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
 
       ![](images/L02/image12.png)
 
-19. Name the new folder as **css**.
+20. Name the new folder as **css**.
 
-20. Select the new **css** folder you created and then click **New File**
+21. Select the new **css** folder you created and then click **New File**
  
      ![](images/L02/image13.png)
  
- 21. Name the new file **PrioritZDnDRanking.css**.
+ 22. Name the new file **PrioritZDnDRanking.css**.
 
- 22. Paste the following CSS into the **PrioritZDnDRanking.css** file.
+ 23. Paste the following CSS into the **PrioritZDnDRanking.css** file.
     
        ```
         .prioritydnd-scroll-container {
@@ -163,11 +163,11 @@ In this exercise, you will build the code component.
         }
         ```
 
-23. The file should now look like the following.
+24. The file should now look like the following.
 
      ![](images/L02/image14.png)
 
-24. Click **File** and select **Save All** to save your changes.
+25. Click **File** and select **Save All** to save your changes.
 
 ### Task 2: Implement the component logic
 
@@ -197,7 +197,7 @@ In this exercise, you will build the code component.
     npm install react-beautiful-dnd
     ```
 
-    >**Note** : If you receive this error **npm is not recognised**, then perform the below steps:
+    >**Note:** If you receive this error **npm is not recognised**, then perform the below steps:
 
       1. Open PowerShell, then run this command `choco install -y --force nodejs`.
       2. Once the command execution is done, close Visual Studio Code and open it again.
@@ -304,7 +304,7 @@ In this exercise, you will build the code component.
   
     ![](images/L02/image25.png)
  
-     > **Note** : **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
+     > **Note:** **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
 
 22. After completing all the steps, replace the existing code in your `index.ts` file with the following code to avoid errors. Then, press **CTRL + S** to save the file.:
 
@@ -428,9 +428,9 @@ In this exercise, you will build the code component.
    
 26. Click **File** and save all your changes.
 
-27. Click **Terminal** and select **New Terminal**.
+27. Click  on **Ellipsis** **(...) (1)** **Terminal (2)** and select **New Terminal (3)** if not already open.
      
-      ![](images/L02/image27.png)
+    ![](images/8-8-25-l1-23.png)
 
 28. Run the command below. This will build your component and identify any problems.
 
@@ -543,17 +543,17 @@ In this task, you will allow the publishing of canvas apps with code components 
 
 4. Click **Settings** from top menu.
     
-     ![](images/L02/settingsu.png)
+     ![](images/8-8-25-l2-2.png)
 
 5. Expand **Product(1)** and select **Features(2)**.
     
-     ![](images/L02/featureu.png)
+     ![](images/8-8-25-l2-3.png)
 
 6. Turn on **Allow publishing of canvas apps with code components**, which should be under **Power Apps component framework for canvas apps**. Scroll down and click on **Save**.
      
-      ![](images/L02/image35.2u.png)
+      ![](images/8-8-25-l2-4.png)
 
-      ![](images/L02/image35.2uu.png)
+      ![](images/8-8-25-l2-5.png)
 
  ### Task 2: Edit canvas app
 
@@ -566,6 +566,8 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
    ```
 
 2. Select **Solutions** and open the **PrioritZ** solution.
+
+   ![](images/8-8-25-l2-6.png)
     
 3. Select **Apps (1)** , select the **PrioritZ Ask (2)** app and click **Edit (3)**.
 
@@ -581,33 +583,31 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     
      ![](images/L02/L02-codeuu-1.png)
  
-6. Select the **Screens** tab.
+6. Select the **Screens (1)** tab.
 
-7. Expand **Vote Screen (1)** and Select the **Votes gallery (2)**.
+7. Expand **Vote Screen (2)** and Select the **Votes gallery (3)**.
 
-     ![](images/L02/L02-votescreenu.png)
+     ![](images/8-8-25-l2-7.png)
 
-8. Select the **Width** from the properties dropdown.    
+8. Select the **Width (2)** from the properties dropdown **(1)**.    
 
-     ![](images/L02/L02-votescreen1u.png)
+     ![](images/8-8-25-l2-8.png)
 
 9. Set the **Width** value of the Votes gallery to **570**.
 
-     ![](images/L02/L02-widthu.png)
+      ![](images/8-8-25-l2-9.png)
     
 10. The screen should now look like the image below.
      
       ![](images/L02/image40u.png)
 
-11. Select the **Votes Screen** and click **+ Insert**.
-      
-     ![](images/L02/image41u.png)
+11. Select the **Votes Screen** and click **+ Insert (1)**.
  
-12. Select the component **PrioritZDnDRanking** under **Code Components**.
+12. Select the component **PrioritZDnDRanking (2)** under **Code Components**.
       
-     ![](images/L02/image42uuu.png)
+     ![](images/8-8-25-l2-10.png)
     
-    >**Note:** If you receive a pop-up for "Select a data source," simply click **Close**.
+       >**Note:** If you receive a pop-up for "Select a data source," simply click **Close**.
 
      ![](images/L02/popups.png)    
  
