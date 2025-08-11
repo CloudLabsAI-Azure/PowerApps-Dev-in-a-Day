@@ -32,7 +32,7 @@ Neste exercício, você irá construir o componente de código.
    
 1. Selecione o separador **Power Platform (1)** e certifique-se de que o seu perfil **Dev Auth (2)** está selecionado. 
     
-   >**Nota**: O separador Power Platform já está instalado.
+   >**Nota:** O separador Power Platform já está instalado.
     
     ![](images/L02/dv_port2_e1_g_16.png)
 
@@ -110,7 +110,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image10.png)
 
-    >**Nota**: Certifique-se de que não descolhe o caminho **resx**, pois estará a enfrentar um problema na próxima tarefa ao construir o componente de código se este não for comentado.
+    >**Nota:** Certifique-se de que não descolhe o caminho **resx**, pois estará a enfrentar um problema na próxima tarefa ao construir o componente de código se este não for comentado.
 
 1. Observe os dois recursos seguintes. Isto declara a dependência do componente destes dois bibliotecas. Isto é o resultado da especificação – framework React na inicialização.
         
@@ -188,7 +188,7 @@ Neste exercício, você irá construir o componente de código.
     npm install react-beautiful-dnd
     ```
 
-    >**Nota**: Se receber este erro **npm is not recognised**, execute os passos abaixo:
+    >**Nota:** Se receber este erro **npm is not recognised**, execute os passos abaixo:
 
     1. Abra o PowerShell e execute este comando `choco install -y --force nodejs`.
     
@@ -427,7 +427,7 @@ Neste exercício, você irá construir o componente de código.
     npm run-script build
     ```
 
-    > **Nota**: Se a operação de compilação falhar com este erro **`Root element is missing`**, certifique-se de que o **resx path** é comentado no ficheiro Manifest.Xml e tente construir o componente novamente.
+    > **Nota:** Se a operação de compilação falhar com este erro **`Root element is missing`**, certifique-se de que o **resx path** é comentado no ficheiro Manifest.Xml e tente construir o componente novamente.
 
 1. A construção deve ter sucesso. Se algum erro, resolva-os antes de prosseguir.
 
@@ -439,13 +439,13 @@ Neste exercício, você irá construir o componente de código.
     npm start
     ```
 
-    > **Observação**: se você receber um pop-up do Internet Explorer, feche-o, copie o URL do host local e cole-o em uma nova guia no Edge.
+    > **Nota:** se você receber um pop-up do Internet Explorer, feche-o, copie o URL do host local e cole-o em uma nova guia no Edge.
 
 1. O teste deve iniciar, se não, copiar o endereço e colar-o numa nova janela do browser. Experimente arrastar os itens e ver se o comportamento funciona como esperado.
 
     ![](images/L02/imagee29u.png)
 
-    > **Nota**: Se o teste não começar como esperado, não poderá ver a saída esperada como mencionado. Verifique se seguiu as instruções anteriores e adicionou o código corretamente nos ficheiros **Manifest e Index**.
+    > **Nota:** Se o teste não começar como esperado, não poderá ver a saída esperada como mencionado. Verifique se seguiu as instruções anteriores e adicionou o código corretamente nos ficheiros **Manifest e Index**.
 
 1. Feche o teste fechando a aba do navegador.
 
@@ -461,7 +461,7 @@ Neste exercício, você irá construir o componente de código.
     pac pcf push --publisher-prefix contoso
     ```
 
-    > **Nota**: 
+    > **Nota:** 
      1. Se você encontrar a mensagem de erro **"Erro: Ferramenta necessária ausente: MSBuild.exe/dotnet.exe. Adicione MSBuild.exe/dotnet.exe na variável de ambiente Path ou use 'Desenvolvedor 
         Prompt de comando para VS'"**, siga estas etapas:
         1. Navegue até o diretório `C:\LabFiles` e abra **dotnet-sdk-8.0.100-win-x64**.
