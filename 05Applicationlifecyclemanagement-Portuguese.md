@@ -493,4 +493,7 @@ Neste exercício, criará uma ação de workflow e adicionará passos que libert
 ## Resumo
 Neste laboratório, aprendeu a promover uma solução para um ambiente de teste, a configurar um service principal e a gerir a sua solução utilizando o GitHub para controlo de versões e automação do workflow.
 
-## Concluiu o laboratório com sucesso
+## Resumo Geral — Código Baixo para Pro-Dev num Dia
+Este laboratório intensivo combina desenvolvimento low-code e pro-dev no Power Platform. Irá importar e personalizar soluções, criar componentes de código e conectores personalizados, integrar Azure Functions e aplicar práticas de ALM com GitHub, promovendo soluções entre ambientes de forma eficiente e escalável.
+
+## Concluiu este laboratório com sucesso
