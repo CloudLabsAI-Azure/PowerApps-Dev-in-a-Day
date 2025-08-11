@@ -222,7 +222,6 @@ Neste exercício, você irá construir o componente de código.
     
      ![](images/L02/image19.png)
 
-
 1. Localize a classe **Export** na **linha número 7**.
 
      ![](images/L02/image20.png)
