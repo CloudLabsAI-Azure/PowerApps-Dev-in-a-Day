@@ -18,7 +18,6 @@ Neste exercício, criará uma base de dados Dataverse no ambiente de teste, que 
 
 Ao analisar a API, verifica-se que tem quatro operações e utiliza uma API Key paraa autenticação.
 
-
 ![](images/L03/image1.png)
 
 ### Tarefa 1: Criar base de dados
@@ -96,7 +95,6 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
     ![](images/L03/image4.png)
 
-
 1. Navegue até ao portal do fabricante do Power Apps e certifique-se de que está no seu ambiente de desenvolvimento chamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
     ```
@@ -110,7 +108,6 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 1. Clique em **+ Criar (1)**, passe o cursor sobre **Automatização (2)** e selecione **Conector personalizado (3)**.
 
     ![](images/L03/dv_p4_e3_g_10.png)
-
 
 1. Na lâmina **Criar conector**, introduza as seguintes informações:
 
@@ -431,7 +428,6 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 
     ![](images/L03/image42-1u.png)
 
-
 1. Selecione a **Tree view**.
 
 1. Na **Vista de árvore (1)**, selecione o separador **Ecrãs (2)**.  
@@ -442,7 +438,6 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
 1. Clique duas vezes na imagem recém-adicionado e altere o seu nome para **User badge**.
 
     ![](images/L03/image44.png)
-
 
 1. Defina o crachá do utilizador **Imagem** valor para a fórmula abaixo.
 
