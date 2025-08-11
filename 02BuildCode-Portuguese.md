@@ -417,9 +417,9 @@ Neste exercício, você irá construir o componente de código.
 
 1. Clique em **File** e guarde todas as suas alterações.
 
-1. Clique em **Terminal** e seleccione **New Terminal**.
+1. Clique no menu de opções **(1)** no canto superior direito, selecione **Terminal** **(2)** e depois clique em **Novo Terminal** **(3)** para abrir um novo terminal no VS Code.
 
-    ![](images/L02/image27.png)
+   ![](images/L01/dv_port2_e1_g_14.png)
 
 1. Execute o comando abaixo. Isto irá construir o seu componente e identificar quaisquer problemas.
 
