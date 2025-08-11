@@ -1,26 +1,20 @@
-# Laboratorio 04: Función Azure
+# Laboratorio 04: Azure Function
 
 ## Duración estimada: 110 minutos
 
-Trabajando como parte del equipo de fusión de PrioritZ, configurará un conector personalizado para una nueva API que
-compilar utilizando Azure Functions. El equipo ha decidido cambiar la lógica cuando un usuario crea una nueva "pregunta" a
-la API de funciones de Azure. Esto mantendrá la fórmula de Power App simple y permitirá implementar una lógica más compleja.
-agregado en el futuro. En esta práctica de laboratorio, creará la función, utilizará la API de Dataverse y protegerá la API con
-Microsoft Entra ID configura un conector personalizado para usar la API y cambia la aplicación Power para usar la
-conector.
+Como parte del equipo de fusión de PrioritZ, configurará un conector personalizado para una nueva API que crea con Azure Functions. El equipo decidió trasladar la lógica a la API de Azure Functions cuando un usuario crea una nueva solicitud. Esto simplificará la fórmula de Power App y permitirá añadir lógica más compleja en el futuro. En este laboratorio, creará la función, usará la API de Dataverse y la protegerá con Microsoft Entra ID. Configurará un conector personalizado para usar la API y modificará Power App para que lo use.
 
-Nota: Esta práctica de laboratorio requiere una suscripción (o prueba) de Azure en el mismo inquilino que su Dataverse.
-ambiente.
+Nota: Esta práctica de laboratorio requiere una suscripción (o prueba) de Azure en el mismo inquilino que su entorno de Dataverse.
 
 ## Objetivo de laboratorio
 
-- Ejercicio 1: crear una función de Azure 
+- Ejercicio 1: Crear Azure Function
 - Ejercicio 2: Implementación de funciones 
 - Ejercicio 3: Publicar en Azure 
 - Ejercicio 4: Crear conector 
 - Ejercicio 5: Usar la función de la aplicación Canvas
 
-## Ejercicio 1: creación de una función de Azure
+## Ejercicio 1: Crear Azure Function
 
 En este ejercicio, instalará la extensión de herramientas de Azure para Visual Studio Code y creará la función
 
@@ -77,11 +71,11 @@ En este ejercicio, instalará la extensión de herramientas de Azure para Visual
 
     ![](images/L04/vscode7.png)
 
-1. Seleccione **.NET 6.0 LTS** para el tiempo de ejecución de .NET.
+1. Seleccione **.NET 6.0 LTS** para el runtime de .NET.
  
     ![](images/L04/vscode8.png)
 
-1. Seleccione **Disparador HTTP con OpenAPI** como plantilla.
+1. Seleccione **HTTP trigger con OpenAPI** como plantilla.
 
     ![](images/L04/vscode9.png)
 
@@ -105,7 +99,7 @@ En este ejercicio, instalará la extensión de herramientas de Azure para Visual
 
 1. Si aparece una ventana emergente **¿Confías en los autores de los archivos de esta carpeta**? Haz clic en **Sí, confío en el autor**.
 
-1. Haga clic en **Terminal** en el menú superior y seleccione **Ejecutar tarea de compilación**.
+1. Haga clic en **Terminal** en el menú superior y seleccione **Run Build Task...**.
   
    ![](images/L04/image%20(9).png)
 
@@ -153,13 +147,13 @@ En este ejercicio, implementará la función.
       }
       }
       ```
-   Después de agregar el código, tu **Model.cs** se verá como la siguiente captura de pantalla:
+   Después de agregar el código, su **Model.cs** se verá como la siguiente captura de pantalla:
    
    ![](images/L04/vscode14.png)
    
 1. Abra el archivo **CreateTopic.cs**.
 
-1. Localice los atributos del método Ejecutar (números de línea 24 a 27) que están presentes encima del **método Ejecutar** y reemplácelos con los atributos siguientes. Esto proporciona nombres fáciles de usar cuando creamos un conector para usar la API.
+1. Localice los atributos del método Run (números de línea 24 a 27) que están presentes encima del **método Run** y reemplácelos con los atributos siguientes. Esto proporciona nombres fáciles de usar cuando creamos un conector para usar la API.
     
        
       ```
@@ -170,11 +164,11 @@ En este ejercicio, implementará la función.
       [OpenApiRequestBody(contentType: "application/json", bodyType: typeof(TopicModel))]
       ```
       
-      Después de agregar los atributos, su **método de ejecución** debería verse como la siguiente captura de pantalla:
+      Después de agregar los atributos, su **método Run** debería verse como la siguiente captura de pantalla:
       
       ![](images/L04/image%20(13).png)
 
-1. Elimine **get** del método Ejecutar, ya que solo debería tener **post**.
+1. Elimine **get** del método Run, ya que solo debería tener **post**.
   
     ![](images/L04/image%20(14).png)
 
@@ -208,9 +202,7 @@ En este ejercicio, implementará la función.
       
      ![](images/L04/vscode15.png)
   
-1. Agregue el siguiente método después del método **Ejecutar**. Este método utilizará el token pasado desde el
-    llamar a la aplicación para obtener un nuevo token que permitirá que la función use la API de Dataverse en nombre de
-    el usuario que llama.
+1. Agregue el siguiente método después del método **Ejecutar**. Este método utilizará el token pasado desde la aplicación que hace la llamada para obtener un nuevo token que permitirá que la función use la API de Dataverse en nombre de el usuario que llama.
     
       ```
       public static async Task<string> GetAccessTokenAsync(HttpRequest req,string resourceUri)
@@ -246,8 +238,7 @@ En este ejercicio, implementará la función.
 
     ![](images/L04/vscode16.png)
 
-1. Reemplace el código dentro del método **Ejecutar** con el código siguiente. Esto proporcionará una instancia de la
-    API de Dataverse y utilice la función GetAccessToken que acabamos de definir.
+1. Reemplace el código dentro del método **Run** con el código siguiente. Esto proporcionará una instancia de la API de Dataverse y utilizará la función GetAccessToken que acabamos de definir.
     
       ```    
       _logger.LogInformation("Starting Create Topic");
@@ -266,8 +257,7 @@ En este ejercicio, implementará la función.
 
     ![](images/L04/vscode17.png)
 
-1. Agregue el siguiente código después de la declaración if del método **Ejecutar** para volver a serializar la solicitud. Este
-    nos proporcionará los datos pasados ​​por la persona que llama.
+1. Agregue el siguiente código después de la declaración if del método **Run** para volver a serializar la solicitud. Este nos proporcionará los datos pasados ​​por la persona que llama.
     
       ```
       string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
@@ -276,8 +266,7 @@ En este ejercicio, implementará la función.
       ```
     ![](images/L04/vscode18.png)
 
-1. Agregue el siguiente código que crea la fila al método **Ejecutar** después del código que agregó en el paso anterior para **volver a serializar la solicitud**. Este código crea las filas en
-    Dataverse es donde podríamos agregar más lógica en el futuro.
+1. Agregue el siguiente código que crea la fila al método **Run** después del código que agregó en el paso anterior para **volver a serializar la solicitud**. Este código crea las filas en Dataverse y es donde podríamos agregar más lógica en el futuro.
     
        ```
       var ask = new Entity("contoso_prioritztopic");
@@ -310,7 +299,7 @@ En este ejercicio, implementará la función.
 
     ![](images/L04/vscode19.png)
 
-1. Agregue el siguiente código al método **Ejecutar** para devolver el ID del tema como JSON (requerido por Power Apps) después del código que agregó en el paso anterior para crear la fila para el método **Ejecutar**.
+1. Agregue el siguiente código al método **Run** para devolver el ID del tema como JSON (requerido por Power Apps) después del código que agregó en el paso anterior para crear la fila para el método **Run**.
 
       ```
       return new OkObjectResult(topicId);
@@ -318,11 +307,11 @@ En este ejercicio, implementará la función.
    
     ![](images/L04/vscode20.png)
 
-1. Haga clic en **Terminal (1)** y seleccione **Ejecutar tarea de compilación (2)**.
+1. Haga clic en **Terminal (1)** y seleccione **Run Build Task... (2)**.
 
     ![](images/L04/vscode21.png)
 
-1. La carrera debería tener éxito. Presione cualquier tecla para detener.
+1. La ejecución debería tener éxito. Presione cualquier tecla para detener.
     
      > **Nota** :
 
@@ -350,11 +339,11 @@ En este ejercicio, implementará la función en Azure.
 
 1. Cierre la ventana del navegador de inicio de sesión una vez que se complete el proceso de inicio de sesión.
 
-1. Vuelva a Visual Studio Code y haga clic en **+** que está al lado de la **pestaña Recursos** para crear una nueva aplicación de funciones.
+1. Vuelva a Visual Studio Code y haga clic en **+** que está al lado de la **pestaña Recursos** para crear una nueva Function App.
   
     ![](images/L04/NewVSazure3u.png)
  
-1. Ahora, busque y seleccione **Crear aplicación de funciones en Azure**.
+1. Ahora, busque y seleccione **Create Function App in Azure**.
 
     ![](images/L04/vscode24u.png)
 
@@ -362,27 +351,27 @@ En este ejercicio, implementará la función en Azure.
 
     ![](images/L04/vscode25.png)
 
-1. Seleccione **.NET 6(LTS) en proceso**.
+1. Seleccione **.NET 6(LTS) In-process**.
 
     ![](images/L04/vscode26u.png)
 
-1. Seleccione la ubicación: **<inject key="Region" enableCopy="false" />** de la lista y espere a que se implemente la aplicación de función.
+1. Seleccione la ubicación: **<inject key="Region" enableCopy="false" />** de la lista y espere a que se implemente la Function App.
 
     ![](images/L04/vscode27.png)
     
-1. Una vez implementada la aplicación de funciones, haga clic en **Implementar en Azure** en la sección **Espacios de trabajo** y elija la aplicación de funciones que creó.
+1. Una vez implementada la Function App, haga clic en **Implementar en Azure** en la sección **Espacios de trabajo** y elija la Function App que creó.
     
      ![](images/L04/DeployNewu.png)
    
      ![](images/L04/DeployNew1u.png)
 
-1. Espere a que se implemente la aplicación de funciones y luego navegue hasta Azure Portal utilizando la siguiente URL.
+1. Espere a que se implemente la Function App y luego navegue hasta Azure Portal utilizando la siguiente URL.
 
     ```
     https://portal.azure.com/
     ```
     
-1. Seleccione **Todos los recursos**, busque la aplicación de funciones **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** que implementó anteriormente y haga clic para abrirla.
+1. Seleccione **Todos los recursos**, busque la Function App **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** que implementó anteriormente y haga clic para abrirla.
   
      ![](images/L04/vscode27.1.png)
 
@@ -410,8 +399,7 @@ En este ejercicio, implementará la función en Azure.
      
      ![](images/L04/vscode31.png)
 
-1. Copie el **ID de aplicación (cliente)** del registro de la aplicación **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** y guárdelo en un
-    bloc de notas como **ID de aplicación API PrioritZFL**. Necesitará esta identificación en pasos futuros. Este ID se utilizará para configurar la protección de la API.
+1. Copie el **ID de aplicación (cliente)** del registro de la aplicación **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** y guárdelo en un bloc de notas como **ID de aplicación API PrioritZFL**. Necesitará esta identificación en pasos futuros. Este ID se utilizará para configurar la protección de la API.
     
     ![](images/L04/image%20(33).png)
     
@@ -455,7 +443,7 @@ En este ejercicio, implementará la función en Azure.
 
 1. Marque la casilla de verificación **user_impersonation** y haga clic en **Agregar permiso**.
 
-    ![](images/L04/image%20(41)u.png)
+    ![](images/L04/image%20(41).png)
 
 1. Vuelva a **Inicio** y abra la aplicación de función **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />**.
    
@@ -463,13 +451,13 @@ En este ejercicio, implementará la función en Azure.
 
 1. Seleccione **Variables de entorno (1)** en **Configuración** en el menú del lado izquierdo.
   
-1. lamer **+ Agregar (2)**.
+1. Haga clic en **+ Agregar (2)**.
      
      ![](images/L04/vscode36u.png)
 
 1. Ingrese los siguientes detalles en la hoja **Agregar/Editar configuración de la aplicación** y haga clic en **Aplicar (3)**.
       
-      - **Nombre**: **ID de cliente (1)**
+      - **Nombre**: **ClientID (1)**
       - **Valor**: Pegue el **ID de aplicación API PrioritZFL (2)** que anotó anteriormente en el bloc de notas.
 
      ![](images/L04/vscode37u.png)
@@ -478,7 +466,7 @@ En este ejercicio, implementará la función en Azure.
 
 1. Ingrese los siguientes detalles en la hoja **Agregar/Editar configuración de la aplicación** y haga clic en **Aplicar (3)**.
       
-      - **Nombre**: **ClienteSecreto (1)**
+      - **Nombre**: **ClienteSecret (1)**
       - **Valor**: Pegue el **PrioritZFL API Secret (2)** que anotó anteriormente en el bloc de notas.
 
      ![](images/L04/vscode38u.png)
@@ -487,8 +475,8 @@ En este ejercicio, implementará la función en Azure.
 
 1. Ingrese los siguientes detalles en la hoja **Agregar/Editar configuración de la aplicación** y haga clic en **Aplicar (3)**.
       
-      - **Nombre**: **ID de inquilino (1)**
-      - **Valor**: pegue el **TenantID (2)** que anotó anteriormente en el bloc de notas.
+      - **Nombre**: **TenantID (1)**
+      - **Valor**: pegue el **ID de inquilino (2)** que anotó anteriormente en el bloc de notas.
 
      ![](images/L04/vscode39u.png)
      
@@ -563,7 +551,7 @@ En este ejercicio, implementará la función en Azure.
    
    ![](images/L04/diad4l5.png)
     
-1. Proporcione **PrioritZsecret** ***(1)*** como descripción, establezca el vencimiento en **3 meses** ***(2)*** y haga clic en **Agregar** ***(3). )***.
+1. Proporcione **PrioritZsecret** ***(1)*** como descripción, establezca el vencimiento en **3 meses** ***(2)*** y haga clic en **Agregar** ***(3).***.
 
    ![](images/L04/diad4l6.png)
 
@@ -603,7 +591,7 @@ En este ejercicio, creará un nuevo conector personalizado.
    
    ![](images/L04/diad4l12.png)
 
-1. Seleccione el recurso de función **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** de la lista.
+1. Seleccione el recurso de Azure Functions **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** de la lista.
      
    ![](images/L04/diad4l13.png)
     
@@ -653,11 +641,11 @@ En este ejercicio, creará un nuevo conector personalizado.
     - Secreto del cliente: Pegue **PrioritZ Connector Secret** ***(4)*** que copió anteriormente
     - ID de inquilino: pegue el **ID de inquilino** ***(5)*** que copió anteriormente.
     - URL del recurso: Pegue **ID de aplicación API PrioritZ** ***(6)*** que copió anteriormente
-    - Habilitar en nombre de inicio de sesión: **verdadera** ***(7)***
+    - Habilitar en nombre de inicio de sesión: **true** ***(7)***
 
    ![](images/L04/diad4l21.png) 
    
-### Tarea 2: conector de prueba
+### Tarea 2: Probar el conector
 
 1. Ahora navegue hasta el conector que acaba de crear y haga clic en el botón **editar**. Seleccione la pestaña **Prueba** ***(1)*** del menú desplegable y haga clic en **+ Nueva conexión** ***(2)***.
      
@@ -707,8 +695,7 @@ En este ejercicio, creará un nuevo conector personalizado.
 
 ### Ejercicio 5: utilizar la función de la aplicación Canvas
 
-En este ejercicio, utilizará la función de Azure que creó a través del conector personalizado de PrioritZ.
-Aplicación de lienzo de administración.
+En este ejercicio, utilizará la función de Azure que creó a través del conector personalizado de la aplicación de canvas PrioritZ Admin.
 
 ### Tarea 1: usar la función
 
@@ -760,7 +747,7 @@ Aplicación de lienzo de administración.
       Reset(AddMediaButton2)
       ```
 
-1. Seleccione **Icono para guardar tema**.
+1. Seleccione **Icono para guardar tema (Save topic icon)**.
 
 1. Reemplace la fórmula **OnSelect** del **icono Guardar tema** con la siguiente fórmula. Esto cambia para que la API cree la "pregunta".
    
@@ -786,9 +773,9 @@ Aplicación de lienzo de administración.
 
 1. Seleccione **Publicar esta versión** y espere a que se complete la publicación.
 
-1. No salgas de esta página.
+1. No salga de esta página.
 
-### Tarea 2: Aplicación de prueba
+### Tarea 2: Probar la aplicación
 
 1. Seleccione la **Pantalla de inicio** y haga clic en **Vista previa de la aplicación**.
    
@@ -796,33 +783,33 @@ Aplicación de lienzo de administración.
 
 1. Haga clic en el botón **+** agregar.
 
-1. Ingrese **Prueba de función** para Tema, **Probando la función** para Detalles. **Nota para probar la función** para Nota, seleccione una fecha para Responder antes y haga clic en **agregar una imagen**.
+1. Ingrese **Function Test** para Topic, **Testing the function** para Details. **Note for testing the function** para Note, seleccione una fecha para Response by y haga clic en **add a picture**.
 
     ![](images/L04/image%20(76).png)
     
 1. Navegue hasta esta ruta **C:\LabFiles** en el explorador de archivos, seleccione **image.png** y haga clic en abrir.
 
-1. Ingrese **Pruebe la opción uno** para Elección y haga clic en **agregar una imagen**.
+1. Ingrese **Test choice one** para Choice y haga clic en **add a picture**.
 
 1. Navegue hasta esta ruta **C:\LabFiles** en el explorador de archivos, seleccione **image.png** y haga clic en **+**.
 
      ![](images/L04/image%20(77).png) 
     
-1. Ingrese **Opción de prueba dos** para Elección y haga clic en **agregar una imagen**.
+1. Ingrese **Test choice two** para Elección y haga clic en **add a picture**.
 
 1. Navegue hasta esta ruta **C:\LabFiles** en el explorador de archivos, seleccione **image.png** y haga clic en **+**.
 
-1. Haga clic en **Guardar**.
+1. Haga clic en **Save**.
   
      ![](images/L04/image%20(78).png)
 
 1. El nuevo tema debería guardarse y volver a la pantalla principal.
 
-1. Localiza el nuevo tema que creaste y ábrelo.
+1. Localice el nuevo tema que creó y ábralo.
     
      ![](images/L04/image80.png)
     
-1. Deberías ver las dos opciones que agregaste al tema.
+1. Debería ver las dos opciones que agregó al tema.
 
     ![](images/L04/image81.png)
 
@@ -830,6 +817,6 @@ Aplicación de lienzo de administración.
 
 En esta práctica de laboratorio, aprendió a crear, implementar y publicar una función de Azure, crear un conector para ella y probar su integración dentro de las aplicaciones de Power Platform.
 
-## Has completado este laboratorio con éxito. Haz clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
+## Ha completado este laboratorio con éxito. Haga clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
 
 ![](images/1.png)

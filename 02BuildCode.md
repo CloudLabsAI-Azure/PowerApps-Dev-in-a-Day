@@ -2,18 +2,7 @@
 
 ## Duración Estimada: 90 minutos
 
-Como parte del equipo de fusión de PrioritZ, se le ha pedido que cree un componente de código de Power Apps para permitir la clasificación de prioridad de elementos mediante arrastrar y soltar en la Power App PrioritZ Ask. Construirá un componente de código utilizando el framework de JavaScript React. Se utiliza un enfoque de componente de código para abordar el requisito porque no hay un control similar ya integrado.
-
-Ha colaborado con los creadores de la aplicación para identificar las siguientes propiedades que les permitirán
-configurar el componente de código en la aplicación:
-
-- BackgroundColor
-- DragBackgroundColor
-- ItemHeight
-- FontSize
-- FontColor
-
-La aplicación PrioritZ Ask preparará una colección de elementos para clasificar que se vincularán como el conjunto de datos para el componente de código. Cuando se arrastre y suelte un elemento, el componente de código generará un evento OnSelect que será controlado por la aplicación de alojamiento. La aplicación de alojamiento actualizará los elementos de la colección con su nueva clasificación. El componente de código no tendrá estado.
+En este laboratorio, creará un componente de código personalizado utilizando el framework React JavaScript para habilitar la priorización de elementos mediante arrastrar y soltar en la Power App de PrioritZ Ask. Comenzará creando y configurando el componente de código, luego implementará su lógica y lo probará localmente. A continuación, integrará el componente en la aplicación de canvas de PrioritZ Ask, lo que permitirá a los usuarios reordenar los elementos visualmente. Finalmente, agregará el componente de código completo a la solución PrioritZ, asegurándose de que esté disponible para su uso en su entorno de Power Platform. Al completar estos ejercicios, adquirirá experiencia práctica en el desarrollo, la implementación y el uso de componentes de código personalizados en Power Apps.
 
 ## Objetivos del Laboratorio
 
@@ -37,7 +26,7 @@ En este ejercicio, creará el componente de código.
     
     ![](images/202.png)
 
-1. Haga clic en los **tres puntos (1)**, vaya a **Terminal (2)** y seleccione **Nueva terminal (3)**.
+1. Haga clic en los **tres puntos (1)** para desplegar opciones adicionales. Luego, seleccione **Terminal (2)** en el menú desplegable y seleccione **Nuevo terminal (3)** para abrir una sesión de terminal.
      
      ![](images/lab02-ex01-02.png)
 
@@ -198,7 +187,7 @@ En este ejercicio, creará el componente de código.
 
      ![](images/b3.png)    
 
-1. Copie el archivo **PriorityComponent.tsx** y péguelo en la carpeta **PrioriZDnDRanking** para duplicarlo dentro del proyecto.
+1. Copie (o arrastre) el archivo **PriorityComponent.tsx** y péguelo en la carpeta **PrioriZDnDRanking** para duplicarlo dentro del proyecto.
 
      ![](images/b6.png) 
 
@@ -329,7 +318,7 @@ En este ejercicio, creará el componente de código.
  
      > **Nota**: La función **Destroy** estará presente al final de la clase **PrioritZDnDRanking**.
 
-1. Después de completar todos los pasos, su archivo `index.ts` debe contener el siguiente código.
+1. Después de completar todos los pasos, reemplace el código existente en su archivo `index.ts` con el código siguiente para evitar errores. Luego, presione **CTRL + S** para guardar el archivo.
 
     ```
     import { IInputs, IOutputs } from "./generated/ManifestTypes";
@@ -361,7 +350,6 @@ En este ejercicio, creará el componente de código.
         public init(
             context: ComponentFramework.Context<IInputs>,
             notifyOutputChanged: () => void,
-            
         ): void {
             this.context = context;
             context.mode.trackContainerResize(true);
@@ -424,7 +412,7 @@ En este ejercicio, creará el componente de código.
 
       ![](images/L02/image26.png)
  
-1. Reemplace **dependencies** con el JSON que aparece a continuación.
+1. Reemplace **dependencies** con el JSON que aparece a continuación. Luego, presione **CTRL + S** para guardar el archivo.
 
     ```
     "dependencies": {
@@ -471,7 +459,7 @@ En este ejercicio, creará el componente de código.
       
     ![](images/c9.png)
  
-1. Ejecute el siguiente comando para iniciar el arnés de prueba.
+1. Ejecute el siguiente comando para iniciar el arnés de prueba (harness test).
     
       ```
       npm start
@@ -503,22 +491,22 @@ En este ejercicio, creará el componente de código.
     ```
     
     > **Nota** : 
-     1. Si encuentra el mensaje de error **"Error: Falta la herramienta requerida: MSBuild.exe/dotnet.exe. Agregue MSBuild.exe/dotnet.exe en la variable de entorno Ruta o use 'Desarrollador Símbolo del sistema para VS'"**, siga estos pasos:
 
-        - Navegue hasta el directorio `C:\LabFiles` y abra **dotnet-sdk-8.0.100-win-x64**.
+    > 1. Si encuentra el mensaje de error **"Error: Falta la herramienta requerida: MSBuild.exe/dotnet.exe. Agregue MSBuild.exe/dotnet.exe en la variable de entorno Ruta o use 'Desarrollador Símbolo del sistema para VS'"**, siga estos pasos:
 
-        - En la ventana de configuración, seleccione **Reparar**, luego espere a que se complete el proceso.
+    > - Navegue hasta el directorio `C:\LabFiles` y abra **dotnet-sdk-8.0.100-win-x64**.
 
-        - Una vez finalizada la reparación, cierre Visual Studio Code, vuelva a abrirlo y primero ejecute el comando de compilación presente en el paso 28 y vuelva a ejecutar el comando anterior.
+    > - En la ventana de configuración, seleccione **Reparar**, luego espere a que se complete el proceso.
 
-        - Si el problema persiste, desinstale **dotnet-sdk-8.0.100-win-x64** e instale la última versión desde [la página de descarga de .NET](https://dotnet.microsoft.com/en-us/download). Cierre Visual Studio Code, vuelva a abrirlo, ejecute el comando de compilación del paso 28 y luego ejecute el comando anterior nuevamente.
+    > - Una vez finalizada la reparación, cierre Visual Studio Code, vuelva a abrirlo y primero ejecute el comando de compilación presente en el paso 28 y vuelva a ejecutar el comando anterior.
 
-     2. Si la operación de inserción falla con el error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, asegúrese de haber seguido las instrucciones anteriores y agregué el código correctamente en los archivos **Manifiesto e Índice**. 
+    > - Si el problema persiste, desinstale **dotnet-sdk-8.0.100-win-x64** e instale la última versión desde [la página de descarga de .NET](https://dotnet.microsoft.com/en-us/download). Cierre Visual Studio Code, vuelva a abrirlo, ejecute el comando de compilación del paso 28 y luego ejecute el comando anterior nuevamente.
+
+    > 2. Si la operación de inserción falla con el error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, asegúrese de haber seguido las instrucciones anteriores y agregué el código correctamente en los archivos **Manifest e Index**. 
         
-        Además, puede encontrar los archivos **Manifiesto e Índice** en la ubicación `C:\LabFiles`, puede comparar su código con estos archivos y solucionar los problemas, si los hay. 
-        Vuelva a intentar enviar el componente ejecutando el **comando pac push** nuevamente.
+    > - Además, puede encontrar los archivos **Manifest e Index** en la ubicación `C:\LabFiles`, puede comparar su código con estos archivos y solucionar los problemas, si los hay. Vuelva a intentar enviar el componente ejecutando el **comando pac push** nuevamente.
         
-     3. Si la ejecución falla con un error del paquete Nuget, ejecute el siguiente comando en PowerShell e intente ejecutar el comando anterior nuevamente.
+    > 3. Si la ejecución falla con un error del paquete Nuget, ejecute el siguiente comando en PowerShell e intente ejecutar el comando anterior nuevamente.
     
         ```
         dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
@@ -540,7 +528,7 @@ En este ejercicio, creará el componente de código.
     
     ![](images/lab02-ex01-10.png)
 
-1. Confirme que el control personalizado se encuentra en esta solución.
+1. Haga clic en **Todos** y confirme que el control personalizado se encuentra en esta solución.
      
       ![](images/lab02-ex01-11.png)
 
@@ -601,7 +589,9 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 1. Seleccione la pestaña **Componentes (1)**, haga clic en la flecha hacia atrás para **Importar componentes (2)**.
 
      ![](images/d9.png)
- 
+
+    >**Nota:** La flecha puede ser invisible debido a un error.
+
 1. Seleccione la pestaña **Código (1)**, seleccione el componente de código **(2)** que creó y haga clic en **Importar (3)**.
     
      ![](images/q1.png)
@@ -634,14 +624,14 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 
     >**Nota:** Si recibe una ventana emergente para "Select a data source," simplemente haga clic en **Close**.
  
-1. Vaya a la pestaña de vista de árbol y seleccione el elemento **PrioritZDnDRanking** que acaba de agregar.
+1. Vaya a la pestaña de **Vista de árbol (1)** y seleccione el elemento **PrioritZDnDRanking (2)** que acaba de agregar.
 
       ![](images/q7.png)
 
 1. Establezca el valor **Items** del componente **PrioritZDnDRanking** con la fórmula que se muestra a continuación.
 
       ```
-    ' Votes gallery'.AllItems
+    'Votes gallery'.AllItems
       ```
 
       ![](images/w1.png)
@@ -654,17 +644,15 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 
       ![](images/L02/pro.png)
 
-1. Haga clic en **+ Agregar campo** para agregar un nuevo campo.
-
 1. Haga clic en **+ Agregar campo (1)** para agregar un nuevo campo, buscar **rank (2)** Seleccione **Rango (3)** y haga clic en **Agregar (4)**.
      
       ![](images/w3.png)
  
-1. El rango ahora debería aparecer en el control, pero está ordenado de manera descendente.
+1. El rango ahora debería aparecer en el control, pero está ordenado de manera descendente.     
 
-1. Vaya a la vista de árbol, seleccione la **Pantalla de votación**, luego la **Galería de votos**, luego seleccione la propiedad **Elementos** en el menú desplegable de propiedades y cambie el orden de clasificación a **Ascendente**.
+1. Vaya a la vista de árbol, seleccione la **Pantalla de votación (1)**, luego la **Galería de votos (2)**, luego seleccione la propiedad **Elementos (3)** en el menú desplegable de propiedades y cambie el orden de clasificación a **Ascendente (4)**.
      
-      ![](images/w4.png)
+      ![](images/image46-1.png)
  
 1. Ahora, el rango debería ordenarse de manera ascendente.
 
@@ -681,36 +669,27 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 
 1. Seleccione la propiedad **Width** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **60**.
     
-      ![](images/w6.png)
-
 1. Seleccione la propiedad **Height** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
       ```
       'Votes gallery'.Height
       ```
-      ![](images/w7.png)
 
 1. Seleccione la propiedad **ItemHeight** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
       ```
       'Votes gallery'.TemplateHeight
       ```
-      ![](images/w8.png)
 
-1. Seleccione la propiedad **BackgroundColor** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **"LightBlue"**
+1. Seleccione la propiedad **BackgroundColor** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **#35A393"**
     
-      ![](images/w9.png)
-
-1. Seleccione la propiedad **DragBackgroundColor** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **"#A70202"**
-
-      ![](images/e1.png)
+1. Seleccione la propiedad **DragBackgroundColor** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor en **"LightBlue"**
 
 1. Seleccione la propiedad **Y** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
      ```
      'Votes gallery'.Y
      ```
-      ![](images/e2.png)
 
 1. Seleccione la propiedad **OnSelect** del componente **PrioritZDnDRanking** del menú desplegable de propiedades y establezca su valor con la siguiente fórmula.
 
@@ -758,8 +737,6 @@ En esta tarea, editará la aplicación de canvas PrioritZ Ask para usar el compo
 
      ![](images/e3.png)
 
-1. Seleccione uno de los **temas**.
-
 1. Puede ver cómo se ve en la pantalla de un teléfono usando el emulador.
      
      ![](images/e4.png)
@@ -793,7 +770,7 @@ En este ejercicio, agregará el componente de código que creó a la solución P
       ```
       https://make.powerapps.com/
       ```
-1. Seleccione **Soluciones** y abra la solución **PrioritZ**.
+1. Seleccione **Soluciones (1)** y abra la solución **PrioritZ (2)**.
 
     ![](images/lab02-ex03-01.png)
 
@@ -809,11 +786,13 @@ En este ejercicio, agregará el componente de código que creó a la solución P
 
     ![](images/lab02-ex03-04.png)
 
+    > **Nota**: Si no puede encontrar el botón Publicar todas las personalizaciones, haga clic en los puntos suspensivos (...) junto al panel Agregar existente.
+
 ## Resumen
 
 En este laboratorio, aprendió a crear un componente de código, implementar su lógica, integrarlo en una aplicación de canvas y agregarlo a una solución dentro de Power Platform.
 
-## Has completado este laboratorio con éxito. Haz clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
+## Ha completado este laboratorio con éxito. Haga clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
 
 ![](images/1.png)
 

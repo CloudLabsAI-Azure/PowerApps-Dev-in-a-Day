@@ -2,7 +2,7 @@
 
 ## Duración Estimada: 110 minutos
 
-Como parte del equipo de fusión de PrioritZ, configurará un conector personalizado para una API existente. El equipo desea agregar una insignia a la aplicación PrioritZ para dar crédito a los usuarios cuando hayan terminado de clasificar un elemento. El equipo identificó una API existente, pero no tiene un conector de Power Platform.
+En este laboratorio, configurará un conector personalizado para una API existente con el fin de añadir una función de insignias a la aplicación PrioritZ, lo que permitirá a los usuarios recibir crédito al completar la clasificación de un elemento. Comenzará creando una base de datos de Dataverse y una nueva solución; a continuación, creará un conector personalizado utilizando una definición de Open API. Tras modificar y probar el conector, añadirá código personalizado para mejorar su funcionalidad y lo volverá a probar. Finalmente, integrará el conector con una aplicación de canvas y un flujo (flow), lo que permitirá que la aplicación PrioritZ muestre las insignias de los usuarios y las actualice en función de sus acciones. Mediante estos ejercicios, adquirirá experiencia práctica en la creación, personalización y uso de conectores personalizados dentro de Power Platform.
 
 ## Objetivos del Laboratorio
 
@@ -27,15 +27,15 @@ Cuando revise la API, verá que tiene cuatro operaciones y utiliza autenticació
 
          https://make.powerapps.com
 
-1. Haga clic en **Environment (1)** y seleccione el entorno de desarrollo creado previamente llamado **Azure HOL - xxxxxx (default) (2)**.
+1. Haga clic en **Entorno (1)** y seleccione el entorno de desarrollo creado previamente llamado **Azure HOL - xxxxxx (default) (2)**.
 
      ![](images/lab03-ex01-01.png)
 
-1. Seleccione **Soluciones (1)** en el menú del lado izquierdo de Power Apps. Haga clic en **Creae una base de datos (2)** para crear una base de datos de Dataverse.
+1. Seleccione **Soluciones (1)** en el menú del lado izquierdo de Power Apps. Haga clic en **Creae una base de datos (2)**.
  
     ![](images/lab03-ex01-02.png)
 
-1. Seleccione **Moneda -> TND** y haga clic en **Creae una base de datos (2)**.
+1. Seleccione **Moneda -> TND** y **Lenguaje -> English** y haga clic en **Crear una base de datos (2)**.
    
     ![](images/300.png)
     
@@ -177,6 +177,10 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
 
       ![](images/image.png)
 
+1. Avance a **AI Plugin(preview) (1)**.
+
+      ![](images/image13b.png)
+
 1. Avance a **Código**
  
 1. Revise el código y avance a **Probar**.
@@ -221,7 +225,7 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
      - **recipientId:** **<inject key="AzureAdUserEmail"></inject> (2)**
      - **name:** **odl_user (3)**
      - **points:** **1 (4)**
-     - Luego haga clic en **Operación de preueba (5)**
+     - Luego haga clic en **Operación de prueba (5)**
 
     ![](images/316.png)
 
@@ -229,7 +233,9 @@ En este ejercicio, creará un conector personalizado a partir de una API existen
      
      ![](images/lab03-ex03-24.png)
 
-1. Seleccione la operación **GetRecipient (1)**. Proporcione su dirección de correo electrónico como ID y haga clic en **Operación de prueba (3)**.
+1. Seleccione la operación **GetRecipient (1)**. 
+
+1. Proporcione su dirección de correo electrónico como ID y haga clic en **Operación de prueba (3)**.
 
      - **id:** **<inject key="AzureAdUserEmail"></inject>** **(2)** 
 
@@ -467,9 +473,11 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
 1. Achique la imagen y muévala a la esquina superior derecha de la pantalla.
 
-1. El elemento User badge ahora debería verse como la imagen que se muestra a continuación. Haga clic en el botón **Iniciar**.
+1. El elemento User badge ahora debería verse como la imagen que se muestra a continuación. 
       
      ![](images/z3.png)
+
+1. Seleccione la pestaña **Pantallas** en la Vista de árbol. Haga clic en el botón **Iniciar**.
 
 1. Pase el cursor sobre la insignia para ver el nombre de la insignia.
 
@@ -493,7 +501,7 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
 ### Tarea 2: Probar el conector desde el flujo
 
-1. Asegúrese de que todavía se encuentra en la solución **PrioritZ**.
+1. Vaya a **Soluciones (1)** y haga clic en **PrioritZ (2)**.
 
      ![](images/lab03-ex05-03.png)
 
@@ -559,7 +567,7 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
 1. Seleccion **Aplicaciones** e inicie la aplicación **PrioritZ Ask**.
 
-1. La aplicación debería mostrar ahora **First Badge**.
+1. La aplicación debería mostrar ahora **First Badge**. Actualice la página.
   
      ![](images/L03/image53.png)
 
@@ -585,6 +593,6 @@ En esta tarea, utilizará el conector personalizado que creó para mostrar la in
 
 En este laboratorio, aprendió a crear y modificar un conector personalizado utilizando una definición de Open API, probar su funcionalidad e integrarlo con aplicaciones de canvas y flujos dentro de Power Platform.
 
-## Has completado este laboratorio con éxito. Haz clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
+## Ha completado este laboratorio con éxito. Haga clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
 
 ![](images/1.png)

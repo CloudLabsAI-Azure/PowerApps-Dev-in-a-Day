@@ -14,8 +14,7 @@ Al trabajar como parte del equipo de fusión de PrioritZ, configurará GitHub Ac
 
 ## Ejercicio 1: Configurar una entidad de servicio
 
-En este ejercicio, creará una entidad de servicio. El flujo de trabajo usará la entidad de servicio
-acciones, por lo que no se ejecutan bajo su identidad de usuario individual.
+En este ejercicio, creará una entidad de servicio. Las acciones del flujo de trabajo usarán la entidad de servicio, por lo que no se ejecutan bajo su identidad de usuario individual.
 
 ### Tarea 1: Crear el registro de la aplicación
 
@@ -29,14 +28,14 @@ acciones, por lo que no se ejecutan bajo su identidad de usuario individual.
 
    ![](images/lab04-ex01-01.png)
    
-1. Seleccione **Registros de aplicaciones** ***(1)*** en la hoja lateral y haga clic en **+ Nuevo registro** ***(2)***. Este registro de aplicación se utilizará para que el conector acceda a la API protegida.
+1. Seleccione **Registros de aplicaciones** **(1)** en la hoja lateral y en Administrar, haga clic en **+ Nuevo registro** **(2)**. Este registro de aplicación se utilizará para que el conector acceda a la API protegida.
 
    ![](images/lab04-ex01-02.png)
 
-1. Proporcione los siguientes datos y haga clic en **Registrarse** ***(3)***.
+1. Proporcione los siguientes datos y haga clic en **Registrar** ***(3)***.
    
    - Nombre: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-   - Tipos de cuenta admitidos: **Cuentas solo en este directorio organizacional (Azure HOL - xxxxxx only - Single tenant)** ***(2)***.
+   - Tipos de cuenta admitidos: **Cuentas solo en este directorio organizacional (OTU WA HOL - xxxxxx only - Single tenant)** ***(2)***.
 
      ![](images/lab04-ex01-03.png)
    
@@ -93,11 +92,9 @@ En esta tarea, probará nuevos entornos de Dataverse.
 
    ![](images/508.png)
 
-### Tarea 3: Crear una usuaria de aplicación en Dataverse
+### Tarea 3: Crear un usuario de aplicación en Dataverse
 
-En esta tarea, registrará la aplicación que creó en Microsoft Entra ID en el programa de desarrollo y prueba.
-Entornos de Dataverse. También se le asignará un rol de seguridad que permitirá a la entidad de servicio
-implementar soluciones.
+En esta tarea, registrará la aplicación que creó en Microsoft Entra ID en los entornos de Dataverse de desarrollo y prueba. También se le asignará un rol de seguridad que permitirá a la entidad de servicio implementar soluciones.
 
 1. Abra una nueva ventana o pestaña del navegador y navegue hasta el Centro de administración de Power Platform utilizando la siguiente URL.
 
@@ -129,8 +126,7 @@ implementar soluciones.
 
    ![](images/509.png)
 
-1. Escriba **org** y seleccione su **unidad de negocio** **(1)** y en **Roles de seguridad** haga clic en **editar símbolo (2)** y seleccione 
-   **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
+1. Escriba **org** y seleccione su **unidad de negocio** **(1)** y en **Roles de seguridad** haga clic en **editar símbolo (2)** y seleccione **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
    ![](images/510.png)
 
@@ -160,8 +156,7 @@ implementar soluciones.
 
    ![](images/509.png)
 
-1. Escriba **org** y seleccione su **unidad de negocio** **(1)** y en **Roles de seguridad** haga clic en **editar símbolo (2)** y seleccione 
-   **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
+1. Escriba **org** y seleccione su **unidad de negocio** **(1)** y en **Roles de seguridad** haga clic en **editar símbolo (2)** y seleccione **Administrador del sistema(3)** y luego haga clic en **Crear (4)**.
 
    ![](images/511.png)
 
@@ -258,7 +253,7 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
   
     ![](images/lab04-ex02-05.png)
 
-    >**Nota**: Si recibe el mensaje de error **could not retrieve the connector data**, espere unos minutos (5 a 10 minutos) para que se actualicen los datos del conector. Si eso no funciona, puede eliminar el conector importado y realizar los **pasos 5 a 10** de la tarea **Tarea 2: Importar solución** nuevamente y luego intente abrir el conector.
+    >**Nota**: Si recibe el mensaje de error **could not retrieve the connector data**, espere unos minutos (5 a 10 minutos) para que se actualicen los datos del conector. Si eso no funciona, puede eliminar el conector importado y realizar los **pasos 1 a 7** de la tarea **Tarea 2: Importar solución** nuevamente y luego intente abrir el conector.
 
 1. Haga clic en **Editar**.
 
@@ -292,16 +287,16 @@ En este ejercicio, exportará la solución del conector Contoso Badges desde el 
      
       ![](images/lab04-ex02-07.png)
 
-1. Vaya a la sección **Operaciones** y seleccione la operación **addcredit**.
+1. Vaya a la sección **Operaciones** y seleccione la operación **AddCredit**.
 
       ![](images/lab04-ex02-08.png)
 
-1. Vaya a la operación **AddCredit (1)**. Ingrese los siguientes detalles:
+1. Ingrese los siguientes detalles:
 
      - **recipientId:** **<inject key="AzureAdUserEmail"></inject> (2)**
      - **name:** **odl_user (3)**
      - **points:** **1 (4)**
-     - Luego haga clic en **Operación de preueba (5)**
+     - Luego haga clic en **Operación de prueba (5)**
 
     ![](images/316.png)
 
@@ -320,73 +315,73 @@ En este ejercicio, creará un repositorio de GitHub y agregará secretos de repo
    ```
    https://github.com/
    ```
-1. Haz clic en el icono de tu perfil y selecciona **Tus repositorios**.
+1. Haga clic en el icono de su perfil y seleccione **Your repositories**.
 
-   ![](images/lab04-ex03-01.png)
+   ![](images/L05/github1u.png)
 
 1. Haga clic en **Nuevo** repositorio para crear un repositorio.
 
-   ![](images/lab04-ex03-02.png)
+   ![](images/L05/github2u.png)
 
-1. Ingrese **PrioritZ (1)** para el nombre del repositorio, seleccione **Público (2)** y marque **Agregar un archivo README (3)**.
+1. Ingrese **PrioritZ (1)** para el nombre del repositorio, seleccione **Public (2)** y marque **Add a README file (3)**.
 
-   ![](images/lab04-ex03-03.png)
+   ![](images/L05/github3.png)
 
-1. Haga clic en **Crear repositorio** para crearlo.
+1. Haga clic en **Create repository** para crearlo.
 
-   ![](images/lab04-ex03-04.png)
+   ![](images/L05/github4.png)
 
-1. Haga clic en **Configuración** para abrir la pestaña de configuración.
+1. Haga clic en **Settings** para abrir la pestaña de configuración.
     
-     ![](images/lab04-ex03-05.png)
+     ![](images/L05/Imagessettinguu.png)
 
-1. Vaya a la sección **Configuración (1)**, expanda **Secretos y variables (2)** y seleccione **Acciónes (3)**.
+1. Vaya a la sección **Settings (1)**, expanda **Secrets and variables (2)** y seleccione **Actions (3)**.
    
     > **Nota:** Los valores que proporcione no serán visibles después de crear el elemento, así que tómese su tiempo para obtener los valores correctos.
       
-     ![](images/lab04-ex03-06.png)
+     ![](images/L05/actionpermissionuuu-1.png)
    
-1. Haga clic en **Nuevo secreto de repositorio** para agregar un secreto.
+1. Haga clic en **New repository secret** para agregar un secreto.
 
-     ![](images/lab04-ex03-07.png)
+     ![](images/L05/github7uu.png)
 
-1. Ingrese **PowerPlatformAppID (1)** como Nombre y pegue el ID odl: **<inject key="AzureAdUserEmail"></inject> (2)** y **haga clic en Agregar secreto (3)**
+1. Ingrese **PowerPlatformAppID (1)** como Name y pegue el ID odl: **<inject key="AzureAdUserEmail"></inject> (2)** y **haga clic en Add secret (3)**
     
-     ![](images/lab04-ex03-08.png)
+     ![](images/L05/github8u.png)
 
-1. Haga clic en **Nuevo secreto del repositorio** nuevamente.
+1. Haga clic en **New repository secret** nuevamente.
 
-1. Ingrese **PowerPlatformClientSecret (1)** como Nombre y pegue la contraseña: **<inject key="AzureAdUserPassword"></inject> (2)** y **haga clic en Agregar secreto (3)**
+1. Ingrese **PowerPlatformClientSecret (1)** como Name y pegue la contraseña: **<inject key="AzureAdUserPassword"></inject> (2)** y **haga clic en Add secret (3)**
 
-     ![](images/lab04-ex03-09.png)
+     ![](images/L05/github9u.png)
 
-1. Haga clic en **Nuevo secreto del repositorio** nuevamente.
+1. Haga clic en **New repository secret** nuevamente.
 
-1. Ingrese **PowerPlatformTenantID (1)** para Nombre y pegue el secreto **Tenant ID (2)** de su bloc de notas que anotó anteriormente en **`Ejercicio 1 -> Tarea 1 -> Paso 5`** en el **Valor** y haga clic en **Agregar secreto (3)**.
+1. Ingrese **PowerPlatformTenantID (1)** para Name y pegue el secreto **Tenant ID (2)** de su bloc de notas que anotó anteriormente en **`Ejercicio 1 -> Tarea 1 -> Paso 5`** en el campo **Secret** y haga clic en **Add secret (3)**.
     
-     ![](images/lab04-ex03-10.png)
+     ![](images/L05/github10u.png)
 
-1. Haga clic en **Nuevo secreto del repositorio** nuevamente.
+1. Haga clic en **New repository secret** nuevamente.
 
-1. Ingrese **PowerPlatformDevUrl (1)** como Nombre y pegue la **URL secreta (2)** del entorno de desarrollo de su bloc de notas que copió en **`Ejercicio 1 -> Tarea 3 -> Paso 17`** en el campo **Valor** y haga clic en **Agregar secreto (3)**.
+1. Ingrese **PowerPlatformDevUrl (1)** como Name y pegue la **URL secreta (2)** del entorno de desarrollo de su bloc de notas que copió en **`Ejercicio 1 -> Tarea 3 -> Paso 17`** en el campo **Secret** y haga clic en **Add secret (3)**.
 
-    >**Nota**: Asegúrate de pegar la URL del entorno de desarrollo denominada **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** que copiaste en el **`Ejercicio 1 -> Tarea 3 -> Paso 17`**
+    >**Nota**: Asegúrese de pegar la URL del entorno de desarrollo denominada **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 17`**
    
-     ![](images/lab04-ex03-11.png) 
+     ![](images/L05/github11u.png) 
   
-1. Haga clic en **Nuevo secreto del repositorio** una vez más.
+1. Haga clic en **New repository secret** una vez más.
 
-1. Ingrese **PowerPlatformTestUrl (1)** para Nombre y pegue la **URL del entorno de prueba (2)** de su bloc de notas que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 19`** en el **Valor** y haga clic en **Agregar secreto (3)**.
+1. Ingrese **PowerPlatformTestUrl (1)** para Name y pegue la **URL del entorno de prueba (2)** de su bloc de notas que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 19`** en el campo **Secret** y haga clic en **Agregar secreto (3)**.
 
      >**Nota**: Asegúrese de pegar la URL del entorno de prueba denominada **DEV_ENV_TEST** que copió en el **`Ejercicio 1 -> Tarea 3 -> Paso 19`**.
  
-     ![](images/lab04-ex03-12.png)
+     ![](images/L05/L05-testurla.png)
    
-1. Ahora deberías tener **5** secretos del repositorio.
+1. Ahora debería tener **5** secretos del repositorio.
      
-    ![](images/lab04-ex03-13.png)
+    ![](images/L05/Images20uu5u.png)
 
-1. No salgas de esta página.
+1. No salga de esta página.
 
 ## Ejercicio 4: Exportación y ramas
 
@@ -396,12 +391,12 @@ En este ejercicio, establecerá una acción de flujo de trabajo y agregará paso
 
 En esta tarea, creará la definición del flujo de trabajo utilizando el YAML proporcionado. La acción YAML utiliza sangría de dos espacios, así que sígala cuidadosamente mientras crea la definición del flujo de trabajo. En caso de duda, revise la sangría que se muestra en las imágenes.
 
-1. Seleccione la pestaña **Acciones** y haga clic en **Configurar un flujo de trabajo usted mismo** para crear un nuevo flujo de trabajo.
+1. Seleccione la pestaña **Actions** y haga clic en **Set up a workflow yourself** para crear un nuevo flujo de trabajo.
  
-   ![](images/lab04-ex04-01.png)
+   ![](images/L05/Imagesworku.png)
    
    
-1. Cambie el nombre del archivo **export-and-branch.yml**
+1. Cambie el nombre del archivo a **export-and-branch.yml**
        
 1. Elimine todo del archivo de flujo de trabajo.
   
@@ -411,61 +406,61 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
 
    ![](images/L05/diad5l28u.png)
 
-1. Haga clic en **Confirmar cambios** y luego haga clic en **Confirmar cambios**.
+1. Haga clic en **Commit changes** y luego haga clic en **Commit changes**.
     
-   ![](images/lab04-ex04-02.png)
+   ![](images/L05/commit1.png)
 
-   ![](images/lab04-ex04-03.png)
+   ![](images/L05/Images202uuu.png)
 
-1. Haga clic en **Configuración (1)**, vaya a la pestaña **Acciónes (2)** en el lado izquierdo, luego seleccione **General (3)**.
+1. Haga clic en **Settings (1)**, vaya a la pestaña **Actions (2)** en el lado izquierdo, luego seleccione **General (3)**.
 
-   ![](images/lab04-ex04-04.png)
+   ![](images/L05/github6u-1.png)
 
-1. En la sección **Permiso de flujo de trabajo**, asegúrese de que esté seleccionado **permiso de lectura y escritura (1)** y luego haga clic en **Salvar (2)**.
+1. En la sección **Workflow Permission**, asegúrese de que esté seleccionado **read and write permission (1)** y luego haga clic en **Save (2)**.
 
-   ![](images/605.png)
+   ![](images/L05/workflowpermissionuuu.png)
 
-1. Seleccione la pestaña **Acciones** **(1)** y seleccione el **flujo de trabajo** ***(2)*** que creó.
+1. Seleccione la pestaña **Actions** **(1)** y seleccione el **flujo de trabajo** ***(2)*** que creó.
 
-   ![](images/lab04-ex04-06.png)
+   ![](images/L05/diad5l27.png)
    
-1. Haga clic en **Ejecutar flujo de trabajo.**
+1. Haga clic en **Run workflow.**
       
-   ![](images/lab04-ex04-07.png)
+   ![](images/L05/Images2027u.png)
    
-1. Haga clic en **Ejecutar flujo de trabajo** nuevamente y espere a que se complete la ejecución del flujo de trabajo.
+1. Haga clic en **Run workflow** nuevamente y espere a que se complete la ejecución del flujo de trabajo.
       
    ![](images/L05/Images2028u.png)
    
-1. Seleccione la pestaña **Código (1)*** y haga clic en **Sucursales (2)**. Debería ver dos ramas.
+1. Seleccione la pestaña **Code (1)*** y haga clic en **Branches (2)**. Debería ver dos ramas.
    
-   ![](images/lab04-ex04-08.png)
+   ![](images/L05/diad5l29u-1.png)
    
 1. Haga clic para abrir la rama que se creó mediante la acción de flujo de trabajo denominada Prioritz-XXXXXXXX-XXXX.
    
-   ![](images/lab04-ex04-09.png)
+   ![](images/L05/changesbranchu.png)
 
 1. En la carretera Prioritz-XXXXXXX. rama, debería poder ver la carpeta de la solución.
       
-   ![](images/1222.png)
+   ![](images/L05/diad5l30u.png)
    
-1. Haga clic en el botón **Contribuir** ***(1)*** y seleccione **Abrir solicitud de incorporación de cambios (pull request)** ***(2)***.
+1. Haga clic en el botón **Contribute** ***(1)*** y seleccione **Open pull request** **(2)**.
         
-   ![](images/lab04-ex04-10.png)
+   ![](images/L05/L05-t1-1u.png)
    
-1. Agregue una descripción si lo desea y luego haga clic en **Crear solicitud de incorporación de cambios (pull request)**.
+1. Agregue una descripción si lo desea y luego haga clic en **Create pull request**.
 
-     ![](images/lab04-ex04-11.png)
+     ![](images/L05/pr1u.png)
    
 1. Ahora debería ver el resumen de la solicitud de incorporación de cambios. Confirme que la rama no tenga conflictos con la rama principal y que los cambios se puedan fusionar en la rama principal automáticamente.
    
 1. Haga clic en el botón de chevrón al lado del botón **Solicitud de incorporación de cambios de fusión (merge pull request)** y seleccione **Aplastar y fusionar (Squash and merge)**.
       
-    ![](images/lab04-ex04-12.png)
+    ![](images/L05/Images2032u.png)
 
 1. Haga clic en **Aplastar y fusionar (Squash and merge)**.
    
-1. Haga clic en **Confirmar aplastamiento y fusión (squash and merge)**.
+1. Haga clic en **Confirmar aplastamiento y fusión (confirm squash and merge)**.
    
 1. La solicitud de incorporación de cambios debería fusionarse correctamente.
    
@@ -473,38 +468,39 @@ En esta tarea, creará la definición del flujo de trabajo utilizando el YAML pr
 
 ## Ejercicio 5: Lanzamiento para prueba
 
-En este ejercicio, creará una acción de flujo de trabajo y agregará pasos que lanzarán la solución que
-exportado al entorno de prueba.
+En este ejercicio, creará una acción de flujo de trabajo y agregará pasos que lanzarán la solución que exportó al entorno de prueba.
 
 ### Tarea 1: crear un flujo de trabajo
 
-1. Ahora navegue hasta la pestaña **Acciones (1)**, haga clic en **Nuevo flujo de trabajo (2)**.
+1. Ahora navegue hasta la pestaña **Actions (1)**. 
 
-    ![](images/lab04-ex05-01.png)
+1. Haga clic en **New workflow (2)**.
+
+    ![](images/L05/nwwfu.png)
    
-1. Ahora, en la página **Elija un flujo de trabajo**, haga clic en **configurar un flujo de trabajo usted mismo**.
+1. Ahora, en la página **Choose a workflow**, haga clic en **set up a workflow yourself**.
      
-    ![](images/lab04-ex05-02.png)
+    ![](images/L05/Images2033u.png)
    
 1. Cambie el nombre del archivo a **release-to-test.yml**
    
     ![](images/L05/fnameu.png)
      
-1. Eliminar todo del archivo de flujo de trabajo.
+1. Elimine todo del archivo de flujo de trabajo.
 
 1. Navegue a la URL `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/release-to-test.yml` en el navegador y copie el contenido completo del archivo y péguelo en el archivo de flujo de trabajo **release-to-test.yml**.
  
    ![](images/L05/cntnu.png)
       
-1. Haga clic en **Confirmar cambios** y luego haga clic en **Confirmar cambios**.
+1. Haga clic en **Commit changes** y luego haga clic en **Commit changes**.
 
-    ![](images/lab04-ex05-03.png)
+    ![](images/L05/commit1.png)
     
-1. Seleccione la pestaña **Acciones (1)**, haga clic en **Todos los flujos de trabajo (2)** y supervise el flujo de trabajo.
-
-     ![](images/133.png)
+1. Seleccione la pestaña **Actions (1)** y supervise el flujo de trabajo.
 
 1. La versión de release debería completarse exitosamente.
+
+     ![](images/L05/relecomplu.png)
      
 1. Vuelva al portal de PowerApps y asegúrese de estar en el entorno de prueba de PowerApps.
 
@@ -517,4 +513,4 @@ exportado al entorno de prueba.
 ## Resumen
 En esta práctica de laboratorio, aprendió a promover una solución en un entorno de prueba, configurar una entidad de servicio y administrar su solución usando GitHub para el control de versiones y la automatización del flujo de trabajo.
 
-## Has completado con éxito el laboratorio. Aprendió a crear componentes, integrar API y administrar soluciones de Power Apps a través de escenarios prácticos del mundo real.
+## Ha completado con éxito el laboratorio. Aprendió a crear componentes, integrar API y administrar soluciones de Power Apps a través de escenarios prácticos del mundo real.

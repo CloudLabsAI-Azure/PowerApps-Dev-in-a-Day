@@ -36,45 +36,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
     
      ![](images/L01/3.png)
 
-1. Haga clic en **Preguntar más tarde** si aparece la ventana emergente "Acción requerida".
-
-   >**Nota:** Si la opción **Preguntar más tarde** no está disponible, siga los pasos del 5 al 14. De lo contrario, continúe con el **Paso 15**.
-
-1. En **Start by getting the app page**, haga clic en **Siguiente**.
-
-1. Haga clic en **Siguiente** dos veces.
-
-1. En **Android**, vaya a Play Store, busque **Microsoft Authenticator** y pulse **Install**.
-
-   ![](images/L01/mobile.jpg)
-
-   > **Nota:** Para iOS, abre la App Store y repita los pasos.
-
-   > **Nota:** Omitir si ya está instalada.
-
-1. Abra la aplicación y pulse **Scan a QR code**.
-
-1. Escanee el código QR visible en la pantalla y haga clic en **Siguiente**.
-
-   ![](images/L01/demo001.png)
-
-1. Ingrese los dígitos que se muestran en la pantalla de la app Authenticator en el móvil y toque **Yes**.
-
-1. Una vez aprobada la notificación, haga clic en **Next**.
-
-   ![](images/L01/demo002.png)
-
-1. Haga clic en **Done**.
-
-1. Si se le solicita que mantenga la sesión iniciada, puede hacer clic en **No**.
-
-1. Toque **Finish** en el dispositivo móvil.
-
-   > **NOTA:** Al volver a iniciar sesión, ingrese los dígitos que se muestran en la pantalla de la **applicación Authenticator** y haga clic en Yes.
-
-1. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
-
-1. Una vez que haya iniciado sesión, haga clic en **Entorno (1)** y seleccione el entorno de desarrollo creado previamente llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
+1. En la esquina superior derecha, haga clic en **Entorno (1)** y seleccione el entorno de desarrollo creado previamente llamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
      ![](images/11.png)
 
@@ -82,7 +44,7 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
       ![](images/lab01ex10-05.png)
 
-1. Haga clic en **Examinar**.
+1. En el panel **Importación de una solución**, haga clic en **Examinar** para seleccionar el archivo de solución.
     
      ![](images/lab01ex10-06.png)
      
@@ -98,11 +60,15 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
      ![](images/lab01ex10-09.png)
 
-1. En la sección **Conexiones**, haga clic en el botón de puntos suspensivos **...(1)** junto a **Microsoft Dataverse Priority**. Asegúrese de que el correo electrónico de usuario **<inject key="AzureAdUserEmail"></inject> (2)** que está utilizando esté seleccionado. Haga clic en **Importar(3)**.
+1. En la sección **Conexiones**, haga clic en el botón de puntos suspensivos **...(1)** junto a **Microsoft Dataverse Priority**. 
+
+1. Asegúrese de que el correo electrónico de usuario **<inject key="AzureAdUserEmail"></inject> (2)** que está utilizando esté seleccionado. 
+
+1. Haga clic en **Importar(3)**.
 
     ![](images/lab01ex10-10.png)
 
-1. Espere hasta que se complete la importación de la solución.
+1. Una vez que la importación sea exitosa, un mensaje de confirmación aparecerá: **La solución Prioritz se ha importado correctamente**
 
      ![](images/lab01ex10-11.png)
      
@@ -114,19 +80,19 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
    
      ![](images/lab01ex10-12.png)
 
-1. Seleccione **Columnas** en Esquema y revise las columnas de la tabla **PrioritZ Topic**.
+1. En la sección **Esquema**, seleccione las **Columnas** de la tabla **PrioritZ Topic**.
 
    >**Información**: Las columnas estándar están integradas y todas las tablas las tienen. El equipo creó las columnas personalizadas para esta aplicación.
  
    ![](images/lab01ex10-13.png)
 
-1. Seleccione la pestaña **Relaciones (2)** del menú desplegable **Columnas (1)** y revise cómo se relaciona esta tabla con otras tablas.
+1. Del menú desplegable **Columnas (1)**, seleccione la pestaña **Relaciones (2)** y revise cómo se relaciona esta tabla con otras tablas.
  
     ![](images/lab01ex10-14.png)
  
     ![](images/lab01ex10-15.png)
 
-1. Seleccione **Flujo de nube (1)** y abra el flujo **Importar datos de muestra – Topics (2)**.
+1. A la izquierda, en la sección **Objetos**, seleccione **Flujo de nube (1)** y abra el flujo **Importar datos de muestra – Topics (2)**.
  
     ![](images/lab01ex10-16.png)
 
@@ -144,11 +110,11 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
     
     ![](images/14.png)
 
+    >>**Nota**: Si no puede expandir el paso, haga clic en los puntos suspensivos (...), luego seleccione Configuración y haga clic en Cancelar.
+
 1. Expanda el paso **Apply to each topic item**.
    
      ![](images/15.png)
-
-    >>**Nota**: Si no puede expandir el paso, haga clic en los puntos suspensivos (...), luego seleccione Configuración y haga clic en Cancelar.
 
 1. Los pasos **Apply to each** deben verse como la imagen a continuación. Esta es la lógica para la automatización.
  
@@ -202,11 +168,9 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
     
     ![](images/lab01ex10-31.png)
 
-1. Debería ver los cuatro temas siguientes.
+1. Debería ver los cuatro temas siguientes. Haga clic para abrir el tema **Event banner**.
 
     ![](images/lab01ex10-32.png)
-
-1. Haga clic para abrir el tema **Event banner**.
 
 1. Debería ver los detalles del tema con algunos elementos del tema.
 
@@ -236,11 +200,9 @@ En este ejercicio, importará la solución actual al entorno de desarrollo cread
 
       ![](images/123.png)
 
-1. Escriba **Tamale Tuesday** en el campo Choice y haga clic en **add a picture** que se encuentra debajo del campo Choice.
+1. Escriba **Tamale Tuesday** en el campo Choice y haga clic en **add a picture** que se encuentra debajo del campo Choice. Navegue hasta la ruta `C:\LabFiles` en el Explorador de Archivos, seleccione **image.png** y haga clic en Abrir.
      
       ![](images/27.png)
-
-1. Navegue hasta la ruta `C:\LabFiles` en el Explorador de Archivos, seleccione **image.png** y haga clic en Abrir.
 
 1. Haga clic en **+** para agregar la opción.
      
@@ -303,11 +265,19 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
 
    ![](images/lab01ex02-01.png)
 
-1. Expanda **Tablas (1)** y seleccione la tabla **PrioritZ Topic (2)**. Seleccione la pestaña **Columnas** que se encuentra debajo de **+ Nuevo (3)** y haga clic en **columna (4)**.
+1. Expanda **Tablas (1)** y seleccione la tabla **PrioritZ Topic (2)**. 
+
+1. Seleccione la pestaña **Columnas** que se encuentra debajo de **+ Nuevo (3)** y haga clic en **columna (4)**.
 
     ![](images/lab01ex02-02.png)
 
-1. Ingrese **My Notes (1)** en el campo Nombre para mostrar. Ahora, busque **texto sin formato (2)** en Tipo de datos, luego seleccione el que se encuentra como **Multiple lines of text (3)** y haga clic en **Guardar (4)**.
+1. Ingrese el siguiente valor en el campo Nombre para mostrar. 
+
+   ```
+    My Notes
+   ```
+
+1. Ahora, busque **texto sin formato (2)** en Tipo de datos, luego seleccione el que se encuentra como **Multiple lines of text (3)** y haga clic en **Guardar (4)**.
 
     ![](images/L01/5.png)
    
@@ -319,13 +289,17 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
     
     ![](images/lab01ex02-04.png)
 
-   > Nota: Si no puede encontrar el botón Editar, haga clic en los puntos suspensivos **(...)** al lado del panel Agregar existente.
+   > **Nota 1**: Si no puede encontrar el botón Editar, haga clic en los puntos suspensivos **(...)** al lado del panel Agregar existente.
+
+   > **Nota 2**: Si aparece el mensaje **Welcome to Power Apps Studio**, haga clic en **Skip**.
+
+    ![](images/2115.png)
 
 1. Seleccione **Add Topic Screen (1)**. Haga clic en **+ Insertar (2)** y seleccione **Entrada de texto (3)**.
    
      ![](images/34.png)
 
-   > Nota: Si no puede encontrar el botón Insertar, haga clic en los puntos suspensivos **(...)** en la esquina superior izquierda.
+   > **Nota**: Si no puede encontrar el botón Insertar, haga clic en los puntos suspensivos **(...)** en la esquina superior izquierda.
 
 1. Haga doble clic en la **Entrada de texto** recién agregada e ingrese el valor a continuación para cambiar el nombre de la entrada de texto.
 
@@ -335,7 +309,7 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
     
      ![](images/35.png)
 
-1. Si es necesario, reduzca el tamaño del control add picture y mueva el cuadro de texto y la etiqueta **Respond By** hacia abajo y coloque el cuadro de texto **Notes** entre el control Details y la etiqueta Respond by.
+1. Si es necesario, reduzca el tamaño del control add picture y mueva **el cuadro de texto y la etiqueta Respond By** hacia abajo y coloque el **cuadro de texto Notes** entre el control Details y la etiqueta Respond by.
    
     ![](images/36.png)
 
@@ -343,7 +317,7 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
 
     ![](images/37.png)
 
-1. Cambie el valor **HintText** del cuadro de texto Notes por el siguiente valor.
+1. Cambie el valor **HintText** del cuadro de texto Notes por el siguiente valor. El valor debe estar entre comillas dobles.
 
     ```
     My notes
@@ -370,7 +344,11 @@ En este ejercicio, agregará una nueva columna **My Notes** a la tabla de temas 
     ```
     Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
     ```
-1. Seleccione **View Topic Screen (1)** en la pestaña **Pantallas**. Haga clic en la pestaña **+ Insertar (2)** y seleccione **Etiqueta de texto (3)**.
+1. Seleccione **View Topic Screen (1)** en la pestaña **Pantallas**. 
+
+   > Nota: Si no puede encontrar el botón Insertar, haga clic en los puntos suspensivos **(...)** en la esquina superior izquierda.
+
+1. Haga clic en la pestaña **+ Insertar (2)** y seleccione **Etiqueta de texto (3)**.
 
     ![](images/42.png)
 
@@ -510,6 +488,8 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
       * Correo Electrónico/Nombre de Usuario: <inject key="AzureAdUserEmail"></inject>
       * Contraseña: <inject key="AzureAdUserPassword"></inject>
 
+   > **Nota**: Si aparece una Advertencia de Seguridad de Windows, haga clic en **Sí** para continuar.
+
 1. Seleccione la herramienta **Power Platform (1)**, ahora debería tener al menos un **perfil de autenticación (2)**. Si tiene más de un perfil, asegúrese de que el perfil que creó esté seleccionado.
    
     ![](images/lab01ex03-05.png)
@@ -518,8 +498,8 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
     > **Nota**: Si puede ver el **Perfil Universal** en lugar del perfil **DeVAuth**, se debe a que agregó el valor **Environment URL** incorrecto en el comando **pac auth create** en el paso 9. Para solucionar este problema, siga los pasos a continuación:
 
       1. Elimine el **Perfil Universal** de Visual Studio Code haciendo clic en el botón Eliminar.
-      2. Copie el valor **Environment URL** correcto siguiendo el **Paso 4** de esta tarea.
-      3. Realice el **Paso 8** de esta tarea nuevamente para crear el perfil de autenticación.
+      2. Copie el valor **Environment URL** correcto siguiendo el **Paso 5** de esta tarea.
+      3. Realice el **Paso 9** de esta tarea nuevamente para crear el perfil de autenticación.
 
 1. Haga clic en **Terminal** y seleccione **Nuevo terminal** si aún no está abierta.
 
@@ -538,6 +518,6 @@ En este ejercicio, revisará y probará la extensión de la CLI de Power Platfor
 
 En este laboratorio, aprendió a importar y ejecutar una solución de inicio, a personalizarla agregando una nueva columna y actualizando la aplicación de administración, y a verificar la funcionalidad mediante la CLI de Power Platform.
 
-## Has completado este laboratorio con éxito. Haz clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
+## Ha completado este laboratorio con éxito. Haga clic en el botón **Siguiente >>** para continuar con el próximo laboratorio.
 
 ![](images/1.png)

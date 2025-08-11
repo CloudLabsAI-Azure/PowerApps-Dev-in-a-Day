@@ -19,7 +19,6 @@ Aprenda a importar y personalizar soluciones en Power Platform, crear componente
 ## Requisitos previos
 
 - Conocimientos básicos de Power Platform y Power Apps.
-- Acceso al entorno Power Platform y a la cuenta de Azure.
 - Conocimiento de APIs y desarrollo de componentes personalizados.
 - Familiaridad con GitHub y las operaciones de Git.
 - Preparación con los archivos necesarios, las definiciones de API y las herramientas de desarrollo.
@@ -55,32 +54,30 @@ Una vez que esté listo para comenzar, su máquina virtual y la **Guía** de lab
  
 En el entorno integrado, la máquina virtual del laboratorio funciona como el espacio de trabajo designado, mientras que la guía del laboratorio está accesible en el lado derecho de la pantalla.
 
-**Nota**: Asegúrese de seguir las instrucciones cuidadosamente para garantizar que el laboratorio funcione sin problemas y brinde una experiencia de usuario óptima.
- 
 ## Exploración de los Recursos de su Laboratorio
 
-Para comprender mejor los recursos y credenciales de su laboratorio, navegue hasta la pestaña **Detalles del Ambiente**.
+Para comprender mejor los recursos y credenciales de su laboratorio, navegue hasta la pestaña **Ambiente**.
 
 ![](./images/3.png)
 
-## Guía de laboratorio Acercar/Alejar
-
-Para ajustar el nivel de zoom de la página del entorno, haga clic en el ícono **A↕ : 100%** ubicado junto al temporizador en el entorno del laboratorio.
-
-![](./images/9.png) 
- 
 ## Uso de la Función de Ventana Dividida
 
 Para mayor comodidad, puede abrir la guía de laboratorio en una ventana separada seleccionando el botón **Ventana Dividida** en la esquina superior derecha.
  
 ![](./images/4.png)
- 
+
 ## Administración de su Máquina Virtual
 
 Siéntase libre de **iniciar**, **detener** o **reiniciar** su máquina virtual según sea necesario desde la pestaña **Recursos**. ¡Su experiencia está en sus manos!
  
 ![](./images/5.png)
  
+## Guía de laboratorio Acercar/Alejar
+
+Para ajustar el nivel de zoom de la página del entorno, haga clic en el ícono **A↕ : 100%** ubicado junto al temporizador en el entorno del laboratorio.
+
+![](./images/9.png) 
+  
 ## Comencemos con el Portal de Azure
 
 1. En su máquina virtual, haga clic en el ícono del **Portal de Azure** como se muestra a continuación:
@@ -103,17 +100,19 @@ Siéntase libre de **iniciar**, **detener** o **reiniciar** su máquina virtual 
 
    ![](./images/asklater.png)
 
-   > **NOTA:** Sin MFA activo, seleccione **Preguntar después**.
 
 5. Si ve la ventana emergente **¿Desea permanecer conectado?**, haga clic en **No**.
 
    ![](./images/GS9-11.png)
 
-6. Si ve la ventana emergente **¡Tiene recomendaciones gratuitas de Azure Advisor!**, cierre la ventana para continuar con el laboratorio.
-
 7. Si aparece una ventana emergente **Bienvenido a Microsoft Azure**, haga clic en **Cancelar** para omitir la visita guiada.
 
+   ![](./images/2102.png)
+
+
 Al completar estos ejercicios, importará y personalizará soluciones de Power Platform, creará e implementará componentes de código personalizados con Visual Studio Code, desarrollará e integrará conectores personalizados, creará e implementará Azure Functions y administrará soluciones con GitHub para el control de código fuente.
+
+   > **Nota:** Asegúrese de seguir las instruciones cuidadosamente para garantizar que el laboratorio se desarrolle sin problemas sy brinde una experiencia de usuario óptima.
    
 ## Contacto de Soporte
 
