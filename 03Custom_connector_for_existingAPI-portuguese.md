@@ -29,19 +29,17 @@ Ao analisar a API, verifica-se que tem quatro operações e utiliza uma API Key 
     https://make.powerapps.com
     ```
 
-1. Clique em **Environment (1)** e seleccione o ambiente de desenvolvimento pré-criado denominado **OTU WA HOL - xxxxxx (default) (2)**
+1. Clique em **Ambiente (1)** e selecione o ambiente de desenvolvimento pré-criado denominado **Azure HOL - xxxxxx (default) (2)**.
 
-    ![](images/L03/db1a.png)
+    ![](images/L03/a_g_u_7.png)
 
-2. Selecione **Solutions (1)** no menu do lado esquerdo do Power Apps.
+1. No menu do lado esquerdo do Power Apps, selecione **Soluções (1)** e clique em **Criar uma base de dados (2)** para criar uma base de dados do Dataverse.
 
-3. Clique em **Create a database (2)** para criar uma base de dados Dataverse.
+    ![](images/L03/dv_p4_e3_g_2.png)
 
-    ![](images/L03/db1.png)
+1. Na janela **Nova base de dados**, selecione **Moeda → TND (1)**, **Idioma → English (United States) (2)** e clique em **Criar a minha base de dados (3)**.
 
-5. Selecione **Currecny -> TND e Language -> English(1)** e clique em **Create my database (2)**.
-
-    ![](images/L03/db2.png)
+    ![](images/L03/dv_p4_e3_g_3.png)
 
     >**Nota:** Pode deixar este separador de navegador aberto e continuar com o próximo exercício, uma vez que a criação da base de dados Dataverse levará algum tempo.
 
@@ -58,16 +56,15 @@ os conectores devem estar numa solução separada das aplicações e dos fluxos 
     https://make.powerapps.com
     ```
 
-    ![](images/L03/dev11.png)
+    ![](images/L03/dv_p4_e3_g_5.png)
 
-2. Selecione **Solutions** e clique em **+ New solution**.
+1. No portal Power Apps, selecione **Soluções (1)** no menu lateral esquerdo e clique em **+ Nova solução (2)** no topo da página.
 
-    ![](images/L03/L03-solution.png)
+    ![](images/L03/dv_p4_e3_g_6.png)
 
-3. Introduza **Contoso Badges connector (1)** para o nome de visualização, seleccione **Contoso Coffee (ContosoCoffee) (2)** para Publisher e
- clique em **Create (3)**.
+1. Introduza **Contoso Badges connector (1)** como nome a apresentar, selecione **Contoso Coffee (ContosoCoffee) (2)** como editor e clique em **Criar (3)**.
 
-    ![](images/L03/image2-1.png)
+    ![](images/L03/dv_p4_e3_g_7.png)
 
 > **Parabéns** por completar a tarefa! Agora, é hora de validá-lo. Aqui estão os passos:
 > - Pressione o botão Validar para a tarefa correspondente. Se receber uma mensagem de êxito, pode prosseguir para a próxima tarefa. 
@@ -88,119 +85,127 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
     https://contosobadgestest.azurewebsites.net/
     ```
 
-3. Clique no **Open API definition file**.
+1. Clique no **Open API definition file**.
 
-    ![](images/L03/image3.png)
+    ![](images/L03/dv_p4_e3_g_8.png)
 
-3. Faça uma revisão rápida da definição de API aberta.
+1. Faça uma revisão rápida da definição de API aberta.
 
-4. Clique com o botão direito do rato na página seleccione **Save as** ou utilize **Ctrl + C** e nomeie o ficheiro como **swagger.json** na sua máquina. Agora, feche o separador do navegador por
+1. Clique com o botão direito do rato na página seleccione **Save as** ou utilize **Ctrl + C** e nomeie o ficheiro como **swagger.json** na sua máquina. Agora, feche o separador do navegador por
  clicando em **X**.
 
     ![](images/L03/image4.png)
 
 
-5. Navegue até ao portal do fabricante do Power Apps e certifique-se de que está no seu ambiente de desenvolvimento chamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
+1. Navegue até ao portal do fabricante do Power Apps e certifique-se de que está no seu ambiente de desenvolvimento chamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
     ```
     https://make.powerapps.com
     ```
 
-6. Selecione **Solutions (1)** abra a solução **Contoso Badges connector(2)** que criou.
+1. Selecione **Soluções (1)** no painel de navegação esquerdo e abra a solução **Contoso Badges connector (2)** que acabou de criar.
 
-    ![](images/L03/L03-contoso.png)
+    ![](images/L03/dv_p4_e3_g_9.png)
 
-7. Clique em **+ New (1) | Automation (2)** e selecione **Custom connector (3)**.
+1. Clique em **+ Criar (1)**, passe o cursor sobre **Automatização (2)** e selecione **Conector personalizado (3)**.
 
-    ![](images/L03/image5-1.png)
+    ![](images/L03/dv_p4_e3_g_10.png)
 
 
-8. Introduza as seguintes informações sobre a lâmina **Create Connector**.
+1. Na lâmina **Criar conector**, introduza as seguintes informações:
 
-    1. Nome do conector: **Badges connector (1)**
-    2. Descrição: **Connector for contosobadgestest (2)**
-    3. Host: **contosobadgestest.azurewebsites.net (3)** e
-    4. clique em **Create Connector (4)**.
+    - Nome do conector: **Badges connector (1)**
+    - Descrição: **Connector for contosobadgestest (2)**
+    - Host: **contosobadgestest.azurewebsites.net (3)**
+    - Clique em **Criar conector (4)** para continuar.
 
-        ![](images/L03/L03-badges1u.png)
+        ![](images/L03/dv_p4_e3_g_11.png)
 
        >**Nota**:Se for pedido a login, utilize as credenciais ODL encontradas no separador ambiente localizados à direita do guia Lab.
 
-9. Selecione **Custom connector (1)** do mapa do site. Clique no botão **... More actions (2)** do conector personalizado que criou e seleccione **Update from Open API file (3)**
+1. No mapa do site, selecione **Conectores personalizados (1)**. Clique no botão de reticências **...(2)** junto ao conector personalizado que criou e selecione **Atualizar a partir do ficheiro OpenAPI (3)**.
 
-    ![](images/L03/L03-custom.png)
+    ![](images/L03/dv_p4_e3_g_12.png)
 
-10. Clique em **Import** para selecionar o ficheiro API.
+1. Clique em **Importar** para selecionar o ficheiro OpenAPI.
 
-    ![](images/L03/L03-import.png)
+    ![](images/L03/dv_p4_e3_g_13.png)
 
-11. Selecione o ficheiro **swagger. json** que guardou na sua máquina e clique em **Open**.
+1. Selecione o ficheiro **swagger.json** que guardou na sua máquina e clique em **Open**.
 
-12. Clique em **Continue** no **Import an OpenAPI file** pop-up.
+1. No pop-up **Importar um ficheiro OpenAPI**, clique em **Continuar**.
 
-    ![](images/L03/image8-1.png)
+    ![](images/L03/dv_p4_e3_g_14.png)
 
-13. Introduza **Connector for contosobadgestest (1)** para Descrição, **contosobadgestest.azurewebsites.net (2)** para host,
- e avançar para **Security (3)**.
+1. Introduza **Connector for contosobadgestest (1)** para Descrição, **contosobadgestest.azurewebsites.net (2)** para Anfitrião, e clique em **Segurança (3)** para avançar.
 
-    ![](images/L03/image9-1u.png)
+    ![](images/L03/dv_p4_e3_g_15.png)
 
-14. Reveja a configuração **security configuration (1)** e avance para **Definition (2)**.
+1. Reveja a configuração da **Chave de API (1)** com os seguintes campos:
 
-    ![](images/L03/L03-security.png)
+    - **Etiqueta do parâmetro**: Chave de API  
+    - **Nome do parâmetro**: X-API-KEY  
+    - **Localização do parâmetro**: Cabeçalho  
 
-15. Não navegue por esta página.
+    Clique em **Definição (2)** para continuar.
+
+    ![](images/L03/dv_p4_e3_g_16.png)
+
+1. Não navegue por esta página.
 
 ### Tarefa 2: Modifique a definição
 
 1. Selecione a ação **AddCredit (1)** então **Important (2)** para a Visibilidade.
 
-    ![](images/L03/image10-1.png)
+    ![](images/L03/dv_p4_e3_g_17.png)
 
-3. Desça até à secção **Request**, clique no botão chevron do **body** e selecione **Edit**.
+1. Desça até à secção **Corpo**, clique no botão de seta ao lado de **body** e selecione **Editar**.
 
-    ![](images/L03/image11.png)
+    ![](images/L03/dv_p4_e3_g_18.png)
 
-4. Desça e clique no botão chevron de **points** e selecione **Edit**.
+1. Na secção **Corpo** da resposta, clique no botão de chevron ao lado de **points (1)** e selecione **Editar (2)**.
 
-    ![](images/L03/image12.png)
+    ![](images/L03/dv_p4_e3_g_19.png)
 
-5. Selecione **Yes** para é necessário e clique no botão **Back**.
+1. Na janela **Propriedade do Esquema**, selecione **Sim (1)** para marcar o campo como obrigatório e clique em **Anterior (2)** para voltar.
 
-    ![](images/L03/image13.png)
+    ![](images/L03/dv_p4_e3_g_20.png)
 
-6. Clique no botão chevron do **recipientid** e selecione **Edit**.
+1. Clique no botão chevron do **recipientid** e selecione **Editar**.
 
-    ![](images/L03/L03-recepient.png)
+    ![](images/L03/a_g_u_21.png)
 
-7. Selecione **Yes** para é necessário e clique no botão  **Back**.
+1. Selecione **Sim (1)** para “É obrigatório?” e clique no botão **Anterior (2)**.
 
-    ![](images/L03/image13.png)
+    ![](images/L03/a_g_u_20.png)
 
-8. Clique no botão chevron de **name** e seleccione **Edit**.
+1. Clique no botão chevron de **name** e seleccione **Edit**.
 
-    ![](images/L03/L03-name.png)
+    ![](images/L03/a_g_u_17.png)
 
-9. Selecione **Yes** para é necessário e clique no botão  **Back**.
+1. Selecione **Sim (1)** para “É obrigatório?” e clique no botão **Anterior (2)**.
 
-    ![](images/L03/image13.png)
+    ![](images/L03/a_g_u_18.png)
 
-10. Clique no botão **Back** novamente.
+1. Clique no botão **Anterior** novamente.
 
-    ![](images/L03/image14.png)
+    ![](images/L03/dv_p4_e3_g_21.png)
 
-11. Avançar para **AI Plugin(preview)**.
-12. Avanço para **Code**
+1. Avançar para **AI Plugin(preview)**.
 
-13. Analise o código e avance para **Test**.
+1. Avance para **Código**.
 
-    ![](images/L03/L03-test.png)
+    ![](images/L03/dv_p4_e3_g_22.png)
 
-14. Clique em **Update connector** e aguarde que o conector seja atualizado
+1. Analise o código e avance para **Testar**.
 
-    ![](images/L03/image15.png)
+    ![](images/L03/dv_p4_e3_g_23.png)
 
-15. Não navegue por esta página.
+1. Clique em **Atualizar conector** e aguarde que o conector seja atualizado.
+
+    ![](images/L03/dv_p4_e3_g_24.png)
+
+1. Não navegue por esta página.
 
 ### Tarefa 3: Conector de teste
 
@@ -210,49 +215,59 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
     https://contosobadgestest.azurewebsites.net/
     ```
 
-2. Clique no link **API Key**
+1. Clique no link **API Key**
 
-    ![](images/L03/image16.png)
+    ![](images/L03/dv_p4_e3_g_25.png)
 
-3. Copie o valor **API Key** e guarde-o no Notepad, pois irá utilizar este valor nos próximos passos. Agora, feche o separador do browser clicando em **X**.
+1. Copie o valor **API Key** e guarde-o no Notepad, pois irá utilizar este valor nos próximos passos. Agora, feche o separador do browser clicando em **X**.
 
-4. Volte à página de teste do conector e clique em **+ New Connection**.
+    ![](images/L03/dv_p4_e3_g_26.png)
 
-    ![](images/L03/image17.png)
+1. Volte para a aba **5. Testar** e clique em **+ Nova ligação** para criar uma nova conexão com o co
 
-5. Colar a chave **API (1)** copiou em **passo 3** desta tarefa e clique em **Create connection (2)**.
+    ![](images/L03/dv_p4_e3_g_27.png)
 
-    ![](images/L03/image18-1.png)
+1. Cole a chave **API (1)** que copiou no **Passo 3** desta tarefa e clique em **Criar ligação (2)** para estabelecer a conexão com o conector.
 
-6. Clique no botão **Refresh**.
+    ![](images/L03/dv_p4_e3_g_28.png)
 
-    ![](images/L03/image19.png)
+1. Clique no botão **Atualizar** no canto superior direito para atualizar a lista de ligações disponíveis.
 
-7. A ligação que criou deve ser selecionada.
+    ![](images/L03/a_g_u_8.png)
 
-8. Aceda à operação **AddCredit (1)**. Introduza o seu endereço de e-mail para o reciprided, introduza o seu nome para nome, introduza **1** para pontos e clique em **Test operation (2)**.
+1. A ligação que criou deve ser selecionada.
 
-    ![](images/L03/image20-1u.png)
+1. Aceda à operação **AddCredit**. Introduza **1** para o campo **points (1)**, insira o seu endereço de e-mail no campo **recipientId (2)**, o seu nome no campo **name (3)** e clique em **Operação de teste (4)**.
 
-9. O teste deve ter sucesso e a resposta deve parecer a image abaixo.
+    ![](images/L03/dv_p4_e3_g_29.png)
 
-    ![](images/L03/image21u.png)
+1. O teste deve ter sucesso e a **resposta** deve parecer a imagem abaixo.
 
-11. Selecione a operação **GetRecipient**.
+    ![](images/L03/dv_p4_e3_g_30.png)
 
-12. Forneça o seu endereço de e-mail como id e clique em **Test operation**.
+1. Clique em **GetRecipient (1)** na lista de operações. Forneça o seu endereço de e-mail no campo **id (2)** e clique em **Operação de teste (3)**
 
-    ![](images/L03/image22-1u.png)
+    ![](images/L03/dv_p4_e3_g_31.png)
 
-13. O teste deve ter sucesso e deve obter a resposta esperada.
+1. O teste deve ter sucesso e deve obter a resposta esperada.
 
-14. Vá em frente e teste as operações **ListBadges** e **ListRecipients**. Deixe as opções em branco e clique em **Test operation**.
+    ![](images/L03/dv_p4_e3_g_32.png)
 
-     ![](images/L03/image13c.png)
+1. Clique em **ListBadges (1)** na lista de operações. Deixe os campos **fromPoints** e **toPoints** em branco e clique em **Operação de teste (2)**.
 
-15. Todos os testes devem ter sucesso.
+    ![](images/L03/dv_p4_e3_g_33.png)
 
-    ![](images/L03/image23.png)
+1. Todos os testes devem ter sucesso.
+
+    ![](images/L03/dv_p4_e3_g_34.png)
+
+1. Clique em **ListRecipients (1)** na lista de operações. Deixe os campos **fromPoints** e **toPoints** em branco e clique em **Operação de teste (2)**.
+
+    ![](images/L03/dv_p4_e3_g_35.png)
+
+1. Todos os testes devem ter sucesso.
+
+    ![](images/L03/dv_p4_e3_g_36.png)
 
 > **Parabéns** por completar a tarefa! Agora, é hora de validá-lo. Aqui estão os passos:
 > - Pressione o botão Validar para a tarefa correspondente. Se receber uma mensagem de êxito, pode prosseguir para a próxima tarefa. 
@@ -263,7 +278,7 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
 ## Exercício 4 – Adicionar código personalizado
 
-Neste exercício, irá adicionar uma nova operação para devolver apenas o nome do crachá e a image atual.
+Neste exercício, irá adicionar uma nova operação para devolver apenas o nome do crachá e a imagem atual.
 Fará isto utilizando a funcionalidade de código personalizado para remodelar a resposta da API.
 
 ### Tarefa 1: Adicione o código da pasta de recursos
@@ -274,99 +289,97 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
     https://make.powerautomate.com
     ```
 
-2. Clique em **More (1)** e seleccione **Discover All (2)**.
+1. Clique em **Base (1)** no menu lateral esquerdo. Em seguida, selecione **Descobrir tudo (2)** no painel **Mais**.
 
-    ![](images/L03/L03-connectormore.png)
+    ![](images/L03/dv_p4_e3_g_39.png)
 
-3. Sob **Data (1)** e seleccione **Custom connectors (2)**.
+1. Em **Dados (1)**, selecione **Conectores personalizados (2)**.
 
-    ![](images/L03/L03-connectoru.png)
+    ![](images/L03/dv_p4_e3_g_40.png)
 
-4. Clique no botão **Edit** do conector personalizado que criou.
+1. Clique no botão **Editar** do conector personalizado que criou.
 
-    ![](images/L03/image24u.png)
+    ![](images/L03/dv_p4_e3_g_41.png)
 
-5. Selecione o separador **Definition** no menu suspenso e clique em **New action** no separador definição.
+1. Selecione o separador **Definição** e clique em **Nova ação**.
 
-    ![](images/L03/L03-EX3.1.png)
+    ![](images/L03/dv_p4_e3_g_42.png)
 
-6. Introduza as seguintes informações para adicionar a ação **Get current badge**.
+1. Introduza as seguintes informações para adicionar a ação **Get current badge**:
 
-    1. Resumo: **Get current badge (1)**
-    2. Descrição: **Get current badge (2)**
-    3. ID de operação: **getcurrentbadge (3)**
+    - No campo **Resumo**, digite: `Get current badge` **(1)**
+    - No campo **Descrição**, digite: `Get current badge` **(2)**
+    - No campo **ID da operação**, insira: `getcurrentbadge` **(3)**
 
-       ![](images/L03/image26-1.png)
+       ![](images/L03/dv_p4_e3_g_43.png)
 
-7. Desça até à secção **Request** e clique em **+ Import from sample**.
+1. Desça até à secção **Pedido** e clique em **+ Importar a partir da amostra** para definir os parâmetros da operação a partir de um exemplo.
 
-    ![](images/L03/image27.png)
+    ![](images/L03/dv_p4_e3_g_44.png)
 
-8. Selecione **Get (1)** para o Verbo, introduza o valor abaixo para **URL (2)** e clique em **Import (3)**.
+1. Selecione **GET (1)** como o verbo, introduza o seguinte URL **https://contosobadgetest.azurewebsites.net/getcurrentbadge?id={id} (2)** e clique em **Importar (3)** para carregar os detalhes do pedido.
     
     ```
     https://contosobadgestest.azurewebsites.net/getcurrentbadge?id={id} 
     ```
 
-    ![](images/L03/image28-1.png)
+    ![](images/L03/dv_p4_e3_g_45.png)
 
-9. Clique em **Update connector** e aguarde que o conector seja atualizado.
-10. Selecione o separador **Code** do menu suspenso.
-11. Activar **Code (1)** e clique em **Upload (2)**.
+1. Clique em **Atualizar conector** e aguarde até que o conector seja atualizado.
 
-    ![](images/L03/image29-1.png)
+1. Selecione o separador **Código** do menu suspenso.
 
-12. Selecione o ficheiro **CustomConnectorCode.csx** localizado neste caminho `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` existente` e clique em **Open**.
-13. Selecione a ação **getcurrentbadge** no menu suspenso.
+1. No separador **4. Código (1)**, ative a opção **Código Ativado (2)** e clique em **Carregar (3)** para aplicar o código à operação.
 
-    ![](images/L03/image30.png)
+    ![](images/L03/dv_p4_e3_g_47.png)
 
-14. Reveja o código que acabou de adicionar.
-15. Clique em **Update connector** e aguarde que o conector seja atualizado.
-16. Avanço para **Test** selecionando-o no menu suspenso.
-17. Selecione a ação **getcurrentbadge**.
-18. Forneça o seu endereço de e-mail como id e clique em **Test operation**.
+1. No caminho `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources (1)`, selecione o ficheiro **CustomConnectorCode (2)** e clique em **Abrir (3)**.
 
-    ![](images/L03/image31-1.png)
+    ![](images/L03/dv_p4_e3_g_48.png)
 
-19. O teste deve ter sucesso e deve obter um crachá atual para o utilizador que criou.
+1. No separador **Código**, selecione a ação **getcurrentbadge (1)** no menu suspenso e clique em **Testar (2)** para avançar.
 
-    ![](images/L03/image32.png)
+    ![](images/L03/dv_p4_e3_g_49.png)
+
+1. Reveja o código que acabou de adicionar.
+
+1. Clique em **Atualizar conector** e aguarde até que o conector seja atualizado.
+
+1. Avanço para **Test** selecionando-o no menu suspenso.
+
+1. Na secção **Operações**, selecione **getcurrentbadge (1)**, introduza o seu endereço de e-mail como valor de **id (2)** e clique em **Operação de teste (3)** para executar a ação.
+
+    ![](images/L03/dv_p4_e3_g_50.png)
+
+1. O teste deve ter sucesso e deve obter um crachá atual para o utilizador que criou.
+
+    ![](images/L03/dv_p4_e3_g_51.png)
 
     > **Nota**: Se a operação de teste falhar, tente atualizar o conector, teste o conector executando os Passos 15-18 novamente.
 
-20. Copie a resposta **Body** JSON.
+1. Copie a resposta **Body** JSON.
 
-21. Selecione o separador **Definição** no menu suspenso.
+1. No separador **Definição (1)**, desça até à secção **Resposta**, clique em **+ Adicionar resposta predefinida (2)**, cole o JSON fornecido no campo **Corpo (3)** e clique em **Importar (4)**.
 
-22. Selecione a ação **getcurrentbadge**.
+    ![](images/L03/dv_p4_e3_g_52.png)
 
-    ![](images/L03/image33.png)
+1. Clique em **Atualizar conector** e aguarde até que o conector seja atualizado.
 
-24. Desça até à secção **Response** e clique em **+ Add default response.**
-
-    ![](images/L03/image34.png)
-
-
-25. Cole o JSON que copiou no **Body (1)** e clique em **Import (2)**.
-
-    ![](images/L03/image35-1.png)
-
-26. Clique em **Update connecto** e aguarde que o conector seja atualizado.
-27. **Não** navegue por esta página.
+1. **Não** navegue por esta página.
 
 ### Tarefa 2: Teste o código personalizado
 
 Nesta tarefa, testará o seu código personalizado.
 
-1. Selecione o separador **Test**.
-2. Selecione a ligação que criou anteriormente.
+1. Selecione o separador **Testar**.
 
-1. Aceda à secção **Operations** e seleccione a operação **getcurrentbadge (1)**. Forneça o seu e-mail como **id (2)** e clique em **Test operation (3)**.
+1. Selecione a ligação que criou anteriormente.
 
-    ![](images/L03/image36-1u.png)
+1. Na secção **Operações**, selecione a operação **getcurrentbadge (1)**, introduza o seu endereço de e-mail como **id (2)** e clique em **Operação de teste (3)**.
 
-5. A operação deve ter sucesso e a resposta **Body** deve parecer a image abaixo.
+    ![](images/L03/dv_p4_e3_g_53.png)
+
+1. A operação deve ter sucesso e a resposta **Body** deve parecer a imagem abaixo.
 
     ![](images/L03/image37.png)
 
@@ -384,173 +397,174 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
     https://make.powerapps.com
     ```
 
-2. Expanda **Solutions** e abra a solução **PrioritZ**.
+1. Expanda **Solutions** e abra a solução **PrioritZ**.
 
-3. Selecione **Apps (1)** , selecione a aplicação **PrioritZ Ask (2)** e clique em **Edit (3)**.
+1. Selecione **Aplicações (1)**, selecione a aplicação **PrioritZ Ask (2)** e clique em **Editar (3)**.
 
-    ![](images/L03/image38-1u.png)
+    ![](images/L02/dv_p3_e2_g_23.png)
 
-4. Selecione **Data** a partir da esquerda e clique em **+ Add data.**
+1. No menu lateral esquerdo, selecione **Dados (1)** e clique em **+ Adicionar dados (2)**.
 
-    ![](images/L03/image39.png)
+    ![](images/L03/dv_p4_e3_g_54.png)
 
-5. Expandir **Connectors** e seleccione o conector **Badges** que criou.
+1. Expanda a secção **Conectores (1)** e selecione o conector **Badges connector (2)** que criou anteriormente.
 
-    ![](images/L03/image40uu.png)
+    ![](images/L03/dv_p4_e3_g_55.png)
 
-6. Clique em **+ Add a connection**.
+1. Clique em **+ Adicionar uma ligação** para criar a ligação ao conector **Badges connector**.
 
-    ![](images/L03/L03-EX4.png)
+    ![](images/L03/dv_p4_e3_g_56.png)
 
-7. Abra um novo separador ou janela do navegador e navegue até ao URL abaixo para abrir a API Contoso Coffee Badge.
+1. Abra um novo separador ou janela do navegador e navegue até ao URL abaixo para abrir a API Contoso Coffee Badge.
 
     ```
     https://contosobadgestest.azurewebsites.net/
     ```
 
-8. Clique no link **open the API Key**
+1. Clique no link **Abrir a Chave de API**
 
     ![](images/L03/image41.png)
 
-9. Copie o valor **API Key** e cole o valor para o Notapad, pois irá utilizar este valor nos próximos passos. Agora, feche o separador do browser clicando em **X**.
+1. Copie o valor **API Key** e cole o valor para o Notapad, pois irá utilizar este valor nos próximos passos. Agora, feche o separador do browser clicando em **X**.
 
-10. Volte ao designer da aplicação, cole a chave **API (1)** que copiou no passo anterior e clique em **Connect (2)**.
+1. Volte ao designer da aplicação, cole a chave **API (1)** que copiou no passo anterior e clique em **Connect (2)**.
 
     ![](images/L03/image42-1u.png)
 
 
-11. Selecione a **Tree view**.
+1. Selecione a **Tree view**.
 
-12. Selecione o separador **Screens (1)**, aceda ao separador **Insert (2)**, clique em **Media** e selecione **Image (3)**.
+1. Na **Vista de árvore (1)**, selecione o separador **Ecrãs (2)**.  
+Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)**.
 
-    ![](images/L03/L03-componentuu.png)
+    ![](images/L03/dv_p4_e3_g_58.png)
 
-13. Clique duas vezes na image recém-adicionado e altere o seu nome para **User badge**.
+1. Clique duas vezes na imagem recém-adicionado e altere o seu nome para **User badge**.
 
     ![](images/L03/image44.png)
 
 
-14. Defina o crachá do utilizador **Image** valor para a fórmula abaixo.
+1. Defina o crachá do utilizador **Imagem** valor para a fórmula abaixo.
 
     ```
     ContosoBadges.getcurrentbadge({id:User().Email}).image
     ```
 
-    ![](images/L03/image45u.png)
+    ![](images/L03/a_g_u_9.png)
 
-15. Defina o valor da dica de ferramenta do crachá do utilizador na fórmula abaixo.
+1. Defina o valor da dica de ferramenta do crachá do utilizador na fórmula abaixo.
 
     ```
     ContosoBadges.getcurrentbadge({id:User().Email}).name
     ```
 
-    ![](images/L03/L03-EX4-T1u.png)
+    ![](images/L03/a_g_u_10.png)
 
-16. Faça a image mais pequena e mova-a para o canto superior direito do ecrã.
+1. Faça a imagem mais pequena e mova-a para o canto superior direito do ecrã.
 
-17. O crachá do utilizador deve agora parecer a image abaixo.
+1. O crachá do utilizador deve agora parecer a imagem abaixo.
 
-    ![](images/L03/image46.png)
+    ![](images/L03/a_g_u_11.png)
 
-18. Selecione o separador **Screen** na vista da Árvore. Clique no botão **Play**.
+1. Selecione o separador **Screen** na vista da Árvore. Clique no botão **Play**.
 
-19. Passe o crachá para ver o nome do crachá.
+1. Passe o crachá para ver o nome do crachá.
 
     ![](images/L03/image47.png)
 
-20. Feche a antevisão.
+1. Feche a antevisão.
 
-1. Selecione **Publish**.
+1. Selecione **Publicar**.
 
-23. Selecione **Publish this version**.
+    ![](images/L03/a_g_u_12.png)
 
-24. Volte à solução clicando no botão  **Back**.
+1. Selecione **Publicar esta versão**.
 
-    ![](images/L03/imagee47.png)
+    ![](images/L03/a_g_u_13.png)
 
-25. Não navegue por esta página.
+1. Volte à solução clicando no botão **Anterior**.
+
+    ![](images/L03/a_g_u_14.png)
+
+1. Não navegue por esta página.
 
 ### Tarefa 2: Teste conector do fluxo
 
 1. Certifique-se de que ainda está na solução **PrioritZ**.
 
-2. Clique em **+ New** e seleccione **Automation | Cloud flow | Instant**.
+1. Clique em **+ Criar (1)**, selecione **Automatização (2)**, depois **Fluxo de cloud (3)** e, por fim, **Instantâneo (4)**.
 
-    ![](images/L03/image48.png)
+    ![](images/L03/dv_p4_e3_g_61.png)
 
-3. Introduza **Test add credit** para o nome do fluxo, seleccione **Manually trigger a flow** e clique em **Create**.
+1. Introduza **Test add credit (1)** como nome do fluxo, selecione **Acionar manualmente um fluxo (2)** e clique em **Criar (3)**.
 
-    ![](images/L03/edd%20(1).png)
+    ![](images/L03/dv_p4_e3_g_62.png)
 
-4. Clique em **+ New step**.
+1. Clique em **+ Novo passo**.
 
-    ![](images/L03/L03-EX3-T2.png)
+    ![](images/L03/dv_p4_e3_g_63.png)
 
-5. Selecione o separador **Custom** e, em seguida, selecione a ação **Add credit**.
+1. Selecione o separador **Personalizado (1)** e, em seguida, selecione a ação **Add Credit (2)**.
 
-    ![](images/L03/edd%20(2).png)
+    ![](images/L03/dv_p4_e3_g_64.png)
 
-6. Introduza **Test connection**, cole a chave **API** que copiou anteriormente em **passo 9** de task1 neste exercício e clique em **Create**.
+1. Introduza **Test connection**, cole a chave **API** que copiou anteriormente em **passo 9** de task1 neste exercício e clique em **Create**.
 
     ![](images/L03/edd%20(3).png)
 
-7. Clique no campo **recipienteId**, Sob Manualmente acionar um painel de fluxo e selecione **User email**.
+1. No campo **recipientId (1)**, selecione **E-mail do utilizador**. No campo **name (2)**, selecione **Nome de utilizador** e, no campo **points (3)**, introduza `1`.
 
-    ![](images/L03/image49u.png)
+    ![](images/L03/dv_p4_e3_g_65.png)
 
-8. Clique no campo **name**, Sob Manualmente acionar um painel de fluxo e selecione ***User name**.
+1. No campo **name**, selecione **Nome de utilizador**.
 
-9. Introduza **1** para pontos e clique em **Save**. Aguarde que o fluxo seja guardado.
+1. Introduza **1** no campo **points** e clique em **Guardar**. Aguarde até que o fluxo seja guardado.
 
-    ![](images/L03/image50.png)
+1. Clique em **Test**.
 
-10. Clique em **Test**.
+    ![](images/L03/dv_p4_e3_g_66.png)
 
-    ![](images/L03/L03-EX4-test.png)
+1. Selecione **Manualmente (1)** e clique em **Testar (2)**.
 
-11. Selecione **Test** e clique novamente **TTesteste**.
+    ![](images/L03/dv_p4_e3_g_67.png)
 
-    ![](images/L03/L03-EX3-manually.png)
+1. Clique em **Testar**.
 
-12. Clique em **Test**.
+1. Clique em **Concluído**.
 
-13. Clique em **Test**.
+1. O fluxo deve ter sucesso. Depois de ter sido bem sucedido, clique no botão **Anterior**.
 
-14. Clique em **Done**.
+    ![](images/L03/a_g_u_16.png)
 
-15. O fluxo deve ter sucesso. Depois de ter sido bem sucedido, clique no botão **Back**.
+1. Selecione **Fluxos de cloud** e abra o fluxo que criou.
 
-    ![](images/L03/image51.png)
+    ![](images/L03/a_g_u_15.png)
 
-17. Selecione **Cloud flows** e abra o fluxo que criou.
+1. Inicie uma nova janela do browser e navegue até ao portal do fabricante de aplicações Power.
 
-    ![](images/L03/image52.png)
+1. Certifique-se de que está no ambiente correto.
 
-18. Inicie uma nova janela do browser e navegue até ao portal do fabricante de aplicações Power.
+1. Selecione **Apps** e inicie a aplicação **PrioritZ Ask**.
 
-19. Certifique-se de que está no ambiente correto.
-
-20. Selecione **Apps** e inicie a aplicação **PrioritZ Ask**.
-
-21. A aplicação deve agora mostrar **Cloud flows**.
+1. A aplicação deve agora mostrar **Cloud flows**.
 
     ![](images/L03/image53.png)
 
-22. Volte a fluir e execute-o mais duas vezes.
+1. Volte ao fluxo e execute-o mais duas vezes.
 
-    ![](images/L03/L03-EX4-run1.png)
+    ![](images/L03/a_g_u_23.png)
 
-23. Volte à aplicação **PrioritZ Ask** e atualize a página.
+1. Volte à aplicação **PrioritZ Ask** e atualize a página.
 
-24. Agora deve ver o crachá de **Team Player**.
+1. Agora deve ver o crachá de **Team Player**.
 
     ![](images/L03/image54.png)
 
-25. Vá para o fluxo e execute-o mais duas vezes.
+1. Vá para o fluxo e execute-o mais duas vezes.
 
-26. Volte à aplicação **PrioritZ Ask** e atualize a página.
+1. Volte à aplicação **PrioritZ Ask** e atualize a página.
 
-27. Agora deve ver o crachá **Champ**
+1. Agora deve ver o crachá **Champ**
 
     ![](images/L03/image55.png)
 
@@ -559,3 +573,7 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 Neste laboratório, aprendeu a criar e a modificar um conector personalizado utilizando uma definição Open API, a testar a sua funcionalidade e a integrá-la com aplicações de lona e fluxos dentro da Power Platform.
 
 ## Concluiu este laboratório com sucesso. Prossiga para a próxima página.
+
+![](./images/NextPage.png)
+
+## Boa aprendizagem!!

@@ -2,11 +2,11 @@
 
 ## Duração estimada: 90 minutos
 
-Trabalhando como parte da equipa de PrioritZ fusion, estará a configurar GitHub Actions com as ferramentas de Power Platform para automatizar e agilizar as implementações da equipa. Isto envolve a configuração da integração contínua e dos pipelines de implementação contínua (CI/CD) para garantir a entrega perfeita e eficiente de atualizações nas aplicações Power Platform, ao mesmo tempo que gere os processos de controlo, teste e implementação de versão para melhorar a colaboração e manter padrões de alta qualidade em todo o projetos da equipa.
+Trabalhando como parte da equipa de PrioritZ fusion, estará a configurar GitHub Actions com as ferramentas de Power Platform para automatizar e agilizar as implementações da equipa. Isto envolve a configuração da integração contínua e dos pipelines de implementação contínua (CI/CD) para garantir a entrega perfeita e eficiente de atualizações nas aplicações Power Platform, ao mesmo tempo que gere os processos de controlo, teste e implementação de versão para melhorar a colaboração e manter padrões de alta qualidade em todos os projetos da equipa.
 
 Objectivos de laboratório
 
-- Exercício 1: Configure um Service Principal
+- Exercício 1: Configure um service principal
 - Exercício 2: Promover Solução para Teste Ambiente
 - Exercício 3: Criar o GitHub Repo
 - Exercício 4: Exportação e Branching
@@ -14,11 +14,11 @@ Objectivos de laboratório
 
 ## Exercício 1 – Configure um Service Principal
 
-Neste exercício, criará um service Principal. O service Principal será utilizado pelo GitHub Actions, para que não sejam executadas sob a sua identidade individual do utilizador.
+Neste exercício, criará um service principal. O service principal será utilizado pelo GitHub Actions, para que não sejam executadas sob a sua identidade individual do utilizador.
 
 ### Tarefa 1: Criar registo de aplicações
 
-1. Navegue de volta ao separador do navegador em que o Portal do Azure está aberto. Se ainda não estiver aberto, navegue até ao Portal Azure utilizando o URL abaixo.
+1. Navegue de volta ao separador do navegador em que o Portal do Azure está aberto. Se ainda não estiver aberto, navegue até ao Portal do Azure utilizando o URL abaixo.
 
     ```
     https://portal.azure.com/
@@ -26,40 +26,37 @@ Neste exercício, criará um service Principal. O service Principal será utiliz
 
 1. Na página inicial do Portal do Azure, pesquise por **Microsoft Entra ID** ***(1)*** na barra de pesquisa e seleccione **Microsoft Entra ID** ***(2)***.
 
-    ![](images/dev3.png)
+    ![](images/L05/dv_p5_e4_g_1.png)
 
-1. Selecione **App registrations** ***(1)*** da lâmina lateral e clique em **+ New registration** ***(2)***. Este registo de aplicação será utilizado para o conector para aceder à API protegida.
+1. No menu lateral, selecione **Registos de aplicações (1)** e clique em **+ Novo registo (2)** para criar o registo de aplicação que será utilizado pelo conector para aceder à API protegida.
 
-    ![](images/L05/diad5l2.png)
+    ![](images/L05/dv_p5_e4_g_2.png)
 
-1. Forneça os seguintes detalhes e clique em **Register** ***(3)***.
+1. Forneça o nome **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** (1)**, selecione **Contas apenas neste diretório organizacional (Azure HOL — Inquilino único) (2)** e clique em **Registar (3)**.
 
-    - Nome: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-    - Tipos de conta suportados: **Accounts in this organizational directory only (OTU WA HOL - xxxxxx only - Single tenant)** ***(2)***
+    ![](images/L05/dv_p5_e4_g_3.png)
 
-        ![](images/diad5l3uup.png)
+1. Copie o **ID de aplicação (cliente)** e o **ID do diretório (inquilino)** e guarde-os num bloco de notas para utilização posterior.
 
-1. Copie o **Application (client) ID**, **Directory(Tenant) ID** e guarde-o num bloco de notas, pois precisa deles para utilização posterior.
+    ![](images/L05/dv_p5_e4_g_4.png)
 
-    ![](images/L05/diad5l4.png)
+1. Na lâmina lateral, selecione **Certificados e segredos (1)** e clique em **+ Novo segredo do cliente (2)**.
 
-1. Selecione **Certificates & secrets** na lâmina lateral e clique em **+ New client secret**.
+    ![](images/L05/dv_p5_e4_g_5.png)
 
-    ![](images/L05/diad5l5.png)
+1. Introduza **GitHub client secret<inject key="DeploymentID" enableCopy="false" /> (1)** como descrição, defina o prazo de expiração para **90 dias (3 meses) (2)** e clique em **Adicionar (3)**.
 
-1. Introduza **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** ***(1)*** como descrição, define expiro para **3 months** ***(2 )*** e clique em **Add** ***(3)***.
+    ![](images/L05/dv_p5_e4_g_6.png)
 
-    ![](images/L05/diad5l6.png)
+1. Copie o **Valor** do segredo do cliente e guarde-o num bloco de notas para utilização posterior.
 
-1. Copie o **valor** e guarde-o num bloco de notas conforme necessário para utilização posterior.
+    ![](images/L05/dv_p5_e4_g_7.png)
 
-    ![](images/L05/diad5l7.png)
-
-    >**Nota**: Certifique-se de que copia os valores corretos de **Application (client) ID**, **Directory(Tenant) ID** and **Secret**. Copiar o valor incorreto resultará em problemas nos próximos passos/tarefas.
+    >**Nota**: Certifique-se de copiar os valores corretos de **Application (client) ID**, **Directory (tenant) ID** e **Secret**. Copiar valores incorretos resultará em problemas nos passos ou tarefas seguintes.
 
 ### Tarefa 2: Crie um novo Dataverse
 
-Nesta tarefa, irá um novo teste de ambientes Dataverse.
+Nesta tarefa, irá criar um novo ambiente de teste do Dataverse.
 
 1. Abra uma nova janela ou aba do browser e navegue até ao Power Platform Admin Center utilizando o URL abaixo.
 
@@ -67,35 +64,33 @@ Nesta tarefa, irá um novo teste de ambientes Dataverse.
     https://admin.powerplatform.microsoft.com/environments
     ```
 
-1. Clique em **+New** para criar um novo Dataverse.
+1. Clique em **+Novo** para criar um novo Dataverse.
 
-    ![](images/L05/newtask1.png)
+    ![](images/L05/dv_p5_e4_g_8.png)
 
-1. No separador **New environment**.
+1. No separador **Novo ambiente**:  
 
-    - Name:**DEV_ENV_TEST(1)**.
+    - Nome: **DEV_ENV_TEST(1)**.  
 
-    - Make this a Managed Environment:**Ativar Sim(2)**.
+    - Tornar este um Ambiente Gerido: **Ativar Sim(2)**.  
 
-    - Group:**None(3)**. e desça.
+    - Grupo: **Nenhum(3)** e desça. 
 
-    - Type :**Developer(4)** e clique em **Next(5)**.
+    - Tipo: **Programador(4)** e clique em **Seguinte(5)**.  
 
-    - Deploy sample apps and data? :**Ativar Sim(6)** e clique em **Save(7)**.
+    - Implementar aplicações e dados de exemplo?: **Ativar Sim(6)** e clique em **Guardar(7)**.
 
-        ![](images/L05/newtask2.png)
+        ![](images/L05/dv_p5_e4_g_9.png)
 
-        ![](images/L05/newtask3.png)
-
-        ![](images/L05/newtask4.png)
+        ![](images/L05/dv_p5_e4_g_10.png)
 
 1. Agora pode ver o novo Dataverse, **DEV_ENV_TEST**, que criou.
 
-    ![](images/L05/newtask5.png)
+    ![](images/L05/dv_p5_e4_g_11.png)
 
 ### Tarefa 3: Crie um utilizador de aplicação no Dataverse
 
-Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos ambientes de dev e test de Dataverse. Será também atribuídas permissões ao service principle para implementar soluções
+Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos ambientes de dev e test de Dataverse. Serão também atribuídas permissões ao service principle para implementar soluções
 
 
 1. Abra uma nova janela ou aba do browser e navegue até ao Power Platform Admin Center utilizando o URL abaixo.
@@ -104,86 +99,85 @@ Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos am
     https://admin.powerplatform.microsoft.com/environments
     ```
 
-1. Clique em **Environments** ***(1)*** da lâmina lateral e seleccione o seu **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
+1. Clique em **Ambientes** **(1)** da lâmina lateral e seleccione o seu **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** **(2)**.
 
-    ![](images/L05/env1u.png)
+    ![](images/L05/dv_p5_e4_g_12.png)
 
-1. Na página do seu ambiente, clique em **Settings**.
+1. Na página do seu ambiente, clique em **Definições**. 
 
-    ![](images/L05/diad5l9u.png)
+    ![](images/L05/dv_p5_e4_g_13.png)
 
-1. Expandir **Users + permissions** **(1)** e seleccione **Application users** **(2)**.
+1. Expanda **Utilizadores + permissões** **(1)** e selecione **Utilizadores da aplicação** **(2)**. 
 
-    ![](images/L05/diad5l10u.png)
+    ![](images/L05/dv_p5_e4_g_14.png)
 
-1. Na página utilizadores da aplicação, clique em **+ New app user**.
+1. Na página **Utilizadores da aplicação**, clique em **+ Novo utilizador da aplicação**.  
 
-    ![](images/L05/diad5l11u.png)
+    ![](images/L05/dv_p5_e4_g_15.png)
 
-1. Na guia do utilizador da aplicação, clique em **+ Add an app**.
+1. Na guia **Criar um novo utilizador da aplicação**, clique em **+ Adicionar uma aplicação**.  
 
-    ![](images/L05/diad5l12.png)
+    ![](images/L05/dv_p5_e4_g_16.png)
 
-1. Selecione o **GitHub Deploy<inject key="DeploymentID" activityCopy="false" />** ***(1)*** registo de aplicação que criou anteriormente e clique em **Add** **( 2)**.
+1. Selecione o **GitHub Deploy<inject key="DeploymentID" activityCopy="false" />** **(1)** que criou anteriormente e clique em **Adicionar** **(2)**.  
 
-    ![](images/L05/diad5l13u.png)
+    ![](images/L05/dv_p5_e4_g_17.png)
 
-1. Digite **org** e selecione sua **unidade de negócios** **(1)** e em **Funções de segurança** clique em **editar símbolo (2)** e selecione 
-   **Administrador do sistema(3)** e clique em **Criar (4)**.
+1. Digite **org** e selecione a sua **unidade de negócio** **(1)**, em **Direitos de acesso** clique no **ícone de edição** **(3)**, selecione **System Administrator** **(2)** e clique em **Criar** **(4)**. 
 
-    ![](images/L05/diad5l14u.png)
-
-    **Observação:** se o símbolo **#** ainda estiver visível antes do GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, clique nele e atualize o painel para removê-lo.
-
-1. Volte a recuar para **Environments** ***(1)*** na lâmina lateral e seleccione o seu **DEV_ENV_TEST** ***(2)***.
-
-    ![](images/L05/diad5l17u.png)
-
-1. Na página de ambiente de teste, clique em **Settings**.
-
-    ![](images/L05/diad5l18u.png)
-
-1. Expandir **Users + permissions** ***(1)*** e seleccione **Application users** ***(2)***.
-
-    ![](images/L05/diad5l19u.png)
-
-1. Na página utilizadores da aplicação, clique em **+ New app user**.
-
-    ![](images/L05/diad5l11uu.png)
-
-1. No separador **Create a new app user**, clique em **+ Add an app**.
-
-    ![](images/L05/diad5l12.png)
-
-1. Selecione o **GitHub Deploy<inject key="DeploymentID" activityCopy="false" />** ***(1)*** registo de aplicação que criou anteriormente e clique em **Add** ***(2)***.
-
-    ![](images/L05/diad5l13uu.png)
-
-1. Digite **org** e selecione sua **unidade de negócios** **(1)** e em **Funções de segurança** clique em **editar símbolo (2)** e selecione **Administrador do sistema(3)** e clique em **Criar (4)**.
-
-    ![](images/L05/diad5l14uu.png)
+    ![](images/L05/dv_p5_e4_g_18.png)
 
     **Observação:** se o símbolo **#** ainda estiver visível antes do GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, clique nele e atualize o painel para removê-lo.
 
-1. Clique em **Environments** ***(1)*** e seleccione o seu **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** ***(2)***.
+1. Volte para **Ambientes** **(1)** no painel lateral e selecione o seu ambiente **DEV_ENV_TEST** **(2)**. 
 
-    ![](images/L05/envu.png)
+    ![](images/L05/dv_p5_e4_g_20.png)
+
+1. Na página de ambiente de teste, clique em **Definições**. 
+
+    ![](images/L05/dv_p5_e4_g_13.png)
+
+1. Expanda **Utilizadores + permissões** **(1)** e selecione **Utilizadores da aplicação** **(2)**.
+
+    ![](images/L05/dv_p5_e4_g_14.png)
+
+1. Na página **Utilizadores da aplicação**, clique em **+ Novo utilizador da aplicação**.  
+
+    ![](images/L05/dv_p5_e4_g_15.png)
+
+1. No separador **Criar um novo utilizador da aplicação**, clique em **+ Adicionar uma aplicação**. 
+
+    ![](images/L05/dv_p5_e4_g_16.png)
+
+1. Selecione o registo de aplicação **GitHub Deploy <inject key="DeploymentID" activityCopy="false" />** **(1)** que criou anteriormente e clique em **Adicionar** **(2)**.  
+
+    ![](images/L05/dv_p5_e4_g_17.png)
+
+1. Digite **org** e selecione a sua **unidade de negócio** **(1)**, em **Direitos de acesso** clique no **ícone de edição (3)**, selecione **System Administrator (2)** e clique em **Criar (4)**.
+
+    ![](images/L05/dv_p5_e4_g_18.png)
+
+    **Observação:** se o símbolo **#** ainda estiver visível antes do GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, clique nele e atualize o painel para removê-lo.
+
+1. Clique em **Ambientes** **(1)** da lâmina lateral e seleccione o seu **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** **(2)**.
+
+    ![](images/L05/dv_p5_e4_g_12.png)
+
+1. Copie o **Environment URL** e guarde-o num bloco de notas para utilizá-lo em passos futuros.
+
+    ![](images/L05/dv_p5_e4_g_19.png)
+
+1. No menu à esquerda, clique em **Ambientes** **(1)** e, na lista apresentada, selecione o ambiente **DEV_ENV_TEST** **(2)**.  
+
+    ![](images/L05/dv_p5_e4_g_20.png)
 
 1. Copie o **Environment URL** e guarde-o num bloco de notas, estará a utilizar este URL em passos futuros.
 
-    ![](images/L05/diad5l211u.png)
-
-1. Volte para **Environments** ***(1)*** e seleccione **DEV_ENV_TEST(2)**.
-
-    ![](images/L05/diad5l17uu.png)
-
-1. Copie o **Environment URL** e guarde-o num bloco de notas, estará a utilizar este URL em passos futuros.
-
-    ![](images/L05/diad5l22u.png)
+    ![](images/L05/dv_p5_e4_g_21.png)
 
 ## Exercício 2 – Promover Solução para Teste Ambiente
 
-Neste exercício, irá exportar a solução de conector Contose Badges do Dev
+Neste exercício, irá exportar a solução de conector Contoso Badges do Dev
 ambiente e importá-lo para o ambiente de teste.
 
 ### Tarefa 1: Solução de exportação.
@@ -194,93 +188,109 @@ ambiente e importá-lo para o ambiente de teste.
     https://make.powerapps.com
     ```
 
-2. Vá para **Soluções (1)**, selecione **Conector Contoso Badges (2)** e clique em **Exportar solução (3)**.
+1. Vá para **Soluções (1)**, selecione **Contoso Badges conector (2)** e clique em **Exportar solução (3)**.
 
-    ![](images/L03/L03-EX4-exporta.png)
+    ![](images/L05/dv_p5_e4_g_22.png)
 
-4. Na **Before you export** lâmina, clique em **Publish** e aguarde que a publicação seja concluída.
-5. Depois de publicar, clique em **Next**.
-6. Selecione **Managed** e clique em **Export**.
-7. Aguarde que a solução seja exportada.
-8. Clique no botão Download direito superior direito do ecrã, Clique em Descarregue a solução.
+1. Na página **Antes de exportar**, clique em **Publicar** para publicar todas as alterações realizadas. 
 
-    ![](images/L03/SolutionDown1.png)
+    ![](images/L05/dv_p5_e4_g_23.png)
+
+1. Na página **Antes de exportar**, clique em **Seguinte** para continuar após a publicação das alterações.  
+
+    ![](images/L05/dv_p5_e4_g_24.png)
+
+1. Na página **Exportar esta solução**, selecione a opção **Gerido (recomendado)** **(1)** e clique em **Exportar** **(2)**. 
+
+    ![](images/L05/dv_p5_e4_g_25.png)
+
+1. Aguarde que a solução seja exportada.
+
+1. Quando a exportação for concluída, clique em **Transferir** para baixar o ficheiro da solução exportada. 
+
+    ![](images/L05/dv_p5_e4_g_26.png)
 
 ### Tarefa 2: Solução de importação
 
-1. Navegue até o portal do criador do Power Apps, se ainda não estiver aberto, e selecione seu ambiente de **Teste**, clique em **Environment (1)** e selecione o ambiente de desenvolvimento pré-criado chamado **DEV_ENV_TEST(2)**.
+1. No portal do criador do Power Apps, clique em **Ambientes (1)** e selecione o ambiente de teste pré-criado chamado **DEV_ENV_TEST (2)**.
 
     ```
     https://make.powerapps.com
     ```
 
-    ![](images/L03/L03-EX5a.png)
+    ![](images/L05/dv_p5_e4_g_27.png)
 
-3. Clique em **Import Solution**.
+1. Clique em **Importar solução**. 
 
-    ![](images/L03/L03-EX5.png)
+    ![](images/L05/dv_p5_e4_g_28.png)
 
     >**Nota:** Experimente atualizar o navegador se as soluções não forem abertas.
 
-4. Clique em **Browse**.
+1. Clique em **Procurar**. 
 
-5. Selecione a solução que exportou no ambiente Dev e clique em **Open**.
+    ![](images/L05/dv_p5_e4_g_29.png)
 
-6. Clique em **Next**.
+1. Na janela **Abrir**, selecione o ficheiro **ContosoBadgesconnector_1_0_0_1_managed.zip (1)** e clique em **Abrir (2)**.
 
-7. Clique em **Import** e aguarde que a importação seja concluída.
+    ![](images/L05/dv_p5_e4_g_30.png)
 
-8. A solução deve ser importada com sucesso. **Não** navegue por esta página.
+1. Clique em **Seguinte** para continuar com a importação da solução. 
+
+    ![](images/L05/dv_p5_e4_g_31.png)
+
+1. A solução deve ser importada com sucesso. **Não** navegue por esta página.
 
 ### Tarefa 3: Conector de teste
 
-1. Clique para abrir a solução que acabou de importar.
+1. No menu esquerdo, clique em **Soluções (1)**. Na parte superior, selecione **Tudo (2)** e, na lista exibida, clique na solução **Contoso Badges (3)** para abri-la.
 
-2. Clique para abrir o conector **Badges**.
+    ![](images/L05/dv_p5_e4_g_32.png)
 
-    ![](images/L03/image58.png)
+1. Na lista de itens da solução, clique em **Badges connector** para abrir o conector.  
 
-    >**Nota**: Se receber a mensagem de erro, pois **could not retrieve the connector data**, aguarde alguns minutos (5 a 10 minutos) para atualizar os dados do conector. Se isto não funcionar, pode apagar o conector importado e executar a tarefa **passos 5-10** na tarefa **Tarefa 2: Importar a solução** novamente e tente abrir o conector.
+    ![](images/L05/dv_p5_e4_g_33.png)
 
-3. Clique em **Edit**.
+    >**Nota**: Se receber a mensagem de erro **could not retrieve the connector data**, aguarde de 5 a 10 minutos e atualize os dados do conector. Caso o problema persista, elimine o conector importado e repita os **passos 5 a 10** da **Tarefa 2: Importar a solução**, depois tente abrir o conector novamente.
 
-4. Selecione o separador **Test** do menu suspenso.
+1. Clique em **Editar**.
 
-    ![](images/L03/L03-EX5-default.png)
+    ![](images/L05/dv_p5_e4_g_34.png)
 
-5. Clique em **+ New connection**. Será aberto um novo separador do browser para criar uma ligação.
+1. Selecione o separador **Testar** do menu superior.
 
-6. Inicie uma nova janela ou aba do browser e navegue até ao URL abaixo para abrir a API Contoso Coffee Badges.
+    ![](images/L05/dv_p5_e4_g_35.png)
+
+1. Clique em **+ Nova ligação**. Será aberto um novo separador do browser para criar uma ligação.
+
+    ![](images/L05/dv_p5_e4_g_36.png)
+
+1. Inicie uma nova janela ou aba do browser e navegue até ao URL abaixo para abrir a API Contoso Coffee Badges.
 
     ```
     https://contosobadgestest.azurewebsites.net/
     ```
 
-7. Clique no link **Get an API Key**.
+1. Clique no link **Get an API Key**.
 
-    ![](images/L03/image60.png)
+    ![](images/L05/dv_p5_e4_g_37.png)
 
-8. Copie o valor **API Key**.
+1. Copie o valor **API Key**.
 
-9. Volte ao editor do conector, cole a chave da API que copiou no passo anterior e clique em **Create connection**. Agora, feche o separador do browser clicando em **X**.
+1. Volte ao editor do conector, cole a chave da API que copiou no passo anterior desta tarefa e clique em **Create connection**. Agora, feche o separador do browser clicando em **X**.
 
     ![](images/L03/image61.png)
 
-10. Clique em **Refresh Connections**.
+1. Clique em **Refresh Connections**.
 
     ![](images/L03/image62.png)
 
-11. Vá para a seção **Operations (1)** e selecione a operação **AddCredit (2)**.
+1. Vá para a seção **Operações (1)** e selecione a operação **AddCredit (2)**. Forneça o seu e-mail em **recipientId (3)**, insira um **name (4)**, introduza **1** em **points** e clique em **Operação de teste (5)**.
 
-    ![](images/L03/image62a.png)
+    ![](images/L05/dv_p5_e4_g_38.png)
 
-12. Forneça o seu e-mail para **recipitívido** , forneça um **name** , introduza **1** para **points** e clique em **Test operation**.
+1. O teste deve ter sucesso e a resposta deve parecer a imagem abaixo.
 
-    ![](images/L03/L3T3S8a.png)
-
-13. O teste deve ter sucesso e a resposta deve parecer a image abaixo.
-
-    ![](images/L03/image64u.png)
+    ![](images/L05/dv_p5_e4_g_39.png)
 
 
 ## Exercício 3 – Crie o GitHub Repo
@@ -295,73 +305,71 @@ Neste exercício, criará um repositório do GitHub e adicionar segredos do repo
     https://github.com/
     ```
 
-1. Clique no ícone do seu perfil e selecione **Your repositories**.
+1. Clique no ícone do seu perfil e selecione **Seus repositórios**.
 
-    ![](images/L05/github1u.png)
+    ![](images/L05/dv_p5_e4_g_40.png)
 
-3. Clique em **New repository** para criar um repositório.
+1. Clique em **Novo** para criar um repositório.
 
-    ![](images/L05/github2u.png)
+    ![](images/L05/dv_p5_e4_g_41.png)
 
-4. Introduza **PrioritZ (1)** para o nome do repositório, seleccione **Public (2)** , verifique o **Add a README file (3)**.
+1. Introduza **PrioritZ (1)** para o nome do repositório, selecione **Público (2)** e ative a opção **Adicionar README (3)**. Em seguida, clique em **Criar repositório (4)**.
 
-    ![](images/L05/github3.png)
+    ![](images/L05/dv_p5_e4_g_42.png)
 
-1. Clique em **Create repository** para o criar.
+1. Clique em **Configurações** para abrir o separador de definições.
 
-    ![](images/L05/github4.png)
+    ![](images/L05/dv_p5_e4_g_43.png)
 
-5. Clique em **Settings** para abrir o separador de definições.
+1. Aceda à secção **Configurações (1)**, expanda **Segredos e variáveis (2)** e selecione **Ações (3)**.
 
-    ![](images/L05/Imagessettinguu.png)
-
-6. Aceda à secção **Security (1)**, expanda **Secrets and variables(2)** e selecione **Actions (3)**.
+    ![](images/L05/dv_p5_e4_g_44.png)
 
     > **Nota:** Os valores fornecidos não ficarão visíveis depois de criar o item, por isso, dedique algum tempo para obter os valores corretos.
 
-    ![](images/L05/actionpermissionuuu-1.png)
+1. Clique em **Novo segredo do repositório** para adicionar um segredo.
 
-7. Clique em **New repository secret** para adicionar um segredo.
+    ![](images/L05/dv_p5_e4_g_45.png)
 
-    ![](images/L05/github7uu.png)
+1. Insira **PowerPlatformAppID (1)** para Nome e cole o nome de usuário odl: **<inject key="AzureAdUserEmail"></inject> (2)** e clique em **Segredo (3)**
 
-8. Insira **PowerPlatformAppID (1)** para Nome e cole o nome de usuário odl: **<inject key="AzureAdUserEmail"></inject> (2)** e clique em **Add Secret (3)**
+    ![](images/L05/dv_p5_e4_g_46.png)
 
-    ![](images/L05/github8u.png)
+1. Clique em **Novo segredo do repositório** novamente.
 
-9. Clique em **New repository secret** novamente.
+    ![](images/L05/dv_p5_e4_g_47.png)
 
-10. Insira **PowerPlatformClientSecret (1)** para Nome e cole a senha: **<inject key="AzureAdUserPassword"></inject> (2)** e clique em **Add Secret (3)**
+1. Insira **PowerPlatformClientSecret (1)** para Nome e cole a senha: **<inject key="AzureAdUserPassword"></inject> (2)** e clique em **Adicionar Segredo (3)**
 
-    ![](images/L05/github9u.png)
+    ![](images/L05/dv_p5_e4_g_48.png)
 
-11. Clique em **New repository secret** novamente.
+1. Clique em **Novo segredo do repositório** novamente.
 
-12. Introduza **PowerPlatformTenantID (1)** para Nome e colar o secreto **Tenant ID (2)** do seu bloco de notas que observou anteriormente em **`Exercício 1 -> Tarefa 1 -> Passo 5`** no campo **Value** e clique em **Add secret (3)**.
+1. Introduza **PowerPlatformTenantID (1)** para Nome e colar o secreto **Tenant ID (2)** do seu bloco de notas que observou anteriormente em **`Exercício 1 -> Tarefa 1 -> Passo 5`** no campo **Value** e clique em **Segredo (3)**.
 
-    ![](images/L05/github10u.png)
+    ![](images/L05/dv_p5_e4_g_49.png)
 
-13. Clique novamente em **New repository secret**.
+1. Clique novamente em **Novo segredo do repositório**.
 
-14. Introduza **PowerPlatformDevUrl (1)** para o nome e cole o **Dev environment URL (2)** do seu bloco de nota que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 17`** no campo **Valor** e clique em **Add secret (3)**.
+1. Introduza **PowerPlatformDevUrl (1)** para o nome e cole o **Dev environment URL (2)** do seu bloco de nota que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 17`** no campo **Valor** e clique em **Segredo (3)**.
 
     >**Nota**: Certifique-se de que está a colar o URL do ambiente de desenvolvimento denominado **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 17`**
 
-    ![](images/L05/github11u.png)
+    ![](images/L05/dv_p5_e4_g_50.png)
 
-15. Clique em **New repository secret** mais uma vez.
+1. Clique em **New repository secret** mais uma vez.
 
-16. Introduza **PowerPlatformTestUrl (1)** para o nome e cole o **Test Environment URL (2)** do seu bloco de nota que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 19`** no campo **Value** e clique em **Add secret (3)**.
+1. Introduza **PowerPlatformTestUrl (1)** para o nome e cole o **Test Environment URL (2)** do seu bloco de nota que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 19`** no campo **Value** e clique em **Segredo (3)**.
 
     >**Nota**: Certifique-se de que está a colar o URL do ambiente de teste denominado **DEV_ENV_TEST** que copiou no **`Exercício 1 -> Tarefa 3 -> Passo 19`**
 
-    ![](images/L05/L05-testurla.png)
+    ![](images/L05/dv_p5_e4_g_51.png)
 
-17. Agora deve ter **5** segredos do repositório.
+1. Agora deve ter **5** segredos do repositório.
 
-    ![](images/L05/Images20uu5u.png)
+    ![](images/L05/dv_p5_e4_g_52.png)
 
-18. Fique nesta página.
+1. Permaneça nesta página.
 
 ### Exercício 4 – Exportação e Branching
 
@@ -371,79 +379,73 @@ Neste exercício, irá definir um workflow the GitHub Actions e adicionar passos
 
 Nesta tarefa, criará um workflow the GitHub Actions utilizando o YAML fornecido. YAML utiliza a indentação de dois espaços, por isso siga isso com cuidado à medida que constrói a definição do workflow. Em caso de dúvida, reveja a indentação mostrada nas imagens.
 
-1. Selecione o separador **Actions** e clique em **Set up a workflow yourself** para criar um novo fluxo de trabalho.
+1. Selecione o separador **Ações (1)** e clique em **Configure um fluxo de trabalho por conta própria (2)** para criar um novo fluxo de trabalho.
 
-    ![](images/L05/Imagesworku.png)
+    ![](images/L05/dv_p5_e4_g_53.png)
 
-1. Altere o nome do ficheiro **export-and-branch.yml**
+1. Altere o nome do ficheiro para **export-and-branch.yml (1)** e remova todo o conteúdo do ficheiro de workflow.
 
-1. Retire tudo a partir do ficheiro de workflow.
-
-    ![](images/L05/diad5l32.png)
+    ![](images/L05/dv_p5_e4_g_54.png)
 
 1. Navegue até ao URL `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/export-and-branch.yml`, copie o conteúdo total do ficheiro e cole no workflow **export-and-branch.yml**.
 
-    ![](images/L05/diad5l28u.png)
+    ![](images/L05/dv_p5_e4_g_55.png)
 
-1. Clique em **Commit changes** e clique em **Commit changes**.
+1. Na janela **Confirmar alterações**, clique em **Confirmar alterações** para finalizar o commit.
 
-    ![](images/L05/commit1.png)
+    ![](images/L05/dv_p5_e4_g_56.png)
 
-    ![](images/L05/Images202uuu.png)
+    ![](images/L05/dv_p5_e4_g_57.png)
 
-1. Clique em **Settings (1)**, aceda ao separador **Actions (2)** do lado esquerdo e selecione **General (3)**.
+1. No separador **Configurações (1)**, selecione **Ações (2)** e clique em **Geral (3)**.
 
-    ![](images/L05/github6u-1.png)
+    ![](images/L05/dv_p5_e4_g_58.png)
 
-1. Na secção **Workflow Permission**, certifique-se de que **read and write permission** é seleccionado e clique em **save**.
+1. Na secção **Permissões de fluxo de trabalho**, selecione **Permissões de leitura e gravação (1)** e clique em **Salvar (2)**.
 
-    ![](images/L05/workflowpermissionuuu.png)
+    ![](images/L05/dv_p5_e4_g_59.png)
 
-1. Selecione o separador **Actions** **(1)** e selecione o **workflow** ***(2)*** que criou.
+1. No separador **Ações** **(1)**, selecione **Todos os fluxos de trabalho** **(2)**.
 
-    ![](images/L05/diad5l27.png)
+    ![](images/L05/dv_p5_e4_g_60.png)
 
-1. Clique em **Run workflow.**
+1. No painel lateral, selecione o workflow **exportação e filial**.  
 
-    ![](images/L05/Images2027u.png)
+    ![](images/L05/dv_p5_e4_g_61.png)
 
-1. Clique em **Run workflow** novamente e aguarde que o workflow seja executado para ser concluído.
+1. Clique no botão **Executar fluxo de trabalho**  para iniciar o workflow.
 
-    ![](images/L05/Images2028u.png)
+    ![](images/L05/dv_p5_e4_g_63.png)
 
-1. Selecione o separador **Code** ***(1)*** e clique em **Branches** ***(2)***. Deverá ver dois ramos.
+1. No separador **Código** **(1)**, clique no menu de seleção de ramos **(2)** e selecione o ramo **Prioridade-XXXX-0642** **(3)**
 
-    ![](images/L05/diad5l29u-1.png)
-
-1. Clique para abrir a branch que foi criada pela ação de workflow denominada Prioritz-XXXXXXXX.
-
-    ![](images/L05/changesbranchu.png)
+    ![](images/L05/dv_p5_e4_g_64.png)
 
 1. No branch **Prioritz-XXXXXXX.**, poderá ver a pasta de solução.
 
-    ![](images/L05/diad5l30u.png)
+    ![](images/L05/dv_p5_e4_g_65.png)
 
-1. Clique no botão **Contribute** ***(1)*** e seleccione **Open pull request** ***(2)***.
+1. Clique no botão **Contribute** **(1)** e seleccione **Open pull request** **(2)**.
 
-    ![](images/L05/L05-t1-1u.png)
+    ![](images/L05/dv_p5_e4_g_66.png)
 
-23. Adicione uma descrição se quiser e clique em **Create pull request**.
+1. Adicione uma descrição se desejar e clique em **Criar pedido pull**.
 
-    ![](images/L05/pr1u.png)
+    ![](images/L05/dv_p5_e4_g_67.png)
 
-24. Agora deve ver o resumo do pedido de pull. Confirme que o ramo não tem conflitos com o ramo principal e que as alterações podem ser fundidas automaticamente no ramo principal.
+1. Agora deve ver o resumo do pedido de pull. Confirme que o ramo não tem conflitos com o ramo principal e que as alterações podem ser fundidas automaticamente no ramo principal.
 
-25. Clique no botão chevron ao lado do botão **Merge pull request** e selecione **Squash and merge**.
+1. Clique no ícone de seta ao lado do botão **Solicitação de pull de mesclagem** **(1)** e selecione **Esmagar e mesclar** **(2)**.
 
-    ![](images/L05/Images2032u.png)
+    ![](images/L05/dv_p5_e4_g_68.png)
 
-26. Clique em **Squash and merge**.
+1. Clique em **Confirmar squash e mesclar**.
 
-27. Clique em **Confirm squash and merge**.
+    ![](images/L05/dv_p5_e4_g_69.png)
 
-28. O pedido de pull deve ser efetuado com sucesso.
+1. O pedido de pull deve ser efetuado com sucesso.
 
-    ![](images/L05/prdoneu.png)
+    ![](images/L05/dv_p5_e4_g_70.png)
 
 
 ### Exercício 5 – Lançamento para teste
@@ -452,62 +454,46 @@ Neste exercício, criará uma ação de workflow e adicionará passos que libert
 
 ### Tarefa 1: Criar fluxo de trabalho
 
-1. Agora navegue até ao separador **Actions (1)**.
+1. Navegue até ao separador **Ações** **(1)** e clique em **Novo fluxo de trabalho** **(2)**.
 
-1. Clique em **New workflow (2)**.
+    ![](images/L05/dv_p5_e4_g_71.png)
 
-    ![](images/L05/nwwfu.png)
+1. Clique em **Configure um fluxo de trabalho por conta própria**.
 
-1. Agora, na página de trabalho **Choose a workflow**, clique em **set up a workflow yourself**.
-
-    ![](images/L05/Images2033u.png)
+    ![](images/L05/dv_p5_e4_g_72.png)
 
 1. Altere o nome do ficheiro para **release-to-test.yml**
 
-    ![](images/L05/fnameu.png)
+    ![](images/L05/dv_p5_e4_g_73.png)
 
-1. Retire tudo a partir do ficheiro de workflow.
+1. Remova todo o conteúdo do ficheiro de workflow.
 
 1. Navegue até ao URL `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/release-to-test.yml` e copie o conteúdo total do ficheiro e cole-o no ficheiro de trabalho **release-to-test.yml**.
 
-    ![](images/L05/cntnu.png)
+    ![](images/L05/dv_p5_e4_g_74.png)
 
-16. Clique em **Commit changes** e clique em **Commit changes**.
+1. Clique em **Confirmar alterações** e, em seguida, clique novamente em **Confirmar alterações** para confirmar.
 
-    ![](images/L05/commit1.png)
+    ![](images/L05/dv_p5_e4_g_75.png)
 
-18. Selecione o separador **Code** e certifique-se de que selecciona Prioritz-XXXXXXX.
+    ![](images/L05/dv_p5_e4_g_76.png)
 
-    ![](images/L05/codeu.png)
+1. No campo de nome do ficheiro, insira **release-to-test.yml**.
 
-19. Aceda à secção **Releases** e clique em **Create new release**.
+    ![](images/L05/dv_p5_e4_g_79.png)
 
-    ![](images/L05/Images2047u.png)
+1. Navegue de volta ao portal PowerApps e Certifique-se de que está no ambiente de teste no Power Apps.
 
-20. Clique no botão **Choose a tag**, introduzir **v1.0.0** e seleccione **+ Create new tag on publish**.
+    ![](images/L05/dv_p5_e4_g_77.png)
 
-    ![](images/L05/Images2048.png)
+1. Selecione o separador **Soluções (1)** no lado esquerdo e clique em **Gerida (2)**. Deve ver a solução implementada com o nome **Prioritz (3)**.
 
-21. Clique em **Publish release**.
-
-22. Selecione o separador **Actions** e monitorize o fluxo de trabalho.
-
-    ![](images/L05/Images2049.png)
-
-23. O lançamento deve ser concluído com sucesso.
-
-    ![](images/L05/relecomplu.png)
-
-24. Navegue de volta ao portal PowerApps e Certifique-se de que está no ambiente de teste PowerApps.
-
-    ![](images/L05/lastu.png)
-
-25. Selecione o separador **solutions (1)** do lado esquerdo e clique em **Managed (2)**, deve ver a solução implementada com o
- nome de **Prioritz (3)**.
-
-    ![](images/L05/lastuu.png)
+    ![](images/L05/dv_p5_e4_g_78.png)
 
 ## Resumo
 Neste laboratório, aprendeu a promover uma solução para um ambiente de teste, a configurar um service principal e a gerir a sua solução utilizando o GitHub para controlo de versões e automação do workflow.
 
-## Concluiu o laboratório com sucesso
+## Resumo Geral — Código Baixo para Pro-Dev num Dia
+Este laboratório intensivo combina desenvolvimento low-code e pro-dev no Power Platform. Irá importar e personalizar soluções, criar componentes de código e conectores personalizados, integrar Azure Functions e aplicar práticas de ALM com GitHub, promovendo soluções entre ambientes de forma eficiente e escalável.
+
+## Concluiu este laboratório com sucesso
