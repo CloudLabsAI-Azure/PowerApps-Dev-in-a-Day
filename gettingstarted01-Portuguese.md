@@ -114,6 +114,32 @@ Sinta-se à vontade para iniciar, parar ou reiniciar a sua máquina virtual conf
 
 Ao completar estes exercícios, irá importar e personalizar soluções do Power Platform, criar e implementar componentes de código personalizados com o Visual Studio Code, desenvolver e integrar conectores personalizados, criar e implementar o Azure Functions e gerir soluções utilizando o GitHub para o código-fonte.
 
+## Alterar o idioma da Máquina Virtual
+
+Se precisar alterar o idioma da Máquina Virtual para Português, siga os passos abaixo antes de iniciar o laboratório.
+
+1. Na barra de pesquisa do Windows, digite **Language settings (1)** e selecione **Language settings (2)** nos resultados.
+
+   ![](./images/cor_g_g_2.png)
+
+1. Na página **Language**, clique em **Add a language**.
+
+   ![](./images/cor_g_g_3.png)
+
+1. Na janela **Choose a language to install**, pesquise por *Português*, selecione **Português (Portugal) (1)** e clique em **Next (2)**.
+
+   ![](./images/cor_g_g_4.png)
+
+1. Na janela **Install language features**, marque a opção **Set as my Windows display language (1)** e clique em **Install (2)**.
+
+   ![](./images/cor_g_g_5.png)
+
+1. Agora aguarde o Windows baixar e instalar os componentes de idioma. Isso pode levar alguns minutinhos (~5–10 min), dependendo da internet e da VM.
+
+1. Quando o Windows perguntar para você sair ou reiniciar a sessão — geralmente aparece um pop-up tipo **“Sign out now?”** — clique **Sim, sair agora** para aplicar o novo idioma.
+
+1. A VM vai fechar sua sessão e, na próxima tela de login, o sistema já vai estar todo no idioma português. Curte que tá tudo pronto pra continuar o laboratório!
+
 ## Contacto de suporte
 
 A equipa de suporte da CloudLabs está disponível 24 horas por dia, 7 dias por semana, 365 dias por ano, via e-mail e chat ao vivo para garantir a assistência contínua a qualquer momento. Oferecemos canais de apoio dedicados e adaptados especificamente para alunos e instrutores, garantindo que todas as suas necessidades são satisfeitas de forma rápida e eficiente.
