@@ -28,13 +28,13 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    - E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
 
-       ![](/images/L01/Email2.png)
+   ![](images/L01/cor2_1_g_1.png)
 
 1. Na janela **Introduzir palavra-passe**, insira a palavra-passe fornecida e clique em **Iniciar sessão**.
 
    - Palavra-passe: <inject key="AzureAdUserPassword"></inject>
 
-       ![](/images/L01/Password2.png)
+   ![](images/L01/cor2_1_g_2.png)
 
 1. Clique em **Perguntar Depois** se a janela pop-up "Ação Necessária" aparecer.
 
@@ -74,13 +74,13 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Se for apresentada a tela **Ajude-nos a proteger sua conta**, clique em **Pular por enquanto (14 dias até que isso seja necessário)**.
 
-   ![](/images/L01/HelpProtect.png)
+   ![](images/L01/cor2_1_g_3.png)
 
 1. Se vir o pop-up **Stay Signed in?**, clique em **Não**.
 
 1. No painel **Selecionar ambiente** **(1)**, selecione o ambiente de desenvolvimento pré-criado denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
 
-    ![](images/L01/DevEnv.png)
+   ![](images/L01/DevEnv.png)
 
 1. No painel de navegação esquerdo, selecione **Soluções** **(1)**. Na barra de comandos, clique em **Importar solução** **(2)**.
 
