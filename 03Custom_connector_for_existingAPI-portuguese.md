@@ -58,11 +58,11 @@ os conectores devem estar numa solução separada das aplicações e dos fluxos 
 
     ![](images/L03/dv_p4_e3_g_5.png)
 
-1. No portal Power Apps, selecione **Solutions (1)** no menu lateral esquerdo e clique em **+ New solution (2)** no topo da página.
+1. No portal Power Apps, selecione **Soluções (1)** no menu lateral esquerdo e clique em **+ Nova solução (2)** no topo da página.
 
     ![](images/L03/dv_p4_e3_g_6.png)
 
-1. Introduza **Contoso Badges connector (1)** como nome de apresentação, selecione **Contoso Coffee (ContosoCoffee) (2)** como Publisher e clique em **Create (3)**.
+1. Introduza **Contoso Badges connector (1)** como nome a apresentar, selecione **Contoso Coffee (ContosoCoffee) (2)** como editor e clique em **Criar (3)**.
 
     ![](images/L03/dv_p4_e3_g_7.png)
 
@@ -103,7 +103,7 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
     https://make.powerapps.com
     ```
 
-1. Selecione **Solutions (1)** no painel de navegação esquerdo e abra a solução **Contoso Badges connector (2)** que acabou de criar.
+1. Selecione **Soluções (1)** no painel de navegação esquerdo e abra a solução **Contoso Badges connector (2)** que acabou de criar.
 
     ![](images/L03/dv_p4_e3_g_9.png)
 
@@ -112,18 +112,18 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
     ![](images/L03/dv_p4_e3_g_10.png)
 
 
-1. Na lâmina **Create Connector**, introduza as seguintes informações:
+1. Na lâmina **Criar conector**, introduza as seguintes informações:
 
     - Nome do conector: **Badges connector (1)**
     - Descrição: **Connector for contosobadgestest (2)**
     - Host: **contosobadgestest.azurewebsites.net (3)**
-    - Clique em **Create Connector (4)** para continuar.
+    - Clique em **Criar conector (4)** para continuar.
 
         ![](images/L03/dv_p4_e3_g_11.png)
 
        >**Nota**:Se for pedido a login, utilize as credenciais ODL encontradas no separador ambiente localizados à direita do guia Lab.
 
-1. No mapa do site, selecione **Custom connector (1)**. Clique no botão **... More actions (2)** junto ao conector personalizado que criou e selecione **Update from OpenAPI file (3)**.
+1. No mapa do site, selecione **Conectores personalizados (1)**. Clique no botão de reticências **...(2)** junto ao conector personalizado que criou e selecione **Atualizar a partir do ficheiro OpenAPI (3)**.
 
     ![](images/L03/dv_p4_e3_g_12.png)
 
@@ -131,9 +131,9 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
     ![](images/L03/dv_p4_e3_g_13.png)
 
-1. Selecione o ficheiro **swagger. json** que guardou na sua máquina e clique em **Open**.
+1. Selecione o ficheiro **swagger.json** que guardou na sua máquina e clique em **Open**.
 
-1. Clique em **Continue** no pop-up **Importar um ficheiro OpenAPI**.
+1. No pop-up **Importar um ficheiro OpenAPI**, clique em **Continuar**.
 
     ![](images/L03/dv_p4_e3_g_14.png)
 
@@ -141,7 +141,7 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
     ![](images/L03/dv_p4_e3_g_15.png)
 
-1. Reveja a configuração da **security configuration (1)** com os seguintes campos:
+1. Reveja a configuração da **Chave de API (1)** com os seguintes campos:
 
     - **Etiqueta do parâmetro**: Chave de API  
     - **Nome do parâmetro**: X-API-KEY  
@@ -159,7 +159,7 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
     ![](images/L03/dv_p4_e3_g_17.png)
 
-1. Desça até à secção **Request**, clique no botão de chevron ao lado de **body** e selecione **Editar**.
+1. Desça até à secção **Corpo**, clique no botão de seta ao lado de **body** e selecione **Editar**.
 
     ![](images/L03/dv_p4_e3_g_18.png)
 
@@ -171,11 +171,11 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
     ![](images/L03/dv_p4_e3_g_20.png)
 
-1. Clique no botão chevron do **recipientid** e selecione **Edit**.
+1. Clique no botão chevron do **recipientid** e selecione **Editar**.
 
     ![](images/L03/a_g_u_21.png)
 
-1. Selecione **Yes** para é necessário e clique no botão  **Back**.
+1. Selecione **Sim (1)** para “É obrigatório?” e clique no botão **Anterior (2)**.
 
     ![](images/L03/a_g_u_20.png)
 
@@ -183,25 +183,25 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
     ![](images/L03/a_g_u_17.png)
 
-1. Selecione **Yes** para é necessário e clique no botão  **Back**.
+1. Selecione **Sim (1)** para “É obrigatório?” e clique no botão **Anterior (2)**.
 
     ![](images/L03/a_g_u_18.png)
 
-1. Clique no botão **Back** novamente.
+1. Clique no botão **Anterior** novamente.
 
     ![](images/L03/dv_p4_e3_g_21.png)
 
 1. Avançar para **AI Plugin(preview)**.
 
-1. Avanço para **Code**
+1. Avance para **Código**.
 
     ![](images/L03/dv_p4_e3_g_22.png)
 
-1. Analise o código e avance para **Test**.
+1. Analise o código e avance para **Testar**.
 
     ![](images/L03/dv_p4_e3_g_23.png)
 
-1. Clique em **Update connector** e aguarde que o conector seja atualizado
+1. Clique em **Atualizar conector** e aguarde que o conector seja atualizado.
 
     ![](images/L03/dv_p4_e3_g_24.png)
 
@@ -231,7 +231,7 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
     ![](images/L03/dv_p4_e3_g_28.png)
 
-1. Clique no botão **Refresh** no canto superior direito para atualizar a lista de ligações disponíveis.
+1. Clique no botão **Atualizar** no canto superior direito para atualizar a lista de ligações disponíveis.
 
     ![](images/L03/a_g_u_8.png)
 
@@ -241,7 +241,7 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
     ![](images/L03/dv_p4_e3_g_29.png)
 
-1. O teste deve ter sucesso e a resposta deve parecer a image abaixo.
+1. O teste deve ter sucesso e a **resposta** deve parecer a imagem abaixo.
 
     ![](images/L03/dv_p4_e3_g_30.png)
 
@@ -278,7 +278,7 @@ Neste exercício, criará um conector personalizado a partir de uma API existent
 
 ## Exercício 4 – Adicionar código personalizado
 
-Neste exercício, irá adicionar uma nova operação para devolver apenas o nome do crachá e a image atual.
+Neste exercício, irá adicionar uma nova operação para devolver apenas o nome do crachá e a imagem atual.
 Fará isto utilizando a funcionalidade de código personalizado para remodelar a resposta da API.
 
 ### Tarefa 1: Adicione o código da pasta de recursos
@@ -293,15 +293,15 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
 
     ![](images/L03/dv_p4_e3_g_39.png)
 
-1. Sob **Data (1)** e seleccione **Custom connectors (2)**.
+1. Em **Dados (1)**, selecione **Conectores personalizados (2)**.
 
     ![](images/L03/dv_p4_e3_g_40.png)
 
-1. Clique no botão **Edit** do conector personalizado que criou.
+1. Clique no botão **Editar** do conector personalizado que criou.
 
     ![](images/L03/dv_p4_e3_g_41.png)
 
-1. Selecione o separador **Definition** no menu suspenso e clique em **New action** no separador definição.
+1. Selecione o separador **Definição** e clique em **Nova ação**.
 
     ![](images/L03/dv_p4_e3_g_42.png)
 
@@ -325,9 +325,9 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
 
     ![](images/L03/dv_p4_e3_g_45.png)
 
-1. Clique em **Update connector** e aguarde que o conector seja atualizado.
+1. Clique em **Atualizar conector** e aguarde até que o conector seja atualizado.
 
-1. Selecione o separador **Code** do menu suspenso.
+1. Selecione o separador **Código** do menu suspenso.
 
 1. No separador **4. Código (1)**, ative a opção **Código Ativado (2)** e clique em **Carregar (3)** para aplicar o código à operação.
 
@@ -343,7 +343,7 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
 
 1. Reveja o código que acabou de adicionar.
 
-1. Clique em **Update connector** e aguarde que o conector seja atualizado.
+1. Clique em **Atualizar conector** e aguarde até que o conector seja atualizado.
 
 1. Avanço para **Test** selecionando-o no menu suspenso.
 
@@ -363,7 +363,7 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
 
     ![](images/L03/dv_p4_e3_g_52.png)
 
-1. Clique em **Update connecto** e aguarde que o conector seja atualizado.
+1. Clique em **Atualizar conector** e aguarde até que o conector seja atualizado.
 
 1. **Não** navegue por esta página.
 
@@ -371,7 +371,7 @@ Fará isto utilizando a funcionalidade de código personalizado para remodelar a
 
 Nesta tarefa, testará o seu código personalizado.
 
-1. Selecione o separador **Test**.
+1. Selecione o separador **Testar**.
 
 1. Selecione a ligação que criou anteriormente.
 
@@ -379,7 +379,7 @@ Nesta tarefa, testará o seu código personalizado.
 
     ![](images/L03/dv_p4_e3_g_53.png)
 
-1. A operação deve ter sucesso e a resposta **Body** deve parecer a image abaixo.
+1. A operação deve ter sucesso e a resposta **Body** deve parecer a imagem abaixo.
 
     ![](images/L03/image37.png)
 
@@ -399,9 +399,9 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
 
 1. Expanda **Solutions** e abra a solução **PrioritZ**.
 
-1. Selecione **Apps (1)** , selecione a aplicação **PrioritZ Ask (2)** e clique em **Edit (3)**.
+1. Selecione **Aplicações (1)**, selecione a aplicação **PrioritZ Ask (2)** e clique em **Editar (3)**.
 
-    ![](images/L03/image38-1u.png)
+    ![](images/L02/dv_p3_e2_g_23.png)
 
 1. No menu lateral esquerdo, selecione **Dados (1)** e clique em **+ Adicionar dados (2)**.
 
@@ -421,7 +421,7 @@ Nesta tarefa, irá utilizar o conector personalizado que criou para mostrar o cr
     https://contosobadgestest.azurewebsites.net/
     ```
 
-1. Clique no link **open the API Key**
+1. Clique no link **Abrir a Chave de API**
 
     ![](images/L03/image41.png)
 
@@ -439,12 +439,12 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
 
     ![](images/L03/dv_p4_e3_g_58.png)
 
-1. Clique duas vezes na image recém-adicionado e altere o seu nome para **User badge**.
+1. Clique duas vezes na imagem recém-adicionado e altere o seu nome para **User badge**.
 
     ![](images/L03/image44.png)
 
 
-1. Defina o crachá do utilizador **Image** valor para a fórmula abaixo.
+1. Defina o crachá do utilizador **Imagem** valor para a fórmula abaixo.
 
     ```
     ContosoBadges.getcurrentbadge({id:User().Email}).image
@@ -460,9 +460,9 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
 
     ![](images/L03/a_g_u_10.png)
 
-1. Faça a image mais pequena e mova-a para o canto superior direito do ecrã.
+1. Faça a imagem mais pequena e mova-a para o canto superior direito do ecrã.
 
-1. O crachá do utilizador deve agora parecer a image abaixo.
+1. O crachá do utilizador deve agora parecer a imagem abaixo.
 
     ![](images/L03/a_g_u_11.png)
 
@@ -474,15 +474,15 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
 
 1. Feche a antevisão.
 
-1. Selecione **Publish**.
+1. Selecione **Publicar**.
 
     ![](images/L03/a_g_u_12.png)
 
-1. Selecione **Publish this version**.
+1. Selecione **Publicar esta versão**.
 
     ![](images/L03/a_g_u_13.png)
 
-1. Volte à solução clicando no botão  **Back**.
+1. Volte à solução clicando no botão **Anterior**.
 
     ![](images/L03/a_g_u_14.png)
 
@@ -492,19 +492,19 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
 
 1. Certifique-se de que ainda está na solução **PrioritZ**.
 
-1. Clique em **+ New** e seleccione **Automation | Cloud flow | Instant**.
+1. Clique em **+ Criar (1)**, selecione **Automatização (2)**, depois **Fluxo de cloud (3)** e, por fim, **Instantâneo (4)**.
 
     ![](images/L03/dv_p4_e3_g_61.png)
 
-1. Introduza **Test add credit** para o nome do fluxo, seleccione **Manually trigger a flow** e clique em **Create**.
+1. Introduza **Test add credit (1)** como nome do fluxo, selecione **Acionar manualmente um fluxo (2)** e clique em **Criar (3)**.
 
     ![](images/L03/dv_p4_e3_g_62.png)
 
-1. Clique em **+ New step**.
+1. Clique em **+ Novo passo**.
 
     ![](images/L03/dv_p4_e3_g_63.png)
 
-1. Selecione o separador **Custom** e, em seguida, selecione a ação **Add credit**.
+1. Selecione o separador **Personalizado (1)** e, em seguida, selecione a ação **Add Credit (2)**.
 
     ![](images/L03/dv_p4_e3_g_64.png)
 
@@ -512,31 +512,31 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
 
     ![](images/L03/edd%20(3).png)
 
-1. Clique no campo **recipienteId**, Sob Manualmente acionar um painel de fluxo e selecione **User email**.
+1. No campo **recipientId (1)**, selecione **E-mail do utilizador**. No campo **name (2)**, selecione **Nome de utilizador** e, no campo **points (3)**, introduza `1`.
 
     ![](images/L03/dv_p4_e3_g_65.png)
 
-1. Clique no campo **name**, Sob Manualmente acionar um painel de fluxo e selecione ***User name**.
+1. No campo **name**, selecione **Nome de utilizador**.
 
-1. Introduza **1** para pontos e clique em **Save**. Aguarde que o fluxo seja guardado.
+1. Introduza **1** no campo **points** e clique em **Guardar**. Aguarde até que o fluxo seja guardado.
 
 1. Clique em **Test**.
 
     ![](images/L03/dv_p4_e3_g_66.png)
 
-1. Selecione **Test** e clique novamente **TTesteste**.
+1. Selecione **Manualmente (1)** e clique em **Testar (2)**.
 
     ![](images/L03/dv_p4_e3_g_67.png)
 
-1. Clique em **Test**.
+1. Clique em **Testar**.
 
-1. Clique em **Done**.
+1. Clique em **Concluído**.
 
-1. O fluxo deve ter sucesso. Depois de ter sido bem sucedido, clique no botão **Back**.
+1. O fluxo deve ter sucesso. Depois de ter sido bem sucedido, clique no botão **Anterior**.
 
     ![](images/L03/a_g_u_16.png)
 
-1. Selecione **Cloud flows** e abra o fluxo que criou.
+1. Selecione **Fluxos de cloud** e abra o fluxo que criou.
 
     ![](images/L03/a_g_u_15.png)
 
@@ -550,7 +550,7 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
 
     ![](images/L03/image53.png)
 
-1. Volte a fluir e execute-o mais duas vezes.
+1. Volte ao fluxo e execute-o mais duas vezes.
 
     ![](images/L03/a_g_u_23.png)
 
