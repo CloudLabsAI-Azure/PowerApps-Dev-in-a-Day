@@ -54,13 +54,13 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Abra a aplicação e toque em **Escanear um código QR**.
 
-1. Digitalize o código QR visível no ecrã e clique em **Seguinte**.
+1. Digitalize o código QR visível no ecrã e clique em **Next**.
 
    ![](images/L01/demo001.png)
 
 1. Introduza o dígito apresentado no ecrã do aplicativo Autenticador no telemóvel e toque em **Sim**.
 
-1. Após a notificação ser aprovada, clique em **Seguinte**.
+1. Após a notificação ser aprovada, clique em **Next**.
 
     ![](images/L01/demo002.png)
 
@@ -72,7 +72,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    > **NOTA:** Quando voltar a iniciar sessão, insira os dígitos apresentados no ecrã na **aplicação Autenticador** e clique em Sim.
 
-1. Se for apresentado com **Help us protect your account**, clique em **Skip for now**.
+1. Se for apresentada a tela **Ajude-nos a proteger sua conta**, clique em **Pular por enquanto (14 dias até que isso seja necessário)**.
 
    ![](/images/L01/HelpProtect.png)
 
@@ -100,7 +100,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Clique novamente em **Seguinte** na lâmina da solução de importação.
 
-1. Na seção **Connections**, clique no botão de reticências **(1)** junto a **Microsoft Dataverse Priority**.
+1. Na seção **Conexões**, clique no botão de reticências junto a **Microsoft Dataverse Prioritz (1)**.
 
 1. Certifique-se de que o e-mail do utilizador **<inject key="AzureAdUserEmail"></inject> (2)** que está a utilizar está seleccionado.
 
@@ -158,7 +158,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
     ![](images/L01/L1-T1-S30.png)
 
-1. Clique no botão **<- back**.
+1. Clique no botão **← Import sample data - Topics**.
 
     ![](images/L01/L1-T1-S31.png)
 
@@ -346,7 +346,7 @@ aplicação.
 
     ![](images/L01/dv_port2_e1_g_5.png)
 
-1. Deixe o controlo da image adicionar mais pequeno, se necessário, e mova a caixa de texto **Respond By and label textbox** e coloque a caixa de texto **Notas** entre o controlo de Detalhes e o Responda pelo rótulo.
+1. Reduza o tamanho do controle de imagem, se necessário, e mova a caixa de texto **Respond By** junto com seu rótulo para baixo. Insira a caixa de texto **Notes** entre o controle **Details** e o rótulo **Respond By**.
 
     ![](images/L01/image28.png)
 
@@ -371,7 +371,7 @@ aplicação.
 
     ![](images/L01/cor_g_4.png)
 
-1. Selecione **Save topic icon** na secção **Add Topics Screen**. Substitua a fórmula **OnSelect** do **Save topic icon** com a fórmula abaixo. O Patch criauma nova linha na tabela Dataverse.
+1. Na seção **Add Topic Screen**, selecione **Save topic icon**. Substitua a fórmula **OnSelect** do **Save topic icon** pela fórmula abaixo. O Patch cria uma nova linha na tabela Dataverse.
 
     ![](images/L01/cor_g_5.png)
 
