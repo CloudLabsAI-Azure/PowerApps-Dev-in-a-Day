@@ -734,7 +734,7 @@ Neste exercício, irá adicionar o componente de código que criou à solução 
     https://make.powerapps.com/
     ```
 
-1. Selecione **Solutions** e abra a solução **PrioritZ**.
+1. Selecione **solução** e abra a solução **PrioritZ**.
 
 1. Clique em **Adicionar existente (1)**, selecione **Mais (2)** → **Programador (3)** → **Controlo personalizado (4)**.
 
