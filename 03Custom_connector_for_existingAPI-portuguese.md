@@ -573,3 +573,7 @@ Clique em **Inserir (3)**, expanda **Multimédia (4)** e selecione **Imagem (5)*
 Neste laboratório, aprendeu a criar e a modificar um conector personalizado utilizando uma definição Open API, a testar a sua funcionalidade e a integrá-la com aplicações de lona e fluxos dentro da Power Platform.
 
 ## Concluiu este laboratório com sucesso. Prossiga para a próxima página.
+
+![](./images/NextPage.png)
+
+## Boa aprendizagem!!
