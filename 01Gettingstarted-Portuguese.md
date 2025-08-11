@@ -100,13 +100,12 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Clique novamente em **Seguinte** na lâmina da solução de importação.
 
-1. Na seção **Conexões**, clique no botão de reticências junto a **Microsoft Dataverse Prioritz (1)**.
+1. Na seção **Conexões**:
+   - Clique no botão de reticências junto a **Microsoft Dataverse Prioritz (1)**.
+   - Certifique-se de que o e-mail do utilizador **<inject key="AzureAdUserEmail"></inject> (2)** que está a utilizar está seleccionado.
+   - Clique em **Importar (3)**.
 
-1. Certifique-se de que o e-mail do utilizador **<inject key="AzureAdUserEmail"></inject> (2)** que está a utilizar está seleccionado.
-
-1. Clique em **Importar (3)**.
-
-   ![](images/L01/L1-T1-S19.png)
+      ![](images/L01/L1-T1-S19.png)
 
 1. Aguarde até que a importação da solução seja concluída.
 
@@ -230,9 +229,9 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Forneça as informações abaixo e clique em **add a picture** que está presente abaixo **Respond By**.
 
-    1. **Topic**: Introduza `Change Taco Tuesday to some other food`
+    - **Topic**: Introduza `Change Taco Tuesday to some other food`
     
-    1. **Details**: Introduza `People are tired of tacos, what should we have instead of tacos?`
+    - **Details**: Introduza `People are tired of tacos, what should we have instead of tacos?`
 
 1. **Responda By**: Selecione **today's date**.
 
@@ -254,9 +253,9 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Adicione mais algumas opções repetindo **os passos 12-14**.
 
-    1. **Escolha 1**: Introduza `Steak Tuesday`
+    - **Escolha 1**: Introduza `Steak Tuesday`
 
-    2. **Escolha 2**: Introduza `Cheese and Wine Tuesday`
+    - **Escolha 2**: Introduza `Cheese and Wine Tuesday`
 
 1. Clique no botão **Save** para guardar o tópico.
 
@@ -316,7 +315,7 @@ aplicação.
 
     ![](images/L01/dv_p2_e1_g_35.png)
 
-5. Introduza o valor abaixo no campo de nomes de visualização.
+1. Introduza o valor abaixo no campo de nomes de visualização.
 
    ```
    My Notes
@@ -413,13 +412,13 @@ aplicação.
 
 1. Preencha o formulário fornecendo as informações abaixo e clique em **add a picture** que está presente abaixo do campo **Respond By**.
 
-      1. Tópico: `Test Notes` (1)
+      - Tópico: `Test Notes` (1)
 
-      2. Detalhes: `Testing the notes` (2)
+      - Detalhes: `Testing the notes` (2)
 
-      3. Entrada de texto: `Prioritz Admin topic` (3)
+      - Entrada de texto: `Prioritz Admin topic` (3)
 
-      4. Responda por: **Today's date** (4)
+      - Responda por: **Today's date** (4)
 
 1. Navegue para este caminho C:\LabFiles no explorador de ficheiros, seleccione **image.png** e clique em abrir.
 
@@ -457,7 +456,7 @@ aplicação.
 
    ![](images/L01/dv_port2_e1_g_10.png)
 
-25. Selecione Publicar esta versão e aguarde que a publicação seja concluída.
+1. Selecione Publicar esta versão e aguarde que a publicação seja concluída.
 
     ![](images/L01/dv_port2_e1_g_11.png)
 
@@ -531,11 +530,11 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 
    > **Nota**: Se conseguir ver o perfil **Universal Profile** em vez do perfil de **DeVAuth**, é por adição do valor incorreto  **Environment URL** no comando **pac auth create** no Passo 9. Para corrigir isto, siga os passos abaixo:
 
-   1. Apagar o **Universal Profile** do Visual Studio Code clicando no botão de eliminação.
+   - Apagar o **Universal Profile** do Visual Studio Code clicando no botão de eliminação.
 
-   2. Copie o valor correto do **Environment URL** seguindo o **Passo 5** desta tarefa.
+   - Copie o valor correto do **Environment URL** seguindo o **Passo 5** desta tarefa.
    
-   3. Execute o **Passo 9** desta tarefa novamente para criar o perfil de autenticação.
+   - Execute o **Passo 9** desta tarefa novamente para criar o perfil de autenticação.
 
 1. Clique em **Terminal** e seleccione **New Terminal**, se ainda não estiver aberto.
 
@@ -554,5 +553,3 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 ## Concluiu o laboratório com sucesso. Prossiga para a próxima página.
 
 ![](./images/NextPage.png)
-
-## Boa aprendizagem!!
