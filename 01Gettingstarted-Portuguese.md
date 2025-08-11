@@ -553,3 +553,7 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
     ![](images/L01/dv_port2_e1_g_17.png)
 
 ## Você concluiu o laboratório com sucesso. Prossiga para a próxima página.
+
+![](./images/NextPage.png)
+
+## Boa aprendizagem!!
