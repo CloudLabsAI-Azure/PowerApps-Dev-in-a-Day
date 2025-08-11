@@ -2,11 +2,11 @@
 
 ## Duração estimada: 90 minutos
 
-Trabalhando como parte da equipa de PrioritZ fusion, estará a configurar GitHub Actions com as ferramentas de Power Platform para automatizar e agilizar as implementações da equipa. Isto envolve a configuração da integração contínua e dos pipelines de implementação contínua (CI/CD) para garantir a entrega perfeita e eficiente de atualizações nas aplicações Power Platform, ao mesmo tempo que gere os processos de controlo, teste e implementação de versão para melhorar a colaboração e manter padrões de alta qualidade em todo o projetos da equipa.
+Trabalhando como parte da equipa de PrioritZ fusion, estará a configurar GitHub Actions com as ferramentas de Power Platform para automatizar e agilizar as implementações da equipa. Isto envolve a configuração da integração contínua e dos pipelines de implementação contínua (CI/CD) para garantir a entrega perfeita e eficiente de atualizações nas aplicações Power Platform, ao mesmo tempo que gere os processos de controlo, teste e implementação de versão para melhorar a colaboração e manter padrões de alta qualidade em todos os projetos da equipa.
 
 Objectivos de laboratório
 
-- Exercício 1: Configure um Service Principal
+- Exercício 1: Configure um service principal
 - Exercício 2: Promover Solução para Teste Ambiente
 - Exercício 3: Criar o GitHub Repo
 - Exercício 4: Exportação e Branching
@@ -14,11 +14,11 @@ Objectivos de laboratório
 
 ## Exercício 1 – Configure um Service Principal
 
-Neste exercício, criará um service Principal. O service Principal será utilizado pelo GitHub Actions, para que não sejam executadas sob a sua identidade individual do utilizador.
+Neste exercício, criará um service principal. O service principal será utilizado pelo GitHub Actions, para que não sejam executadas sob a sua identidade individual do utilizador.
 
 ### Tarefa 1: Criar registo de aplicações
 
-1. Navegue de volta ao separador do navegador em que o Portal do Azure está aberto. Se ainda não estiver aberto, navegue até ao Portal Azure utilizando o URL abaixo.
+1. Navegue de volta ao separador do navegador em que o Portal do Azure está aberto. Se ainda não estiver aberto, navegue até ao Portal do Azure utilizando o URL abaixo.
 
     ```
     https://portal.azure.com/
@@ -28,7 +28,7 @@ Neste exercício, criará um service Principal. O service Principal será utiliz
 
     ![](images/L05/dv_p5_e4_g_1.png)
 
-1. No menu lateral, selecione **App registrations (1)** e clique em **+ New registration (2)** para criar o registo de aplicação que será utilizado pelo conector para aceder à API protegida.
+1. No menu lateral, selecione **Registos de aplicações (1)** e clique em **+ Novo registo (2)** para criar o registo de aplicação que será utilizado pelo conector para aceder à API protegida.
 
     ![](images/L05/dv_p5_e4_g_2.png)
 
@@ -52,11 +52,11 @@ Neste exercício, criará um service Principal. O service Principal será utiliz
 
     ![](images/L05/dv_p5_e4_g_7.png)
 
-    >**Nota**: Certifique-se de que copia os valores corretos de **Application (client) ID**, **Directory(Tenant) ID** and **Secret**. Copiar o valor incorreto resultará em problemas nos próximos passos/tarefas.
+    >**Nota**: Certifique-se de copiar os valores corretos de **Application (client) ID**, **Directory (tenant) ID** e **Secret**. Copiar valores incorretos resultará em problemas nos passos ou tarefas seguintes.
 
 ### Tarefa 2: Crie um novo Dataverse
 
-Nesta tarefa, irá um novo teste de ambientes Dataverse.
+Nesta tarefa, irá criar um novo ambiente de teste do Dataverse.
 
 1. Abra uma nova janela ou aba do browser e navegue até ao Power Platform Admin Center utilizando o URL abaixo.
 
@@ -90,7 +90,7 @@ Nesta tarefa, irá um novo teste de ambientes Dataverse.
 
 ### Tarefa 3: Crie um utilizador de aplicação no Dataverse
 
-Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos ambientes de dev e test de Dataverse. Será também atribuídas permissões ao service principle para implementar soluções
+Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos ambientes de dev e test de Dataverse. Serão também atribuídas permissões ao service principle para implementar soluções
 
 
 1. Abra uma nova janela ou aba do browser e navegue até ao Power Platform Admin Center utilizando o URL abaixo.
@@ -177,7 +177,7 @@ Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos am
 
 ## Exercício 2 – Promover Solução para Teste Ambiente
 
-Neste exercício, irá exportar a solução de conector Contose Badges do Dev
+Neste exercício, irá exportar a solução de conector Contoso Badges do Dev
 ambiente e importá-lo para o ambiente de teste.
 
 ### Tarefa 1: Solução de exportação.
@@ -276,7 +276,7 @@ ambiente e importá-lo para o ambiente de teste.
 
 1. Copie o valor **API Key**.
 
-1. Volte ao editor do conector, cole a chave da API que copiou no passo anterior e clique em **Create connection**. Agora, feche o separador do browser clicando em **X**.
+1. Volte ao editor do conector, cole a chave da API que copiou no passo anterior desta tarefa e clique em **Create connection**. Agora, feche o separador do browser clicando em **X**.
 
     ![](images/L03/image61.png)
 
@@ -288,7 +288,7 @@ ambiente e importá-lo para o ambiente de teste.
 
     ![](images/L05/dv_p5_e4_g_38.png)
 
-1. O teste deve ter sucesso e a resposta deve parecer a image abaixo.
+1. O teste deve ter sucesso e a resposta deve parecer a imagem abaixo.
 
     ![](images/L05/dv_p5_e4_g_39.png)
 
@@ -369,7 +369,7 @@ Neste exercício, criará um repositório do GitHub e adicionar segredos do repo
 
     ![](images/L05/dv_p5_e4_g_52.png)
 
-1. Fique nesta página.
+1. Permaneça nesta página.
 
 ### Exercício 4 – Exportação e Branching
 
@@ -405,7 +405,7 @@ Nesta tarefa, criará um workflow the GitHub Actions utilizando o YAML fornecido
 
     ![](images/L05/dv_p5_e4_g_59.png)
 
-1. No separador **Actions** **(1)**, selecione **Todos os fluxos de trabalho** **(2)**. 
+1. No separador **Ações** **(1)**, selecione **Todos os fluxos de trabalho** **(2)**.
 
     ![](images/L05/dv_p5_e4_g_60.png)
 
@@ -429,7 +429,7 @@ Nesta tarefa, criará um workflow the GitHub Actions utilizando o YAML fornecido
 
     ![](images/L05/dv_p5_e4_g_66.png)
 
-1. Adicione uma descrição se desejar e clique em **Criar solicitação de pull**.
+1. Adicione uma descrição se desejar e clique em **Criar pedido pull**.
 
     ![](images/L05/dv_p5_e4_g_67.png)
 
@@ -454,7 +454,7 @@ Neste exercício, criará uma ação de workflow e adicionará passos que libert
 
 ### Tarefa 1: Criar fluxo de trabalho
 
-1. Navegue até ao separador **Actions** **(1)** e clique em **Novo fluxo de trabalho** **(2)**.
+1. Navegue até ao separador **Ações** **(1)** e clique em **Novo fluxo de trabalho** **(2)**.
 
     ![](images/L05/dv_p5_e4_g_71.png)
 
@@ -466,7 +466,7 @@ Neste exercício, criará uma ação de workflow e adicionará passos que libert
 
     ![](images/L05/dv_p5_e4_g_73.png)
 
-1. Retire tudo a partir do ficheiro de workflow.
+1. Remova todo o conteúdo do ficheiro de workflow.
 
 1. Navegue até ao URL `https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/main/release-to-test.yml` e copie o conteúdo total do ficheiro e cole-o no ficheiro de trabalho **release-to-test.yml**.
 
@@ -478,11 +478,11 @@ Neste exercício, criará uma ação de workflow e adicionará passos que libert
 
     ![](images/L05/dv_p5_e4_g_76.png)
 
-1. No campo de nome do ficheiro, introduza **release-to-test.yml**.
+1. No campo de nome do ficheiro, insira **release-to-test.yml**.
 
     ![](images/L05/dv_p5_e4_g_79.png)
 
-1. Navegue de volta ao portal PowerApps e Certifique-se de que está no ambiente de teste PowerApps.
+1. Navegue de volta ao portal PowerApps e Certifique-se de que está no ambiente de teste no Power Apps.
 
     ![](images/L05/dv_p5_e4_g_77.png)
 
