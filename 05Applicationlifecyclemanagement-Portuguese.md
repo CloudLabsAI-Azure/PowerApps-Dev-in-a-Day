@@ -92,7 +92,6 @@ Nesta tarefa, irá criar um novo ambiente de teste do Dataverse.
 
 Nesta tarefa, irá registar a aplicação que criou no Microsoft Entra ID nos ambientes de dev e test de Dataverse. Serão também atribuídas permissões ao service principle para implementar soluções
 
-
 1. Abra uma nova janela ou aba do browser e navegue até ao Power Platform Admin Center utilizando o URL abaixo.
 
     ```
@@ -292,7 +291,6 @@ ambiente e importá-lo para o ambiente de teste.
 
     ![](images/L05/dv_p5_e4_g_39.png)
 
-
 ## Exercício 3 – Crie o GitHub Repo
 
 Neste exercício, criará um repositório do GitHub e adicionar segredos do repositório.
@@ -446,7 +444,6 @@ Nesta tarefa, criará um workflow the GitHub Actions utilizando o YAML fornecido
 1. O pedido de pull deve ser efetuado com sucesso.
 
     ![](images/L05/dv_p5_e4_g_70.png)
-
 
 ### Exercício 5 – Lançamento para teste
 
