@@ -28,13 +28,13 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    - E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
 
-   ![](images/L01/cor2_1_g_1.png)
+      ![](images/L01/cor2_1_g_1.png)
 
 1. Na janela **Introduzir palavra-passe**, insira a palavra-passe fornecida e clique em **Iniciar sessão**.
 
    - Palavra-passe: <inject key="AzureAdUserPassword"></inject>
 
-   ![](images/L01/cor2_1_g_2.png)
+      ![](images/L01/cor2_1_g_2.png)
 
 1. Clique em **Perguntar Depois** se a janela pop-up "Ação Necessária" aparecer.
 
@@ -46,7 +46,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. No **Android**, aceda à Play Store e pesquise por **Microsoft Authenticator** e toque em **Instalar**.
 
-    ![](images/L01/mobile.jpg)
+   ![](images/L01/mobile.jpg)
 
    > **Nota:** Para iOS, abra a loja de aplicações e repita os passos.
 
@@ -62,7 +62,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Após a notificação ser aprovada, clique em **Next**.
 
-    ![](images/L01/demo002.png)
+   ![](images/L01/demo002.png)
 
 1. Clique em **Concluído**.
 
@@ -76,7 +76,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    ![](images/L01/cor2_1_g_3.png)
 
-1. Se vir o pop-up **Stay Signed in?**, clique em **Não**.
+1. Se for apresentado o pop-up **Permanecer ligado?**, clique em **Não**.
 
 1. No painel **Selecionar ambiente** **(1)**, selecione o ambiente de desenvolvimento pré-criado denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
 
@@ -144,47 +144,47 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 1. Expandir o passo **Parse JSON** e reveja os dados que este fluxo criará.
 
-    ![](images/L01/L1-T1-S27.png)
+   ![](images/L01/L1-T1-S27.png)
 
 1. Expandir o passo **Apply to each topic**.
 
-    ![](images/L01/L1-T1-S28.png)
+   ![](images/L01/L1-T1-S28.png)
 
 1. Expandir o passo **Apply to each topic item**.
 
-    ![](images/L01/L1-T1-S29.png)
+   ![](images/L01/L1-T1-S29.png)
 
 1. O **Apply to each** deve parecer a image abaixo. Esta é a lógica da automatização.
 
-    ![](images/L01/L1-T1-S30.png)
+   ![](images/L01/L1-T1-S30.png)
 
 1. Clique no botão **← Import sample data - Topics**.
 
-    ![](images/L01/L1-T1-S31.png)
+   ![](images/L01/L1-T1-S31.png)
 
 1. Na lista de **Fluxos na cloud**, clique em **Import sample data - Topics**.
 
-    ![](images/L01/L1-T1-S32.png)
+   ![](images/L01/L1-T1-S32.png)
 
 1. Na página do fluxo **Import sample data - Topics**, clique em **Executar**.
 
-      ![](images/L01/dv_p2_e1_g_15.png)
+   ![](images/L01/dv_p2_e1_g_15.png)
 
 1. Na lâmina **Executar fluxo**, clique no botão **Executar fluxo** para confirmar e iniciar a execução.
 
-      ![](images/L01/dv_p2_e1_g_16.png)
+   ![](images/L01/dv_p2_e1_g_16.png)
 
-      > **Nota**: Se receber este erro `Error from the token exchange: Permission denied due to missing connection` enquanto executa o fluxo, isto deve-se ao facto de a ligação **Dataverse** não está a ser adicionado correctamente. Apague a solução importada e tente reimportar a solução executando os **passos 11-21** desta tarefa novamente e, em seguida, tente desencadear o fluxo novamente.
+   > **Nota**: Se receber este erro `Error from the token exchange: Permission denied due to missing connection` enquanto executa o fluxo, isto deve-se ao facto de a ligação **Dataverse** não está a ser adicionado correctamente. Apague a solução importada e tente reimportar a solução executando os **passos 11-21** desta tarefa novamente e, em seguida, tente desencadear o fluxo novamente.
 
 1. Após a confirmação de execução bem-sucedida, clique no botão **Concluído** para fechar a janela.
 
-      ![](images/L01/dv_p2_e1_g_17.png)
+   ![](images/L01/dv_p2_e1_g_17.png)
 
 1. O fluxo deve ser executado com sucesso; para verificar os detalhes da execução, clique em **Todas as execuções** e selecione a linha correspondente para visualizar as ações realizadas.
 
-      ![](images/L01/dv_p2_e1_g_18.png)
+   ![](images/L01/dv_p2_e1_g_18.png)
 
-      ![](images/L01/dv_p2_e1_g_19.png)
+   ![](images/L01/dv_p2_e1_g_19.png)
 
 ### Tarefa 2: Teste as aplicações
 
@@ -362,7 +362,6 @@ aplicação.
 
     ![](images/L01/cor_g_3.png)
 
-
 1. Selecione o **Mode** no menu suspenso das propriedades e altere o seu valor introduzindo o texto abaixo.
 
    ```
@@ -476,11 +475,11 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
       https://admin.powerplatform.microsoft.com/environments
       ```
 
-1. Se for apresentado com **Help us protect your account**, clique em **Skip for now**.
+1. Se for apresentada a página **Ajude-nos a proteger a sua conta**, clique em **Pular por enquanto (14 dias até que isso seja necessário)**.
 
-   ![](/images/L01/portalsignin-3.png)
+   ![](images/L01/cor2_1_g_3.png)
 
-1. Se vir o pop-up **Stay Signed in?**, clique em **Não**.
+1. Se for apresentado o pop-up **Permanecer ligado?**, clique em **Não**.
 
 1. Clique para abrir o seu ambiente de desenvolvimento chamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
@@ -516,15 +515,15 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 
    ![](images/L01/dv_port2_e1_g_15.png)
 
-1. Conclua o processo **Sign in**, utilizando as credenciais abaixo.
+1. Conclua o processo de **Início de sessão** utilizando as credenciais abaixo.
 
    * E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
    
    * Palavra-passe: <inject key="AzureAdUserPassword"></inject>
 
-1. Se for apresentado com **Help us protect your account**, clique em **Skip for now**.
+1. Se for apresentada a página **Ajude-nos a proteger a sua conta**, clique em **Pular por enquanto (14 dias até que isso seja necessário)**.
 
-   ![](/images/L01/portalsignin-3.png)
+   ![](images/L01/cor2_1_g_3.png)
 
 1. Selecione **Power Platform (1)**, agora deve ter pelo menos um perfil de **auth profile (2)**. Se tiver mais do que um perfil, certifique-se de que o perfil que criou será selecionado
 
