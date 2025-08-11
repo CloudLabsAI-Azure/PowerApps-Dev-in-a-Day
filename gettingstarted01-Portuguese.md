@@ -56,6 +56,12 @@ No ambiente integrado, a máquina virtual serve como o espaço de trabalho desig
 
 **Nota**: certifique-se de seguir as instruções cuidadosamente para garantir que o laboratório funcione sem problemas e forneça uma experiência de usuário ideal.
 
+## Alterar o idioma do guia do laboratório
+
+Para alterar o idioma do guia do laboratório, clique no **ícone(1)** de idioma localizado no canto superior direito e selecione **Português (2)** na lista suspensa. 
+
+![](./images/cor_g_g_1.png)
+
 ## Explorar os recursos do seu laboratório
 
 Para melhor compreender os seus recursos e credenciais de laboratório, navegue até ao separador **Detalhes do ambiente**.
