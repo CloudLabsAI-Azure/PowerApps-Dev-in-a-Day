@@ -2,11 +2,11 @@
 
 ### Duração: 40 minutos
 
-Trabalhando como parte da equipe de fusão do Prioritz, você configurará seu ambiente de desenvolvimento do Power Platform. Você importará e revisará a solução atual e explorará o estado atual dos aplicativos, fluxos e tabelas do Prioritz. Você também adicionará uma coluna a uma tabela e modificará o aplicativo para usá-la.
+Trabalhando como parte da equipa de fusão do Prioritz, irá configurar o seu ambiente de desenvolvimento do Power Platform. Você importará e revisará a solução atual e explorará o estado atual dos aplicativos, fluxos e tabelas do Prioritz. irá também adicionar uma coluna a uma tabela e modificará o aplicativo para usá-la.
 
 ## Objetivos do laboratório
 
-Você poderá concluir o seguinte:
+Irá concluir o seguinte:
 
 Exercício 1: Importar e revisar componentes da solução
 Exercício 2: Adicionar uma coluna para Minhas Anotações
@@ -20,7 +20,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 ### Tarefa 1: Importar, rever os componentes da solução e execute o fluxo
 
-1. No JumpVM, clique no atalho portal **Power AppsPortal** do navegador do Microsoft Edge que está disponível no ambiente de trabalho.
+1. Na JumpVM, clique no atalho do portal **Power Apps Portal** do navegador do Microsoft Edge que está disponível no ambiente de trabalho.
 
       ![azure portal.](images/L01/PAportal.png)
 
@@ -94,7 +94,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    ![](images/L01/dv_p2_e1_g_6.png)
 
-1. Certifique-se de que o ficheiro **Prioritz_1_0_0_7. zip(1)** está selecionado e clique em **Seguinte (2)**.
+1. Certifique-se de que o ficheiro **Prioritz_1_0_0_7.zip(1)** está selecionado e clique em **Seguinte (2)**.
 
    ![](images/L01/L1-T1-S18.png)
 
@@ -134,7 +134,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    ![](images/L01/L1-T1-S24.png)
 
-1. No painel **Objetos**, selecione **Fluxos de cloud** **(1)** e, em seguida, clique em **Import sample data - Topics** **(2)**.
+1. No painel **Objetos**, selecione **Fluxos na cloud** **(1)** e, em seguida, clique em **Import sample data - Topics** **(2)**.
 
    ![](images/L01/L1-T1-S25.png)
 
@@ -162,7 +162,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
     ![](images/L01/L1-T1-S31.png)
 
-1. Na lista de **Fluxos de cloud**, clique em **Import sample data - Topics**.
+1. Na lista de **Fluxos na cloud**, clique em **Import sample data - Topics**.
 
     ![](images/L01/L1-T1-S32.png)
 
@@ -188,7 +188,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
 ### Tarefa 2: Teste as aplicações
 
-1. Navegue de volta para a solução **PrioritZ** clicando em **Fluxos de cloud**. Em alternativa, também pode abrir o portal do fabricante **Power Apps** utilizando este URL `https://make.powerapps.com` se ainda não está aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** é selecionado.
+1. Navegue de volta para a solução **PrioritZ** clicando em **Fluxos na cloud**. Em alternativa, também pode abrir o portal do fabricante **Power Apps** utilizando este URL `https://make.powerapps.com` se ainda não está aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** é selecionado.
 
    ![](images/L01/dv_p2_e1_g_20.png)
 
@@ -371,7 +371,7 @@ aplicação.
 
     ![](images/L01/cor_g_4.png)
 
-1. Na seção **Add Topic Screen**, selecione **Save topic icon**. Substitua a fórmula **OnSelect** do **Save topic icon** pela fórmula abaixo. O Patch cria uma nova linha na tabela Dataverse.
+1. Na seção **Add Topic Screen**, selecione **Save topic icon**. Substitua a fórmula **OnSelect** do **Ícone Guardar Tópico** pela fórmula abaixo. O Patch cria uma nova linha na tabela Dataverse.
 
     ![](images/L01/cor_g_5.png)
 
@@ -379,7 +379,7 @@ aplicação.
       Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
       ```
 
-1. No painel **Ecrãs**, selecione **View Topic Screen** **(1)**, clique em **+ Inserir** **(2)** na barra superior e selecione **Etiqueta de texto** **(3)** na lista de componentes populares.
+1. No painel **Ecrãs**, selecione **View Topic Screen** **(1)**, clique em **+ Inserir** **(2)** na barra superior e selecione **Rótulo de texto** **(3)** na lista de componentes populares.
 
       ![](images/L01/dv_port2_e1_g_6.png)
 
@@ -404,7 +404,7 @@ aplicação.
 
     ![](images/L01/image33.png)
 
-1. Selecione o **Home Screen** e clique em **Preview the app**.
+1. Selecione o **Home Screen** e clique em **Pré-visualizar aplicação**.
 
     ![](images/L01/image34.png)
 
@@ -440,7 +440,7 @@ aplicação.
 
     1. **Choice 1**: Introduza `Test Two`
 
-1. Depois de adicionar todas as opções e detalhes do tópico, o seu ecrã deve parecer a captura de ecrã abaixo.
+1. Depois de adicionar todas as opções e detalhes do tópico, o seu ecrã deve corresponder à imagem abaixo.
 
    ![](images/L01/L01-testnotes.png)
 
@@ -454,7 +454,7 @@ aplicação.
 
 1. Feche a aplicação **preview**.
 
-1. Clique em **Publish**.
+1. Clique em **Publicar**.
 
    ![](images/L01/dv_port2_e1_g_10.png)
 
@@ -486,11 +486,11 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 
 1. Clique com o botão direito do rato no valor **URL** Ambiente e cole o valor no Notepad.
 
-   >**Nota**: Certifique-se de que o valor do URL do ambiente é copiado juntamente com o **https**. O seu valor copiado deve ficar assi `https://orgxxxxxx.crm.dynamics.com/`
+   >**Nota**: Certifique-se de que o valor do URL do ambiente é copiado juntamente com o **https**. O seu valor copiado deve ficar assim `https://orgxxxxxx.crm.dynamics.com/`
 
    ![](images/L01/dv_port2_e1_g_13.png)
 
-1. No JumpVM, inicie o **Visual Studio Code** utilizando o atalho disponível na área de trabalho.
+1. Na JumpVM, inicie o **Visual Studio Code** utilizando o atalho disponível na área de trabalho.
 
    ![](images/L04/vscode1.png)
 
@@ -530,7 +530,7 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 
    ![](images/L01/dv_port2_e1_g_16.png)
 
-   > **Nota**: Se conseguir ver o perfil **Universal Profile** em vez do perfil de **DeVAuth**, é por adição do valor incorreto  **Environment URL** no comendo **pac auth create** no Passo 9. Para corrigir isto, siga os passos abaixo:
+   > **Nota**: Se conseguir ver o perfil **Universal Profile** em vez do perfil de **DeVAuth**, é por adição do valor incorreto  **Environment URL** no comando **pac auth create** no Passo 9. Para corrigir isto, siga os passos abaixo:
 
    1. Apagar o **Universal Profile** do Visual Studio Code clicando no botão de eliminação.
 
@@ -552,7 +552,7 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 
     ![](images/L01/dv_port2_e1_g_17.png)
 
-## Você concluiu o laboratório com sucesso. Prossiga para a próxima página.
+## Concluiu o laboratório com sucesso. Prossiga para a próxima página.
 
 ![](./images/NextPage.png)
 
