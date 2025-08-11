@@ -469,7 +469,7 @@ Neste exercício, criará uma ação de workflow e adicionará passos que libert
 
     ![](images/L05/dv_p5_e4_g_74.png)
 
-1. Clique em **Confirmar alterações** e, em seguida, clique novamente em **Confirmar alterações** para confirmar.
+1. Clique em **Confirmar as alterações** e, em seguida, clique novamente em **Confirmar alterações** para confirmar.
 
     ![](images/L05/dv_p5_e4_g_75.png)
 

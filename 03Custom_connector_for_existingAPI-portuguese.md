@@ -570,5 +570,3 @@ Neste laboratório, aprendeu a criar e a modificar um conector personalizado uti
 ## Concluiu este laboratório com sucesso. Prossiga para a próxima página.
 
 ![](./images/NextPage.png)
-
-## Boa aprendizagem!!

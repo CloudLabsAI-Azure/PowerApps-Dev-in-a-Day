@@ -30,13 +30,13 @@ Neste exercício, você irá construir o componente de código.
 
    ![](images/L04/vscode1.png)
    
-1. Selecione o separador **Power Platform (1)** e certifique-se de que o seu perfil **Dev Auth (2)** está selecionado. 
+1. Selecione o separador **Power Platform (1)** e certifique-se de que o seu perfil **DEV_ENV Auth (2)** está selecionado. 
     
    >**Nota:** O separador Power Platform já está instalado.
     
     ![](images/L02/dv_port2_e1_g_16.png)
 
-1. Clique no menu de opções **(1)** no canto superior direito, selecione **Terminal** **(2)** e depois clique em **Novo Terminal** **(3)** para abrir um novo terminal no VS Code.
+1. Clique no **menu (1)** de opções no canto superior direito, selecione **Terminal** **(2)** e depois clique em **Novo Terminal** **(3)** para abrir um novo terminal no VS Code.
 
    ![](images/L01/dv_port2_e1_g_14.png)
 
@@ -190,11 +190,11 @@ Neste exercício, você irá construir o componente de código.
 
     >**Nota:** Se receber este erro **npm is not recognised**, execute os passos abaixo:
 
-    1. Abra o PowerShell e execute este comando `choco install -y --force nodejs`.
+    - Abra o PowerShell e execute este comando `choco install -y --force nodejs`.
     
-    2. Assim que a execução do comando estiver concluída, feche o Visual Studio Code e abra-o novamente.
+    - Assim que a execução do comando estiver concluída, feche o Visual Studio Code e abra-o novamente.
     
-    3. Execute o **Passo 8** desta tarefa novamente para instalar o pacote **react-beautiful-dnd**.
+    - Execute o **Passo 8** desta tarefa novamente para instalar o pacote **react-beautiful-dnd**.
 
 1. Execute o seguinte comando para as definições tipo.
 
@@ -460,19 +460,19 @@ Neste exercício, você irá construir o componente de código.
     pac pcf push --publisher-prefix contoso
     ```
 
-    > **Nota:** 
-     1. Se você encontrar a mensagem de erro **"Erro: Ferramenta necessária ausente: MSBuild.exe/dotnet.exe. Adicione MSBuild.exe/dotnet.exe na variável de ambiente Path ou use 'Desenvolvedor 
+    > **Nota:** Siga uma das opções abaixo conforme o erro apresentado:
+     - Se você encontrar a mensagem de erro **"Erro: Ferramenta necessária ausente: MSBuild.exe/dotnet.exe. Adicione MSBuild.exe/dotnet.exe na variável de ambiente Path ou use 'Desenvolvedor 
         Prompt de comando para VS'"**, siga estas etapas:
-        1. Navegue até o diretório `C:\LabFiles` e abra **dotnet-sdk-8.0.100-win-x64**.
-        2. Na janela de configuração, selecione **Reparar** e aguarde a conclusão do processo.
-        3. Após a conclusão do reparo, feche o Visual Studio Code, reabra-o e primeiro execute o comando build presente na etapa 28 e execute novamente o comando acima.
-        4. Se o problema persistir, desinstale **dotnet-sdk-8.0.100-win-x64** e instale a versão mais recente da [página de download do .NET](https://dotnet.microsoft.com/en-us/download). Feche o Visual Studio Code, abra-o novamente, execute o comando build da etapa 28 e execute o comando acima novamente.
+        - Navegue até o diretório `C:\LabFiles` e abra **dotnet-sdk-8.0.100-win-x64**.
+        - Na janela de configuração, selecione **Reparar** e aguarde a conclusão do processo.
+        - Após a conclusão do reparo, feche o Visual Studio Code, reabra-o e primeiro execute o comando build presente na etapa 28 e execute novamente o comando acima.
+        - Se o problema persistir, desinstale **dotnet-sdk-8.0.100-win-x64** e instale a versão mais recente da [página de download do .NET](https://dotnet.microsoft.com/en-us/download). Feche o Visual Studio Code, abra-o novamente, execute o comando build da etapa 28 e execute o comando acima novamente.
 
-     2. Se a operação de push falhar com o erro **`Desculpe, a aplicação encontrou um erro      irrecuperável e terá de ser encerrada`**, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente nos ficheiros **Manifest e Index**. 
+     - Se a operação de push falhar com o erro **`Desculpe, a aplicação encontrou um erro      irrecuperável e terá de ser encerrada`**, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente nos ficheiros **Manifest e Index**. 
         
         Além disso, você pode encontrar os arquivos **Manifest and Index** no local `C:\LabFiles`, você pode comparar seu código com esses arquivos e corrigir os problemas, se houver algum. 
         tente enviar o componente novamente executando o comando **pac push** novamente.
-     3. Se a execução falhar com um erro de pacote Nuget, execute o comando abaixo no PowerShell e tente executar o comando acima novamente.
+     - Se a execução falhar com um erro de pacote Nuget, execute o comando abaixo no PowerShell e tente executar o comando acima novamente.
     
         ```
         dotnet nuget adicionar fonte https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
@@ -734,7 +734,7 @@ Neste exercício, irá adicionar o componente de código que criou à solução 
     https://make.powerapps.com/
     ```
 
-1. Selecione **Solutions** e abra a solução **PrioritZ**.
+1. Selecione **solução** e abra a solução **PrioritZ**.
 
 1. Clique em **Adicionar existente (1)**, selecione **Mais (2)** → **Programador (3)** → **Controlo personalizado (4)**.
 
@@ -755,5 +755,3 @@ Neste laboratório, aprendeu a criar um componente de código, a implementar a s
 ## Concluiu o laboratório com sucesso.Prossiga para a próxima página.
 
 ![](./images/NextPage.png)
-
-## Boa aprendizagem!!
