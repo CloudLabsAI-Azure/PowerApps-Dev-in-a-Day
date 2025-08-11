@@ -412,13 +412,13 @@ aplicação.
 
 1. Preencha o formulário fornecendo as informações abaixo e clique em **add a picture** que está presente abaixo do campo **Respond By**.
 
-      - Tópico: `Test Notes` (1)
+      - Tópico: **Test Notes.**
 
-      - Detalhes: `Testing the notes` (2)
+      - Detalhes: **Testing the notes.**
 
-      - Entrada de texto: `Prioritz Admin topic` (3)
+      - Entrada de texto: **Prioritz Admin topic.**
 
-      - Responda por: **Today's date** (4)
+      - Responda por: **Today's date.**
 
 1. Navegue para este caminho C:\LabFiles no explorador de ficheiros, seleccione **image.png** e clique em abrir.
 
@@ -516,9 +516,9 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
 
 1. Conclua o processo de **Início de sessão** utilizando as credenciais abaixo.
 
-   * E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
+   - E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
    
-   * Palavra-passe: <inject key="AzureAdUserPassword"></inject>
+   - Palavra-passe: <inject key="AzureAdUserPassword"></inject>
 
 1. Se for apresentada a página **Ajude-nos a proteger a sua conta**, clique em **Pular por enquanto (14 dias até que isso seja necessário)**.
 
