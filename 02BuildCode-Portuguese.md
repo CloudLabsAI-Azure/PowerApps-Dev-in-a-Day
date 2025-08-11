@@ -754,3 +754,7 @@ Neste exercício, irá adicionar o componente de código que criou à solução 
 Neste laboratório, aprendeu a criar um componente de código, a implementar a sua lógica, a integrá-lo numa aplicação de lona e a adicioná-la a uma solução dentro da Power Platform.
 
 ## Concluiu o laboratório com sucesso.Prossiga para a próxima página.
+
+![](./images/NextPage.png)
+
+## Boa aprendizagem!!
