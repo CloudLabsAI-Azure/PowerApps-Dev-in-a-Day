@@ -115,14 +115,14 @@ In this exercise, you will create a custom connector from an existing API.
 
 8. Enter the following information on the **Create Connector** blade.
 
-     1. Connector name: **Badges connector (1)** 
-     2. Description: **Connector for contosobadgestest (2)**
-     3. Host: **contosobadgestest.azurewebsites.net (3)** and 
-     4. click **Create connector (4)**.
+    - Connector name: **Badges connector (1)** 
+    - Description: **Connector for contosobadgestest (2)**
+    - Host: **contosobadgestest.azurewebsites.net (3)** and 
+    - click **Create connector (4)**.
     
-    ![](images/L03/L03-badges1ua.png)
-
-    >**Note:** If prompted to sign in, use the ODL credentials found in the environment tab located to the right of the Lab guide.
+      ![](images/L03/L03-badges1ua.png)
+  
+      >**Note:** If prompted to sign in, use the ODL credentials found in the environment tab located to the right of the Lab guide.
 
 9. Select **Custom connectors (1)** from the sitemap. Click on the **... More actions (2)** button of the custom connector you created and select **Update from Open API file (3)** 
 
@@ -132,7 +132,7 @@ In this exercise, you will create a custom connector from an existing API.
 
       ![](images/L03/L03-import.png)
 
-11. Select the **swagger.json (2)** file you saved to your machine **(1)** and click **Open (3)**.
+11. Select **Downloads (1)** then click **swagger.json (2)** file you saved to your machine **(1)** and click **Open (3)**.
 
     ![](images/2129.png)
     
@@ -230,7 +230,7 @@ In this exercise, you will create a custom connector from an existing API.
 
 7. The connection you created should be selected.
 
-8. Go to the **AddCredit ** operation. **Enter your email address for recipientid (1)**, **enter your name for name (2)**, **enter **1** for points (3)**, and click **Test operation (4)**.
+8. Go to the **AddCredit** operation. **Enter your email address for recipientid (1)**, **enter your name for name (2)**, **enter **1** for points (3)**, and click **Test operation (4)**.
     
     ![](images/2130.png)
 
@@ -288,17 +288,17 @@ You will do this by using the custom code feature to reshape the response from t
 
     ![](images/L03/image24u.png)
 
-5. Select the **Definition (1)** tab from the dropdown and click **New action (2)** in the definition tab.
+5. Select the **Definition (1)** tab from the dropdown and click **+ New action (2)** in the definition tab.
   
     ![](images/L03/L03-EX3.1.png)
 
 6. Enter the following information to add the **Get current badge** action.
 
-     1. Summary: **Get current badge (1)**
-     2. Description: **Get current badge (2)** 
-     3. Operation ID: **getcurrentbadge (3)**
+   - Summary: **Get current badge (1)**
+   - Description: **Get current badge (2)** 
+   - Operation ID: **getcurrentbadge (3)**
     
-   ![](images/L03/image26-1.png)
+     ![](images/L03/image26-1.png)
 
 7. Scroll down to the **Request** section and click **+ Import from sample**.
     
