@@ -30,7 +30,7 @@ In this exercise, you will create a service principal. The service principal wil
    
 1. Select **App registrations** **(1)** from the side blade under Manage and click on **+ New registration** **(2)**. This application registration will be used for the connector to access the protected API.
 
-   ![](images/L05/diad5l2uu.png)
+   ![](images/L05/8-8-25-l4-1.png)
 
 1. Please provide the following details and click on **Register** **(3)**.
    
@@ -38,23 +38,23 @@ In this exercise, you will create a service principal. The service principal wil
 
    - Supported account types: **Accounts in this organizational directory only (OTU WA HOL - xxxxxx only - Single tenant)** **(2)**
 
-     ![](images/L05/diad5l3uup.png).
+     ![](images/L05/8-8-25-l4-2.png)
    
 1. Copy the **Application (client) ID**, **Directory (Tenant) ID**, and save it in a notepad as you need it for later use.
      
-   ![](images/L05/diad5l4uu.png)
+   ![](images/L05/8-8-25-l4-3.png)
 
-1. Select **Certificates & secrets** from the side blade and click on **+ New client secret**.
+1. Select **Certificates & secrets (1)** from the side blade and click on **+ New client secret (2)**.
 
-   ![](images/L05/diad5l5uu.png)
+   ![](images/L05/8-8-25-l4-4.png)
 
 1. Enter **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** **(1)** as description, set expiry to **3 months** **(2)**, and click on **Add** **(3)**.
    
-   ![](images/L05/diad5l6uu.png)
+   ![](images/L05/8-8-25-l4-5.png)
    
 1. Copy the **value** and save it in a notepad as you need it for later use.
 
-   ![](images/L05/diad5l7uu.png)
+   ![](images/L05/8-8-25-l4-6.png)
 
    >**Note:** Make sure to copy and paste the correct **Application (client) ID**, **Directory (Tenant) ID** and **Secret** value. Copying the incorrect value will result in issues in the next steps/tasks.
 
@@ -70,7 +70,7 @@ In this task, you will create a new test Dataverse environment.
 
 1. Click on **+ New** to create a new Dataverse.         
 
-   ![](images/L05/newtask1.png)
+   ![](images/L05/task2-st2.png)
 
 1. In the **New environment** tab.
    
@@ -84,11 +84,11 @@ In this task, you will create a new test Dataverse environment.
    
    - Deploy sample apps and data?: **Enable Yes (6)** and click on **Save (7)**.
    
-   ![](images/L05/newtask2.png)
-
-   ![](images/L05/newtask3.png)
-
-   ![](images/L05/newtask4.png)
+      ![](images/L05/8-8-25-l4-8.png)
+   
+      ![](images/L05/8-8-25-l4-9.png)
+   
+      ![](images/L05/8-8-25-l4-10.png)
 
 1. You can now see the new Dataverse, **DEV_ENV_TEST**, that you created.
 
@@ -108,19 +108,19 @@ deploy solutions.
 
 1. Click on **Environments** **(1)** from the side blade and select your **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** **(2)**.
 
-   ![](images/L05/env1u.png)
+   ![](images/L05/8-8-25-l4-11.png)
    
 1. From your environment page, click on **Settings**.
 
-   ![](images/L05/diad5l9u.png)
+   ![](images/L05/8-8-25-l4-12.png)
    
 1. Expand **Users + permissions** **(1)** and select **Application users** **(2)**.
     
-   ![](images/L05/diad5l10u.png)
+   ![](images/L05/8-8-25-l4-13.png)
 
 1. In the Application users page, click on **+ New app user**.
 
-   ![](images/L05/diad5l11u.png)
+   ![](images/L05/8-8-25-l4-14.png)
    
 1. In Create a new app user tab, click on **+ Add an app**.
       
@@ -128,7 +128,7 @@ deploy solutions.
    
 1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** **(1)** application registration which you created earlier and click on **Add** **(2)**.
 
-   ![](images/2137.png)
+   ![](images/L05/8-8-25-l4-15.png)
 
 1. Type **org** and select your **Business unit** **(1)** and in **Security roles** click on **edit symbol (2)** and select **System administrator (3)** then click on **Create (4)**.
 
@@ -142,15 +142,15 @@ deploy solutions.
    
 1. From your test environment page, click on **Settings**.
 
-   ![](images/L05/diad5l18u.png)
+   ![](images/L05/8-8-25-l4-16.png)
 
 1. Expand **Users + permissions** **(1)** and select **Application users** **(2)**.
     
-   ![](images/L05/diad5l19u.png)
+   ![](images/L05/8-8-25-l4-17.png)
    
 1. In the Application users page, click on **+ New app user**.
 
-   ![](images/L05/diad5l11uu.png)
+   ![](images/L05/8-8-25-l4-18.png)
    
 1. On the **Create a new app user** tab, click on **+ Add an app**.
       
@@ -158,7 +158,7 @@ deploy solutions.
    
 1. Select the **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** **(1)** application registration which you created earlier and click on **Add** **(2)**.
 
-   ![](images/L05/diad5l13uu.png)
+   ![](images/L05/8-8-25-l4-19.png)
 
 1. Type **org** and select your **Business unit** **(1)** and In **Security roles** click on **edit symbol (2)** and select **System administrator (3)** then click on **Create (4)**.
 
@@ -172,7 +172,7 @@ deploy solutions.
    
 1. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
     
-   ![](images/L05/diad5l211u.png)
+   ![](images/L05/8-8-25-l4-20.png)
    
 1. Again go back to **Environments** **(1)** in the side blade and select  **DEV_ENV_TEST (2)** environment.
 
@@ -180,7 +180,7 @@ deploy solutions.
    
 1. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
     
-   ![](images/L05/diad5l22u.png)
+   ![](images/L05/8-8-25-l4-21.png)
 
 ## Exercise 2 – Promote Solution to Test Environment
 
@@ -198,17 +198,17 @@ In this exercise, you will export the Contoso Badges connector solution from the
    
      ![](images/L03/L03-EX4-exporta.png)
 
-4. On the **Before you export** blade, click **Publish** and wait for the publishing to complete.
+3. On the **Before you export** blade, click **Publish** and wait for the publishing to complete.
 
     ![](images/2138.png)
 
-5. Once published, click on **Next**.
+4. Once published, click on **Next**.
 
-6. Select **Managed** and click **Export**.
+5. Select **Managed** and click **Export**.
 
-7. Wait for the solution to be exported.
+6. Wait for the solution to be exported.
 
-8. Click the **Download** button at the top-right corner of the screen, then select **Download Solution**
+7. Click the **Download** button at the top-right corner of the screen, then select **Download Solution**
  
     ![](images/L03/SolutionDown1.png)
 
@@ -222,29 +222,31 @@ In this exercise, you will export the Contoso Badges connector solution from the
 
     ![](images/L03/L03-EX5a.png)
 
-3. Click **Import Solution**.
+2. Click **Import Solution**.
     
      ![](images/L03/L03-EX5.png)
      
      >**Note:** Try refreshing the browser if solutions are not opened.
 
-4. Click **Browse**.
+3. Click **Browse**.
 
-5. Select the solution you exported from the Dev environment and click **Open**.
+4. Select the solution you exported from the Dev environment and click **Open**.
 
-6. Click **Next**.
+5. Click **Next**.
 
-7. Click **Import** and wait for the import to complete.
+6. Click **Import** and wait for the import to complete.
 
-8. The solution should be imported successfully. **Do not** navigate away from this page.
+7. The solution should be imported successfully. **Do not** navigate away from this page.
 
 ### Task 3: Test connector
 
-1. Click on **Solution** then **All** and then select **Contoso Badge Connector** to open the solution you just imported.
+1. Click on **Solution (1)** then **All (2)** and then select **Contoso Badge Connector (3)** to open the solution you just imported.
+
+      ![](images/L05/8-8-25-l4-22.png)
 
 2. Click to open the **Badges connector**.
   
-    ![](images/L03/image58.png)
+    ![](images/L05/8-8-25-l4-23.png)
 
     >**Note:** If you receive the error message as **could not retrieve the connector data**, wait for a few mins (5-10 mins) to get the connector data updated. If that doesn't work, you can delete the imported connector and perform the **steps 1-7** in the **Task 2: Import solution** task again, then try to open the connector.
 
@@ -252,9 +254,11 @@ In this exercise, you will export the Contoso Badges connector solution from the
 
 4. Select the **Test** tab from the dropdown.
    
-     ![](images/L03/L03-EX5-default.png)
+     ![](images/L05/8-8-25-l4-24.png)
 
 5. Click **+ New connection**. A new browser tab will be opened to create a connection.
+
+      ![](images/L05/8-8-25-l4-25.png)
 
 6. Start a new browser window or tab and navigate to the URL below to open the Contoso Coffee Badges API.
 
@@ -264,13 +268,13 @@ In this exercise, you will export the Contoso Badges connector solution from the
 
 7. Click on the **Get an API Key** link.
   
-     ![](images/L03/image60.png)
+     ![](images/L05/8-8-25-l4-26.png)
 
 8. Copy the **API Key** value.
 
 9. Go back to the connector editor, paste the API Key you copied in the previous step and click **Create connection**. Now, close the browser tab by clicking on **X**.
    
-     ![](images/L03/image61.png)
+     ![](images/L05/8-8-25-l4-27.png)
 
 10. Click **Refresh** connections.
      
@@ -300,7 +304,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
    https://github.com/
    ```
 
-1. Click on your profile icon and select **Your repositories**.
+2. Click on your profile icon and select **Your repositories**.
 
    ![](images/L05/github1u.png)
 
@@ -312,61 +316,59 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
    ![](images/L05/github3.png)
 
-1. Click **Create repository** to create it.
+5. Click **Create repository** to create it.
 
    ![](images/L05/github4.png)
 
-5. Click **Settings** to open the settings tab.
-    
-     ![](images/L05/Imagessettinguu.png)
+6. Click **Settings (1)** to open the settings tab.
 
-6. Go to the **Security (1)** section, expand **Secrets and variables(2)** and select **Actions (3)**.
+7. Go to the **Security** section, expand **Secrets and variables(2)** and select **Actions (3)**.
 
     > **Note:** The values you provide will not be visible after you create the item, so take your time to get the values correct. 
       
      ![](images/L05/actionpermissionuuu-1.png)
    
-7. Click **New repository secret** to add a secret.
+8. Click **New repository secret** to add a secret.
 
      ![](images/L05/github7uu.png)
 
-8. Enter **PowerPlatformAppID (1)** for Name and paste the odl username: **<inject key="AzureAdUserEmail"></inject> (2)** and **click Add Secret (3)** 
+9. Enter **PowerPlatformAppID (1)** for Name and paste the odl username: **<inject key="AzureAdUserEmail"></inject> (2)** and **click Add Secret (3)** 
 
      ![](images/L05/github8u.png)
 
-9. Click **New repository secret** again.
+10. Click **New repository secret** again.
 
-10. Enter **PowerPlatformClientSecret (1)** for Name and paste the password: **<inject key="AzureAdUserPassword"></inject> (2)** and click **Add Secret (3)** 
+11. Enter **PowerPlatformClientSecret (1)** for Name and paste the password: **<inject key="AzureAdUserPassword"></inject> (2)** and click **Add Secret (3)** 
 
      ![](images/L05/github9u.png)
 
-11. Click **New repository secret** again.
+12. Click **New repository secret** again.
 
-12. Enter **PowerPlatformTenantID (1)** for Name and paste the secret **Tenant ID (2)** from your notepad that you noted earlier in **`Exercise 1 -> Task 1 -> Step 5`** in the **Value** field and click **Add secret (3)**.
+13. Enter **PowerPlatformTenantID (1)** for Name and paste the secret **Tenant ID (2)** from your notepad that you noted earlier in **`Exercise 1 -> Task 1 -> Step 5`** in the **Value** field and click **Add secret (3)**.
 
      ![](images/L05/github10u.png)
 
-13. Click **New repository secret** again.
+14. Click **New repository secret** again.
 
-14. Enter **PowerPlatformDevUrl (1)** for Name and paste the secret **Dev environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 17`** in the **Value** field and click **Add secret (3)**.
+15. Enter **PowerPlatformDevUrl (1)** for Name and paste the secret **Dev environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 17`** in the **Value** field and click **Add secret (3)**.
 
     >**Note:** Make sure you are pasting the dev environment URL named **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />** that you copied in the **`Exercise 1 -> Task 3 -> Step 17`**
    
      ![](images/L05/github11u.png) 
   
-15. Click **New repository secret** one more time.
+16. Click **New repository secret** one more time.
 
-16. Enter **PowerPlatformTestUrl (1)** for Name and paste the **Test Environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 19`** in the **Value** field and click **Add secret (3)**.
+17. Enter **PowerPlatformTestUrl (1)** for Name and paste the **Test Environment URL (2)** from your notepad that you copied in the **`Exercise 1 -> Task 3 -> Step 19`** in the **Value** field and click **Add secret (3)**.
 
     >**Note:** Make sure you are pasting the test environment URL named **DEV_ENV_TEST** that you copied in the **`Exercise 1 -> Task 3 -> Step 19`**
  
     ![](images/L05/L05-testurla.png)
  
-17. You should now have **5** repository secrets.
+18. You should now have **5** repository secrets.
      
     ![](images/L05/Images20uu5u.png)
 
-18. Do not navigate away from this page.
+19. Do not navigate away from this page.
 
 ## Exercise 4 – Export and Branch
 
@@ -435,21 +437,21 @@ indentation shown in the images.
         
    ![](images/L05/L05-t1-1u.png)
    
-23. Add a description if you like, and then click **Create pull request**.
+1. Add a description if you like, and then click **Create pull request**.
 
      ![](images/L05/pr1u.png)
    
-24. You should now see the pull request summary. Confirm that the branch has no conflicts with the main branch and that the changes can be merged into the main branch automatically.
+1. You should now see the pull request summary. Confirm that the branch has no conflicts with the main branch and that the changes can be merged into the main branch automatically.
    
-25. Click on the chevron button next to the **Merge pull request** button and select **Squash and** **merge**.
+1. Click on the chevron button next to the **Merge pull request** button and select **Squash and** **merge**.
       
     ![](images/L05/Images2032u.png)
 
-26. Click **Squash and merge**.
+1. Click **Squash and merge**.
    
-27. Click **Confirm squash and merge**.
+1. Click **Confirm squash and merge**.
    
-28. The pull request should get merged successfully.
+1. The pull request should get merged successfully.
    
      ![](images/L05/prdoneu.png)
 
@@ -479,21 +481,21 @@ In this exercise, you will create a workflow action and add steps that will rele
  
    ![](images/L05/cntnu.png)
       
-16. Click **Commit changes** and then click **Commit changes**.
+1. Click **Commit changes** and then click **Commit changes**.
 
     ![](images/L05/commit1.png)
    
-17. Select the **Actions** tab and monitor the workflow.
+1. Select the **Actions** tab and monitor the workflow.
 
-18. The release should be completed successfully.
+1. The release should be completed successfully.
     
      ![](images/L05/relecomplu.png)
      
-24. Navigate back to the PowerApps portal and ensure you are in the test PowerApps environment.
+1. Navigate back to the PowerApps portal and ensure you are in the test PowerApps environment.
 
       ![](images/L05/lastu.png)
 
-25. Select the **solutions (1)** tab from the left side and click on **Managed (2)**. You should see the solution deployed with the name of **Prioritz (3)**.
+1. Select the **solutions (1)** tab from the left side and click on **Managed (2)**. You should see the solution deployed with the name of **Prioritz (3)**.
 
     ![](images/L05/lastuu.png)
     
