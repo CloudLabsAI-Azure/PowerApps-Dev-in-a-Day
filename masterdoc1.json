@@ -20,5 +20,49 @@
         "Order": 4
       }
     ]
-  }
+  },
+  {
+    "Name": "Low Code Development with Power Apps & Power Automate",
+    "Language": "Spanish",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Spanish-Content/gettingstarted02.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Spanish-Content/01gettingstartedwithpowerapp.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Spanish-Content/02BuildCode.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Spanish-Content/03Custom_connector_for_existingAPI.md",
+        "Order": 4
+      }
+    ]
+  },
+  {
+    "Name": "Low Code Development with Power Apps & Power Automate",
+    "Language": "Portuguese",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/gettingstarted02-Portuguese.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/01Gettingstarted-Portuguese.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/02BuildCode-Portuguese.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/PowerApps-Dev-in-a-Day/Portuguese-Content/03Custom_connector_for_existingAPI-portuguese.md",
+        "Order": 4
+      }
+    ]
+  }  
 ]
