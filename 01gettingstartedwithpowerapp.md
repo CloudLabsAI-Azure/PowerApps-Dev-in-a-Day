@@ -28,25 +28,25 @@ In this exercise, you will import the current solution into the pre-created dev 
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-     ![](images/L01/8-8-25-l1-1.png)
+     ![](images/8-8-25-l1-1.png)
 
 1. Now enter the following password **(1)** and click on **Sign in** **(2)**. 
 
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-     ![](images/L01/8-8-25-l1-2.png)
+     ![](images/8-8-25-l1-2.png)
 
 1. On the top right corner,  click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
-      ![](images/L01/8-8-25-l1-3.png)
+      ![](images/8-8-25-l1-3.png)
 
 1. Now, click on **Solutions (1)** from the left hand side menu and click **Import solution (2)**.
 
-      ![](images/L01/8-8-25-l1-4.png)
+      ![](images/8-8-25-l1-4.png)
 
 1. On the **Import a Solution** pane, click **Browse** to select the solution file.
     
-     ![](images/L01/8-8-25-l1-5.png)
+     ![](images/8-8-25-l1-5.png)
      
 1. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` **(1)** in file explorer , select the **Prioritz_1_0_0_7.zip** **(2)** file, and click **Open (3)**.
 
@@ -94,7 +94,7 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. From the left-hand side under **Objects**, select **Cloud flows (1)**. Then, open the **Import sample data – Topics (2)** flow.
  
-    ![](images/L01/8-8-25-l1-6.png)
+    ![](images/8-8-25-l1-6.png)
 
 1. Click on **Edit** button to review the flow.
   
@@ -106,9 +106,9 @@ In this exercise, you will import the current solution into the pre-created dev 
     
     >**Note:** If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
     
-12. Expand the **Apply to each topic** step.
+1. Expand the **Apply to each topic** step.
     
-    ![](images/L01/8-8-25-l1-7.png)
+    ![](images/8-8-25-l1-7.png)
 
     >**Note:** If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
 
@@ -122,11 +122,11 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. Click on the **<- back** button.
  
-    ![](images/L01/8-8-25-l1-7.png)
+    ![](images/8-8-25-l1-7.png)
 
 1. Click on the flow name to open the flow details screen.
 
-     ![](images/L01/8-8-25-l1-9.png)
+     ![](images/8-8-25-l1-9.png)
 
 1. Click on **Run** to run the flow.
    
@@ -134,13 +134,13 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. Click the **Run flow** button on the Run flow blade.
 
-     ![](images/L01/8-8-25-l1-10.png)
+     ![](images/8-8-25-l1-10.png)
 
      > **Note:** If you receive this error `Error from the token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** is not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 6-14** of this task again, then try to trigger the flow again.
 
 1. Click **Done** and wait for the flow run to complete.
 
-     ![](images/L01/8-8-25-l1-11.png)
+     ![](images/8-8-25-l1-11.png)
 
 1. The flow should run successfully. If you want, you can click on the run row and it will show you
     the details of what the flow did.
@@ -157,21 +157,21 @@ In this exercise, you will import the current solution into the pre-created dev 
 
    >**Note:** If a **Welcome to Power Apps Studio** pop-up appears, simply click **Skip** to proceed.
 
-1. Navigate to **Solutions** blade by clicking on **Back to solutions** **(←)** button.
+2. Navigate to **Solutions** blade by clicking on **Back to solutions** **(←)** button.
 
    ![](images/L01/solutions.png)
    
-2. Select **Apps (1)** from the left-hand side menu of Power Apps, you should see two applications named **Prioritz Ask** and **Prioritz Admin (2)**. 
+3. Select **Apps (1)** from the left-hand side menu of Power Apps, you should see two applications named **Prioritz Ask** and **Prioritz Admin (2)**. 
 
      >**Info:** **Prioritz Admin** app is used to manage topics being asked about and **Prioritz Ask** app allows users to respond.
 
-    ![](images/L01/8-8-25-l1-12.png)
+    ![](images/8-8-25-l1-12.png)
 
-3. Navigate to **Prioritz Admin** Launch the **Prioritz Admin** application by clicking on **play** symbol.
+4. Navigate to **Prioritz Admin** Launch the **Prioritz Admin** application by clicking on **play** symbol.
     
     ![](images/L01/L01-adminu1.png)
 
-4. You should see the below four topics, Click to open **Event banner**.
+5. You should see the below four topics, Click to open **Event banner**.
 
     ![](images/2109.png)
 
@@ -185,11 +185,11 @@ In this exercise, you will import the current solution into the pre-created dev 
 
     > **Note:** You should go back to the home screen.
 
-9. Now, on the top right corner, click on the **+** button to add a new topic.
+8. Now, on the top right corner, click on the **+** button to add a new topic.
     
     ![](images/L01/image16u.png)
 
-10. Provide the below information and click **add a picture (4)** that is present below **Respond By** field.
+9. Provide the below information and click **add a picture (4)** that is present below **Respond By** field.
      
      - **Topic:** Enter `Change Taco Tuesday to some other food` **(1)**
      
@@ -197,54 +197,54 @@ In this exercise, you will import the current solution into the pre-created dev 
      
      - **Respond By:** Select **today's date.** **(3)**
      
-       ![](images/L01/8-8-25-l1-14.png)
+       ![](images/8-8-25-l1-14.png)
 
-11. Navigate to this path **C:\LabFiles (1)** in file explorer, select **image.png (2)** and click **Open (3)**.
+10. Navigate to this path **C:\LabFiles (1)** in file explorer, select **image.png (2)** and click **Open (3)**.
 
     ![](images/L01/image17u-1n.png)
 
-12. Type **Tamale Tuesday (1)** on the Choice field and click **Tap or click to add a picture (2)** that is present below the Choice field. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
+11. Type **Tamale Tuesday (1)** on the Choice field and click **Tap or click to add a picture (2)** that is present below the Choice field. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
      
-      ![](images/L01/8-8-25-l1-15.png)
+      ![](images/8-8-25-l1-15.png)
 
-13. Click **+** to add the choice.
+12. Click **+** to add the choice.
      
-      ![](images/L01/8-8-25-l1-16.png)
+      ![](images/8-8-25-l1-16.png)
 
-14. Add a couple more choices by repeating **steps 12-14**.
+13. Add a couple more choices by repeating **steps 12-14**.
        
        - **Choice 1:** Enter `Steak Tuesday`
        
        - **Choice 2:** Enter `Cheese and Wine Tuesday`
 
-15. Click on **Save** button to save the topic.
+14. Click on **Save** button to save the topic.
     
     ![](images/L01/image20u.png)
 
-16. The new topic should be saved, and you should be navigated back to the main screen.
+15. The new topic should be saved, and you should be navigated back to the main screen.
 
-17. You should see the topic you added to the list of topics.
+16. You should see the topic you added to the list of topics.
 
-     ![](images/L01/8-8-25-l1-18.png)
+     ![](images/8-8-25-l1-18.png)
 
-18. Close the Prioritz Admin application by closing the browser tab in which the Prioritz Admin application is open.
+17. Close the Prioritz Admin application by closing the browser tab in which the Prioritz Admin application is open.
 
-19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **Prioritz Ask** application by clicking on **play (2)** symbol.
+18. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **Prioritz Ask** application by clicking on **play (2)** symbol.
      
      ![](images/L01/L01-Prioritzasku-1.png)
 
-20. You should see a list of topics. Open the **Change Taco Tuesday to some other food** topic that you created in the previous steps.
+19. You should see a list of topics. Open the **Change Taco Tuesday to some other food** topic that you created in the previous steps.
 
-     ![](images/L01/8-8-25-l1-19.png)
+     ![](images/8-8-25-l1-19.png)
 
-21. Click on the **up/down** icons order the items in the order you prefer them and click **Vote**.
+20. Click on the **up/down** icons order the items in the order you prefer them and click **Vote**.
      
-      ![](images/L01/8-8-25-l1-20.png)
+      ![](images/8-8-25-l1-20.png)
 
-22. You should be navigated back to the main screens, and you should see a notification message.   
+21. You should be navigated back to the main screens, and you should see a notification message.   
       ![](images/L01/TVU.png)
     
-23. Close the Prioritz Ask app by closing the browser tab in which the Prioritz Ask application is open.
+22. Close the Prioritz Ask app by closing the browser tab in which the Prioritz Ask application is open.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -272,7 +272,7 @@ application.
 
 4. Select the **Columns** tab that is present under **+ New (3)** and click **column (4)**.
 
-    ![](images/L01/8-8-25-l1-21.png)
+    ![](images/8-8-25-l1-21.png)
 
 5. Enter the below value in the Display name field.
 
@@ -402,7 +402,7 @@ application.
 
 1. Click **+** to add the choice.
      
-      ![](images/L01/8-8-25-l1-22.png)
+      ![](images/8-8-25-l1-22.png)
 
 1. Add one more choice by repeating **steps 20-22** of this task.
        
@@ -427,7 +427,7 @@ application.
 
      ![](images/L01/NewUipublish1u.png)
 
- 1. You may close the **app designer**.
+1. You may close the **app designer**.
 
 ## Exercise 3 – Test the Power Platform CLI
 
@@ -449,7 +449,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
 4. Right-click on the **Environment URL**, copy the value, and paste it into Notepad.
  
-    >**Note**: Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
+    >**Note:** Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
 
     ![](images/L01/image37u-1.png)
 
@@ -459,7 +459,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
    
 6. Click  on **Ellipsis** **(...) (1)** **Terminal (2)** and select **New Terminal (3)**.
 
-    ![](images/L01/8-8-25-l1-23.png)
+    ![](images/8-8-25-l1-23.png)
 
 7. Run the below command in the terminal.
 
@@ -480,7 +480,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
   
     ![](images/L01/Eeditpac.png)
 
-9.  Complete the **Sign in** process, using the below credentials.
+9. Complete the **Sign in** process, using the below credentials.
 
       * Email/Username: <inject key="AzureAdUserEmail"></inject>
       * Password: <inject key="AzureAdUserPassword"></inject>
@@ -501,7 +501,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
 11. Click  on **Ellipsis** **(...) (1)** **Terminal (2)** and select **New Terminal (3)** if not already open.
 
-    ![](images/L01/8-8-25-l1-23.png)
+    ![](images/8-8-25-l1-23.png)
 
 12. Run the command below to see a list of solutions.
 
