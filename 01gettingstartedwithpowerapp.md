@@ -384,13 +384,13 @@ application.
 
 1. Fill out the form by providing the below information and click **add a picture** that is present below the **Respond By** field.
 
-       1. Topic: `Test Notes` **(1)**
+    - Topic: `Test Notes` **(1)**
        
-       2. Details: `Testing the notes` **(2)**
+    - Details: `Testing the notes` **(2)**
        
-       3. Text input: `Prioritz Admin topic` **(3)**
+    - Text input: `Prioritz Admin topic` **(3)**
        
-       4. Respond By: **Today's date** **(4)**
+    - Respond By: **Today's date** **(4)**
 
 1. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
      
@@ -406,7 +406,8 @@ application.
 
 1. Add one more choice by repeating **steps 20-22** of this task.
        
-       1. **Choice 1:**  Enter `Test Two`
+   - **Choice 1:**  Enter `Test Two`
+     
 1. After adding all the Choices and topic details, your screen should look like the below screenshot.
 
     ![](images/L01/L01-testnotesu.png)
