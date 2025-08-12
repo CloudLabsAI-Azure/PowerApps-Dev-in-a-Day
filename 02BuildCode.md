@@ -76,7 +76,7 @@ In this exercise, you will build the code component.
 
 9. If you are presented with the below pop-up, click on **Yes** to trust the authors of the files.
 
-    ![](images/L02/8-8-25-l2-1.png)
+    ![](images/8-8-25-l2-1.png)
 
 10. Review the created code component files by selecting the **Explorer** tab.
     
@@ -231,11 +231,11 @@ In this exercise, you will build the code component.
 
      ![](images/L02/image19.png)  
     
- 15. Locate the **Export** class in **line number 5**.
+ 14. Locate the **Export** class in **line number 5**.
       
      ![](images/L02/image20.png)
  
- 16. Add the following code below inside the **export** class. This defines some working variables you will be using in the class logic.
+ 15. Add the following code below inside the **export** class. This defines some working variables you will be using in the class logic.
    
         ```
         private context: ComponentFramework.Context<IInputs>;
@@ -245,7 +245,7 @@ In this exercise, you will build the code component.
 
         ![](images/L02/L2T2S15.png)
  
- 17. Locate the **init** function and remove the following line of code.
+ 16. Locate the **init** function and remove the following line of code.
 
        ```
        state: ComponentFramework.Dictionary
@@ -253,7 +253,7 @@ In this exercise, you will build the code component.
      
       ![](images/L02/initu.png)
         
- 18. Paste the code below inside the **init** function. This logic initializes our class variables from the runtime values and enables resize notification.    
+ 17. Paste the code below inside the **init** function. This logic initializes our class variables from the runtime values and enables resize notification.    
     
      ![](images/L02/init1-1.png)
    
@@ -262,11 +262,11 @@ In this exercise, you will build the code component.
      context.mode.trackContainerResize(true);
      ```
  
-19. Locate the **updateView** function.
+18. Locate the **updateView** function.
 
      ![](images/L02/imageUpdateView.png)
  
-20. Replace the **updateView** function with the function below. This logic creates the React Element from the PriorityComponent and adds it to the virtual DOM.
+19. Replace the **updateView** function with the function below. This logic creates the React Element from the PriorityComponent and adds it to the virtual DOM.
   
      ```   
     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
@@ -288,7 +288,7 @@ In this exercise, you will build the code component.
 
     ![](images/L02/image24.png)
  
-21. Add the below code after the **destroy** function. This logic handles the onReorder event from the PriorityComponent and identifies the involved items to the hosting app as selected items.
+20. Add the below code after the **destroy** function. This logic handles the onReorder event from the PriorityComponent and identifies the involved items to the hosting app as selected items.
        
     ```
     onReorder = (sourceIndex: number, destinationIndex: number): void => {
@@ -306,7 +306,7 @@ In this exercise, you will build the code component.
  
      > **Note:** **Destroy** function will be present at the end of the **PrioritZDnDRanking** class.
 
-22. After completing all the steps, replace the existing code in your `index.ts` file with the following code to avoid errors. Then, press **CTRL + S** to save the file.:
+21. After completing all the steps, replace the existing code in your `index.ts` file with the following code to avoid errors. Then, press **CTRL + S** to save the file.:
 
     ```
     import { IInputs, IOutputs } from "./generated/ManifestTypes";
@@ -394,13 +394,13 @@ In this exercise, you will build the code component.
     }
     ```
 
-23. Open the **package.json** file.
+22. Open the **package.json** file.
     
-24. Locate the **dependencies** JSON object.
+23. Locate the **dependencies** JSON object.
 
       ![](images/L02/image26.png)
  
-25. Replace **dependencies** with the JSON below. Then, press **CTRL + S** to save the file.
+24. Replace **dependencies** with the JSON below. Then, press **CTRL + S** to save the file.
 
     ```
     "dependencies": {
@@ -537,19 +537,19 @@ In this task, you will allow the publishing of canvas apps with code components 
      https://admin.powerplatform.microsoft.com/environments
      ```
 
-3. Open the dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** that you are using for this lab.
+2. Open the dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** that you are using for this lab.
 
     ![](images/2122.png)
 
-4. Click **Settings** from top menu.
+3. Click **Settings** from top menu.
     
      ![](images/8-8-25-l2-2.png)
 
-5. Expand **Product(1)** and select **Features(2)**.
+4. Expand **Product(1)** and select **Features(2)**.
     
      ![](images/8-8-25-l2-3.png)
 
-6. Turn on **Allow publishing of canvas apps with code components**, which should be under **Power Apps component framework for canvas apps**. Scroll down and click on **Save**.
+5. Turn on **Allow publishing of canvas apps with code components**, which should be under **Power Apps component framework for canvas apps**. Scroll down and click on **Save**.
      
       ![](images/8-8-25-l2-4.png)
 
@@ -565,7 +565,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
    https://make.powerapps.com/
    ```
 
-2. Select **Solutions** and open the **PrioritZ** solution.
+2. Select **Solutions (1)** and open the **PrioritZ (2)** solution.
 
    ![](images/8-8-25-l2-6.png)
     
@@ -631,57 +631,57 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 
       ![](images/L02/pro.png)
        
-17. Click on **+ Add field** to add a new field.
+16. Click on **+ Add field** to add a new field.
 
     ![](images/L02/addfield.png)
 
-18. Select **Rank (1)** and click on **Add (2)**.
+17. Select **Rank (1)** and click on **Add (2)**.
      
       ![](images/L02/image44.1uu.png)
  
-19. The rank should now show on the control, but it is sorted in descending order.
+18. The rank should now show on the control, but it is sorted in descending order.
       
-20. Go to **Tree view**, select the **Vote Screen**, then **Votes gallery (1)**, then select the **Items (2)** property from the property dropdown and change the sort order to **Ascending (3)**.
+19. Go to **Tree view**, select the **Vote Screen**, then **Votes gallery (1)**, then select the **Items (2)** property from the property dropdown and change the sort order to **Ascending (3)**.
      
       ![](images/L02/image46-1.png)
  
-21. The rank should now be sorted in ascending order.
+20. The rank should now be sorted in ascending order.
 
-22. Select the **PrioritZDnDRanking** component then **X** property from the property dropdown.
+21. Select the **PrioritZDnDRanking** component then **X** property from the property dropdown.
  
       ![](images/L02/image47.1.png)
       
-23. Set the **X** value of the **PrioritZDnDRanking** component to the below formula.
+22. Set the **X** value of the **PrioritZDnDRanking** component to the below formula.
 
     ```
     'Votes gallery'.Width
     ```
 
-24. Select the **Width** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **60**.
+23. Select the **Width** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **60**.
     
-25. Select the **Height** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
+24. Select the **Height** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
 
     ```
     'Votes gallery'.Height
     ```
 
-26. Select the **ItemHeight** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula
+25. Select the **ItemHeight** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula
 
     ```
     'Votes gallery'.TemplateHeight
     ```
 
-27. Select the **BackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"#35A393"**
+26. Select the **BackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"#35A393"**
     
-28. Select the **DragBackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"LightBlue"**
+27. Select the **DragBackgroundColor** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value to **"LightBlue"**
 
-29. Select the **Y** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
+28. Select the **Y** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
 
     ```
     'Votes gallery'.Y
     ```
     
-30. Select the **OnSelect** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
+29. Select the **OnSelect** property  of the **PrioritZDnDRanking** component from the property dropdown and set its value with the below formula.
 
     ```
     With(
@@ -723,31 +723,31 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
     );
     ```
 
-31. Select the **Home Screen (1)** and click **Play (2)**.
+30. Select the **Vote Screen (1)** and click **Play (2)**.
 
     ![](images/2123.png)
 
-33. You can view how it looks on a phone screen by using the emulator.
+31. You can view how it looks on a phone screen by using the emulator.
      
      ![](images/2124.png)
 
-34. Drag one of the topic items and drop it in a different location.
+32. Drag one of the topic items and drop it in a different location.
      
      ![](images/L02/image49.png)
  
-35. The drag/drop should work as expected.
+33. The drag/drop should work as expected.
 
-36. Close the preview.
+34. Close the preview.
 
-37. Click **Publish**.
+35. Click **Publish**.
 
     ![](images/L02/publish.png)
 
-38. Select **Publish this version** and wait for the publish to be completed.
+36. Select **Publish this version** and wait for the publish to be completed.
 
     ![](images/2125.png)
 
-39. You may **close** the canvas app studio.
+37. You may **close** the canvas app studio.
 
 ## Exercise 3 – Add Code Component to Solution
 
@@ -784,3 +784,5 @@ In this exercise, you will add the code component you created to the PrioritZ so
 In this lab, you learned to create a code component, implement its logic, integrate it into a canvas app, and add it to a solution within the Power Platform.
 
 ### You have successfully completed this lab. Click the Next button to proceed to the next lab.
+
+![](./images/GS4-1.png)
