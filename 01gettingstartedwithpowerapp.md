@@ -1,6 +1,6 @@
 # Laboratorio 01 - Introducción a Power Apps
 
-## Duración Estimada: 40 minutos
+## Duración Estimada: 60 minutos
 
 En este laboratorio, configurará su entorno de desarrollo de Power Platform como parte del equipo de fusión de Prioritz. Comenzará importando y revisando los componentes de la solución, incluyendo aplicaciones, flujos y tablas, para comprender el estado actual de la solución de Prioritz. A continuación, mejorará la solución añadiendo una nueva columna "My Notes" a una tabla y actualizando la aplicación de administración de Prioritz para que use este nuevo campo. Finalmente, verificará que Visual Studio Code y la extensión Power Platform CLI estén instalados y usará la CLI para conectarse a su entorno y mostrar las soluciones. Al completar estos ejercicios, adquirirá experiencia práctica con la administración de soluciones, la personalización de aplicaciones y las herramientas para desarrolladores en el ecosistema de Power Platform.
 
