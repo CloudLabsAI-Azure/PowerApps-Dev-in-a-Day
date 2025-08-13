@@ -1,6 +1,6 @@
 # Laboratório 01 - Introdução ao Power Apps
 
-### Duração Estimada: 40 minutos
+### Duração Estimada: 60 minutos
 
 Neste laboratório, você configurará seu ambiente de desenvolvimento da Power Platform como parte da equipe de desenvolvimento fusion da Prioritz. Você começará importando e revisando os componentes da solução, incluindo aplicativos, fluxos e tabelas, para entender o estado atual da solução Prioritz. 
 
