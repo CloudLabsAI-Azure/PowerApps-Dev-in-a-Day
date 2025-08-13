@@ -1,6 +1,6 @@
 # Laboratorio 02 - Construir un componente de código
 
-## Duración Estimada: 90 minutos
+## Duración Estimada: 100 minutos
 
 En este laboratorio, creará un componente de código personalizado utilizando el framework React JavaScript para habilitar la priorización de elementos mediante arrastrar y soltar en la Power App de PrioritZ Ask. Comenzará creando y configurando el componente de código, luego implementará su lógica y lo probará localmente. A continuación, integrará el componente en la aplicación de canvas de PrioritZ Ask, lo que permitirá a los usuarios reordenar los elementos visualmente. Finalmente, agregará el componente de código completo a la solución PrioritZ, asegurándose de que esté disponible para su uso en su entorno de Power Platform. Al completar estos ejercicios, adquirirá experiencia práctica en el desarrollo, la implementación y el uso de componentes de código personalizados en Power Apps.
 
