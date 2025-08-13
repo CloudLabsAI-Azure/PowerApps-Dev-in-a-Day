@@ -106,6 +106,8 @@ To adjust the zoom level for the environment page, click the **A↕** icon locat
 1. If you see the pop-up Action Required, click Ask Later.
 
    ![](./images/asklater.png)
+
+   > **NOTE:** Please do not enable MFA; immediately select "Ask Later" if available. If the "Ask Later" option is not shown, then proceed to enable MFA by following the steps highlighted under **Steps to Proceed with MFA Setup if Ask Later Option is Not Visible**
  
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
@@ -118,6 +120,44 @@ To adjust the zoom level for the environment page, click the **A↕** icon locat
 By completing these exercises, you will import and customize Power Platform solutions, create and implement custom code components with Visual Studio Code, develop and integrate custom connectors, create and deploy Azure Functions, and manage solutions using GitHub for source control.
 
 **Note:** Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
+
+## Steps to Proceed with MFA Setup if Ask Later Option is Not Visible
+
+> **Note:** Continue with the exercises if MFA is already enabled or the option is unavailable.
+
+1. On the **Action Required** pop-up, click on **Next**.
+
+   ![](./images/8-8-25-g1-1.png)
+
+2. In the Keep your account secure window, the window that appears and the steps that follow are for the Microsoft Authenticator app method. Select **Next**.
+
+    ![](./images/8-8-25-g1-2.png)
+
+3. On the Set up your account page, select **Next**.
+
+   ![](./images/8-8-25-g1-3.png)
+
+4. **Note:** If you don’t have the Microsoft Authenticator app installed on your mobile device:
+
+   - Open **Google Play Store** (Android) or **App Store** (iOS).
+   - Search for **Microsoft Authenticator** and tap **Install**.
+   - Open the **Microsoft Authenticator app**, select **Add account**, then choose **Work or school account**.
+
+5. Scan the QR code with your phone. On the phone, inside the Authenticator app, select Work or school account, and scan the QR code. Select **Next**.
+
+   ![](./images/8-8-25-g1-4.png)
+
+6. On the Keep your account secure page. Enter the code, which is shown on the Authenticator app.
+
+   ![](./images/8-8-25-g1-5.png)
+
+7. Once the code is entered. click **Next**
+
+   ![](./images/8-8-25-g1-6.png)
+
+8. Select Done on the Success! page.
+
+   ![](./images/8-8-25-g1-7.png)
    
 ## Support Contact
 
