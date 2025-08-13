@@ -1,6 +1,6 @@
 # Laboratorio 04 - Gestión del ciclo de vida de las aplicaciones
 
-## Duración Estimada: 90 mins
+## Duración Estimada: 100 mins
 
 Al trabajar como parte del equipo de fusión de PrioritZ, configurará GitHub Actions con Power Platform Build Tools para automatizar y optimizar las implementaciones del equipo. Esto implica configurar canalizaciones de integración continua e implementación continua (CI/CD) para garantizar la entrega fluida y eficiente de actualizaciones a las aplicaciones de Power Platform, al mismo tiempo que administra los procesos de control de versiones, pruebas e implementación para mejorar la colaboración y mantener estándares de alta calidad en todos los proyectos del equipo.
 
