@@ -1,6 +1,6 @@
 # Laboratório 02 - Construir um componente de código
 
-## Duração estimada: 90 minutos
+## Duração estimada: 100 minutos
 
 Trabalhando como parte da equipe de PrioritZ fusion, você foi solicitado a criar um componente de código do Power Apps para permitir a classificação de prioridade de arrastar e soltar itens no PrioritZ Ask Power App. Você criará um componente de código usando a estrutura React JavaScript. Uma abordagem de componente de código é usada para para atender ao requisito porque não existe um controlo semelhante já incorporado.
 
