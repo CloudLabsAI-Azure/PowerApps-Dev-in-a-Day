@@ -1,108 +1,68 @@
-# Laboratório 01 - Introdução ao Powerapps
+# Laboratório 01 - Introdução ao Power Apps
 
-### Duração: 40 minutos
+### Duração Estimada: 40 minutos
 
-Trabalhando como parte da equipa de fusão do Prioritz, irá configurar o seu ambiente de desenvolvimento do Power Platform. Você importará e revisará a solução atual e explorará o estado atual dos aplicativos, fluxos e tabelas do Prioritz. irá também adicionar uma coluna a uma tabela e modificará o aplicativo para usá-la.
+Neste laboratório, você configurará seu ambiente de desenvolvimento da Power Platform como parte da equipe de desenvolvimento fusion da Prioritz. Você começará importando e revisando os componentes da solução, incluindo aplicativos, fluxos e tabelas, para entender o estado atual da solução Prioritz. 
 
-## Objetivos do laboratório
+Em seguida, você aprimorará a solução adicionando uma nova coluna "My Notes" (Minhas Anotações) a uma tabela e atualizará o aplicativo Prioritz Admin para usar este novo campo. Finalmente, você verificará se o Visual Studio Code e a extensão da CLI da Power Platform estão instalados e usará a CLI para se conectar ao seu ambiente e listar as soluções. Ao concluir esses exercícios, você ganhará experiência prática com o gerenciamento de soluções, a personalização de aplicativos e as ferramentas de desenvolvedor no ecossistema da Power Platform.
 
-Irá concluir o seguinte:
+## Objetivos do Laboratório
 
-Exercício 1: Importar e revisar componentes da solução
-Exercício 2: Adicionar uma coluna para Minhas Anotações
-Exercício 3: Verificar o Visual Studio Code Installer pré-instalado e a Power Platform CLI Extension
+Você será capaz de concluir o seguinte:
 
-## Exercício 1 - Importar e rever os componentes da solução
+- Exercício 1: Importar e revisar os componentes da solução
+- Exercício 2: Adicionar uma coluna para "My Notes" (Minhas Anotações)
+- Exercício 3: Verificar o Visual Studio Code e a extensão da CLI da Power Platform pré-instalados
 
-Neste exercício, irá importar a solução atual para o ambiente de desenvolvimento pré-criado e rever os componentes da solução. Também executará um fluxo que adicionará dados de exemplo ao seu ambiente e testará as aplicações na solução.
+## Exercício 1 - Importar e revisar os componentes da solução
 
->**Nota**: O ambiente Dev é já pré-criado como parte dos pré-requisitos.
+Neste exercício, você importará a solução atual para o ambiente de desenvolvimento (dev) pré-criado e revisará seus componentes. Você também executará um fluxo que adicionará dados de exemplo ao seu ambiente e testará os aplicativos da solução.
 
-### Tarefa 1: Importar, rever os componentes da solução e execute o fluxo
+>**Observação**: O ambiente Dev é já pré-criado como parte dos pré-requisitos.
 
-1. Na JumpVM, clique no atalho do portal **Power Apps Portal** do navegador do Microsoft Edge que está disponível no ambiente de trabalho.
+### Tarefa 1: Importar, revisar os componentes da solução e executar o fluxo
+
+1. Na LabVM, clique no atalho para o **portal do Power Apps** do navegador Microsoft Edge que está disponível na área de trabalho.
 
       ![azure portal.](images/L01/PAportal.png)
 
-1. Na janela **Iniciar sessão** **(1)**, insira o nome de utilizador fornecido no e-mail de credenciais. Clique em **Seguinte** **(2)**.
+1. Na janela de login **Iniciar sessão**,insira o seguinte **nome de usuário fornecido no e-mail de credenciais** **(1)** e clique em **Avançar** **(2)**.
 
-   - E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
+   - E-mail/nome do usuário: <inject key="AzureAdUserEmail"></inject>
 
       ![](images/L01/cor2_1_g_1.png)
 
-1. Na janela **Introduzir palavra-passe**, insira a palavra-passe fornecida e clique em **Iniciar sessão**.
+1. Agora, **Insira a senha** e clique em **Iniciar sessão**.
 
-   - Palavra-passe: <inject key="AzureAdUserPassword"></inject>
+   - Senha: <inject key="AzureAdUserPassword"></inject>
 
       ![](images/L01/cor2_1_g_2.png)
 
-1. Clique em **Perguntar Depois** se a janela pop-up "Ação Necessária" aparecer.
-
-   >**Observação:** Se a opção **Perguntar Depois** **não** estiver disponível, siga os Passos 5 a 14. Caso contrário, prossiga para o **Passo 15**.
-
-1. Na página **Comece por obter a aplicação**, clique em **Seguinte**.
-
-1. Clique em **Seguinte** duas vezes.
-
-1. No **Android**, aceda à Play Store e pesquise por **Microsoft Authenticator** e toque em **Instalar**.
-
-   ![](images/L01/mobile.jpg)
-
-   > **Nota:** Para iOS, abra a loja de aplicações e repita os passos.
-
-   > **Nota:** Ignore se já estiver instalado.
-
-1. Abra a aplicação e toque em **Escanear um código QR**.
-
-1. Digitalize o código QR visível no ecrã e clique em **Next**.
-
-   ![](images/L01/demo001.png)
-
-1. Introduza o dígito apresentado no ecrã do aplicativo Autenticador no telemóvel e toque em **Sim**.
-
-1. Após a notificação ser aprovada, clique em **Next**.
-
-   ![](images/L01/demo002.png)
-
-1. Clique em **Concluído**.
-
-1. Na janela **Ajude-nos a proteger sua conta**, clique **"Não"**.
-
-1. Toque em **Concluir** no dispositivo móvel.
-
-   > **NOTA:** Quando voltar a iniciar sessão, insira os dígitos apresentados no ecrã na **aplicação Autenticador** e clique em Sim.
-
-1. Se for apresentada a tela **Ajude-nos a proteger sua conta**, clique em **Pular por enquanto (14 dias até que isso seja necessário)**.
-
-   ![](images/L01/cor2_1_g_3.png)
-
-1. Se for apresentado o pop-up **Permanecer ligado?**, clique em **Não**.
-
-1. No painel **Selecionar ambiente** **(1)**, selecione o ambiente de desenvolvimento pré-criado denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
+1. No canto superior direito, clique em **Selecionar ambiente** **(1)** e selecione o ambiente de desenvolvimento pré-criado chamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
 
    ![](images/L01/DevEnv.png)
 
-1. No painel de navegação esquerdo, selecione **Soluções** **(1)**. Na barra de comandos, clique em **Importar solução** **(2)**.
+1. Agora, clique em **Soluções** **(1)** no menu do lado esquerdo e, em seguida, clique em **Importar solução** **(2)**.
 
    ![](images/L01/L1-T1-S16.png)
 
-1. Na janela **Importar uma solução**, clique em **Procurar** para localizar o ficheiro de solução a importar.
+1. Na janela **Importar uma solução**, clique em **Procurar**  para selecionar o arquivo da solução.
 
    ![](images/L01/L1-T1-S17.png)
 
-1. No explorador de ficheiros, navegue até à pasta `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` **(1)**, selecione o ficheiro comprimido **Prioritz_1_0_0_7.zip** **(2)** e clique no botão **Abrir** **(3)**.
+1. Navegue até o caminho `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` **(1)** no explorador de arquivos, selecione o arquivo compactado **Prioritz_1_0_0_7.zip** **(2)** e clique no botão **Abrir** **(3)**.
 
    ![](images/L01/dv_p2_e1_g_6.png)
 
-1. Certifique-se de que o ficheiro **Prioritz_1_0_0_7.zip(1)** está selecionado e clique em **Seguinte (2)**.
+1. Certifique-se de que o arquivo **Prioritz_1_0_0_7.zip(1)** está selecionado e clique em **Avançar (2)**.
 
    ![](images/L01/L1-T1-S18.png)
 
-1. Clique novamente em **Seguinte** na lâmina da solução de importação.
+1. Clique **Avançar** novamente no painel de importação da solução.
 
 1. Na seção **Conexões**:
-   - Clique no botão de reticências junto a **Microsoft Dataverse Prioritz (1)**.
-   - Certifique-se de que o e-mail do utilizador **<inject key="AzureAdUserEmail"></inject> (2)** que está a utilizar está seleccionado.
+   - Clique no botão de reticências (...) ao lado de **Microsoft Dataverse Prioritz (1)**.
+   - Certifique-se de que o e-mail do usuário **<inject key="AzureAdUserEmail"></inject> (2)** que você está usando está selecionado.
    - Clique em **Importar (3)**.
 
       ![](images/L01/L1-T1-S19.png)
@@ -111,49 +71,51 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    ![](images/L01/dv_p2_e1_g_10.png)
 
-1. Agora deve ver a solução que importa na lista de soluções.
-
-1. Abra a solução **Prioritz** que importou.
+1. Agora você deve ver a solução que importou na lista de soluções. Abra a solução **Prioritz** que você importou.
 
    ![](images/L01/dv_p2_e1_g_11.png)
 
-1. Expandir **Tabelas (1)** e seleccione a tabela **PrioritZ Topic (2)**.
+1. Expanda **Tabelas (1)** e selecione a tabela **PrioritZ Topic (2)**.
 
    ![](images/L01/L1-T1-S21.png)
 
-1. Selecione as **Colunas** em Schema e reveja as colunas da tabela **PrioritZ Topic**.
+1. Na seção **Esquema**, selecione o item **Colunas** da tabela **PrioritZ Topic**.
 
-   >**Info**: As colunas padrão estão integradas e todas as tabelas têm-nas. As colunas personalizadas foram criadas pela equipa para esta aplicação.
+   >**Informação**: As colunas padrão são integradas e todas as tabelas as possuem. As colunas personalizadas foram criadas pela equipe para este aplicativo.
 
    ![](images/L01/L1-T1-S22.png)
 
-1. No menu **Colunas** **(1)**, selecione **Relações** **(2)** do menu suspenso das Colunas e reveja como esta tabela está relacionada com outras tabelas.
+1. No menu **Colunas** **(1)**, selecione **Relacionamentos** **(2)** e revise como esta tabela se relaciona com outras tabelas.
 
    ![](images/L01/L1-T1-S23.png)
 
    ![](images/L01/L1-T1-S24.png)
 
-1. No painel **Objetos**, selecione **Fluxos na cloud** **(1)** e, em seguida, clique em **Import sample data - Topics** **(2)**.
+1. No lado esquerdo, em **Objetos**, selecione **Fluxos da nuvem** **(1)** e, em seguida, clique em **Import sample data - Topics** **(2)**.
 
    ![](images/L01/L1-T1-S25.png)
 
-1. Clique no botão **Editar** para rever o fluxo.
+1. Clique no botão **Editar** para revisar o fluxo.
 
    ![](images/L01/L1-T1-S26.png)
 
-1. Expandir o passo **Parse JSON** e reveja os dados que este fluxo criará.
+1. Expanda a etapa **Parse JSON** e revise os dados que este fluxo criará.
 
    ![](images/L01/L1-T1-S27.png)
 
-1. Expandir o passo **Apply to each topic**.
+>**Observação:** Se não conseguir expandir a etapa, clique nas reticências (...), selecione Configurações e clique em Cancelar.
+
+1. Expanda a etapa **Apply to each topic**.
 
    ![](images/L01/L1-T1-S28.png)
 
-1. Expandir o passo **Apply to each topic item**.
+>**Observação:** Se não conseguir expandir a etapa, clique nas reticências (...), selecione Configurações e clique em Cancelar.
+
+1. Expanda a etapa **Apply to each topic item**.
 
    ![](images/L01/L1-T1-S29.png)
 
-1. O **Apply to each** deve parecer a image abaixo. Esta é a lógica da automatização.
+1. A etapa **Apply to each** deve parecer com a imagem abaixo. Esta é a lógica da automação.
 
    ![](images/L01/L1-T1-S30.png)
 
@@ -161,7 +123,7 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    ![](images/L01/L1-T1-S31.png)
 
-1. Na lista de **Fluxos na cloud**, clique em **Import sample data - Topics**.
+1. Na lista de **Fluxos da nuvem**, clique em **Import sample data - Topics**.
 
    ![](images/L01/L1-T1-S32.png)
 
@@ -169,17 +131,17 @@ Neste exercício, irá importar a solução atual para o ambiente de desenvolvim
 
    ![](images/L01/dv_p2_e1_g_15.png)
 
-1. Na lâmina **Executar fluxo**, clique no botão **Executar fluxo** para confirmar e iniciar a execução.
+1. Clique no botão **Executar fluxo** no painel que se abrirá para iniciar a execução.
 
    ![](images/L01/dv_p2_e1_g_16.png)
 
-   > **Nota**: Se receber este erro `Error from the token exchange: Permission denied due to missing connection` enquanto executa o fluxo, isto deve-se ao facto de a ligação **Dataverse** não está a ser adicionado correctamente. Apague a solução importada e tente reimportar a solução executando os **passos 11-21** desta tarefa novamente e, em seguida, tente desencadear o fluxo novamente.
+   > **Observação**: Se você receber o erro `Error from the token exchange: Permission denied due to missing connection` ao executar o fluxo, isso ocorre porque a conexão do **Dataverse** não está sendo adicionada corretamente. Exclua a solução importada e tente importá-la novamente, realizando os Passos 6 a 14 desta tarefa. Em seguida, tente acionar o fluxo novamente.
 
-1. Após a confirmação de execução bem-sucedida, clique no botão **Concluído** para fechar a janela.
+1. Aguarde a conclusão da execução do fluxo e clique no botão **Concluído**.
 
    ![](images/L01/dv_p2_e1_g_17.png)
 
-1. O fluxo deve ser executado com sucesso; para verificar os detalhes da execução, clique em **Todas as execuções** e selecione a linha correspondente para visualizar as ações realizadas.
+1. O fluxo deve ser executado com sucesso. Se desejar, verificar os detalhes da execução, clique em **Todas as execuções** e selecione a linha correspondente para visualizar as ações realizadas.
 
    ![](images/L01/dv_p2_e1_g_18.png)
 
