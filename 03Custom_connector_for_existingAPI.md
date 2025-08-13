@@ -226,7 +226,7 @@ In this exercise, you will create a custom connector from an existing API.
 
 6. Click on the **Refresh** connections button.
    
-    ![](images/L03/8-8-25-l3-10.png)
+    ![](images/L03/8-8-25-l3-10-new.png)
 
 7. The connection you created should be selected.
 
@@ -293,12 +293,13 @@ You will do this by using the custom code feature to reshape the response from t
     ![](images/L03/L03-EX3.1.png)
 
 6. Enter the following information to add the **Get current badge** action.
-
    - Summary: **Get current badge (1)**
+   
    - Description: **Get current badge (2)** 
+   
    - Operation ID: **getcurrentbadge (3)**
     
-     ![](images/L03/image26-1.png)
+       ![](images/L03/image26-1.png)
 
 7. Scroll down to the **Request** section and click **+ Import from sample**.
     
@@ -499,6 +500,7 @@ In this task, you will use the custom connector you created to show the user’s
 24. Do not navigate away from this page.
 
 ### Task 2: Test connector from the flow
+
 
 1. Go to **Solutions (1)** and click on **Prioritz (2)**.
 

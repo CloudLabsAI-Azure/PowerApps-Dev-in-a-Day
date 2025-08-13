@@ -192,10 +192,12 @@ In this exercise, you will import the current solution into the pre-created dev 
 9. Provide the below information and click **add a picture (4)** that is present below **Respond By** field.
      
      - **Topic:** Enter `Change Taco Tuesday to some other food` **(1)**
+     
      - **Details:** Enter `People are tired of tacos, what should we have instead of tacos?` **(2)**
+     
      - **Respond By:** Select **today's date.** **(3)**
 
-       ![](images/8-8-25-l1-14.png)
+        ![](images/8-8-25-l1-14.png)
 
 10. Navigate to this path **C:\LabFiles (1)** in file explorer, select **image.png (2)** and click **Open (3)**.
 
