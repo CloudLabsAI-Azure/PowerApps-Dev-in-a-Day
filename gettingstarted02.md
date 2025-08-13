@@ -11,9 +11,9 @@ In this series of labs, you will gain hands-on experience with various aspects o
 After completing these Lab, you'll know how to import and customize solutions in Power Platform, build custom code components, and  create and integrate custom connectors.
 Learn to import and customize Power Platform solutions, create custom code components, and develop and integrate custom connectors. By the end of this lab, you will gain insights on:
 
- - **Getting started with Powerapps** : Learn to import a starting solution, add a new column, update the admin app, and test the Power Platform CLI.
- - **Build a code component** : Create a code component, implement its logic, integrate it into a canvas app, and add it to a solution.
- - **Custom connector for existing API** : Create, modify, and test a custom connector using an Open API definition, and integrate it with canvas apps and flows.
+ - **Getting started with Powerapps:** Learn to import a starting solution, add a new column, update the admin app, and test the Power Platform CLI.
+ - **Build a code component:** Create a code component, implement its logic, integrate it into a canvas app, and add it to a solution.
+ - **Custom connector for existing API:** Create, modify, and test a custom connector using an Open API definition, and integrate it with canvas apps and flows.
 
 ## Prerequisites
 
@@ -36,12 +36,12 @@ In these labs, you'll follow a structured process to master key aspects of Power
 
 ## Explanation of Components
 
-- **Power Platform Environment**: The central workspace where you import, manage, and customize solutions within the Power Platform. It provides the necessary tools and interface for developing and testing 
+- **Power Platform Environment:** The central workspace where you import, manage, and customize solutions within the Power Platform. It provides the necessary tools and interface for developing and testing 
  various applications and components.
-- **Visual Studio Code**: A versatile code editor used for developing custom code components and Azure Functions. It offers powerful extensions and integrations to streamline coding and debugging within the 
+- **Visual Studio Code:** A versatile code editor used for developing custom code components and Azure Functions. It offers powerful extensions and integrations to streamline coding and debugging within the 
  Power Platform ecosystem.
-- **Code Component**: Elements created to extend the functionality of Power Apps. These components involve writing and integrating custom logic, which enhances the capabilities and flexibility of canvas apps.
-- **Custom Connector**: Tools that allow Power Platform apps to connect with external data sources via APIs. These connectors enable seamless integration of external data and services into Power Platform applications.
+- **Code Component:** Elements created to extend the functionality of Power Apps. These components involve writing and integrating custom logic, which enhances the capabilities and flexibility of canvas apps.
+- **Custom Connector:** Tools that allow Power Platform apps to connect with external data sources via APIs. These connectors enable seamless integration of external data and services into Power Platform applications.
 
 ##  Getting Started with the Lab
  
@@ -49,7 +49,7 @@ Welcome to your Low Code Development with Power Apps & Power Automate workshop! 
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and **Lab Guide** will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
 ![](./images/GS6-1.png)
 
@@ -62,12 +62,6 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
 ![](./images/GS20-1.png)
-
-## Lab Guide Zoom In/Zoom Out
-
-To adjust the zoom level for the environment page, click the A↕ : 100% icon located next to the timer in the lab environment.
-
-![](./images/zoomin.png)
  
 ## Utilizing the Split Window Feature
  
@@ -77,9 +71,15 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 ## Managing Your Virtual Machine
  
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **Start, Stop**, or **Restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
 ![](./images/GS5-1.png)
+
+## Lab Guide Zoom In/Zoom Out
+
+To adjust the zoom level for the environment page, click the A↕ : 100% icon located next to the timer in the lab environment.
+
+![](./images/zoomin.png)
 
 ## Let's Get Started with Azure Portal
  
@@ -103,16 +103,44 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
    ![](./images/asklater.png)
 
-   >**NOTE:** Do not enable MFA, select **Ask Later**.
- 
+    > **NOTE:** Please do not enable MFA immediately—select "Ask Later" if available. If the "Ask Later" option is not shown, then proceed to enable MFA using the steps provided below.
+
+1. On the **Action Required** pop-up, click on **Next**.
+
+   ![](./images/8-8-25-g1-1.png)
+
+1. In the Keep your account secure window, The window that appears and the steps that follow are for the Microsoft Authenticator app method. Select **Next**.
+
+    ![](./images/8-8-25-g1-2.png)
+
+1. On the Set up your account page opens, select **Next**.
+
+   ![](./images/8-8-25-g1-3.png)
+
+1. Scan the QR code through your phone. On the phone, inside the Authenticator app select Work or school account, and scan the QR code. Select **Next**.
+
+   ![](./images/8-8-25-g1-4.png)
+
+1. On the Keep your account secure page. Enter the code, which is shown on the Authenticator app.
+
+   ![](./images/8-8-25-g1-5.png)
+
+1. Once the code is entered. click **Next**
+
+   ![](./images/8-8-25-g1-6.png)
+
+1. Select Done, on the Success! page.
+
+    ![](./images/8-8-25-g1-7.png)
+
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
    ![](./images/GS9.png)
 
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
-
 1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
+    ![](./images/8-8-25-g1-8.png)
+   
 By completing these exercises, You will import and customize Power Platform solutions, create and implement custom code components with Visual Studio Code, develop and integrate custom connectors, create and deploy Azure Functions, and manage solutions using GitHub for source control.
 
 ## Support Contact
@@ -130,3 +158,4 @@ Now, click on the **Next** from the lower right corner to move to the next page.
 ![](./images/GS4-1.png)
 
 ## Happy Learning!!
+

@@ -16,11 +16,11 @@ You will be able to complete the following :
 
 In this exercise, you will import the current solution into the pre-created dev environment and review the components of the solution. You will also run a flow that will add sample data to your environment, and test the applications in the solution.
 
->**Note**: The Dev environment is already pre-created as a part of the prerequisites.
+>**Note:** The Dev environment is already pre-created as a part of the prerequisites.
 
 ### Task 1: Import, Review solution components and run flow
 
-1. In the JumpVM, click on the **Power Apps portal** shortcut of the Microsoft Edge browser that is available on the desktop.
+1. In the LabVM, click on the **Power Apps portal** shortcut of the Microsoft Edge browser that is available on the desktop.
 
    ![azure portal.](images/L01/PAportal.png)
 
@@ -28,25 +28,25 @@ In this exercise, you will import the current solution into the pre-created dev 
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-     ![](images/L01/signin.png)
+     ![](images/8-8-25-l1-1.png)
 
 1. Now enter the following password **(1)** and click on **Sign in** **(2)**. 
 
    * Password: <inject key="AzureAdUserPassword"></inject>
    
-     ![](images/L01/signinp.png)
+     ![](images/8-8-25-l1-2.png)
 
 1. On the top right corner,  click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
-     ![](images/L01/dev11.png)
+      ![](images/8-8-25-l1-3.png)
 
-2. Now, click on **Solutions (1)** from the left hand side menu and click **Import solution (2)**.
+1. Now, click on **Solutions (1)** from the left hand side menu and click **Import solution (2)**.
 
-      ![](images/L01/importsolution1.png)
+      ![](images/8-8-25-l1-4.png)
 
 1. On the **Import a Solution** pane, click **Browse** to select the solution file.
     
-     ![](images/L01/browse1.png)
+     ![](images/8-8-25-l1-5.png)
      
 1. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L01 - Getting started\Resources` **(1)** in file explorer , select the **Prioritz_1_0_0_7.zip** **(2)** file, and click **Open (3)**.
 
@@ -76,17 +76,17 @@ In this exercise, you will import the current solution into the pre-created dev 
 
      ![](images/2104.png)
 
-4. Expand **Tables (1)** and select the **Prioritz Topic (2)** table.
+1. Expand **Tables (1)** and select the **Prioritz Topic (2)** table.
    
      ![](images/L01/L01-table1.png)
 
-5. Under the **Schema** section, select the **Columns** of the **Prioritz Topic** table.
+1. Under the **Schema** section, select the **Columns** of the **Prioritz Topic** table.
 
-   >**Info**: The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
+   >**Info:** The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
  
    ![](images/L01/L01-coulumn.png)
 
-6. From the **Columns (1)** dropdown, select the **Relationships (2)** Schema  and review how this table is related to other tables.
+1. From the **Columns (1)** dropdown, select the **Relationships (2)** Schema  and review how this table is related to other tables.
  
     ![](images/2105.png)
  
@@ -94,55 +94,55 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 1. From the left-hand side under **Objects**, select **Cloud flows (1)**. Then, open the **Import sample data – Topics (2)** flow.
  
-    ![](images/L01/L01-cloud1.png)
+    ![](images/8-8-25-l1-6.png)
 
-9. Click on **Edit** button to review the flow.
+1. Click on **Edit** button to review the flow.
   
     ![](images/2106.png)
 
-10. Expand the **Parse JSON** step and review the data this flow will create.
+1. Expand the **Parse JSON** step and review the data this flow will create.
 
     ![](images/L01/L01-parse1-1.png)
     
-    >**Note**: If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
+    >**Note:** If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
     
-12. Expand the **Apply to each topic** step.
+1. Expand the **Apply to each topic** step.
     
-    ![](images/L01/L01-topic1.png)
+    ![](images/8-8-25-l1-7.png)
 
-    >**Note**: If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
+    >**Note:** If you're unable to expand the step, click on the ellipsis (...), then select Settings, and click Cancel.
 
-13. Expand the **Apply to each topic item** step.
+1. Expand the **Apply to each topic item** step.
    
      ![](images/L01/L01-eachtopic1.png)
 
-14. The **Apply to each** step should look like the image below. This is the logic for the automation.
+1. The **Apply to each** step should look like the image below. This is the logic for the automation.
  
     ![](images/L01/image111.png)
 
-15. Click on the **<- back** button.
+1. Click on the **<- back** button.
  
-    ![](images/L01/image121.png)
+    ![](images/8-8-25-l1-7.png)
 
-16. Click on the flow name to open the flow details screen.
+1. Click on the flow name to open the flow details screen.
 
-     ![](images/L01/EX1-T1-141.png)
+     ![](images/8-8-25-l1-9.png)
 
-17. Click on **Run** to run the flow.
+1. Click on **Run** to run the flow.
    
      ![](images/L01/image131-1.png)
 
-18. Click the **Run flow** button on the Run flow blade.
+1. Click the **Run flow** button on the Run flow blade.
 
-     ![](images/L01/L01-new1.png)
+     ![](images/8-8-25-l1-10.png)
 
-     > **Note**: If you receive this error `Error from the token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** is not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 6-14** of this task again, then try to trigger the flow again.
+     > **Note:** If you receive this error `Error from the token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** is not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 6-14** of this task again, then try to trigger the flow again.
 
-19. Click **Done** and wait for the flow run to complete.
+1. Click **Done** and wait for the flow run to complete.
 
-     ![](images/L01/EX1-T1-181.png)
+     ![](images/8-8-25-l1-11.png)
 
-20. The flow should run successfully. If you want, you can click on the run row and it will show you
+1. The flow should run successfully. If you want, you can click on the run row and it will show you
     the details of what the flow did.
    
       ![](images/L01/image141.png)
@@ -157,21 +157,21 @@ In this exercise, you will import the current solution into the pre-created dev 
 
    >**Note:** If a **Welcome to Power Apps Studio** pop-up appears, simply click **Skip** to proceed.
 
-1. Navigate to **Solutions** blade by clicking on **Back to solutions** **(←)** button.
+2. Navigate to **Solutions** blade by clicking on **Back to solutions** **(←)** button.
 
    ![](images/L01/solutions.png)
    
-2. Select **Apps (1)** from the left-hand side menu of Power Apps, you should see two applications named **Prioritz Ask** and **Prioritz Admin (2)**. 
+3. Select **Apps (1)** from the left-hand side menu of Power Apps, you should see two applications named **Prioritz Ask** and **Prioritz Admin (2)**. 
 
      >**Info:** **Prioritz Admin** app is used to manage topics being asked about and **Prioritz Ask** app allows users to respond.
 
-    ![](images/L01/EX1-T2-2_1_1u.png)
+    ![](images/8-8-25-l1-12.png)
 
-3. Navigate to **Prioritz Admin** Launch the **Prioritz Admin** application by clicking on **play** symbol.
+4. Navigate to **Prioritz Admin** Launch the **Prioritz Admin** application by clicking on **play** symbol.
     
     ![](images/L01/L01-adminu1.png)
 
-4. You should see the below four topics, Click to open **Event banner**.
+5. You should see the below four topics, Click to open **Event banner**.
 
     ![](images/2109.png)
 
@@ -183,68 +183,68 @@ In this exercise, you will import the current solution into the pre-created dev 
 
     ![](images/2110.png)
 
-    > **Note**: You should go back to the home screen.
+    > **Note:** You should go back to the home screen.
 
-9. Now, on the top right corner, click on the **+** button to add a new topic.
+8. Now, on the top right corner, click on the **+** button to add a new topic.
     
     ![](images/L01/image16u.png)
 
-10. Provide the below information and click **add a picture** that is present below **Respond By** field.
+9. Provide the below information and click **add a picture (4)** that is present below **Respond By** field.
      
-     - **Topic**: Enter `Change Taco Tuesday to some other food`
+     - **Topic:** Enter `Change Taco Tuesday to some other food` **(1)**
      
-     - **Details**: Enter `People are tired of tacos, what should we have instead of tacos?`
+     - **Details:** Enter `People are tired of tacos, what should we have instead of tacos?` **(2)**
      
-     - **Respond By**: Select **today's date**.
+     - **Respond By:** Select **today's date.** **(3)**
      
-       ![](images/L01/image17u.png)
+       ![](images/8-8-25-l1-14.png)
 
-11. Navigate to this path **C:\LabFiles (1)** in file explorer, select **image.png (2)** and click **Open (3)**.
+10. Navigate to this path **C:\LabFiles (1)** in file explorer, select **image.png (2)** and click **Open (3)**.
 
     ![](images/L01/image17u-1n.png)
 
-12. Type **Tamale Tuesday** on the Choice field and click **add a picture** that is present below the Choice field. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
+11. Type **Tamale Tuesday (1)** on the Choice field and click **Tap or click to add a picture (2)** that is present below the Choice field. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
      
-      ![](images/L01/image18u.png)
+      ![](images/8-8-25-l1-15.png)
 
-13. Click **+** to add the choice.
+12. Click **+** to add the choice.
      
-      ![](images/L01/image191.png)
+      ![](images/8-8-25-l1-16.png)
 
-14. Add a couple more choices by repeating **steps 12-14**.
+13. Add a couple more choices by repeating **steps 12-14**.
        
-       - **Choice 1** : Enter `Steak Tuesday`
+       - **Choice 1:** Enter `Steak Tuesday`
        
-       - **Choice 2**: Enter `Cheese and Wine Tuesday`
+       - **Choice 2:** Enter `Cheese and Wine Tuesday`
 
-15. Click on **Save** button to save the topic.
+14. Click on **Save** button to save the topic.
     
     ![](images/L01/image20u.png)
 
-16. The new topic should be saved, and you should be navigated back to the main screen.
+15. The new topic should be saved, and you should be navigated back to the main screen.
 
-17. You should see the topic you added to the list of topics.
+16. You should see the topic you added to the list of topics.
 
-     ![](images/L01/L01-tacou.png)
+     ![](images/8-8-25-l1-18.png)
 
-18. Close the Prioritz Admin application by closing the browser tab in which the Prioritz Admin application is open.
+17. Close the Prioritz Admin application by closing the browser tab in which the Prioritz Admin application is open.
 
-19. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **Prioritz Ask** application by clicking on **play (2)** symbol.
+18. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **Prioritz Ask** application by clicking on **play (2)** symbol.
      
      ![](images/L01/L01-Prioritzasku-1.png)
 
-20. You should see a list of topics. Open the **Change Taco Tuesday to some other food** topic that you created in the previous steps.
+19. You should see a list of topics. Open the **Change Taco Tuesday to some other food** topic that you created in the previous steps.
 
-     ![](images/L01/L01-listu.png)
+     ![](images/8-8-25-l1-19.png)
 
-21. Click on the **up/down** icons order the items in the order you prefer them and click **Vote**.
+20. Click on the **up/down** icons order the items in the order you prefer them and click **Vote**.
      
-      ![](images/L01/L01-choiceuu.png)
+      ![](images/8-8-25-l1-20.png)
 
-22. You should be navigated back to the main screens, and you should see a notification message.   
+21. You should be navigated back to the main screens, and you should see a notification message.   
       ![](images/L01/TVU.png)
     
-23. Close the Prioritz Ask app by closing the browser tab in which the Prioritz Ask application is open.
+22. Close the Prioritz Ask app by closing the browser tab in which the Prioritz Ask application is open.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
@@ -272,7 +272,7 @@ application.
 
 4. Select the **Columns** tab that is present under **+ New (3)** and click **column (4)**.
 
-    ![](images/L01/EX2-T1-4u.png)
+    ![](images/8-8-25-l1-21.png)
 
 5. Enter the below value in the Display name field.
 
@@ -280,11 +280,11 @@ application.
    My Notes
    ```
 
-1. Now, search for **Plain text (1)** under Data type then select the  **Multiple lines of text (2)** , and click **Save (3)**.
+6. Now, search for **Plain text (1)** under Data type then select the  **Multiple lines of text (2)** , and click **Save (3)**.
 
     ![](images/L01/L01-notesu.png)
    
-   > **Note**: Do not navigate away from this page.
+    > **Note:** Do not navigate away from this page.
 
 ### Task 2: Update the admin app
 
@@ -292,19 +292,19 @@ application.
     
     ![](images/2114.png)
 
-   >**Note 1**: If you can't find the Edit button, click the ellipsis **(...)** next to the Add existing pane.
+   >**Note 1:** If you can't find the Edit button, click the ellipsis **(...)** next to the Add existing pane.
 
-   >**Note 2**: If you get a prompt **Welcome to Power Apps Studio** click on **Skip**.
+   >**Note 2:** If you get a prompt **Welcome to Power Apps Studio** click on **Skip**.
 
     ![](images/2115.png)
 
-2. Select the **Add Topic Screen** **(1)** from the left panel, then click **+ Insert** **(2)** and choose **Text input** **(3)**.
+1. Select the **Add Topic Screen** **(1)** from the left panel, then click **+ Insert** **(2)** and choose **Text input** **(3)**.
    
      ![](images/L01/tinputu-1.png)
 
-   >**Note**: If you can't find the Insert button, click the ellipsis **(...)** in the upper-left corner.
+   >**Note:** If you can't find the Insert button, click the ellipsis **(...)** in the upper-left corner.
      
-4. Double-click on the newly added **Text input** and enter the below value to rename the text input.
+1. Double-click on the newly added **Text input** and enter the below value to rename the text input.
 
     ```
     Notes textbox
@@ -312,15 +312,15 @@ application.
     
      ![](images/L01/image27u.png)
 
-5. Make the add picture control smaller if needed, and move the **Respond By and label textbox** down and place the **Notes textbox** between the Details control and the Respond by label.
+1. Make the add picture control smaller if needed, and move the **Respond By and label textbox** down and place the **Notes textbox** between the Details control and the Respond by label.
    
     ![](images/L01/image28u.png)
 
-6. Select **Notes textbox**, then search for **HintText (1)** and choose **HintText (2)** from the dropdown.
+1. Select **Notes textbox**, then search for **HintText (1)** and choose **HintText (2)** from the dropdown.
 
     ![](images/hintextua.png)
 
-7. Change the **HintText** value of the Notes textbox to the below value. The value should be inside double quotes. 
+1. Change the **HintText** value of the Notes textbox to the below value. The value should be inside double quotes. 
 
     ```
     My notes
@@ -328,7 +328,7 @@ application.
    
     ![](images/L01/image29u.png)
 
-8. Select the **Mode** from the properties dropdown and change its value by entering the below text.
+1. Select the **Mode** from the properties dropdown and change its value by entering the below text.
 
     ```
     TextMode.MultiLine
@@ -336,11 +336,11 @@ application.
 
     ![](images/L01/L01-modeu.png)
 
-9. Select **Save topic icon** under **Add Topics Screen** section.
+1. Select **Save topic icon** under **Add Topics Screen** section.
      
      ![](images/L01/image30u.png)
 
-10. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates
+1. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates
     a new row in the Dataverse table.
      
      ![](images/L01/image31u.png)
@@ -348,15 +348,15 @@ application.
     ```
     Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
     ```
-11. Select the **View Topic Screen (1)** from the **Screens** tab.
+1. Select the **View Topic Screen (1)** from the **Screens** tab.
 
-     >**Note**: If you can't find the Insert button, click the ellipsis **(...)** in the upper-left corner.
+     >**Note:** If you can't find the Insert button, click the ellipsis **(...)** in the upper-left corner.
      
-12. Click **+ Insert (2)** tab and select **Text label (3)**.
+1. Click **+ Insert (2)** tab and select **Text label (3)**.
 
     ![](images/L01/tlabelu-1.png)
 
-13. Double-click on the newly added label and enter the below value to rename the label you just added.
+1. Double-click on the newly added label and enter the below value to rename the label you just added.
 
      ```
      Notes label
@@ -364,76 +364,77 @@ application.
      
     ![](images/L01/L01-labelu.png)
 
-14. Change the **Text** value of the Notes label with the below text.
+1. Change the **Text** value of the Notes label with the below text.
 
      ```
      'Topics gallery'.Selected.'My Notes'
      ```
 
-15. Rearrange the controls so that the **Notes label** is positioned between the Details label and the Topic items gallery.
+1. Rearrange the controls so that the **Notes label** is positioned between the Details label and the Topic items gallery.
 
     ![](images/L01/noteslabel-1.png)
 
-16. Select the **Home Screen (1)** and click **Preview the app (2)**.
+1. Select the **Home Screen (1)** and click **Preview the app (2)**.
       
       ![](images/L01/image34u.png)
 
-17. Click on the **+** button to add a new topic.
+1. Click on the **+** button to add a new topic.
 
       ![](images/L01/L01-taco-1_1u.png)
 
-18. Fill out the form by providing the below information and click **add a picture** that is present below the **Respond By** field.
+1. Fill out the form by providing the below information and click **add a picture** that is present below the **Respond By** field.
 
-       1. Topic: `Test Notes` **(1)**
+    - Topic: `Test Notes` **(1)**
        
-       2. Details: `Testing the notes` **(2)**
+    - Details: `Testing the notes` **(2)**
        
-       3. Text input: `Prioritz Admin topic` **(3)**
+    - Text input: `Prioritz Admin topic` **(3)**
        
-       4. Respond By: **Today's date** **(4)**
+    - Respond By: **Today's date** **(4)**
 
-20. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
+1. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
      
       ![](images/L01/image18uu.png)
 
-21. Navigate to this path `C:\LabFiles` **(1)** in File Explorer, select **image.png (2)** and click **Open (3)**.
+1. Navigate to this path `C:\LabFiles` **(1)** in File Explorer, select **image.png (2)** and click **Open (3)**.
 
     ![](images/L01/image17u-1n.png)
 
-22. Click **+** to add the choice.
+1. Click **+** to add the choice.
      
-      ![](images/L01/image19u.png)
+      ![](images/8-8-25-l1-22.png)
 
-23. Add one more choice by repeating **steps 20-22** of this task.
+1. Add one more choice by repeating **steps 20-22** of this task.
        
-       1. **Choice 1** : Enter `Test Two`
-24. After adding all the Choices and topic details, your screen should look like the below screenshot.
+   - **Choice 1:**  Enter `Test Two`
+     
+1. After adding all the Choices and topic details, your screen should look like the below screenshot.
 
     ![](images/L01/L01-testnotesu.png)
       
-25. Now, click on the **Save** button. The new topic should be **saved**.
+1. Now, click on the **Save** button. The new topic should be **saved**.
 
-26. Click to open the **Test Notes** topic that you just created.
+1. Click to open the **Test Notes** topic that you just created.
 
-27. The notes **Prioritz Admin topic** that you added earlier should now be visible.
+1. The notes **Prioritz Admin topic** that you added earlier should now be visible.
 
-28. Close the app **preview**.
+1. Close the app **preview**.
 
-29. Click **Publish**.
+1. Click **Publish**.
 
     ![](images/L01/publish.png)
 
-30. Select **Publish this version** and wait for the publishing to complete.
+1. Select **Publish this version** and wait for the publishing to complete.
 
      ![](images/L01/NewUipublish1u.png)
 
- 31. You may close the **app designer**.
+1. You may close the **app designer**.
 
 ## Exercise 3 – Test the Power Platform CLI
 
 In this exercise, you will review and test the Power Platform CLI extension in Visual Studio Code.
 
->**Note**: Visual studio code and Power platform CLI installation are already done as a part of the prerequisites.
+>**Note:** Visual studio code and Power platform CLI installation are already done as a part of the prerequisites.
 
 1. Navigate to the Power Platform admin center by using the below URL and select **Environments**.
     
@@ -441,25 +442,25 @@ In this exercise, you will review and test the Power Platform CLI extension in V
     https://admin.powerplatform.microsoft.com/environments
     ```
 
-1. If you see the pop-up **Stay Signed in?**, click **No**.
+2. If you see the pop-up **Stay Signed in?**, click **No**.
 
-2. Click to open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
+3. Click to open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
     ![](images/L01/image37u-2.png)
 
-3. Right-click on the **Environment URL**, copy the value, and paste it into Notepad.
+4. Right-click on the **Environment URL**, copy the value, and paste it into Notepad.
  
-    >**Note**: Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
+    >**Note:** Make sure the Environment URL value is copied along with the **https**. Your copied value should look like this `https://orgxxxxxx.crm.dynamics.com/`
 
     ![](images/L01/image37u-1.png)
 
-4. In the LabVM, start **Visual Studio Code** using the shortcut available on the desktop.
+5. In the LabVM, start **Visual Studio Code** using the shortcut available on the desktop.
 
    ![](images/L04/vscode1.png)
    
-6. Click **Terminal** and select **New Terminal**.
+6. Click  on **Ellipsis** **(...) (1)** **Terminal (2)** and select **New Terminal (3)**.
 
-    ![](images/L01/image42u.png)
+    ![](images/8-8-25-l1-23.png)
 
 7. Run the below command in the terminal.
 
@@ -480,36 +481,36 @@ In this exercise, you will review and test the Power Platform CLI extension in V
   
     ![](images/L01/Eeditpac.png)
 
-1.  Complete the **Sign in** process, using the below credentials.
+9. Complete the **Sign in** process, using the below credentials.
 
       * Email/Username: <inject key="AzureAdUserEmail"></inject>
       * Password: <inject key="AzureAdUserPassword"></inject>
       
-        > **Note**: If a Windows Security Warning pops up, click **Yes** to proceed.
+        > **Note:** If a Windows Security Warning pops up, click **Yes** to proceed.
 
-9. Select **Power Platform** tool, you should now have at least one **auth profile**. If you have more than one profile, make sure the profile you created is selected
+10. Select **Power Platform** tool, you should now have at least one **auth profile**. If you have more than one profile, make sure the profile you created is selected
    
     ![](images/L01/authupp.png)
 
-    > **Note**: If you're unable to see the **DeVAuth** profile, close Visual Studio Code and reopen it.
+    > **Note:** If you're unable to see the **DeVAuth** profile, close Visual Studio Code and reopen it.
 
-    > **Note** : If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the below steps:
+    > **Note:** If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the below steps:
 
     > 1. Delete the **Universal Profile** from Visual Studio Code by clicking on the delete button.
     > 2. Copy the correct **Environment URL** value by following **Step 5** of this task. 
     > 3. Perform the **Step 9** of this task again to create the auth profile.
 
-10. Click **Terminal** and select **New Terminal** if not already open.
+11. Click  on **Ellipsis** **(...) (1)** **Terminal (2)** and select **New Terminal (3)** if not already open.
 
-     ![](images/L01/image42.png)
+    ![](images/8-8-25-l1-23.png)
 
-11. Run the command below to see a list of solutions.
+12. Run the command below to see a list of solutions.
 
       ```
       pac solution list
       ```
       
-12. You should see a list of solutions installed on your environment.
+13. You should see a list of solutions installed on your environment.
     
     ![](images/L01/sollistu.png)
 
@@ -518,3 +519,5 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 In this lab , you learned to import and execute a starting solution, customize it by adding a new column and updating the admin app, and verify functionality using the Power Platform CLI.
 
 ### You have successfully completed this lab. Click the **Next** button to proceed to the next lab.
+
+![](./images/GS4-1.png)
