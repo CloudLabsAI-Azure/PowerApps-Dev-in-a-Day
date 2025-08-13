@@ -192,11 +192,9 @@ In this exercise, you will import the current solution into the pre-created dev 
 9. Provide the below information and click **add a picture (4)** that is present below **Respond By** field.
      
      - **Topic:** Enter `Change Taco Tuesday to some other food` **(1)**
-     
      - **Details:** Enter `People are tired of tacos, what should we have instead of tacos?` **(2)**
-     
      - **Respond By:** Select **today's date.** **(3)**
-     
+
        ![](images/8-8-25-l1-14.png)
 
 10. Navigate to this path **C:\LabFiles (1)** in file explorer, select **image.png (2)** and click **Open (3)**.
@@ -211,11 +209,9 @@ In this exercise, you will import the current solution into the pre-created dev 
      
       ![](images/8-8-25-l1-16.png)
 
-13. Add a couple more choices by repeating **steps 12-14**.
-       
-       - **Choice 1:** Enter `Steak Tuesday`
-       
-       - **Choice 2:** Enter `Cheese and Wine Tuesday`
+13. Add a couple more choices by repeating **steps 12-14**.   
+    - **Choice 1:** Enter `Steak Tuesday`
+    - **Choice 2:** Enter `Cheese and Wine Tuesday`
 
 14. Click on **Save** button to save the topic.
     
@@ -383,13 +379,9 @@ application.
       ![](images/L01/L01-taco-1_1u.png)
 
 1. Fill out the form by providing the below information and click **add a picture** that is present below the **Respond By** field.
-
-    - Topic: `Test Notes` **(1)**
-       
+    - Topic: `Test Notes` **(1)**    
     - Details: `Testing the notes` **(2)**
-       
     - Text input: `Prioritz Admin topic` **(3)**
-       
     - Respond By: **Today's date** **(4)**
 
 1. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
@@ -404,8 +396,7 @@ application.
      
       ![](images/8-8-25-l1-22.png)
 
-1. Add one more choice by repeating **steps 20-22** of this task.
-       
+1. Add one more choice by repeating **steps 20-22** of this task.    
    - **Choice 1:**  Enter `Test Two`
      
 1. After adding all the Choices and topic details, your screen should look like the below screenshot.
@@ -481,7 +472,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
   
     ![](images/L01/Eeditpac.png)
 
-9. Complete the **Sign in** process, using the below credentials.
+9. Complete the **Sign in** process, using the credentials below.
 
       * Email/Username: <inject key="AzureAdUserEmail"></inject>
       * Password: <inject key="AzureAdUserPassword"></inject>
@@ -494,7 +485,7 @@ In this exercise, you will review and test the Power Platform CLI extension in V
 
     > **Note:** If you're unable to see the **DeVAuth** profile, close Visual Studio Code and reopen it.
 
-    > **Note:** If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the below steps:
+    > **Note:** If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the steps below:
 
     > 1. Delete the **Universal Profile** from Visual Studio Code by clicking on the delete button.
     > 2. Copy the correct **Environment URL** value by following **Step 5** of this task. 
@@ -510,13 +501,13 @@ In this exercise, you will review and test the Power Platform CLI extension in V
       pac solution list
       ```
       
-13. You should see a list of solutions installed on your environment.
+13. You should see a list of solutions installed in your environment.
     
     ![](images/L01/sollistu.png)
 
 ## Summary
 
-In this lab , you learned to import and execute a starting solution, customize it by adding a new column and updating the admin app, and verify functionality using the Power Platform CLI.
+In this lab, you learned to import and execute a starting solution, customize it by adding a new column and updating the admin app, and verify functionality using the Power Platform CLI.
 
 ### You have successfully completed this lab. Click the **Next** button to proceed to the next lab.
 
