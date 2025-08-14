@@ -113,6 +113,10 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
 
     ![](./images/8-8-25-g1-8.png)
 
+By completing these exercises, you will import and customize Power Platform solutions, create and implement custom code components with Visual Studio Code, develop and integrate custom connectors, create and deploy Azure Functions, and manage solutions using GitHub for source control.
+
+**Note:** Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
+
 ## Steps to Proceed with MFA Setup if Ask Later Option is Not Visible
 
 > **Note:** Continue with the exercises if MFA is already enabled or the option is unavailable.
@@ -150,8 +154,6 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
 8. Select Done on the Success! page.
 
    ![](./images/8-8-25-g1-7.png)
-   
-By completing these exercises, you will import and customize Power Platform solutions, create and implement custom code components with Visual Studio Code, develop and integrate custom connectors, create and deploy Azure Functions, and manage solutions using GitHub for source control.
 
 ## Support Contact
 
