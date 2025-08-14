@@ -199,9 +199,9 @@ In this exercise, you will build the code component.
 
     >**Note:** If you receive this error **npm is not recognised**, then perform the below steps:
 
-      1. Open PowerShell, then run this command `choco install -y --force nodejs`.
-      2. Once the command execution is done, close Visual Studio Code and open it again.
-      3. Perform **Step 8** of this task again to install the **react-beautiful-dnd** package.
+    >  1. Open PowerShell, then run this command `choco install -y --force nodejs`.
+    >  2. Once the command execution is done, close Visual Studio Code and open it again.
+    >  3. Perform **Step 8** of this task again to install the **react-beautiful-dnd** package.
 
 9. Run the following command for the type definitions.
 
@@ -647,7 +647,7 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
  
 20. The rank should now be sorted in ascending order.
 
-21. Select the **PrioritZDnDRanking** component then **X** property from the property dropdown.
+21. Select the **PrioritZDnDRanking** component, then from the property drop-down menu **(1)**, click the **X** property **(2)**.
  
       ![](images/L02/image47.1.png)
       

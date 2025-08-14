@@ -156,51 +156,51 @@ In this exercise, you will create a custom connector from an existing API.
     
      ![](images/L03/image10-1a.png)
 
-3. Scroll down to the **Request** section, click on the chevron button of the **body** and select **Edit**.
+2. Scroll down to the **Request** section, click on the chevron button of the **body** and select **Edit**.
      
      ![](images/L03/image11a.png)
 
-4. Scroll down and click on the chevron button of **points** and select **Edit**.
+3. Scroll down and click on the chevron button of **points** and select **Edit**.
     
     ![](images/L03/image12a.png)
 
-5. Select **Yes (1)** for Is required and click on the **Back (2)** button.
+4. Select **Yes (1)** for Is required and click on the **Back (2)** button.
      
      ![](images/L03/image13a.png)
 
-6. Click on the chevron button of **recipientid** and select **Edit**.
+5. Click on the chevron button of **recipientid** and select **Edit**.
 
      ![](images/L03/L03-recepient.png)
 
-7. Select **Yes** for Is required and click on the **Back** button.
+6. Select **Yes (1)** for Is required and click on the **Back (2)** button.
 
-     ![](images/L03/8-8-25-l3-3.png)
+     ![](images/9-8-25-l3-1.png)
 
-8. Click on the chevron button of **name** and select **Edit**.
+7. Click on the chevron button of **name** and select **Edit**.
 
      ![](images/L03/L03-name.png)
 
-9. Select **Yes** for Is required and click on the **Back** button.
+8. Select **Yes (1)** for Is required and click on the **Back (2)** button.
 
-     ![](images/L03/8-8-25-l3-4.png)
+     ![](images/9-8-25-l3-2.png)
 
-10. Verify that all 3 payloads are displaying `*` on them and click on the **Back** button again.
+9. Verify that all 3 payloads are displaying `*` **(1)** on them and click on the **Back (2)** button again.
 
-      ![](images/L03/8-8-25-l3-5.png)
+      ![](images/9-8-25-l3-3.png)
 
-11. Advance to **Code**.
+10. Advance to **Code**.
 
      ![](images/L03/8-8-25-l3-6.png)
  
-12. Review the code and advance to **Test**.
+11. Review the code and advance to **Test**.
 
       ![](images/L03/L03-testa.png)
 
-13. Click **Update connector** and wait for the connector to be updated.
+12. Click **Update connector** and wait for the connector to be updated.
 
      ![](images/L03/8-8-25-l3-7.png)
 
-14. Do not navigate away from this page.
+13. Do not navigate away from this page.
 
 ### Task 3: Test connector
 
@@ -381,7 +381,7 @@ In this task, you will test your custom code.
 
 2. Select the connection you created earlier.
 
-3. Go to the **Operations** section and select the **getcurrentbadge (1)** operation. Provide your email as **id (2)** and click **Test operation (3)**.
+3. Go to the **Operations** section and select the **getcurrentbadge (1)** operation. Provide your email as **id <inject key="AzureAdUserEmail"></inject> (2)** and click **Test operation (3)**.
    
      ![](images/L03/image36-1u.png)
 
@@ -530,9 +530,9 @@ In this task, you will use the custom connector you created to show the user’s
   
     ![](images/2136.png)
 
-7. Click on the **recipientId** field, under Manually trigger a flow pane, and select **User email**.
+7. Click on the **recipientId** field **(1)**, then under the **Manually trigger a flow** pane, select **User email (2)**.
     
-     ![](images/L03/image49u.png)
+     ![](images/9-8-25-l3-4.png)
 
 8. Click on the **name** field, under Manually trigger a flow pane, and select **User name**.
 
@@ -544,9 +544,9 @@ In this task, you will use the custom connector you created to show the user’s
 
      ![](images/L03/L03-EX4-test.png)
 
-11. Select **Manually** and click **Test** again.
+11. Select **Manually (1)** and click **Test (2)** again.
 
-      ![](images/L03/8-8-25-l3-26.png)
+      ![](images/9-8-25-l3-5.png)
 
 12. Click **Continue**.
 
@@ -558,9 +558,9 @@ In this task, you will use the custom connector you created to show the user’s
     
      ![](images/L03/8-8-25-l3-27.png)
 
-16. Select **Cloud flows** and open the flow you created.
+16. Select **Cloud flows (1)** and open the flow you created **Test add credit (2)**.
      
-     ![](images/L03/8-8-25-l3-28.png)
+     ![](images/9-8-25-l3-6.png)
 
 17. Navigate to the **Power Apps** maker portal using the URL below if not already open, and make sure you are in your dev environment.
 

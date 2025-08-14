@@ -386,6 +386,8 @@ application.
     - Text input: `Prioritz Admin topic` **(3)**
     - Respond By: **Today's date** **(4)**
 
+      ![](images/9-8-25-l1-1.png)
+
 1. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
      
       ![](images/L01/image18uu.png)

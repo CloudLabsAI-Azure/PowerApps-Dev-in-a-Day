@@ -47,7 +47,7 @@ The architecture for this lab involves the following key components:
  specific operations.
 - **GitHub:** A version control system for managing and tracking changes to solutions and code.
 
-##  Getting Started
+##  Getting Started with the Lab
  
 Welcome to your Low Code for Pro-Dev in a Day workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
@@ -57,7 +57,7 @@ Once you're ready to dive in, your virtual machine and **Guide** will be right a
 
 ![](./images/2139.png)
 
-## Virtual Machine & Guide
+## Virtual Machine & Lab Guide
  
 In the integrated environment, the lab VM serves as the designated workspace, while the lab guide is accessible on the right side of the screen.
  

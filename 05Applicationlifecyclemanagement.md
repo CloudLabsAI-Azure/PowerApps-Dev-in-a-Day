@@ -36,19 +36,19 @@ In this exercise, you will create a service principal. The service principal wil
    
    - Name: **GitHub Deploy<inject key="DeploymentID" enableCopy="false" />** **(1)**
 
-   - Supported account types: **Accounts in this organizational directory only (OTU WA HOL - xxxxxx only - Single tenant)** **(2)**
+   - Supported account types: **Accounts in this organizational directory only (Azure HOL - xxxxxx only - Single tenant)** **(2)**
 
      ![](images/L05/8-8-25-l4-2.png)
    
-1. Copy the **Application (client) ID**, **Directory (Tenant) ID**, and save it in a notepad as you need it for later use.
+1. Copy the **Application (client) ID (1)**, **Directory (Tenant) ID (2)**, and save it in a notepad as you need it for later use.
      
-   ![](images/L05/8-8-25-l4-3.png)
+   ![](images/9-8-25-l4-1.png)
 
 1. Select **Certificates & secrets (1)** from the side blade and click on **+ New client secret (2)**.
 
    ![](images/L05/8-8-25-l4-4.png)
 
-1. Enter **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** **(1)** as description, set expiry to **3 months** **(2)**, and click on **Add** **(3)**.
+1. Enter **GitHub client secret<inject key="DeploymentID" enableCopy="false" />** **(1)** as description, set expiry to **90 days (3 months)** **(2)**, and click on **Add** **(3)**.
    
    ![](images/L05/8-8-25-l4-5.png)
    
@@ -134,7 +134,7 @@ deploy solutions.
 
    ![](images/L05/diad5l14u.png)
 
-   **Note:** If the **#** symbol is still visible before GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, click on it and refresh the pane to remove it.
+    > **Note:** If the **#** symbol is still visible before GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, click on it and refresh the pane to remove it.
    
 1. Again go back to **Environments** **(1)** in the side blade and select your **DEV_ENV_TEST** **(2)**.
 
@@ -164,7 +164,7 @@ deploy solutions.
 
    ![](images/L05/diad5l14u.png)
 
-   **Note:** If the **#** symbol is still visible before GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, click on it and refresh the pane to remove it.
+    > **Note:** If the **#** symbol is still visible before GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, click on it and refresh the pane to remove it.
    
 1. Click on **Environments** **(1)** from the side blade and select your **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** **(2)**.
 
@@ -220,7 +220,7 @@ In this exercise, you will export the Contoso Badges connector solution from the
     https://make.powerapps.com
     ```
 
-    ![](images/L03/L03-EX5a.png)
+    ![](images/9-8-25-l4-2.png)
 
 2. Click **Import Solution**.
     
@@ -284,9 +284,9 @@ In this exercise, you will export the Contoso Badges connector solution from the
 
       ![](images/L03/image62a.png)
 
-12. Provide your email for **recipientid** , provide a **name** , enter **1** for **points** , and click **Test operation**.
+12. Provide your email for **recipientid (1)** , provide a **name (2)** , enter **1** for **points (3)** , and click **Test operation (4)**.
      
-     ![](images/L03/L3T3S8a.png)
+     ![](images/9-8-25-l4-3.png)
 
 13. The test should succeed, and the response should look like the image below.
       
@@ -405,9 +405,9 @@ indentation shown in the images.
 
    ![](images/L05/github6u-1.png)
 
-1. In the **Workflow Permission** section, make sure **read and write permission** is selected, then click **save**.  
+1. In the **Workflow Permission** section, make sure **Read and write permission (1)** is selected, then click **Save (2)**.  
 
-   ![](images/L05/workflowpermissionuuu.png)
+   ![](images/9-8-25-l4-4.png)
 
 1. Select the **Actions** **(1)** tab and select the **workflow** **(2)** you created.
 
@@ -435,7 +435,7 @@ indentation shown in the images.
    
 1. Click on **Contribute** **(1)** button and select **Open pull request** **(2)**.
         
-   ![](images/L05/L05-t1-1u.png)
+   ![](images/9-8-25-l4-5.png)
    
 1. Add a description if you like, and then click **Create pull request**.
 
@@ -443,9 +443,9 @@ indentation shown in the images.
    
 1. You should now see the pull request summary. Confirm that the branch has no conflicts with the main branch and that the changes can be merged into the main branch automatically.
    
-1. Click on the chevron button next to the **Merge pull request** button and select **Squash and** **merge**.
+1. Click on the chevron button next to the **Merge pull request (1)** button and select **Squash and** **merge (2)**.
       
-    ![](images/L05/Images2032u.png)
+    ![](images/9-8-25-l4-6.png)
 
 1. Click **Squash and merge**.
    
@@ -455,7 +455,7 @@ indentation shown in the images.
    
      ![](images/L05/prdoneu.png)
 
-### Exercise 5 – Release to Test
+## Exercise 5 – Release to Test
 
 In this exercise, you will create a workflow action and add steps that will release the solution you exported to the test environment.
 
@@ -491,7 +491,7 @@ In this exercise, you will create a workflow action and add steps that will rele
     
      ![](images/L05/relecomplu.png)
      
-1. Navigate back to the PowerApps portal and ensure you are in the test PowerApps environment.
+1. Navigate back to the PowerApps portal and ensure you are in the **DEV_ENV_TEST** environment.
 
       ![](images/L05/lastu.png)
 
