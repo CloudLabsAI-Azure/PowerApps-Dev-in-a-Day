@@ -339,7 +339,7 @@ aplicação.
       Set(newTopic,Patch('Prioritz Topics',Defaults('Prioritz Topics'),{'My Notes': 'Notes textbox'.Text,Topic:'Topic name textbox'.Text,Details:'Topic details textbox'.Text,'Respond By':'respond by date picker'.SelectedDate,Photo:AddTopicImage.Image}));ForAll(colAddChoices,Patch('Prioritz Topic Items',Defaults('Prioritz Topic Items'),{Choice:ThisRecord.choice,'PrioritZ Topic':newTopic,Photo:ThisRecord.photo}));Back()
       ```
 
-1. No painel **Ecrãs**, selecione **View Topic Screen** **(1)**, clique em **+ Inserir** **(2)** na barra superior e selecione **Rótulo de texto** **(3)** na lista de componentes populares.
+1. No painel **Telas**, selecione **View Topic Screen** **(1)**, clique em **+ Inserir** **(2)** na barra superior e selecione **Rótulo de texto** **(3)** na lista de componentes populares.
 
       ![](images/L01/dv_port2_e1_g_6.png)
 
@@ -426,35 +426,31 @@ aplicação.
 
 ## Exercício 3 – Teste o CLI da Power Platform
 
-Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visual Studio Code.
+Neste exercício, você irá revisar e testar a extensão da CLI da Power Platform no Visual Studio Code.
 
->**Nota**: O Visual Studio Code e a instalação da Power Platform CLI já estão instalados como parte dos pré-requisitos.
+>**Observação**: A instalação do Visual Studio Code e da CLI da Power Platform já foi realizada como parte dos pré-requisitos.
 
-1.  Navegue até ao centro de administração da Power Platform utilizando o URL abaixo e selecione **Ambientes**.
+1.  Navegue até ao centro de administração do Power Platform utilizando o URL abaixo e selecione **Ambientes**.
  
       ```
       https://admin.powerplatform.microsoft.com/environments
       ```
 
-1. Se for apresentada a página **Ajude-nos a proteger a sua conta**, clique em **Pular por enquanto (14 dias até que isso seja necessário)**.
-
-   ![](images/L01/cor2_1_g_3.png)
-
-1. Se for apresentado o pop-up **Permanecer ligado?**, clique em **Não**.
+1. Se aparecer o pop-up **Permanecer conectado?**, clique em **Não**.
 
 1. Clique para abrir o seu ambiente de desenvolvimento chamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
-1. Clique com o botão direito do rato no valor **URL** Ambiente e cole o valor no Notepad.
+1. Clique com o botão direito na **URL** do Ambiente, copie o valor e cole-o no Bloco de Notas.
 
-   >**Nota**: Certifique-se de que o valor do URL do ambiente é copiado juntamente com o **https**. O seu valor copiado deve ficar assim `https://orgxxxxxx.crm.dynamics.com/`
+   >**Observação**: a: Certifique-se de que o valor da URL do Ambiente seja copiado juntamente com o **https**. Seu valor copiado deve ser semelhante a este:`https://orgxxxxxx.crm.dynamics.com/`.
 
    ![](images/L01/dv_port2_e1_g_13.png)
 
-1. Na JumpVM, inicie o **Visual Studio Code** utilizando o atalho disponível na área de trabalho.
+1. Na LabVM, inicie o **Visual Studio Code** usando o atalho disponível na área de trabalho.
 
    ![](images/L04/vscode1.png)
 
-1. Clique no menu de opções **(1)** no canto superior direito, selecione **Terminal** **(2)** e depois clique em **Novo Terminal** **(3)** para abrir um novo terminal no VS Code.
+1. Clique nas Reticências (...) **(1)**, em **Terminal** **(2)** e depois clique em **Novo Terminal** **(3)**.
 
    ![](images/L01/dv_port2_e1_g_14.png)
 
@@ -464,41 +460,41 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
    pac
    ```
 
-   > **Info:** Se encontrar um erro após a utilização do comando pac, tente desinstalar a ferramenta Power Platform e reinstale-a, volte a tentar o passo.
+   > **Info:** Se você encontrar um erro após usar o comando `pac`, baixe a CLI da Power Platform do link `https://aka.ms/PowerAppsCLI`, abra o instalador e conclua a instalação. Em seguida, tente o passo novamente.
 
-1. Substitua `<o seu URL do seu ambiente>` no comando abaixo pelo valor do URL do ambiente que copiou anteriormente e depois executa o comando.
+1. Substitua `<a sua URL de ambiente>` no comando abaixo pelo valor da URL do ambiente que você copiou anteriormente e, em seguida, execute o comando.
 
    ```
    pac auth create --name DevAuth --url <your environment URL>
    ```
 
-   > **Info:** Depois de adicionar o URL do ambiente, o comando será assim: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
+   > **Observação:** Após adicionar a URL do ambiente, o comando ficará assim: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
 
    ![](images/L01/dv_port2_e1_g_15.png)
 
-1. Conclua o processo de **Início de sessão** utilizando as credenciais abaixo.
+1. Conclua o processo de **Login**, usando as credenciais abaixo.
 
-   - E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
+   - E-mail/nome de usuário: <inject key="AzureAdUserEmail"></inject>
    
-   - Palavra-passe: <inject key="AzureAdUserPassword"></inject>
+   - Senha: <inject key="AzureAdUserPassword"></inject>
 
-1. Se for apresentada a página **Ajude-nos a proteger a sua conta**, clique em **Pular por enquanto (14 dias até que isso seja necessário)**.
+>**Observação:** Se um Aviso de Segurança do Windows aparecer, clique em **Sim** para prosseguir.
 
    ![](images/L01/cor2_1_g_3.png)
 
-1. Selecione **Power Platform (1)**, agora deve ter pelo menos um perfil de **auth profile (2)**. Se tiver mais do que um perfil, certifique-se de que o perfil que criou será selecionado
+1. Selecione **Power Platform (1)**. Agora você deve ter pelo menos um **perfil de autenticação (2)**. Se tiver mais de um perfil, certifique-se de que o perfil que você criou está selecionado.
 
    ![](images/L01/dv_port2_e1_g_16.png)
 
-   > **Nota**: Se conseguir ver o perfil **Universal Profile** em vez do perfil de **DeVAuth**, é por adição do valor incorreto  **Environment URL** no comando **pac auth create** no Passo 9. Para corrigir isto, siga os passos abaixo:
+   > **Observação**: Se você estiver vendo o  **Perfil Universal** em vez do perfil de **DeVAuth**, é porque adicionou o valor incorreto da URL do Ambiente no comando `pac auth create` no Passo 8. Para corrigir esse problema, siga os passos abaixo:
 
-   - Apagar o **Universal Profile** do Visual Studio Code clicando no botão de eliminação.
+   - Exclua o **Perfil Universal** do Visual Studio Code clicando no botão de exclusão.
 
-   - Copie o valor correto do **Environment URL** seguindo o **Passo 5** desta tarefa.
+   - Copie o valor correto da **URL do Ambiente** seguindo o **Passo 4** desta tarefa.
    
-   - Execute o **Passo 9** desta tarefa novamente para criar o perfil de autenticação.
+   - Execute o **Passo 8** desta tarefa novamente para criar o perfil de autenticação.
 
-1. Clique em **Terminal** e seleccione **New Terminal**, se ainda não estiver aberto.
+1. Clique nas **Reticências (...) (1)**, em **Terminal (2)** e selecione **Novo Terminal (3)**, se ainda не estiver aberto.
 
     ![](images/L01/image42.png)
 
@@ -508,9 +504,13 @@ Neste exercício, irá rever e testar a extensão CLI da Power Platform no Visua
       pac solution list
       ```
 
-1. Deve ver uma lista de soluções instaladas no seu ambiente.
+1. Você deverá ver uma lista de soluções instaladas em seu ambiente.
 
     ![](images/L01/dv_port2_e1_g_17.png)
+
+## Resumo
+
+Neste laboratório, você aprendeu a importar e executar uma solução inicial, personalizá-la adicionando uma nova coluna e atualizando o aplicativo de administração, e a verificar a funcionalidade usando a CLI da Power Platform.
 
 ## Concluiu o laboratório com sucesso. Prossiga para a próxima página.
 
