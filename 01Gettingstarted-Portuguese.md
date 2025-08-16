@@ -183,7 +183,7 @@ Neste exercício, você importará a solução atual para o ambiente de desenvol
 
 1. Clique no botão **<** Voltar.
 
-   > **Nota**: Deve voltar ao ecrã inicial.
+   > **Nota**: Deve voltar ao tela inicial.
 
 1. Agora, clique no botão **+** para adicionar um novo tópico.
 
@@ -199,13 +199,13 @@ Neste exercício, você importará a solução atual para o ambiente de desenvol
 
       ![](images/L01/image17.png)
 
-1. Navegue para este caminho `C:\LabFiles` no explorador de ficheiros, seleccione **image.png** e clique em abrir.
+1. Navegue para este caminho `C:\LabFiles` no explorador de arquivos, seleccione **image.png** e clique em abrir.
 
 1. Introduza **Tamale Tuesday** no campo Choice e clique em **add a picture** que está presente abaixo do campo Choice.
 
       ![](images/L01/image18.png)
 
-1. No explorador de ficheiros, navegue até `C:\LabFiles` **(1)**, selecione o ficheiro **image.png** **(2)** e clique no botão **Abrir** **(3)**.
+1. No explorador de arquivos, navegue até `C:\LabFiles` **(1)**, selecione o arquivo **image.png** **(2)** e clique no botão **Abrir** **(3)**.
 
       ![](images/L01/dv_p2_e1_g_28.png)
 
@@ -223,7 +223,7 @@ Neste exercício, você importará a solução atual para o ambiente de desenvol
 
     ![](images/L01/image20.png)
 
-1. O novo tópico deve ser guardado e deve ser navegado de volta para o ecrã principal.
+1. O novo tópico deve ser guardado e deve ser navegado de volta para o tela principal.
 
 1. Deve ver o tópico que adicionou à lista de tópicos.
 
@@ -243,7 +243,7 @@ Neste exercício, você importará a solução atual para o ambiente de desenvol
 
     ![](images/L01/L01-choice.png)
 
-1. Deve ser navegado de volta para os ecrãs principais e ver uma mensagem de notificação.
+1. Deve ser navegado de volta para os telas principais e ver uma mensagem de notificação.
 
     ![](images/L01/dv_p2_e1_g_34.png)
 
@@ -382,13 +382,13 @@ aplicação.
 
       - Responda por: **Today's date.**
 
-1. Navegue para este caminho C:\LabFiles no explorador de ficheiros, seleccione **image.png** e clique em abrir.
+1. Navegue para este caminho C:\LabFiles no explorador de arquivos, seleccione **image.png** e clique em abrir.
 
 1. Introduza **Test One** no campo Choice e clique em **add a picture** que esteja presente abaixo do campo Choice.
 
     ![](images/L01/image18.png)
 
-1. No explorador de ficheiros, navegue até `C:\LabFiles` **(1)**, selecione o ficheiro **image.png** **(2)** e clique no botão **Abrir** **(3)**.
+1. No explorador de arquivos, navegue até `C:\LabFiles` **(1)**, selecione o arquivo **image.png** **(2)** e clique no botão **Abrir** **(3)**.
 
       ![](images/L01/dv_p2_e1_g_28.png)
 
@@ -400,7 +400,7 @@ aplicação.
 
     1. **Choice 1**: Introduza `Test Two`
 
-1. Depois de adicionar todas as opções e detalhes do tópico, o seu ecrã deve corresponder à imagem abaixo.
+1. Depois de adicionar todas as opções e detalhes do tópico, o seu tela deve corresponder à imagem abaixo.
 
    ![](images/L01/L01-testnotes.png)
 
