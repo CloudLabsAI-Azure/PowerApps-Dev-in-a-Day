@@ -1,6 +1,6 @@
 # Low-Code para Desenvolvedores Profissionais em um Dia
 
-## Duração geral estimada: 8 horas
+## Duração Estimada: 8 horas
 
 ## Visão geral
 
@@ -43,7 +43,7 @@ A arquitetura para este laboratório envolve os seguintes componentes principais
 - **Azure Function**: Serviços de computação sem servidor (serverless) que executam código sob demanda para realizar várias tarefas. As Azure Functions são integradas aos aplicativos da Power Platform para adicionar capacidades avançadas e escaláveis e para lidar com operações específicas.
 - **GitHub**: Um sistema de controle de versão para gerenciar e rastrear alterações em soluções e código.
 
-## Começando
+## Iniciando o Laboratório
 
 Bem-vindo ao seu workshop "Low-Code para Desenvolvedores Profissionais em um Dia"! Preparamos um ambiente integrado para você explorar e aprender sobre os serviços do Azure. Vamos começar aproveitando ao máximo esta experiência:
 
@@ -57,14 +57,6 @@ Quando estiver pronto para começar, sua máquina virtual e o **Guia de laborat�
 
 No ambiente integrado, a VM do laboratório serve como o espaço de trabalho designado, enquanto o guia do laboratório fica acessível no lado direito da tela.
 
-**Observação**: Certifique-se de seguir as instruções cuidadosamente para garantir que o laboratório funcione sem problemas e forneça uma experiência de usuário ideal.
-
-## Alterar o Idioma do Guia do Laboratório
-
-Para alterar o idioma do guia do laboratório, clique no **ícone(1)** de idioma localizado no canto superior direito e selecione **Português (2)** na lista suspensa. 
-
-![](./images/cor_g_g_1.png)
-
 ## Explorando Seus Recursos de Laboratório
 
 Para entender melhor seus recursos de laboratório e credenciais, navegue até a aba **Detalhes do ambiente**.
@@ -77,17 +69,17 @@ Para sua conveniência, você pode abrir o guia do laboratório em uma janela se
 
 ![](./images/SplitWindow.png)
 
-## Zoom no Guia do Laboratório
-
-Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕** localizado ao lado do cronômetro no ambiente do laboratório.
-
-![](./images/p1_gs_g_2.png) 
-
 ## Gerenciando sua Máquina Virtual
 
 Sinta-se à vontade para **iniciar, parar ou reiniciar&& a sua máquina virtual conforme necessário a partir da aba **Recursos**. A sua experiência está nas suas mãos!
 
 ![](./images/Resources.png)
+
+## Zoom no Guia do Laboratório
+
+Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕** localizado ao lado do cronômetro no ambiente do laboratório.
+
+![](./images/p1_gs_g_2.png) 
 
 ## Vamos começar com o Portal do Azure
 
@@ -121,33 +113,45 @@ Ao concluir estes exercícios, você importará e personalizará soluções da P
 
 >**Observação:** Por favor, certifique-se de seguir as instruções cuidadosamente para garantir que o laboratório funcione sem problemas e proporcione uma experiência de usuário otimizada.
 
-## Alterar o idioma da Máquina Virtual
+## Passos para Prosseguir com a Configuração do MFA se a Opção "Perguntar Depois" Não Estiver Visível
 
-Se precisar alterar o idioma da Máquina Virtual para Português, siga os passos abaixo antes de iniciar o laboratório.
+> **Observação:** Continue com os exercícios se o MFA já estiver habilitado ou se a opção não estiver disponível.
 
-1. Na barra de pesquisa do Windows, digite **Language settings (1)** e selecione **Language settings (2)** nos resultados.
+1. No pop-up **Ação Necessária**, clique em **Avançar**.
 
-   ![](./images/cor_g_g_2.png)
+   ![](./images/8-8-25-g1-1.png)
 
-1. Na página **Language**, clique em **Add a language**.
+2. Na janela **Mantenha sua conta segura**, os passos apresentados a seguir são específicos para o método via aplicativo Microsoft Authenticator. Clique **Avançar** para continuar.
 
-   ![](./images/cor_g_g_3.png)
+    ![](./images/8-8-25-g1-2.png)
 
-1. Na janela **Choose a language to install**, pesquise por *Português*, selecione **Português (Portugal) (1)** e clique em **Next (2)**.
+3. Na página **Configure sua conta**, selecione **Avançar**.
 
-   ![](./images/cor_g_g_4.png)
+   ![](./images/8-8-25-g1-3.png)
 
-1. Na janela **Install language features**, marque a opção **Set as my Windows display language (1)** e clique em **Install (2)**.
+4. **Observação:** Se você não tiver o aplicativo Microsoft Authenticator instalado em seu dispositivo móvel:
 
-   ![](./images/cor_g_g_5.png)
+   - Abra o **Google Play Store** (Android) ou **App Store** (iOS).
+   - Procure por **Microsoft Authenticator** e toque em  **Instalar**.
+   - Abra o aplicativo **Microsoft Authenticator**, selecione **Adicionar conta** e, em seguida,  escolha **Conta corporativa ou de estudante**.
 
-1. Agora aguarde o Windows baixar e instalar os componentes de idioma. Isso pode levar alguns minutinhos (~5–10 min), dependendo da internet e da VM.
+5. Escaneie o código QR com seu celular. No celular, dentro do aplicativo Authenticator, selecione **Conta corporativa ou de estudante** e escaneie o código QR. Selecione **Avançar**.
 
-1. Quando o Windows perguntar para você sair ou reiniciar a sessão — geralmente aparece um pop-up tipo **“Sign out now?”** — clique **Sim, sair agora** para aplicar o novo idioma.
+   ![](./images/8-8-25-g1-4.png)
 
-1. A VM vai fechar sua sessão e, na próxima tela de login, o sistema já vai estar todo no idioma português. Curte que tá tudo pronto pra continuar o laboratório!
+6. On the Keep your account secure page. Enter the code, which is shown on the Authenticator app.
 
-## Contacto de suporte
+   ![](./images/8-8-25-g1-5.png)
+
+7. Após inserir o código, clique em **Avançar**
+
+   ![](./images/8-8-25-g1-6.png)
+
+8. Selecione Concluído na página de Sucesso!
+
+   ![](./images/8-8-25-g1-7.png)
+
+## Contato de suporte
 
 A equipe de suporte do CloudLabs está disponível 24 horas por dia, 7 dias por semana, 365 dias por ano, via e-mail e chat ao vivo para garantir assistência contínua a qualquer momento. Oferecemos canais de suporte dedicados e personalizados tanto para alunos quanto para instrutores, garantindo que todas as suas necessidades sejam atendidas de forma rápida e eficiente.
 
