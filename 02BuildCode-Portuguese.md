@@ -525,16 +525,15 @@ Nesta tarefa, você permitirá a publicação de aplicativos de tela com compone
 
     ![](images/L02/dv_p3_e2_g_20.png)
 
-1. Ative a opção **Permitir a publicação de aplicativos de tela com componentes de código**. Role para baixo e clique em  deslizando o botão para **Ativado** **(1)** e clique em **Salvar** **(2)** para aplicar as alterações.
+1. Na seção, **Power Apps component framework para aplicativos de tela**, ative a opção **Permitir a publicação de aplicativos de tela com componentes de código**. Role para baixo e clique em  deslizando o botão para **Ativado** **(1)** e clique em **Salvar** **(2)** para aplicar as alterações.
 
     ![](images/L02/dv_p3_e2_g_21.png)
 
->> COntinuar aqui !!!
  ### Tarefa 2: Editar aplicação em tela
 
-Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o componente de código que criou.
+Nesta tarefa, você editará o aplicativo de tela **PrioritZ Ask** para usar o componente de código que criou.
 
-1. Navegue até ao portal do fabricante de aplicações Power, utilizando o URL abaixo, se ainda não estiver aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** é selecionado.
+1. Navegue até o portal de criação do Power Apps usando a URL abaixo, se ainda não estiver aberto. Certifique-se de que o ambiente de desenvolvimento chamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** esteja selecionado.
 
     ```
     https://make.powerapps.com/
@@ -544,47 +543,49 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
     ![](images/L02/dv_p3_e2_g_22.png)
 
-1. No painel **Objetos**, selecione **Aplicações (1)**. Em seguida, clique na aplicação **Prioritz Ask (2)** e selecione o botão **Editar (3)** na parte superior.
+1. No painel **Objetos**, selecione **Aplicativos (1)**. Em seguida, clique na aplicação **Prioritz Ask (2)** e selecione o botão **Editar (3)** na parte superior.
 
     ![](images/L02/dv_p3_e2_g_23.png)
 
-1. No separador **Componentes (1)**, clique no ícone de seta para trás **(2)** para importar componentes.
-
+1. Selecione a guia **Componentes (1)** e clique na seta para trás **(2)** para Importar componentes.
+   
     ![](images/L02/dv_p3_e2_g_24.png)
 
-1. No separador **Código (1)**, selecione o componente **PrioritZDnDRanking (2)** e clique em **Importar (3)**.
+1. Selecione a guia **Código (1)**, selecione o componente **PrioritZDnDRanking (2)** e clique em **Importar (3)**.
 
     ![](images/L02/dv_p3_e2_g_25_cor.png)
 
-1. Selecione o separador **Ecras**.
+1. Selecione a guia **Telas (1)**.
 
-1. Expanda **Vote Screen (1)** e selecione **Votes gallery (2)**.
+1. Expanda **Vote Screen (2)** e selecione **Votes gallery (3)**.
 
     ![](images/L02/dv_p3_e2_g_26.png)
 
-1. Selecione a **Width** do menu suspenso das propriedades.
+1. Selecione a propriedade **Width (2)** na lista de propriedades.
 
     ![](images/L02/L02-votescreen1u.png)
 
-1. Defina o valor de **Width** da galeria Votes para **570**.
+1. Defina o valor de **Width** da "Votes gallery" para **570**.
 
     ![](images/L02/L02-widthu.png)
 
-1. O ecrã deve agora parecer a image abaixo.
+1. A tela agora deve ter a aparência da imagem abaixo.
 
     ![](images/L02/image40u.png)
 
-1. Selecione o **Votes Screen** e clique em **+ Insert**.
+1. Selecione o **Vote Screen** e clique em **+ Insert (1)**.
 
     ![](images/L02/image41u.png)
 
-1. Selecione o componente **PrioritZDnDranking** em **Componentes de codigo**.
+1. Selecione o componente **PrioritZDnDranking (2)** em **Componentes de codigo**.
 
     ![](images/L02/dv_p3_e2_g_27.png)
 
-1. Vá até à aba de **Vista de árvore** e selecione o item **PrioritZDnDRanking** que acabou de adicionar.
+>**Observação:** Se aparecer um pop-up para **Selecionar uma fonte de dados**, simplesmente clique em Fechar.
 
-1. Defina o valor **Items** do componente **PrioritZDnDRAnking** para a fórmula abaixo.
+1. Vá para o **Modo de exibição de árvore (1)** e selecione o componente **PrioritZDnDRanking (2)** que você acabou de adicionar.
+
+1. Defina o valor da propriedade **Items** do componente **PrioritZDnDRAnking** para a fórmula abaixo.
 
     ```
     'Votes gallery'.AllItems
@@ -592,37 +593,39 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
     ![](images/L02/dv_p3_e2_g_28.png)
 
-1. Selecione o **PrioritZDnDRanking**, no painel **Propriedades** à direita, vá ao separador **Apresentar (1)**, defina o valor de **Item height** como **160 (2)** e clique em **Editar (3)**.
+1. No componente **PrioritZDnDRanking**, vá para o painel de Propriedades à direita da tela, defina a **Altura do Item** como **160 (1)** e clique em **Editar (2)** ao lado dos campos.
 
     ![](images/L02/cor_g_7.png)
 
-1. Clique em **+ Add field** para adicionar um novo campo.
+>**Observação:** Se não encontrar as propriedades no lado direito da tela, clique na opção de propriedades localizada ao lado do botão de edição no canto superior direito.
 
-1. Selecione **Rank (1)** e clique em **Add (2)**.
+1. Clique em **+ Adicionar campo** para adicionar um novo campo.
+
+1. Selecione **Rank (1)** e clique em **Adicionar (2)**.
 
     ![](images/L02/cor_g_8.png)
 
-1. A classificação deve agora mostrar-se no controlo, mas está resolvido descendente.
+1. A classificação agora deve aparecer no controle, mas está em ordem decrescente.
 
-1. Selecione a galeria **Votes**, selecione a propriedade **Items** do menu suspenso da propriedade e altere a ordem de classificação para **Ascending**.
+1. Vá para o **Modo de exibição de árvore**, selecione a **Vote Screen**, depois a galeria **Votes gallery (1)**, selecione a propriedade **Items (2)** na lista de propriedades e altere a ordem de classificação para **Ascending (3)**.
 
-1. A classificação deve agora classificar ascendente.
+1. A classificação deve agora classificar crescente.
 
-1. Selecione o **Pcomponente rioritZDnDRAnking** e depois **X** propriedade do menu suspenso da propriedade.
+1. Selecione o componente **PrioritZDnDRanking** e, no menu de **propriedades (1)**, clique na **propriedade X (2)**.
 
     ![](images/L02/image47.1.png)
 
-1. Defina o valor **X** do componente **PrioritZDnDRAnking** na fórmula abaixo.
+1. Defina o valor de **X** do componente **PrioritZDnDRAnking** com a fórmula abaixo.
 
     ```
     'Votes gallery'.Width
     ```
 
-1. Selecione a propriedade **Width** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor para **60**.
+1. Selecione a propriedade **Width** do componente **PrioritZDnDRAnking** e defina seu valor como **60**.
 
     ![](images/L02/a_g_u_1.png)
 
-1. Selecione a propriedade **Height** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor com a fórmula abaixo.
+1. Selecione a propriedade **Height** do componente **PrioritZDnDRAnking** e defina seu valor com a fórmula abaixo.
 
     ```
     'Votes gallery'.Height
@@ -630,7 +633,7 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
     ![](images/L02/a_g_u_2.png)
 
-1. Selecione a propriedade **ItemHeight** do componente **PrioritZDnDRAnking** do suspensão da propriedade e defina o seu valor com a fórmula abaixo
+1. Selecione a propriedade **ItemHeight** do componente **PrioritZDnDRAnking** e defina seu valor com a fórmula abaixo.
 
     ```
     'Votes gallery'.TemplateHeight
@@ -638,21 +641,21 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
 
     ![](images/L02/a_g_u_3.png)
 
-1. Selecione a propriedade **BackgroundColor** do componente **PrioritZDnDRAnking** do menu suspenso da propriedade e defina o seu valor para **"#A70202"**
+1. Selecione a propriedade **BackgroundColor** do componente **PrioritZDnDRAnking** e defina seu valor para **"#35A393"**
 
     ![](images/L02/a_g_u_5.png)
 
-1. Selecione a propriedade **DragBackgroundColor** do componente **PrioritZDnDranking** do menu suspenso da propriedade e defina o seu valor para **"LightBlue"**
+1. Selecione a propriedade **DragBackgroundColor** do componente **PrioritZDnDranking** e defina seu valor para **"LightBlue"**
 
     ![](images/L02/a_g_u_4.png)
 
-1. Selecione a propriedade **Y** do componente **PrioritZDnDRAnking** do suspensão da propriedade e defina o seu valor com a fórmula abaixo.
+1. Selecione a propriedade **Y** do componente **PrioritZDnDRAnking** e defina seu valor com a fórmula abaixo.
 
     ```
     'Votes gallery'.Y
     ```
 
-1. Selecione a propriedade **OnSelect** do componente **PrioritZDnDRAnking** do suspensão da propriedade e defina o seu valor com a fórmula abaixo.
+1. Selecione a propriedade **OnSelect** do componente **PrioritZDnDRAnking** e defina seu valor com a fórmula abaixo.
 
     ```
     With(
@@ -694,45 +697,43 @@ Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o com
     );
     ```
 
-1. Selecione o **Home Screen** e clique em **Play**.
+1. Selecione o **Home Screen (1)** e clique em **Reproduzir (2)**.
 
-1. Selecione um dos **topics**.
-
-1. Pode visualizar como está no ecrã de um telefone utilizando o emulador.
+1. Você pode ver como fica na tela de um celular usando o emulador.
 
     ![](images/L02/dv_p3_e2_g_36.png)
 
-1. Arraste um dos itens do tópico e deixe-o ativá-lo num local diferente.
+1. Arraste um dos itens de tópico e solte-o em um local diferente.
 
     ![](images/L02/image49.png)
 
-1. O arrastar/desembarque deve funcionar como esperado.
+1. A função de arrastar e soltar deve funcionar como esperado.
 
-1. Feche a antevisão.
+1. Feche a visualização.
 
-1. Clique em **Publish**.
+1. Clique em **Publicar**.
 
     ![](images/L02/publish.png)
 
-1. Selecione **Publish this version** e aguarde que a publicação seja concluída.
+1. Selecione **Publicar esta versão** e aguarde a conclusão da publicação.
 
-1. Pode **close** o estúdio de aplicações em tela.
+1. Você pode **Fechar** o estúdio de aplicativos de tela.
 
-## Exercício 3 – Adicionar Componente de Código à Solução
+## Exercício 3 – Adicionar o Componente de Código à Solução
 
-Neste exercício, irá adicionar o componente de código que criou à solução PrioritZ.
+Neste exercício, você adicionará o componente de código que criou à solução **PrioritZ**.
 
 ### Tarefa 1: Adicione o componente à solução
 
-1. Navegue até ao portal do fabricante de aplicações Power, utilizando o URL abaixo, se ainda não estiver aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** é selecionado.
-
+1. Navegue até o portal de criação do Power Apps usando a URL abaixo, se ainda não estiver aberto. Certifique-se de que o ambiente de desenvolvimento chamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** esteja selecionado.
+   
     ```
     https://make.powerapps.com/
     ```
 
-1. Selecione **solução** e abra a solução **PrioritZ**.
+1. Selecione **Soluções** e abra a solução **PrioritZ**.
 
-1. Clique em **Adicionar existente (1)**, selecione **Mais (2)** → **Programador (3)** → **Controlo personalizado (4)**.
+1. Clique em **Adicionar existente (1)**, selecione **Mais (2)** → **Desenvolvedor (3)** → **Controle personalizado (4)**.
 
     ![](images/L02/dv_p3_e2_g_37.png)
 
@@ -746,7 +747,7 @@ Neste exercício, irá adicionar o componente de código que criou à solução 
 
 ## Resumo
 
-Neste laboratório, aprendeu a criar um componente de código, a implementar a sua lógica, a integrá-lo numa aplicação de lona e a adicioná-la a uma solução dentro da Power Platform.
+Neste laboratório, você aprendeu a criar um componente de código, implementar sua lógica, integrá-lo a um aplicativo de tela e adicioná-lo a uma solução dentro da Power Platform.
 
 ## Concluiu o laboratório com sucesso.Prossiga para a próxima página.
 
