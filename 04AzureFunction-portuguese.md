@@ -1,49 +1,44 @@
-# Laboratório 04 - Função Azure
+# Laboratório 04 - Azure Function
 
 ## Duração estimada: 110 minutos
 
-Trabalhando como parte da equipa de PrioritZ fusion, irá configurar um conector personalizado para uma nova API que
-construiu utilizando Azure Functions. A equipa decidiu mover a lógica quando um utilizador cria um novo “ask” para
-a API de Azure Functions. Isto manterá a Power App simples e permitirá que a lógica mais complexa seja
-adicionada no futuro. Neste laboratório, irá criar a função, utilizar a API Dataverse e proteger a API com
-o Microsoft Entra ID. Irá configurar um conector personalizado para utilizar a API e alterar a Power App para utilizar o
-conector.
+Trabalhando como parte da equipe de desenvolvimento da PrioritZ, você irá configurar um conector personalizado para uma nova API que você construirá usando o Azure Functions. A equipe decidiu mover a lógica de quando um usuário cria uma nova solicitação para a API do Azure Function. Isso manterá a fórmula do Power App simples e permitirá que lógicas mais complexas sejam adicionadas no futuro. Neste laboratório, você criará a função, usará a API do Dataverse, protegerá a API com o Microsoft Entra ID, configurará um conector personalizado para usar a API e alterará o Power App para usar o conector.
 
-Nota: Este laboratório requer uma subscrição do Azure no mesmo tenant que o seu ambiente de Dataverse.
+>**Observação:** Este laboratório requer uma assinatura (ou versão de avaliação) do Azure no mesmo tenant do seu ambiente Dataverse.
 
-## Objectivo de laboratório
+## Objectivo de Laboratório
 
-- Exercício 1: Criar a Azure Function
-- Exercício 2: Implementação de funções
-- Exercício 3: Publicar para Azure
+- Exercício 1: Criar uma Azure Function
+- Exercício 2: Implementação da função
+- Exercício 3: Publicar no Azure
 - Exercício 4: Criar o conector
-- Exercício 5: Utilize a função na aplicação
+- Exercício 5: Usar a Função a partir de um Aplicativo de Tela
 
-## Exercício 1 – Criar a Azure Function
+## Exercício 1 – Criar uma Azure Function
 
-Neste exercício, instala a extensão de ferramentas Azure para o Visual Studio Code e cria a função
+Neste exercício, você instalará a extensão de ferramentas do Azure para o Visual Studio Code e criará a função.
 
-### Tarefa 1: Instalar a extensão das ferramentas de azure
+### Tarefa 1: Instalar a extensão das ferramentas do Azure
 
-1. Iniciar **Visual Studio Code** utilizando o atalho disponível na área de trabalho.
+1. Iniciar o **Visual Studio Code** usando o atalho disponível na área de trabalho.
 
     ![](images/L04/vscode1.png)
 
-2. Selecione o separador **Extensions**.
+2. Selecione a guia **Extensões**.
 
     ![](images/L04/vscode2.png)
 
-3. Pesquise por **Azure tools (1)** e clique em **Install (2)** para instalar a extensão Azure Tools.
+3. Procure por **Azure tools (1)** e clique em **Instalar (2)** para instalar a extensão.
 
     ![](images/L04/vscode3.png)
 
-4. Aguarde que a instalação seja concluída.
+4. Aguarde a conclusão da instalação.
 
-5. Agora deve ver a nova extensão Azure Tools que adicionou.
+5. Você deverá ver a nova extensão Azure Tools que adicionou.
 
     ![](images/L04/image%20(2).png)
 
-6. Clique em **Terminal** no menu superior e selecione **New Terminal**.
+6. Clique em **Terminal** no menu superior e selecione **Novo Terminal**.
 
 7. Execute o comando abaixo no terminal para criar uma nova pasta.
  
@@ -54,81 +49,80 @@ Neste exercício, instala a extensão de ferramentas Azure para o Visual Studio 
 
 ### Tarefa 2: Crie uma função
 
-1. Selecione **Azure tools (1)** do menu de navegação esquerda e navegue até à secção **Workspace (2)**.
+1. Selecione **Azure tools (1)** no menu de navegação esquerdo e navegue até à seção **Workspace (2)**.
 
     ![](images/L04/vscode4.png)
 
-1. Clique no **símbolo (1)** na image, na secção **Workspace**, clique em **Create Function (2)** e clique em **Create New Project**.
+1. Clique no **símbolo + (1)** na secção **Workspace**, clique em **Criar Função (2)** e, em seguida, **Criar Novo Projeto**.
 
     ![](images/L04/functionu.png)
 
-    >**Nota**: Se o símbolo **+** não for visível, seleccione as definições e veja se existem alguma atualização necessária para o vscode e atualize a aplicação Feche o vscode atual e abra novamente e execute o passo acima.
+    >**Observação**: Se o símbolo **+** não estiver visível, verifique as configurações do VS Code para atualizações pendentes. Após atualizar, feche e reabra o aplicativo.
 
-1. Selecione a pasta **ContosoFunctions (1)** que criou e clique em **select Folder (2)**
+1. Selecione a pasta **ContosoFunctions (1)** que você criou e clique em **Selecionar Pasta (2)**
 
     ![](images/L04/L04-contoso.png)
 
-1. Agora, será apresentado com o pop-up abaixo, clique em **Yes** para criar um novo projeto.
+1. No pop-up que aparecer, clique em **Sim** para criar um novo projeto.
 
     ![](images/L04/vscode6.png)
 
-1. Selecione **C#** para a linguagem.
+1. Selecione **C#** como linguagem.
 
     ![](images/L04/vscode7.png)
 
-1. Selecione **.NET 6.0 LTS** para o tempo de execução . NET.
+1. Selecione **.NET 6.0 LTS** como runtime do . NET.
 
     ![](images/L04/vscode8.png)
 
-1. Selecione **HTTP trigger with OpenAPI** para o modelo.
+1. Selecione **HTTP trigger with OpenAPI** como modelo.
 
     ![](images/L04/vscode9.png)
 
-1. Introduza **CreateTopic** para o nome da função e bate **[ENTER].**
+1. Insira **CreateTopic** como nome da função e pressione **[ENTER].**
 
     ![](images/L04/image%20(7).png)
 
-1. Introduza **Contoso.PrioritZ** para namespace e hit **[ENTER]**.
+1. Insira **Contoso.PrioritZ** como namespace e pressione **[ENTER]**.
 
     ![](images/L04/vscode10.png)
 
-1. Selecione **Anonymous** para AccessRights. Mais tarde, protegeremos a função utilizando o Microsoft Entra ID.
+1. Selecione **Anonymous** para AccessRights. Mais tarde, protegeremos a função usando o Microsoft Entra ID.
 
     ![](images/L04/vscode11.png)
 
-9. Se for apresentado à janela abaixo, selecione **Open in the current window.**
+9. Se uma janela for apresentada, selecione **Abrir na janela atual.**
 
     ![](images/L04/image%20(8).png)
 
-1. A sua função deve abrir em **Visual Studio Code**.
+1. Sua função deve abrir no **Visual Studio Code**.
 
-1. Se obteve um pop-up **Do you trust authors of the files in this folder**, clique em **Yes, I trust the author**
+1. Se aparecer um pop-up perguntando **Você confia nos autores dos arquivos nesta pasta?**, clique em **Sim, eu confio nos autores**.
 
-1. Clique em **Terminal** no menu superior e selecione **Run Build Task**.
+1. Clique em **Terminal** no menu superior e selecione **Executar Tarefa de Build**.
 
     ![](images/L04/image%20(9).png)
 
-1. Assim que a construção for sucedida, **press any key to close the terminal**.
+1. Quando o build for concluído com sucesso, **pressione qualquer tecla para fechar o terminal.**.
 
     ![](images/L04/vscode12.png)
 
 
-## Exercício 2 - Implementação de funções
+## Exercício 2 - Implementação da função
 
 Neste exercício, irá implementar a função.
 
 ### Tarefa 1: Função de implementação
 
-1. Clique em **New file** que está próximo de **ContosoFunctions** para adicionar um novo ficheiro.
+1. Clique em **Novo Arquivo** que está próximo de **ContosoFunctions** para adicionar um novo arquivo.
 
     ![](images/L04/image%20(10).png)
 
-2. Refira o novo ficheiro **Model.cs**
+2. Nomeie o novo arquivo como **Model.cs**
 
     ![](images/L04/vscode13.png)
 
-3. Abra o novo ficheiro **Model.cs** e cole o código abaixo. Isto definirá os dados que serão enviados
- da aplicação de energia.
+3. Abra o novo arquivo **Model.cs** e cole o código abaixo. Isso definirá os dados que serão enviados do Power App.
 
     ```
     using System;
@@ -154,14 +148,9 @@ Neste exercício, irá implementar a função.
     }
     ```
 
-    Depois de adicionar o código, o seu **Model.cs** parecerá a captura de ecrã abaixo:
+4. Abra o arquivo **CreateTopic.cs**.
 
-    ![](images/L04/vscode14.png)
-
-4. Abra o ficheiro **CreateTopic.cs**.
-
-5. Localize os atributos do método Executar (números de linha 24-27) que estão presentes acima do **Run method** e substitua-os pelos atributos abaixo. Isto fornece nomes fáceis de utilizar quando criamos um conector para utilizar a API.
-
+5. Localize os atributos do método **Run** (linha 24-27) e substitua-os pelos atributos abaixo. Isso fornecerá nomes amigáveis quando criarmos um conector para a API.
 
     ```
     [FunctionName("CreateTopic")]
@@ -171,17 +160,13 @@ Neste exercício, irá implementar a função.
     [OpenApiRequestBody(contentType: "application/json", bodyType: typeof(TopicModel))]
     ```
 
-    Depois de adicionar os atributos, o seu **Run method** deve parecer-se com a captura de ecrã abaixo:
-
-    ![](images/L04/image%20(13).png)
-
-6. Remova **get** do método Run como deve ter apenas **post**.
+6. Remova **get** dos métodos HTTP permitidos no método **Run**, deixando apenas **post**.
 
     ![](images/L04/image%20(14).png)
 
-7. Clique em **Terminal** no menu superior e selecione o **New Terminal**.
+7. Abra um **Novo Terminal**.
 
-8. Execute o comando abaixo no terminal para adicionar o pacote **Power Platform Dataverse Client**.
+8. Execute o comando abaixo para adicionar o pacote do **Power Platform Dataverse Client**.
 
     ```
     dotnet add package Microsoft.PowerPlatform.Dataverse.Client
@@ -189,15 +174,15 @@ Neste exercício, irá implementar a função.
 
     ![](images/L04/image%20(17).png)
 
-9. Aguarde que o pacote seja adicionado e execute o comando abaixo para adicionar o pacote **Azure Identity**.
+9. Aguarde a adição do pacote e execute o comando abaixo para adicionar o pacote **Azure Identity**.
 
     ```
     dotnet add package Azure.Identity
     ```
 
-10. Aguarde o pacote **Azure Identity** a adicionar.
+10. Aguarde a conclusão.
 
-11. Abra o ficheiro **CreateTopic** e adicione as instruções abaixo após a linha número 11.
+11. Abra o arquivo **CreateTopic** e adicione as seguintes declarações `using` após a linha 11.
 
     ```
     using System;
@@ -211,7 +196,7 @@ Neste exercício, irá implementar a função.
 
     ![](images/L04/vscode15.png)
 
-12. Adicione o método abaixo após o método **Run**. Este método utilizará o token passado do aplicação de chamadas para obter um novo token que permita que a função utilize a API Dataverse em nome de o utilizador chamada.
+12. Adicione o método abaixo após o método **Run**. Este método usará o token do usuário que chamou a API para obter um novo token que permitirá à função usar a API do Dataverse em nome desse usuário.
 
     ```
     public static async Task<string> GetAccessTokenAsync(HttpRequest req,string resourceUri)
@@ -246,7 +231,7 @@ Neste exercício, irá implementar a função.
 
     ![](images/L04/vscode16.png)
 
-13. Substitua o código dentro do método **Run** pelo código abaixo. Isto fornecerá uma instância do API Dataverse e utilize a função GetAccessToken que acabamos de definir.
+13. Substitua o código dentro do método **Run** pelo código abaixo. Isso fornecerá uma instância da API do Dataverse e usará a função `GetAccessToken` que acabamos de definir.
 
     ```    
     _logger.LogInformation("Starting Create Topic");
@@ -265,7 +250,7 @@ Neste exercício, irá implementar a função.
 
     ![](images/L04/vscode17.png)
 
-14. Adicione o seguinte código após a instrução if do método **Run** para reserizar o pedido. Isto levará os dados passados ​​do chamador.
+14. Adicione o código a seguir após a instrução `if` do método **Run** para desserializar a requisição e obter os dados enviados.
 
     ```
     string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
@@ -274,7 +259,7 @@ Neste exercício, irá implementar a função.
 
     ![](images/L04/vscode18.png)
 
-15. Adicione o código abaixo que cria a linha ao método **Run** após o código que adicionou no passo anterior para **reserialize the request**. Este código cria as linhas em Dataverse é onde podemos adicionar mais lógica no futuro.
+15. Adicione o código abaixo para criar o registro no Dataverse, logo após o trecho que você adicionou no passo anterior.
 
     ```
     var ask = new Entity("contoso_prioritztopic");
@@ -306,29 +291,25 @@ Neste exercício, irá implementar a função.
 
     ![](images/L04/vscode19.png)
 
-16. Adicione o código abaixo ao método **Run** para devolver o ID do tópico como JSON (obrigatório por Apps Power) após o código que adicionou no passo anterior para criar a linha ao método **Run**.
-
+16. Adicione o código abaixo ao final do método **Run** para retornar o ID do tópico como JSON.
+    
     ```
     return new OkObjectResult(topicId);
     ```
 
     ![](images/L04/vscode20.png)
 
-17. Clique em **Terminal (1)** e seleccione **Run Build Task (2)**.
+18. Clique em **Terminal (1)** e selecione **Executar Tarefa de Build (2)**.
 
     ![](images/L04/vscode21.png)
 
-18. A corrida deve ter sucesso. Pressione qualquer chave para parar.
+19. O build deve ser bem-sucedido. Pressione qualquer tecla para parar.
 
-    > **Nota**:
-
-    1. Se a operação da tarefa de construção falhar com os erros, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente nos ficheiros **CreateTopic.cs e Model.cs.**
+    > **Observação**: Se o build falhar, verifique se você seguiu as instruções e adicionou o código corretamente nos arquivos **CreateTopic.cs** e **Model.cs**. Você pode comparar seu código com os arquivos de referência localizados em `C:\LabFiles`.
     
-    2. Além disso, pode encontrar os ficheiros **CreateTopic.cs e Model.cs** na localização **C:\LabFiles**, pode comparar o seu código com estes ficheiros e corrigir os problemas se houver algum e tentar realize **passo 17 novamente**.
+## Exercício 3 – Publicar no Azure
 
-## Exercício 3 – Publicar para Azure
-
-Neste exercício, irá implementar a função no Azure.
+Neste exercício, você implantará a função no Azure.
 
 ### Tarefa 1: Publicar
 
@@ -336,27 +317,27 @@ Neste exercício, irá implementar a função no Azure.
 
     ![](images/L04/vscode22.png)
 
-2. Clique em **Sign in to Azure** na secção **Resources**.
+2. Clique em **Entrar no Azure** na seção **Recursos**.
 
     ![](images/L04/vscode23.png)
 
-3. Conclua o processo **Sign-in** utilizando as credenciais abaixo.
+3. Conclua o processo de login com suas credenciais.
 
-    * E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
+    * E-mail/nome de usuário: <inject key="AzureAdUserEmail"></inject>
     
-    * Palavra-passe: <inject key="AzureAdUserPassword"></inject>
+    * Senha: <inject key="AzureAdUserPassword"></inject>
 
-4. Feche a janela do browser de registo assim que o processo de registo estiver concluído.
+4. Feche a janela do navegador após o login.
 
-5. Navegue de volta para o Código do Visual Studio e clique em **+** que está ao lado do seu separador **Resources** para criar uma nova aplicação de funções.
+5. De volta ao VS Code, clique no **+** ao lado da sua guia **Recursos** para criar um novo Aplicativo de Função.
 
     ![](images/L04/NewVSazure3u.png)
 
-6. Agora, pesquise e seleccione **Create Function App in Azure**.
+6. Procure e selecione **Create Function App in Azure**.
 
     ![](images/L04/vscode24u.png)
 
-7. Introduza **PrioritZFunc<inject key="Deployment ID" activityCopy="false" />** para o nome da aplicação de função e hit [ENTER].
+7. Insira **PrioritZFunc<inject key="Deployment ID" activityCopy="false" />** como nome do aplicativo de função e pressione [ENTER].
 
     ![](images/L04/vscode25.png)
 
@@ -364,51 +345,52 @@ Neste exercício, irá implementar a função no Azure.
 
     ![](images/L04/vscode26u.png)
 
-9. Selecione a localização: **<inject key="Region" activityCopy="false" />** da lista e aguarde que a aplicação Função seja implementada.
-
+9. Selecione a localização **<inject key="Region" activityCopy="false" />** da lista e aguarde a implantação.
+    
     ![](images/L04/vscode27.png)
 
-10. Depois de a aplicação Função estar implantada, Clique em **Deploy to Azure** na secção **Workspaces** e escolha a Aplicação de Função que criou.
+--- PAREI QUI!!!!
+11. Depois de a aplicação Função estar implantada, Clique em **Deploy to Azure** na secção **Workspaces** e escolha a Aplicação de Função que criou.
 
     ![](images/L04/DeployNewu.png)
 
     ![](images/L04/DeployNew1u.png)
 
-11. Aguarde que a aplicação de função seja implementada e navegue até ao Portal Azure utilizando o URL abaixo.
+12. Aguarde que a aplicação de função seja implementada e navegue até ao Portal Azure utilizando o URL abaixo.
 
     ```
     https://portal.azure.com/
     ```
 
-12. Selecione **All resources**, pesquise pela aplicação de função **PrioritZFunc<inject key="Deployment ID" activãoCopy="false" />** que implantou anteriormente e clicar para o abrir.
+13. Selecione **All resources**, pesquise pela aplicação de função **PrioritZFunc<inject key="Deployment ID" activãoCopy="false" />** que implantou anteriormente e clicar para o abrir.
 
     ![](images/L04/vscode27.1.png)
 
-13. Selecione **Authentication (1)** do menu do lado esquerdo e clique em **Add identity provider (2)**.
+14. Selecione **Authentication (1)** do menu do lado esquerdo e clique em **Add identity provider (2)**.
 
     ![](images/L04/L04-auth.1.png)
 
-14. Selecione **Microsoft** para o fornecedor de identidade e **Current tenant - Single tenant** para **Supported Account types** e clique em **Add**.
+15. Selecione **Microsoft** para o fornecedor de identidade e **Current tenant - Single tenant** para **Supported Account types** e clique em **Add**.
 
     ![](images/L04/L04-auth.2.png)
 
-15. Abra o menu **Portal** clicando no ícone do menu Portal.
+16. Abra o menu **Portal** clicando no ícone do menu Portal.
 
     ![](images/dev4.png)
 
-16. Selecione **Microsoft Entra ID** na lista de recursos.
+17. Selecione **Microsoft Entra ID** na lista de recursos.
 
     ![](images/dev1.png)
 
-17. Selecione **App registrations** em **Manage** do menu do lado esquerdo.
+18. Selecione **App registrations** em **Manage** do menu do lado esquerdo.
 
     ![](images/L04/vscode30.png)
 
-18. Clique para abrir o **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** para abrir a aplicação.
+19. Clique para abrir o **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** para abrir a aplicação.
 
     ![](images/L04/vscode31.png)
 
-19. Copie o **Application (client) ID** do **PrioritZFunc<inject key="Deployment ID" activityCopy="false" />** inscrição da aplicação e guarde-o num
+20. Copie o **Application (client) ID** do **PrioritZFunc<inject key="Deployment ID" activityCopy="false" />** inscrição da aplicação e guarde-o num
  nota como **ID da aplicação API PrioritZFL**. Vai precisar deste ID em passos futuros. Este ID será utilizado para configurar a proteção da API.
 
     ![](images/L04/image%20(33).png)
@@ -417,53 +399,53 @@ Neste exercício, irá implementar a função no Azure.
 
     >**Nota**: Certifique-se de que copia e colide o valor correto **Aplicação (cliente) ID**. Copiar o valor incorreto resultará em problemas nos próximos passos/tarefas.
 
-20. Copie o **Directory (tenant) ID** ae mantenha-o num bloco de notas como **Tenant ID**. Vai precisar deste ID em passos futuros.
+21. Copie o **Directory (tenant) ID** ae mantenha-o num bloco de notas como **Tenant ID**. Vai precisar deste ID em passos futuros.
 
     ![](images/L04/image%20(35).png)
 
     >**Nota**: Certifique-se de que copia e colide o valor correto de **Directory (inquilino) ID**. Copiar o valor incorreto resultará em problemas nos próximos passos/tarefas.
 
-21. Selecione **Certificates & secrets** em **Manage** no menu do lado esquerdo.
+22. Selecione **Certificates & secrets** em **Manage** no menu do lado esquerdo.
 
     ![](images/L04/vscode32.png)
 
-22. Clique em **+ New client secret**.
+23. Clique em **+ New client secret**.
 
     ![](images/L04/image%20(36).png)
 
-23. Forneça uma descrição como **PrioritZ API secret (1)**, seleccione **3 months(2)** e clique em **Add(3)**.
+24. Forneça uma descrição como **PrioritZ API secret (1)**, seleccione **3 months(2)** e clique em **Add(3)**.
 
     ![](images/L04/image38.png)
 
-24. Copie o **Value** e mantenha-o num bloco de notas como **PrioritZFL API Secret**. Precisa desse valor em passos futuros.
+25. Copie o **Value** e mantenha-o num bloco de notas como **PrioritZFL API Secret**. Precisa desse valor em passos futuros.
 
     >**Nota**: Certifique-se de que copia e colhe o valor correto **Secret**. Copiar o valor incorreto resultará em problemas nos próximos passos/tarefas.
 
-25. Selecione **API permissions** em **Manage** do menu do lado esquerdo.
+26. Selecione **API permissions** em **Manage** do menu do lado esquerdo.
 
     ![](images/L04/vscode33.png)
 
-26. Clique em **+  Add a permission**.
+27. Clique em **+  Add a permission**.
 
     ![](images/L04/image%20(39).png)
 
-27. Selecione **Dynamics CRM** na lista de permissões da API. Dynamics CRM é Dataverse, o portal Azure simplesmente não foi atualizado no momento da escrita dessas etapas.
+28. Selecione **Dynamics CRM** na lista de permissões da API. Dynamics CRM é Dataverse, o portal Azure simplesmente não foi atualizado no momento da escrita dessas etapas.
 
     ![](images/L04/vscode34.png)
 
-28. Verifique a caixa de selecção **user_impersonation** e clique em **Add permission**.
+29. Verifique a caixa de selecção **user_impersonation** e clique em **Add permission**.
 
-29. Volte a **Home** e abra o **PrioritZFunc<inject key="Deployment ID" activityCopy="false" />** a aplicação de função.
+30. Volte a **Home** e abra o **PrioritZFunc<inject key="Deployment ID" activityCopy="false" />** a aplicação de função.
 
     ![](images/L04/vscode27.1.png)
 
-30. Selecione **Environment Variables (1)** em **Settings** do menu do lado esquerdo..
+31. Selecione **Environment Variables (1)** em **Settings** do menu do lado esquerdo..
 
-31. Clique em **+ Add (2)**
+32. Clique em **+ Add (2)**
 
     ![](images/L04/vscode36u.png)
 
-32. Introduza os seguintes detalhes sobre a **Add/Edit application setting** lâmina e clique em **Apply (3)**.
+33. Introduza os seguintes detalhes sobre a **Add/Edit application setting** lâmina e clique em **Apply (3)**.
 
     - **Name**: **ClientID (1)**
     
@@ -471,9 +453,9 @@ Neste exercício, irá implementar a função no Azure.
 
         ![](images/L04/vscode37u.png)
 
-33. Clique novamente em **+ Add**.
+34. Clique novamente em **+ Add**.
 
-34. Introduza os seguintes detalhes sobre a **Add/Edit application setting** lâmina e clique em **Apply (3)**.
+35. Introduza os seguintes detalhes sobre a **Add/Edit application setting** lâmina e clique em **Apply (3)**.
 
     - **Name**: **ClientSecret (1)**
     
@@ -481,9 +463,9 @@ Neste exercício, irá implementar a função no Azure.
 
         ![](images/L04/vscode38u.png)
 
-35. Clique novamente em **+ Add**.
+36. Clique novamente em **+ Add**.
 
-36. Introduza os seguintes detalhes sobre a **Add/Edit application setting** lâmina e clique em **Apply (3)**.
+37. Introduza os seguintes detalhes sobre a **Add/Edit application setting** lâmina e clique em **Apply (3)**.
 
     - **Name**: **TennantID (1)**
     
@@ -491,21 +473,21 @@ Neste exercício, irá implementar a função no Azure.
 
         ![](images/L04/vscode39u.png)
 
-37. Inicie uma nova janela ou tablaça de navegação no centro de administração Power Platform e selecione **Environments**.
+38. Inicie uma nova janela ou tablaça de navegação no centro de administração Power Platform e selecione **Environments**.
 
     ```
     https://admin.powerplatform.microsoft.com/environments
     ```
 
-38. Clique para abrir o ambiente Dev denominado **DEV_ENV_<inject key="Deployment ID" activityCopy="false" />** está a utilizar para este laboratório.
+39. Clique para abrir o ambiente Dev denominado **DEV_ENV_<inject key="Deployment ID" activityCopy="false" />** está a utilizar para este laboratório.
 
-39. Copie o **URL** Ambiente e cole-o no bloco de notas.
+40. Copie o **URL** Ambiente e cole-o no bloco de notas.
 
     ![](images/L04/image%20(47).png)
 
-40. Clique em **+ Add** mais uma vez.
+41. Clique em **+ Add** mais uma vez.
 
-41. Introduza os seguintes detalhes sobre a **Add/Edit application setting** lâmina e clique em **Apply**.
+42. Introduza os seguintes detalhes sobre a **Add/Edit application setting** lâmina e clique em **Apply**.
 
     - **Name**: **DataverseURL**
     - **Value**: Colar o **Environment URL** que notou anteriormente no bloco de notas.
@@ -514,13 +496,13 @@ Neste exercício, irá implementar a função no Azure.
 
       >**Nota**: Certifique-se de que colide o **Environment URL** que observou anteriormente nesta tarefa. Copiar o valor incorreto resultará em problemas nos próximos passos/tarefas.
 
-42. Deve ver as quatro definições de aplicação que adicionou.
+43. Deve ver as quatro definições de aplicação que adicionou.
 
     ![](images/L04/image%20(46).png)
 
-43. Clique em **Apply** e In **Save changes** pop-up clique em **Confirm**.
+44. Clique em **Apply** e In **Save changes** pop-up clique em **Confirm**.
 
-44. Colar o URL abaixo no Notepad e substitua `{tenant id}` e `{api app id}` por **tenant id** e **PrioritZFL API application ID** dos seus valores do seu bloco de notas.
+45. Colar o URL abaixo no Notepad e substitua `{tenant id}` e `{api app id}` por **tenant id** e **PrioritZFL API application ID** dos seus valores do seu bloco de notas.
 
     ```
     https://login.microsoftonline.com/{tenant-id}/adminconsent?client_id={api app id}
@@ -528,7 +510,7 @@ Neste exercício, irá implementar a função no Azure.
 
     Depois de atualizar os valores, o seu URL deve ficar assim: `https://login.microsoftonline.com/2140cxxxxxxx/adminconsent?client_id=195b2axxxxxxx`
 
-45. Após atualizar os valores, navegue até ao URL num separador de browser e inscreva-se com as credenciais abaixo.
+46. Após atualizar os valores, navegue até ao URL num separador de browser e inscreva-se com as credenciais abaixo.
 
     * E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
     * Palavra-passe: <inject key="AzureAdUserPassword"></inject>
