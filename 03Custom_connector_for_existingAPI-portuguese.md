@@ -407,7 +407,7 @@ Nesta tarefa, você usará o conector para mostrar o emblema atual do usuário n
     ```
     https://contosobadgestest.azurewebsites.net/
     ```
-
+    
 1. Clique no link **Abrir a Chave de API**
 
     ![](images/L03/image41.png)
@@ -480,58 +480,55 @@ Nesta tarefa, você usará o conector para mostrar o emblema atual do usuário n
 
     ![](images/L03/dv_p4_e3_g_61.png)
 
-PAREI AQUI!!!
-1. Introduza **Test add credit (1)** como nome do fluxo, selecione **Acionar manualmente um fluxo (2)** e clique em **Criar (3)**.
+1. Insira **Test add credit (1)** como nome do fluxo, selecione **Disparar um fluxo manualmente (2)** e clique em **Criar (3)**.
 
     ![](images/L03/dv_p4_e3_g_62.png)
 
-1. Clique em **+ Novo passo**.
+1. Clique em **+ Nova etapa**.
 
     ![](images/L03/dv_p4_e3_g_63.png)
 
-1. Selecione o separador **Personalizado (1)** e, em seguida, selecione a ação **Add Credit (2)**.
+1. Selecione a guia **Personalizado (1)** e, em seguida, selecione a ação **Add Credit (2)**.
 
     ![](images/L03/dv_p4_e3_g_64.png)
 
-1. Introduza **Test connection**, cole a chave **API** que copiou anteriormente em **passo 9** de task1 neste exercício e clique em **Create**.
+1. Insira **Test connection**, cole a chave da **API** que você copiou anteriormente e clique em **Criar**.
 
     ![](images/L03/edd%20(3).png)
 
-1. No campo **recipientId (1)**, selecione **E-mail do utilizador**. No campo **name (2)**, selecione **Nome de utilizador** e, no campo **points (3)**, introduza `1`.
+1. Clique no campo **recipientId (1)** e, no painel do gatilho, selecione **E-mail do usuário (2)**.
 
     ![](images/L03/dv_p4_e3_g_65.png)
 
-1. No campo **name**, selecione **Nome de utilizador**.
+1. Clique no campo **name** e selecione **Nome de usuário**.
 
-1. Introduza **1** no campo **points** e clique em **Guardar**. Aguarde até que o fluxo seja guardado.
-
-1. Clique em **Test**.
-
-    ![](images/L03/dv_p4_e3_g_66.png)
-
-1. Selecione **Manualmente (1)** e clique em **Testar (2)**.
-
-    ![](images/L03/dv_p4_e3_g_67.png)
+1. Insira **1** em **points** e clique em **Salvar**.
 
 1. Clique em **Testar**.
 
+    ![](images/L03/dv_p4_e3_g_66.png)
+
+1. Selecione **Manualmente (1)** e clique em **Testar (2)** novamente.
+
+    ![](images/L03/dv_p4_e3_g_67.png)
+
+1. Clique em **Continuar**.
+
+1. Clique em **Executar fluxo**. 
+
 1. Clique em **Concluído**.
 
-1. O fluxo deve ter sucesso. Depois de ter sido bem sucedido, clique no botão **Anterior**.
+1. A execução do fluxo deve ser bem-sucedida. Clique no botão **Voltar**.
 
     ![](images/L03/a_g_u_16.png)
 
-1. Selecione **Fluxos de cloud** e abra o fluxo que criou.
+1. Vá para **Fluxos de nuvem (1)** e abra o fluxo que criou, **Test add credit (2)**.
 
     ![](images/L03/a_g_u_15.png)
 
-1. Inicie uma nova janela do browser e navegue até ao portal do fabricante de aplicações Power.
+1. Volte ao portal do Power Apps e inicie o aplicativo **PrioritZ Ask**.
 
-1. Certifique-se de que está no ambiente correto.
-
-1. Selecione **Apps** e inicie a aplicação **PrioritZ Ask**.
-
-1. A aplicação deve agora mostrar **Cloud flows**.
+1. O aplicativo agora deve mostrar o **First Badge**. Atualize a página.
 
     ![](images/L03/image53.png)
 
@@ -539,24 +536,24 @@ PAREI AQUI!!!
 
     ![](images/L03/a_g_u_23.png)
 
-1. Volte à aplicação **PrioritZ Ask** e atualize a página.
+1. Volte ao aplicativo **PrioritZ Ask** e atualize a página.
 
-1. Agora deve ver o crachá de **Team Player**.
+1. Agora você deve ver o emblema **Team Player**.
 
     ![](images/L03/image54.png)
 
-1. Vá para o fluxo e execute-o mais duas vezes.
+1. Volte ao fluxo e execute-o mais duas vezes.
 
-1. Volte à aplicação **PrioritZ Ask** e atualize a página.
+1. Volte ao aplicativo **PrioritZ Ask** e atualize a página.
 
-1. Agora deve ver o crachá **Champ**
+1. Agora você deve ver o emblema **Champ**
 
     ![](images/L03/image55.png)
 
 ## Resumo
 
-Neste laboratório, aprendeu a criar e a modificar um conector personalizado utilizando uma definição Open API, a testar a sua funcionalidade e a integrá-la com aplicações de lona e fluxos dentro da Power Platform.
+Neste laboratório, você aprendeu a criar e modificar um conector personalizado usando uma definição Open API, testar sua funcionalidade e integrá-lo com aplicativos de tela e fluxos na Power Platform
 
-## Concluiu este laboratório com sucesso. Prossiga para a próxima página.
+## Você concluiu este laboratório com sucesso. Clique no botão **Avançar** para prosseguir.
 
 ![](./images/NextPage.png)
