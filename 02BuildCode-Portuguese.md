@@ -2,17 +2,7 @@
 
 ## Duração estimada: 100 minutos
 
-Trabalhando como parte da equipe de PrioritZ fusion, você foi solicitado a criar um componente de código do Power Apps para permitir a classificação de prioridade de arrastar e soltar itens no PrioritZ Ask Power App. Você criará um componente de código usando a estrutura React JavaScript. Uma abordagem de componente de código é usada para para atender ao requisito porque não existe um controlo semelhante já incorporado.
-
-Você colaborou com os criadores de aplicativos para identificar as seguintes propriedades para permitir que eles configurar o componente de código na aplicação:
-
-- BackgroundColor
-- DragBackgroundColor
-- ItemHeight
-- FontSize
-- FontColor
-
-O aplicativo PrioritZ Ask preparará uma coleção dos itens a serem classificados que serão vinculados como o conjunto de dados para o componente de código. Quando um item é arrastado e largado, o componente de código gera um evento OnSelect que será tratado pela aplicação de alojamento. A aplicação de alojamento actualizará os itens da coleção com a sua nova classificação. O componente de código será stateless.
+Neste laboratório, você construirá um componente de código personalizado usando o framework JavaScript React para permitir a classificação de prioridade de itens com a funcionalidade de arrastar e soltar (*drag-and-drop*) no aplicativo "PrioritZ Ask Power App". Você começará criando e configurando o componente de código, depois implementará sua lógica e o testará localmente. Em seguida, você integrará o componente ao aplicativo de tela "PrioritZ Ask", permitindo que os usuários reordenem os itens visualmente. Por fim, você adicionará o componente de código finalizado à solução "PrioritZ", garantindo que ele esteja disponível para uso em seu ambiente da Power Platform. Ao concluir esses exercícios, você ganhará experiência prática no desenvolvimento, implantação e uso de componentes de código personalizados em Power Apps.
 
 ## Objectivos do laboratório
 
@@ -26,17 +16,17 @@ Neste exercício, você irá construir o componente de código.
 
 ### Tarefa 1: Criar o componente de código
 
-1. Inicie o **Visual Studio Code** se ainda não estiver aberto usando o atalho disponível na área de trabalho.
+1. Inicie o **Visual Studio Code** usando o atalho disponível na área de trabalho, se ainda não estiver aberto.
 
    ![](images/L04/vscode1.png)
    
-1. Selecione o separador **Power Platform (1)** e certifique-se de que o seu perfil **DEV_ENV Auth (2)** está selecionado. 
+1. Selecione a guia **Power Platform (1)** e certifique-se de que o seu perfil **DEV_ENV Auth (2)** está selecionado. 
     
-   >**Nota:** O separador Power Platform já está instalado.
+   >**Observação:** A guia do Power Platform já está instalado.
     
     ![](images/L02/dv_port2_e1_g_16.png)
 
-1. Clique no **menu (1)** de opções no canto superior direito, selecione **Terminal** **(2)** e depois clique em **Novo Terminal** **(3)** para abrir um novo terminal no VS Code.
+1. Clique no **menu de reticências ...(1)** para expandir opções adicionais. Em seguida, selecione **Terminal** **(2)** no menu suspenso e clique em **Novo Terminal** **(3)** para abrir uma sessão de terminal.
 
    ![](images/L01/dv_port2_e1_g_14.png)
 
@@ -58,9 +48,13 @@ Neste exercício, você irá construir o componente de código.
      
      ![](images/L02/a_g_d_1.png)
 
-1. O projeto do componente framework deve ser criado com sucesso.
+>**Observação:** Nota: O comando acima pode levar de 2 a 3 minutos para ser concluído.
+
+1. O projeto do framework do componente deve ser criado com sucesso.
 
     ![](images/L02/a_g_d_2.png)
+
+>**Observação:** Ao instalar as dependências, você pode ver avisos como: `npm WARN deprecated @babel/plugin-proposal-object-rest-spread`, `npm WARN deprecated rimraf@3.0.2`, `npm WARN deprecated eslint@8.57.1`. Esses avisos significam que alguns pacotes estão desatualizados ou não são mais atualizados. Você pode ignorá-los com segurança, pois não afetarão o funcionamento do projeto.
 
 1. Execute o comando abaixo para abrir o projeto.
     
@@ -68,29 +62,29 @@ Neste exercício, você irá construir o componente de código.
     code -a.
     ```
 
-1. Se lhe for apresentado o pop-up abaixo, clique em **Yes** para confiar nos autores dos ficheiros.
-
-1. Reveja os ficheiros de componentes de código criados selecionando o separador **Explorer**.
+1. Se a janela pop-up abaixo for apresentada, clique em **Sim** para confiar nos autores dos arquivos.
+   
+1. Revise os arquivos do componente de código criados selecionando a guia **Explorador**.
     
      ![](images/L02/dv_p3_e2_g_7.png)
 
 1. Expanda a pasta **PrioritZDnDRanking (1)** e, em seguida, expanda a subpasta **generated**.
 
-1. Abra o ficheiro **ControlManifest.Input.xml (2)**. O manifesto é o ficheiro de metadados que define um componente, incluindo as propriedades expostas à aplicação de alojamento.
+1. Abra o arquivo **ControlManifest.Input.xml (2)**. O manifesto é o arquivo de metadados que define um componente, incluindo as propriedades expostas ao aplicativo hospedeiro.
 
     ![](images/L02/dv_p3_e2_g_8.png)
 
-1. Localize o elemento XML **data-set** na **linha número 21** no ficheiro **ControlManifest.Input.xml**.
+1. Localize o elemento XML **data-set** na **linha número 21** do arquivo **ControlManifest.Input.xml**.
 
     ![](images/L02/image7.png)
 
-1. Altere o **name** para **items** e o **display-name-key** para **items**. Isto define a propriedade que a aplicação se liga a uma coleção de itens.
+1. Altere o **name** para **items** e o **display-name-key** para **items**. Isto define a propriedade à qual o aplicativo se vinculará para uma coleção de itens.
 
     ![](images/L02/image8.png)
 
-1. Adicione as seguintes propriedades entre a etiqueta de fecho do elemento de conjunto de dados `</data-set>` e a etiqueta de abertura do elemento `<resources>`.
+1. Adicione as seguintes propriedades entre a tag de fechamento do elemento conjunto de dados `(</data-set>)` e a tag de abertura do elemento `<resources>`.
 
-    > Adicione as seguintes propriedades após **linha número 26** no ficheiro **ControlManifest.Input.xml**.
+    > Adicione as seguintes propriedades após **linha 26** no arquivo **ControlManifest.Input.xml**.
 
     ```
     <property name="BackgroundColor" display-name-key="Background color" usage="input" of-type="SingleLine.Text" default-value="#F3F2F1"/>
@@ -102,7 +96,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image9.png)
 
-1. Localize a secção `<resources>` e adicione o código abaixo após o **code path** para adicionar o recurso **css**. Isto garantirá que os nossos estilos serão agrupados com o componente de código quando este for implementado.
+1. Localize a secção `<resources>` e adicione o código abaixo após o **code path** para adicionar o recurso **css**. Isto garantirá que os nossos estilos sejam incluídos no pacote do componente de código quando este for implantado.
 
     ```
     <css path="css/PrioritZDnDRanking.css" order="1" />
@@ -110,9 +104,9 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image10.png)
 
-    >**Nota:** Certifique-se de que não descolhe o caminho **resx**, pois estará a enfrentar um problema na próxima tarefa ao construir o componente de código se este não for comentado.
+    >**Observação:** Certifique-se de que não remover os comentários do **resx path**, pois você enfrentará um problema na próxima tarefa ao construir o componente de código se ele estiver sem comentários.
 
-1. Observe os dois recursos seguintes. Isto declara a dependência do componente destes dois bibliotecas. Isto é o resultado da especificação – framework React na inicialização.
+1. Observe os dois recursos seguintes. Isso declara a dependência do componente nessas duas bibliotecas, resultado de especificar `–framework React` na inicialização.
         
      ```
      <platform-library name="React" version="16.8.6" />
@@ -121,21 +115,21 @@ Neste exercício, você irá construir o componente de código.
      
      ![](images/L02/image11.png)
 
-1. Clique em **File** e seleccione **Save All** para guardar as suas alterações.
+1. Clique em **Arquivo** e selecione **Salvar Tudo** para salvar suas alterações.
 
-1. Certifique-se de que o ficheiro **ControlManifest.Input.xml** ainda está selecionado e clique em **New Folder**.
+1. Certifique-se de que o arquivo **ControlManifest.Input.xml** ainda está selecionado e clique em **Nova Pasta**.
 
     ![](images/L02/image12.png)
 
 1. Nomeie a nova pasta como **css**.
 
-1. Selecione a nova pasta **css** que criou e clique em **New File**
+1. Selecione a nova pasta **css** que criou e clique em **Novo Arquivo**
 
     ![](images/L02/image13.png)
 
-1. Refira o novo ficheiro **PrioritZDnDranking.css**.
+1. Nomeie o novo arquivo como **PrioritZDnDranking.css**.
 
-1. Cole o seguinte CSS no ficheiro **PrioritZDnDRAnking.css**.
+1. Cole o seguinte CSS no arquivo **PrioritZDnDRAnking.css**.
 
     ```
     .prioritydnd-scroll-container {
@@ -154,49 +148,49 @@ Neste exercício, você irá construir o componente de código.
     margin: 8px;
     }
     ```
-1. O ficheiro deve agora parecer-se com o seguinte.
+1. O arquivo agora deve ter a seguinte aparência:
 
     ![](images/L02/image14.png)
 
-1. Clique em **File** e seleccione **Save All** para guardar as suas alterações.
+1. Clique em **Arquivo** e selecione **Salvar Tudo** para salvar suas alterações.
 
 ### Tarefa 2: Implementar a lógica do componente
 
-1. Selecione o ficheiro do componente **HelloWorld.tsx**, clique com o botão direito do rato no mesmo e selecione **Delete** para remover o ficheiro de componentes à medida que este é criado automaticamente e não o iremos utilizar.
+1. Selecione o arquivo de componente **HelloWorld.tsx**, clique com o botão direito sobre ele e selecione **Excluir** para remover o arquivo, pois ele é criado automaticamente e não o utilizaremos.
 
     ![](images/L02/dv_p3_e2_g_13.png)
 
-1. Navegue para este caminho `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` no ficheiro explorador.
+1. No explorador de arquivos, navegue até o caminho `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources`.
 
-1. Arraste o ficheiro **PriorityComponent.tsx** e deixe-o largar na pasta **PrioriZDnDranking**.
+1. Arraste o arquivo **PriorityComponent.tsx** e solte-o na pasta **PrioriZDnDranking**.
 
-1. O ficheiro **PriorityComponent.tsx** deve agora estar na pasta **PrioriZDnDranking**.
+1. O arquivo **PriorityComponent.tsx** agora deve estar na pasta **PrioriZDnDranking**.
 
     ![](images/L02/image16.png)
 
-1. Clique em **File** e guarde as suas alterações.
+1. Clique em **Arquivo** e salve suas alterações.
 
-1. Abra o **PriorityComponent.tsx** e reveja o conteúdo. Isto implementa o React componente que será renderizado para representar os nossos itens dragáveis.
+1. Abra o arquivo **PriorityComponent.tsx** e revise o conteúdo. Ele implementa o componente React que será renderizado para representar nossos itens arrastáveis.
 
-1. A linha de notificação 9 `from react-beautiful-dnd` tem um sublinhado vermelho. Este é um pacote npm o componentes utilizamos que não fazemos referenciados.
+1. Observe que a linha 9 `from react-beautiful-dnd`, tem um sublinhado vermelho. Trata-se de um pacote npm utilizado pelo componente, mas que ainda não foi referenciado.
 
     ![](images/L02/image17.png)
 
-1. Execute o seguinte comando numa janela de terminal para adicionar uma referência a react-beautiful-dnd.
+1. Execute o seguinte comando em uma janela de terminal para adicionar uma referência ao react-beautiful-dnd.
 
     ```
     npm install react-beautiful-dnd
     ```
 
-    >**Nota:** Se receber este erro **npm is not recognised**, execute os passos abaixo:
+    >**Observação:** Se você receber este erro **npm is not recognised**, siga os passos abaixo:
 
     - Abra o PowerShell e execute este comando `choco install -y --force nodejs`.
     
-    - Assim que a execução do comando estiver concluída, feche o Visual Studio Code e abra-o novamente.
+    - Quando a execução do comando terminar, feche e reabra o Visual Studio Code.
     
     - Execute o **Passo 8** desta tarefa novamente para instalar o pacote **react-beautiful-dnd**.
 
-1. Execute o seguinte comando para as definições tipo.
+1. Execute o seguinte comando para as definições de tipo (*type definitions*).
 
     ```
     npm i --save-dev @types/react-beautiful-dnd
@@ -204,9 +198,9 @@ Neste exercício, você irá construir o componente de código.
 
 1. Observe que o sublinhado vermelho na linha 9 foi resolvido.
 
-1. Abra o ficheiro **index.ts**.
+1. Abra o arquivo **index.ts**.
 
-1. Remova a seguinte linha (linha número 2 no ficheiro Index.ts), pois já não estamos a utilizar o HelloWorld
+1. Remova a seguinte linha (linha 2 no arquivo Index.ts), pois não estamos mais usando o `HelloWorld`.
 
     ```
     import { HelloWorld, IHelloWorldProps } from "./HelloWorld";
@@ -214,7 +208,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image18.png)
 
-1. Adicione o código abaixo ao ficheiro **index.ts** após **linha número 1**. Isto fará referência ao PriorityComponent.
+1. Adicione o código abaixo ao arquivo **index.ts** após a **linha 1**. Isso fará referência ao `PriorityComponent`.
 
      ```
      import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
@@ -222,11 +216,11 @@ Neste exercício, você irá construir o componente de código.
     
      ![](images/L02/image19.png)
 
-1. Localize a classe **Export** na **linha número 7**.
+1. Localize a classe **Export** na **linha 5**.
 
      ![](images/L02/image20.png)
 
-1. Adicione o seguinte código abaixo dentro da classe **export**. Isto define algumas variáveis ​​de trabalho que estará a utilizar na lógica da classe.
+1. Adicione o código abaixo dentro da classe **export**. Isso define algumas variáveis ​​de trabalho que você usará na lógica da classe.
 
      ```
      private context: ComponentFramework.Context<IInputs>;
@@ -236,11 +230,11 @@ Neste exercício, você irá construir o componente de código.
             
      ![](images/L02/image21.png)
 
-1. Localize a função **init**.
+1. Localize a função **init** e remova a seguinte linha de código:
 
      ![](images/L02/init.png)
 
-1. Cole o código abaixo dentro da função **init**. Esta lógica inicializa as nossas variáveis ​​de classe do valores de tempo de execução e permite a notificação de redimensionamento.
+1. Cole o código abaixo dentro da função **init**. Esta lógica inicializa nossas variáveis de classe a partir dos valores de tempo de execução e habilita a notificação de redimensionamento.
 
      ![](images/L02/init1.png)
 
@@ -253,7 +247,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/imageUpdateView.png)
 
-1. Substitua a função **updateView** pela função abaixo. Esta lógica cria o Elemento React do PriorityComponent e adiciona-o ao DOM virtual.
+1. Substitua a função **updateView** pela função abaixo. Esta lógica cria o Elemento React a partir do `PriorityComponent` e o adiciona ao DOM virtual.
 
     ```   
     public updateView(context: ComponentFramework.Context<IInputs>): React.ReactElement {
@@ -275,7 +269,7 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image24.png)
 
-1. Adicione o código abaixo após a função **destroy**. Esta lógica trata do evento onReorder de o PriorityComponent e identifica os itens envolvidos na aplicação de alojamento como itens selecionados.
+1. Adicione o código abaixo após a função **destroy**. Esta lógica lida com o evento `onReorder` do `PriorityComponent` e identifica os itens envolvidos para o aplicativo hospedeiro como itens selecionados.
 
     ```
     onReorder = (sourceIndex: number, destinationIndex: number): void => {
@@ -291,9 +285,9 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/image25.png)
 
-    > **Nota** : A função **Destroy** função estará presente no final da classe **PrioritZDnDranking**.
+    > **Observação:**  A função **Destroy** estará no final da classe **PrioritZDnDranking**.
 
-1. Após concluir todos os passos, o seu ficheiro `index.ts` deverá conter o seguinte código.
+1. Após concluir todos os passos, para evitar erros, substitua o código existente em seu arquivo `index.ts` pelo código a seguir. Em seguida, pressione `CTRL + S` para salvar o arquivo:
 
     ```
     import { IInputs, IOutputs } from "./generated/ManifestTypes";
@@ -382,13 +376,13 @@ Neste exercício, você irá construir o componente de código.
     } 
     ```
  
-1. Abra o ficheiro **package.json**.
+1. Abra o arquivo **package.json**.
 
-1. Localize o objeto **dependencies** JSON.
+1. Localize o objeto JSON **dependencies**.
 
     ![](images/L02/image26.png)
 
-1. Substitua **dependencies** pelo JSON abaixo.
+1. Substitua **dependencies** pelo JSON abaixo. Em seguida, pressione **CTRL + S** para salvar o arquivo.
 
     ```
     "dependencies": {
@@ -405,7 +399,7 @@ Neste exercício, você irá construir o componente de código.
     },
     ```
 
-1. Navegue até ao ficheiro **.eslintric.json(1)** da navegação esquerda para adicionar a nova regra de flexição. Localize **rules(2)** na **linha número 21** e cole as regras abaixo.
+1. Navegue até o arquivo **.eslintric.json(1)** na navegação à esquerda para adicionar a nova regra de lint. Localize **rules(2)** na **linha 22** e substitua o código seguindo as regras especificadas abaixo.
 
     ```
     "no-unused-vars": ["off"],
@@ -414,126 +408,128 @@ Neste exercício, você irá construir o componente de código.
 
     ![](images/L02/eslint.png)
 
-1. Clique em **File** e guarde todas as suas alterações.
+1. Clique em **Arquivo** e salve todas as suas alterações.
 
-1. Clique no menu de opções **(1)** no canto superior direito, selecione **Terminal** **(2)** e depois clique em **Novo Terminal** **(3)** para abrir um novo terminal no VS Code.
+1. Clique nas **Reticências (...)** **(1)**, em **Terminal** **(2)** e selecione **Novo Terminal** **(3)**, se ainda não estiver aberto.
 
    ![](images/L01/dv_port2_e1_g_14.png)
 
-1. Execute o comando abaixo. Isto irá construir o seu componente e identificar quaisquer problemas.
+1. Execute o comando abaixo. Isso irá construir o seu componente e identificará quaisquer problemas.
 
     ```
     npm run-script build
     ```
 
-    > **Nota:** Se a operação de compilação falhar com este erro **`Root element is missing`**, certifique-se de que o **resx path** é comentado no ficheiro Manifest.Xml e tente construir o componente novamente.
+    > **Observação:** Se a operação de compilação falhar com o erro **`Root element is missing`**, certifique-se de que o **resx path** está comentado no arquivo `ControlManifest.Input.xml` e tente construir o componente novamente.
 
-1. A construção deve ter sucesso. Se algum erro, resolva-os antes de prosseguir.
+1. O *build* deve ser bem-sucedido. Se houver algum erro, resolva-os antes de prosseguir.
 
      ![](images/L02/image28.png)
 
-1. Execute o comando abaixo para iniciar o teste.
+1. Execute o comando abaixo para iniciar o ambiente de teste.
 
     ```
     npm start
     ```
 
-    > **Nota:** se você receber um pop-up do Internet Explorer, feche-o, copie o URL do host local e cole-o em uma nova guia no Edge.
-
-1. O teste deve iniciar, se não, copiar o endereço e colar-o numa nova janela do browser. Experimente arrastar os itens e ver se o comportamento funciona como esperado.
+1. O ambiente de teste deve iniciar; caso contrário, copie o endereço e cole-o em uma nova janela do navegador Edge. Tente arrastar os itens e veja se o comportamento funciona como esperado.
 
     ![](images/L02/imagee29u.png)
 
-    > **Nota:** Se o teste não começar como esperado, não poderá ver a saída esperada como mencionado. Verifique se seguiu as instruções anteriores e adicionou o código corretamente nos ficheiros **Manifest e Index**.
+    > **Observação:**  Se você receber um pop-up do Internet Explorer, feche-o, copie a URL `localhost` e cole-a em uma nova aba no Edge.
+    > **Observação:** Se o ambiente de teste não iniciar como esperado e você não conseguir ver o resultado esperado, verifique se seguiu as instruções anteriores e adicionou o código corretamente nos arquivos **Manifest** e **Index**.
 
-1. Feche o teste fechando a aba do navegador.
+1. Feche o ambiente de teste fechando a aba do navegador.
 
-1. Pare a corrida segurando a tecla **[CONTROL]** + **C**.
+1. Pare a execução pressionando a tecla **[CONTROL]** + **C**.
 
-1. Tipo **Y** e [ENTER].
+1. Digite **Y** e pressione [ENTER].
 
     ![](images/L02/image30.png)
 
-1. Execute o comando abaixo para empurrar a compidentificador para o seu ambiente.
+1. Execute o comando abaixo para enviar o componente para o seu ambiente.
     
     ```
     pac pcf push --publisher-prefix contoso
     ```
 
-    > **Nota:** Siga uma das opções abaixo conforme o erro apresentado:
-     - Se você encontrar a mensagem de erro **"Erro: Ferramenta necessária ausente: MSBuild.exe/dotnet.exe. Adicione MSBuild.exe/dotnet.exe na variável de ambiente Path ou use 'Desenvolvedor 
-        Prompt de comando para VS'"**, siga estas etapas:
-        - Navegue até o diretório `C:\LabFiles` e abra **dotnet-sdk-8.0.100-win-x64**.
-        - Na janela de configuração, selecione **Reparar** e aguarde a conclusão do processo.
-        - Após a conclusão do reparo, feche o Visual Studio Code, reabra-o e primeiro execute o comando build presente na etapa 28 e execute novamente o comando acima.
-        - Se o problema persistir, desinstale **dotnet-sdk-8.0.100-win-x64** e instale a versão mais recente da [página de download do .NET](https://dotnet.microsoft.com/en-us/download). Feche o Visual Studio Code, abra-o novamente, execute o comando build da etapa 28 e execute o comando acima novamente.
-
-     - Se a operação de push falhar com o erro **`Desculpe, a aplicação encontrou um erro      irrecuperável e terá de ser encerrada`**, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente nos ficheiros **Manifest e Index**. 
+ > **Notas de Solução de Problemas:** 
+    
+    > 1. Se você encontrar a mensagem de erro **"Error: Missing required tool: MSBuild.exe/dotnet.exe. Please add MSBuild.exe/dotnet.exe"**, siga estes passos:
         
-        Além disso, você pode encontrar os arquivos **Manifest and Index** no local `C:\LabFiles`, você pode comparar seu código com esses arquivos e corrigir os problemas, se houver algum. 
-        tente enviar o componente novamente executando o comando **pac push** novamente.
-     - Se a execução falhar com um erro de pacote Nuget, execute o comando abaixo no PowerShell e tente executar o comando acima novamente.
+    > - Navegue até o diretório `C:\LabFiles` e abra **dotnet-sdk-8.0.100-win-x64**.
+           
+    > - Na janela de configuração, selecione **Repair** e aguarde a conclusão.
+
+    > - Após o reparo, feche e reabra o Visual Studio Code, execute o comando de `build` do passo 28 e, em seguida, execute o comando push novamente.
+
+    > - If the issue persists, uninstall **dotnet-sdk-8.0.100-win-x64** and install the latest version from [the .NET download page](https://dotnet.microsoft.com/en-us/download). Close Visual Studio Code, reopen it, run the build command from step 28, and then execute the above command again.
+
+    > 2. Se o erro de **push** **Sorry, the app encountered a non-recoverable error...** ocorrer, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente nos arquivos **Manifest* e **Index**. Você pode encontrar os arquivos de referência em `C:\LabFiles` para comparar seu código.
+
+    > 3. Se a execução falhar com um erro de pacote Nuget, execute o comando abaixo no PowerShell e tente o comando `push` novamente:
     
         ```
-        dotnet nuget adicionar fonte https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
+        dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
         ```
-1. Aguarde que a solução seja importada e publicada no seu ambiente.
+1. Aguarde a solução ser importada e publicada em seu ambiente.
 
     ![](images/L02/image31uu.png)
 
-### Tarefa 3: Confirme que o controlo foi adicionado ao ambiente
+### Tarefa 3: Confirme que o controle foi adicionado ao ambiente
 
-1. Navegue até ao portal do fabricante de aplicações Power, utilizando o URL abaixo, se ainda não estiver aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** é selecionado.
+1. Navegue até o portal de criação do Power Apps usando a URL abaixo, se ainda não estiver aberto. Certifique-se de que o ambiente de desenvolvimento chamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** esteja selecionado.
 
     ```
     https://make.powerapps.com/
     ```
 
-1. No painel de navegação à esquerda, selecione **Soluções** **(1)** e clique na solução **PowerAppsTools_contoso** **(2)** para abri-la.
+1. No painel de navegação à esquerda, selecione **Soluções** **(1)** e abra a solução **PowerAppsTools_contoso** **(2)**.
 
     ![](images/L02/dv_p3_e2_g_17.png)
 
-1. Confirme que o controlo personalizado está nesta solução.
+1. Clique em **Tudo** e confirme que o controle personalizado está nesta solução.
 
     ![](images/L02/cor_g_6.png)
 
-> **Parabéns** por completar a tarefa! Agora, é hora de validá-lo. Aqui estão os passos:
+> **Parabéns** por concluir a tarefa! Agora, é hora de validá-la. Aqui estão os passos:
 > - Pressione o botão Validar para a tarefa correspondente. Se receber uma mensagem de êxito, pode prosseguir para a próxima tarefa. 
 > - Se não, leia atentamente a mensagem de erro e tente novamente a etapa, seguindo as instruções no guia do laboratório.
 > - Se precisar de ajuda, entre em contato conosco pelo cloudlabs-support@spektrasystems.com. Estamos disponíveis 24 horas por dia, 7 dias por semana para ajudar.
 
 <validation step="aae02cab-a129-491c-b38b-29c66f2f2547" />
 
-## Exercício 2 – Use Componente de Código
+## Exercício 2 – Usar o Componente de Código
 
-Neste exercício, irá utilizar o componente de código que criou na aplicação de tela PrioritZ Ask.
+Neste exercício, você usará o componente de código que criou na aplicação de tela **PrioritZ Ask**.
 
-### Tarefa 1: Permitir a estrutura do componente Apps Power
+### Tarefa 1: Permitir o framework de componentes do Power Apps
 
-Nesta tarefa, permitirá a publicação de aplicações em tela com componentes de código para o seu ambiente.
+Nesta tarefa, você permitirá a publicação de aplicativos de tela com componentes de código em seu ambiente.
 
-1. Navegue até ao centro de administração da Power Platform utilizando o URL abaixo e selecione ambientes.
+1. Navegue até ao centro de administração do Power Platform utilizando a URL abaixo e selecione ambientes.
 
     ```
     https://admin.powerplatform.microsoft.com/environments
     ```
 
-1. Abra o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** que está a utilizar para este laboratório.
+1. Abra o ambiente de desenvolvimento chamado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** que você está usando para este laboratório.
 
     ![](images/L02/dv_p3_e2_g_18.png)
 
-1. Clique em **Definições** para aceder às opções de configuração.
+1. Clique em **Configurações** no menu superior.
 
     ![](images/L02/dv_p3_e2_g_19.png)
 
-1. Na página **Definições**, expanda a seção **Produto** **(1)** e clique em **Funcionalidades** **(2)** para visualizar as opções disponíveis.
+1. Na página **Configurações**, expanda a seção **Produto** **(1)** e clique em **Recursos** **(2)** para visualizar as opções disponíveis.
 
     ![](images/L02/dv_p3_e2_g_20.png)
 
-1. Ative a opção **Permitir a publicação de aplicações de tela com componentes de código** deslizando o botão para **Ativado** **(1)** e clique em **Guardar** **(2)** para aplicar as alterações.
+1. Ative a opção **Permitir a publicação de aplicativos de tela com componentes de código**. Role para baixo e clique em  deslizando o botão para **Ativado** **(1)** e clique em **Salvar** **(2)** para aplicar as alterações.
 
     ![](images/L02/dv_p3_e2_g_21.png)
 
+>> COntinuar aqui !!!
  ### Tarefa 2: Editar aplicação em tela
 
 Nesta tarefa, irá editar a aplicação PrioritZ Ask em tela para utilizar o componente de código que criou.
