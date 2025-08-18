@@ -26,7 +26,7 @@ Neste exercício, você importará a solução atual para o ambiente de desenvol
 
       ![azure portal.](images/L01/PAportal.png)
 
-1. Na janela de login **Iniciar sessão**,insira o seguinte **nome de usuário fornecido no e-mail de credenciais** **(1)** e clique em **Avançar** **(2)**.
+1. Na janela de login **Iniciar sessão**,insira o seguinte ** fornecido no e-mail de credenciais** **(1)** e clique em **Avançar** **(2)**.
 
    - E-mail/nome do usuário: <inject key="AzureAdUserEmail"></inject>
 
@@ -149,7 +149,7 @@ Neste exercício, você importará a solução atual para o ambiente de desenvol
 
 ### Tarefa 2: Teste as aplicações
 
-1. Navegue de volta para a solução **PrioritZ** clicando em **Fluxos na cloud**. Em alternativa, também pode abrir o portal do fabricante **Power Apps** utilizando este URL `https://make.powerapps.com` se ainda não está aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** é selecionado.
+1. Navegue de volta para a solução **PrioritZ** clicando em **Fluxos da nuvem**. Em alternativa, também pode abrir o portal do **Power Apps** utilizando esta URL `https://make.powerapps.com` se ainda não está aberto. Certifique-se de que o ambiente de desenvolvimento denominado **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** é selecionado.
 
    ![](images/L01/dv_p2_e1_g_20.png)
 
@@ -159,7 +159,7 @@ Neste exercício, você importará a solução atual para o ambiente de desenvol
 
    ![](images/L01/dv_p2_e1_g_21.png)
 
-1. No menu de navegação à esquerda, selecione **Aplicações** **(1)** e verifique se as aplicações **Prioritz Ask** e **Prioritz Admin** estão listadas **(2)**.
+1. No menu de navegação à esquerda, selecione **Aplicativos** **(1)** e verifique se as aplicações **Prioritz Ask** e **Prioritz Admin** estão listadas **(2)**.
 
    >**Info:** A aplicação **PrioritZ Admin** é utilizada para gerir tópicos que estão a ser solicitados e a aplicação **PrioritZ Ask** permite que os utilizadores respondam.
 
@@ -183,7 +183,7 @@ Neste exercício, você importará a solução atual para o ambiente de desenvol
 
 1. Clique no botão **<** Voltar.
 
-   > **Nota**: Deve voltar ao tela inicial.
+   > **Observação**: Deve voltar ao tela inicial.
 
 1. Agora, clique no botão **+** para adicionar um novo tópico.
 
@@ -191,9 +191,9 @@ Neste exercício, você importará a solução atual para o ambiente de desenvol
 
 1. Forneça as informações abaixo e clique em **add a picture** que está presente abaixo **Respond By**.
 
-    - **Topic**: Introduza `Change Taco Tuesday to some other food`
+    - **Topic**: Digite: `Change Taco Tuesday to some other food`
     
-    - **Details**: Introduza `People are tired of tacos, what should we have instead of tacos?`
+    - **Details**: Digite: `People are tired of tacos, what should we have instead of tacos?`
 
 1. **Responda By**: Selecione **today's date**.
 
@@ -201,7 +201,7 @@ Neste exercício, você importará a solução atual para o ambiente de desenvol
 
 1. Navegue para este caminho `C:\LabFiles` no explorador de arquivos, seleccione **image.png** e clique em abrir.
 
-1. Introduza **Tamale Tuesday** no campo Choice e clique em **add a picture** que está presente abaixo do campo Choice.
+1. Insira **Tamale Tuesday** no campo Choice e clique em **add a picture** que está presente abaixo do campo Choice.
 
       ![](images/L01/image18.png)
 
@@ -215,11 +215,11 @@ Neste exercício, você importará a solução atual para o ambiente de desenvol
 
 1. Adicione mais algumas opções repetindo **os passos 12-14**.
 
-    - **Escolha 1**: Introduza `Steak Tuesday`
+    - **Choice 1**: Digite: `Steak Tuesday`
 
-    - **Escolha 2**: Introduza `Cheese and Wine Tuesday`
+    - **Choice 2**: Digite: `Cheese and Wine Tuesday`
 
-1. Clique no botão **Save** para guardar o tópico.
+1. Clique no botão **Save** para salvar o tópico.
 
     ![](images/L01/image20.png)
 
@@ -269,7 +269,7 @@ aplicação.
    https://make.powerapps.com
    ```
 
-1. Selecione **Solutions (1)** do menu do lado esquerdo das aplicações de alimentação e abra a solução **PrioritZ (2)**.
+1. Selecione **Solutições (1)** do menu do lado esquerdo e abra a solução **PrioritZ (2)**.
 
     ![](images/L01/EX2-T1-2-1.png)
 
@@ -277,7 +277,7 @@ aplicação.
 
     ![](images/L01/dv_p2_e1_g_35.png)
 
-1. Introduza o valor abaixo no campo de nomes de visualização.
+1. Digite o valor abaixo no campo de nomes de visualização.
 
    ```
    My Notes
@@ -287,19 +287,19 @@ aplicação.
 
    ![](images/L01/dv_p2_e1_g_37.png)
 
-   > **Nota**: Não navegue por esta página.
+   > **Observação**: Não navegue por esta página.
 
 ### Tarefa 2: Atualize a aplicação de administrador
 
-1. No painel **Objetos**, selecione **Aplicações** **(1)**. Na lista de aplicações, selecione **Prioritz Admin** **(2)** e clique em **Editar** **(3)**.
+1. No painel **Objetos**, selecione **Aplicativos** **(1)**. Na lista de aplicativos, selecione **Prioritz Admin** **(2)** e clique em **Editar** **(3)**.
 
     ![](images/L01/dv_p2_e1_g_38.png)
 
-1. Na **Vista de árvore**, selecione **Add Topic Screen** **(1)**. No menu superior, clique em **Inserir** **(2)** e selecione **Entrada de texto** **(3)**.
+1. Na **Exibição em árvore**, selecione **Add Topic Screen** **(1)**. No menu superior, clique em **Inserir** **(2)** e selecione **Entrada de texto** **(3)**.
 
     ![](images/L01/cor_g_1.png)
 
-1. Na **Vista de árvore**, renomeie o campo recém-adicionado para **Notes textbox**.
+1. Na **Exibição em árvore**, renomeie o campo recém-adicionado para **Notes textbox**.
 
    ```
    Notes textbox
@@ -343,7 +343,7 @@ aplicação.
 
       ![](images/L01/dv_port2_e1_g_6.png)
 
-1. Clique duas vezes no rótulo recentemente adicionado e introduza o valor abaixo para renomear o rótulo que acabou de adicionar.
+1. Clique duas vezes no rótulo recentemente adicionado e digite o valor abaixo para renomear o rótulo que acabou de adicionar.
 
       ```
       Notes label
@@ -384,7 +384,7 @@ aplicação.
 
 1. Navegue para este caminho C:\LabFiles no explorador de arquivos, seleccione **image.png** e clique em abrir.
 
-1. Introduza **Test One** no campo Choice e clique em **add a picture** que esteja presente abaixo do campo Choice.
+1. Digite **Test One** no campo Choice e clique em **add a picture** que esteja presente abaixo do campo Choice.
 
     ![](images/L01/image18.png)
 
@@ -398,13 +398,13 @@ aplicação.
 
 1. Adicione mais uma escolha repetindo **passos 20-22** desta tarefa.
 
-    1. **Choice 1**: Introduza `Test Two`
+    1. **Choice 1**: Digite: `Test Two`
 
 1. Depois de adicionar todas as opções e detalhes do tópico, o seu tela deve corresponder à imagem abaixo.
 
    ![](images/L01/L01-testnotes.png)
 
-1. Agora, clique no botão **Save**. O novo tópico deve ser **saved**.
+1. Agora, clique no botão **Save**. O novo tópico deve ser **salvado**.
 
 1. Clique para abrir o tópico **Test Notes** que acabou de criar.
 
@@ -474,11 +474,11 @@ Neste exercício, você irá revisar e testar a extensão da CLI da Power Platfo
 
 1. Conclua o processo de **Login**, usando as credenciais abaixo.
 
-   - E-mail/nome de usuário: <inject key="AzureAdUserEmail"></inject>
+   - E-mail/Usuário: <inject key="AzureAdUserEmail"></inject>
    
    - Senha: <inject key="AzureAdUserPassword"></inject>
 
->**Observação:** Se um Aviso de Segurança do Windows aparecer, clique em **Sim** para prosseguir.
+      >**Observação:** Se um Aviso de Segurança do Windows aparecer, clique em **Sim** para prosseguir.
 
    ![](images/L01/cor2_1_g_3.png)
 
