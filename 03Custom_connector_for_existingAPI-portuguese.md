@@ -36,7 +36,7 @@ Ao analisar a API, você verá que ela possui quatro operações e utiliza auten
 
     ![](images/L03/dv_p4_e3_g_2.png)
 
->**Observação:** Se o banco de dados do Dataverse já estiver criado, pule esta tarefa e continue com o Exercício 2.
+    >**Observação:** Se o banco de dados do Dataverse já estiver criado, pule esta tarefa e continue com o Exercício 2.
 
 1. Na janela **Nova Banco de dados**, selecione **Moeda → TND (1)**, **Linguagem → English (United States) (2)** e clique em **Criar um banco de dados (3)**.
 
@@ -95,7 +95,7 @@ Neste exercício, você criará um conector personalizado a partir de uma API ex
 
     ![](images/L03/image4.png)
 
->**Observação:** Se estiver com problemas para salvar, copie o código, cole no Bloco de Notas e salve o arquivo como `swagger.json`.
+    >**Observação:** Se estiver com problemas para salvar, copie o código, cole no Bloco de Notas e salve o arquivo como `swagger.json`.
 
 1. Volte ao portal de criação do Power Apps, selecione **Ambientes (1)** e certifique-se de que está em seu ambiente de desenvolvimento **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** **(2)**.
 
