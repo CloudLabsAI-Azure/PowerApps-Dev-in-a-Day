@@ -89,7 +89,7 @@ Para ajustar o nível de zoom da página do ambiente, clique no ícone **A↕** 
 
 2. Você verá a aba **Entrar no Microsoft Azure**. Aqui, insira as suas credenciais:
 
-    - **E-mail/Nome de usuário:** <inject key="AzureAdUserEmail"></inject>
+    - **E-mail/Usuário:** <inject key="AzureAdUserEmail"></inject>
 
       ![](./images/EmailID.png)
 
