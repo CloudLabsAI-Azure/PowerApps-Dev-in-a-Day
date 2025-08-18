@@ -453,21 +453,18 @@ Neste exercício, você irá construir o componente de código.
     pac pcf push --publisher-prefix contoso
     ```
 
- > **Notas de Solução de Problemas:** 
+ **Notas de Solução de Problemas:** 
     
-    > 1. Se você encontrar a mensagem de erro **"Error: Missing required tool: MSBuild.exe/dotnet.exe. Please add MSBuild.exe/dotnet.exe"**, siga estes passos:
+    1. Se você encontrar a mensagem de erro **"Error: Missing required tool: MSBuild.exe/dotnet.exe. Please add MSBuild.exe/dotnet.exe"**, siga estes passos:
         
-    > - Navegue até o diretório `C:\LabFiles` e abra **dotnet-sdk-8.0.100-win-x64**.
-           
-    > - Na janela de configuração, selecione **Repair** e aguarde a conclusão.
+       - Navegue até o diretório `C:\LabFiles` e abra **dotnet-sdk-8.0.100-win-x64**.   
+       - Na janela de configuração, selecione **Repair** e aguarde a conclusão.
+       - Após o reparo, feche e reabra o Visual Studio Code, execute o comando de `build` do passo 28 e, em seguida, execute o comando push novamente.
+       - Se o problema persistir, desinstale o dotnet-sdk-8.0.100-win-x64 e instale a versão mais recente na página de download do .NET. Feche o Visual Studio Code, reabra-o, execute o comando de build do passo 28 e, em seguida, execute novamente o comando acima.
 
-    > - Após o reparo, feche e reabra o Visual Studio Code, execute o comando de `build` do passo 28 e, em seguida, execute o comando push novamente.
+    2. Se o erro de **push** **Sorry, the app encountered a non-recoverable error...** ocorrer, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente nos arquivos **Manifest* e **Index**. Você pode encontrar os arquivos de referência em `C:\LabFiles` para comparar seu código.
 
-    > - If the issue persists, uninstall **dotnet-sdk-8.0.100-win-x64** and install the latest version from [the .NET download page](https://dotnet.microsoft.com/en-us/download). Close Visual Studio Code, reopen it, run the build command from step 28, and then execute the above command again.
-
-    > 2. Se o erro de **push** **Sorry, the app encountered a non-recoverable error...** ocorrer, certifique-se de que seguiu as instruções anteriores e adicionou o código corretamente nos arquivos **Manifest* e **Index**. Você pode encontrar os arquivos de referência em `C:\LabFiles` para comparar seu código.
-
-    > 3. Se a execução falhar com um erro de pacote Nuget, execute o comando abaixo no PowerShell e tente o comando `push` novamente:
+    3. Se a execução falhar com um erro de pacote Nuget, execute o comando abaixo no PowerShell e tente o comando `push` novamente:
     
         ```
         dotnet nuget add source https://api.nuget.org/v3/index.json -n nuget.org --configfile $env:APPDATA\NuGet\NuGet.Config
@@ -551,7 +548,7 @@ Nesta tarefa, você editará o aplicativo de tela **PrioritZ Ask** para usar o c
    
     ![](images/L02/dv_p3_e2_g_24.png)
 
-1. Selecione a guia **Código (1)**, selecione o componente **PrioritZDnDRanking (2)** e clique em **Importar (3)**.
+1. Selecione a guia **Código (1)**, (2)** e clique em **Importar (3)**.
 
     ![](images/L02/dv_p3_e2_g_25_cor.png)
 
@@ -581,7 +578,7 @@ Nesta tarefa, você editará o aplicativo de tela **PrioritZ Ask** para usar o c
 
     ![](images/L02/dv_p3_e2_g_27.png)
 
->**Observação:** Se aparecer um pop-up para **Selecionar uma fonte de dados**, simplesmente clique em Fechar.
+   >**Observação:** Se aparecer um pop-up para **Selecionar uma fonte de dados**, simplesmente clique em Fechar.
 
 1. Vá para o **Modo de exibição de árvore (1)** e selecione o componente **PrioritZDnDRanking (2)** que você acabou de adicionar.
 
@@ -597,7 +594,7 @@ Nesta tarefa, você editará o aplicativo de tela **PrioritZ Ask** para usar o c
 
     ![](images/L02/cor_g_7.png)
 
->**Observação:** Se não encontrar as propriedades no lado direito da tela, clique na opção de propriedades localizada ao lado do botão de edição no canto superior direito.
+   >**Observação:** Se não encontrar as propriedades no lado direito da tela, clique na opção de propriedades localizada ao lado do botão de edição no canto superior direito.
 
 1. Clique em **+ Adicionar campo** para adicionar um novo campo.
 
