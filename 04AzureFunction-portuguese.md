@@ -12,7 +12,7 @@ Trabalhando como parte da equipe de desenvolvimento da PrioritZ, você irá conf
 - Exercício 2: Implementação da função
 - Exercício 3: Publicar no Azure
 - Exercício 4: Criar o conector
-- Exercício 5: Usar a Função a partir de um Aplicativo de Tela
+- Exercício 5: Usar a Função no Aplicativo de Tela
 
 ## Exercício 1 – Criar uma Azure Function
 
@@ -323,7 +323,7 @@ Neste exercício, você implantará a função no Azure.
 
 3. Conclua o processo de login com suas credenciais.
 
-    * E-mail/nome de usuário: <inject key="AzureAdUserEmail"></inject>
+    * E-mail/Usuário: <inject key="AzureAdUserEmail"></inject>
     
     * Senha: <inject key="AzureAdUserPassword"></inject>
 
@@ -349,217 +349,216 @@ Neste exercício, você implantará a função no Azure.
     
     ![](images/L04/vscode27.png)
 
---- PAREI QUI!!!!
-11. Depois de a aplicação Função estar implantada, Clique em **Deploy to Azure** na secção **Workspaces** e escolha a Aplicação de Função que criou.
+10. Após a implantação, clique em **Deploy to Azure** na seção **Workspaces** e escolha o Aplicativo de Função que você criou.
 
     ![](images/L04/DeployNewu.png)
 
     ![](images/L04/DeployNew1u.png)
 
-12. Aguarde que a aplicação de função seja implementada e navegue até ao Portal Azure utilizando o URL abaixo.
+11. Aguarde a implantação e navegue até o Portal do Azure.
 
     ```
     https://portal.azure.com/
     ```
 
-13. Selecione **All resources**, pesquise pela aplicação de função **PrioritZFunc<inject key="Deployment ID" activãoCopy="false" />** que implantou anteriormente e clicar para o abrir.
+12. Selecione **Todos os recursos**, pesquise pela aplicação de função **PrioritZFunc<inject key="Deployment ID" activãoCopy="false" />** que implantou anteriormente e clicar para o abrir.
 
     ![](images/L04/vscode27.1.png)
 
-14. Selecione **Authentication (1)** do menu do lado esquerdo e clique em **Add identity provider (2)**.
+13. Selecione **Autenticação (1)** do menu esquerdo e clique em **Adicionar provedor de identidade (2)**.
 
     ![](images/L04/L04-auth.1.png)
 
-15. Selecione **Microsoft** para o fornecedor de identidade e **Current tenant - Single tenant** para **Supported Account types** e clique em **Add**.
+14. Selecione **Microsoft** como provedor de identidade e **Inquilino atual - Inquilino único** como Tipos de conta suportados. Clique em **Adicionar**.
 
     ![](images/L04/L04-auth.2.png)
 
-16. Abra o menu **Portal** clicando no ícone do menu Portal.
+15. Abra o menu do **Portal** e selecione Microsoft Entra ID.
 
     ![](images/dev4.png)
 
-17. Selecione **Microsoft Entra ID** na lista de recursos.
-
-    ![](images/dev1.png)
-
-18. Selecione **App registrations** em **Manage** do menu do lado esquerdo.
+16. Selecione **Registros de aplicativo** na seção **Gerenciar** no menu do lado esquerdo.
 
     ![](images/L04/vscode30.png)
 
-19. Clique para abrir o **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />** para abrir a aplicação.
+17. Clique para abrir o registro do aplicativo **PrioritZFunc<inject key="Deployment ID" enableCopy="false" />**.
 
     ![](images/L04/vscode31.png)
 
-20. Copie o **Application (client) ID** do **PrioritZFunc<inject key="Deployment ID" activityCopy="false" />** inscrição da aplicação e guarde-o num
- nota como **ID da aplicação API PrioritZFL**. Vai precisar deste ID em passos futuros. Este ID será utilizado para configurar a proteção da API.
+18. Copie o **ID do aplicativo (cliente)** do **PrioritZFunc<inject key="Deployment ID" activityCopy="false" />** e salve-o no Bloco de Notas como **ID da aplicação API PrioritZFL**.
 
     ![](images/L04/image%20(33).png)
 
     ![](images/L04/image%20(34).png)
 
-    >**Nota**: Certifique-se de que copia e colide o valor correto **Aplicação (cliente) ID**. Copiar o valor incorreto resultará em problemas nos próximos passos/tarefas.
+>**Observação:** certifique-se de copiar e colar o valor correto do ID do Aplicativo (client). Copiar o valor incorreto resultará em problemas nas próximas etapas/tarefas.
 
-21. Copie o **Directory (tenant) ID** ae mantenha-o num bloco de notas como **Tenant ID**. Vai precisar deste ID em passos futuros.
+19. Copie o **ID do diretório (locatário)** e salve-o no Bloco de Notas como **Tenant ID**.
 
     ![](images/L04/image%20(35).png)
 
-    >**Nota**: Certifique-se de que copia e colide o valor correto de **Directory (inquilino) ID**. Copiar o valor incorreto resultará em problemas nos próximos passos/tarefas.
+>**Observação:** certifique-se de copiar e colar o valor correto do ID do Diretório (tenant). Copiar o valor incorreto resultará em problemas nas próximas etapas/tarefas.
 
-22. Selecione **Certificates & secrets** em **Manage** no menu do lado esquerdo.
+20. Selecione **Certificados e segredos** em **Gerenciar** no menu do lado esquerdo.
 
     ![](images/L04/vscode32.png)
 
-23. Clique em **+ New client secret**.
+21. Clique em **+ Novo segredo do cliente**.
 
     ![](images/L04/image%20(36).png)
 
-24. Forneça uma descrição como **PrioritZ API secret (1)**, seleccione **3 months(2)** e clique em **Add(3)**.
+22. Forneça uma descrição como **Segredo da API PrioritZ (1)**, selecione a validade de **3 meses(2)** e clique em **Adicionar(3)**.
 
     ![](images/L04/image38.png)
 
-25. Copie o **Value** e mantenha-o num bloco de notas como **PrioritZFL API Secret**. Precisa desse valor em passos futuros.
+23. Copie o **Valor** do segredo e salve-o no Bloco de Notas como **Segredo da API PrioritZFL**.
 
-    >**Nota**: Certifique-se de que copia e colhe o valor correto **Secret**. Copiar o valor incorreto resultará em problemas nos próximos passos/tarefas.
+    >**Observação:** certifique-se de copiar e colar o valor correto do Secret. Copiar o valor incorreto resultará em problemas nas próximas etapas/tarefas.
 
-26. Selecione **API permissions** em **Manage** do menu do lado esquerdo.
+24. Selecione **Permissões de API** em **Gerenciar** no menu do lado esquerdo.
 
     ![](images/L04/vscode33.png)
 
-27. Clique em **+  Add a permission**.
+25. Clique em **+  Adicionar uma permissão**.
 
     ![](images/L04/image%20(39).png)
 
-28. Selecione **Dynamics CRM** na lista de permissões da API. Dynamics CRM é Dataverse, o portal Azure simplesmente não foi atualizado no momento da escrita dessas etapas.
+26. Selecione **Dynamics CRM** na lista. Dynamics CRM é o **Dataverse** – o portal do Azure ainda não havia sido atualizado no momento da escrita destas instruções.
 
     ![](images/L04/vscode34.png)
 
-29. Verifique a caixa de selecção **user_impersonation** e clique em **Add permission**.
+27. Marque a caixa de seleção **user_impersonation** e clique em **Adicionar permissão**.
 
-30. Volte a **Home** e abra o **PrioritZFunc<inject key="Deployment ID" activityCopy="false" />** a aplicação de função.
+28. Volte para **Início** e abra a aplicação de função **PrioritZFunc<inject key="Deployment ID" activityCopy="false" />**.
 
     ![](images/L04/vscode27.1.png)
 
-31. Selecione **Environment Variables (1)** em **Settings** do menu do lado esquerdo..
+29. Selecione **Variáveis de Ambiente (1)** em **Configurações** no menu do lado esquerdo.
 
-32. Clique em **+ Add (2)**
+30. Clique em **+ Adicionar (2)**.
 
     ![](images/L04/vscode36u.png)
 
-33. Introduza os seguintes detalhes sobre a **Add/Edit application setting** lâmina e clique em **Apply (3)**.
+31. Insira os seguintes dados no painel **Adicionar/Editar configuração do aplicativo** e clique em **Aplicar (3)**.
 
-    - **Name**: **ClientID (1)**
+    - **Nome**: **ClientID (1)**
     
-    - **Value**: Colar o **ID** da aplicação API **PrioritZFL (2)** que notou anteriormente no bloco de notas.
+    - **Valor**: Colar o **ID** da aplicação API **PrioritZFL (2)** que você anotou anteriormente no bloco de notas.
 
         ![](images/L04/vscode37u.png)
 
-34. Clique novamente em **+ Add**.
+32. Clique novamente em **+ Adicionar**.
 
-35. Introduza os seguintes detalhes sobre a **Add/Edit application setting** lâmina e clique em **Apply (3)**.
+33. Insira os seguintes dados no painel **Adicionar/Editar configuração do aplicativo** e clique em **Aplicar**.
 
-    - **Name**: **ClientSecret (1)**
+    - **Nome**: **ClientSecret (1)**
     
-    - **Value**: Colar o **PrioritZFL API Secret (2)** que notou anteriormente no bloco de notas.
+    - **Valor**: Colar o **Segredo da API PrioritZ (2)** que notou anteriormente no bloco de notas.
 
         ![](images/L04/vscode38u.png)
 
-36. Clique novamente em **+ Add**.
+34. Clique novamente em **+ Adicionar**.
 
-37. Introduza os seguintes detalhes sobre a **Add/Edit application setting** lâmina e clique em **Apply (3)**.
+35. Insira os seguintes dados no painel **Adicionar/Editar configuração do aplicativo** e clique em **Aplicar**.
 
-    - **Name**: **TennantID (1)**
+    - **Nome**: **TennantID (1)**
     
-    - **Value**: Colar o **TenantID (2)** que notou anteriormente no bloco de notas.
+    - **Valor**: Colar o **TenantID (2)** que você anotou anteriormente no bloco de notas.
 
         ![](images/L04/vscode39u.png)
 
-38. Inicie uma nova janela ou tablaça de navegação no centro de administração Power Platform e selecione **Environments**.
+36. Abra uma nova aba ou janela do navegador, acesse o **Power Platform Admin Center** e selecione **Ambientes**:
 
     ```
     https://admin.powerplatform.microsoft.com/environments
     ```
 
-39. Clique para abrir o ambiente Dev denominado **DEV_ENV_<inject key="Deployment ID" activityCopy="false" />** está a utilizar para este laboratório.
+37. Clique para abrir o ambiente de desenvolvimento **DEV_ENV_<inject key="Deployment ID" activityCopy="false" />** que você está usando neste laboratório.
 
-40. Copie o **URL** Ambiente e cole-o no bloco de notas.
+38. Copie a **URL do Ambiente** e cole-a no bloco de notas.
 
     ![](images/L04/image%20(47).png)
 
-41. Clique em **+ Add** mais uma vez.
+39. Clique em **+ Adicionar** mais uma vez.
 
-42. Introduza os seguintes detalhes sobre a **Add/Edit application setting** lâmina e clique em **Apply**.
+40. Insira os seguintes dados no painel **Adicionar/Editar configuração do aplicativo** e clique em **Aplicar (3)**.
 
-    - **Name**: **DataverseURL**
-    - **Value**: Colar o **Environment URL** que notou anteriormente no bloco de notas.
+    - **Nome**: **DataverseURL**
+    - **Valor**: Colar o **URL do Ambiente** que você anotou anteriormente no bloco de notas.
 
         ![](images/L04/vscode40u.png)
 
-      >**Nota**: Certifique-se de que colide o **Environment URL** que observou anteriormente nesta tarefa. Copiar o valor incorreto resultará em problemas nos próximos passos/tarefas.
+      >**Observação**: certifique-se de colar a **URL correta do ambiente** anotada nesta tarefa. Copiar o valor incorreto resultará em problemas nas próximas etapas/tarefas.
 
-43. Deve ver as quatro definições de aplicação que adicionou.
+41. Deve ver as quatro definições de aplicativo adicionadas.
 
     ![](images/L04/image%20(46).png)
 
-44. Clique em **Apply** e In **Save changes** pop-up clique em **Confirm**.
+44. Clique em **Aplicar** e, na janela de confirmação de salvamento, clique em **Confirmar**.
 
-45. Colar o URL abaixo no Notepad e substitua `{tenant id}` e `{api app id}` por **tenant id** e **PrioritZFL API application ID** dos seus valores do seu bloco de notas.
+45. No bloco de notas, cole a URL abaixo e substitua `{tenant id}` e `{api app id}` pelos valores de **TenantID** e **ID do aplicativo PrioritZFL API** que você anotou:
 
     ```
     https://login.microsoftonline.com/{tenant-id}/adminconsent?client_id={api app id}
     ```
 
-    Depois de atualizar os valores, o seu URL deve ficar assim: `https://login.microsoftonline.com/2140cxxxxxxx/adminconsent?client_id=195b2axxxxxxx`
+    Após substituir os valores, sua URL deve ficar assim:
+    
+`https://login.microsoftonline.com/2140cxxxxxxx/adminconsent?client_id=195b2axxxxxxx`
 
-46. Após atualizar os valores, navegue até ao URL num separador de browser e inscreva-se com as credenciais abaixo.
+46. Abra essa URL em uma nova aba do navegador e entre com as credenciais abaixo:
 
-    * E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
-    * Palavra-passe: <inject key="AzureAdUserPassword"></inject>
+    * E-mail/Usuário: <inject key="AzureAdUserEmail"></inject>
+    * Senha: <inject key="AzureAdUserPassword"></inject>
 
-53. Clique em **Accept**.
+47. Clique em **Aceitar**.
 
-### Tarefa 2: Registe-se a aplicação do cliente do conector
+### Tarefa 2: Registrar aplicativo cliente do conector
 
-1. Navegue até ao portal do Azure e pesquise por **Microsoft Entra ID** ***(1)*** na barra de pesquisa, e seleccione **Microsoft Entra ID** ***(2)***.
+1. No portal do Azure, pesquise Microsoft Entra ID **Microsoft Entra ID** ***(1)*** na barra de pesquisa, e seleccione **Microsoft Entra ID** ***(2)***.
 
     ![](images/dev3.png)
 
-1. Selecione **App registrations** ***(1)*** da lâmina lateral e clique em **+ New registration** ***(2)***. Este registo de aplicação será utilizado para o conector para aceder à API protegida.
+1. Selecione **Registros de aplicativos** ***(1)*** no menu lateral e clique em **+ Novo registro** ***(2)***. Este registo de aplicação será utilizado para que o conector acesse à API protegida.
 
     ![](images/L04/diad4l2.png)
 
-1. Forneça os seguintes detalhes e clique em **Register** ***(5)***.
+1. Preencha os seguintes dados e clique em **Registrar** ***(5)***.
 
     - Nome: **PrioritZConnector<inject key="DeploymentID" enableCopy="false" />** ***(1)***
-    - Tipos de contas suportados: **Accounts in this organizational directory only (TenantName only - Single tenant)** ***(2)***
-    - Redirecionar URL: Selecione **Web** ***(3)*** e forneça `https://global.consent.azure-apim.net/redirect` ***(4)*** como o URL.
+    - Tipos de conta com suporte: **Somente contas neste diretório organizacional (TenantName – locatário único)** ***(2)***
+    - **URL de Redirecionamento**: Selecione **Web** ***(3)*** e forneça `https://global.consent.azure-apim.net/redirect` ***(4)*** como o URL.
 
         ![](images/L04/diad4l3-1.png)
 
-1. Copie o **Application (client) ID** e guarde-o num bloco de notas como **PrioritZ Connector application ID**.
+1. Copie o **ID do Aplicativo (client)** e salve-o no bloco de notas como **PrioritZ Connector application ID**.
 
     ![](images/L04/diad4l4.png)
 
-1. Selecione **Certificates & secrets** na lâmina lateral e clique em **+ New client secret**.
+1. Selecione **Certificados e segredos** no menu lateral e clique em **+ Novo segredo do cliente**.
 
     ![](images/L04/diad4l5.png)
 
-1. Fornecer **PrioritZsecret** ***(1)*** como descrição, defina expiração para **3 months** ***(2)***, e clique em **Add** ***(3)***.
+1. Preencha com:
+    - Descrição: **PrioritZsecret** ***(1)***
+    - Validade: **3 meses** ***(2)***
+    - Clique em **Adicionar** ***(3)***.
 
     ![](images/L04/diad4l6.png)
 
-1. Copie o **Secret value** e guarde-o num bloco de notas como **PrioritZ Connector secret**.
+1. Copie o **valor do segredo** e salve-o num bloco de notas como **PrioritZ Connector secret**.
 
     ![](images/L04/diad5l33.png)
 
-1. Selecione **API permissions** ***(1)*** da lâmina lateral e clique em **+ Add a permission** ***(2)***.
+1. Selecione **Permissões de API** ***(1)*** no menu lateral e clique em **+ Adicionar uma permissão** ***(2)***.
 
     ![](images/L04/diad4l8.png)
 
-1. No separador Permissão de API de pedido, seleccione o separador **My APIs** ***(1)*** e seleccione **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** ***(2)***.
+1. Na aba **Solicitar Permissões de API**, selecione **Minhas APIs** ***(1)*** e escolha **PrioritZFunc<inject key="DeploymentID" enableCopy="false" />** ***(2)***.
 
     ![](images/L04/diad4l9.png)
 
-1. Selecione **user_impersonation** ***(1)*** e clique em **Add permission** ***(2)***.
+1. Ative a caixa de seleção **user_impersonation** ***(1)*** e clique em **Adicionar permissão** ***(2)***.
 
     ![](images/L04/diad4l10.png)
 
@@ -569,13 +568,13 @@ Neste exercício, criará um novo conector personalizado.
 
 ### Tarefa 1: Crie um conector
 
-1. Navegue até ao Portal do Azure utilizando o URL abaixo.
+1. No navegador, acesse o portal do Azure:
 
     ```
     https://portal.azure.com/
     ```
 
-1. Agora no portal Azure, clique em **Resource Groups** presente na secção **Navigate**.
+1. No portal do Azure, clique em **Grupos de Recursos** na seção **Navegar**.
 
     ![](images/L04/diad4l11.png)
 
@@ -587,85 +586,85 @@ Neste exercício, criará um novo conector personalizado.
 
     ![](images/L04/diad4l13.png)
 
-1. Na página de visão geral, Copie o **URL** da função.
+1. Na página de visão geral, copie a **URL** da função.
 
     ![](images/L04/diad4l14.png)
 
-1. Adicione **/api/swagger.json** no final do URL e aceda a ele utilizando o browser.
+1. Adicione **/api/swagger.json** ao final da URL e acesse no navegador.
 
     ![](images/L04/image%20(54).png)
 
-    >**Nota**: Se as permissões surgirem, clique em **Accept** e continue.
+    >**Observação**: se aparecer uma solicitação de permissões, clique em **Accept** e **continuar**.
 
-1. Clique com o botão direito do rato no swagger seleccione **Save as** e guarde o ficheiro na máquina local: Forneça um nome para ficheiro como swag.json.
+1. Clique com o botão direito no swagger, selecione **Salvar como** e salve o arquivo em sua máquina local como **swag.json**.
 
     ![](images/L04/diad4l15.png)
 
-1. Navegue até ao portal do fabricante de aplicações de energia utilizando o URL abaixo. Certifique-se de que o ambiente de desenvolvimento é selecionado.
+1. Acesse o portal do Power Apps. Certifique-se de que o ambiente de desenvolvimento correto esteja selecionado.
  
     ```
     https://make.powerapps.com
     ```
 
-1. Expandir **Dataverse** ***(1)*** e seleccione **Custom Connectors** ***(1)***.
+1. Expanda **Dataverse** ***(1)*** e selecione **Conectores Personalizados** ***(1)***.
 
     ![](images/L04/diad4l16.png)
 
-1. Clique no botão chevron junto ao Novo conector personalizado e selecione **Import an OpenAPI file**.
+1. Clique na seta ao lado de **Novo conector personalizado** e selecione **Importar um arquivo OpenAPI.**.
 
     ![](images/L04/diad4l17.png)
 
-1. Introduza **PrioritZ Connector** ***(1)*** para nome e clique em **Import** ***(2)***.
+1. Digite **PrioritZ Connector** ***(1)*** como nome e clique em **Importar** ***(2)***.
 
     ![](images/L04/diad4l20.png)
 
-1. Selecione o ficheiro **swagger (1)** que guardou no passo 7 desta tarefa e clique em **Continue (2)**.
+1. Selecione o arquivo **swagger (1)** salvo anteriormente e clique em **Continuar (2)**.
 
     ![](images/L04/diad4l18.png)
 
-1. Fornecer **PrioritZ<inject key="DeploymentID" activityCopy="false" /> Connector** ***(1)*** como descrição como e clique em **Security** ***(2)***.
+1. Digite **PrioritZ<inject key="DeploymentID" activityCopy="false" /> Connector** ***(1)*** como descrição e clique em **Segurança** ***(2)***.
 
     ![](images/L04/diad4l19.png)
 
-16. Selecione **OAuth 2.0** ***(1)*** para o tipo de autenticação. Forneça os seguintes detalhes e clique em **Create connector** ***(8)***.
+16. Selecione **OAuth 2.0** ***(1)*** como tipo de autenticação. Forneça os seguintes dados e clique em **Criar conector** ***(8)***.
 
-    - Identity Provider: **Azure Active Directory** ***(2)***
-    - Client id: Colar **PrioritZ Connector application ID** ***(3)*** que copiou anteriormente
-    - Client secret: Colar **PrioritZ Connector Secret** ***(4)*** que copiou anteriormente
-    - Tenant ID: Colar o **Tenant ID** ***(5)*** que copiou anteriormente
-    - Resource URL: Colar **PrioritZ API application ID** ***(6)*** que copiou anteriormente
+    - Provedor de Identidade: **Azure Active Directory** ***(2)***
+    - Client id: cole o **PrioritZ Connector application ID** ***(3)***
+    - Client secret: cole o **PrioritZ Connector Secret** ***(4)***
+    - Tenant ID: cole o **Tenant ID** ***(5)***
+    - Resource URL: cole o **PrioritZ API application ID** ***(6)***
     - Enable on-behalf-of login: **true** ***(7)***
 
         ![](images/L04/diad4l21.png)
 
-### Tarefa 2: Conector de teste
+### Tarefa 2: Testar o conector
 
-1. Agora navegue até ao conector que acabou de criar e clique no botão **edit**. Selecione o separador **Test** ***(1)*** no menu suspenso e clique em **+ New connection** ***(2)***.
+1. No conector recém-criado, clique em **Editar**. Selecione a aba **Testar** ***(1)*** no menu suspenso e clique em **+ Nova conexão** ***(2)***.
 
     ![](images/L04/diad4l22.png)
 
-1. Clique em **Create**.
+1. Clique em **Criar**.
 
     ![](images/L04/diad4l23.png)
 
-1. Se o prompt de login aparecer entre nas credenciais abaixo e clicar em **Accept** para aceitar os termos.
+1. Se aparecer a tela de login, insira as credenciais abaixo e clique em **Aceitar** para os termos:
 
-    * E-mail/nome de utilizador: <inject key="AzureAdUserEmail"></inject>
-    * Palavra-passe: <inject key="AzureAdUserPassword"></inject>
+    * E-mail/Usuário: <inject key="AzureAdUserEmail"></inject>
+    * Senha: <inject key="AzureAdUserPassword"></inject>
 
-7. Depois de criado o conector, selecione **Custom connectors (1)** no menu do lado esquerdo e clique em **Edit (2)** no **PrioritZ connector**.
+7. Depois que o conector for criado, selecione **Conectores personalizados (1)** no menu do lado esquerdo e clique em **Editar (2)** no **PrioritZ connector**.
 
     ![](images/L04/L04-custom.png)
 
-7. Selecione o **Test** no separador menu suspenso.
+7. Selecione a aba **Testar** no menu suspenso.
 
     ![](images/tstcnt.png)
 
-9. Certifique-se de que a ligação que criou está selecionada.
+9. Confirme que a conexão criada esteja selecionada.
 
     ![](images/cntcr.png)
 
-11. Ligue **Raw Body** e forneça o JSON abaixo e clique em **Test operation**.
+11. Ative **Raw Body**, insira o JSON abaixo e clique em **Testar operação**.
 
     ```
     {
@@ -683,45 +682,43 @@ Neste exercício, criará um novo conector personalizado.
     
     ![](images/L04/diad4l24.png)
 
-11. O teste de operação deve ter sucesso e a resposta deve parecer a image abaixo.
+11. O teste deve ser concluído com sucesso, e a resposta deve ser semelhante à da imagem de exemplo.
 
     ![](images/L04/image%20(65).png)
 
-### Exercício 5 – Utilize a função de aplicação em tela
+### Exercício 5 – Usar a Função no Aplicativo de Tela
 
-Neste exercício, você usará a função do Azure que você criou por meio do conector personalizado da aplicação de canvas PrioritZ Admin.
+### Tarefa 1: Usar a função
 
-### Tarefa 1: Utilize a função
+1. Acesse o portal do Power Apps e certifique-se de que está no ambiente correto.
 
-1. Navegue até ao portal do fabricante do Power Apps e certifique-se de que está no ambiente correto.
-2. Selecione Aplicações, selecione a aplicação **PrioritZ Admin** e clique em **Edit**.
+2. Selecione Aplicativos, selecione o aplicativo **PrioritZ Admin** e clique em **Editar**.
 
     ![](images/L04/image%20(66).png)
 
-3. Selecione **Data** , clique em **+ Add data**, pesquise por conector prioritz e selecione o **PrioritZ Connector**
- criou.
+3. Selecione **Dados** , clique em **+ Adicionar dados**, pesquise por **prioritz connector** e selecione o conector criado.
 
     ![](images/L04/image%20(67).png)
 
-4. Adicione o conector clicando nele novamente.
-5. Clique no botão **... More actions** do conector que acabou de adicionar e seleccionar **Rename**.
+4. Clique novamente para adicioná-lo.
+
+5. No conector adicionado, clique em **... Mais ações** e selecione **Renomear**.
 
     ![](images/L04/image%20(68).png)
 
-6. Renomeie o conector **PrioritZFunction**.
+6. Renomeie para **PrioritZFunction**.
 
     ![](images/L04/image%20(69).png)
 
-7. Selecione a **Tree view** e expanda o **Add Topic Screen**.
+7. Abra a **Árvore de Exibição** e expanda **Add Topic Screen**.
 
     ![](images/tree.png)
 
-9. Selecione o **Add choice icon**.
+9. Selecione o ícone **Add choice**.
 
     ![](images/L04/image%20(70).png)
 
-9. Substitua a fórmula **OnSelect** do **Add choice icon** com a fórmula abaixo. Isto ajusta o
- nomes de colunas para corresponder à API e codifica as fotos.
+9. Substitua a fórmula **OnSelect** do ícone **Add choice** pela fórmula abaixo. Essa alteração ajusta os nomes das colunas para que correspondam aos da API e codifica as fotos.
 
     ![](images/L04/image%20(72).png)
 
@@ -741,10 +738,9 @@ Neste exercício, você usará a função do Azure que você criou por meio do c
     Reset(AddMediaButton2)
     ```
 
-10. Selecione **Save topic icon**.
+10. Selecione o ícone **Save topic**.
 
-11. Substitua a fórmula **OnSelect** do **Save topic icon** com a fórmula abaixo. Isto muda para
- fazer com que a API crie o “pergunte”.
+11. Substitua a fórmula **OnSelect** do ícone **Save topic** pela fórmula abaixo. Essa alteração faz com que a API passe a ser responsável por criar a **solicitação**.
 
 
     ![](images/L04/image%20(74).png)
@@ -762,52 +758,55 @@ Neste exercício, você usará a função do Azure que você criou por meio do c
     Back();
     ```
 
-12. Clique em **Save**.
+12. Clique em **Salvar**.
 
-1. Clique em **Publish**.
+1. Clique em **Publicar**.
 
-1. Selecione **Publish this version** e aguarde que a publicação seja concluída.
+1. Selecione **Publicar esta versão** e aguarde que a publicação seja concluída.
 
-1. Não navegue por esta página.
+1. Não saia desta página até o processo terminar.
 
-### Tarefa 2: Aplicação de teste
+### Tarefa 2: Testar o aplicativo
 
 1. Selecione o **Home Screen** e clique em **Preview the app**.
 
     ![](images/L04/image%20(75).png)
 
-2. Clique no botão **+** adicionar.
-3. Introduza **Function Test** para o Tópico, **Testing the function** para Detalhes. **Note for testing the function** para
- Note que selecione uma data para Resposta por e clique em **Add a picture**.
+2. Clique no botão **+** Adicionar.
+
+3. Insira **Function Test** para o Tópico, **Testing the function** para Detalhes. **Note for testing the function** em
+ "Nota", selecione uma data para "Resposta até" e clique em **Add a picture**.
 
     ![](images/L04/image%20(76).png)
 
-4. Navegue para este caminho **C:\LabFiles** no ficheiro explorador de ficheiros, seleccione **image.png** e clique em abrir.
+4. Navegue até a pasta **C:\LabFiles** no explorador de arquivos, selecione **image.png** e clique em **Abrir**.
 
-5. Introduza **Test choice one** para Escolha e clique em **add a picture**.
-6. Navegue para este caminho **C:\LabFiles** no ficheiro explorer, seleccione **image.png** e clique em **+**.
+5. Insira **Test choice one** no campo "Choice" e clique em **add a picture**.
+
+6. Navegue até a pasta **C:\LabFiles** no explorador de arquivos, selecione **image.png** e clique em **+**.
 
     ![](images/L04/image%20(77).png)
 
-7. Introduza **Test choice two** para Escolha e clique em **add a picture**.
+7. Insira **Test choice two** no campo "Choice" e clique em **add a picture**.
 
-8. Navegue para este caminho **C:\LabFiles** no ficheiro explorer, seleccione **image.png** e clique em **+**.
+8. Navegue até a pasta **C:\LabFiles** no explorador de arquivos, selecione **image.png** e clique em **+**.
 
-9. Clique em **Save**.
+9. Clique em **Salvar**.
 
     ![](images/L04/image%20(78).png)
 
-10. O novo tópico deve ser guardado e deve ser navegado de volta para o ecrã principal.
-11. Localize o novo tópico que criou e abra.
+10. O novo tópico será salvo e você será redirecionado à tela principal.
+
+11. Localize o novo tópico criado e abra-o.
 
     ![](images/L04/image80.png)
 
-12. Deve ver as duas opções que adicionou ao tópico.
+12. Veja as duas opções que adicionou ao tópico.
 
     ![](images/L04/image81.png)
 
 ## Resumo
 
-Neste laboratório, aprendeu a criar, implementar e publicar uma Função Azure, criar um conector para ele e testar a sua integração nas aplicações Power Platform.
+Neste laboratório, você aprendeu a criar, implementar e publicar uma função no Azure, criar um conector personalizado para ela e testar sua integração em aplicativos da Power Platform.
 
 ## Concluiu o laboratório com sucesso
