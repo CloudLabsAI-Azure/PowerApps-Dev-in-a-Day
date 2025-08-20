@@ -1,6 +1,6 @@
 # Lab 01 - Getting started with Powerapps
 
-## Estimated Duration: 40 Minutes
+## Estimated Duration: 100 Minutes
 
 In this lab, you will set up your Power Platform development environment as part of the Prioritz fusion team. You will start by importing and reviewing solution components, including apps, flows, and tables, to understand the current state of the Prioritz solution. Next, you will enhance the solution by adding a new "My Notes" column to a table and updating the Prioritz Admin app to use this new field. Finally, you will verify that Visual Studio Code and the Power Platform CLI extension are installed and use the CLI to connect to your environment and list solutions. By completing these exercises, you will gain hands-on experience with solution management, app customization, and developer tools in the Power Platform ecosystem.
 

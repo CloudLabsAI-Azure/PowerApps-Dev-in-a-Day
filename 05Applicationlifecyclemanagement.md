@@ -1,6 +1,6 @@
 # Lab 04 - Application lifecycle management
 
-## Estimated Duration: 90 Minutes
+## Estimated Duration: 130 Minutes
 
 Working as part of the PrioritZ fusion team, you will be configuring GitHub Actions with the Power Platform Build Tools to automate and streamline the team’s deployments. This involves setting up continuous integration and continuous deployment (CI/CD) pipelines to ensure seamless and efficient delivery of updates to Power Platform applications, while also managing version control, testing, and deployment processes to enhance collaboration and maintain high-quality standards across the team’s projects.
 

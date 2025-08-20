@@ -1,6 +1,6 @@
 # Lab 02 - Build a code component
 
-## Estimated Duration: 90 Minutes
+## Estimated Duration: 120 Minutes
 
 In this lab, you will build a custom code component using the React JavaScript framework to enable drag-and-drop priority ranking of items in the PrioritZ Ask Power App. You will start by creating and configuring the code component, then implement its logic and test it locally. Next, you will integrate the component into the PrioritZ Ask canvas app, allowing users to reorder items visually. Finally, you will add the completed code component to the PrioritZ solution, ensuring it is available for use within your Power Platform environment. By completing these exercises, you will gain practical experience in developing, deploying, and using custom code components in Power Apps.
 
