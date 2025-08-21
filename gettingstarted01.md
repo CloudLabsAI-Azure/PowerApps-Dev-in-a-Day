@@ -83,7 +83,7 @@ Feel free to **Start, Stop, or Restart** your virtual machine as needed from the
  
 To adjust the zoom level for the environment page, click the **A↕** icon located next to the timer in the lab environment.
 
-![](./images/2143.png) 
+![](./images/Zoom%203.png) 
  
 ## Let's Get Started with Azure Portal
  
