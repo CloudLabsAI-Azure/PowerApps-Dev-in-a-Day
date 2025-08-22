@@ -4,7 +4,7 @@
 
 Working as part of the PrioritZ fusion team, you will be configuring GitHub Actions with the Power Platform Build Tools to automate and streamline the team’s deployments. This involves setting up continuous integration and continuous deployment (CI/CD) pipelines to ensure seamless and efficient delivery of updates to Power Platform applications, while also managing version control, testing, and deployment processes to enhance collaboration and maintain high-quality standards across the team’s projects.
 
-Lab Objectives 
+### Lab Objectives
 
 - Exercise 1: Configure a Service Principal
 - Exercise 2: Promote Solution to Test Environment 
@@ -98,9 +98,7 @@ In this task, you will create a new test Dataverse environment.
 
 ### Task 3: Create an app user in Dataverse
 
-In this task, you will be registering the app you created in Microsoft Entra ID into the dev and test
-Dataverse environments. You will also be assigned a security role that will allow the service principal to
-deploy solutions.
+In this task, you will be registering the app you created in Microsoft Entra ID into the dev and test Dataverse environments. You will also be assigned a security role that will allow the service principal to deploy solutions.
 
 1. Open a new browser window or tab and navigate to the Power Platform Admin Center using the URL below.
 
@@ -172,7 +170,7 @@ deploy solutions.
 
    ![](images/L05/envu.png)
    
-1. Copy the **Environment URL** and save it in a notepad, you will be using this URL in future steps.
+1. Copy the **Environment URL** and save it in a notepad. You will be using this URL in future steps.
     
    ![](images/L05/8-8-25-l4-20.png)
    
@@ -190,7 +188,7 @@ In this exercise, you will export the Contoso Badges connector solution from the
 
 ### Task 1: Export solution
 
-In this task, you will exports the Contoso Badges connector solution from your DEV environment.
+In this task, you will export the Contoso Badges connector solution from your DEV environment.
 
 1. Navigate to the Power Apps  maker portal and make sure you are in your dev environment **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**
 
@@ -218,7 +216,7 @@ In this task, you will exports the Contoso Badges connector solution from your D
 
 ### Task 2: Import solution
 
-In this task, you will imports the exported Contoso Badges connector solution into the Test environment.
+In this task, you will import the exported Contoso Badges connector solution into the Test environment.
 
 1. Navigate to the Power Apps maker portal if not already open and select your **Test** environment, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_TEST (2)**. 
 
@@ -306,7 +304,7 @@ In this exercise, you will create a GitHub repository and add repository secrets
 
 ### Task 1: Create a repository
 
-In this task, you will create a GitHub repository named PrioritZ and configures it with five repository secrets.
+In this task, you will create a GitHub repository named PrioritZ and configure it with five repository secrets.
 
 1. Navigate to the URL below and sign in using your GitHub credentials.
 
@@ -393,7 +391,7 @@ indentation shown in the images.
  
    ![](images/L05/Imagesworku.png)
    
-1. Change the file name to it **export-and-branch.yml**
+1. Change the file name to **export-and-branch.yml**
        
 1. Remove everything from the workflow file.
   
@@ -471,7 +469,7 @@ In this exercise, you will create a workflow action and add steps that will rele
 
 ### Task 1: Create workflow
 
-In this task you will create a workflow.
+In this task, you will create a workflow.
 
 1. Now navigate to the **Actions (1)** tab.
    
@@ -516,4 +514,4 @@ In this lab, you learned to promote a solution to a test environment, configure 
 
 ## You have successfully completed the Hands-on lab!
 
-In this lab, you explored how to work with solutions by importing, customizing, and verifying functionality in the Power Platform. You built a code component, implemented its logic, and integrated it into a canvas app. You also created and modified a custom connector from an Open API definition, tested it, and used it in apps and flows. Next, you learned to promote solutions across environments and configure secure access using a service principal. Finally, you applied GitHub version control and workflow automation to manage and deploy your Power Platform solutions efficiently.
+By completing the **Low Code for Pro-Dev in a Day** Hands-On lab, you explored how to work with solutions by importing, customizing, and verifying functionality in the Power Platform. You built a code component, implemented its logic, and integrated it into a canvas app. You also created and modified a custom connector from an Open API definition, tested it, and used it in apps and flows. Next, you learned to promote solutions across environments and configure secure access using a service principal. Finally, you applied GitHub version control and workflow automation to manage and deploy your Power Platform solutions efficiently.
