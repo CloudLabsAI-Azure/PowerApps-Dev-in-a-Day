@@ -20,7 +20,9 @@ When you review the API, you see that it has four operations and uses API key au
 
  ![](images/L03/image1.png)
 
-### Task 1: Create Database 
+### Task 1: Create Database
+
+In this, you will creates a new solution container in your dev environment.
 
 1. Navigate to the Power Apps maker portal.
 
@@ -50,6 +52,8 @@ In this exercise, you will create a solution for the Contoso Badges custom conne
 
 ### Task 1: Create a solution
 
+In this task, you will create a new solution in your dev environment to keep related components organized.
+
 1. Open a new browser tab and navigate to the Power Apps maker portal and select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
 
    ```
@@ -78,6 +82,8 @@ In this exercise, you will create a solution for the Contoso Badges custom conne
 In this exercise, you will create a custom connector from an existing API.
 
 ### Task 1: Download the open API definition and create a connector
+
+In this task, you will builds a custom connector for the Contoso Badges API in your DEV environment.
 
 1. Navigate to the URL below to open the Contoso Coffee Badges API.
 
@@ -152,6 +158,8 @@ In this exercise, you will create a custom connector from an existing API.
 
 ### Task 2: Modify the definition
 
+In this task, you will update the AddCredit action in the connector by marking points, recipientid, and name as required, setting its visibility to Important, and saving the updated definition.
+
 1. Select the **AddCredit (1)** action then **Important (2)** for Visibility.
     
      ![](images/L03/image10-1a.png)
@@ -203,6 +211,8 @@ In this exercise, you will create a custom connector from an existing API.
 13. Do not navigate away from this page.
 
 ### Task 3: Test connector
+
+In this task, you will test the custom connector by creating a new connection with the API key and running operations.
 
 1. Open a new browser tab or window and navigate to the URL below to open the Contoso Coffee Badges API.
 
@@ -267,6 +277,8 @@ In this exercise, you will add a new operation to only return the current badge 
 You will do this by using the custom code feature to reshape the response from the API.
 
 ### Task 1: Add code from the resource folder
+
+In this task, you will extends the custom connector by adding a new action called Get current badge, importing its request/response definition, and uploading custom code from the resource file. You then test the action to confirm it works and update the connector with the proper JSON response.
 
 1. Open a new browser tab and navigate to the Power Automate using the URL below. Select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
           
@@ -501,6 +513,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 ### Task 2: Test connector from the flow
 
+In this task you will Test connector from the flow.
 
 1. Go to **Solutions (1)** and click on **Prioritz (2)**.
 

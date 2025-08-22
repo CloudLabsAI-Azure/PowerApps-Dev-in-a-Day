@@ -16,6 +16,8 @@ In this exercise, you will build the code component.
 
 ### Task 1: Create the code component
 
+In this task, you will set up a new PowerApps Component Framework (PCF) project in VS Code using React and defines its properties in the manifest file. It also adds a CSS file to style the drag-and-drop ranking component that will be used inside the app.
+
 1. Start **Visual Studio Code** if not already open using the shortcut available on the desktop.
 
    ![](images/visual-studio-code-1.png)
@@ -170,6 +172,8 @@ In this exercise, you will build the code component.
 25. Click **File** and select **Save All** to save your changes.
 
 ### Task 2: Implement the component logic
+
+In this task, you will implement the logic for the drag-and-drop ranking component by replacing the default files
 
 1. Select the **HelloWorld.tsx (1)** component file, right-click on it and select **Delete (2)** to remove the component file as it is automatically created and we won’t be using it. 
      
@@ -502,6 +506,8 @@ In this exercise, you will build the code component.
  
 ### Task 3: Confirm the control was added to the environment
 
+In this task, you will verify that the custom drag-and-drop control was successfully pushed to your environment.
+
 1. Navigate to the Power Apps maker portal by using the URL below if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
 
     ```
@@ -754,6 +760,8 @@ In this task, you will edit the PrioritZ Ask canvas application to use the code 
 In this exercise, you will add the code component you created to the PrioritZ solution.
 
 ### Task 1: Add the component to the solution
+
+In this task, you will add the custom drag-and-drop ranking component into the PrioritZ solution in Power Apps.
 
 1. Navigate to the Power Apps maker portal by using the URL below if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
 

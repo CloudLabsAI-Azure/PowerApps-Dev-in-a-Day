@@ -18,6 +18,8 @@ In this exercise, you will create a service principal. The service principal wil
 
 ### Task 1: Create app registration
 
+In this task, you will create an app registration in Microsoft Entra ID for secure API access.
+
 1. Navigate back to the browser tab in which the Azure Portal is open. If not already open, navigate to the Azure Portal using the URL below.
 
    ```
@@ -188,6 +190,8 @@ In this exercise, you will export the Contoso Badges connector solution from the
 
 ### Task 1: Export solution
 
+In this task, you will exports the Contoso Badges connector solution from your DEV environment.
+
 1. Navigate to the Power Apps  maker portal and make sure you are in your dev environment **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**
 
    ```
@@ -214,6 +218,8 @@ In this exercise, you will export the Contoso Badges connector solution from the
 
 ### Task 2: Import solution
 
+In this task, you will imports the exported Contoso Badges connector solution into the Test environment.
+
 1. Navigate to the Power Apps maker portal if not already open and select your **Test** environment, click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_TEST (2)**. 
 
     ```
@@ -239,6 +245,8 @@ In this exercise, you will export the Contoso Badges connector solution from the
 7. The solution should be imported successfully. **Do not** navigate away from this page.
 
 ### Task 3: Test connector
+
+In this task, you will test the Badges connector in the Test environment.
 
 1. Click on **Solution (1)** then **All (2)** and then select **Contoso Badge Connector (3)** to open the solution you just imported.
 
@@ -297,6 +305,8 @@ In this exercise, you will export the Contoso Badges connector solution from the
 In this exercise, you will create a GitHub repository and add repository secrets.
 
 ### Task 1: Create a repository
+
+In this task, you will create a GitHub repository named PrioritZ and configures it with five repository secrets.
 
 1. Navigate to the URL below and sign in using your GitHub credentials.
 
@@ -461,6 +471,8 @@ In this exercise, you will create a workflow action and add steps that will rele
 
 ### Task 1: Create workflow
 
+In this task you will create a workflow.
+
 1. Now navigate to the **Actions (1)** tab.
    
 1. Click **New workflow (2)**.
@@ -503,3 +515,5 @@ In this exercise, you will create a workflow action and add steps that will rele
 In this lab, you learned to promote a solution to a test environment, configure a service principal, and manage your solution using GitHub for version control and workflow automation.
 
 ## You have successfully completed the Hands-on lab!
+
+In this lab, you explored how to work with solutions by importing, customizing, and verifying functionality in the Power Platform. You built a code component, implemented its logic, and integrated it into a canvas app. You also created and modified a custom connector from an Open API definition, tested it, and used it in apps and flows. Next, you learned to promote solutions across environments and configure secure access using a service principal. Finally, you applied GitHub version control and workflow automation to manage and deploy your Power Platform solutions efficiently.

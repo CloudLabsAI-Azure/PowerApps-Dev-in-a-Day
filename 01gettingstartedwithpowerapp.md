@@ -20,6 +20,8 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 ### Task 1: Import, Review solution components and run flow
 
+In this task, you will be importing the Prioritz solution into the Power Apps portal, connecting it with Dataverse, and exploring its tables, schema, and relationships. You also review and run a cloud flow that loads sample topic data into the environment. In the end, you verify that the solution and automation were imported and executed successfully.
+
 1. In the LabVM, click on the **Power Apps portal** shortcut of the Microsoft Edge browser that is available on the desktop.
 
    ![azure portal.](images/L01/PAportal.png)
@@ -151,6 +153,8 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 ### Task 2: Test the apps
 
+In this task, you will test the two imported apps Prioritz Admin and Prioritz Ask.
+
 1. Navigate back to **Prioritz** solution by clicking on **Cloud flows**. Alternatively, you can also open the **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
        
    ![](images/2108.png)
@@ -258,6 +262,8 @@ application.
 
 ### Task 1: Add a new column
 
+In this task, you will add a new column in Prioritz solution in Power Apps.
+
 1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
     ```
     https://make.powerapps.com
@@ -285,6 +291,8 @@ application.
     > **Note:** Do not navigate away from this page.
 
 ### Task 2: Update the admin app
+
+In this task, you will be updating the Prioritz Admin app by adding a new Notes textbox linked to the My Notes column in Dataverse.
 
 1. Make sure you are still in the **Prioritz** solution. Select **Apps (1)** under **Objects** and select the **Prioritz Admin (2)** application and click on **Edit (3)**.
     
@@ -425,11 +433,13 @@ application.
 
 1. You may close the **app designer**.
 
-## Exercise 3 – Test the Power Platform CLI
+## Exercise 3 – Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension
+ 
+In this exercise you will Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension
 
-In this exercise, you will review and test the Power Platform CLI extension in Visual Studio Code.
+### Task 1: Test the Power Platform CLI
 
->**Note:** Visual studio code and Power platform CLI installation are already done as a part of the prerequisites.
+In this task, you will review and test the Power Platform CLI extension in Visual Studio Code.
 
 1. Navigate to the Power Platform admin center by using the below URL and select **Environments**.
     
