@@ -4,7 +4,7 @@
 
 Working as part of the PrioritZ fusion team, you will be configuring GitHub Actions with the Power Platform Build Tools to automate and streamline the team’s deployments. This involves setting up continuous integration and continuous deployment (CI/CD) pipelines to ensure seamless and efficient delivery of updates to Power Platform applications, while also managing version control, testing, and deployment processes to enhance collaboration and maintain high-quality standards across the team’s projects.
 
-### Lab Objectives
+## Lab Objectives
 
 - Exercise 1: Configure a Service Principal
 - Exercise 2: Promote Solution to Test Environment 
