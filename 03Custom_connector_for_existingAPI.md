@@ -22,7 +22,7 @@ When you review the API, you see that it has four operations and uses API key au
 
 ### Task 1: Create Database
 
-In this, you will creates a new solution container in your dev environment.
+In this, you will create a new solution container in your dev environment.
 
 1. Navigate to the Power Apps maker portal.
 
@@ -83,7 +83,7 @@ In this exercise, you will create a custom connector from an existing API.
 
 ### Task 1: Download the open API definition and create a connector
 
-In this task, you will builds a custom connector for the Contoso Badges API in your DEV environment.
+In this task, you will build a custom connector for the Contoso Badges API in your DEV environment.
 
 1. Navigate to the URL below to open the Contoso Coffee Badges API.
 
@@ -273,12 +273,11 @@ In this task, you will test the custom connector by creating a new connection wi
 
 ## Exercise 4 – Add Custom Code
 
-In this exercise, you will add a new operation to only return the current badge name and image URL.
-You will do this by using the custom code feature to reshape the response from the API.
+In this exercise, you will add a new operation to only return the current badge name and image URL. You will do this by using the custom code feature to reshape the response from the API.
 
 ### Task 1: Add code from the resource folder
 
-In this task, you will extends the custom connector by adding a new action called Get current badge, importing its request/response definition, and uploading custom code from the resource file. You then test the action to confirm it works and update the connector with the proper JSON response.
+In this task, you will extend the custom connector by adding a new action called Get current badge, importing its request/response definition, and uploading custom code from the resource file. You then test the action to confirm it works and update the connector with the proper JSON response.
 
 1. Open a new browser tab and navigate to the Power Automate using the URL below. Select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.
           
@@ -405,11 +404,11 @@ In this task, you will test your custom code.
 
 In this exercise, you will test the custom connector you created using a flow and a canvas application.
 
-### Task 1: Test connector from canvas app
+### Task 1: Test connector from Canvas app
 
 In this task, you will use the custom connector you created to show the user’s current badge on the PrioritZ Ask canvas application.
 
-1. Open a new browser tab and navigate to the **Power Apps** maker portal using the below URL if not already open and select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
+1. Open a new browser tab and navigate to the **Power Apps** maker portal using the URL below if not already open and select **Environments (1)**, make sure you are in your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**. 
 
    ```
    https://make.powerapps.com
@@ -513,7 +512,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 ### Task 2: Test connector from the flow
 
-In this task you will Test connector from the flow.
+In this task, you will test the connector from the flow.
 
 1. Go to **Solutions (1)** and click on **Prioritz (2)**.
 
@@ -610,3 +609,5 @@ In this task you will Test connector from the flow.
 In this lab, you learned to create and modify a custom connector using an Open API definition, test its functionality, and integrate it with canvas apps and flows within the Power Platform.
 
 ### You have successfully completed this lab. Click the Next button to proceed to the next lab.
+
+![](./images/GS4-1.png)
