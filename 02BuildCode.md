@@ -16,7 +16,7 @@ In this exercise, you will build the code component.
 
 ### Task 1: Create the code component
 
-In this task, you will set up a new PowerApps Component Framework (PCF) project in VS Code using React and defines its properties in the manifest file. It also adds a CSS file to style the drag-and-drop ranking component that will be used inside the app.
+In this task, you will set up a new PowerApps Component Framework (PCF) project in VS Code using React and define its properties in the manifest file. It also adds a CSS file to style the drag-and-drop ranking component that will be used inside the app.
 
 1. Start **Visual Studio Code** if not already open using the shortcut available on the desktop.
 
@@ -46,7 +46,7 @@ In this task, you will set up a new PowerApps Component Framework (PCF) project 
     cd PrioritZDnDRanking
     ```
 
-6. You should now be in the directory you created. Create a new component project and install dependencies by running the below command.
+6. You should now be in the directory you created. Create a new component project and install dependencies by running the command below.
     
      ```
      pac pcf init -ns ContosoCoffee --name PrioritZDnDRanking --template dataset --framework react --run-npm-install
@@ -122,7 +122,7 @@ In this task, you will set up a new PowerApps Component Framework (PCF) project 
  
       >**Note:** Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
       
- 17. Notice the following two resources. This declares the component’s dependency on these two libraries. This is a result of specifying –framework React on initialization.
+ 17. Notice the following two resources. This declares the component’s dependency on these two libraries. This is a result of specifying the React framework on initialization.
 
      ```
      <platform-library name="React" version="16.8.6" />
@@ -175,7 +175,7 @@ In this task, you will set up a new PowerApps Component Framework (PCF) project 
 
 In this task, you will implement the logic for the drag-and-drop ranking component by replacing the default files
 
-1. Select the **HelloWorld.tsx (1)** component file, right-click on it and select **Delete (2)** to remove the component file as it is automatically created and we won’t be using it. 
+1. Select the **HelloWorld.tsx (1)** component file, right-click on it and select **Delete (2)** to remove the component file, as it is automatically created and we won’t be using it. 
      
      ![](images/L02/L02-EX1-T2-1n.png)
     
@@ -191,7 +191,7 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
     
 6. Open the **PriorityComponent.tsx** and review the contents. This implements the React component that will be rendered to represent our draggable items.
     
-7. Notice line 9 `from react-beautiful-dnd` has a red underline. This is an npm package the component uses that we haven’t referenced.
+7. Notice line 9 `from react-beautiful-dnd` has a red underline. This is an npm package that the component uses that we haven’t referenced.
 
      ![](images/L02/image17.png)
  
@@ -203,7 +203,7 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
 
     >**Note:** If you receive this error **npm is not recognised**, then perform the below steps:
 
-    >  1. Open PowerShell, then run this command `choco install -y --force nodejs`.
+    >  1. Open PowerShell, then run this command: `choco install -y --force nodejs`.
     >  2. Once the command execution is done, close Visual Studio Code and open it again.
     >  3. Perform **Step 8** of this task again to install the **react-beautiful-dnd** package.
 
@@ -292,7 +292,7 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
 
     ![](images/L02/image24.png)
  
-20. Add the below code after the **destroy** function. This logic handles the onReorder event from the PriorityComponent and identifies the involved items to the hosting app as selected items.
+20. Add the code below after the **destroy** function. This logic handles the onReorder event from the PriorityComponent and identifies the involved items to the hosting app as selected items.
        
     ```
     onReorder = (sourceIndex: number, destinationIndex: number): void => {
