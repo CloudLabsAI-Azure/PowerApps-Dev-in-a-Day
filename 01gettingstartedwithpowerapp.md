@@ -1,4 +1,4 @@
-# Lab 01 - Getting started with Powerapps
+# Lab 01 - Getting started with Power Apps
 
 ## Estimated Duration: 100 Minutes
 
@@ -12,9 +12,9 @@ You will be able to complete the following :
 - Exercise 2: Add a column for My Notes
 - Exercise 3: Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension
 
-## Exercise 1 - Import, and review solution components
+## Exercise 1 - Import and review solution components
 
-In this exercise, you will import the current solution into the pre-created dev environment and review the components of the solution. You will also run a flow that will add sample data to your environment, and test the applications in the solution.
+In this exercise, you will import the current solution into the pre-created dev environment and review the components of the solution. You will also run a flow that will add sample data to your environment and test the applications in the solution.
 
 >**Note:** The Dev environment is already pre-created as a part of the prerequisites.
 
@@ -26,7 +26,7 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
    ![azure portal.](images/L01/PAportal.png)
 
-1. On the **Sign in** window, you will see the login screen, enter the following username **(1)** and click on **Next** **(2)**.
+1. On the **Sign in** window, you will see the login screen. Enter the following username **(1)** and click on **Next** **(2)**.
 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
@@ -144,7 +144,7 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
      ![](images/8-8-25-l1-11.png)
 
-1. The flow should run successfully. If you want, you can click on the run row and it will show you
+1. The flow should run successfully. If you want, you can click on the run row, and it will show you
     the details of what the flow did.
    
       ![](images/L01/image141.png)
@@ -153,7 +153,7 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
 ### Task 2: Test the apps
 
-In this task, you will test the two imported apps Prioritz Admin and Prioritz Ask.
+In this task, you will test the two imported apps, Prioritz Admin and Prioritz Ask.
 
 1. Navigate back to **Prioritz** solution by clicking on **Cloud flows**. Alternatively, you can also open the **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
        
@@ -175,7 +175,7 @@ In this task, you will test the two imported apps Prioritz Admin and Prioritz As
     
     ![](images/L01/L01-adminu1.png)
 
-5. You should see the below four topics, Click to open **Event banner**.
+5. You should see the four topics below. Click to open **Event banner**.
 
     ![](images/2109.png)
 
@@ -207,7 +207,7 @@ In this task, you will test the two imported apps Prioritz Admin and Prioritz As
 
     ![](images/L01/image17u-1n.png)
 
-11. Type **Tamale Tuesday (1)** on the Choice field and click **Tap or click to add a picture (2)** that is present below the Choice field. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
+11. Type **Tamale Tuesday (1)** in the Choice field and click **Tap or click to add a picture (2)** that is present below the Choice field. Navigate to this path C:\LabFiles in file explorer, select **image.png** and click open.
      
       ![](images/8-8-25-l1-15.png)
 
@@ -231,7 +231,7 @@ In this task, you will test the two imported apps Prioritz Admin and Prioritz As
 
 17. Close the Prioritz Admin application by closing the browser tab in which the Prioritz Admin application is open.
 
-18. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **Prioritz Ask** application by clicking on **play (2)** symbol.
+18. Select **Apps (1)** from the left-hand side menu of Power Apps and launch the **Prioritz Ask** application by clicking on the **play (2)** symbol.
      
      ![](images/L01/L01-Prioritzasku-1.png)
 
@@ -239,7 +239,7 @@ In this task, you will test the two imported apps Prioritz Admin and Prioritz As
 
      ![](images/8-8-25-l1-19.png)
 
-20. Click on the **up/down** icons order the items in the order you prefer them and click **Vote**.
+20. Click on the **up/down** icons to order the items in the order you prefer them, and click **Vote**.
      
       ![](images/8-8-25-l1-20.png)
 
@@ -264,7 +264,7 @@ application.
 
 In this task, you will add a new column in Prioritz solution in Power Apps.
 
-1. Navigate to the Power Apps maker portal by using the below URL if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
+1. Navigate to the Power Apps maker portal by using the URL below if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)** is selected.
     ```
     https://make.powerapps.com
    ```
@@ -278,7 +278,7 @@ In this task, you will add a new column in Prioritz solution in Power Apps.
 
     ![](images/8-8-25-l1-21.png)
 
-5. Enter the below value in the Display name field.
+5. Enter the value below in the Display name field.
 
    ```
    My Notes
@@ -310,7 +310,7 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
 
    >**Note:** If you can't find the Insert button, click the ellipsis **(...)** in the upper-left corner.
      
-1. Double-click on the newly added **Text input** and enter the below value to rename the text input.
+1. Double-click on the newly added **Text input** and enter the value below to rename the text input.
 
     ```
     Notes textbox
@@ -326,7 +326,7 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
 
     ![](images/hintextua.png)
 
-1. Change the **HintText** value of the Notes textbox to the below value. The value should be inside double quotes. 
+1. Change the **HintText** value of the Notes textbox to the value below. The value should be inside double quotes. 
 
     ```
     My notes
@@ -334,7 +334,7 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
    
     ![](images/L01/image29u.png)
 
-1. Select the **Mode** from the properties dropdown and change its value by entering the below text.
+1. Select the **Mode** from the properties dropdown and change its value by entering the text below.
 
     ```
     TextMode.MultiLine
@@ -346,8 +346,7 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
      
      ![](images/L01/image30u.png)
 
-1. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates
-    a new row in the Dataverse table.
+1. Replace the **OnSelect** formula of the **Save topic icon** with the formula below. The Patch creates a new row in the Dataverse table.
      
      ![](images/L01/image31u.png)
 
@@ -362,7 +361,7 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
 
     ![](images/L01/tlabelu-1.png)
 
-1. Double-click on the newly added label and enter the below value to rename the label you just added.
+1. Double-click on the newly added label and enter the value below to rename the label you just added.
 
      ```
      Notes label
@@ -388,7 +387,7 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
 
       ![](images/L01/L01-taco-1_1u.png)
 
-1. Fill out the form by providing the below information and click **add a picture** that is present below the **Respond By** field.
+1. Fill out the form by providing the information below and click **add a picture** that is present below the **Respond By** field.
     - Topic: `Test Notes` **(1)**    
     - Details: `Testing the notes` **(2)**
     - Text input: `Prioritz Admin topic` **(3)**
@@ -396,7 +395,7 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
 
       ![](images/9-8-25-l1-1.png)
 
-1. Type **Test One** on the Choice field and click **add a picture** that is present below the Choice field.
+1. Type **Test One** in the Choice field and click **add a picture** that is present below the Choice field.
      
       ![](images/L01/image18uu.png)
 
@@ -411,7 +410,7 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
 1. Add one more choice by repeating **steps 20-22** of this task.    
    - **Choice 1:**  Enter `Test Two`
      
-1. After adding all the Choices and topic details, your screen should look like the below screenshot.
+1. After adding all the Choices and topic details, your screen should look like the screenshot below.
 
     ![](images/L01/L01-testnotesu.png)
       
@@ -435,13 +434,13 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
 
 ## Exercise 3 – Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension
  
-In this exercise you will Verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension
+In this exercise, you will verify the pre-installed Visual Studio Code Installer and Power Platform CLI Extension
 
 ### Task 1: Test the Power Platform CLI
 
 In this task, you will review and test the Power Platform CLI extension in Visual Studio Code.
 
-1. Navigate to the Power Platform admin center by using the below URL and select **Environments**.
+1. Navigate to the Power Platform admin center by using the URL below and select **Environments**.
     
     ```
     https://admin.powerplatform.microsoft.com/environments
@@ -467,7 +466,7 @@ In this task, you will review and test the Power Platform CLI extension in Visua
 
     ![](images/8-8-25-l1-23.png)
 
-7. Run the below command in the terminal.
+7. Run the command below in the terminal.
 
    ```
    pac
