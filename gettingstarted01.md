@@ -3,14 +3,13 @@
 ### Overall Estimated Duration: 8 Hours
 
 ## Overview
-
-In this lab, you will gain hands-on experience with various aspects of the Power Platform, from importing and running starting solutions to building and using custom code components. You will create and modify custom connectors, integrate Azure Functions, and promote solutions across environments. Each lab builds foundational skills, such as creating Power Apps components, setting up custom connectors, and managing solutions with GitHub. By following detailed instructions and visual aids, you will learn to effectively develop, test, and deploy robust Power Platform solutions, ensuring a comprehensive understanding of the platform's capabilities and best practices.
+In this lab, you will gain hands-on experience with various aspects of the Power Platform, from importing and running starter solutions to building and using custom code components. You will create and modify custom connectors, integrate Azure Functions, and promote solutions across environments. Each lab builds foundational skills, such as creating Power Apps components, setting up custom connectors, and managing solutions with GitHub. By following detailed instructions and visual aids, you will learn to effectively develop, test, and deploy robust Power Platform solutions, ensuring a comprehensive understanding of the platform's capabilities and best practices.
 
 ## Objective
 
 After completing these labs, you'll know how to import and customize solutions in Power Platform, build custom code components, and  create and integrate custom connectors. Learn to import and customize Power Platform solutions, create custom code components, and develop and integrate custom connectors. By the end of this lab, you will gain insights on:
 
-- **Getting started with Powerapps:** Learn to import a starting solution, add a new column, update the admin app, and test the Power Platform CLI.
+- **Getting started with Power Apps:** Learn to import a starting solution, add a new column, update the admin app, and test the Power Platform CLI.
 - **Build a code component:** Create a code component, implement its logic, integrate it into a canvas app, and add it to a solution.
 - **Custom connector for existing API:** Create, modify, and test a custom connector using an Open API definition, and integrate it with canvas apps and flows.
 - **Application lifecycle management:** Promote a solution to a test environment, configure a service principal, manage with GitHub, and set up a workflow for release.
@@ -43,7 +42,7 @@ The architecture for this lab involves the following key components:
 - **Code Component:** Elements created to extend the functionality of Power Apps. These components involve writing and integrating custom logic, which enhances the capabilities and flexibility of canvas apps.
 - **Custom Connector:** Tools that allow Power Platform apps to connect with external data sources via APIs. These connectors enable seamless integration of external data and services into Power Platform 
  applications.
-- **Azure Function:** Serverless compute services that run code on-demand to perform various tasks. Azure Functions are integrated into Power Platform apps to add advanced, scalable capabilities and handle 
+- **Azure Function:** Serverless compute services that run code on demand to perform various tasks. Azure Functions are integrated into Power Platform apps to add advanced, scalable capabilities and handle 
  specific operations.
 - **GitHub:** A version control system for managing and tracking changes to solutions and code.
 
