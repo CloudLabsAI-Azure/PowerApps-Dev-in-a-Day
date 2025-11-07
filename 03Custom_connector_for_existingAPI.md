@@ -368,6 +368,8 @@ In this task, you will extend the custom connector by adding a new action called
 
 21. Select the **Definition** tab from the dropdown.
 
+      ![](images/L03/image333.png)
+
 22. Select the **getcurrentbadge** action.
      
       ![](images/L03/image33.png)
@@ -491,6 +493,8 @@ In this task, you will use the custom connector you created to show the user’s
     ![](images/L03/8-8-25-l3-23.png)
 
 18. Select the **Screens** tab in the Tree view. Click the **Play** button.
+
+
 
 19. Hover over the badge to see the badge name.
       

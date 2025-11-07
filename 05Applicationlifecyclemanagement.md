@@ -160,11 +160,11 @@ In this task, you will be registering the app you created in Microsoft Entra ID 
 
    ![](images/L05/8-8-25-l4-19.png)
 
-1. Type **org** and select your **Business unit** **(1)** and In **Security roles** click on **edit symbol (2)** and select **System administrator (3)** then click on **Create (4)**.
+1. Type **org** or **dev** and select your **Business unit** **(1)** and In **Security roles** click on **edit symbol (2)** and select **System administrator (3)** then click on **Create (4)**.
 
    ![](images/L05/diad5l14u.png)
 
-    > **Note:** If the **#** symbol is still visible before GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, click on it and refresh the pane to remove it.
+    > **Note:** If Business unit is not visible then check environment URL by clicking on environment and copy the first part of URL. If the **#** symbol is still visible before GitHub Deploy<inject key="DeploymentID" enableCopy="false" />, click on it and refresh the pane to remove it.
    
 1. Click on **Environments** **(1)** from the side blade and select your **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />'s environment** **(2)**.
 
@@ -207,6 +207,8 @@ In this task, you will export the Contoso Badges connector solution from your DE
 4. Once published, click on **Next**.
 
 5. Select **Managed** and click **Export**.
+
+    ![](images/L03/managed.png)
 
 6. Wait for the solution to be exported.
 
@@ -320,11 +322,7 @@ In this task, you will create a GitHub repository named PrioritZ and configure i
 
    ![](images/L05/github2u.png)
 
-4. Enter **PrioritZ (1)** for Repository name, select **Public (2)** , check the **Add a README file (3)**.
-
-   ![](images/L05/github3.png)
-
-5. Click **Create repository** to create it.
+4. Enter **PrioritZ (1)** for Repository name, select **Public (2)** , check the **Add a README file (3)**. Click **Create repository** to create it.
 
    ![](images/L05/github4.png)
 
@@ -346,8 +344,11 @@ In this task, you will create a GitHub repository named PrioritZ and configure i
 
 10. Click **New repository secret** again.
 
-11. Enter **PowerPlatformClientSecret (1)** for Name and paste the password: **<inject key="AzureAdUserPassword"></inject> (2)** and click **Add Secret (3)** 
+11.  Navigate back to the home screen in VM and open the **AzureCreds.txt** file. Copy the **AzurePassword** value from that file.
 
+     ![](images/L05/github9u11.png)
+
+12. Enter **PowerPlatformClientSecret (1)** as the name, paste the value you copied from AzureCreds file and add it into the secret field in GitHub, and click **Add Secret (3)**.
      ![](images/L05/github9u.png)
 
 12. Click **New repository secret** again.

@@ -70,7 +70,7 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
     ![](images/2103.png)
     
-1. Once the import is successful, a confirmation message will appear **Solution "Prioritz" imported successfully**.
+1. The import process will take approximately 5–10 minutes to complete. Once the import is successful, a confirmation message will appear **Solution "Prioritz" imported successfully**.
 
      ![](images/L01/solutionsuccess.png)
      
@@ -122,11 +122,11 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
  
     ![](images/L01/image111.png)
 
-1. Click on the **<- back** button.
+1. Click on the **<- back** arrow to navigate back.
  
     ![](images/8-8-25-l1-7.png)
 
-1. Click on the flow name to open the flow details screen.
+1. Click on the **Import sample data - Topics** cloud flow name to open the flow details screen.
 
      ![](images/8-8-25-l1-9.png)
 
@@ -138,14 +138,15 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
      ![](images/8-8-25-l1-10.png)
 
-     > **Note:** If you receive this error `Error from the token exchange: Permission denied due to missing connection` while running the flow, this is because the **Dataverse connection** is not being added correctly. Delete the imported solution and try to re-import the solution by performing the **Steps 6-14** of this task again, then try to trigger the flow again.
+     > **Note:** If you receive the error `Error from the token exchange: Permission denied due to missing connection` while running the flow, it indicates that the **Dataverse connection** was not added correctly. To fix this, edit the flow, expand the **Apply to each** section, and click the **three dots (...)** next to **Add a new topic**. Then, add a new connection reference using your **ODL credentials**, save the flow, and run it again to test. If the error still persists, delete the imported solution and re-import it by performing **Steps 6–14** of this task again, and then try to trigger the flow once more.
+
 
 1. Click **Done** and wait for the flow run to complete.
 
      ![](images/8-8-25-l1-11.png)
 
-1. The flow should run successfully. If you want, you can click on the run row, and it will show you
-    the details of what the flow did.
+1. The flow should run successfully. If desired, you can click on the run entry to view detailed information about the actions the flow performed.
+
    
       ![](images/L01/image141.png)
 
@@ -158,8 +159,6 @@ In this task, you will test the two imported apps, Prioritz Admin and Prioritz A
 1. Navigate back to **Prioritz** solution by clicking on **Cloud flows**. Alternatively, you can also open the **Power Apps** maker portal by using this URL `https://make.powerapps.com` if not already open. Make sure the development environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** is selected.
        
    ![](images/2108.png)
-
-   >**Note:** If a **Welcome to Power Apps Studio** pop-up appears, simply click **Skip** to proceed.
 
 2. Navigate to **Solutions** blade by clicking on **Back to solutions** **(←)** button.
 
@@ -342,7 +341,7 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
 
     ![](images/L01/L01-modeu.png)
 
-1. Select **Save topic icon** under **Add Topics Screen** section.
+1. Select **Save topic icon** under **Add Topics Screen** in tree view section.
      
      ![](images/L01/image30u.png)
 

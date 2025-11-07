@@ -257,14 +257,14 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
      
       ![](images/L02/initu.png)
         
- 17. Paste the code below inside the **init** function. This logic initializes our class variables from the runtime values and enables resize notification.    
-    
-     ![](images/L02/init1-1.png)
+ 17. Paste the code in the void section inside the **init** function. This logic initializes our class variables from the runtime values and enables resize notification.    
    
      ```
      this.context = context;
      context.mode.trackContainerResize(true);
      ```
+
+     ![](images/L02/init1-1.png)
  
 18. Locate the **updateView** function.
 
@@ -429,6 +429,33 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
      ```
    
       ![](images/L02/eslint.png)
+
+25. If the **.eslintrc.json** file is not available (as per the latest update from the PAC CLI), you can create it manually.  
+    - In the **PrioritZDnDRanking** workspace, create a new file.  
+    - Name the file **.eslintrc.json**.
+     
+      ![](images/L02/eslint11.png)
+
+26. Paste the full ESLint configuration code into the file and **save** it.
+
+```json 
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/no-empty-object-type": ["off"],
+    "no-unused-vars": ["off"],
+    "no-undef": ["off"]
+  }
+}
+```
+
    
 26. Click **File** and save all your changes.
 

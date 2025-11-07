@@ -710,7 +710,7 @@ In this exercise, you will create a new custom connector.
 
      ![](images/L04/image%20(65).png)
 
-### Exercise 5 – Use Function from Canvas App
+## Exercise 5 – Use Function from Canvas App
 
 In this exercise, you will use the Azure function you created via the custom connector from the PrioritZ
 Admin canvas application.
@@ -789,6 +789,9 @@ Admin canvas application.
 12. Click **Save**.
 
 1. Click **Publish**.
+
+     ![](images/L04/saveAndPublish.png)
+
 
 1. Select **Publish this version** and wait for publishing to complete.
 
