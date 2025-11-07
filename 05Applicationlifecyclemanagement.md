@@ -509,7 +509,27 @@ In this task, you will create a workflow.
 1. Select the **solutions (1)** tab from the left side and click on **Managed (2)**. You should see the solution deployed with the name of **Prioritz (3)**.
 
     ![](images/L05/lastuu.png)
-    
+
+### Task 2: Cleanup Environment
+
+In this task, you will **clean up all the environments** used during the lab.
+
+1. Navigate to the **[Power Platform Admin Center](https://admin.powerplatform.microsoft.com/manage/environments)** .
+
+2. Click on the **DEV_ENV_TEST** environment that you created for testing the solution. Click on the **three ellipses (...)** in the top header, and then select **Delete**.  
+
+    ![](images/L05/deleteenv.png)
+
+
+3. To delete the environment, **enter the name of the environment** and then click **Confirm**.
+
+    ![](images/L05/deleteenv1.png)
+
+4. Repeat the process to delete the other environment **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />**.  
+   - It will take approximately **5–10 minutes** to completely remove the environment.
+
+
+
 ## Summary
 In this lab, you learned to promote a solution to a test environment, configure a service principal, and manage your solution using GitHub for version control and workflow automation.
 

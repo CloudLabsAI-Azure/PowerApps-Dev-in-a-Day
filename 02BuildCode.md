@@ -421,7 +421,8 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
     },
     ```
     
-25. Navigate to **.eslintric.json(1)** file from the left navigation to add the new lint rule. Locate **rules(2)** in **line number 22** and replace the code by following the specified rules below.
+25. Navigate to **.eslintrc.json(1)** file from the left navigation to add the new lint rule. Locate **rules(2)** in **line number 22** and replace the code by following the specified rules below.
+    > **Note**: If **.eslintrc.json** file is not visible then you can continue with next step directly.
    
       ```
       "no-unused-vars": ["off"],
@@ -455,7 +456,6 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
   }
 }
 ```
-
    
 26. Click **File** and save all your changes.
 
