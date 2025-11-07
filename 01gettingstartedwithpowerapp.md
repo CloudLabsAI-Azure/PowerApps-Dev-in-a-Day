@@ -6,7 +6,7 @@ In this lab, you will set up your Power Platform development environment as part
 
 ## Lab Objectives
 
-You will be able to complete the following :
+You will be able to complete the following exercises:
 
 - Exercise 1: Import and review solution components
 - Exercise 2: Add a column for My Notes
@@ -21,22 +21,6 @@ In this exercise, you will import the current solution into the pre-created dev 
 ### Task 1: Import, Review solution components and run flow
 
 In this task, you will be importing the Prioritz solution into the Power Apps portal, connecting it with Dataverse, and exploring its tables, schema, and relationships. You also review and run a cloud flow that loads sample topic data into the environment. In the end, you verify that the solution and automation were imported and executed successfully.
-
-1. In the LabVM, click on the **Power Apps portal** shortcut of the Microsoft Edge browser that is available on the desktop.
-
-   ![azure portal.](images/L01/PAportal.png)
-
-1. On the **Sign in** window, you will see the login screen. Enter the following username **(1)** and click on **Next** **(2)**.
-
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
-
-     ![](images/8-8-25-l1-1.png)
-
-1. Now enter the following password **(1)** and click on **Sign in** **(2)**. 
-
-   * Password: <inject key="AzureAdUserPassword"></inject>
-   
-     ![](images/8-8-25-l1-2.png)
 
 1. On the top right corner,  click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 

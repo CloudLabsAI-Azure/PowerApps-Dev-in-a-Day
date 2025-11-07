@@ -6,6 +6,8 @@ Working as part of the PrioritZ fusion team, you will be configuring GitHub Acti
 
 ## Lab Objectives
 
+You will be able to complete the following exercises:
+
 - Exercise 1: Configure a Service Principal
 - Exercise 2: Promote Solution to Test Environment 
 - Exercise 3: Create GitHub Repo 
@@ -20,7 +22,7 @@ In this exercise, you will create a service principal. The service principal wil
 
 In this task, you will create an app registration in Microsoft Entra ID for secure API access.
 
-1. Navigate back to the browser tab in which the Azure Portal is open. If not already open, navigate to the Azure Portal using the URL below.
+1. Navigate to the Azure Portal using the URL below and sign in.
 
    ```
    https://portal.azure.com/
@@ -527,7 +529,6 @@ In this task, you will **clean up all the environments** used during the lab.
 
 4. Repeat the process to delete the other environment **DEV_ENV_<inject key="DeploymentID" enableCopy="false" />**.  
    - It will take approximately **5–10 minutes** to completely remove the environment.
-
 
 
 ## Summary
