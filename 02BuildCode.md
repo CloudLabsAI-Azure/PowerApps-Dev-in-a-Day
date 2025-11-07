@@ -6,6 +6,8 @@ In this lab, you will build a custom code component using the React JavaScript f
 
 ## Lab Objectives
 
+You will be able to complete the following exercises:
+
 - Exercise 1: Build Code Component 
 - Exercise 2: Use Code Component 
 - Exercise 3: Add Code Component to Solution 

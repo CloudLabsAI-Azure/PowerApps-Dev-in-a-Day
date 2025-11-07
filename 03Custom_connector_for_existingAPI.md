@@ -6,6 +6,8 @@ In this lab, you will configure a custom connector for an existing API to add a 
 
 ## Lab Objectives
 
+You will be able to complete the following exercises:
+
 - Exercise 1: Create Database in Default Environment 
 - Exercise 2: Create Solution 
 - Exercise 3: Create Custom Connector 

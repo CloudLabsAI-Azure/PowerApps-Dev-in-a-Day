@@ -84,80 +84,33 @@ To adjust the zoom level for the environment page, click the **A↕** icon locat
 
 ![](./images/zoom100.png) 
  
-## Let's Get Started with Azure Portal
+## Let's Get Started with Power Apps Portal
+
+1. In the LabVM, click on the **Power Apps portal** shortcut of the Microsoft Edge browser that is available on the desktop.
+
+   ![azure portal.](images/L01/PAportal.png)
  
-1. On your virtual machine, click on the **Azure Portal** icon as shown below:
- 
-   ![](./images/GS1.png)
- 
-1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+1. On the **Sign in to Microsoft Azure** tab, you will see the login screen. Enter the following email or username, and click on **Next**. 
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-     ![](./images/GS2.png "Enter Email")
+     ![](./images/sign-in-page.png "Enter Email")
  
-1. Next, provide your password:
+1. Now enter the following **password** and click on **Sign in**.
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-     ![](./images/GS3.png "Enter Password")
-
-1. If you see the pop-up Action Required, click Ask Later.
-
-   ![](./images/asklater.png)
-
-   > **NOTE:** Please do not enable MFA; immediately select "Ask Later" if available. If the "Ask Later" option is not shown, then proceed to enable MFA by following the steps highlighted under **Steps to Proceed with MFA Setup if Ask Later Option is Not Visible**
+     ![](./images/tap-password.png "Enter Password")
  
 1. If you see the pop-up **Stay Signed in?**, click **No**.
 
    ![](./images/2101.png)
 
-1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
-
-   ![](./images/2102.png)
-
 By completing these exercises, you will import and customize Power Platform solutions, create and implement custom code components with Visual Studio Code, develop and integrate custom connectors, create and deploy Azure Functions, and manage solutions using GitHub for source control.
 
 **Note:** Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
 
-## Steps to Proceed with MFA Setup if Ask Later Option is Not Visible
 
-> **Note:** Continue with the exercises if MFA is already enabled or the option is unavailable.
-
-1. On the **Action Required** pop-up, click on **Next**.
-
-   ![](./images/8-8-25-g1-1.png)
-
-2. In the Keep your account secure window, the window that appears and the steps that follow are for the Microsoft Authenticator app method. Select **Next**.
-
-    ![](./images/8-8-25-g1-2.png)
-
-3. On the Set up your account page, select **Next**.
-
-   ![](./images/8-8-25-g1-3.png)
-
-4. **Note:** If you don’t have the Microsoft Authenticator app installed on your mobile device:
-
-   - Open **Google Play Store** (Android) or **App Store** (iOS).
-   - Search for **Microsoft Authenticator** and tap **Install**.
-   - Open the **Microsoft Authenticator app**, select **Add account**, then choose **Work or school account**.
-
-5. Scan the QR code with your phone. On the phone, inside the Authenticator app, select Work or school account, and scan the QR code. Select **Next**.
-
-   ![](./images/8-8-25-g1-4.png)
-
-6. On the Keep your account secure page. Enter the code, which is shown on the Authenticator app.
-
-   ![](./images/8-8-25-g1-5.png)
-
-7. Once the code is entered. click **Next**
-
-   ![](./images/8-8-25-g1-6.png)
-
-8. Select Done on the Success! page.
-
-   ![](./images/8-8-25-g1-7.png)
-   
 ## Support Contact
 
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.
