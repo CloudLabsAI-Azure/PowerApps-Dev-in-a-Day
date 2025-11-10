@@ -26,6 +26,28 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
       ![](images/8-8-25-l1-3.png)
 
+    > **Note:** If you are unable to access **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** environment, follow the below steps. 
+
+    i. Navigate to the Power Platform admin center by using the URL below
+    
+    ```
+    https://admin.powerplatform.microsoft.com/environments
+    ```
+
+    ii. Click **Manage (1)**, naviagte to **Environments (2)** tab and open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
+
+    ![](images/access-dev-env.png)
+
+    iii. Copy the **Environment ID** value and paste it into Notepad.
+
+    ![](images/copy-env-id.png)
+
+    iv. Replace the below **<ENVIRONMENT-ID>** value with the copied environment id and paste the URL in the browser.
+
+    ```
+    https://make.powerapps.com/environments/<ENVIRONMENT-ID>
+    ```  
+
 1. Now, click on **Solutions (1)** from the left hand side menu and click **Import solution (2)**.
 
       ![](images/8-8-25-l1-4.png)

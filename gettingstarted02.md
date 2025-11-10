@@ -103,6 +103,10 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
 
    ![](./images/2101.png)
 
+1. If **Welcome to Power Apps** pop-up window appears, click on **Get started** button.
+
+   ![](./images/get-started.png)
+
 By completing these exercises, you will import and customize Power Platform solutions, create and implement custom code components with Visual Studio Code, develop and integrate custom connectors, create and deploy Azure Functions, and manage solutions using GitHub for source control.
 
 **Note:** Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
