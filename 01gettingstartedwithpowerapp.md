@@ -26,7 +26,7 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
     https://admin.powerplatform.microsoft.com/environments
      ```
 
-1. Click **Manage (1)**, naviagte to **Environments (2)** tab and click on **+ New (3)**.
+1. Click **Manage (1)**, navigate to **Environments (2)** tab and click on **+ New (3)**.
 
     ![](images/LETS1112.png)
 
@@ -38,7 +38,7 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
     ![](images/LETS114.png)
 
-1. Scroll down and select the **type** as **Trial (1)** then turn on **Add dataverse data store (2)** and click on **Next (3)**.
+1. Scroll down and select the **type** as **Trial (1)** then turn on **Add dataverse data store? (2)** and click on **Next (3)**.
 
     ![](images/LETS1113.png)
 
@@ -50,15 +50,15 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
     ![](images/LETS1116.png)
 
-1. Scroll down and turn on **Deploy sample apps and data (1)** then click on **Save (2)**.
+1. Scroll down and turn on **Deploy sample apps and data? (1)** then click on **Save (2)**.
 
     ![](images/LETS1117.png)
 
-1. Click on **Refresh** and Wait for the environment to be ready.
+1. Click on **Refresh** until the environment status changes to **Ready** state.
 
     ![](images/LETS1118.png)
 
-1. Open a new tab and naviagte to **power apps portal** using below link.
+1. Open a new tab and navigate to **power apps portal** using below link.
 
     ```
     https://make.powerapps.com/
