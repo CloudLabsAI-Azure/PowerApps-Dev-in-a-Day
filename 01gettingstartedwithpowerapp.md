@@ -16,33 +16,69 @@ You will be able to complete the following exercises:
 
 In this exercise, you will import the current solution into the pre-created dev environment and review the components of the solution. You will also run a flow that will add sample data to your environment and test the applications in the solution.
 
->**Note:** The Dev environment is already pre-created as a part of the prerequisites.
-
 ### Task 1: Import, Review solution components and run flow
 
 In this task, you will be importing the Prioritz solution into the Power Apps portal, connecting it with Dataverse, and exploring its tables, schema, and relationships. You also review and run a cloud flow that loads sample topic data into the environment. In the end, you verify that the solution and automation were imported and executed successfully.
+
+1. Open a new tab and navigate to the **Power Platform admin center** by using the URL below
+    
+    ```
+    https://admin.powerplatform.microsoft.com/environments
+     ```
+
+1. Click **Manage (1)**, naviagte to **Environments (2)** tab and click on **+ New (3)**
+
+    ![](images/LETS1112.png)
+
+     > **Note:** If there is any existing environment with prefix **DEV_ENV** then click on **ellipses(...) (1)** and select **Delete (2)**
+
+      ![](images/LETS1111.png)
+
+1. On the **New environment** Pane, provide the name as **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**
+
+    ![](images/LETS114.png)
+
+1. Scroll down and select the **type** as **Trial (1)** then turn on **Add dataverse data store (2)** and click on **Next (3)**
+
+    ![](images/LETS1113.png)
+
+1. Click on **+ Select** under **Security group**
+
+    ![](images/LETS1115.png)
+
+1. Select **None** and click on **Done**
+
+    ![](images/LETS1116.png)
+
+1. Scroll down and turn on **Deploy sample apps and data (1)** then click on **Save (2)**
+
+    ![](images/LETS1117.png)
+
+1. Click on **Refresh** and Wait for the environment to be ready
+
+    ![](images/LETS1118.png)
+
+1. Open a new tab and naviagte to **power apps portal** using below link
+
+    ```
+    https://make.powerapps.com/
+    ```
 
 1. On the top right corner,  click on **Environment (1)** and select the pre-created dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" /> (2)**.   
 
       ![](images/8-8-25-l1-3.png)
 
-    > **Note:** If you are unable to access **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** environment, follow the below steps. 
+    > **Note:** If you are unable to access **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />** environment, follow the below steps.
 
-    i. Navigate to the Power Platform admin center by using the URL below
-    
-    ```
-    https://admin.powerplatform.microsoft.com/environments
-    ```
-
-    ii. Click **Manage (1)**, naviagte to **Environments (2)** tab and open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
+    i. Go to **Power apps admin portal** (previous tab), click **Manage (1)**, navigate to **Environments (2)** tab and open your dev environment named **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
     ![](images/access-dev-env.png)
 
-    iii. Copy the **Environment ID** value and paste it into Notepad.
+    ii. Copy the **Environment ID** value and paste it into Notepad.
 
     ![](images/copy-env-id.png)
 
-    iv. Replace the below **<ENVIRONMENT-ID>** value with the copied environment id and paste the URL in the browser.
+    iii. Replace the below **<ENVIRONMENT-ID>** value with the copied environment id and paste the URL in the browser.
 
     ```
     https://make.powerapps.com/environments/<ENVIRONMENT-ID>
@@ -68,27 +104,23 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
     ![](images/L01/next1-3.png)
 
-1. Under the **Connections** section, click on the ellipsis button **(...) (1)** next to **Microsoft Dataverse Prioritz**.
-
-1. Ensure that user mail **<inject key="AzureAdUserEmail"></inject> (2)** you are using is selected.
-
-1. Click on **Import (3)**.
+1. Under the **Connections** section, click on the ellipsis button **(...) (1)** next to **Microsoft Dataverse Prioritz**, ensure that user mail **<inject key="AzureAdUserEmail"></inject> (2)** you are currently signed in with is selected, and then click **Import (3)**.
 
     ![](images/2103.png)
     
 1. The import process will take approximately 5–10 minutes to complete. Once the import is successful, a confirmation message will appear **Solution "Prioritz" imported successfully**.
 
-     ![](images/L01/solutionsuccess.png)
+    ![](images/L01/solutionsuccess.png)
      
-1. You should now see the solution you imported in the list of solutions. Open the **Prioritz** solution you imported.
+1. You should now see the solution you imported in the list of solutions. Click on the **Prioritz** solution to open.
 
-     ![](images/2104.png)
+    ![](images/2104.png)
 
-1. Expand **Tables (1)** and select the **Prioritz Topic (2)** table.
+1. From the left-hand side under **Objects**, expand **Tables (1)** and select the **PrioritZ Topic (2)** table.
    
-     ![](images/L01/L01-table1.png)
+    ![](images/L01/L01-table1.png)
 
-1. Under the **Schema** section, select the **Columns** of the **Prioritz Topic** table.
+1. Under the **Schema** section, select the **Columns**.
 
    >**Info:** The standard columns are built-in, and all tables have them. The custom columns were created by the team for this application.
  
@@ -106,9 +138,9 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
 1. Click on **Edit** button to review the flow.
   
-    ![](images/2106.png)
+    ![](images/L1E1T1S14.png)
 
-1. Expand the **Parse JSON** step and review the data this flow will create.
+1. Expand the **Parse JSON** step and review the data that will be created by this flow.
 
     ![](images/L01/L01-parse1-1.png)
     
@@ -130,7 +162,7 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
 1. Click on the **<- back** arrow to navigate back.
  
-    ![](images/8-8-25-l1-7.png)
+    ![](images/L1E1T1S21.png)
 
 1. Click on the **Import sample data - Topics** cloud flow name to open the flow details screen.
 
@@ -146,17 +178,17 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
      > **Note:** If you receive the error `Error from the token exchange: Permission denied due to missing connection` while running the flow, it indicates that the **Dataverse connection** was not added correctly. To fix this, edit the flow, expand the **Apply to each** section, and click the **three dots (...)** next to **Add a new topic**. Then, add a new connection reference using your **ODL credentials**, save the flow, and run it again to test. If the error still persists, delete the imported solution and re-import it by performing **Steps 6–14** of this task again, and then try to trigger the flow once more.
 
-
 1. Click **Done** and wait for the flow run to complete.
 
-     ![](images/8-8-25-l1-11.png)
+    ![](images/8-8-25-l1-11.png)
 
-1. The flow should run successfully. If desired, you can click on the run entry to view detailed information about the actions the flow performed.
+1. Scroll down and click on **Refresh** until the Flow run succeeded
 
-   
-      ![](images/L01/image141.png)
+    ![](images/L1E1T1S23.png)
 
-      ![](images/2107.png)
+1. Click on the run entry to view detailed information about the actions the flow performed.
+
+    ![](images/L1E1T1S24.png)
 
 ### Task 2: Test the apps
 
@@ -253,13 +285,6 @@ In this task, you will test the two imported apps, Prioritz Admin and Prioritz A
     
 22. Close the Prioritz Ask app by closing the browser tab in which the Prioritz Ask application is open.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
- 
-<validation step="43212171-0d6f-44d9-9c69-5061a4bb1b1c" />
-
 ## Exercise 2 – Add a column for My Notes
 
 In this exercise, you will add a new column **My Notes** to the topic table and update the PriortZ Admin
@@ -277,9 +302,7 @@ In this task, you will add a new column in Prioritz solution in Power Apps.
 
    ![](images/2112.png)
 
-3. Expand **Tables (1)** and select the **Prioritz Topic (2)** table.
-
-4. Select the **Columns** tab that is present under **+ New (3)** and click **column (4)**.
+3. Expand **Tables (1)** and select the **Prioritz Topic (2)** table. Then click **+ New (3)** and select **column (4)**.
 
     ![](images/8-8-25-l1-21.png)
 
@@ -379,6 +402,8 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
      ```
      'Topics gallery'.Selected.'My Notes'
      ```
+    
+      ![](images/L01/L1E1T2S13.png)
 
 1. Rearrange the controls so that the **Notes label** is positioned between the Details label and the Topic items gallery.
 
@@ -386,11 +411,11 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
 
 1. Select the **Home Screen (1)** and click **Preview the app (2)**.
       
-      ![](images/L01/image34u.png)
+    ![](images/L01/image34u.png)
 
 1. Click on the **+** button to add a new topic.
 
-      ![](images/L01/L01-taco-1_1u.png)
+    ![](images/L01/L01-taco-1_1u.png)
 
 1. Fill out the form by providing the information below and click **add a picture** that is present below the **Respond By** field.
     - Topic: `Test Notes` **(1)**    
@@ -398,11 +423,11 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
     - Text input: `Prioritz Admin topic` **(3)**
     - Respond By: **Today's date** **(4)**
 
-      ![](images/9-8-25-l1-1.png)
+      ![](images/L1E2T2S17.png)
 
 1. Type **Test One** in the Choice field and click **add a picture** that is present below the Choice field.
      
-      ![](images/L01/image18uu.png)
+    ![](images/L1E2T2S18.png)
 
 1. Navigate to this path `C:\LabFiles` **(1)** in File Explorer, select **image.png (2)** and click **Open (3)**.
 
@@ -415,15 +440,17 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
 1. Add one more choice by repeating **steps 20-22** of this task.    
    - **Choice 1:**  Enter `Test Two`
      
-1. After adding all the Choices and topic details, your screen should look like the screenshot below.
+1. After adding all the Choices and topic details, your screen should look like the screenshot below. Click on the **Save** button. The new topic should be **saved**.
 
     ![](images/L01/L01-testnotesu.png)
       
-1. Now, click on the **Save** button. The new topic should be **saved**.
+1. Scroll down and click to open the **Test Notes** topic that you just created.
 
-1. Click to open the **Test Notes** topic that you just created.
+    ![](images/L1E2T2S23.png)
 
 1. The notes **Prioritz Admin topic** that you added earlier should now be visible.
+
+    ![](images/L1E2T2S24.png)
 
 1. Close the app **preview**.
 
@@ -483,10 +510,10 @@ In this task, you will review and test the Power Platform CLI extension in Visua
 8. Replace `<your environment URL>` in the below command with the value of the environment URL that you copied earlier then run the command.
 
    ```
-   pac auth create --name DevAuth --url <your environment URL>
+   pac auth create --name DevAuth --environment <your environment URL>
    ```
 
-   > **Info:** After adding the environment URL, the command will look like this: `pac auth create --name DevAuth--url https://org32172839283.crm.dynamics.com/`
+   > **Info:** After adding the environment URL, the command will look like this: `pac auth create --name DevAuth --environment https://orgxxxxxxxxx.crm.dynamics.com/`
   
     ![](images/L01/Eeditpac.png)
 
@@ -499,15 +526,9 @@ In this task, you will review and test the Power Platform CLI extension in Visua
 
 10. Select **Power Platform** tool, you should now have at least one **auth profile**. If you have more than one profile, make sure the profile you created is selected
    
-    ![](images/L01/authupp.png)
+    ![](images/LETS2111.png)
 
     > **Note:** If you're unable to see the **DeVAuth** profile, close Visual Studio Code and reopen it.
-
-    > **Note:** If you are able to see the **Universal Profile** instead of **DeVAuth** profile, it is because of adding the incorrect **Environment URL** value in the **pac auth create** command in Step 9. To fix this issue, follow the steps below:
-
-    > 1. Delete the **Universal Profile** from Visual Studio Code by clicking on the delete button.
-    > 2. Copy the correct **Environment URL** value by following **Step 5** of this task. 
-    > 3. Perform the **Step 9** of this task again to create the auth profile.
 
 11. Click  on **Ellipsis** **(...) (1)** **Terminal (2)** and select **New Terminal (3)** if not already open.
 

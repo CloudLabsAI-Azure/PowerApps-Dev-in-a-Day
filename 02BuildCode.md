@@ -28,7 +28,7 @@ In this task, you will set up a new PowerApps Component Framework (PCF) project 
     
    >**Note:** The Power Platform tab is already installed.
     
-    ![](images/L02/authup.png)
+    ![](images/LETS2111.png)
 
 3. Click on the ellipsis menu **... (1)** to expand additional options. Then, select **Terminal (2)** from the dropdown menu and click on **New Terminal (3)** to open a terminal session.
      
@@ -124,7 +124,7 @@ In this task, you will set up a new PowerApps Component Framework (PCF) project 
  
       >**Note:** Please make sure not to uncomment the **resx path** as you will be facing an issue in the next task while building the code component if it's uncommented.
       
- 17. Notice the following two resources. This declares the component’s dependency on these two libraries. This is a result of specifying the React framework on initialization.
+ 17. Notice the following two resources. This declares the component’s dependency on these two libraries. This is a result of specifying the React framework on initialization. **Copy** and **replace** the below code.
 
      ```
      <platform-library name="React" version="16.8.6" />
@@ -134,6 +134,8 @@ In this task, you will set up a new PowerApps Component Framework (PCF) project 
      ![](images/platformcss0980.png)
     
 18. Click **File** and select **Save All** to save your changes.
+
+      ![](images/L02/L2E1T2S18.png)
 
 19. Make sure you still have the **ControlManifest.Input.xml** file selected and then click **New Folder**.
 
@@ -145,9 +147,9 @@ In this task, you will set up a new PowerApps Component Framework (PCF) project 
  
      ![](images/L02/image13.png)
  
- 22. Name the new file **PrioritZDnDRanking.css**.
+22. Name the new file **PrioritZDnDRanking.css**.
 
- 23. Paste the following CSS into the **PrioritZDnDRanking.css** file.
+23. Paste the following CSS into the **PrioritZDnDRanking.css** file.
     
        ```
         .prioritydnd-scroll-container {
@@ -181,9 +183,9 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
      
      ![](images/L02/L02-EX1-T2-1n.png)
     
-2. Navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` in file explorer.
-    
-3. Drag the **PriorityComponent.tsx** file and drop it in the **PrioriZDnDRanking** folder.
+2. Open **File explorer** and navigate to this path `C:\LabFiles\Developer-in-a-day\Student\L02 - Build a code component\Resources` in file explorer and drag the **PriorityComponent.tsx** file and drop it in the **PrioriZDnDRanking** folder.
+
+     ![](images/L02/L2E1T2S3.png)
  
 4. The **PriorityComponent.tsx** file should now be in the **PrioriZDnDRanking** folder.
 
@@ -220,6 +222,8 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
     ![](images/L02/ep1.png)
     
 11. Open the **index.ts** file.
+
+    ![](images/LETS2112.png)
     
 12. Remove the following line (line number 2 in the Index.ts file) as we are no longer using HelloWorld
 
@@ -229,7 +233,7 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
     
     ![](images/L02/image18.png)
  
- 13. Add the below code to the **index.ts** file after **line number 1**. This will reference the PriorityComponent.
+13. Add the below code to the **index.ts** file after **line number 1**. This will reference the PriorityComponent.
     
      ```
      import { PriorityComponent, PriorityComponentProps } from './PriorityComponent';
@@ -237,11 +241,11 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
 
      ![](images/L02/image19.png)  
     
- 14. Locate the **Export** class in **line number 5**.
+14. Locate the **Export class**
       
-     ![](images/L02/image20.png)
+     ![](images/L02/L1E1T2S14.png)
  
- 15. Add the following code below inside the **export** class. This defines some working variables you will be using in the class logic.
+15. Add the following code below inside the **export** class. This defines some working variables you will be using in the class logic.
    
         ```
         private context: ComponentFramework.Context<IInputs>;
@@ -251,7 +255,7 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
 
         ![](images/L02/L2T2S15.png)
  
- 16. Locate the **init** function and remove the following line of code.
+16. Locate the **init** function and remove the following line of code.
 
        ```
        state: ComponentFramework.Dictionary
@@ -259,7 +263,7 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
      
       ![](images/L02/initu.png)
         
- 17. Paste the code in the void section inside the **init** function. This logic initializes our class variables from the runtime values and enables resize notification.    
+17. Paste the code in the **void** section inside the **init** function. This logic initializes our class variables from the runtime values and enables resize notification.    
    
      ```
      this.context = context;
@@ -326,12 +330,6 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
         private theComponent: ComponentFramework.ReactControl<IInputs, IOutputs>;
         private notifyOutputChanged: () => void;
 
-        /**
-        * Empty constructor.
-        */
-        constructor() { }
-
-        /**
         * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
         * Data-set values are not initialized here, use updateView.
         * @param context The entire property bag available to control via Context Object; It contains values as set up by the 
@@ -410,16 +408,16 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
 
     ```
     "dependencies": {
-    "@fluentui/react": "8.29.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.4.0",
-    "eslint-plugin-sonarjs": "^0.13.0",
-    "prettier": "^2.6.1",
-    "react": "16.8.6",
-    "react-beautiful-dnd": "^13.1.0",
-    "react-dom": "16.8.6"
+        "@fluentui/react": "8.29.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-react": "^7.29.4",
+        "eslint-plugin-react-hooks": "^4.4.0",
+        "eslint-plugin-sonarjs": "^0.13.0",
+        "prettier": "^2.6.1",
+        "react": "16.8.6",
+        "react-beautiful-dnd": "^13.1.0",
+        "react-dom": "16.8.6"
     },
     ```
     
@@ -473,11 +471,11 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
 
       > **Note:** If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
  
- 29. The build should succeed. If any errors, resolve them before proceeding.
+29. The build should succeed. If any errors, resolve them before proceeding.
       
        ![](images/L02/image28.png)
  
- 30. Run the command below to start the test harness.
+30. Run the command below to start the test harness.
     
         ```
         npm start
@@ -511,13 +509,13 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
     
     > 1. If you encounter the error message **"Error: Missing required tool: MSBuild.exe/dotnet.exe. Please add MSBuild.exe/dotnet.exe in Path environment variable or use 'Developer Command Prompt for VS'"**, follow these steps:
         
-    > - Navigate to the `C:\LabFiles` directory and open **dotnet-sdk-8.0.100-win-x64**.
+    > - Navigate to the `C:\LabFiles` directory and open **dotnet-sdk-8.0.402-win-x64**.
            
     > - In the setup window, select **Repair**, then wait for the process to complete.
 
     > - After the repair finishes, close Visual Studio Code, reopen it, and First run the build command present in 28 step and again run the above command.
 
-    > - If the issue persists, uninstall **dotnet-sdk-8.0.100-win-x64** and install the latest version from [the .NET download page](https://dotnet.microsoft.com/en-us/download). Close Visual Studio Code, reopen it, run the build command from step 28, and then execute the above command again.
+    > - If the issue persists, uninstall **dotnet-sdk-8.0.402-win-x64** and install the latest version from [the .NET download page](https://dotnet.microsoft.com/en-us/download). Close Visual Studio Code, reopen it, run the build command from step 28, and then execute the above command again.
 
     > 2. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
         
@@ -543,20 +541,13 @@ In this task, you will verify that the custom drag-and-drop control was successf
     https://make.powerapps.com/
     ```
     
-2. Select **Solutions (1)** and open the **PowerAppsTools_contoso (2)** solution.
+2. Select **Solutions (1)** and open the **Default Solution (2)** solution.
     
-    ![](images/2120.png)
+    ![](images/LETS2113.png)
 
-3. Click on **All** and confirm that the custom control is in this solution.
+3. In the **Objects** pane, scroll down and click on **Custom connectors** and confirm that the custom control is in this solution.
      
-    ![](images/2121.png)
-    
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
- 
-<validation step="aae02cab-a129-491c-b38b-29c66f2f2547" />
+    ![](images/LETS2114.png)
 
 ## Exercise 2 – Use Code Component
 

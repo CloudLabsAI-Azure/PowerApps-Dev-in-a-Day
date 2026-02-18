@@ -42,7 +42,7 @@ In this, you will create a new solution container in your dev environment.
 
     > **Note:** If the Dataverse database is already created, skip the task and continue with Exercise 2.
 
-4. Select **Currecny -> TND and Language -> English(1)** and click on **Create my database (2)**.
+4. Select **Currency -> TND** and **Language -> English(1)** and click on **Create my database (2)**.
 
     ![](images/L03/db2.png)
     
@@ -71,13 +71,6 @@ In this task, you will create a new solution in your dev environment to keep rel
 3. Enter **Contoso Badges connector (1)** for Display name, select **Contoso Coffee (ContosoCoffee) (2)** for Publisher, and click **Create (3)**.
    
    ![](images/L03/8-8-25-l3-0.png)
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
- 
-<validation step="2be455a2-0037-48b9-83b9-d3efb66743e9" />
 
 ## Exercise 3 – Create Custom Connector
 
@@ -132,7 +125,7 @@ In this task, you will build a custom connector for the Contoso Badges API in yo
   
       >**Note:** If prompted to sign in, use the ODL credentials found in the environment tab located to the right of the Lab guide.
 
-9. Select **Custom connectors (1)** from the sitemap. Click on the **... More actions (2)** button of the custom connector you created and select **Update from Open API file (3)** 
+9. Select **Custom connectors (1)** from the left-pane. Click on the **... More actions (2)** button of the custom connector you created and select **Update from Open API file (3)** 
 
       ![](images/L03/L03-customa.png)
 
@@ -140,7 +133,7 @@ In this task, you will build a custom connector for the Contoso Badges API in yo
 
       ![](images/L03/L03-import.png)
 
-11. Select **Downloads (1)** then click **swagger.json (2)** file you saved to your machine **(1)** and click **Open (3)**.
+11. Select **Downloads (1)** then click **swagger.json (2)** file you saved to your machine and click **Open (3)**.
 
     ![](images/2129.png)
     
@@ -166,11 +159,11 @@ In this task, you will update the AddCredit action in the connector by marking p
     
      ![](images/L03/image10-1a.png)
 
-2. Scroll down to the **Request** section, click on the chevron button of the **body** and select **Edit**.
+2. Scroll down to the **Request** section, click on the drop-down button of the **body** and select **Edit**.
      
      ![](images/L03/image11a.png)
 
-3. Scroll down and click on the chevron button of **points** and select **Edit**.
+3. Scroll down and click on the drop-down button of **points** and select **Edit**.
     
     ![](images/L03/image12a.png)
 
@@ -178,7 +171,7 @@ In this task, you will update the AddCredit action in the connector by marking p
      
      ![](images/L03/image13a.png)
 
-5. Click on the chevron button of **recipientid** and select **Edit**.
+5. Click on the drop-down button of **recipientid** and select **Edit**.
 
      ![](images/L03/L03-recepient.png)
 
@@ -186,7 +179,7 @@ In this task, you will update the AddCredit action in the connector by marking p
 
      ![](images/9-8-25-l3-1.png)
 
-7. Click on the chevron button of **name** and select **Edit**.
+7. Click on the drop-down button of **name** and select **Edit**.
 
      ![](images/L03/L03-name.png)
 
@@ -198,9 +191,9 @@ In this task, you will update the AddCredit action in the connector by marking p
 
       ![](images/9-8-25-l3-3.png)
 
-10. Advance to **Code**.
+10. Scroll down and advance to **Code**.
 
-     ![](images/L03/8-8-25-l3-6.png)
+     ![](images/L03/L3E3T2S10.png)
  
 11. Review the code and advance to **Test**.
 
@@ -252,11 +245,15 @@ In this task, you will test the custom connector by creating a new connection wi
 
 10. Select the **GetRecipient** operation.
 
+     ![](images/L03/L3E3T3S10.png)
+
 11. Provide your email address as the ID and click **Test operation**.
       
      ![](images/L03/8-8-25-l3-11.png)
 
 12. The test should succeed, and you should get the expected response.
+
+     ![](images/L03/image21u.png)
 
 13. Go ahead and test the **ListBadges** and **ListRecipients** operations. Leave the options blank and click on **Test operation**.
 
@@ -265,13 +262,6 @@ In this task, you will test the custom connector by creating a new connection wi
 14. All the tests should succeed.
   
      ![](images/L03/image23.png)
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
- 
-<validation step="e9892770-5284-40d8-a6a1-28f85d7e051f" />
 
 ## Exercise 4 – Add Custom Code
 
@@ -334,15 +324,17 @@ In this task, you will extend the custom connector by adding a new action called
   
      ![](images/2132.png)
 
-11. Enable **Code (1)** and click **Upload (2)**.
+11. Click on **Upload**.
     
-     ![](images/L03/image29-1.png)
+     ![](images/L03/L3E4T1S10.png)
 
 12. Navigate to `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` **(1)**, Select the **CustomConnectorCode.csx (2)** file located in this path and click **Open (3)**.
 
      ![](images/L03/L03-customconnectorcode.png)
 
 13. Select the **getcurrentbadge** action from the dropdown.
+
+     >**Note:** Ensure that **Code enabled** is turned on
      
      ![](images/2133.png)
 
@@ -350,11 +342,15 @@ In this task, you will extend the custom connector by adding a new action called
 
 15. Click **Update connector** and wait for the connector to be updated.
 
-16. Advance to **Test** by selecting it in the dropdown.
+     ![](images/L3E4T1S15.png)
+
+16. Scroll down and advance to **Test**.
 
      ![](images/2134.png)
 
 17. Select the **getcurrentbadge** action.
+
+     ![](images/L3E4T1S17.png)
 
 18. Provide your email address as ID and click **Test operation**.
      
@@ -370,7 +366,7 @@ In this task, you will extend the custom connector by adding a new action called
 
 21. Select the **Definition** tab from the dropdown.
 
-      ![](images/L03/image333.png)
+      ![](images/L03/L3E4T1S22.png)
 
 22. Select the **getcurrentbadge** action.
      
@@ -420,7 +416,7 @@ In this task, you will use the custom connector you created to show the user’s
 
     ![](images/L03/dev11.png)
 
-2. Expand **Solutions (1)** and open the **PrioritZ (2)** solution.
+2. Click on **Solutions (1)** and open the **PrioritZ (2)** solution.
 
      ![](images/L03/Prioritz-select.png)
 
@@ -496,7 +492,7 @@ In this task, you will use the custom connector you created to show the user’s
 
 18. Select the **Screens** tab in the Tree view. Click the **Play** button.
 
-
+      ![](images/L03/L3E5T1S13.png)
 
 19. Hover over the badge to see the badge name.
       
@@ -550,7 +546,7 @@ In this task, you will test the connector from the flow.
 
 7. Click on the **recipientId** field **(1)**, then under the **Manually trigger a flow** pane, select **User email (2)**.
     
-     ![](images/9-8-25-l3-4.png)
+     ![](images/L03/L3E5T2S7.png)
 
 8. Click on the **name** field, under Manually trigger a flow pane, and select **User name**.
 
@@ -580,19 +576,25 @@ In this task, you will test the connector from the flow.
      
      ![](images/9-8-25-l3-6.png)
 
-17. Navigate to the **Power Apps** maker portal using the URL below if not already open, and make sure you are in your dev environment.
+17. Open a new tab and navigate to the **Power Apps** maker portal using the URL below if not already open, and make sure you are in your dev environment.
 
      ```
      https://make.powerapps.com
      ```
 
-18. Select **Apps** and launch the **PrioritZ Ask** application.
+1. Click on **Solutions (1)** and open the **PrioritZ (2)** solution.
+
+     ![](images/L03/Prioritz-select.png)
+
+18. Select **Apps (1)** and select **PrioritZ Ask (2)** application and click on **Play (3)**
+
+     ![](images/L03/L3E5T2S18.png)
 
 19. The application should now show **First Badge** and refresh the page.
   
      ![](images/L03/image53.png)
 
-20. Go back to the flow and run it two more times.
+20. Go back to the **flow**(step 16) and run it two more times.
 
      ![](images/L03/L03-EX4-run1.png)
 
