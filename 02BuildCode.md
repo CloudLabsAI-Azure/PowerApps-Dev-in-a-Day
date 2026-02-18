@@ -435,10 +435,12 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
       ![](images/L02/eslint.png)
 
 25. If the **.eslintrc.json** file is not available (as per the latest update from the PAC CLI), you can create it manually.  
-    - In the **PrioritZDnDRanking** workspace, create a new file.  
-    - Name the file **.eslintrc.json**.
+    
+     - In the **PrioritZDnDRanking (1)** workspace, create a new file.  
+    
+     - Name the file **.eslintrc.json (2)**.
      
-      ![](images/L02/eslint11.png)
+       ![](images/L02/eslint11.png)
 
 26. Paste the full ESLint configuration code into the file and **save** it.
 
