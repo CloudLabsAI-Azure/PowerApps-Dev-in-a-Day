@@ -20,45 +20,45 @@ In this exercise, you will import the current solution into the pre-created dev 
 
 In this task, you will be importing the Prioritz solution into the Power Apps portal, connecting it with Dataverse, and exploring its tables, schema, and relationships. You also review and run a cloud flow that loads sample topic data into the environment. In the end, you verify that the solution and automation were imported and executed successfully.
 
-1. Open a new tab and navigate to the **Power Platform admin center** by using the URL below
+1. Open a new tab and navigate to the **Power Platform admin center** by using the URL below.
     
     ```
     https://admin.powerplatform.microsoft.com/environments
      ```
 
-1. Click **Manage (1)**, naviagte to **Environments (2)** tab and click on **+ New (3)**
+1. Click **Manage (1)**, naviagte to **Environments (2)** tab and click on **+ New (3)**.
 
     ![](images/LETS1112.png)
 
-     > **Note:** If there is any existing environment with prefix **DEV_ENV** then click on **ellipses(...) (1)** and select **Delete (2)**
+     > **Note:** If there is any existing environment with prefix **DEV_ENV** then click on **ellipses(...) (1)** and select **Delete (2)**.
 
       ![](images/LETS1111.png)
 
-1. On the **New environment** Pane, provide the name as **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**
+1. On the **New environment** Pane, provide the name as **DEV_ENV_<inject key="Deployment ID" enableCopy="false" />**.
 
     ![](images/LETS114.png)
 
-1. Scroll down and select the **type** as **Trial (1)** then turn on **Add dataverse data store (2)** and click on **Next (3)**
+1. Scroll down and select the **type** as **Trial (1)** then turn on **Add dataverse data store (2)** and click on **Next (3)**.
 
     ![](images/LETS1113.png)
 
-1. Click on **+ Select** under **Security group**
+1. Click on **+ Select** under **Security group**.
 
     ![](images/LETS1115.png)
 
-1. Select **None** and click on **Done**
+1. Select **None** and click on **Done**.
 
     ![](images/LETS1116.png)
 
-1. Scroll down and turn on **Deploy sample apps and data (1)** then click on **Save (2)**
+1. Scroll down and turn on **Deploy sample apps and data (1)** then click on **Save (2)**.
 
     ![](images/LETS1117.png)
 
-1. Click on **Refresh** and Wait for the environment to be ready
+1. Click on **Refresh** and Wait for the environment to be ready.
 
     ![](images/LETS1118.png)
 
-1. Open a new tab and naviagte to **power apps portal** using below link
+1. Open a new tab and naviagte to **power apps portal** using below link.
 
     ```
     https://make.powerapps.com/
@@ -106,7 +106,7 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
 1. Under the **Connections** section, click on the ellipsis button **(...) (1)** next to **Microsoft Dataverse Prioritz**, ensure that user mail **<inject key="AzureAdUserEmail"></inject> (2)** you are currently signed in with is selected, and then click **Import (3)**.
 
-    ![](images/2103.png)
+    ![](images/LETS11116.png)
     
 1. The import process will take approximately 5–10 minutes to complete. Once the import is successful, a confirmation message will appear **Solution "Prioritz" imported successfully**.
 
@@ -176,7 +176,7 @@ In this task, you will be importing the Prioritz solution into the Power Apps po
 
      ![](images/8-8-25-l1-10.png)
 
-     > **Note:** If you receive the error `Error from the token exchange: Permission denied due to missing connection` while running the flow, it indicates that the **Dataverse connection** was not added correctly. To fix this, edit the flow, expand the **Apply to each** section, and click the **three dots (...)** next to **Add a new topic**. Then, add a new connection reference using your **ODL credentials**, save the flow, and run it again to test. If the error still persists, delete the imported solution and re-import it by performing **Steps 6–14** of this task again, and then try to trigger the flow once more.
+     > **Note:** If you receive the error `Error from the token exchange: Permission denied due to missing connection` while running the flow, it indicates that the **Dataverse connection** was not added correctly. To fix this, edit the flow, expand the **Apply to each** section, and click the **three dots (...)** next to **Add a new topic**. Then, add a new connection reference using your **ODL credentials**, save the flow, and run it again to test. If the error still persists, delete the imported solution and re-import it by performing **Steps 11–18** of this task again, and then try to trigger the flow once more.
 
 1. Click **Done** and wait for the flow run to complete.
 
@@ -252,7 +252,7 @@ In this task, you will test the two imported apps, Prioritz Admin and Prioritz A
      
       ![](images/8-8-25-l1-16.png)
 
-13. Add a couple more choices by repeating **steps 12-14**.   
+13. Add a couple more choices by repeating **steps 11-12**.   
     - **Choice 1:** Enter `Steak Tuesday`
     - **Choice 2:** Enter `Cheese and Wine Tuesday`
 
@@ -437,7 +437,7 @@ In this task, you will be updating the Prioritz Admin app by adding a new Notes 
      
       ![](images/8-8-25-l1-22.png)
 
-1. Add one more choice by repeating **steps 20-22** of this task.    
+1. Add one more choice by repeating **steps 18-19** of this task.    
    - **Choice 1:**  Enter `Test Two`
      
 1. After adding all the Choices and topic details, your screen should look like the screenshot below. Click on the **Save** button. The new topic should be **saved**.

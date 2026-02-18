@@ -237,7 +237,7 @@ In this task, you will test the custom connector by creating a new connection wi
 
 8. Go to the **AddCredit** operation. **Enter your email address for recipientid (1)**, **enter your name for name (2)**, **enter **1** for points (3)**, and click **Test operation (4)**.
     
-    ![](images/2130.png)
+    ![](images/LETS3338.png)
 
 9. The test should succeed, and the response should look like the image below.
      
@@ -324,9 +324,9 @@ In this task, you will extend the custom connector by adding a new action called
   
      ![](images/2132.png)
 
-11. Click on **Upload**.
+11. Enable **Code (1)** and click **Upload (2)**.
     
-     ![](images/L03/L3E4T1S10.png)
+     ![](images/L03/image29-1.png)
 
 12. Navigate to `C:\LabFiles\Developer-in-a-day\Student\L03 - Custom connector for existing API\Resources` **(1)**, Select the **CustomConnectorCode.csx (2)** file located in this path and click **Open (3)**.
 
@@ -381,6 +381,8 @@ In this task, you will extend the custom connector by adding a new action called
      ![](images/L03/image35-1.png)
 
 25. Click **Update connector** and wait for the connector to be updated.
+
+     ![](images/L3E4T1S15.png)
 
 26. **Do not** navigate away from this page.
 

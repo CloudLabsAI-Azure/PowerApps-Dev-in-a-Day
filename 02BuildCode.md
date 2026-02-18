@@ -167,7 +167,7 @@ In this task, you will set up a new PowerApps Component Framework (PCF) project 
         .prioritydnd-item-column {
         margin: 8px;
         }
-        ```
+       ```
 
 24. The file should now look like the following.
 
@@ -247,13 +247,13 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
  
 15. Add the following code below inside the **export** class. This defines some working variables you will be using in the class logic.
    
-        ```
+      ```
         private context: ComponentFramework.Context<IInputs>;
         private items: ComponentFramework.PropertyTypes.DataSet;
         private state: ComponentFramework.Dictionary;
-        ```
+      ```
 
-        ![](images/L02/L2T2S15.png)
+       ![](images/L02/L2T2S15.png)
  
 16. Locate the **init** function and remove the following line of code.
 
@@ -329,7 +329,10 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
         private state: ComponentFramework.Dictionary;
         private theComponent: ComponentFramework.ReactControl<IInputs, IOutputs>;
         private notifyOutputChanged: () => void;
+        
+        /**
 
+        /**
         * Used to initialize the control instance. Controls can kick off remote server calls and other initialization actions here.
         * Data-set values are not initialized here, use updateView.
         * @param context The entire property bag available to control via Context Object; It contains values as set up by the 
@@ -439,23 +442,23 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
 
 26. Paste the full ESLint configuration code into the file and **save** it.
 
-```json 
-{
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended"
-  ],
-  "rules": {
-    "@typescript-eslint/no-empty-object-type": ["off"],
-    "no-unused-vars": ["off"],
-    "no-undef": ["off"]
-  }
-}
-```
+    ```json 
+    {
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+        "@typescript-eslint/no-empty-object-type": ["off"],
+        "no-unused-vars": ["off"],
+        "no-undef": ["off"]
+    }
+    }
+    ```
    
 26. Click **File** and save all your changes.
 
@@ -465,9 +468,9 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
 
 28. Run the command below. This will build your component and identify any problems.
 
-    ```
-    npm run-script build
-    ```
+     ```
+      npm run-script build
+     ```
 
       > **Note:** If the build operation fails with this error **`Root element is missing`**, please make sure that **resx path** is commented in the Manifest.Xml file and try to build the component again.
  
@@ -477,9 +480,9 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
  
 30. Run the command below to start the test harness.
     
-        ```
-        npm start
-        ```
+    ```
+    npm start
+    ```
 
 31. The test harness should start; if not, then copy the address and paste it in a new browser window  of Edge. Try dragging the items and see if the behaviour functions as expected.
 
@@ -517,9 +520,9 @@ In this task, you will implement the logic for the drag-and-drop ranking compone
 
     > - If the issue persists, uninstall **dotnet-sdk-8.0.402-win-x64** and install the latest version from [the .NET download page](https://dotnet.microsoft.com/en-us/download). Close Visual Studio Code, reopen it, run the build command from step 28, and then execute the above command again.
 
-    > 2. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the previous instructions and added the code correctly in **Manifest and Index** files. 
-        
-    > - Additionally, you can find the **Manifest and Index** files in the location `C:\LabFiles`, you can compare your code with these files and fix the issues if there are any then retry to push the component by running the  **pac push command** again.
+    > 2. If the push operation fails with the error **`Sorry, the app encountered a non-recoverable error and will need to terminate`**, please make sure that you have followed the previous instructions and added the code correctly in **Manifest.Index** file.
+
+    > - If you face the same issue again Before executing **pac push command** again, delete the **ManifestType.d.ts** file which is located in **generated** folder
 
     > 3. If the run fails with a Nuget package error, run the below command in PowerShell and try running the above command again.
     
